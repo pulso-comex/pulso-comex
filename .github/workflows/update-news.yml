@@ -1,0 +1,81 @@
+name: Actualizar y publicar Pulso Comex
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ['**.md']
+  schedule:
+    - cron: '30 6,10,14,18,22 * * *'
+      timezone: 'America/Argentina/Buenos_Aires'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pulso-comex
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Actualizar noticias desde las fuentes
+        if: github.event_name != 'push'
+        run: python scripts/update_news.py
+
+      - name: Descargar fotos de archivo que falten
+        continue-on-error: true
+        run: python scripts/fetch_photos.py
+
+      - name: Generar páginas, sitemaps y RSS
+        run: python scripts/build_pages.py
+
+      - name: Guardar cambios en el repositorio
+        run: |
+          git config user.name 'Pulso Comex Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A .
+          if git diff --cached --quiet; then
+            echo 'Sin cambios para guardar.'
+          else
+            git commit -m "chore(news): actualización automática"
+            for i in 1 2 3; do
+              git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push && break
+              sleep 5
+            done
+          fi
+
+      - name: Armar la carpeta del sitio
+        run: |
+          mkdir -p _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude '_site' --exclude 'scripts' \
+                   --exclude 'templates' --exclude '*.md' --exclude 'sources.json' \
+                   --exclude 'data/sources-status.json' ./ _site/
+          touch _site/.nojekyll
+
+      - name: Subir el sitio
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
