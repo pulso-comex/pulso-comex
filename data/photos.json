@@ -1,0 +1,213 @@
+{
+  "ship": [
+    {
+      "id": "photo-1605745341112-85968b19335b",
+      "src": "https://images.unsplash.com/photo-1605745341112-85968b19335b",
+      "by": "Ian Taylor",
+      "page": "https://unsplash.com/photos/blue-and-red-cargo-ship-on-sea-during-daytime-jOqJbvo1P9g",
+      "alt": "Buque portacontenedores navegando en mar abierto"
+    },
+    {
+      "id": "photo-1578575437130-527eed3abbec",
+      "src": "https://images.unsplash.com/photo-1578575437130-527eed3abbec",
+      "by": "Andy Li",
+      "page": "https://unsplash.com/photos/cargo-ships-docked-at-the-pier-during-day-CpsTAUPoScw",
+      "alt": "Buques de carga amarrados en un muelle con contenedores"
+    },
+    {
+      "id": "photo-1604506522146-316c8bedd874",
+      "src": "https://images.unsplash.com/photo-1604506522146-316c8bedd874",
+      "by": "Anastasios Antoniadis",
+      "page": "https://unsplash.com/photos/cargo-ship-on-sea-under-cloudy-sky-during-daytime-AMXFr97d00c",
+      "alt": "Buque de carga bajo un cielo nublado"
+    }
+  ],
+  "container": [
+    {
+      "id": "photo-1678182451047-196f22a4143e",
+      "src": "https://images.unsplash.com/photo-1678182451047-196f22a4143e",
+      "by": "Ali Mkumbwa",
+      "page": "https://unsplash.com/photos/a-large-amount-of-containers-are-stacked-on-top-of-each-other-Annl9CjEaEs",
+      "alt": "Contenedores apilados en el puerto de Dar es Salaam"
+    },
+    {
+      "id": "photo-1759272840538-ae4b07214c71",
+      "src": "https://images.unsplash.com/photo-1759272840538-ae4b07214c71",
+      "by": "Haris Illahi",
+      "page": "https://unsplash.com/photos/fT4SwA83jH4",
+      "alt": "Contenedores apilados en un puerto al atardecer"
+    },
+    {
+      "id": "photo-1741792003907-11e3bdc2a180",
+      "src": "https://images.unsplash.com/photo-1741792003907-11e3bdc2a180",
+      "by": "Pix Tresa",
+      "page": "https://unsplash.com/photos/NXF9MI3zby0",
+      "alt": "Contenedores a bordo de un buque en Hamburgo"
+    }
+  ],
+  "port": [
+    {
+      "id": "photo-1706499856012-14f062c72b49",
+      "src": "https://images.unsplash.com/photo-1706499856012-14f062c72b49",
+      "by": "taro ohtani",
+      "page": "https://unsplash.com/photos/5T5zmIqs0AM",
+      "alt": "Grúas pórtico y contenedores en el puerto de Shinagawa"
+    },
+    {
+      "id": "photo-1741173337736-0c6cd956a9b3",
+      "src": "https://images.unsplash.com/photo-1741173337736-0c6cd956a9b3",
+      "by": "Sorin Basangeac",
+      "page": "https://unsplash.com/photos/WdQevQ2nlh4",
+      "alt": "Grúa cargando contenedores en la terminal Burchardkai de Hamburgo"
+    },
+    {
+      "id": "photo-1670121180530-cfcba4438038",
+      "src": "https://images.unsplash.com/photo-1670121180530-cfcba4438038",
+      "by": "Nathan Cima",
+      "page": "https://unsplash.com/photos/MHXJ9p64Jw8",
+      "alt": "Portacontenedores en la terminal de Hai Phong, Vietnam"
+    }
+  ],
+  "plane": [
+    {
+      "id": "photo-1774698078446-59299e016718",
+      "src": "https://images.unsplash.com/photo-1774698078446-59299e016718",
+      "by": "Peaky_82",
+      "page": "https://unsplash.com/photos/cargo-plane-being-loaded-at-an-airport-tarmac-85gDb_IHdAQ",
+      "alt": "Avión carguero descargando en el aeropuerto de Sídney"
+    },
+    {
+      "id": "photo-1672136882892-4758ddd19826",
+      "src": "https://images.unsplash.com/photo-1672136882892-4758ddd19826",
+      "by": "Jan Rosolino",
+      "page": "https://unsplash.com/photos/a-fed-ex-airplane-is-on-the-runway-DPWqOwZNwjA",
+      "alt": "Avión carguero despegando en el aeropuerto de Fráncfort"
+    },
+    {
+      "id": "photo-1570710891163-6d3b5c47248b",
+      "src": "https://images.unsplash.com/photo-1570710891163-6d3b5c47248b",
+      "by": "Kevin Woblick",
+      "page": "https://unsplash.com/photos/low-angle-photography-of-airliner-during-flight-UdUbSPwbv2c",
+      "alt": "Avión en vuelo visto desde abajo"
+    }
+  ],
+  "tanker": [
+    {
+      "id": "photo-1518527989017-5baca7a58d3c",
+      "src": "https://images.unsplash.com/photo-1518527989017-5baca7a58d3c",
+      "by": "Shaah Shahidh",
+      "page": "https://unsplash.com/photos/aerial-photography-of-tanker-ship--subrrYxv8A",
+      "alt": "Vista aérea de un buque tanque"
+    },
+    {
+      "id": "photo-1598408745613-178751e2ccde",
+      "src": "https://images.unsplash.com/photo-1598408745613-178751e2ccde",
+      "by": "Fredrick F.",
+      "page": "https://unsplash.com/photos/red-and-white-ship-on-sea-under-cloudy-sky-during-daytime-U9_pRASawlc",
+      "alt": "Buque tanque navegando cerca de Johor, Malasia"
+    }
+  ],
+  "customs": [
+    {
+      "id": "photo-1700777685830-f501e67260e6",
+      "src": "https://images.unsplash.com/photo-1700777685830-f501e67260e6",
+      "by": "Bernd Dittrich",
+      "page": "https://unsplash.com/photos/yfTSNbggFyE",
+      "alt": "Grúa moviendo un contenedor en el puerto de Fráncfort"
+    },
+    {
+      "id": "photo-1716880288871-c15d8519f5b3",
+      "src": "https://images.unsplash.com/photo-1716880288871-c15d8519f5b3",
+      "by": "PortCalls Asia",
+      "page": "https://unsplash.com/photos/JZ0IIWzB52c",
+      "alt": "Camión portacontenedores en la terminal del puerto de Manila"
+    },
+    {
+      "id": "photo-1721937127582-ed331de95a04",
+      "src": "https://images.unsplash.com/photo-1721937127582-ed331de95a04",
+      "by": "Ashley",
+      "page": "https://unsplash.com/photos/a-warehouse-filled-with-lots-of-boxes-and-pallets-28b8xlTT5t4",
+      "alt": "Autoelevador en un depósito con estanterías de mercadería"
+    }
+  ],
+  "chart": [
+    {
+      "id": "photo-1560221328-12fe60f83ab8",
+      "src": "https://images.unsplash.com/photo-1560221328-12fe60f83ab8",
+      "by": "Nicholas Cappello",
+      "page": "https://unsplash.com/photos/close-up-photo-of-monitor-displaying-graph-Wb63zqJ5gnE",
+      "alt": "Monitor con gráficos de mercado"
+    },
+    {
+      "id": "photo-1649003515353-c58a239cf662",
+      "src": "https://images.unsplash.com/photo-1649003515353-c58a239cf662",
+      "by": "Tötös Ádám",
+      "page": "https://unsplash.com/photos/financial-candlestick-chart-market-trends-3r8rcSy0Ffg",
+      "alt": "Gráfico financiero de velas en una pantalla"
+    }
+  ],
+  "globe": [
+    {
+      "id": "photo-1521295121783-8a321d551ad2",
+      "src": "https://images.unsplash.com/photo-1521295121783-8a321d551ad2",
+      "by": "Kyle Glenn",
+      "page": "https://unsplash.com/photos/nXt5HtLmlgE",
+      "alt": "Globo terráqueo sobre una mesa"
+    },
+    {
+      "id": "photo-1451187580459-43490279c0fa",
+      "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+      "by": "NASA",
+      "page": "https://unsplash.com/photos/Q1p7bh3SHj8",
+      "alt": "La Tierra vista desde el espacio"
+    }
+  ],
+  "treaty": [
+    {
+      "id": "photo-1608817576203-3c27ed168bd2",
+      "src": "https://images.unsplash.com/photo-1608817576203-3c27ed168bd2",
+      "by": "Christian Lue",
+      "page": "https://unsplash.com/photos/blue-and-yellow-star-flag-8Yw6tsB8tnc",
+      "alt": "Bandera de la Unión Europea frente al Parlamento Europeo en Bruselas"
+    },
+    {
+      "id": "photo-1756323150452-9844ab81d7cf",
+      "src": "https://images.unsplash.com/photo-1756323150452-9844ab81d7cf",
+      "by": "Dmitrii E.",
+      "page": "https://unsplash.com/photos/european-union-flag-flies-over-a-stone-building-9IijGDLb1D4",
+      "alt": "Bandera de la Unión Europea sobre un edificio en Berlín"
+    }
+  ],
+  "steel": [
+    {
+      "id": "photo-1697698532634-ea59b636ccea",
+      "src": "https://images.unsplash.com/photo-1697698532634-ea59b636ccea",
+      "by": "Morteza Mohammadi",
+      "page": "https://unsplash.com/photos/rolls-of-steel-are-lined-up-in-a-warehouse--kWkoUkFyp0",
+      "alt": "Bobinas de acero en un depósito"
+    },
+    {
+      "id": "photo-1763771420746-c75fefab51b5",
+      "src": "https://images.unsplash.com/photo-1763771420746-c75fefab51b5",
+      "by": "Zoshua Colah",
+      "page": "https://unsplash.com/photos/bundles-of-rusty-rebar-steel-rods-ARW8QOYR_bI",
+      "alt": "Atados de barras de acero"
+    }
+  ],
+  "court": [
+    {
+      "id": "photo-1483600516620-7254872369ae",
+      "src": "https://images.unsplash.com/photo-1483600516620-7254872369ae",
+      "by": "Jesse Collins",
+      "page": "https://unsplash.com/photos/gray-stone-columns-worms-eye-view-photo-ICXMkhRdquA",
+      "alt": "Columnas de la Corte Suprema de Estados Unidos"
+    },
+    {
+      "id": "photo-1593115057322-e94b77572f20",
+      "src": "https://images.unsplash.com/photo-1593115057322-e94b77572f20",
+      "by": "Tingey Injury Law Firm",
+      "page": "https://unsplash.com/photos/brown-wooden-tool-on-white-surface-veNb0DDegzE",
+      "alt": "Martillo de juez sobre una superficie blanca"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+[
+  {
+    "name": "OMC · Organización Mundial del Comercio",
+    "url": "https://www.wto.org/library/rss/latest_news_s.xml",
+    "type": "Organismo internacional",
+    "enabled": true,
+    "min_relevance": 0,
+    "fetch_og": true,
+    "topics": [
+      "Economía internacional"
+    ],
+    "countries": [
+      "Global"
+    ],
+    "tags": [
+      "OMC"
+    ]
+  },
+  {
+    "name": "Comisión Europea · Comercio",
+    "url": "https://policy.trade.ec.europa.eu/node/2/rss_en?etrans=es&prefLang=es",
+    "type": "Organismo internacional",
+    "enabled": true,
+    "min_relevance": 0,
+    "fetch_og": true,
+    "topics": [
+      "Europa"
+    ],
+    "countries": [
+      "Unión Europea"
+    ],
+    "tags": [
+      "Unión Europea"
+    ]
+  },
+  {
+    "name": "Aduana News",
+    "url": "https://www.aduananews.com/feed/",
+    "type": "Medio especializado · Argentina",
+    "enabled": true,
+    "min_relevance": 1,
+    "fetch_og": true,
+    "topics": [
+      "Argentina"
+    ],
+    "countries": [
+      "Argentina"
+    ],
+    "tags": []
+  },
+  {
+    "name": "Trade News",
+    "url": "https://www.tradenews.com.ar/feed/",
+    "type": "Medio especializado · Argentina",
+    "enabled": true,
+    "min_relevance": 1,
+    "fetch_og": true,
+    "topics": [
+      "Argentina"
+    ],
+    "countries": [
+      "Argentina"
+    ],
+    "tags": []
+  },
+  {
+    "name": "PortalPortuario",
+    "url": "https://portalportuario.cl/feed/",
+    "type": "Medio especializado · Chile",
+    "enabled": true,
+    "min_relevance": 1,
+    "fetch_og": true,
+    "topics": [
+      "Puertos",
+      "Latinoamérica"
+    ],
+    "countries": [
+      "Chile"
+    ],
+    "tags": []
+  },
+  {
+    "name": "Google Noticias · Comercio exterior Argentina",
+    "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
+    "type": "Agregador",
+    "aggregator": true,
+    "enabled": true,
+    "min_relevance": 1,
+    "topics": [
+      "Argentina"
+    ],
+    "countries": [
+      "Argentina"
+    ],
+    "tags": [],
+    "max_new": 4
+  },
+  {
+    "name": "Google Noticias · Aduana e importaciones Argentina",
+    "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
+    "type": "Agregador",
+    "aggregator": true,
+    "enabled": true,
+    "min_relevance": 1,
+    "topics": [
+      "Argentina"
+    ],
+    "countries": [
+      "Argentina"
+    ],
+    "tags": [],
+    "max_new": 4
+  },
+  {
+    "name": "Google Noticias · Exportaciones Argentina",
+    "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
+    "type": "Agregador",
+    "aggregator": true,
+    "enabled": true,
+    "min_relevance": 1,
+    "topics": [
+      "Argentina",
+      "Exportaciones"
+    ],
+    "countries": [
+      "Argentina"
+    ],
+    "tags": [],
+    "max_new": 4
+  },
+  {
+    "name": "Google Noticias · Mercosur",
+    "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
+    "type": "Agregador",
+    "aggregator": true,
+    "enabled": true,
+    "min_relevance": 1,
+    "topics": [
+      "Mercosur"
+    ],
+    "countries": [],
+    "tags": [],
+    "max_new": 4
+  },
+  {
+    "name": "Google Noticias · Aranceles y comercio internacional",
+    "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
+    "type": "Agregador",
+    "aggregator": true,
+    "enabled": true,
+    "min_relevance": 1,
+    "topics": [
+      "Economía internacional"
+    ],
+    "countries": [
+      "Global"
+    ],
+    "tags": [],
+    "max_new": 4
+  },
+  {
+    "name": "Google Noticias · Logística y fletes",
+    "url": "https://news.google.com/rss/search?q=(fletes+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+contenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
+    "type": "Agregador",
+    "aggregator": true,
+    "enabled": true,
+    "min_relevance": 1,
+    "topics": [
+      "Logística"
+    ],
+    "countries": [
+      "Global"
+    ],
+    "tags": [],
+    "max_new": 4
+  },
+  {
+    "name": "OMC · World Trade Organization (inglés)",
+    "url": "https://www.wto.org/library/rss/latest_news_e.xml",
+    "type": "Organismo internacional · fuente en inglés",
+    "enabled": false,
+    "min_relevance": 1,
+    "topics": [
+      "Economía internacional"
+    ],
+    "countries": [
+      "Global"
+    ],
+    "tags": [
+      "WTO"
+    ]
+  }
+]

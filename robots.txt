@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pulsocomex.com.ar/sitemap.xml
+Sitemap: https://pulsocomex.com.ar/news-sitemap.xml
