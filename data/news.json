@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-04T00:45:47Z",
+  "updatedAt": "2026-10-04T00:55:47Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -247,7 +247,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:14:26Z",
       "title": "Bayer destina casi 2.000 millones a una planta en Ohio mientras Trump atribuye el proyecto a su política arancelaria",
-      "summary": "Nota publicada por Notimérica. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por notimerica.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -269,7 +269,7 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "Notimérica",
+          "name": "notimerica.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNV2dJRFdUSXctTXd4cEZyOGUwcmpwWUlFeTFEMjZXNGNGYTFsdUM2ZHVsdDJLWnZZOF9GS0Jna2huYnZPQXdnaC1rXzFETDdSWXd1UFJOd1VIbzlUZkdueXZsZDBJX0UtUXd0X3BiN0pCdGdTdkdQcDl0NTlfNXRqMGJNSERIZHBQVEFjMG5SSmp4UEpWQ0hDWnlVV2M3ZjlyeHNNdXBHMTFaUUwtQTd4UmM3eDlvRGhvaFRXb1RoODZFaXVUdnppbV9FSDUyUm5vVUhmRTAyT2ZpSUFqWlNPTzNLZG1xbm9Zblg4WkswWXdEMkZE?oc=5",
           "primary": true,
@@ -543,7 +543,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:14:26Z",
       "title": "“Muy preciado”: cuál es el producto estrella que asoma para las exportaciones de carne argentina a Japón",
-      "summary": "Nota publicada por lanacion.com.ar. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por La Nación. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -566,7 +566,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "lanacion.com.ar",
+          "name": "La Nación",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOc01GVVFZakNLZjJFTjhRQUt1QzhVSXNqQW4xdTVzaDE5R3Y1UGZkODRDb19DcWNlSUtEU0dwUkpEbURJV3RHZFZtUjdBaEo1NDVZYmViUG9aM282X2NENXdNeDdrd1pBQkV3Tm5BbTRESUdCSkdVcXhBYWRaeG0xQ0VpVXVXcm9yU0FIQ2o3SkZOa3A4eTUzSEpMMnVjOFJLb0RmYTJwMDRjVjNudEtwc1JUREYwOWk3cGhLdHBpUm1CVHFKcHlYS1NSMTlDV1k0MS0zRzNMQXJMRzI0cmdtYUdLdkhldw?oc=5",
           "primary": true,
@@ -869,6 +869,38 @@
       ]
     },
     {
+      "id": "entre-rios-oportunidades-de-exportacion-en-paris",
+      "datetime": "2026-10-03T16:41:09Z",
+      "date": "2026-10-03",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Entre Ríos oportunidades de exportación en París",
+      "summary": "Nota publicada por Cuestión Entrerriana. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Cuestión Entrerriana",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRU5iM2FiLU1JS242R2lXQmxrVjlvSVJKTUtPOVBKMHZ0a1JseUdoX2RlNm56eXdmMW5uWjNTTTBFakZYZlhvd0FSc0QxMmFFektHWFc4Tm1xVUFMTXM4MGNVZFRDaTR1MlZoYlhJVEVYSU8yYVJ1akN0bUNtYkItYXB2clh3b3lBT2RncDZHNkNSRmFGeFNpTHJ4LXk1MDFWWXlscldkMWlzYWtONzc2cVUtMF84UlpjOE5xS0NTcw?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "brasil-elige-presidente-y-milei-mira-de-cerca-las-claves-para-argentina-y-el-mer",
       "datetime": "2026-10-03T16:30:00Z",
       "date": "2026-10-03",
@@ -1063,7 +1095,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:14:26Z",
       "title": "Mexico mantiene batalla arancelaria con EU por acero y vehiculos",
-      "summary": "Nota publicada por Hoy Tamaulipas. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por hoytamaulipas.net. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1088,7 +1120,7 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "Hoy Tamaulipas",
+          "name": "hoytamaulipas.net",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYTZxS1c5OUR5R3BNSENITDhybWNpYzBnOU4ydEZtSkE2bFlCYVdBZXRIWkNGX2gwQTV1MFYwaVhyNFgwajdXRXVRSDJiMXNhbWpxSUVIM29Ob0RZZ3oyYUFXVXUzYUc1Z3BKUXlYSWRycjN1SlRUaXpwSjBHaUFxd1phQl9Ma2lmYTd1azVjTFNWalFxUGFPNnJfYWpzbHZheGN3M09rSW9CVzVURFFBbVBn?oc=5",
           "primary": true,
@@ -1213,7 +1245,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:45:47Z",
       "title": "Mercosur-UE empieza a rendir: exportaciones del agro argentino suben 21%",
-      "summary": "Nota publicada por uypress.net. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por uy press. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1238,7 +1270,7 @@
       "feed": "Google Noticias · Mercosur",
       "sources": [
         {
-          "name": "uypress.net",
+          "name": "uy press",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQb0lveFZ4cXBmaTlldWtVaFg4UGxlUXVuR3ZyOFplbk1BMlhSdk03SVF1YjFXVGdLbDdhem4tSS0wYl9XaGZ5REd1cWdiNVN4emRmZ21kTHRsSXpqa1hGdGhlQ21vb2RQZ1hMaXlSRUhYaVVuSFJUY1hoUUxQWS1rS0hJbERVSTJpSTBDNGdVb0NfcGM0LXhOVXNaMnQ5UEctdDF2ZHJxVm5KV3ZlSVVHcTNuOA?oc=5",
           "primary": true,
@@ -1423,6 +1455,38 @@
           "name": "Infobae",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSmd2bHNzTDVnN1cxX2dWMWY2TjFQRHV6VktMYk5tcEprTlFNMjd4bWljZ3BFbDd3bl91YUhFdkROYVhOMnFTXzNsUFpKMWM5bEVvanFOelhwYlpWcGt3RlJvYm13OGEzSUlBYWE1TUJpNWFza3ExdS1lNEp0cGlpVzQxT3BGODFXUHFEREI0TV85b2J1RUw5R3FLQXQ0aDIxZGlsMXB1WWRnWXRrVjA4SnBhbTFlY3d0NUp1T1ZhNDlhQdIB3AFBVV95cUxNWGtuVGpkbWNfWGpoeHl3LU5zSFNQajhxOGxiTjh5MTRabVV2X2hrYUY5NExIUm52SFhWMnlDQWtQSkJickVJZW1KWElfLXlwM2ZPa0tFRk11MmhiS2VLSlduTmRsQ3ZRUS0zNjJIZmZ1SklRYXpvSnBSYTBPS1UxYjJ2VUpERHMtbkZxQUp4ai1OMU1ia3VvTm5CQnNNSmhiMUE4MEZSMVFsMUh2aXNSVTRXaUlyMjM2d0hudmVEN1NzeE9GZ0J1VDZCZlJ2YWRkMUFsc0ZpYjdEYS1V?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "neuquen-proyecta-alcanzar-a-cordoba-en-exportaciones-y-llegar-al-nivel-de-santa",
+      "datetime": "2026-10-03T11:09:12Z",
+      "date": "2026-10-03",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Neuquén proyecta alcanzar a Córdoba en exportaciones y llegar al nivel de Santa Fe en 2031",
+      "summary": "Nota publicada por Diario Neuquino. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Diario Neuquino",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOTM3MkJmdFlnUFRRTEFoVk9pWWRzMWJiMmdoTkRlemtMUDJZRkpOTUR5SHNVQURfb3cxRnJveFZIbkZLWjFINFJmTThGWUNPWjItVEpCNG1WV1BCTEM4WUM5QzA5ZGZTV1R1eFhvejc1Q29NZF9WaW12OTNDNkxGckgzVkFJemc4bzM5eHZNSnY3aU82dzJNaThOeVRsWk9RemJjLXpIbWFKLU85anNYa3RMaHJ1Q1c1V0VMUF9n?oc=5",
           "primary": true,
           "author": ""
         }
@@ -1649,6 +1713,77 @@
       ]
     },
     {
+      "id": "el-alza-de-aranceles-fortalece-el-contrabando-la-alerta-de-la-asociacion-andina",
+      "datetime": "2026-10-03T07:26:55Z",
+      "date": "2026-10-03",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "¿El alza de aranceles fortalece el contrabando? La alerta de la Asociación Andina de Transportistas",
+      "summary": "Nota publicada por extra.ec. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "extra.ec",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTlp3MUJ6c0tlQmtiWVpXbVFCbVlYalF1Nk95Q2Y1N2s2M3BvUmtxNHRMTU9mR3B4ZnpDaExwWFZwei1sVUp2dk1VdDRlUVpMSnpBV0h2NVpJQ2w4ZkhNQjdxWEJldExSR29waEtoZWpBMUFwVFVYWmVqNnl4QVdqZTgtQ0tVQ3UzT3E4ZzFhUTBKdmNUZENmaFZFaXZUUlI3cFJPN0dCcDAtaTNxTTByV0U3amZVUFdhajNVUVJtbDZmMDh50gHKAUFVX3lxTE5OdUgzM1EyZl9SRkdvanR6dkFwaU5XUVRlZDk5bTJqSU9BYTRWWVhjSGozekU5eEhiUnJLV1Jjd0lScVVHSVhsM2R3NzBrVHlqZzI3WnlUZVR0aHEyTUxuWVlROF9UN0JGRlRESE5JajN6OWZjeHhOYVdzOFd4Y0hBbUw5N24ya2tHZHlCRDRjS2dEcmVSaEo3MW4za3RkM09FRU9iQUlLejk1RS0zM1ZqR2phSTNNOGJWXzYwMTRsS1Q2Uk94SmUzR0E?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "la-primera-fase-del-tratado-de-libre-comercio-entre-ucrania-y-turquia-ya-se-apli",
+      "datetime": "2026-10-03T07:11:35Z",
+      "date": "2026-10-03",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "La primera fase del Tratado de Libre Comercio entre Ucrania y Turquía ya se aplica: exención de aranceles y tipos reducidos",
+      "summary": "Nota publicada por El Economista. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "Tratados y acuerdos",
+        "Europa"
+      ],
+      "countries": [
+        "Ucrania",
+        "Turquía"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "El Economista",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxONU5qQndXZHdtMVFWQXpqWEZ0ZF9WcU1qS0RpTjVfeWF4c0FjWUNEUmxfYXlBYndzUVNZOXlOaUtXLVN4SXowVGx4cnNxajFPOEhLZEZRUWpEaml4NkhYUDN5dFF6MkxtZzdvYWhsd3VIZWFuekUtRjJEajI2QkdFYVdZMlpvZmRGNFJzcjAwNEdDVDRod1pKLWJrZ0lxN0pxNVRXV3EwZzEtQzJyZ2g4ZEtfck5zbFdZWG41SXVPSG5lM0VsYXNPYU0wcVJHOGVwd1YzcmFvU2N2elBCdFhDUWhKYXk3eWdzRlZJaWh0aUQzUVJtbUV5dzJ2OHNDWTJUYXFLcmZoZ1RoNUJneXJDcHk3MlJRaFk?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "puerto-buenos-aires-el-aniversario-de-un-nodo-estrategico-que-sigue-definiendo-e",
       "datetime": "2026-10-03T04:31:16Z",
       "date": "2026-10-03",
@@ -1722,6 +1857,42 @@
       ]
     },
     {
+      "id": "aranceles-de-trump-amenazan-la-renovacion-del-metro-de-ny",
+      "datetime": "2026-10-03T04:00:05Z",
+      "date": "2026-10-03",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Aranceles de Trump amenazan la renovación del Metro de NY",
+      "summary": "Nota publicada por MundoNOW. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "Estados Unidos"
+      ],
+      "countries": [
+        "Estados Unidos"
+      ],
+      "tags": [
+        "Aranceles",
+        "Estados Unidos"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "MundoNOW",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBwZGJVaVRld0Z5RDMxd2FWVDBwR3J1SkJQV3ZBN2ZEaDU0Nl9LcWRlNWRSWmg1Y1djQU40Nko4Sk5WbHdLbC1zQXFVR2Fmbll2TWVhOE93YVg?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "importaciones-de-consumo-suben-34-7-y-cambian-estrategias-empresariales",
       "datetime": "2026-10-03T03:45:00Z",
       "date": "2026-10-03",
@@ -1748,6 +1919,79 @@
           "name": "Mundo Empresarial AR",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNU0JMclJHMTNPUnJTTVpnZ3pCazBlLXc2V3YwWDRqRklEeWt5U05HU1JxSVpvU3BzN2FVQTZwWHpxUndfZ2Z6YzY4d1FHWHdvclo2RjJQR0RudUlBcVNaMDhMQVB6UmdYT0dUa0l1OTROSGdyZllUSDJLLVhpVXh1S1ZpQ2V3V3ZQeFBDU2RTVzAwZXhNNnZWR3cxdGZjaUlN?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "reconocio-eu-combate-a-trabajo-forzoso-no-elimina-aranceles",
+      "datetime": "2026-10-03T03:07:00Z",
+      "date": "2026-10-03",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Reconoció EU combate a trabajo forzoso; no elimina aranceles",
+      "summary": "Nota publicada por eldiariodechihuahua.mx. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "eldiariodechihuahua.mx",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSHowdWhJd0pyakFtZThYNlZBeW5lejQ0SmVwRXRWX2NPLURJUWJuUXpCcXluUmZIOFBGV1RNTEc3R21XT2FmRURLLUt0ZEowWVpwNHhHdERramF2ZjlRTFRCZTF2NVRiUzQxVlZFdUR4bkJwNHpva0JMZzhqLWpYam9vRWFwQXMtUEw0QjhRRkhRREprVGdST29zVWw3NlpwaTktWjlJZl9NSlYxMjZYdktBWlI1d21Yb2c3U0xEM1drbG82aXfSAcsBQVVfeXFMUEdhOVJobVoyNHRQOWozVmwwY0ZxSmltZHdvM2RFN0paUGV6UTRnU2kxT0xvczBid0FnclI4N0hUY0RuOFRoQlVFSUtxRDNmQ1Z1Zm5YYzBlLWthaXlYdEVBb0hDbHA3TklLR0hPSFZwYWtsa19Ka0d6RzNSLUZ5SHpRbUdyZ2lkeVMzY0pCWE1TZ3pmRmg0R3dZWU9GeUJISXJ5VlM0aWRmOW9tYTRnVEtZanpMajV0d28wek5ibzNRS0RMVDlkMkFFRTg?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "paraguay-busca-transformar-el-acuerdo-ue-mercosur-en-inversion-y-competitividad",
+      "datetime": "2026-10-03T03:02:48Z",
+      "date": "2026-10-03",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Paraguay busca transformar el Acuerdo UE–Mercosur en inversión y competitividad.",
+      "summary": "Nota publicada por Todo El Campo Uy. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "Latinoamérica",
+        "Mercosur",
+        "Europa"
+      ],
+      "countries": [
+        "Paraguay",
+        "Unión Europea"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Todo El Campo Uy",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4tVEM4Z2pwRmtTbWJ4dTRZOGtqVTBfWTJteWhENEYzT19UTWlvQm5yb1VxRjdtODdFUWkyZ1hHUllmbjFDcTBGdFA5TVhDRk5Oc1VF?oc=5",
           "primary": true,
           "author": ""
         }
@@ -1830,6 +2074,41 @@
       ]
     },
     {
+      "id": "karina-milei-encabezo-en-francia-una-ronda-para-impulsar-exportaciones-de-pesca",
+      "datetime": "2026-10-02T22:20:29Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Karina Milei encabezó en Francia una ronda para impulsar exportaciones de pesca",
+      "summary": "Nota publicada por El Intransigente. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones",
+        "Europa"
+      ],
+      "countries": [
+        "Argentina",
+        "Francia"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "El Intransigente",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE16dEVJNmtDSHcwOXFqaXVIaEZXcWZHOFhDcjh6QUlndGh0MVh3S01abzZpS1JDRmZyZ3RZN212TDVTTEVWbWotaTBFQzY0WFRFUTZnTU9IU2xkUWVWZS1jTndvektEenhnbWtPLXhNLTl2RFlMazhOSFdWSGo?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "las-exportaciones-de-uruguay-crecieron-un-10-en-septiembre",
       "datetime": "2026-10-02T21:40:00Z",
       "date": "2026-10-02",
@@ -1857,6 +2136,79 @@
           "name": "Somos Pymes",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQT0JZOEVsbFJFRjYyc1VrZTJULXhTZThyYkFFR1RfX1ZEWDNTQlMxQWNnVzdfVUJpTGhCVGdwbVF5bEl5TGQ3TDg4elM4a3JPRWEtUHZsWEVvcXNGRHFmdTgzdFh6ck80WDBvUGc4MGNYc0gxZ1FKOEp5TVN1VW9UaVFHdnhZX0FDRTlPYXdPaHlYdDY0NW5GWHlRUUVmcExiU1J1SjN2XzdiLW5mckHSAbMBQVVfeXFMUG9rODEwcXVxd01IRTVpV2tGaG9pWG9Zc2hJZFJ3cnBVU2xoYUVnNVlmNEVnWENPNnVyeTk1THpmY29kRU55dnluSDJ6cmF6bU9xT1hEUTEybVF1LTg1dDRGd0ZlSFdESXRfRXdCQjcxcGo3ZU0wWHdhUERIdkgyVm42WDdoZzhyN2xwSHYxSDZVcjhOYlA3RWlyUVpDODRFeXM3TjN0eFNFUzFNYWpBOENMaEU?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "rusia-domina-el-trigo-mundial-y-argentina-alcanza-un-record-de-exportaciones",
+      "datetime": "2026-10-02T21:36:07Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Rusia domina el trigo mundial y Argentina alcanza un récord de exportaciones",
+      "summary": "Nota publicada por AgroLatam. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones",
+        "Europa"
+      ],
+      "countries": [
+        "Argentina",
+        "Rusia"
+      ],
+      "tags": [
+        "Agro"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "AgroLatam",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMXpEbDNIX05FMmJWa0JDUHhndWdhUTc0STducXVUa3VKNnBTQzh4ck5JN2o1Q1JESXlxTjNuSVMtNnhEMXpHYzhKUFN0RW8ycXlZRDdnOHB6UTJwUEVMeEpnQmRxS3p5QlVnS2dIZW9fcVVRcl9FaWhac0pFSnl6TWpHZ2pOeFYzRlEzb1luaUc0dkJ5dDR0UUJtMXJGeHlwY3lZOVg3UkJZSVBNcEcxZ2YtZjhsdzY2WUhIWA?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "presionado-por-los-productores-lezcano-cruzo-al-mercosur-por-las-cuotas-de-expor",
+      "datetime": "2026-10-02T21:15:01Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Presionado por los productores, Lezcano cruzó al Mercosur por las cuotas de exportación",
+      "summary": "Nota publicada por La Política Online. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Tratados y acuerdos",
+        "Mercosur"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "La Política Online",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOakhiQ1o5V1doVU1nd3lxbHEyblphMzVqZjNvNGJnX29QYldBOTNLenFpMW1oTjQ4Nlk2dGZvZkRwOEFfZ253Vk9NS21rRHdCMlNsZnUtelp5cnd3NFpKWTdhbGRmdTFSRmxaYVcxYVcxbmJXWmRFeTYzejMxRnhZN1IwWk9oNUhFTFlyT1Nwc3gzRm9hQW1UN09DRXNYVTF4Wi0wUEJZNFl6cWtiMHBtVVg0ZjNVZDFEbTB3UjlYeWxLM2laZklvNWRrcw?oc=5",
           "primary": true,
           "author": ""
         }
@@ -1935,12 +2287,85 @@
       ]
     },
     {
+      "id": "se-viene-la-cuarta-edicion-de-la-ronda-de-negocios-mercosur-union-europea",
+      "datetime": "2026-10-02T20:39:23Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Se viene la cuarta edición de la Ronda de Negocios Mercosur + Unión Europea",
+      "summary": "Nota publicada por libertaddigital.com.ar. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Mercosur",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "libertaddigital.com.ar",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdEhteF9SUnI0THNKWWNTOTZTbFJfMjR3R285YUpMQjNTZmhzQWFDM2lPQnV3ckVodmkxRkFfTDAyTk5DbGE5RDBhd0VaVEdJQ0xpc0xiNGV3T2xjY3pJU2xCMmVHSHkxWjNhSTFNZzdVMDA1T0JFdWxXdTdkRl9pcU9tcUN5eTBNUFM2ZGZobjFoSTJNb2dkZW90U2xKTk9GdTQ3TzNxQXlfc05SR2FTeFUyX04?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "la-uia-busco-socios-en-francia-para-transformar-el-acuerdo-mercosur-ue-en-empleo",
+      "datetime": "2026-10-02T19:55:05Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "La UIA buscó socios en Francia para transformar el acuerdo Mercosur-UE en empleo y exportaciones",
+      "summary": "Nota publicada por Diario Río Negro. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Tratados y acuerdos",
+        "Mercosur",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea",
+        "Francia"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Diario Río Negro",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOX0lMVWR5R2lEWG0zQ08yTEJUNXowRHZqdlJIbXNIYkN6d3VGcmsteUZJN1EzS2RmYmRTMjV2ckRld3BoV204X3liZ2FkUjVxaEMyNHpaWjJvcFdsUk9jZXRUc01LNjNKWlhwX0xTQ1dnQm5RMks4RmZhNm9DMEpya2JiMkdtQXhPdWd4VG12STI5RlE3WXRNNXhGUTJqQ0JES2hVZUVBTXM3MkdzbWJqWG5POGpteFgwcTUzaWpTWlhnVkp4ejBoVFhiZzBqNW9BQzVKbjVlWE5TZ9IB4gFBVV95cUxNN28zVERJajM0Q01XeHFqS3YtOS1WYmxZM0MxamlDUXN2YnJfNmFYQkNyYVBNb1c3LXlsOENDbVJHY3BCMXVlMGVtM2s5aS1sRVNnZnM4VExJeTRrTmNZbmk5RDNraHktdjVaV0tNVEdCTGhJR3RfR045QkM2YXREN1pweHB4Wi16YkFZTUVhMVBBS3JVOEJkQlFycXd2cVN1QjVJd3pUVHp5Y2VwanM3NDRXQWJjcWJTd0ZjQmJSLVBQaEowUXZMVFZqSFVnWUpCbWtTRUNtRXA0VVlUdWZySUVB?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "exportaciones-uruguayas-suben-10-en-setiembre-y-la-ue-impulsa-ventas-con-un-salt",
       "datetime": "2026-10-02T19:44:45Z",
       "date": "2026-10-02",
       "firstSeen": "2026-10-04T00:45:47Z",
       "title": "Exportaciones uruguayas suben 10% en setiembre y la UE impulsa ventas con un salto del 61%",
-      "summary": "Nota publicada por El Cronista. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por cronista.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1961,7 +2386,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "El Cronista",
+          "name": "cronista.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOUkRYb244SnRpWFU1OEdnX04wcXpfT0QwUWVLR094anVwcEFIZUxnWGRRR1lRN0dOTmJ3OEpIOGxFbnhycVlHZnZuT1l5dTZXR28wTWtfcDZTSkF0OGlBWDFKZUcyZHc5MnVTVjdSU3I0TVdvUi00MHlxZU9Nakc1RmpQYkRDZ2dQWkdUekFZdk11d2QtTTFaVVE4REZYN1ZPUUJjQ21wRjV5bWJJeGdKZUpMcTMzZl81T0ZBenNTQ1AyV0k3dWQzbGFsRzA3dzVmTVQ4aDBuRGRObHJkbEYtMUoyMkY3dS1pZGfSAeoBQVVfeXFMTlJEWG9uOEp0aVhVNThHZ19OMHF6X09EMFFlS0dPeGp1cHBBSGVMZ1hkUUdZUTdHTk5idzhKSDhsRW54cnFZR2Z2bk9ZeXU2V0dvME1rX3A2U0pBdDhpQVgxSmVHMmR3OTJ1U1Y3UlNyNE1Xb1ItNDB5cWVPTWpHNUZqUGJEQ2dnUFpHVHpBWXZNdXdkLU0xWlVROERGWDdWT1FCY0NtcEY1eW1iSXhnSmVKTHEzM2ZfNU9GQXpzU0NQMldJN3VkM2xhbEcwN3c1Zk1UOGgwbkRkTmxyZGxGLTFKMjJGN3UtaWRn?oc=5",
           "primary": true,
@@ -2139,6 +2564,200 @@
       ]
     },
     {
+      "id": "barcelona-debe-aprovechar-todo-su-potencial-para-seguir-desarrollando-la-carga-a",
+      "datetime": "2026-10-02T15:31:18Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "“Barcelona debe aprovechar todo su potencial para seguir desarrollando la carga aérea”",
+      "summary": "Nota publicada por www.diariodelpuerto.com. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte aéreo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "www.diariodelpuerto.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZ3NsdHRxLXQ5aDZ2M1lDZnA5bkJlNC15bGR3TWc3aURRb2FOUVJNNFdGcVJuZ0xjZDZQYmltV3BJYnBBSl8zUmRhaVhLY1U4ZDltZFgzVmhTNWRHbnB2RDJabklMUjFZQWhwRTdsaENPREwyTmVpTWR3cEJLdTluV3IwVHpaSnpJR0pPY3dkZGIwenZFNkU3dWJhNVNsWFJ5dWhmSndSZ2U5UmtHTzZFVVZHZUNGQ2hPaG9zT3c2TzM0bldZTWxTOHpjeXZXdw?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "el-indice-baltico-de-fletes-a-granel-sube-impulsado-por-los-graneleros-capesize",
+      "datetime": "2026-10-02T14:08:00Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "El índice báltico de fletes a granel sube impulsado por los graneleros capesize",
+      "summary": "Nota publicada por Investing.com España. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Fletes"
+      ],
+      "visual": "ship",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Investing.com España",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZ2tNWWV3ZkxfRDlhcmZCcnVyTkhQcDNMRV84VFp0SmptLVZoZVdjYXlsMERsSHNJb1M1el9pSEwwVy00dUZzenM2ZU9HMXhxTEdRQnlVRmtlLXQ0b0pGNDl6MGIyVEtfWTZtc0dDUmdqVy02U1hubzVXYk5NVjlRX0ZIME4wOUZiTTR3eDFXWkpvTkdycTJONFFyaFZWbVA3TF9QSE9vaVR5dUJfYllhWGtnME9wMmN4cDNkRlJSdnVUSDQyNzFmeDU5MTFWVHdaNlFNZmpn?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "la-marca-personal-una-ventaja-que-tambien-se-negocia-en-logistica-y-comercio-ext",
+      "datetime": "2026-10-02T13:49:00Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "La marca personal, una ventaja que también se negocia en logística y comercio exterior",
+      "summary": "Nota publicada por Infobae. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Infobae",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaXZnYVRJbmZvWnhDX3ZwOXh3SWNQT0FjV0xHREFvT1VBV3hLVjhiTjRONVlYZFNOMnctZzY4ejNZRUJXTkF6TW1qWjZCVUhhdkhGa1dvZ1ZIR0V4VjR0LU13S1MyY21aQksxeXRuWUNHczBOR29kMWxTNmk3ZlpCMVIySE1FS2pYOExZZUxLMEoxTnBFQTlWOE52UmM2UVVGbThjQmp5UVdNenJ5c25YNVozU0QzWVFMbURyNWd0Y29lY2pzaUk00gHiAUFVX3lxTE1ic1VNTEx5Rm4yTXNzS3Y0VThZQ2kycXZpcDV6N1BybGgxOGp0cTVWd0RqZFJaLXFmWDV3T25fZmV5WTZkR2REWjFsVWV2NmVOZ3NFcU1UUU9kVlFDakJDTDk4eDNOM3g5WDB1eTlDcmhWaEJoS0xjOF96bVNtUGdWWnIycHlQbm10RlVtTWpFNnpYQW0ySlNXZWhjMmVIWE1haG1LODF0dW51aHpXcGlISGYzY3lFNzJVYUJFNnFVYTVlLVc2NS1EYy1pTTNOMU1tWm1ISDRnMHQ4RW1sNFREYkE?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "el-crecimiento-de-la-demanda-de-carga-aerea-en-asia-central-plantea-desafios-de",
+      "datetime": "2026-10-02T11:42:21Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "El crecimiento de la demanda de carga aérea en Asia Central plantea desafíos de fletamento",
+      "summary": "Nota publicada por IndexBox. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte aéreo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "IndexBox",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQWXlsUC1tUXdmb3BPbEJxRFRTa0Z5Rk8xZWRoT1JzQlBnVmVtV0JGajBUbkl1Zjk0bHp4eEJxT2lYc3VGTVNCZnc0b2Z1eWxxM3hjNW1ZLUhVdEpKTGNYdGZEcmhQdlFSRmY1NXhvTnZhTi1BZ1RjMElxWUd0bmVQWjU5X1FGM3RaTlJjb180cnBSNXBJRWNMMHJUbEhzUQ?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "la-demanda-de-carga-aerea-amplia-sus-ganancias-mientras-los-cargadores-prefieren",
+      "datetime": "2026-10-02T11:40:55Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "La demanda de carga aérea amplía sus ganancias mientras los cargadores prefieren contratos flexibles",
+      "summary": "Nota publicada por IndexBox. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte aéreo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "IndexBox",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZTBGLUFOYWJPT0gwclVHVHlLZWMzYnZES3VSZlFEUzlTNlprVVViMEl3cVpyM0VGY3pVNElNQ0p5ODNYaEJ3X3FJX2RIRU80QkhQbGtXb2lBUElyY21WMVNQNF8ydHJOZWhzSm9iTHVBbGJxVUFIUDVpdjBvWUpCMExpcjh2dFlWYUU0N1RIazhIaks0ampRSExNcXd5M3c1ZVlv?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "patentamientos-de-0-km-cayeron-13-en-2026-el-70-importados",
+      "datetime": "2026-10-02T10:52:03Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Patentamientos de 0 km cayeron 13% en 2026, el 70% importados",
+      "summary": "Nota publicada por INFOBER. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "INFOBER",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOT0Z4bkMwWW1OMXZOVGd1Y0JESVlFTHVjblNDU1BreW5jVFpkRkppU2hpZmNwSWNteVNqU0xENV93WnA3dm5KQThPQkZETm1rcGQxX0dJeTdMT2paM3dhSk9abE9ZVk9odnpiVkkyeEdtWHAtV1o0RXRINnoxZDVxSnEwVmYtbFZjZzU3eVJhZFZHUG9sNUlYLThuNU5aQQ?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "las-exportaciones-de-argentina-a-estados-unidos-crecieron-34-5",
       "datetime": "2026-10-02T08:07:00Z",
       "date": "2026-10-02",
@@ -2202,6 +2821,73 @@
           "name": "Infobae",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQ2w5OXhOSGVZVXBfQzRsMXFhQTItbzBPS0NudUtueTZickQtWkc0VldPYm4yY2EyU3dkQWQ2MnNQUWl5eXVrUE93Zl9mLUpzbmhScWhJSzNiNVZ2UF91eUpoN180OThiajBMNFAtSjZWdi05U2xqUGNvTjNmUmdJMTB6V3pJZ2lBMmUyTU1fbmoyRjJUSHM4UEhxZ2Q5UG1ubkppeFFYaUtvZ19jOVpCeVNtVnBrZlpM0gHTAUFVX3lxTFB4eEFQVmU0a1h5ZUlyRUZZMll2V1VMUjlzYlMyOXhnOHJ6aVhaeXptclZVRU4zczBMUUYxcGRoeG5ud0VrX3R6bVA2TnJkRDlwWk1tdzhZYjNfR25xckgwa3FFanNuQl9FMzBqWXQ0ejBUcy15bmJ2Tms3cTc4eThNNjZBdXBSSXh3amQtV1N2bXZmZDFfbjhiRnZJWXNabV9XR1JfdHRrWHR6cjlqejB6enBvRGRYQnd6c3R6Z1lKQnNlUHF3TTBZUmpSdHpoRlhHQnM?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "comercio-exterior-gestion-de-salud-intercambios-y-becas-rossana-chahla-recibio-a",
+      "datetime": "2026-10-02T03:07:16Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "\"Comercio exterior, gestión de salud, intercambios y becas\": Rossana Chahla recibió al embajador de India y dialogaron sobre oportunidades para los tucumanos",
+      "summary": "Nota publicada por quediario.com.ar. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Asia"
+      ],
+      "countries": [
+        "India"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "quediario.com.ar",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQNXdQUlN3dm5HcHA5SHowa3ZweURlQkdBU2dKVng3R2RQM25nbkF1b2RkZ2dfRU5ZSHRWRWpHb3F2S0t4am1yU29HQ1VsMEFKdmFHeWYtSVdwQnl5UlNIZjNRWUtRWnhXVlVWaFl2azc2S01JYVFqeFhLdHNUVmQ5aWVxbWdDWFRkeWswNmVCMGUxbTFGMWx0SHBVa0N6UjRFcWtVNUl2WXBmSFF4anM2akZyXzE1SDhFRTgzRmNBRFdMWnVKbmpGVHlvLU5YOC1wRTJqZVg3Y2xEeDY2S3N1aDU3MTJJVWl5QTFDMktDVUstd0FqWXF2alRuN1dQRUd0VXRHMmpYSEUxZG41LUdVUWoxdVFGX0VP?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "biodiesel-argentino-la-ue-frena-una-medida-que-ponia-en-jaque-las-exportaciones",
+      "datetime": "2026-10-02T01:08:19Z",
+      "date": "2026-10-01",
+      "firstSeen": "2026-10-04T00:55:47Z",
+      "title": "Biodiésel argentino: la UE frena una medida que ponía en jaque las exportaciones",
+      "summary": "Nota publicada por ahora.com.pe. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones",
+        "Europa"
+      ],
+      "countries": [
+        "Argentina",
+        "Unión Europea"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "ahora.com.pe",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeWl6eTZ6TGZKbXlsUHlvOWl0UFh6STJ0ZjVOd2ZjWDJvX1hHX3dpdzh5eFQxS3ZEeFUwNEp4OElNdDVtQ1lqaW56TERNWDdaY2lZTlpWcTFqNWJ6emRYUGNObkxFZkJ3UlFOeDVrYndLZ1U2R3d4a2xjOFN4VnlIcHRoMXFrd0xrVUVCa0VSREVhaFRyemY1djJjOWVuOTVzYkZoQ2lSRFY1QQ?oc=5",
           "primary": true,
           "author": ""
         }
@@ -4190,7 +4876,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-04T00:45:47Z",
+    "ranAt": "2026-10-04T00:55:47Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -4225,17 +4911,17 @@
         "ok": true,
         "items": 48,
         "added": 4,
-        "updated": 0,
-        "skipped": 40
+        "updated": 1,
+        "skipped": 35
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 40,
-        "added": 4,
+        "items": 42,
+        "added": 0,
         "updated": 0,
-        "skipped": 31
+        "skipped": 33
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
@@ -4243,8 +4929,8 @@
         "ok": true,
         "items": 61,
         "added": 4,
-        "updated": 1,
-        "skipped": 48
+        "updated": 2,
+        "skipped": 43
       },
       {
         "source": "Google Noticias · Mercosur",
@@ -4253,7 +4939,7 @@
         "items": 42,
         "added": 4,
         "updated": 0,
-        "skipped": 31
+        "skipped": 27
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
@@ -4261,8 +4947,8 @@
         "ok": true,
         "items": 44,
         "added": 4,
-        "updated": 1,
-        "skipped": 35
+        "updated": 2,
+        "skipped": 31
       },
       {
         "source": "Google Noticias · Logística y fletes",
@@ -4271,7 +4957,7 @@
         "items": 55,
         "added": 4,
         "updated": 0,
-        "skipped": 51
+        "skipped": 47
       }
     ]
   }
