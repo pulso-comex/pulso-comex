@@ -105,6 +105,29 @@ VISUAL_RULES = [
 ]
 
 
+# Imágenes que no son fotos de la nota: logos, imágenes por defecto, íconos.
+BAD_IMAGE = re.compile(r'(logo|avatar|gravatar|pixel|spacer|1x1|blank|placeholder|fallback|default[-_.]|sprite|icon|favicon)', re.I)
+
+# Términos fuertes: una nota de un agregador (Google Noticias) debe tener al menos uno.
+# Evita falsos positivos como "contenedores de basura" o "puerto" en sentido no comercial.
+STRONG = [r'comercio exterior', r'comercio internacional', r'\bcomex\b', r'exporta', r'importa', r'arancel', r'aduan',
+          r'mercosur', r'\bomc\b', r'acuerdo comercial', r'tratado de libre comercio', r'balanza comercial', r'flete',
+          r'naviera', r'transporte maritimo', r'carga aerea', r'logistica internacional', r'antidumping', r'salvaguardia',
+          r'guerra comercial', r'cadena de suministro', r'portacontenedores', r'contenedores maritimos', r'\bteu\b',
+          r'logistic', r'transito de (contenedores|mercaderia|carga)', r'(etapa|relacion|intercambio|socio|apertura) comercial']
+
+# Etiquetas propias detectadas en el texto (las categorías de los feeds traían ruido: "inter", "ig", "Titulares"…)
+TAG_RULES = [
+    ('ARCA', [r'\barca\b']), ('Mercosur', [r'mercosur']), ('UE-Mercosur', [r'(ue|union europea)[- ]mercosur']),
+    ('OMC', [r'\bomc\b', r'\bwto\b']), ('Fletes', [r'flete', r'freight']), ('Contenedores', [r'portacontenedores', r'contenedores maritimos', r'\bteu\b', r'\bfeu\b']),
+    ('Acero', [r'acero', r'siderurg']), ('Aluminio', [r'aluminio']), ('Soja', [r'\bsoja']), ('Carne', [r'\bcarne']),
+    ('Minería', [r'miner', r'\blitio', r'cobre']), ('Energía', [r'vaca muerta', r'petrol', r'\bgnl\b', r'\bgas\b']),
+    ('Autos', [r'\bautos?\b', r'vehicul', r'automotr']), ('Agro', [r'agro', r'granos', r'cereal']),
+    ('Cruceros', [r'crucer']), ('Puertos', [r'\bpuerto']), ('Medidas comerciales', [r'antidumping', r'salvaguard', r'represalia']),
+    ('Aranceles', [r'arancel']), ('Estados Unidos', [r'estados unidos', r'eeuu', r'trump']), ('China', [r'\bchina\b']),
+]
+
+
 # ---------------------------------------------------------------- utilidades
 def norm(s: str) -> str:
     s = unicodedata.normalize('NFD', (s or '').lower())
@@ -239,7 +262,7 @@ def absolute_image(url: str, base: str) -> str:
     url = urljoin(base, html.unescape(url.strip()))
     if url.startswith('http://'):
         url = 'https://' + url[7:]
-    if not url.startswith('https://') or re.search(r'(logo|avatar|gravatar|pixel|spacer|1x1|blank)\.', url, re.I):
+    if not url.startswith('https://') or BAD_IMAGE.search(url):
         return ''
     return url
 
@@ -323,6 +346,16 @@ def classify(text: str, source: dict):
     affects = 'Argentina' in countries or 'mercosur' in t
     impact = 2 if affects and any(x in clean for x in ('Aranceles', 'Regulaciones', 'Aduanas', 'Impuestos')) else 1
     return clean[:5], countries[:5], visual, affects, impact
+
+
+def make_tags(text: str, source: dict) -> list:
+    t = norm(text)
+    tags = list(source.get('tags') or []) + [name for name, pats in TAG_RULES if any_match(t, pats)]
+    return list(dict.fromkeys(tags))[:5]
+
+
+def strong(text: str) -> bool:
+    return any_match(norm(text), STRONG)
 
 
 def relevance(text: str) -> int:
@@ -413,6 +446,9 @@ def main():
                 if src.get('min_relevance', 0) and relevance(text) < src['min_relevance']:
                     skipped += 1
                     continue
+                if src.get('aggregator') and not strong(p['title']):
+                    skipped += 1
+                    continue
                 if near_duplicate(p['title'], recent_titles) or added >= max_new:
                     skipped += 1
                     continue
@@ -456,12 +492,13 @@ def main():
                 'keyData': [],
                 'topics': topics,
                 'countries': countries,
-                'tags': list(dict.fromkeys((src.get('tags') or []) + p['categories']))[:6],
+                'tags': make_tags(text, src),
                 'visual': visual,
                 'impact': impact,
                 'affectsArgentina': affects,
                 'kind': 'noticia',
                 'label': 'Automática',
+                'feed': name,
                 'sources': [{
                     'name': source_name,
                     'type': src.get('type', 'Fuente externa') if not p['origin'] else f"Medio · vía {name.split('·')[0].strip()}",
@@ -488,6 +525,23 @@ def main():
                         'items': len(parsed), 'added': added}
         entry.update({'ok': True, 'items': len(parsed), 'added': added, 'updated': updated, 'skipped': skipped})
         report.append(entry)
+
+    # Limpieza de notas automáticas ya guardadas (aplica las reglas actuales a lo que entró antes).
+    disabled = {s['name'] for s in sources if not s.get('enabled', True)}
+    aggregators = {s['name'] for s in sources if s.get('aggregator')}
+    for key in list(by_url):
+        it = by_url[key]
+        if it.get('label') != 'Automática':
+            continue
+        feed = it.get('feed') or (it.get('sources') or [{}])[0].get('name', '')
+        via_aggregator = feed in aggregators or 'vía Google Noticias' in (it.get('sources') or [{}])[0].get('type', '')
+        if feed in disabled or (via_aggregator and not strong(it.get('title', ''))):
+            del by_url[key]
+            continue
+        ph = it.get('photo') or {}
+        if ph.get('src') and BAD_IMAGE.search(ph['src']):
+            it.pop('photo', None)
+        it['tags'] = make_tags(' '.join([it.get('title', ''), it.get('summary', '')]), {})
 
     # Archivo: notas automáticas hasta un año y con tope; las curadas no se borran.
     cutoff = NOW - timedelta(days=ARCHIVE_DAYS)
