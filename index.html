@@ -1030,7 +1030,7 @@ CONFIG.social = (SITECFG.redes || []).map(r => ({ name: r.nombre, url: r.url }))
 /* =====================================================================
    2. TAXONOMÍA
    ===================================================================== */
-const TOPICS = ['Argentina','Latinoamérica','Estados Unidos','Europa','Asia','China','Mercosur','Importaciones','Exportaciones','Aduanas','Aranceles','Impuestos','Tratados y acuerdos','Logística','Transporte marítimo','Transporte aéreo','Puertos','Economía internacional','Geopolítica y comercio','Empresas','Regulaciones','Tecnología COMEX'];
+const TOPICS = ['Argentina','Latinoamérica','Estados Unidos','Europa','Asia','China','Oceanía','Mercosur','Importaciones','Exportaciones','Aduanas','Aranceles','Impuestos','Tratados y acuerdos','Logística','Transporte marítimo','Transporte aéreo','Puertos','Economía internacional','Geopolítica y comercio','Empresas','Regulaciones','Tecnología COMEX'];
 
 // Secciones de la navegación principal: cada una agrupa una o más categorías.
 const SECTIONS = [
@@ -1051,22 +1051,24 @@ const SECTIONS = [
 ];
 const sectionBySlug = s => SECTIONS.find(x => x.slug === s);
 
-const REGIONS = ['Argentina','Mercosur','Latinoamérica','Norteamérica','Europa','Asia','Medio Oriente','Global'];
+const REGIONS = ['Argentina','Mercosur','Latinoamérica','Norteamérica','Europa','Asia','Oceanía','Medio Oriente','Global'];
 const COUNTRY_REGIONS = {
   'Argentina':['Argentina','Mercosur','Latinoamérica'], 'Brasil':['Mercosur','Latinoamérica'], 'Paraguay':['Mercosur','Latinoamérica'],
   'Uruguay':['Mercosur','Latinoamérica'], 'Chile':['Latinoamérica'], 'México':['Norteamérica','Latinoamérica'],
   'Estados Unidos':['Norteamérica'], 'Canadá':['Norteamérica'],
   'Unión Europea':['Europa'], 'Polonia':['Europa'], 'España':['Europa'], 'Alemania':['Europa'],
   'China':['Asia'], 'Vietnam':['Asia'], 'Singapur':['Asia'], 'Japón':['Asia'], 'India':['Asia'],
+  'Australia':['Oceanía'], 'Nueva Zelanda':['Oceanía'],
   'Irán':['Medio Oriente'], 'Arabia Saudita':['Medio Oriente'], 'Irak':['Medio Oriente'], 'Emiratos Árabes Unidos':['Medio Oriente'],
   'Global':['Global']
 };
-const TOPIC_REGIONS = { 'Latinoamérica':'Latinoamérica', 'Mercosur':'Mercosur', 'Europa':'Europa', 'Asia':'Asia', 'China':'Asia', 'Estados Unidos':'Norteamérica', 'Argentina':'Argentina' };
+const TOPIC_REGIONS = { 'Latinoamérica':'Latinoamérica', 'Mercosur':'Mercosur', 'Europa':'Europa', 'Asia':'Asia', 'China':'Asia', 'Oceanía':'Oceanía', 'Estados Unidos':'Norteamérica', 'Argentina':'Argentina' };
 // Coordenadas aproximadas (lon, lat) para el mapa de cobertura.
 const COORDS = {
   'Argentina':[-64,-34],'Brasil':[-51,-10],'Paraguay':[-58,-23],'Uruguay':[-56,-33],'Chile':[-71,-33],'México':[-102,23],
   'Estados Unidos':[-98,39],'Canadá':[-100,57],'Unión Europea':[9,50],'Polonia':[19,52],'España':[-4,40],'Alemania':[10,51],
   'China':[104,35],'Vietnam':[106,15],'Singapur':[104,1.3],'Japón':[138,36],'India':[78,22],
+  'Australia':[134,-25],'Nueva Zelanda':[174,-41],
   'Irán':[53,32],'Arabia Saudita':[45,24],'Irak':[44,33],'Emiratos Árabes Unidos':[54,24]
 };
 
