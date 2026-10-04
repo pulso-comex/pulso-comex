@@ -5,6 +5,8 @@ Qué hace en cada ejecución:
 - Lee las fuentes habilitadas en sources.json (una fuente caída no frena a las demás).
 - Filtra por relevancia COMEX y descarta notas viejas o casi duplicadas.
 - Deduplica por enlace original normalizado: una noticia = una entrada, siempre.
+- No agrega (y retira) notas automáticas que repiten un hecho ya cubierto por una nota curada:
+  por coincidencia de enlace, por el campo "absorbs" de la nota curada o por similitud de texto.
 - Conserva el ID (URL), la fecha y la imagen de las notas ya conocidas.
   Si la fuente no informa fecha, se usa la de la primera vez que se vio la nota (no se "renueva").
 - Detecta países, categorías y si la nota menciona a Argentina.
@@ -41,6 +43,12 @@ MAX_AGE_DAYS = 21          # al ingresar, ignorar notas más viejas que esto
 ARCHIVE_DAYS = 365         # las notas automáticas se conservan un año
 MAX_AUTO_ITEMS = 3000      # tope de notas automáticas en el archivo
 MAX_OG_FETCH = 12          # páginas consultadas por fuente y corrida para buscar la imagen
+
+# Duplicados de notas curadas (ver curated_duplicate). Valores calibrados con el archivo de octubre de 2026:
+CURATED_WINDOW_DAYS = 4    # solo se compara con notas curadas de ±4 días
+CURATED_MIN_FULL = 0.38    # parecido mínimo con título + resumen + datos de la nota curada
+CURATED_MIN_TITLE = 0.25   # parecido mínimo con el título y las etiquetas de la nota curada
+CURATED_STRONG = 0.30      # además: parecido de título ≥ esto, o una cifra en común, o parecido total ≥ 0.70
 
 # Taxonomía: debe coincidir con TOPICS en assets/app.js
 TOPICS = ['Argentina', 'Latinoamérica', 'Estados Unidos', 'Europa', 'Asia', 'China', 'Mercosur', 'Importaciones',
@@ -378,6 +386,83 @@ def near_duplicate(title: str, recent: list) -> bool:
     return False
 
 
+# ---------------------------------------------------------------- duplicados de notas curadas
+STOPWORDS = set('''para como sobre entre desde hasta tras ante contra durante mientras segun este esta estos estas pero porque
+cuando donde cual cuales quien tiene tienen sera puede hace mas menos muy todo toda todos todas otro otra otros otras sus
+nuevo nueva nuevos nuevas millones dolares anos with from that this have will their more over after into about tambien'''.split())
+
+
+def tokens(text: str) -> set:
+    """Palabras significativas y cifras (las cifras se marcan con #; los años no cuentan)."""
+    t = norm(text)
+    words = {w for w in re.findall(r'[a-z]+', t) if len(w) > 3 and w not in STOPWORDS}
+    nums = {'#' + n for n in re.findall(r'\d+(?:[.,]\d+)?', t) if len(n) >= 2 and not re.fullmatch(r'(19|20)\d\d', n)}
+    return words | nums
+
+
+def detect_countries(text: str) -> set:
+    t = norm(text)
+    return {c for c, pats in COUNTRIES.items() if any_match(t, pats)}
+
+
+class CuratedIndex:
+    """Índice de las notas curadas para detectar automáticas que cuentan el mismo hecho."""
+
+    def __init__(self, items: list):
+        import math
+        docs = [tokens(it.get('title', '') + ' ' + it.get('summary', '')) for it in items]
+        df = {}
+        for d in docs:
+            for w in d:
+                df[w] = df.get(w, 0) + 1
+        n = len(docs)
+        # Las palabras raras pesan más; las cifras, todavía más.
+        self.idf = lambda w: math.log((n + 1) / (df.get(w, 0) + 1)) + (1.5 if w.startswith('#') else 0)
+        self.items, self.absorbed, self.urls = [], {}, {}
+        for it in items:
+            if it.get('label') == 'Automática' or not it.get('title'):
+                continue
+            for a in it.get('absorbs') or []:
+                self.absorbed[a] = it['id']
+            for src in it.get('sources') or []:
+                if src.get('url'):
+                    self.urls[canonical_url(src['url'])] = it['id']
+            extra = ' '.join([' '.join(it.get('tags') or []), ' '.join(it.get('countries') or [])])
+            key_data = ' '.join(' '.join(map(str, k)) for k in it.get('keyData') or [])
+            self.items.append({
+                'id': it['id'],
+                'when': parse_date(it.get('datetime') or it.get('date')),
+                'full': tokens(' '.join([it['title'], it.get('summary', ''), extra, key_data])),
+                'title': tokens(it['title'] + ' ' + ' '.join(it.get('tags') or [])),
+                'countries': set(it.get('countries') or []) | detect_countries(it['title'] + ' ' + it.get('summary', '')),
+            })
+
+    def match(self, item_id: str, url: str, title: str, when) -> str:
+        """Devuelve el id de la nota curada que ya cubre el hecho, o '' si no hay ninguna."""
+        if item_id in self.absorbed:
+            return self.absorbed[item_id]
+        if url and canonical_url(url) in self.urls:
+            return self.urls[canonical_url(url)]
+        a = tokens(title)
+        if len(a) < 3 or not when:
+            return ''
+        total = sum(self.idf(w) for w in a)
+        countries = detect_countries(title)
+        best, best_score = '', 0.0
+        for c in self.items:
+            if not c['when'] or abs((when - c['when']).total_seconds()) > CURATED_WINDOW_DAYS * 86400:
+                continue
+            if not countries <= c['countries']:  # menciona un país que la nota curada no trata
+                continue
+            full = sum(self.idf(w) for w in a & c['full']) / total
+            title_sim = sum(self.idf(w) for w in a & c['title']) / total
+            shared_number = any(w.startswith('#') for w in a & c['full'])
+            if (full >= CURATED_MIN_FULL and title_sim >= CURATED_MIN_TITLE
+                    and (title_sim >= CURATED_STRONG or shared_number or full >= 0.70) and full > best_score):
+                best, best_score = c['id'], full
+        return best
+
+
 # ---------------------------------------------------------------- archivo
 def load_json(path: Path, default):
     if not path.exists():
@@ -413,6 +498,8 @@ def main():
         ids.add(it.get('id'))
     recent_titles = [title_key(it['title']) for it in by_url.values()
                      if (parse_date(it.get('datetime') or it.get('date')) or NOW) > NOW - timedelta(days=4)]
+    curated = CuratedIndex(list(by_url.values()))
+    suppressed = []  # automáticas descartadas o retiradas por repetir una nota curada
 
     report = []
     for src in sources:
@@ -451,6 +538,11 @@ def main():
                     continue
                 if near_duplicate(p['title'], recent_titles) or added >= max_new:
                     skipped += 1
+                    continue
+                dup = curated.match(slug(p['title']), p['url'], p['title'], p['pub'] or NOW)
+                if dup:
+                    skipped += 1
+                    suppressed.append({'title': trim(p['title'], 120), 'url': p['url'], 'curated': dup})
                     continue
 
             first_seen = parse_date((old or {}).get('firstSeen')) or NOW
@@ -538,6 +630,12 @@ def main():
         if feed in disabled or (via_aggregator and not strong(it.get('title', ''))):
             del by_url[key]
             continue
+        dup = curated.match(it.get('id', ''), primary_url(it), it.get('title', ''),
+                            parse_date(it.get('datetime') or it.get('date')))
+        if dup:
+            suppressed.append({'title': trim(it.get('title', ''), 120), 'url': primary_url(it), 'curated': dup})
+            del by_url[key]
+            continue
         ph = it.get('photo') or {}
         if ph.get('src') and BAD_IMAGE.search(ph['src']):
             it.pop('photo', None)
@@ -562,19 +660,26 @@ def main():
     store.update({'schemaVersion': '2.1', 'feedId': 'pulso-comex', 'timezone': 'America/Argentina/Buenos_Aires', 'items': kept})
     if before != after or not store.get('updatedAt'):
         store['updatedAt'] = iso(NOW)
-    store['ingestion'] = {'ranAt': iso(NOW), 'sources': report}
+    store['ingestion'] = {'ranAt': iso(NOW), 'sources': report, 'curatedDuplicates': suppressed}
     NEWS.write_text(json.dumps(store, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
     ok = sum(1 for r in report if r.get('ok'))
     new = sum(r.get('added', 0) for r in report)
     print(f'Fuentes OK: {ok}/{len(report)} · notas nuevas: {new} · total en archivo: {len(kept)}')
+    for d in suppressed:
+        print(f"  ↺ repetida de «{d['curated']}»: {d['title']}")
     for r in report:
         print(('  ✔ ' if r.get('ok') else '  ✘ ') + r['source'] + (f" · {r.get('items', 0)} leídas, {r.get('added', 0)} nuevas" if r.get('ok') else f" · {r.get('error')}"))
     summary = os.environ.get('GITHUB_STEP_SUMMARY')
     if summary:
         with open(summary, 'a', encoding='utf-8') as f:
             f.write(f'## Actualización de noticias\n\n**{new}** notas nuevas · **{ok}/{len(report)}** fuentes respondieron · {len(kept)} notas en el archivo\n\n')
+            if suppressed:
+                f.write('**Automáticas omitidas por repetir una nota curada:**\n\n')
+                for d in suppressed:
+                    f.write(f"- {d['title']} → `{d['curated']}`\n")
+                f.write('\n')
             f.write('| Fuente | Estado | Leídas | Nuevas | Detalle |\n|---|---|---|---|---|\n')
             for r in report:
                 f.write(f"| {r['source']} | {'✔' if r.get('ok') else '✘'} | {r.get('items', '')} | {r.get('added', '')} | {r.get('error', '') if not r.get('ok') else ''} |\n")
