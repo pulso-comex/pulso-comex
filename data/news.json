@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-04T02:22:11Z",
+  "updatedAt": "2026-10-04T04:02:33Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -136,6 +136,40 @@
     }
   ],
   "items": [
+    {
+      "id": "mercosur-un-buen-negocio",
+      "datetime": "2026-10-04T03:00:00Z",
+      "date": "2026-10-04",
+      "firstSeen": "2026-10-04T04:02:33Z",
+      "title": "Mercosur, un buen negocio",
+      "summary": "Nota publicada por La Tribuna de Ciudad Real. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Mercosur"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "La Tribuna de Ciudad Real",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRllhSkx6b2V1bVpKV1JtTHVtdVJzQW9teHZJdHVBZi1lN1RiUTNBeTIycDF0bHBxODFzcFFNanFUV01pUFFDYWptelVxTm82WExkVWcyOFgtRjZkRE90VEc5ckZSaVV6UkRNT3hxSFVWUTRvQXAtdUNIVUw4N0dpQTllQ0hRQTV5bEE1eGt5Smw3WHJOWWxaWGRjVURaT1RZWU5KSFdXdWZUbXpxQ0xBQXJPVQ?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
     {
       "id": "el-crecimiento-de-vaca-muerta-podria-llevar-a-neuquen-al-primer-lugar-de-las-exp",
       "datetime": "2026-10-04T01:11:18Z",
@@ -309,6 +343,41 @@
       }
     },
     {
+      "id": "gracias-a-vaca-muerta-entre-2031-y-2032-neuquen-superaria-a-buenos-aires-para-se",
+      "datetime": "2026-10-03T23:52:00Z",
+      "date": "2026-10-03",
+      "firstSeen": "2026-10-04T00:14:26Z",
+      "title": "Gracias a Vaca Muerta: entre 2031 y 2032 Neuquén superaría a Buenos Aires, para ser la principal provincia exportadora de la Argentina",
+      "summary": "Nota publicada por Infobae. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Energía"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Infobae",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPVDB1YVdJMWxKQUF6YWUwTzdVZzJVRUJNamtGM2Z1UU1vcjZ5STVTSlBJd093enRWdU5EaGRKTzJqRlVWSmdHWVQtdG1xRnVIM1oxU0pWdjdnQndSWGZJVVRuaGNSOFA1d1gwVUxqdDg5cmNId2duTjZHSVNJelg5ZHpBVmV2UV9wTTN2SGtWMFJaRlJ5YlVQTGpyVzNUd3NRSHNoeG9naTZWM1MzVGEzb0w4ZUxmTmhJUXpiY2IzVVIwVENGeDhXUXF0eTVzR1J4NEZoWnVCZzJrV1p1LTd6T0ZXbGJ6X0dNbFZadlBuT0JCckM5YUZSbW05djJrVW83ejVzai1tWG_SAaMCQVVfeXFMTm9JWWs1REEtTDdVcG92Q2pHTFkzdVVDeGZKWmp4bkxFLUNpWEpGeHR2anFvelJLM01TbGlkaGZESEZTZzd5UWFXbVZ1MWxtRHYtTmplNDQ5NVN3M19Cbm1sby1ZQmJ0RXRiVUVzU3hNNDRKZVAtaGdWS0ZNQmFkak14bU5pT3RTS2lFTzdfNHlpMWp2SUlMclh0bjNUWVZNUFRZYklOaWxRbzZEUjFZYTVDdVdVMEREVEJWd3hjT0ZWb0FfdjlGbks5Zkp3cGJhNTVDSF8wUURpOS1Fci1tNWM3ZURKaWNMNXd2SlNuWGltNlQ3YjJZUmdVYVBlYml5aTh0T013ano4cllYZ2FmLTlPSDEtQ1JuT1o5ZjZyT1hLRlBr?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "bayer-destina-casi-2-000-millones-a-una-planta-en-ohio-mientras-trump-atribuye-e",
       "datetime": "2026-10-03T23:31:36Z",
       "date": "2026-10-03",
@@ -339,41 +408,6 @@
           "name": "Notimérica",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNV2dJRFdUSXctTXd4cEZyOGUwcmpwWUlFeTFEMjZXNGNGYTFsdUM2ZHVsdDJLWnZZOF9GS0Jna2huYnZPQXdnaC1rXzFETDdSWXd1UFJOd1VIbzlUZkdueXZsZDBJX0UtUXd0X3BiN0pCdGdTdkdQcDl0NTlfNXRqMGJNSERIZHBQVEFjMG5SSmp4UEpWQ0hDWnlVV2M3ZjlyeHNNdXBHMTFaUUwtQTd4UmM3eDlvRGhvaFRXb1RoODZFaXVUdnppbV9FSDUyUm5vVUhmRTAyT2ZpSUFqWlNPTzNLZG1xbm9Zblg4WkswWXdEMkZE?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
-      "id": "gracias-a-vaca-muerta-entre-2031-y-2032-neuquen-superaria-a-buenos-aires-para-se",
-      "datetime": "2026-10-03T23:01:58Z",
-      "date": "2026-10-03",
-      "firstSeen": "2026-10-04T00:14:26Z",
-      "title": "Gracias a Vaca Muerta: entre 2031 y 2032 Neuquén superaría a Buenos Aires, para ser la principal provincia exportadora de la Argentina",
-      "summary": "Nota publicada por Infobae. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina",
-        "Exportaciones"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [
-        "Energía"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
-      "sources": [
-        {
-          "name": "Infobae",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPVDB1YVdJMWxKQUF6YWUwTzdVZzJVRUJNamtGM2Z1UU1vcjZ5STVTSlBJd093enRWdU5EaGRKTzJqRlVWSmdHWVQtdG1xRnVIM1oxU0pWdjdnQndSWGZJVVRuaGNSOFA1d1gwVUxqdDg5cmNId2duTjZHSVNJelg5ZHpBVmV2UV9wTTN2SGtWMFJaRlJ5YlVQTGpyVzNUd3NRSHNoeG9naTZWM1MzVGEzb0w4ZUxmTmhJUXpiY2IzVVIwVENGeDhXUXF0eTVzR1J4NEZoWnVCZzJrV1p1LTd6T0ZXbGJ6X0dNbFZadlBuT0JCckM5YUZSbW05djJrVW83ejVzai1tWG_SAaMCQVVfeXFMTm9JWWs1REEtTDdVcG92Q2pHTFkzdVVDeGZKWmp4bkxFLUNpWEpGeHR2anFvelJLM01TbGlkaGZESEZTZzd5UWFXbVZ1MWxtRHYtTmplNDQ5NVN3M19Cbm1sby1ZQmJ0RXRiVUVzU3hNNDRKZVAtaGdWS0ZNQmFkak14bU5pT3RTS2lFTzdfNHlpMWp2SUlMclh0bjNUWVZNUFRZYklOaWxRbzZEUjFZYTVDdVdVMEREVEJWd3hjT0ZWb0FfdjlGbks5Zkp3cGJhNTVDSF8wUURpOS1Fci1tNWM3ZURKaWNMNXd2SlNuWGltNlQ3YjJZUmdVYVBlYml5aTh0T013ano4cllYZ2FmLTlPSDEtQ1JuT1o5ZjZyT1hLRlBr?oc=5",
           "primary": true,
           "author": ""
         }
@@ -428,7 +462,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T02:13:13Z",
       "title": "Frigerio presentó a la provincia en la Cámara de Comercio Internacional en París",
-      "summary": "Nota publicada por diarioriouruguay.com. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Diario Río Uruguay. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -446,7 +480,7 @@
       "feed": "Google Noticias · Comercio exterior Argentina",
       "sources": [
         {
-          "name": "diarioriouruguay.com",
+          "name": "Diario Río Uruguay",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdnU5anRmZkFrelpUZUdqWjVVbWE0M1lEamxRVE5rNTR0NGJDSzAyQlliMjQ2b0lxa2xpVUtJMWJrWXZkN2xYMGlHWGhmVFNocnY1bENCX2FkVS1WRVNueDRuWXRTRlNsWi1ncDJ5bGZwaUVneWYwUGp5dGszWVN0dGRZcUZMRU41bGs1MUEzNEc1V0xzaWNMZzJCUDlNZTB5ckEzb0FtSF9UZHd1d0FZN0tlczRNT1lW0gG4AUFVX3lxTE12dTlqdGZmQWt6WlRlR2paNVVtYTQzWURqbFFUTms1NHQ0YkNLMDJCWWIyNDZvSXFrbGlVS0kxYmtZdmQ3bFgwaUdYaGZUU2hydjVsQ0JfYWRVLVZFU254NG5ZdFNGU2xaLWdwMnlsZnBpRWd5ZjBQanl0azNZU3R0ZFlxRkxFTjVsazUxQTM0RzVXTHNpY0xnMkJQOU1lMHlyQTNvQW1IX1Rkd3V3QVk3S2VzNE1PWVY?oc=5",
           "primary": true,
@@ -460,7 +494,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:14:26Z",
       "title": "Canciller insta a empresarios a asumir un rol activo para aprovechar el acuerdo UE-Mercosur",
-      "summary": "Nota publicada por La Nación. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por lanacion.com.py. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -483,7 +517,7 @@
       "feed": "Google Noticias · Mercosur",
       "sources": [
         {
-          "name": "La Nación",
+          "name": "lanacion.com.py",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOMGtVMUctVG1zNTJadGppeVBHQ2VXbUZJZ2wzeEJKSlJsUjlkMHZkaXFUWVhxRXhWWk83bHlvR1g2dlkyamd0YnV3NWZrNUhHLXF2UHo2T2xuNDY4a0x5Z3htSy15ZFVtbGJrLURyVk9XMXg5dTJNNUJuUVRibXFBQzdZZk5mRmc2UW45SVZkVjJBa0RhVGt0RjNWNEZqbzhfMTE0TDNKWjF4VFNsVWg2cEhHMGJnaEhzSXNJYlA5Z0ZXdjFoWEVkUjdFMXNsNTlsS040UzdTaw?oc=5",
           "primary": true,
@@ -609,7 +643,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:14:26Z",
       "title": "“Muy preciado”: cuál es el producto estrella que asoma para las exportaciones de carne argentina a Japón",
-      "summary": "Nota publicada por lanacion.com.ar. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por La Nación. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -632,7 +666,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "lanacion.com.ar",
+          "name": "La Nación",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOc01GVVFZakNLZjJFTjhRQUt1QzhVSXNqQW4xdTVzaDE5R3Y1UGZkODRDb19DcWNlSUtEU0dwUkpEbURJV3RHZFZtUjdBaEo1NDVZYmViUG9aM282X2NENXdNeDdrd1pBQkV3Tm5BbTRESUdCSkdVcXhBYWRaeG0xQ0VpVXVXcm9yU0FIQ2o3SkZOa3A4eTUzSEpMMnVjOFJLb0RmYTJwMDRjVjNudEtwc1JUREYwOWk3cGhLdHBpUm1CVHFKcHlYS1NSMTlDV1k0MS0zRzNMQXJMRzI0cmdtYUdLdkhldw?oc=5",
           "primary": true,
@@ -869,7 +903,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:14:26Z",
       "title": "Rogelio Frigerio presentó en París el potencial exportador y las oportunidades de inversión en Entre Ríos",
-      "summary": "Nota publicada por Mirador Provincial. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por miradorprovincial.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -887,7 +921,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "Mirador Provincial",
+          "name": "miradorprovincial.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQNDg1Mnk1Y0FEbmE2U2UtVTBLS292VGhuS0JXVkdEVkNJQThlZWlzLThCZHgxUExMYjNxLXg4Z09sYVNmeUxzUjdCb0RLc0ZiX01JMndOcnY3akJxNmhFLTk5dUppcFlRdkNtT01VQmFUSE5wNmJ6MWFOdjVVakM5MU5BQm5Fb2dpR2UzMUg5ZUhiYS1MTEpuaXlYMnFuVHpjN0ZEUUptUHlhSzBuUTc2bXlnbk53TGVuZl9uM201Vlo2SHBubUVOZENZUjdNdnpfQWdhdEVqMzVyOXdFWTc4ektxNGdnQQ?oc=5",
           "primary": true,
@@ -1009,7 +1043,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:45:47Z",
       "title": "Acuerdo Mercosur-EFTA encamina nueva etapa para el comercio entre Paraguay y Suiza",
-      "summary": "Nota publicada por La Nación. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por lanacion.com.py. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1031,7 +1065,7 @@
       "feed": "Google Noticias · Mercosur",
       "sources": [
         {
-          "name": "La Nación",
+          "name": "lanacion.com.py",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQa0p5WDBvWjF2RlE2eXU4X2FRa1NKNzVmdTZDOC1TRnB4Y0ZQZjg0NDc5Q29ibkZKN1N0c3pqZVEwZGg3cXE1OGNMRFJmMjRXdUxvbDNYcEZpb2FZUDc5bkZuemVWTDFRQWFPUEhsZ2xtSDdNekxBZnE5dmNjN1ZVZktZRldsY3hZVXZXYWgyU1dQcjFCbHU3QzlEb2ptTEdFakYtczh1TXBLRllmemY1SUhmN3N6SXZmTkpfMHpwVFN1VFNNMUJlcUZUNA?oc=5",
           "primary": true,
@@ -1252,7 +1286,7 @@
       "affectsArgentina": true,
       "kind": "noticia",
       "label": "Automática",
-      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
           "name": "noticiero9.com.ar",
@@ -1311,7 +1345,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:45:47Z",
       "title": "Mercosur-UE empieza a rendir: exportaciones del agro argentino suben 21%",
-      "summary": "Nota publicada por uypress.net. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por uy press. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1336,7 +1370,7 @@
       "feed": "Google Noticias · Mercosur",
       "sources": [
         {
-          "name": "uypress.net",
+          "name": "uy press",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQb0lveFZ4cXBmaTlldWtVaFg4UGxlUXVuR3ZyOFplbk1BMlhSdk03SVF1YjFXVGdLbDdhem4tSS0wYl9XaGZ5REd1cWdiNVN4emRmZ21kTHRsSXpqa1hGdGhlQ21vb2RQZ1hMaXlSRUhYaVVuSFJUY1hoUUxQWS1rS0hJbERVSTJpSTBDNGdVb0NfcGM0LXhOVXNaMnQ5UEctdDF2ZHJxVm5KV3ZlSVVHcTNuOA?oc=5",
           "primary": true,
@@ -1889,7 +1923,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:55:47Z",
       "title": "La primera fase del Tratado de Libre Comercio entre Ucrania y Turquía ya se aplica: exención de aranceles y tipos reducidos",
-      "summary": "Nota publicada por El Economista. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por eleconomista.es. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1912,7 +1946,7 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "El Economista",
+          "name": "eleconomista.es",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxONU5qQndXZHdtMVFWQXpqWEZ0ZF9WcU1qS0RpTjVfeWF4c0FjWUNEUmxfYXlBYndzUVNZOXlOaUtXLVN4SXowVGx4cnNxajFPOEhLZEZRUWpEaml4NkhYUDN5dFF6MkxtZzdvYWhsd3VIZWFuekUtRjJEajI2QkdFYVdZMlpvZmRGNFJzcjAwNEdDVDRod1pKLWJrZ0lxN0pxNVRXV3EwZzEtQzJyZ2g4ZEtfck5zbFdZWG41SXVPSG5lM0VsYXNPYU0wcVJHOGVwd1YzcmFvU2N2elBCdFhDUWhKYXk3eWdzRlZJaWh0aUQzUVJtbUV5dzJ2OHNDWTJUYXFLcmZoZ1RoNUJneXJDcHk3MlJRaFk?oc=5",
           "primary": true,
@@ -2212,6 +2246,38 @@
       }
     },
     {
+      "id": "mercado-del-vino-en-ecuador-las-importaciones-ya-mueven-mas-de-usd-26-millones-a",
+      "datetime": "2026-10-03T01:35:03Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T04:02:33Z",
+      "title": "Mercado del vino en Ecuador: las importaciones ya mueven más de USD 26 millones al año",
+      "summary": "Nota publicada por Vistazo. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Vistazo",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGVMUVhZcldNWGR4QVh0RFQ2STlrZXVUcmwxOEktbkxLMGxBVUNSQ09IT1hjQkh5MWQxblNfNHJma25Pd3YzektqUUlBN0gwMmozLU1EdjdOY1lGU2p4U2VMNkZadVpSR2pMdXMxWDVKZWtFT0tVZy03dXB6REJJTHJKaW9qVzgyb09xRFQ0WTJKbjFrcmVDV3JnRWk2VWhWaHI0cFpKZUxJWDhWanNpejNrZEc3ekROUXfSAb8BQVVfeXFMTjZSdEZKUjI5OUJMdEVGcm5jQ3pEVTNFUEp1RVYwa0FQWXFkZVJfTFluQWsydHZweWJ6R0tNODE0OFJMTXBZdnd1MTh4NUdTbUlURlBGamJ4WjE0bE5HY05mMGtuSWdKVDdsRWFsb2RMZFdZdTBBMVQ0MUs0Uk1kNTRCN2hjUENLSzlwZXFNVjhoNXBWRU9Ia0doaEJUMGJqeWcyVkozcnZiTk5DQVVSbUI1MGNPekUyZkJTLW51YXM?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "venezuela-exportaciones-de-petroleo-caen-9-en-septiembre-ante-alza-de-costos-de",
       "datetime": "2026-10-03T00:46:07Z",
       "date": "2026-10-02",
@@ -2390,7 +2456,7 @@
       "date": "2026-10-02",
       "firstSeen": "2026-10-04T02:13:13Z",
       "title": "La Argentina y Japón acuerdan requisitos para la exportación de carne bovina al país nipón",
-      "summary": "Nota publicada por lagaceta.com.ar. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por La Gaceta. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2413,7 +2479,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "lagaceta.com.ar",
+          "name": "La Gaceta",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPem5HQlJYRFVydUtBUnZHRG9FYlNSUnRta0dHVEVMOEh4UkdmTjM1SXZxNGVPWGVLazI3ZmNKU2VhWVAxQmE0bjdyVW1SR2dmT3BCbkpGRkJNN3JPWTJ2YTdGcXZpVjJHUkp2ckRlT1g1bjZlVTl3YVg2MFlFeldVRGRWc1RiQ1JLc1p3RUpPUk45MHFPVDZGWEJoR3BheUFKNDZuclZfQlA5d2VfMGJWaVVzZDJqVVNUSTJEQ1Blc3YyVVlHT2F1V1JXTTIzWkxkVEZ0V9IB1AFBVV95cUxPem5HQlJYRFVydUtBUnZHRG9FYlNSUnRta0dHVEVMOEh4UkdmTjM1SXZxNGVPWGVLazI3ZmNKU2VhWVAxQmE0bjdyVW1SR2dmT3BCbkpGRkJNN3JPWTJ2YTdGcXZpVjJHUkp2ckRlT1g1bjZlVTl3YVg2MFlFeldVRGRWc1RiQ1JLc1p3RUpPUk45MHFPVDZGWEJoR3BheUFKNDZuclZfQlA5d2VfMGJWaVVzZDJqVVNUSTJEQ1Blc3YyVVlHT2F1V1JXTTIzWkxkVEZ0Vw?oc=5",
           "primary": true,
@@ -3037,7 +3103,7 @@
       "affectsArgentina": true,
       "kind": "noticia",
       "label": "Automática",
-      "feed": "Google Noticias · Mercosur",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
       "sources": [
         {
           "name": "Centro Despachantes de Aduana (CDA)",
@@ -3433,6 +3499,74 @@
       ]
     },
     {
+      "id": "laboratorio-argentino-logra-la-primera-exportacion-de-vacunas-a-europa",
+      "datetime": "2026-10-02T12:16:00Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T04:02:33Z",
+      "title": "Laboratorio argentino logra la primera exportación de vacunas a Europa",
+      "summary": "Nota publicada por El Litoral | Novedades de Corrientes. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "El Litoral | Novedades de Corrientes",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNenZjSEkyZGdsUW9uRzc2SmtQUWpWVHVhTEpidGlZc2s0dkk5b2ppMDlHNEE4QTBPb0N5REFyVnQ3QWdMTUZWc0VqZWQ5QmZsYVhWc1l5ZmRKc0VXMDN3RXBPV1JNdjAtOE5zeG9mTFlicXhTdkVVUlppanJ2MjFIcG5jYVdROVQyblZkVW00cGxmZkFhV0Y4YTJYcEZBT09UOFFnb3ZWLVF0OUF0cGQwLVEtTngyalJHMWhweC1NYw?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "desde-el-argentina-week-jalil-pone-fecha-a-la-exportacion-de-cobre-argentino-des",
+      "datetime": "2026-10-02T12:07:16Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T04:02:33Z",
+      "title": "Desde el Argentina Week, Jalil pone fecha a la exportación de cobre argentino desde Catamarca",
+      "summary": "Nota publicada por Editorial RN. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Minería"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Editorial RN",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcGNGajJNblROVlVvQ3VnUU40bXRjcG1xOHRSTjFQWTZuck5qWDNrOHJVdGdob0ttQUZyOUFFOHpDS1lEV1hEbmRUSXpMRWJXRmpDbElYNXk1Y0VPdXNLME9tbENpa3FYNUF0MkljejJjczhfUV9TcVExMW1PcXE0OE1OSTdkLU45d3R0TlFkV0g1Um8wdDBGS0tpRXBzcTlDQWZEU2V5VGNnMHhNV3RnRm9xcEhmYnUwNTJ3cQ?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "el-crecimiento-de-la-demanda-de-carga-aerea-en-asia-central-plantea-desafios-de",
       "datetime": "2026-10-02T11:42:21Z",
       "date": "2026-10-02",
@@ -3634,12 +3768,78 @@
       ]
     },
     {
+      "id": "el-encuentro-con-macron-que-puede-impactar-en-negocios-obra-publica-y-exportacio",
+      "datetime": "2026-10-02T10:43:09Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T04:02:33Z",
+      "title": "El encuentro con Macron que puede impactar en negocios, obra pública y exportaciones",
+      "summary": "Nota publicada por NewsDigitales. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "NewsDigitales",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUWhpT095YVBTUEFvM282dHppd2VfZGtKRnVYZ0VfMDNIY0x2eEFqVVc0Mno0bkZLUC1DYi1Nb2NodFVDTXRhS0s3WXBXWEg0a1BhMzBSUXphNi1QWXhSeXRaZHdjalB2UFFJbllXSi1NT0V3NVJnTEJ0Ni0zUWVvNlBqanp0OHcyS1doVWJUVW52SWJ1dHdLNDVxTzd0TjhUejgyczcyRDRxV0pFTkI5aWZJQXdhUTEwTVpXY3pVNDczanNl?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "neuquen-proyecta-liderar-exportaciones-provinciales-hacia-2031-por-el-impulso-de",
+      "datetime": "2026-10-02T10:16:19Z",
+      "date": "2026-10-02",
+      "firstSeen": "2026-10-04T04:02:33Z",
+      "title": "Neuquén proyecta liderar exportaciones provinciales hacia 2031 por el impulso de Vaca Muerta",
+      "summary": "Nota publicada por mercado.com.ar. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Energía"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "mercado.com.ar",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWmVUTWVDZ1AwOWxManB0VjV3QkpvWnRwc1Nlcm1KRGlvZk44d1ZPUGotdXZaQXg4ZzFNYlBtdnJHWEV0Z1RHTDZ3Vmp1X1htLUtPSXZ5em11b0Mzb0lsbXBkV3Zfb3NEcG1zR19uYXFqenpPaXFVNkJPQlg1azFmTmo4UTJ2aGF0T2NOMWpHcjV3UWhlZlBSUWxDUXhlRmNWLVotV1llWDZyaEFLbmdCWGtFTWhmNTc5M1dDcmc4WjhkYVpwNFBnWFhCSFlTSkpr?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "los-fletes-se-resisten-a-bajar",
       "datetime": "2026-10-02T10:07:55Z",
       "date": "2026-10-02",
       "firstSeen": "2026-10-04T02:13:13Z",
       "title": "Los fletes se resisten a bajar",
-      "summary": "Nota publicada por Asociación de Cargadores de España. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por ace-cargadores.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -3659,7 +3859,7 @@
       "feed": "Google Noticias · Logística y fletes",
       "sources": [
         {
-          "name": "Asociación de Cargadores de España",
+          "name": "ace-cargadores.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZlJ0bi1UaUctUWRFMzR3UFcyNU1WTG5HUEJ6R192MU9Sam4ySXlfN3RaNEROYkh0U2FDTzJMM2Jqam5KMWdJWGZLUk9McjNLc3VLbWtlYXZTMWtua0JOMVQxSkVCVFgyaTI3NTVkdnNCUjlwNzlrLXpEUnpNTUV4Rg?oc=5",
           "primary": true,
@@ -3737,7 +3937,7 @@
       "date": "2026-10-02",
       "firstSeen": "2026-10-04T02:17:50Z",
       "title": "La carga aérea mundial crece un 4,6% hasta agosto",
-      "summary": "Nota publicada por Asociación de Cargadores de España. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por ace-cargadores.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -3755,7 +3955,7 @@
       "feed": "Google Noticias · Logística y fletes",
       "sources": [
         {
-          "name": "Asociación de Cargadores de España",
+          "name": "ace-cargadores.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRE5kLW53ZzdvMmRpUzdDUl9INTRmX2Y5c1pIR0xNOHJaWklpZDZldWhDMS1kbVBUVnVXM003eERFSFJlcU0yZjZtSlZmNlREcjI0T1lCZ1hWYzRiam1ma3JKLWFXVkFwMXhVRlJRcjhiekZJS25pWVpzRjVsU296eXFsRmFtcUh3UVJBYlcxN21CWjM5?oc=5",
           "primary": true,
@@ -6160,7 +6360,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-04T02:22:11Z",
+    "ranAt": "2026-10-04T04:02:33Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -6193,45 +6393,45 @@
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 48,
+        "items": 46,
         "added": 0,
         "updated": 1,
-        "skipped": 36
+        "skipped": 35
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 40,
-        "added": 0,
-        "updated": 1,
+        "items": 41,
+        "added": 1,
+        "updated": 0,
         "skipped": 31
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 58,
+        "items": 56,
         "added": 4,
-        "updated": 2,
-        "skipped": 28
+        "updated": 5,
+        "skipped": 22
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 43,
-        "added": 3,
-        "updated": 1,
-        "skipped": 17
+        "items": 36,
+        "added": 1,
+        "updated": 2,
+        "skipped": 11
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 45,
+        "items": 43,
         "added": 0,
-        "updated": 2,
+        "updated": 1,
         "skipped": 30
       },
       {
@@ -6239,8 +6439,8 @@
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
         "items": 56,
-        "added": 3,
-        "updated": 1,
+        "added": 0,
+        "updated": 2,
         "skipped": 37
       }
     ]
