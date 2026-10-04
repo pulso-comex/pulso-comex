@@ -188,7 +188,7 @@ function hl(text, q = state.filters.q){
 const emptyFilters = () => ({ q:'', section:'', topic:'', region:'', country:'', date:'', source:'', tag:'', arg:'', flow:'', kind:'' });
 const PARAM = { q:'q', section:'seccion', topic:'categoria', region:'region', country:'pais', date:'fecha', source:'fuente', tag:'tema', arg:'argentina', flow:'operacion', kind:'tipo' };
 const state = {
-  items: [], indicators: [], updatedAt: null, checkedAt: null, live: false, loaded: false,
+  items: [], indicators: [], stories: [], updatedAt: null, checkedAt: null, live: false, loaded: false,
   filters: emptyFilters(), sort: 'relevancia', view: 'loading', articleId: null,
   listCount: CONFIG.pageSize, newIds: new Set(), firstRoute: true
 };
@@ -236,7 +236,8 @@ function normalize(raw){
     topics: (raw.topics || []).filter(t => TOPICS.includes(t)), countries: raw.countries || [], tags: raw.tags || [],
     visual: raw.visual || 'globe', impact: Math.min(3, Math.max(1, raw.impact || 1)), kind, label,
     breaking: !!raw.breaking, affectsArgentina: !!raw.affectsArgentina, argentinaNote: raw.argentinaNote || '', argentinaImpact: raw.argentinaImpact || null,
-    photo: raw.photo || null, sources: raw.sources, primary
+    photo: raw.photo || null, sources: raw.sources, primary,
+    deadlines: Array.isArray(raw.deadlines) ? raw.deadlines : [], story: raw.story || ''
   };
 }
 function normalizeIndicator(d){
@@ -248,12 +249,13 @@ function normalizeIndicator(d){
 
 async function loadFeeds(){
   const byKey = new Map(state.items.map(i => [i.primary.url, i]));
-  let indicators = state.indicators, updated = state.updatedAt, live = false;
+  let indicators = state.indicators, stories = state.stories, updated = state.updatedAt, live = false;
   for (const src of CONFIG.sources){
     try {
       const feed = await adapters[src.type](src);
       if (src.type !== 'inline') live = true;
       if (Array.isArray(feed.indicators)) indicators = feed.indicators.map(normalizeIndicator).filter(Boolean);
+      if (Array.isArray(feed.stories)) stories = feed.stories.map(normalizeStory).filter(Boolean);
       if (feed.updatedAt && (!updated || new Date(feed.updatedAt) > new Date(updated))) updated = feed.updatedAt;
       for (const raw of feed.items || []){
         const it = normalize(raw); if (!it) continue;
@@ -262,7 +264,7 @@ async function loadFeeds(){
     } catch (e) { console.warn('Fuente no disponible:', src, e); }
   }
   state.items = [...byKey.values()].sort((a,b) => itemDate(b) - itemDate(a) || score(b).total - score(a).total);
-  state.indicators = indicators; state.updatedAt = updated; state.checkedAt = new Date(); state.live = live; state.loaded = true;
+  state.indicators = indicators; state.stories = stories; state.updatedAt = updated; state.checkedAt = new Date(); state.live = live; state.loaded = true;
 }
 
 // Marca como "Nueva" lo que no estaba en la visita anterior (no aplica en la primera visita).
@@ -567,6 +569,148 @@ const tickerItem = d => {
 const emptyState = (title, text, extra = '') => `<div class="empty"><h3>${esc(title)}</h3><p>${text}</p>${extra}</div>`;
 
 /* =====================================================================
+   10b. AGENDA, TEMAS EN DESARROLLO Y GLOSARIO
+   ---------------------------------------------------------------------
+   Agenda: cada nota curada puede traer "deadlines": [{ date, label, url? }].
+     date "AAAA-MM-DD" (día exacto) o "AAAA-MM" (mes sin día confirmado).
+   Temas: "stories" en la raíz del feed ({ id, title, desc, match[] }) y "story": "<id>" en cada nota.
+     match: expresiones (sobre texto sin acentos, en minúsculas) para sumar cobertura automática del tema.
+   Glosario: siglas y términos técnicos explicados al pasar el mouse o tocar (solo en notas curadas).
+   ===================================================================== */
+const fmtMonthYear = new Intl.DateTimeFormat('es-AR', { timeZone:'UTC', month:'long', year:'numeric' });
+const fmtDLday = new Intl.DateTimeFormat('es-AR', { timeZone:'UTC', day:'numeric' });
+const fmtDLmon = new Intl.DateTimeFormat('es-AR', { timeZone:'UTC', month:'short' });
+const fmtDLshort = new Intl.DateTimeFormat('es-AR', { timeZone:'UTC', day:'numeric', month:'short', year:'numeric' });
+const fmtDLlong = new Intl.DateTimeFormat('es-AR', { timeZone:'UTC', weekday:'long', day:'numeric', month:'long', year:'numeric' });
+const DAY_MS = 86400000;
+
+function deadlineInfo(d){
+  const m = /^(\d{4})-(\d{2})(?:-(\d{2}))?$/.exec(String(d?.date || ''));
+  if (!m || !d.label) return null;
+  const y = +m[1], mo = +m[2], day = m[3] ? +m[3] : 0;
+  const start = Date.UTC(y, mo - 1, day || 1);
+  const end = day ? start : Date.UTC(y, mo, 0);           // último día del mes
+  const today = ymdToUTC(todayYMD());
+  return { date: d.date, label: d.label, url: d.url || '', start, end, monthOnly: !day,
+    days: Math.round((start - today) / DAY_MS), past: end < today, thisMonth: !day && start <= today && end >= today };
+}
+function deadlineList(items = state.items){
+  return items.flatMap(it => (it.deadlines || []).map(d => { const x = deadlineInfo(d); return x ? { ...x, it } : null; }).filter(Boolean))
+    .sort((a, b) => a.start - b.start || a.label.localeCompare(b.label, 'es'));
+}
+const upcomingDeadlines = () => deadlineList().filter(d => !d.past);
+function whenText(d){
+  if (d.monthOnly) return d.past ? 'Mes cumplido' : d.thisMonth ? 'Este mes, día a confirmar' : 'Día a confirmar';
+  if (d.past) return d.days === -1 ? 'Fue ayer' : `Hace ${-d.days} días`;
+  if (d.days === 0) return 'Hoy';
+  if (d.days === 1) return 'Mañana';
+  if (d.days <= 45) return `En ${d.days} días`;
+  return `En ${Math.round(d.days / 30)} meses`;
+}
+const dateLong = d => d.monthOnly ? cap(fmtMonthYear.format(new Date(d.start))) : cap(fmtDLlong.format(new Date(d.start)));
+const dateBadge = d => d.monthOnly
+  ? `<span class="dl-date month" aria-hidden="true"><b>${esc(fmtDLmon.format(new Date(d.start)).replace('.', ''))}</b><span>${new Date(d.start).getUTCFullYear()}</span></span>`
+  : `<span class="dl-date" aria-hidden="true"><b>${esc(fmtDLday.format(new Date(d.start)))}</b><span>${esc(fmtDLmon.format(new Date(d.start)).replace('.', ''))}</span></span>`;
+function deadlineRow(d, { link = true } = {}){
+  const soon = !d.past && !d.monthOnly && d.days <= 7;
+  return `<li class="dl-row${soon ? ' soon' : ''}${d.past ? ' past' : ''}">${dateBadge(d)}<div class="dl-body">
+    <p class="dl-label">${esc(d.label)}</p>
+    <span class="dl-meta"><span class="sr">${esc(dateLong(d))}. </span><b>${esc(whenText(d))}</b>${link ? ` · <a href="${esc(articleHref(d.it))}">Ver la nota</a>` : ''}${d.url ? ` · <a href="${esc(d.url)}" target="_blank" rel="noopener noreferrer">Fuente de la fecha</a>` : ''}</span>
+  </div></li>`;
+}
+const deadlineListHtml = (list, opts) => `<ul class="dl-list">${list.map(d => deadlineRow(d, opts)).join('')}</ul>`;
+
+function normalizeStory(s){
+  if (!s || !s.id || !s.title) return null;
+  const match = (s.match || []).map(r => { try { return new RegExp(r, 'i'); } catch (e) { return null; } }).filter(Boolean);
+  return { id: String(s.id), title: s.title, desc: s.desc || '', match };
+}
+const storyById = id => state.stories.find(s => s.id === id);
+const storyHref = s => '#hilo-' + s.id;
+const storyItems = id => byDate(state.items.filter(i => i.story === id));
+function storyCoverage(s, own){
+  // Notas automáticas recientes sobre el mismo tema (sin revisión editorial): se listan aparte.
+  if (!s.match.length || !own.length) return [];
+  const from = Math.min(...own.map(i => +itemDate(i))) - 3 * DAY_MS;
+  return byDate(state.items.filter(i => i.label === 'Automática' && !i.story && +itemDate(i) >= from
+    && s.match.some(r => r.test(norm(i.title + ' ' + i.summary)))));
+}
+const activeStories = () => state.stories.map(s => ({ s, list: storyItems(s.id) }))
+  .filter(x => x.list.length >= 2).sort((a, b) => itemDate(b.list[0]) - itemDate(a.list[0]));
+
+function storyBox(it){
+  const s = storyById(it.story); if (!s) return '';
+  const list = storyItems(s.id); if (list.length < 2) return '';
+  return `<section class="story-box" aria-labelledby="h-story">
+    <span class="eyebrow">Tema en desarrollo</span>
+    <h2 class="panel-h" id="h-story">${esc(s.title)}</h2>
+    <ol class="timeline">${list.map(o => `<li${o.id === it.id ? ' class="cur" aria-current="true"' : ''}><time datetime="${esc(o.datetime || o.date)}">${esc(shortDate(itemDate(o)))}</time>${o.id === it.id
+      ? `<span>${esc(o.title)} <em>· esta nota</em></span>` : `<a href="${esc(articleHref(o))}">${esc(o.title)}</a>`}</li>`).join('')}</ol>
+    <a class="foot-link" href="${esc(storyHref(s))}">Ver el tema completo →</a>
+  </section>`;
+}
+
+const GLOSSARY = [
+  ['ACTK', 'ACTK', 'Toneladas-kilómetro de carga disponibles: mide la capacidad de carga aérea que ofrecen las aerolíneas.'],
+  ['Antidumping', '[Aa]ntidumping', 'Derecho adicional que se cobra a un producto importado a un precio menor que el de su mercado de origen, cuando eso daña a la industria local.'],
+  ['ARCA', 'ARCA', 'Agencia de Recaudación y Control Aduanero. Organismo argentino que recauda impuestos y controla la Aduana; reemplazó a la AFIP en 2024.'],
+  ['CIARA-CEC', 'CIARA-CEC', 'Cámara de la Industria Aceitera y Centro de Exportadores de Cereales de la Argentina. Informan cada mes los dólares que liquidan sus empresas.'],
+  ['CIF', 'CIF', 'Cost, insurance and freight: Incoterm en el que el vendedor paga el flete y el seguro hasta el puerto de destino.'],
+  ['Contingente arancelario', '[Cc]ontingentes? arancelarios?|[Cc]uotas? arancelarias?', 'Cantidad de un producto que puede ingresar con un arancel reducido o nulo; lo que excede ese volumen paga el arancel general.'],
+  ['CTK', 'CTK', 'Toneladas-kilómetro de carga: medida de la demanda de carga aérea que multiplica las toneladas transportadas por los kilómetros recorridos.'],
+  ['Depositario fiel', '[Dd]epositarios? fiel(?:es)?', 'Régimen por el que el importador o exportador guarda la documentación original de sus operaciones aduaneras y debe presentarla cuando la Aduana la pida.'],
+  ['Derechos de exportación', '[Dd]erechos de exportación', 'Tributo que se cobra sobre las exportaciones; en la Argentina también se los llama retenciones.'],
+  ['Despachante de aduana', '[Dd]espachantes? de aduana', 'Profesional que tramita ante la Aduana las importaciones y exportaciones en nombre de terceros.'],
+  ['EUR.1', 'EUR\\.1', 'Certificado de circulación que acredita el origen preferencial de una mercadería para acceder a aranceles reducidos en acuerdos comerciales con la UE y otros socios.'],
+  ['FEU', 'FEU', 'Unidad equivalente a un contenedor de 40 pies (dos TEU). Los índices de flete marítimo suelen cotizar por FEU.'],
+  ['FOB', 'FOB', 'Free on board («libre a bordo»): Incoterm en el que el vendedor entrega la mercadería cargada en el buque. El valor FOB no incluye el flete ni el seguro internacional.'],
+  ['Fusión y colada', '[Ff]usión y colada', 'Lugar donde el acero se produjo en estado líquido y se solidificó por primera vez. La UE lo usa para determinar el origen del acero importado.'],
+  ['IACI', 'IACI', 'Intra-Asia Container Index de Drewry: índice semanal de fletes de contenedores dentro de Asia.'],
+  ['IATA', 'IATA', 'Asociación de Transporte Aéreo Internacional: agrupa a las aerolíneas y publica estadísticas de pasajeros y carga.'],
+  ['Incoterms', 'Incoterms?', 'Reglas de la Cámara de Comercio Internacional que definen qué costos y riesgos asumen el vendedor y el comprador en una operación internacional (por ejemplo, FOB o CIF).'],
+  ['INDEC', 'INDEC', 'Instituto Nacional de Estadística y Censos de la Argentina. Publica cada mes el intercambio comercial argentino (ICA).'],
+  ['JMIC', 'JMIC', 'Centro Conjunto de Información Marítima: evalúa el nivel de amenaza para los buques comerciales en Medio Oriente.'],
+  ['Liquidación de divisas', '[Ll]iquidación de divisas', 'Venta en el mercado de cambios de los dólares que cobran los exportadores por sus ventas al exterior.'],
+  ['MDIC', 'MDIC', 'Ministerio de Desarrollo, Industria, Comercio y Servicios de Brasil, que publica la balanza comercial brasileña.'],
+  ['Nación más favorecida', '[Nn]ación más favorecida', 'Principio de la OMC por el que una ventaja arancelaria concedida a un país debe extenderse a todos los miembros.'],
+  ['NC', 'NC(?= \\d)', 'Nomenclatura Combinada: código de clasificación de mercaderías de la Unión Europea, de ocho dígitos, basado en el Sistema Armonizado.'],
+  ['NCM', 'NCM', 'Nomenclatura Común del Mercosur: código de ocho dígitos, basado en el Sistema Armonizado, con el que se clasifican las mercaderías en el bloque.'],
+  ['OEA', 'OEA', 'Operador Económico Autorizado: certificación que la Aduana otorga a empresas confiables, con beneficios como menos controles y despachos más rápidos.'],
+  ['OMA', 'OMA', 'Organización Mundial de Aduanas: fija estándares internacionales, como el Sistema Armonizado.'],
+  ['OMC', 'OMC', 'Organización Mundial del Comercio: administra las reglas del comercio internacional entre sus miembros.'],
+  ['Percepción', '[Pp]ercepci(?:ón|ones)', 'Pago a cuenta de un impuesto que se cobra al importar; después se descuenta del impuesto que corresponde pagar.'],
+  ['Precios de transferencia', '[Pp]recios de transferencia', 'Precios de las operaciones entre empresas vinculadas; el fisco controla que sean iguales a los que pactarían partes independientes.'],
+  ['RG', 'RG(?= \\d)', 'Resolución General: norma con la que ARCA reglamenta impuestos y trámites aduaneros.'],
+  ['RIGI', 'RIGI', 'Régimen de Incentivo para Grandes Inversiones de la Argentina, con beneficios impositivos, aduaneros y cambiarios para proyectos grandes.'],
+  ['Salvaguardia', '[Ss]alvaguardias?', 'Medida temporal, como un arancel o un cupo, que un país aplica para proteger a su industria ante un aumento brusco de importaciones que le causa un perjuicio grave.'],
+  ['Sección 301', '[Ss]ección 301', 'Norma de la Ley de Comercio de EE.UU. de 1974 que permite aplicar represalias, como aranceles, ante prácticas comerciales extranjeras consideradas injustas.'],
+  ['Semana Dorada', '[Ss]emana [Dd]orada', 'Feriado nacional de China de la primera semana de octubre: muchas fábricas cierran y bajan los embarques.'],
+  ['Sistema Armonizado', '[Ss]istema [Aa]rmonizado', 'Nomenclatura internacional de la OMA que clasifica las mercaderías con códigos de seis dígitos; es la base de los aranceles de casi todos los países.'],
+  ['Sistema Informático Malvina', '[Ss]istema [Ii]nformático Malvina', 'Sistema con el que la Aduana argentina registra y gestiona las destinaciones de importación y exportación.'],
+  ['Spot', 'spot', 'Tarifa para un embarque inmediato, sin contrato de largo plazo; refleja el precio de mercado del momento.'],
+  ['T-MEC', 'T-MEC', 'Tratado comercial entre México, Estados Unidos y Canadá (USMCA en inglés), que reemplazó al TLCAN en 2020.'],
+  ['TEU', 'TEU', 'Unidad equivalente a un contenedor de 20 pies. Se usa para medir la capacidad de los buques y el movimiento de los puertos.'],
+  ['TJUE', 'TJUE', 'Tribunal de Justicia de la Unión Europea.'],
+  ['TLC', 'TLC', 'Tratado de libre comercio: acuerdo entre países para eliminar o reducir aranceles y otras barreras entre ellos.'],
+  ['UKMTO', 'UKMTO', 'Operaciones de Comercio Marítimo del Reino Unido: centro de la Marina Real británica que recibe y difunde reportes de incidentes contra buques en Medio Oriente y el océano Índico.'],
+  ['USTR', 'USTR', 'Oficina del Representante Comercial de EE.UU.: negocia acuerdos y administra medidas como la Sección 301.'],
+  ['VLCC', 'VLCC', 'Very large crude carrier: superpetrolero que transporta alrededor de 2 millones de barriles de crudo.'],
+  ['VUCEA', 'VUCEA', 'Ventanilla Única de Comercio Exterior Argentino: plataforma para tramitar en un solo lugar los permisos y certificados de importación y exportación.'],
+  ['WCI', 'WCI', 'World Container Index de Drewry: índice semanal del flete spot de un contenedor de 40 pies en ocho rutas principales.'],
+].map(([term, pat, def]) => ({ term, def, rx: new RegExp('^(?:' + pat + ')$', 'u'), pat }));
+const GLOSS_RX = new RegExp('(?<![\\p{L}\\p{N}])(?:' + [...GLOSSARY].sort((a, b) => b.pat.length - a.pat.length).map(g => g.pat).join('|') + ')(?![\\p{L}\\p{N}])', 'gu');
+const glossEntry = term => GLOSSARY.find(g => g.term === term);
+// Recibe texto ya escapado; marca la primera aparición de cada término en la nota.
+function gloss(html, used){
+  return html.replace(GLOSS_RX, m => {
+    const g = GLOSSARY.find(x => x.rx.test(m));
+    if (!g || used.has(g.term)) return m;
+    used.add(g.term);
+    return `<abbr class="gl" tabindex="0" role="button" title="${esc(g.def)}" data-gl="${esc(g.term)}">${m}</abbr>`;
+  });
+}
+
+/* =====================================================================
    11. VISTAS
    ===================================================================== */
 function renderHome(){
@@ -585,6 +729,8 @@ function renderHome(){
   const latest = items.slice(0, state.listCount);
   const sc = score(hero);
   const forYou = prefs.topics.length ? items.filter(i => i.topics.some(t => prefs.topics.includes(t))).slice(0, 4) : [];
+  const nextDates = upcomingDeadlines().slice(0, 5);
+  const stories = activeStories().slice(0, 6);
 
   $('#main').innerHTML = `
   <section class="sec top" aria-labelledby="h-hero">
@@ -625,10 +771,26 @@ function renderHome(){
     <p class="ind-note">Últimos datos publicados por cada fuente. Cada valor enlaza a su publicación original.</p>
   </section>
 
+  ${nextDates.length ? `<section class="sec" aria-labelledby="h-agenda">
+    <div class="sec-h"><h2 id="h-agenda">Próximas fechas</h2><a class="more-link" href="#agenda">Agenda completa →</a></div>
+    <div class="agenda-home">${deadlineListHtml(nextDates)}</div>
+  </section>` : ''}
+
   <section class="sec" aria-labelledby="h-dest">
     <div class="sec-h"><h2 id="h-dest">Noticias destacadas</h2><p>Ordenadas por relevancia editorial</p></div>
     <div class="cards">${featured.map(card).join('')}</div>
   </section>
+
+  ${stories.length ? `<section class="sec" aria-labelledby="h-stories">
+    <div class="sec-h"><h2 id="h-stories">Temas en desarrollo</h2><p>Notas agrupadas por tema</p></div>
+    <div class="stories">${stories.map(({ s, list }) => `<article class="story-card">
+      <span class="eyebrow">${plural(list.length, 'nota')} · última ${esc(agoText(itemDate(list[0])))}</span>
+      <h3><a href="${esc(storyHref(s))}">${esc(s.title)}</a></h3>
+      <p>${esc(s.desc)}</p>
+      <ol>${list.slice(0, 2).map(o => `<li><time datetime="${esc(o.datetime || o.date)}">${esc(fmtDM.format(itemDate(o)).replace('.', ''))}</time><a href="${esc(articleHref(o))}">${esc(o.title)}</a></li>`).join('')}</ol>
+      <a class="foot-link" href="${esc(storyHref(s))}">Seguir el tema →</a>
+    </article>`).join('')}</div>
+  </section>` : ''}
 
   <section class="sec" aria-labelledby="h-ar">
     <div class="ar-block">
@@ -764,6 +926,8 @@ function impactBlock(it){
   </section>`;
 }
 function renderArticle(it){
+  const used = new Set(), gl = txt => it.label === 'Automática' ? esc(txt) : gloss(esc(txt), used);
+  const dls = deadlineList([it]);
   const words = (it.title + ' ' + it.summary + ' ' + it.body.join(' ')).split(/\s+/).length;
   const mins = Math.max(1, Math.round(words / 200));
   const saved = store.get('comex.saved', []).includes(it.id);
@@ -790,8 +954,11 @@ function renderArticle(it){
     <div class="art article-media">${media(it, 1200, { eager:true })}</div>
     <p class="credit" id="photoCredit">${photoCredit(photoFor(it))}</p>
     ${impactBlock(it)}
-    <div class="prose" itemprop="articleBody">${it.body.length ? it.body.map(p => `<p>${esc(p)}</p>`).join('') : `<p>${esc(it.summary)}</p>`}</div>
-    ${it.keyData.length ? `<section class="keydata" aria-labelledby="h-key"><h2 class="panel-h" id="h-key">Datos clave</h2><table>${it.keyData.map(([k,v]) => `<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join('')}</table></section>` : ''}
+    <div class="prose" itemprop="articleBody">${it.body.length ? it.body.map(p => `<p>${gl(p)}</p>`).join('') : `<p>${gl(it.summary)}</p>`}</div>
+    ${it.keyData.length ? `<section class="keydata" aria-labelledby="h-key"><h2 class="panel-h" id="h-key">Datos clave</h2><table>${it.keyData.map(([k,v]) => `<tr><td>${gl(k)}</td><td>${gl(v)}</td></tr>`).join('')}</table></section>` : ''}
+    ${dls.length ? `<section class="keydata dl-box" aria-labelledby="h-dl"><h2 class="panel-h" id="h-dl">Fechas clave</h2>${deadlineListHtml(dls, { link:false })}<a class="foot-link" href="#agenda">Ver la agenda completa →</a></section>` : ''}
+    ${storyBox(it)}
+    ${used.size ? `<p class="note gl-note">Las palabras subrayadas con puntos tienen una explicación: pasá el mouse o tocalas. <a href="#glosario">Ver el glosario</a>.</p>` : ''}
     <div class="actions">
       <a class="btn primary" href="${esc(it.primary.url)}" target="_blank" rel="noopener noreferrer">${I.ext}Leer el original en ${esc(it.primary.name)}</a>
       <button class="btn${saved?' saved':''}" type="button" id="saveBtn" aria-pressed="${saved}">${I.save}<span>${saved ? 'Guardada' : 'Guardar noticia'}</span></button>
@@ -824,6 +991,45 @@ function renderArticle(it){
       contentLocation: it.countries.map(c => ({ '@type':'Place', name:c })) } });
 }
 
+function renderAgenda(){
+  const all = deadlineList(), today = ymdToUTC(todayYMD());
+  const up = all.filter(d => !d.past);
+  const recent = all.filter(d => d.past && today - d.end <= 45 * DAY_MS).reverse();
+  const months = new Map();
+  up.forEach(d => { const k = d.date.slice(0, 7); months.has(k) || months.set(k, []); months.get(k).push(d); });
+  $('#main').innerHTML = `<article class="article doc">
+    <a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>
+    <h1>Agenda de comercio exterior</h1>
+    <p class="lede">Vencimientos, entradas en vigor y publicaciones de datos que surgen de las noticias del sitio. Cada fecha enlaza a la nota donde se explica y a su fuente.</p>
+    ${up.length ? [...months].map(([k, list]) => `<h2>${esc(cap(fmtMonthYear.format(new Date(list[0].start))))}</h2>${deadlineListHtml(list)}`).join('')
+      : emptyState('No hay fechas próximas cargadas', 'Cuando una nota anuncie un vencimiento o una entrada en vigor, va a aparecer acá.')}
+    ${recent.length ? `<h2>Fechas recientes</h2>${deadlineListHtml(recent)}` : ''}
+    <p class="note" style="margin-top:20px">Las fechas provienen de las fuentes citadas en cada nota. Cuando la fuente informa solo el mes, se indica «día a confirmar». Si una fecha cambia, se corrige en la nota correspondiente.</p>
+  </article>`;
+  setSEO({ title:`Agenda de comercio exterior · ${CONFIG.siteName}`, desc:'Próximos vencimientos, entradas en vigor de normas y publicaciones de datos de comercio exterior, con su fuente.', crumbs:[['Noticias','#inicio'],['Agenda']] });
+}
+function renderStory(s){
+  const list = storyItems(s.id);
+  if (!list.length){ renderNotFound(); return; }
+  const more = storyCoverage(s, list).slice(0, 10);
+  const dls = deadlineList(list).filter(d => !d.past);
+  $('#main').innerHTML = `<div class="sec-intro"><div style="min-width:0"><span class="eyebrow">Tema en desarrollo</span><h2>${esc(s.title)}</h2><p>${esc(s.desc)}</p></div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="rcount"><b>${list.length}</b> ${list.length === 1 ? 'nota' : 'notas'}</span><span class="note">Última nota ${esc(agoText(itemDate(list[0])))}</span></div></div>
+    ${dls.length ? `<section class="sec" aria-labelledby="h-sdl"><div class="sec-h"><h2 id="h-sdl">Próximas fechas del tema</h2></div>${deadlineListHtml(dls)}</section>` : ''}
+    <section class="sec" aria-labelledby="h-snotes"><div class="sec-h"><h2 id="h-snotes">Cronología</h2><p>De la más reciente a la más antigua</p></div>${chronoList(list)}</section>
+    ${more.length ? `<section class="sec" aria-labelledby="h-smore"><div class="sec-h"><h2 id="h-smore">Más cobertura del tema</h2><p>Notas automáticas de las fuentes, sin revisión editorial</p></div>${chronoList(more)}</section>` : ''}`;
+  setSEO({ title:`${s.title} · ${CONFIG.siteName}`, desc: s.desc, crumbs:[['Noticias','#inicio'],[s.title]] });
+}
+function renderGlosario(){
+  const list = [...GLOSSARY].sort((a, b) => a.term.localeCompare(b.term, 'es', { sensitivity:'base' }));
+  $('#main').innerHTML = `<article class="article doc">
+    <a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>
+    <h1>Glosario de comercio exterior</h1>
+    <p class="lede">Siglas y términos técnicos que aparecen en las noticias. Dentro de cada nota, la primera vez que aparecen se marcan con un subrayado de puntos: pasá el mouse o tocalos para ver la explicación.</p>
+    <dl class="gloss-list">${list.map(g => `<div id="gl-${esc(slug(g.term))}"><dt>${esc(g.term)}</dt><dd>${esc(g.def)}</dd></div>`).join('')}</dl>
+  </article>`;
+  setSEO({ title:`Glosario de comercio exterior · ${CONFIG.siteName}`, desc:'Qué significan FOB, TEU, OEA, salvaguardia, Sección 301 y otras siglas y términos del comercio exterior.', crumbs:[['Noticias','#inicio'],['Glosario']] });
+}
 function renderDatos(){
   const groups = {}; state.indicators.forEach(d => (groups[d.group] ||= []).push(d));
   $('#main').innerHTML = `<article class="article doc">
@@ -1089,6 +1295,10 @@ function renderAside(){
   if (view !== 'home') boxes.push(`<section class="box"><h2>Indicadores <small>últimos datos</small></h2>
     <div class="ind-mini">${state.indicators.filter(d => d.value).slice(0,6).map(d => `<a href="${esc(d.url)}" target="_blank" rel="noopener noreferrer"><span class="l">${esc(d.label)}</span><span class="v">${esc(d.value)}</span><span class="p">${esc(d.period)} · ${esc(d.source)}</span><span class="c ${d.trend==='up'?'up':d.trend==='down'?'down':'flat'}">${d.trend==='up'?'▲':d.trend==='down'?'▼':''} ${esc(d.change)}</span></a>`).join('')}</div>
     <a class="foot-link" href="#datos">Ver todos los indicadores →</a></section>`);
+  const nextDates = upcomingDeadlines().slice(0, 4);
+  if (view !== 'home' && view !== 'agenda' && nextDates.length) boxes.push(`<section class="box"><h2>Próximas fechas <small>agenda</small></h2>
+    <ol class="mini">${nextDates.map(d => `<li><a href="${esc(articleHref(d.it))}">${esc(d.label)}</a><span class="sub">${esc(d.monthOnly ? cap(fmtMonthYear.format(new Date(d.start))) : fmtDLshort.format(new Date(d.start)).replace('.', ''))} · ${esc(whenText(d))}</span></li>`).join('')}</ol>
+    <a class="foot-link" href="#agenda">Ver la agenda →</a></section>`);
   if (view !== 'home') boxes.push(`<section class="box"><h2>Más recientes <small>${items.length} en archivo</small></h2>
     <ol class="mini">${items.slice(0,5).map(it => `<li><a href="${esc(articleHref(it))}">${esc(it.title)}</a><span class="sub" data-rel="${esc(it.id)}">${esc(relTime(it))}</span></li>`).join('')}</ol></section>`);
   boxes.push(`<section class="box"><h2>Temas en tendencia <small>últimos 14 días</small></h2>
@@ -1205,6 +1415,9 @@ function render(){
   else if (v === 'fuentes') renderFuentes();
   else if (v === 'guardadas') renderGuardadas();
   else if (v === 'calculadora') renderCalculadora();
+  else if (v === 'agenda') renderAgenda();
+  else if (v === 'glosario') renderGlosario();
+  else if (v === 'story'){ const st = storyById(state.storyId); st ? renderStory(st) : renderNotFound(); }
   else if (PAGES[v]) renderPage(v);
   else if (v === 'notfound') renderNotFound();
   else renderHome();
@@ -1270,7 +1483,8 @@ function route(){
     state.filters = f; state.sort = params.get('orden') === 'fecha' ? 'fecha' : 'relevancia';
     state.view = viewFor(f);
   }
-  else if (['datos','fuentes','guardadas','calculadora'].includes(path) || PAGES[path]) state.view = path;
+  else if (['datos','fuentes','guardadas','calculadora','agenda','glosario'].includes(path) || PAGES[path]) state.view = path;
+  else if (path.startsWith('hilo-') && storyById(path.slice(5))){ state.view = 'story'; state.storyId = path.slice(5); }
   else if (state.items.some(i => i.id === path)){ state.view = 'article'; state.articleId = path; countRead(path); }
   else state.view = 'notfound';
   render();
@@ -1395,6 +1609,8 @@ document.addEventListener('click', e => {
   const a = e.target.closest('a[href^="#"]');
   if (a && a.getAttribute('href') === location.hash){ e.preventDefault(); route(); return; }
   if (a && a.getAttribute('href') === '#main'){ e.preventDefault(); $('#main').focus(); return; }
+  const g = e.target.closest('[data-gl]');
+  if (g) return showGloss(g);
   const t = e.target.closest('[data-topic],[data-tag],[data-country],[data-region],[data-source],[data-section],[data-clear],[data-q],[data-preset],[data-size],[data-copy],[data-open-prefs],#loadMore');
   if (!t) return;
   const d = t.dataset;
@@ -1410,7 +1626,7 @@ document.addEventListener('click', e => {
   }
   if (d.section) return go('#tema-' + d.section);
   if (d.q) return go(filterHash({ q: d.q, arg: d.arg || '' }));
-  const base = ['article','datos','fuentes','guardadas','notfound'].includes(state.view) || PAGES[state.view] ? emptyFilters() : state.filters;
+  const base = ['article','datos','fuentes','guardadas','notfound','agenda','glosario','story'].includes(state.view) || PAGES[state.view] ? emptyFilters() : state.filters;
   if (d.tag) return go(filterHash({ ...base, tag: d.tag }));
   if (d.country) return go(filterHash({ ...base, country: d.country }));
   if (d.region) return go(filterHash({ ...base, region: d.region }));
@@ -1448,7 +1664,12 @@ addEventListener('scroll', () => { if (ticking) return; ticking = true; requestA
 addEventListener('hashchange', route);
 addEventListener('popstate', route);
 addEventListener('resize', setMastVar);
+function showGloss(el){
+  const g = glossEntry(el.dataset.gl);
+  if (g) toast(`${g.term}: ${g.def}`, { label:'Glosario', run: () => go('#glosario') });
+}
 addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.closest?.('[data-gl]')){ e.preventDefault(); showGloss(e.target.closest('[data-gl]')); return; }
   if (e.key === 'Escape'){
     if ($('#nav').classList.contains('open')){ closeMenus(); $('#menuBtn').focus(); }
     if ($('#mast').classList.contains('search-open')){ $('#mast').classList.remove('search-open'); $('#searchJump').setAttribute('aria-expanded','false'); setMastVar(); }

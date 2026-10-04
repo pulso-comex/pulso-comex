@@ -234,7 +234,7 @@ def prerender_article(it, img, img_alt, source_img):
 
 
 def feed_payload(news, items):
-    return {k: news.get(k) for k in ('schemaVersion', 'feedId', 'updatedAt', 'timezone', 'editorialNote', 'indicators') if k in news} | {'items': items}
+    return {k: news.get(k) for k in ('schemaVersion', 'feedId', 'updatedAt', 'timezone', 'editorialNote', 'indicators', 'stories') if k in news} | {'items': items}
 
 
 def render(template, *, meta, prerender, feed, bank, version, base=''):

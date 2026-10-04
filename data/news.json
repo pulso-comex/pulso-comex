@@ -3787,7 +3787,8 @@
           "type": "Medio especializado",
           "url": "https://shipandbunker.com/news/world/714603-ukmto-reports-new-ship-attack-in-strait-of-hormuz"
         }
-      ]
+      ],
+      "story": "ormuz"
     },
     {
       "id": "el-alza-de-aranceles-fortalece-el-contrabando-la-alerta-de-la-asociacion-andina",
@@ -4449,6 +4450,12 @@
           "type": "Medio de comunicación",
           "url": "https://www.abc.com.py/internacionales/2026/10/02/mexico-frena-nuevos-controles-a-importes-de-azucar-tras-dispararse-un-1542-su-entrada/"
         }
+      ],
+      "deadlines": [
+        {
+          "date": "2026-11-02",
+          "label": "México: empieza a exigirse el permiso previo para importar preparaciones con azúcar (fracción 2106.90.99)"
+        }
       ]
     },
     {
@@ -4800,7 +4807,8 @@
           "url": "https://gcaptain.com/another-tanker-hit-in-strait-of-hormuz-as-attacks-continue/",
           "author": "Mike Schuler"
         }
-      ]
+      ],
+      "story": "ormuz"
     },
     {
       "id": "propuesta-para-reducir-los-peajes-en-la-autopista-hanoi-hai-phong-con-el-fin-de",
@@ -6218,7 +6226,8 @@
           "type": "Medio de comunicación",
           "url": "https://theindianeye.com/2026/10/02/india-us-trade-deal-nears-final-phase-ustr-greer/"
         }
-      ]
+      ],
+      "story": "g20-milwaukee"
     },
     {
       "id": "xeneta-fletes-transpacifico-pico-golden-week",
@@ -6287,7 +6296,8 @@
           "url": "https://theloadstar.com/transpac-spot-rate-climb-takes-a-holiday-as-golden-week-arrives",
           "author": "Gavin van Marle"
         }
-      ]
+      ],
+      "story": "fletes-contenedores"
     },
     {
       "id": "biodiesel-argentino-la-ue-frena-una-medida-que-ponia-en-jaque-las-exportaciones",
@@ -6387,7 +6397,14 @@
           "author": "Brad Ryan",
           "primary": true
         }
-      ]
+      ],
+      "deadlines": [
+        {
+          "date": "2026-11",
+          "label": "EE.UU.: decisión preliminar de la investigación sobre importaciones de cordero"
+        }
+      ],
+      "story": "g20-milwaukee"
     },
     {
       "id": "uruguay-exportaciones-septiembre-2026-ue-61",
@@ -6461,7 +6478,8 @@
       ],
       "absorbs": [
         "exportaciones-crecieron-10-interanual-en-setiembre-y-a-la-union-europea-aumentar"
-      ]
+      ],
+      "story": "ue-mercosur"
     },
     {
       "id": "las-exportaciones-agroindustriales-argentinas-a-europa-crecieron-21-entre-mayo-y",
@@ -6568,7 +6586,18 @@
           "author": "Òscar Mateu",
           "primary": true
         }
-      ]
+      ],
+      "deadlines": [
+        {
+          "date": "2026-10-17",
+          "label": "El servicio FE1 de la Premier Alliance vuelve a pasar por el canal de Suez"
+        },
+        {
+          "date": "2026-10-19",
+          "label": "MSC aplica recargos por piratería (US$ 55/TEU) y por Suez (US$ 36/TEU); ONE retoma Suez con el servicio IOX"
+        }
+      ],
+      "story": "fletes-contenedores"
     },
     {
       "id": "agro-liquido-3228-millones-septiembre-2026",
@@ -6766,6 +6795,12 @@
           "type": "Medio de comunicación",
           "url": "https://www.hurriyetdailynews.com/turkiye-ukraine-free-trade-agreement-takes-effect-227621"
         }
+      ],
+      "deadlines": [
+        {
+          "date": "2027-01-01",
+          "label": "Ucrania empieza a aplicar las preferencias del TLC a los productos turcos"
+        }
       ]
     },
     {
@@ -6872,7 +6907,8 @@
       ],
       "absorbs": [
         "las-tasas-de-transporte-maritimo-de-contenedores-descienden-un-1-por-la-caida-de"
-      ]
+      ],
+      "story": "fletes-contenedores"
     },
     {
       "id": "drewry-iaci-record-intra-asia",
@@ -6934,7 +6970,8 @@
           "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/intra-asia-container-index",
           "primary": true
         }
-      ]
+      ],
+      "story": "fletes-contenedores"
     },
     {
       "id": "ue-acero-pais-fusion-colada",
@@ -6999,6 +7036,12 @@
           "name": "Taric",
           "type": "Medio especializado",
           "url": "https://www.taric.es/noticias/2026-07-03-noticia-salvaguardia-acero-ue/"
+        }
+      ],
+      "deadlines": [
+        {
+          "date": "2027-10",
+          "label": "UE: la Comisión empieza a usar el país de fusión y colada para repartir los contingentes de acero"
         }
       ]
     },
@@ -7121,7 +7164,8 @@
           "type": "Medio especializado",
           "url": "https://zonos.com/es/docs/guides/us-tariff-changes"
         }
-      ]
+      ],
+      "story": "aranceles-eeuu"
     },
     {
       "id": "decreto-1128-tope-fob-autos-electricos-hibridos",
@@ -7352,7 +7396,8 @@
           "type": "Medio de comunicación",
           "url": "https://www.dgabc.com.br/Noticia/4349968/eua-devem-enviar-proposta-para-avancar-em-questao-tarifaria-e-nao-tarifaria-dizem-mre-e-mdic"
         }
-      ]
+      ],
+      "story": "g20-milwaukee"
     },
     {
       "id": "arca-rg-5903-precios-transferencia-intermediarios",
@@ -7431,7 +7476,8 @@
           "type": "Medio de comunicación",
           "url": "https://urgente24.com/dinero/arca-cambia-las-reglas-del-comercio-exterior-y-pone-la-lupa-los-intermediarios-n633905"
         }
-      ]
+      ],
+      "story": "arca-normativa"
     },
     {
       "id": "seguridad-y-fronteras-el-mercosur-impulsa-una-mayor-cooperacion-regional",
@@ -7563,7 +7609,8 @@
           "logistica": false,
           "aranceles": true
         }
-      }
+      },
+      "story": "ue-mercosur"
     },
     {
       "id": "iata-carga-aerea-agosto-2026",
@@ -7690,7 +7737,8 @@
           "type": "Medio de comunicación",
           "url": "https://cnnespanol.cnn.com/2026/08/25/eeuu/canada-represalias-economia-trax"
         }
-      ]
+      ],
+      "story": "aranceles-eeuu"
     },
     {
       "id": "ricardo-trevino-chapa-dejara-la-secretaria-general-adjunta-de-la-oma-el-31-de-oc",
@@ -7831,7 +7879,14 @@
           "type": "Medio de comunicación",
           "url": "https://www.cronista.com/internacionales/china-y-estados-unidos-acordaron-reducir-aranceles-a-productos-importados-por-us-60000-millones/"
         }
-      ]
+      ],
+      "deadlines": [
+        {
+          "date": "2027-01-10",
+          "label": "Vence la tregua de escalada arancelaria entre EE.UU. y China"
+        }
+      ],
+      "story": "aranceles-eeuu"
     },
     {
       "id": "los-miembros-de-la-omc-intensifican-los-debates-sobre-las-medidas-comerciales-y",
@@ -8154,7 +8209,8 @@
           "logistica": false,
           "aranceles": false
         }
-      }
+      },
+      "story": "arca-normativa"
     },
     {
       "id": "los-miembros-examinan-las-politicas-agropecuarias-en-la-primera-reunion-celebrad",
@@ -8343,7 +8399,8 @@
           "type": "Consultora marítima",
           "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/intra-asia-container-index"
         }
-      ]
+      ],
+      "story": "ormuz"
     },
     {
       "id": "brasil-exportaciones-tercera-semana-septiembre",
@@ -8485,7 +8542,19 @@
           "logistica": false,
           "aranceles": false
         }
-      }
+      },
+      "deadlines": [
+        {
+          "date": "2026-10-19",
+          "label": "INDEC publica el intercambio comercial argentino de septiembre",
+          "url": "https://www.indec.gob.ar/ftp/cuadros/publicaciones/calendario_2sem2026.pdf"
+        },
+        {
+          "date": "2026-11-19",
+          "label": "INDEC publica el intercambio comercial argentino de octubre",
+          "url": "https://www.indec.gob.ar/ftp/cuadros/publicaciones/calendario_2sem2026.pdf"
+        }
+      ]
     },
     {
       "id": "mercosur-sin-acuerdo-cuota-carne-ue",
@@ -8569,7 +8638,8 @@
           "logistica": false,
           "aranceles": true
         }
-      }
+      },
+      "story": "ue-mercosur"
     },
     {
       "id": "ue-salvaguardia-provisional-acero-magnetico",
@@ -8811,7 +8881,8 @@
           "logistica": false,
           "aranceles": false
         }
-      }
+      },
+      "story": "arca-normativa"
     },
     {
       "id": "arca-rg-5868-prorroga-percepciones-importacion",
@@ -8874,7 +8945,14 @@
           "logistica": false,
           "aranceles": true
         }
-      }
+      },
+      "deadlines": [
+        {
+          "date": "2026-12-31",
+          "label": "Vencen las excepciones a las percepciones de IVA y Ganancias en ciertas importaciones (RG 5868)"
+        }
+      ],
+      "story": "arca-normativa"
     }
   ],
   "ingestion": {
@@ -9014,5 +9092,62 @@
         "curated": "decreto-1128-tope-fob-autos-electricos-hibridos"
       }
     ]
-  }
+  },
+  "stories": [
+    {
+      "id": "ormuz",
+      "title": "Ataques en el estrecho de Ormuz",
+      "desc": "Incidentes contra buques en el estrecho y su efecto en el tránsito de petróleo, los seguros y los fletes.",
+      "match": [
+        "ormuz",
+        "hormuz"
+      ]
+    },
+    {
+      "id": "g20-milwaukee",
+      "title": "G20 de Comercio en Milwaukee",
+      "desc": "La reunión ministerial de Comercio del G20, con presidencia de EE.UU., y las negociaciones bilaterales en sus márgenes.",
+      "match": [
+        "\\bg20\\b",
+        "milwaukee"
+      ]
+    },
+    {
+      "id": "aranceles-eeuu",
+      "title": "La política arancelaria de EE.UU.",
+      "desc": "Recargos de la Sección 301, disputas con Canadá y China y su revisión en los tribunales.",
+      "match": [
+        "seccion 301",
+        "section 301"
+      ]
+    },
+    {
+      "id": "ue-mercosur",
+      "title": "El acuerdo UE–Mercosur en marcha",
+      "desc": "La aplicación provisional del acuerdo interino, el reparto de cuotas y sus primeros efectos en el comercio de la región.",
+      "match": [
+        "(\\bue\\b|union europea).{0,3}mercosur",
+        "mercosur.{0,3}(\\bue\\b|union europea)"
+      ]
+    },
+    {
+      "id": "fletes-contenedores",
+      "title": "Fletes de contenedores",
+      "desc": "La evolución semanal de las tarifas marítimas y los cambios de ruta de las navieras.",
+      "match": [
+        "\\bfletes?\\b.*contened",
+        "contened.*\\bfletes?\\b",
+        "tarifas? de(l)? flete"
+      ]
+    },
+    {
+      "id": "arca-normativa",
+      "title": "Cambios normativos de ARCA",
+      "desc": "Resoluciones generales de ARCA que modifican trámites aduaneros e impositivos del comercio exterior.",
+      "match": [
+        "\\barca\\b.*(resolucion|\\brg\\b)",
+        "(resolucion|\\brg\\b).*\\barca\\b"
+      ]
+    }
+  ]
 }

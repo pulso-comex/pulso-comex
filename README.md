@@ -57,6 +57,14 @@ Sumá un bloque a `sources.json`:
 
 Se cargan en `data/news.json` con el mismo formato que las existentes, sin `"label": "Automática"`. Las curadas nunca se pisan ni se borran solas, y son las únicas que se envían a los buscadores (ver abajo).
 
+Campos opcionales de una nota curada:
+
+- `"deadlines": [{ "date": "2026-11-02", "label": "Qué pasa ese día", "url": "fuente de la fecha (opcional)" }]`: fechas que aparecen en **Próximas fechas** (portada), en la nota y en la **Agenda** (`#agenda`). Usá `"date": "2026-11"` si la fuente solo informa el mes.
+- `"story": "ormuz"`: agrupa la nota en un **tema en desarrollo**. Los temas se definen en la lista `"stories"` de la raíz de `data/news.json` (`id`, `title`, `desc` y `match`, expresiones para sumar notas automáticas del mismo tema en la página `#hilo-<id>`). Un tema aparece en la portada cuando tiene al menos dos notas.
+- `"absorbs": ["id-de-nota-automática"]`: notas automáticas que repiten esta nota; el bot las retira y no las vuelve a agregar.
+
+Las siglas y los términos técnicos de las notas curadas se explican solos con el glosario (`GLOSSARY` en `assets/app.js`, página `#glosario`).
+
 ## Criterios
 
 - No se inventan noticias: cada nota automática es un enlace atribuido a su fuente, con la fecha que informa la fuente (o la de la primera vez que se vio, si no la informa).
