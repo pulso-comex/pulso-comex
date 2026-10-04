@@ -51,7 +51,7 @@ CURATED_MIN_TITLE = 0.25   # parecido mínimo con el título y las etiquetas de 
 CURATED_STRONG = 0.30      # además: parecido de título ≥ esto, o una cifra en común, o parecido total ≥ 0.70
 
 # Taxonomía: debe coincidir con TOPICS en assets/app.js
-TOPICS = ['Argentina', 'Latinoamérica', 'Estados Unidos', 'Europa', 'Asia', 'China', 'Mercosur', 'Importaciones',
+TOPICS = ['Argentina', 'Latinoamérica', 'Estados Unidos', 'Europa', 'Asia', 'China', 'Oceanía', 'Mercosur', 'Importaciones',
           'Exportaciones', 'Aduanas', 'Aranceles', 'Impuestos', 'Tratados y acuerdos', 'Logística', 'Transporte marítimo',
           'Transporte aéreo', 'Puertos', 'Economía internacional', 'Geopolítica y comercio', 'Empresas', 'Regulaciones',
           'Tecnología COMEX']
@@ -78,10 +78,12 @@ COUNTRIES = {
     'Rusia': [r'rusia', r'russia'], 'Ucrania': [r'ucrania', r'ukrain'], 'Turquía': [r'turquia', r'turkey', r'turkiye'],
     'Arabia Saudita': [r'arabia saudita', r'saudi'], 'Emiratos Árabes Unidos': [r'emiratos', r'\buae\b', r'dubai'],
     'Irán': [r'\biran'], 'Sudáfrica': [r'sudafrica', r'south africa'], 'Australia': [r'australia'],
+    'Nueva Zelanda': [r'nueva zelanda', r'new zealand'],
 }
 LATAM = {'Argentina', 'Brasil', 'Uruguay', 'Paraguay', 'Chile', 'Bolivia', 'Perú', 'Colombia', 'México', 'Panamá'}
 EUROPE = {'Unión Europea', 'Alemania', 'España', 'Francia', 'Italia', 'Reino Unido', 'Rusia', 'Ucrania', 'Turquía'}
 ASIA = {'China', 'Japón', 'India', 'Corea del Sur', 'Vietnam', 'Indonesia', 'Singapur'}
+OCEANIA = {'Australia', 'Nueva Zelanda'}
 
 TOPIC_RULES = [
     ('Importaciones', [r'importa', r'\bimport']),
@@ -339,6 +341,8 @@ def classify(text: str, source: dict):
         topics.append('Asia')
     if any(c in EUROPE for c in countries):
         topics.append('Europa')
+    if any(c in OCEANIA for c in countries):
+        topics.append('Oceanía')
     if not topics:  # las categorías por defecto de la fuente solo se usan si no se detectó ninguna
         topics.extend(source.get('topics', []))
     seen, clean = set(), []
