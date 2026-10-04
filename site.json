@@ -1,13 +1,13 @@
 {
   "_ayuda": "Datos del sitio. Editá los valores entre comillas y guardá: en la próxima publicación se aplican solos. Dejá \"\" (vacío) lo que todavía no tengas.",
-  "contactEmail": "",
+  "contactEmail": "pulso.comex26@gmail.com",
   "responsable": {
     "nombre": "",
     "rol": "",
     "descripcion": "",
     "linkedin": ""
   },
-  "googleAnalyticsId": "",
+  "googleAnalyticsId": "G-LDHV28XC77",
   "googleSiteVerification": "",
   "newsletter": {
     "formAction": "",
