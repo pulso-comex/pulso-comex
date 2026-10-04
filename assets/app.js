@@ -21,7 +21,7 @@ const at = p => new URL(String(p).replace(/^\//, ''), BASE).href;
    ===================================================================== */
 const CONFIG = {
   siteName: 'Pulso Comex',
-  canonicalBase: 'https://pulsocomex.com.ar',
+  canonicalBase: FILE_MODE ? '' : BASE.replace(/\/$/, ''),   // dirección real del sitio, detectada sola (github.io o dominio propio)
   prettyUrls: !FILE_MODE,   // con doble clic (file://) las notas se abren dentro de index.html
   indexAutomatic: false,     // notas automáticas (solo enlazan a otro medio): noindex. Debe coincidir con build_pages.py
   refreshMinutes: 10,
@@ -36,6 +36,13 @@ const CONFIG = {
     //   defaults: { topics: ['Economía internacional'], countries: ['Global'] } },
   ]
 };
+
+// Datos editables del sitio: site.json → inyectados por scripts/build_pages.py
+const SITECFG = (() => {
+  try { const t = document.getElementById('site-config')?.textContent?.trim(); return t && !t.startsWith('{{') ? JSON.parse(t) : {}; }
+  catch (e) { return {}; }
+})();
+CONFIG.social = (SITECFG.redes || []).map(r => ({ name: r.nombre, url: r.url }));
 
 /* =====================================================================
    2. TAXONOMÍA
@@ -801,6 +808,7 @@ function renderArticle(it){
     <section class="srcs" aria-labelledby="h-srcs"><h2 class="panel-h" id="h-srcs">Fuentes consultadas</h2><ol>${it.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>${s.author ? `, ${esc(s.author)}` : ''} <span class="t">· ${esc(s.type || 'Fuente')}${s.primary ? ' · fuente principal' : ''}</span></li>`).join('')}</ol></section>
     <div class="tags-block"><span class="note">Etiquetas</span><div class="tagrow" style="margin-top:6px">${[...it.tags.map(x => `<button type="button" data-tag="${esc(x)}">#${esc(x)}</button>`), ...it.topics.map(x => `<button type="button" data-topic="${esc(x)}">${esc(x)}</button>`), ...it.countries.filter(c=>c!=='Global').map(c => `<button type="button" data-country="${esc(c)}">${esc(c)}</button>`)].join('')}</div></div>
     <p class="disclaimer">${it.kind === 'analisis' ? 'Este contenido resume un <b>análisis de terceros</b>: las interpretaciones pertenecen a la fuente citada, no a la redacción. ' : ''}Resumen elaborado por Pulso Comex o, cuando se indique, información normalizada desde un feed público. Para el texto completo y oficial, consultá el artículo original. Cuando la imagen proviene de la fuente se indica su origen; las fotos de archivo son ilustrativas y no corresponden al hecho.</p>
+    ${newsletterBox('band')}
     ${related.length ? `<section class="related" aria-labelledby="h-rel"><h2 id="h-rel">También puede interesarte</h2><div class="cards ${related.length === 4 ? 'two' : ''}">${related.map(card).join('')}</div></section>` : ''}
   </article>`;
   $('#saveBtn').onclick = () => toggleSave(it.id);
@@ -858,10 +866,196 @@ const PAGES = {
     <h2>Criterios editoriales</h2><ul><li>Cada nota se verifica contra su fuente original y la enlaza.</li><li>Los resúmenes son redacción propia; las cifras y declaraciones pertenecen a las fuentes.</li><li>Se distingue entre <b>noticias</b>, <b>análisis de terceros</b>, <b>datos</b> y <b>opinión</b>.</li><li>El bloque «Impacto en Argentina» solo aparece cuando la información disponible lo sustenta.</li><li>No se publican noticias sin título, fecha y fuente con enlace.</li></ul>
     <h2>Cómo se actualiza</h2><p>La página lee un feed normalizado que puede alimentarse con APIs, RSS, una base de datos o webhooks, y lo vuelve a consultar cada ${CONFIG.refreshMinutes} minutos sin recargar. Un proceso automático consulta las fuentes varias veces por día; el encabezado muestra la hora de la última actualización. Las notas marcadas como «Automática» provienen directamente del feed de la fuente y no tienen revisión editorial.</p>`]
 };
+/* =====================================================================
+   PÁGINAS EDITABLES DESDE site.json (contacto, quiénes somos, privacidad)
+   ===================================================================== */
+const mail = SITECFG.contactEmail || '';
+const resp = SITECFG.responsable || {};
+const nl = SITECFG.newsletter || {};
+const hasNewsletter = !!(nl.formAction || nl.url);
+const mailLink = mail ? `<a href="mailto:${esc(mail)}">${esc(mail)}</a>` : '';
+
+PAGES.acerca = ['Quiénes somos', `
+  <p>Pulso Comex es un portal de noticias, datos y herramientas sobre comercio exterior, con foco en Argentina y Latinoamérica. Está pensado para importadores, exportadores, despachantes de aduana, operadores logísticos, estudiantes y docentes que necesitan seguir, en un solo lugar, lo que pasa con aranceles, aduanas, acuerdos comerciales y logística.</p>
+  ${resp.nombre ? `<h2>Quién está detrás</h2>
+    <div class="person"><p><b>${esc(resp.nombre)}</b>${resp.rol ? ` · ${esc(resp.rol)}` : ''}</p>
+    ${resp.descripcion ? `<p>${esc(resp.descripcion)}</p>` : ''}
+    ${resp.linkedin ? `<p><a href="${esc(resp.linkedin)}" target="_blank" rel="noopener noreferrer">Perfil de LinkedIn</a></p>` : ''}</div>` : ''}
+  <h2>Qué vas a encontrar</h2>
+  <ul>
+    <li><b>Noticias al día</b> de organismos oficiales y medios especializados, actualizadas varias veces por día, siempre con la fuente y el enlace al original.</li>
+    <li><b>Herramientas</b> como la <a href="#calculadora">calculadora de costo de importación</a>.</li>
+    <li><b>Indicadores</b> de fletes, carga aérea y balanza comercial con su fuente.</li>
+  </ul>
+  <h2>Criterios editoriales</h2>
+  <ul>
+    <li>Toda nota identifica su fuente y enlaza al artículo original. No se publican noticias sin título, fecha y fuente.</li>
+    <li>Las notas marcadas como «Automática» provienen directamente del feed de la fuente y no tienen revisión editorial; los títulos se respetan tal como los publica cada medio.</li>
+    <li>Se distingue entre noticias, análisis de terceros, datos y opinión.</li>
+    <li>El contenido es informativo y no reemplaza el asesoramiento de un despachante de aduana o un profesional.</li>
+  </ul>
+  <h2>Contacto</h2>
+  <p>${mail ? `Para sugerencias, correcciones o propuestas comerciales escribinos a ${mailLink}.` : 'Muy pronto vas a encontrar acá un correo de contacto.'}</p>`];
+
+PAGES.contacto = ['Contacto', `
+  ${mail ? `<p>Escribinos a <b>${mailLink}</b> <button class="btn sm" type="button" data-copy="${esc(mail)}">Copiar correo</button></p>
+    <p>Respondemos consultas sobre:</p>
+    <ul><li>Correcciones o aclaraciones sobre una nota (indicá el enlace).</li><li>Sugerencias de fuentes o temas.</li><li>Publicidad, patrocinios y propuestas comerciales.</li></ul>
+    <p class="note">Pulso Comex no brinda asesoramiento aduanero ni tributario personalizado. Para operar, consultá con un despachante de aduana matriculado.</p>`
+    : '<p>Muy pronto vas a encontrar acá un correo de contacto.</p>'}
+  ${SITECFG.redes?.length ? `<h2>Redes</h2><p style="display:flex;gap:14px;flex-wrap:wrap">${SITECFG.redes.map(r => `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.nombre)}</a>`).join('')}</p>` : ''}`];
+
+PAGES.privacidad = ['Política de privacidad', `
+  <p>Pulso Comex no requiere registrarse ni crear una cuenta para leer el sitio.</p>
+  <h2>Datos que se guardan en tu navegador</h2>
+  <p>Las noticias guardadas, tus preferencias (tema, tamaño de texto, temas favoritos) y el contador de lecturas se guardan solo en tu navegador. No se envían a ningún servidor y podés borrarlos limpiando los datos del sitio.</p>
+  ${SITECFG.googleAnalyticsId ? `<h2>Estadísticas de visitas</h2><p>Usamos Google Analytics para saber cuántas personas visitan el sitio y qué secciones leen. Google recibe datos técnicos de la visita (páginas vistas, tipo de dispositivo, ubicación aproximada) y usa cookies para eso. No usamos esa información para identificarte personalmente. Podés bloquearla con la configuración de tu navegador o con el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">complemento de inhabilitación de Google Analytics</a>.</p>` : ''}
+  ${hasNewsletter ? `<h2>Newsletter</h2><p>Si te suscribís, tu correo se guarda en MailerLite, el servicio que usamos para enviar el newsletter. Solo lo usamos para mandarte el boletín y podés darte de baja en cualquier momento con el enlace que aparece en cada envío.</p>` : ''}
+  <h2>Enlaces externos</h2>
+  <p>Al seguir un enlace a una fuente externa, rige la política de privacidad de ese sitio.</p>
+  ${mail ? `<h2>Consultas</h2><p>Por cualquier consulta sobre tus datos escribinos a ${mailLink}.</p>` : ''}`];
+
+/* =====================================================================
+   NEWSLETTER (MailerLite u otro servicio, configurado en site.json)
+   ===================================================================== */
+function newsletterBox(where = 'aside'){
+  if (!hasNewsletter) return '';
+  const title = 'Newsletter de Pulso Comex';
+  const txt = 'Lo más importante del comercio exterior, en tu correo. Gratis, y te das de baja cuando quieras.';
+  const body = nl.formAction
+    ? `<form class="nl-form" novalidate><label class="sr" for="nl-${where}">Tu correo</label>
+        <input id="nl-${where}" type="email" name="email" placeholder="tu@correo.com" autocomplete="email" required>
+        <button class="btn primary" type="submit">Suscribirme</button></form><p class="nl-msg" role="status"></p>`
+    : `<a class="btn primary" href="${esc(nl.url)}" target="_blank" rel="noopener noreferrer">Suscribirme</a>`;
+  return where === 'aside'
+    ? `<section class="box nl-box"><h2>${title}</h2><p class="note">${txt}</p>${body}</section>`
+    : `<section class="nl-band"><h2>${title}</h2><p>${txt}</p>${body}</section>`;
+}
+document.addEventListener('submit', async e => {
+  const form = e.target.closest('.nl-form'); if (!form) return;
+  e.preventDefault();
+  const input = form.querySelector('input[type=email]'), msg = form.parentElement.querySelector('.nl-msg');
+  const email = input.value.trim();
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ msg.textContent = 'Revisá el correo: parece incompleto.'; input.focus(); return; }
+  const btn = form.querySelector('button'); btn.disabled = true; msg.textContent = 'Enviando…';
+  try {
+    const fd = new FormData(); fd.append('fields[email]', email); fd.append('ml-submit', '1'); fd.append('anticsrf', 'true');
+    await fetch(nl.formAction, { method: 'POST', body: fd, mode: 'no-cors' });
+    form.reset(); msg.textContent = '¡Listo! Revisá tu correo para confirmar la suscripción.';
+    window.gtag?.('event', 'sign_up', { method: 'newsletter' });
+  } catch (err) {
+    msg.textContent = 'No se pudo enviar. Probá de nuevo en unos minutos.';
+  } finally { btn.disabled = false; }
+});
+
+/* =====================================================================
+   CALCULADORA DE COSTO DE IMPORTACIÓN
+   ===================================================================== */
+const CALC_DEFAULTS = { fob: 10000, flete: 1200, seguro: 60, tc: '', di: 0, mercosur: false, te: 3, iva: 21, piva: 20, pgan: 6, piibb: 2.5, gastos: 0 };
+const calc = Object.assign({}, CALC_DEFAULTS, store.get('comex.calc', {}));
+// Acepta "10000", "10.000", "10.000,50", "2,5" y "2.5".
+const num = v => {
+  let t = String(v ?? '').trim().replace(/\s|USD|\$|%/gi, '');
+  if (t.includes(',')) t = t.replace(/\./g, '').replace(',', '.');
+  else if (/^\d{1,3}(\.\d{3})+$/.test(t)) t = t.replace(/\./g, '');
+  const n = parseFloat(t); return isFinite(n) ? n : 0;
+};
+const fmtUSD = n => 'USD ' + new Intl.NumberFormat('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n);
+const fmtARS = n => '$ ' + new Intl.NumberFormat('es-AR', { maximumFractionDigits: 0 }).format(n);
+const fmtPct = n => new Intl.NumberFormat('es-AR', { maximumFractionDigits: 2 }).format(n) + ' %';
+
+function calcResult(c){
+  const fob = num(c.fob), flete = num(c.flete), seguro = num(c.seguro), gastos = num(c.gastos);
+  const cif = fob + flete + seguro;
+  const di = c.mercosur ? 0 : cif * num(c.di) / 100;
+  const te = c.mercosur ? 0 : cif * num(c.te) / 100;
+  const base = cif + di + te;
+  const iva = base * num(c.iva) / 100, piva = base * num(c.piva) / 100, pgan = base * num(c.pgan) / 100, piibb = base * num(c.piibb) / 100;
+  const tributos = di + te + iva + piva + pgan + piibb;
+  const recuperables = iva + piva + pgan + piibb;
+  return { fob, flete, seguro, cif, di, te, base, iva, piva, pgan, piibb, tributos, recuperables, gastos,
+    desembolso: cif + tributos + gastos, costoReal: cif + di + te + gastos, tc: num(c.tc) };
+}
+function renderCalculadora(){
+  const f = (id, label, hint, attrs = '') => `<label for="c-${id}">${label}<input id="c-${id}" data-calc="${id}" inputmode="decimal" value="${esc(calc[id])}" ${attrs}>${hint ? `<small>${hint}</small>` : ''}</label>`;
+  $('#main').innerHTML = `<article class="article doc calc">
+    <a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>
+    <h1>Calculadora de costo de importación</h1>
+    <p class="lede">Estimá cuánto pagás en la Aduana argentina y cuál es el costo real de tu mercadería, a partir del valor FOB, el flete y el seguro. Todas las alícuotas se pueden modificar.</p>
+    <form class="calc-form" onsubmit="return false">
+      <h2>1. Valor de la mercadería (en USD)</h2>
+      <div class="calc-grid">
+        ${f('fob', 'Valor FOB', 'Precio de la mercadería puesta a bordo en origen.')}
+        ${f('flete', 'Flete internacional', 'Hasta el puerto o aeropuerto de destino.')}
+        ${f('seguro', 'Seguro', 'Si no lo contratás, la Aduana puede presumir un valor.')}
+        ${f('tc', 'Tipo de cambio (opcional)', 'Pesos por dólar, para ver los montos en $.')}
+      </div>
+      <h2>2. Tributos</h2>
+      <label class="calc-check"><input type="checkbox" data-calc="mercosur" ${calc.mercosur ? 'checked' : ''}> Origen Mercosur con certificado de origen (sin derecho de importación ni tasa de estadística)</label>
+      <div class="calc-grid">
+        ${f('di', 'Derecho de importación (%)', 'Depende de la posición arancelaria (NCM). Suele ir de 0 % a 35 %.', calc.mercosur ? 'disabled' : '')}
+        ${f('te', 'Tasa de estadística (%)', 'General: 3 % del valor CIF. Puede tener topes o exenciones según el caso.', calc.mercosur ? 'disabled' : '')}
+        <label for="c-iva">IVA<select id="c-iva" data-calc="iva"><option value="21" ${num(calc.iva)===21?'selected':''}>21 % (general)</option><option value="10.5" ${num(calc.iva)===10.5?'selected':''}>10,5 % (bienes de capital y otros)</option></select><small>Según la mercadería.</small></label>
+        ${f('piva', 'Percepción de IVA (%)', 'General 20 %; 10 % si el IVA es 10,5 %. A cuenta del IVA.')}
+        <label for="c-pgan">Percepción de Ganancias<select id="c-pgan" data-calc="pgan"><option value="6" ${num(calc.pgan)===6?'selected':''}>6 % (inscripto en Ganancias)</option><option value="11" ${num(calc.pgan)===11?'selected':''}>11 % (no inscripto / bienes de uso propio)</option></select><small>Anticipo del impuesto.</small></label>
+        ${f('piibb', 'Percepción de Ingresos Brutos (%)', 'Varía según la provincia y el régimen de cada empresa.')}
+      </div>
+      <h2>3. Gastos en Argentina (opcional, en USD)</h2>
+      <div class="calc-grid">${f('gastos', 'Gastos locales', 'Despachante, depósito fiscal, terminal, flete interno, etc.')}</div>
+      <p><button class="btn sm" type="button" data-calc-reset>Restablecer valores</button></p>
+    </form>
+    <section class="calc-out" aria-live="polite" id="calcOut"></section>
+    <div class="callout"><p><b>Importante.</b> Es una estimación orientativa. No contempla regímenes especiales, valores criterio, derechos antidumping, licencias ni otras medidas que puedan aplicar a tu producto. Las alícuotas pueden cambiar: antes de operar, confirmalas con tu despachante de aduana o en la normativa vigente.</p></div>
+  </article>`;
+  updateCalc();
+  setSEO({ title:`Calculadora de costo de importación · ${CONFIG.siteName}`, desc:'Calculá derechos de importación, tasa de estadística, IVA y percepciones para importar en Argentina, y el costo real de tu mercadería.', crumbs:[['Herramientas'],['Calculadora de importación']] });
+}
+function updateCalc(){
+  const out = $('#calcOut'); if (!out) return;
+  const r = calcResult(calc);
+  const ars = n => r.tc ? `<td class="ars">${fmtARS(n * r.tc)}</td>` : '';
+  const row = (label, n, note = '', cls = '') => `<tr class="${cls}"><td>${label}${note ? `<small>${note}</small>` : ''}</td><td>${fmtUSD(n)}</td>${ars(n)}</tr>`;
+  const head = `<tr><th>Concepto</th><th>USD</th>${r.tc ? '<th>Pesos</th>' : ''}</tr>`;
+  out.innerHTML = `<h2>Resultado</h2>
+    <div class="calc-sum">
+      <div><span>Pagás en la Aduana</span><b>${fmtUSD(r.tributos)}</b>${r.tc ? `<em>${fmtARS(r.tributos * r.tc)}</em>` : ''}</div>
+      <div><span>Desembolso total</span><b>${fmtUSD(r.desembolso)}</b>${r.tc ? `<em>${fmtARS(r.desembolso * r.tc)}</em>` : ''}</div>
+      <div class="hl"><span>Costo real de la mercadería*</span><b>${fmtUSD(r.costoReal)}</b>${r.tc ? `<em>${fmtARS(r.costoReal * r.tc)}</em>` : ''}</div>
+    </div>
+    <table class="calc-table">${head}
+      ${row('Valor CIF', r.cif, 'FOB + flete + seguro')}
+      ${row(`Derecho de importación (${fmtPct(calc.mercosur ? 0 : num(calc.di))})`, r.di)}
+      ${row(`Tasa de estadística (${fmtPct(calc.mercosur ? 0 : num(calc.te))})`, r.te)}
+      ${row('Base imponible', r.base, 'CIF + derecho + tasa de estadística', 'sub')}
+      ${row(`IVA (${fmtPct(num(calc.iva))})`, r.iva, 'Crédito fiscal')}
+      ${row(`Percepción de IVA (${fmtPct(num(calc.piva))})`, r.piva, 'A cuenta del IVA')}
+      ${row(`Percepción de Ganancias (${fmtPct(num(calc.pgan))})`, r.pgan, 'A cuenta de Ganancias')}
+      ${row(`Percepción de Ingresos Brutos (${fmtPct(num(calc.piibb))})`, r.piibb, 'A cuenta de Ingresos Brutos')}
+      ${row('Total de tributos en Aduana', r.tributos, '', 'total')}
+      ${r.gastos ? row('Gastos locales', r.gastos) : ''}
+    </table>
+    <p class="note">* Para una empresa inscripta, el IVA y las percepciones (${fmtUSD(r.recuperables)}) se recuperan o se descuentan de otros impuestos, así que el costo real es CIF + derecho + tasa de estadística + gastos. Para un particular o un no inscripto, el costo es el desembolso total.</p>
+    ${!calc.mercosur && !num(calc.di) ? '<p class="warn">El derecho de importación está en 0 %. Si tu mercadería no es de origen Mercosur, completalo según su posición arancelaria.</p>' : ''}`;
+}
+document.addEventListener('input', e => {
+  const el = e.target.closest('[data-calc]'); if (!el) return;
+  const k = el.dataset.calc;
+  calc[k] = el.type === 'checkbox' ? el.checked : el.value;
+  if (k === 'iva'){ calc.piva = num(el.value) === 10.5 ? 10 : 20; const p = $('#c-piva'); if (p) p.value = calc.piva; }
+  if (k === 'mercosur'){ ['di','te'].forEach(id => { const x = $('#c-' + id); if (x) x.disabled = el.checked; }); }
+  store.set('comex.calc', calc);
+  updateCalc();
+});
+document.addEventListener('change', e => { if (e.target.matches?.('select[data-calc]')) e.target.dispatchEvent(new Event('input', { bubbles: true })); });
+document.addEventListener('click', e => {
+  if (!e.target.closest('[data-calc-reset]')) return;
+  Object.assign(calc, CALC_DEFAULTS); store.set('comex.calc', calc); renderCalculadora();
+});
+
 function renderPage(key){
   const [title, html] = PAGES[key];
   $('#main').innerHTML = `<article class="article doc"><a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a><h1>${esc(title)}</h1><div class="prose">${html}</div></article>`;
-  setSEO({ title:`${title} · ${CONFIG.siteName}`, desc: title, crumbs:[['Inicio','#inicio'],[title]] });
+  setSEO({ title:`${title} · ${CONFIG.siteName}`, desc: title, crumbs:[[title]] });
 }
 function renderNotFound(){
   $('#main').innerHTML = emptyState('No encontramos esa página', 'Puede que la noticia ya no esté en el feed o que el enlace esté incompleto.', '<a class="btn sm primary" href="#inicio">Ir a la portada</a>');
@@ -891,6 +1085,7 @@ function renderAside(){
   const trends = topTrends(12);
   const tc = t => items.filter(i => i.topics.includes(t)).length;
   const boxes = [];
+  if (hasNewsletter && view !== 'calculadora') boxes.push(newsletterBox('aside'));
   if (view !== 'home') boxes.push(`<section class="box"><h2>Indicadores <small>últimos datos</small></h2>
     <div class="ind-mini">${state.indicators.filter(d => d.value).slice(0,6).map(d => `<a href="${esc(d.url)}" target="_blank" rel="noopener noreferrer"><span class="l">${esc(d.label)}</span><span class="v">${esc(d.value)}</span><span class="p">${esc(d.period)} · ${esc(d.source)}</span><span class="c ${d.trend==='up'?'up':d.trend==='down'?'down':'flat'}">${d.trend==='up'?'▲':d.trend==='down'?'▼':''} ${esc(d.change)}</span></a>`).join('')}</div>
     <a class="foot-link" href="#datos">Ver todos los indicadores →</a></section>`);
@@ -1009,6 +1204,7 @@ function render(){
   else if (v === 'datos') renderDatos();
   else if (v === 'fuentes') renderFuentes();
   else if (v === 'guardadas') renderGuardadas();
+  else if (v === 'calculadora') renderCalculadora();
   else if (PAGES[v]) renderPage(v);
   else if (v === 'notfound') renderNotFound();
   else renderHome();
@@ -1074,7 +1270,7 @@ function route(){
     state.filters = f; state.sort = params.get('orden') === 'fecha' ? 'fecha' : 'relevancia';
     state.view = viewFor(f);
   }
-  else if (['datos','fuentes','guardadas'].includes(path) || PAGES[path]) state.view = path;
+  else if (['datos','fuentes','guardadas','calculadora'].includes(path) || PAGES[path]) state.view = path;
   else if (state.items.some(i => i.id === path)){ state.view = 'article'; state.articleId = path; countRead(path); }
   else state.view = 'notfound';
   render();
@@ -1082,6 +1278,7 @@ function route(){
   if (path === 'ultimas'){ $('#ultimas')?.scrollIntoView(); $('#ultimas')?.focus({ preventScroll:true }); }
   else if (!state.firstRoute){ window.scrollTo({ top: 0 }); if (prevView !== state.view || state.view === 'article') $('#main').focus({ preventScroll:true }); }
   state.firstRoute = false;
+  window.gtag?.('event', 'page_view', { page_location: location.href, page_title: document.title });
 }
 function go(h){ if (location.hash === h) route(); else location.hash = h; }
 // Cambia filtros. replace=true actualiza la URL sin sumar historial (búsqueda mientras se escribe).
@@ -1277,7 +1474,7 @@ matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', paintThe
     if (added.length){
       added.forEach(i => state.newIds.add(i.id)); store.set('comex.seen', state.items.map(i => i.id));
       fillSelects();
-      const reading = state.view === 'article';
+      const reading = state.view === 'article' || state.view === 'calculadora';
       if (!reading) render(); else { renderStatus(); renderBreaking(); renderAside(); }
       toast(added.length === 1 ? 'Nueva noticia: ' + added[0].title.slice(0, 60) + (added[0].title.length > 60 ? '…' : '') : `${added.length} noticias nuevas`, { label:'Ver', run:() => goArticle(added[0].id) });
     } else { renderStatus(); renderTicker(); }

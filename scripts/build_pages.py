@@ -25,7 +25,25 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SITE = os.environ.get('SITE_URL', 'https://pulsocomex.com.ar').rstrip('/')
+# Dirección pública del sitio. El workflow la detecta sola desde GitHub Pages (github.io o dominio propio).
+def detect_site() -> str:
+    """Dirección pública del sitio, sin configurar nada:
+    1) SITE_URL si el workflow la pasa; 2) dominio propio del archivo CNAME;
+    3) la dirección de GitHub Pages según el repositorio (usuario.github.io o usuario.github.io/repo)."""
+    if os.environ.get('SITE_URL'):
+        return os.environ['SITE_URL']
+    cname = ROOT / 'CNAME'
+    if cname.exists() and cname.read_text(encoding='utf-8').strip():
+        return 'https://' + cname.read_text(encoding='utf-8').strip().split()[0]
+    repo = os.environ.get('GITHUB_REPOSITORY', '')
+    if '/' in repo:
+        owner, name = repo.split('/', 1)
+        owner = owner.lower()
+        return f'https://{owner}.github.io' if name.lower() == f'{owner}.github.io' else f'https://{owner}.github.io/{name}'
+    return 'https://pulso-comex.github.io'
+
+
+SITE = detect_site().rstrip('/')
 SITE_NAME = 'Pulso Comex'
 TZ = timezone(timedelta(hours=-3))
 NOW = datetime.now(timezone.utc)
@@ -38,6 +56,34 @@ HOME_DESC = ('Portal de noticias de comercio exterior: aranceles, aduanas, acuer
 OG_DEFAULT = f'{SITE}/og-default.png'
 
 esc = lambda s: html.escape(str(s or ''), quote=True)
+
+
+def load_site_config():
+    """site.json: correo, responsable, Google Analytics, verificación de Search Console, newsletter y redes."""
+    f = ROOT / 'site.json'
+    try:
+        cfg = json.loads(f.read_text(encoding='utf-8')) if f.exists() else {}
+    except ValueError as e:
+        print(f'Aviso: site.json tiene un error de formato y se ignora ({e}).')
+        cfg = {}
+    cfg.pop('_ayuda', None)
+    email = str(cfg.get('contactEmail') or '').strip()
+    cfg['contactEmail'] = email if re.fullmatch(r'[^@\s]+@[^@\s]+\.[^@\s]+', email) else ''
+    ga = str(cfg.get('googleAnalyticsId') or '').strip().upper()
+    cfg['googleAnalyticsId'] = ga if re.fullmatch(r'G-[A-Z0-9]{4,20}', ga) else ''
+    ver = str(cfg.get('googleSiteVerification') or '').strip()
+    m = re.search(r'content=["\']([^"\']+)["\']', ver)   # acepta la etiqueta completa o solo el código
+    cfg['googleSiteVerification'] = re.sub(r'[^A-Za-z0-9_\-]', '', m.group(1) if m else ver)
+    nl = cfg.get('newsletter') or {}
+    cfg['newsletter'] = {k: str(nl.get(k) or '').strip() for k in ('formAction', 'url')
+                         if str(nl.get(k) or '').strip().startswith('https://')}
+    cfg['redes'] = [r for r in (cfg.get('redes') or []) if str(r.get('url') or '').startswith('https://')]
+    resp = cfg.get('responsable') or {}
+    cfg['responsable'] = {k: str(resp.get(k) or '').strip() for k in ('nombre', 'rol', 'descripcion', 'linkedin')}
+    return cfg
+
+
+SITECFG = load_site_config()
 
 
 def parse_date(v):
@@ -151,6 +197,13 @@ def meta_block(*, title, desc, url, image, image_alt, og_type='website', robots=
         f'<meta name="twitter:description" content="{esc(desc)}">',
         f'<meta name="twitter:image" content="{esc(image)}">',
     ]
+    if SITECFG.get('googleSiteVerification'):
+        lines.append(f'<meta name="google-site-verification" content="{esc(SITECFG["googleSiteVerification"])}">')
+    ga = SITECFG.get('googleAnalyticsId')
+    if ga:  # las páginas vistas se envían desde assets/app.js en cada cambio de sección
+        lines.append(f'<script async src="https://www.googletagmanager.com/gtag/js?id={ga}"></script>')
+        lines.append("<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}"
+                     f"gtag('js',new Date());gtag('config','{ga}',{{send_page_view:false}});</script>")
     if extra:
         lines.append(extra)
     lines.append(f'<script type="application/ld+json" id="ld">{json_script(ld or {})}</script>')
@@ -188,13 +241,17 @@ def render(template, *, meta, prerender, feed, bank, version, base=''):
     """prerender: función que recibe el contenido por defecto de <main> (el esqueleto de carga) y devuelve el final."""
     a, b = template.index('<!--meta:start-->'), template.index('<!--meta:end-->') + len('<!--meta:end-->')
     page = template[:a] + meta + template[b:]
+    a, b = page.index('<!--mail:start-->'), page.index('<!--mail:end-->') + len('<!--mail:end-->')
+    email = SITECFG.get('contactEmail')
+    page = page[:a] + (page[a + 17:b - 15].replace('{{CONTACT_EMAIL}}', esc(email)) if email else '') + page[b:]
     start, end = '<!--prerender:start-->', '<!--prerender:end-->'
     a, b = page.index(start), page.index(end)
     page = page[:a] + prerender(page[a + len(start):b]) + page[b + len(end):]
     return (page.replace('{{PHOTO_BANK}}', json_script(bank))
                 .replace('{{FEED}}', json_script(feed))
                 .replace('{{ASSET_VERSION}}', version)
-                .replace('{{BASE}}', base))
+                .replace('{{BASE}}', base)
+                .replace('{{SITE_CONFIG}}', json_script(SITECFG)))
 
 
 def main():
@@ -294,6 +351,7 @@ def main():
                    f'<description>{esc(it.get("summary", ""))}</description></item>')
     rss.append('</channel></rss>')
     (ROOT / 'feed.xml').write_text('\n'.join(rss) + '\n', encoding='utf-8')
+    (ROOT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/news-sitemap.xml\n', encoding='utf-8')
 
     print(f'Páginas generadas: {len(items)} · carpetas viejas borradas: {removed} · en latest.json: {len(latest)} · '
           f'fotos de archivo locales: {sum(1 for v in bank.values() for p in v if p.get("local"))}')

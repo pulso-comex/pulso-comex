@@ -1,0 +1,22 @@
+{
+  "_ayuda": "Datos del sitio. Editá los valores entre comillas y guardá: en la próxima publicación se aplican solos. Dejá \"\" (vacío) lo que todavía no tengas.",
+  "contactEmail": "",
+  "responsable": {
+    "nombre": "",
+    "rol": "",
+    "descripcion": "",
+    "linkedin": ""
+  },
+  "googleAnalyticsId": "",
+  "googleSiteVerification": "",
+  "newsletter": {
+    "formAction": "",
+    "url": ""
+  },
+  "redes": [
+    { "nombre": "LinkedIn", "url": "" },
+    { "nombre": "Instagram", "url": "" },
+    { "nombre": "X", "url": "" },
+    { "nombre": "WhatsApp", "url": "" }
+  ]
+}

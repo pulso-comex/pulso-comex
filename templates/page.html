@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap">
-<script type="application/ld+json" id="ld-site">{"@context":"https://schema.org","@graph":[{"@type":"NewsMediaOrganization","@id":"#org","name":"Pulso Comex","description":"Portal de noticias, datos y análisis sobre comercio exterior, con foco en Argentina y Latinoamérica.","email":"redaccion@pulsocomex.com.ar","inLanguage":"es-AR"},{"@type":"WebSite","@id":"#web","name":"Pulso Comex","inLanguage":"es-AR","publisher":{"@id":"#org"}}]}</script>
+<script type="application/ld+json" id="ld-site">{"@context":"https://schema.org","@graph":[{"@type":"NewsMediaOrganization","@id":"#org","name":"Pulso Comex","description":"Portal de noticias, datos y análisis sobre comercio exterior, con foco en Argentina y Latinoamérica.","inLanguage":"es-AR"},{"@type":"WebSite","@id":"#web","name":"Pulso Comex","inLanguage":"es-AR","publisher":{"@id":"#org"}}]}</script>
 <link rel="stylesheet" href="{{BASE}}assets/app.css?v={{ASSET_VERSION}}">
 </head>
 <body>
@@ -27,6 +27,7 @@
         <a href="#buscar?tipo=analisis">Análisis</a>
         <a href="#fuentes">Fuentes</a>
         <a href="#guardadas">Guardadas</a>
+        <a href="#calculadora">Calculadora</a>
       </nav>
     </div>
   </div>
@@ -194,13 +195,15 @@
         <li><a href="#buscar?tipo=analisis">Análisis</a></li>
         <li><a href="#fuentes">Fuentes confiables</a></li>
         <li><a href="#guardadas">Noticias guardadas</a></li>
-        <li><a href="#acerca">Sobre el sitio</a></li>
+        <li><a href="#calculadora">Calculadora de importación</a></li>
+        <li><a href="#acerca">Quiénes somos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
     <div>
       <h2>Cómo se actualiza</h2>
       <p id="footFeed">Las noticias se actualizan automáticamente mediante un feed normalizado y GitHub Actions. Las fuentes se consultan periódicamente y los artículos nuevos se incorporan sin editar el HTML.</p>
-      <p class="copy-mail">Contacto editorial: <span class="mono" style="color:var(--on-navy)">redaccion@pulsocomex.com.ar</span><button type="button" data-copy="redaccion@pulsocomex.com.ar">Copiar</button></p>
+      <!--mail:start--><p class="copy-mail">Contacto editorial: <a class="mono" style="color:var(--on-navy)" href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a><button type="button" data-copy="{{CONTACT_EMAIL}}">Copiar</button></p><!--mail:end-->
       <ul>
         <li><a href="#privacidad">Política de privacidad</a></li>
         <li><a href="#terminos">Términos y condiciones</a></li>
@@ -246,6 +249,7 @@
 <button id="toTop" type="button" aria-label="Volver arriba" hidden><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg></button>
 <div id="toast" role="status" aria-live="polite" hidden></div>
 
+<script id="site-config" type="application/json">{{SITE_CONFIG}}</script>
 <script id="photo-bank" type="application/json">{{PHOTO_BANK}}</script>
 <script id="feed-data" type="application/json">{{FEED}}</script>
 <script src="{{BASE}}assets/app.js?v={{ASSET_VERSION}}" defer></script>
