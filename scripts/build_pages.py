@@ -267,7 +267,7 @@ def main():
 
     # Portada
     org_ld = {'@context': 'https://schema.org', '@graph': [
-        {'@type': 'NewsMediaOrganization', '@id': f'{SITE}/#org', 'name': SITE_NAME, 'url': f'{SITE}/', 'logo': f'{SITE}/favicon.svg',
+        {'@type': 'NewsMediaOrganization', '@id': f'{SITE}/#org', 'name': SITE_NAME, 'url': f'{SITE}/', 'logo': f'{SITE}/logo.png',
          'description': 'Portal de noticias, datos y análisis sobre comercio exterior, con foco en Argentina y Latinoamérica.', 'inLanguage': 'es-AR'},
         {'@type': 'WebSite', '@id': f'{SITE}/#web', 'name': SITE_NAME, 'url': f'{SITE}/', 'inLanguage': 'es-AR', 'publisher': {'@id': f'{SITE}/#org'},
          'potentialAction': {'@type': 'SearchAction', 'target': f'{SITE}/#buscar?q={{q}}', 'query-input': 'required name=q'}}]}
@@ -303,7 +303,7 @@ def main():
             'inLanguage': 'es-AR', 'mainEntityOfPage': url, 'articleSection': category(it),
             'keywords': ', '.join(it.get('tags', []) + it.get('topics', [])),
             'author': {'@type': 'Organization', 'name': f'{SITE_NAME} · Redacción', 'url': f'{SITE}/'},
-            'publisher': {'@type': 'NewsMediaOrganization', 'name': SITE_NAME, 'logo': {'@type': 'ImageObject', 'url': f'{SITE}/favicon.svg'}},
+            'publisher': {'@type': 'NewsMediaOrganization', 'name': SITE_NAME, 'logo': {'@type': 'ImageObject', 'url': f'{SITE}/logo.png'}},
             'isBasedOn': [{'@type': 'CreativeWork', 'url': s.get('url'), 'publisher': {'@type': 'Organization', 'name': s.get('name')}} for s in it.get('sources', [])],
         }]}
         extra = '\n'.join([f'<meta property="article:published_time" content="{esc(it.get("datetime") or it.get("date"))}">',
