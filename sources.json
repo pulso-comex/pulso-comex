@@ -19,8 +19,8 @@
   {
     "name": "Comisión Europea · Comercio",
     "url": "https://policy.trade.ec.europa.eu/node/2/rss_en?etrans=es&prefLang=es",
-    "type": "Organismo internacional",
-    "enabled": true,
+    "type": "Organismo internacional · publica en inglés",
+    "enabled": false,
     "min_relevance": 0,
     "fetch_og": true,
     "topics": [
@@ -51,8 +51,8 @@
   {
     "name": "Trade News",
     "url": "https://www.tradenews.com.ar/feed/",
-    "type": "Medio especializado · Argentina",
-    "enabled": true,
+    "type": "Medio especializado · Argentina (bloquea lectores automáticos)",
+    "enabled": false,
     "min_relevance": 1,
     "fetch_og": true,
     "topics": [
@@ -160,7 +160,7 @@
   },
   {
     "name": "Google Noticias · Logística y fletes",
-    "url": "https://news.google.com/rss/search?q=(fletes+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+contenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
+    "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
     "type": "Agregador",
     "aggregator": true,
     "enabled": true,
