@@ -11,6 +11,7 @@ El workflow `.github/workflows/update-news.yml` corre a las 06:30, 10:30, 14:30,
    - Deduplica por enlace original y descarta notas casi iguales (mismo hecho en dos medios).
    - Detecta países, categorías y si la nota menciona a Argentina.
    - Usa la imagen que publica la propia fuente (en el RSS o en la página original), con crédito.
+   - Al terminar, `scripts/update_indicators.py` actualiza los indicadores de mercado: tipo de cambio mayorista (API del BCRA), precio pizarra de la soja (Bolsa de Comercio de Rosario) y petróleo Brent (serie de la EIA publicada por FRED). Si una fuente falla, se conserva el último dato.
 2. `scripts/fetch_photos.py` descarga una copia local de las fotos de archivo (`img/stock/`), usadas cuando la nota no trae imagen.
 3. `scripts/build_pages.py` genera `index.html`, una página liviana por nota en `/noticias/<id>/` (con su propio título, descripción e imagen para redes), `data/latest.json`, `sitemap.xml`, `news-sitemap.xml` y `feed.xml`. Borra las páginas de notas que salieron del archivo.
 4. Guarda los cambios en el repositorio y publica el sitio.

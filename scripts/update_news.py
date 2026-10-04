@@ -687,3 +687,10 @@ def main():
 
 if __name__ == '__main__':
     main()
+    # Indicadores de mercado (BCRA, Bolsa de Comercio de Rosario, Brent): una falla no frena la publicación.
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import update_indicators
+        update_indicators.main()
+    except Exception as e:
+        print(f'Aviso: no se pudieron actualizar los indicadores de mercado ({e}).', file=sys.stderr)
