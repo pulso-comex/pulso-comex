@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-05T17:42:13Z",
+  "updatedAt": "2026-10-05T21:42:25Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -107,15 +107,15 @@
     {
       "id": "tc-mayorista",
       "label": "Tipo de cambio mayorista ARS/USD",
-      "value": "$ 1.523,09",
-      "period": "Com. A 3500 · 2 oct 2026",
+      "value": "$ 1.519,25",
+      "period": "Com. A 3500 · 5 oct 2026",
       "source": "BCRA",
       "url": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
       "group": "Mercados",
-      "obsDate": "2026-10-02",
-      "change": "0,0% vs. día hábil anterior",
-      "trend": "flat",
-      "checkedAt": "2026-10-05T17:42:25Z"
+      "obsDate": "2026-10-05",
+      "change": "-0,3% vs. día hábil anterior",
+      "trend": "down",
+      "checkedAt": "2026-10-05T21:42:39Z"
     },
     {
       "id": "soja",
@@ -132,7 +132,7 @@
         "date": "2026-10-02",
         "ars": 554000.0
       },
-      "checkedAt": "2026-10-05T17:42:28Z",
+      "checkedAt": "2026-10-05T21:42:41Z",
       "_prev": {
         "date": "2026-10-01",
         "ars": 552500.0
@@ -149,7 +149,7 @@
       "obsDate": "2026-09-29",
       "change": "-5,0% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-05T17:42:29Z"
+      "checkedAt": "2026-10-05T21:42:41Z"
     },
     {
       "id": "maiz",
@@ -166,7 +166,7 @@
         "date": "2026-10-02",
         "ars": 287090.0
       },
-      "checkedAt": "2026-10-05T17:42:28Z",
+      "checkedAt": "2026-10-05T21:42:41Z",
       "_prev": {
         "date": "2026-10-01",
         "ars": 287900.0
@@ -187,7 +187,7 @@
         "date": "2026-10-02",
         "ars": 339975.0
       },
-      "checkedAt": "2026-10-05T17:42:28Z",
+      "checkedAt": "2026-10-05T21:42:41Z",
       "_prev": {
         "date": "2026-10-01",
         "ars": 333000.0
@@ -195,6 +195,978 @@
     }
   ],
   "items": [
+    {
+      "id": "santa-fe-busca-ampliar-sus-exportaciones-a-la-union-europea-y-atraer-inversiones",
+      "datetime": "2026-10-05T21:33:00Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Santa Fe busca ampliar sus exportaciones a la Unión Europea y atraer inversiones",
+      "summary": "Nota publicada por La Capital. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "La Capital",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWF9oZnJTNEhoSmpGcVppMG1Lb2lPd1BzOGl3Z3ktUi1VV3I4SWEyUEVlLTNWaktGaFV1bGI2cmFGanNYd0ZDNlVyR0ltY245dVJ5d3lYT2JEdG1aSnVXN3V3Q3BCQmI1emFSYVhhS3ZkMkdORFJjTEd6aW1obzdTdHZpWU9YTU1UUnVfbHNBXzRrNXdpU0lSYnRTZnRxTGdKSXBqZ0QwNG9SeHA4dUNKZUt0VkJoZ25DTU1WUmxtcGZuRWlGNzZQaWZJa9IB0AFBVV95cUxOZWs4MG1nMHBSMUJ1RE1PNVpDajd2VTF5dEh0SHl1ay11eUMtdkZLZlIwdkZkRnE4WUFLODMxLWZhS3JFbzJCbko3bXRMdG44eVN5di1OaVpVR1ctWTJqNnhaUWo2OGZXcHdkSUJybFRVeWltSDF0RnBTbGUtSXM4aHljSmhCa0pFeEtRQkh3MzlHMmE3dHEtVWxET3JKU09qZ1duU1hfR0NlVEdvczdUcDctcXJkWm1GUUZzTi00QXFBZ2cwUzJrVVJRZmRhMURt?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "dhl-express-suma-nuevo-servicio-para-fortalecer-transporte-de-carga-minera-en-ch",
+      "datetime": "2026-10-05T21:30:39Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "DHL Express suma nuevo servicio para fortalecer transporte de carga minera en Chile",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario DHL Express sumó una nueva solución para fortalecer el transporte de carga industrial de hasta 3 La entrada DHL Express suma nuevo servicio para fortalecer transporte de carga minera en Chile se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Minería"
+      ],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/dhl-express-suma-nuevo-servicio-para-fortalecer-transporte-de-carga-minera-en-chile/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/DHL-carga-en-contenedor-e1791234409433.png",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/dhl-express-suma-nuevo-servicio-para-fortalecer-transporte-de-carga-minera-en-chile/",
+        "alt": "DHL Express suma nuevo servicio para fortalecer transporte de carga minera en Chile"
+      }
+    },
+    {
+      "id": "pullaro-impulsa-inversiones-y-exportaciones-hacia-europa",
+      "datetime": "2026-10-05T21:04:49Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Pullaro impulsa inversiones y exportaciones hacia Europa",
+      "summary": "Nota publicada por Agroempresario. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Agro"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Agroempresario",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZDRGakFYLVZPb3ViNWhOUUgyX05WRWliUE1VS3hkVktWUGJvNms5RExDU1g5djBFNTltbmFrc3FrVzNlMFRFNG9iNWppN1FjZ3NNYnRIcEthWjNyRkU5QzRYbVNzM3VuY2xyNzVLZlVUdEstd3FUcENtRmxaVlIyVDh6UzZtOWN1alM3UDJvckVxVTZrVUNGTTdia2xQZ0UxZ0V1aWtR?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "presidenta-de-mexico-inaugura-puente-acceso-al-puerto-de-veracruz",
+      "datetime": "2026-10-05T21:00:01Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Presidenta de México inaugura Puente Acceso al Puerto de Veracruz",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario La presidenta de México, Claudia Sheinbaum Pardo, inauguró el Puente Acceso al Puerto de Veracruz de La entrada Presidenta de México inaugura Puente Acceso al Puerto de Veracruz se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "México"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/presidenta-de-mexico-inaugura-puente-acceso-al-puerto-de-veracruz/",
+          "primary": true,
+          "author": "cmeza"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/Acceso-Puerto-de-Veracruz-scaled-e1791216241881.jpeg",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/presidenta-de-mexico-inaugura-puente-acceso-al-puerto-de-veracruz/",
+        "alt": "Presidenta de México inaugura Puente Acceso al Puerto de Veracruz"
+      }
+    },
+    {
+      "id": "la-mineria-argentina-quedo-a-un-paso-de-romper-su-record-exportador",
+      "datetime": "2026-10-05T20:51:03Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "La minería argentina quedó a un paso de romper su récord exportador",
+      "summary": "Nota publicada por Agenda Salta. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Minería"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Agenda Salta",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR1lnRmM3bmowR0l2Z1FxM2JMSjhMbWJiWGoxcmkyeHNFS0NZcnpaX2NnMjJFdEtrZHgxeFRGMm84ZFR1MUdSQUVnRUxMbjNNRFc2aUxpOHRkUDdraHdLMlA4Zmk2d2NFSkpwWnEza3lNYXdsekpzalhFLVVFQm1XTmdqWl9OV3BfTGlWdVp5REZQTjBLRW9FM1hFaHhJZkRJMVFZT0pUcDlRQkwxVncwd2lTSE5meDd2SWgzTXZCbjBHQQ?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "puertos-y-logistica-ii-cap-86-barcos-de-hidrogeno-el-futuro-limpio-del-transport",
+      "datetime": "2026-10-05T20:37:30Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Puertos y Logística II Cap. 86 Barcos de hidrógeno: ¿el futuro limpio del transporte marítimo?",
+      "summary": "Nota publicada por soychile.cl. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Transporte marítimo",
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "soychile.cl",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOM3BfcXNfSHRwQ21BZVM2LUJOUV9SSzFYcE0zMnVwRTJ2dFJ1amMyWTBDNlU0c2pWdlNXMEo1S0tFOElNODhyNWN5MTI3YjlsSXV1T1dFYXkzajdnaDN6THdvQWVZYnM5d21BTGxHazkzLVJISGtHMEFfSFMtajkyX0IyazJZQkJLakR6QWRZWXFVczZ0VkxBXzlqSmdDU3g0TFRkQnlHaTRWVG1BU0VYX05nX3BZVHVvbU4wZ2JKemxhY1NOaDh1V0hqVEM5amphX1FRaXowYw?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "venezuela-puerto-cabello-completa-atencion-simultanea-de-10-buques",
+      "datetime": "2026-10-05T20:30:23Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Venezuela: Puerto Cabello completa atención simultánea de 10 buques",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario El Puerto Cabello, Venezuela, completó la atención simultánea de 10 buques. En la operación destacaron las La entrada Venezuela: Puerto Cabello completa atención simultánea de 10 buques se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/venezuela-puerto-cabello-completa-atencion-simultanea-de-10-buques/",
+          "primary": true,
+          "author": "Gabriel"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/Puerto-Cabello.png",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/venezuela-puerto-cabello-completa-atencion-simultanea-de-10-buques/",
+        "alt": "Venezuela: Puerto Cabello completa atención simultánea de 10 buques"
+      }
+    },
+    {
+      "id": "resumen-sobre-las-nuevas-reglas-de-la-aduana-de-cuba-limites-cobros-y-claves-de",
+      "datetime": "2026-10-05T20:28:45Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Resumen sobre las nuevas reglas de la Aduana de Cuba: límites, cobros y claves de la resolución",
+      "summary": "Nota publicada por Periódico Cubano. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aduanas",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Periódico Cubano",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOeEpWdVNNam14d2M2bkRPcFhvaXlCZy0zVHJYZzM2WHRHa2NpLXAtZm9JMjVlRFJJQ2YzV2ltUDhMeDd0SVNLVjlHQ244ZEF1bHBVUFNYakVMc3BpTUhpa010LVZOMWJxbWhpOUZsYWV0NE1VYXVoWi1IVkxndzgwYWJUaUE0YmZSanNVTS12WGFiOFJHRUJwZVl0dFFsNUQ3OE5iUEdWMy02dHVneDBkVWxfZnB4QVBoZUFxaXY1VFRhN0xiczhJZ09tRmPSAcwBQVVfeXFMTnhKVnVTTWpteHdjNm5ET3BYb2l5QmctM1RyWGczNlh0R2tjaS1wLWZvSTI1ZURSSUNmM1dpbVA4THg3dElTS1Y5R0NuOGRBdWxwVVBTWGpFTHNwaU1IaWtNdC1WTjFicW1oaTlGbGFldDRNVWF1aFotSFZMZ3c4MGFiVGlBNGJmUmpzVU0tdlhhYjhSR0VCcGVZdHRRbDVENzhOYlBHVjMtNnR1Z3gwZFVsX2ZweEFQaGVBcWl2NVRUYTdMYnM4SWdPbUZj?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "tocumen-y-la-singapurense-sats-firman-acuerdo-para-potenciar-la-carga-aerea-entr",
+      "datetime": "2026-10-05T20:00:43Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Tocumen y la singapurense SATS firman acuerdo para potenciar la carga aérea entre Asia y América",
+      "summary": "Nota publicada por ElCapitalFinanciero.com. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "Transporte aéreo",
+        "Asia"
+      ],
+      "countries": [
+        "Singapur"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "ElCapitalFinanciero.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYjRJOWRKZTNtWFN5WkRGYW9VVTZRa3lmZlhGcVdqYjlXWnlSaFdKZzhXcVlJczAyN0g5MnZ4bk5ad0x0X3I3ZG83bzR1WUZJLVVXOS1STFctQk1wam9lVXdqa1p3TndoRnd6TEZ1bXRabUJNdjNUS1Z2VlQ0UF9uWg?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "avion-con-puerta-de-carga-mas-grande-del-mundo-realiza-su-primer-vuelo",
+      "datetime": "2026-10-05T20:00:12Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Avión con puerta de carga más grande del mundo realiza su primer vuelo",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario Con cinta adhesiva, etiquetas y sellos recreados sobre su fuselaje efectuó su primer vuelo el Airbus La entrada Avión con puerta de carga más grande del mundo realiza su primer vuelo se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/avion-con-puerta-de-carga-mas-grande-del-mundo-realiza-su-primer-vuelo/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/Avion-con-la-puerta-de-carga-mas-grande-del-mundo-realza-su-primer-vuelo-Airbus-A350F-scaled-e1791228053802.jpg",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/avion-con-puerta-de-carga-mas-grande-del-mundo-realiza-su-primer-vuelo/",
+        "alt": "Avión con puerta de carga más grande del mundo realiza su primer vuelo"
+      }
+    },
+    {
+      "id": "mexico-elimina-permiso-automatico-para-importar-ropa-y-textiles",
+      "datetime": "2026-10-05T19:56:09Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "México elimina permiso automático para importar ropa y textiles",
+      "summary": "Nota publicada por oem.com.mx. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "México"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "oem.com.mx",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbmEyeGV5YlRfX3pUQlFHdWVWUHJneG1reS1RdWRTVnprb25sTEczMGtlaGhsWGJ4ZElOcGd5bmQzdG84elBVazJ2T2hwZUFIazdjRy1DeFIwVVg3amNyajRRc2tINVV1Z3AzSUV3eFNka2pvc0h5ZzdyX0F6UmhYMFg4WEtnbWZhOTJBcEk0MjV3NWZZMkItQkZBVEFxRlN5ekdPb09PNThmazhXRnNPOW04SVZNMTFR?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "flota-de-portacontenedores-inactivos-se-mantiene-estable-a-fines-de-septiembre",
+      "datetime": "2026-10-05T19:52:30Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Flota de portacontenedores inactivos se mantiene estable a fines de septiembre",
+      "summary": "Nota publicada por Mundo Marítimo. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Contenedores"
+      ],
+      "visual": "container",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Mundo Marítimo",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNREVrdzZEenFDQ0dnUGxsbl9PWFBMZGs1UER6R0tKZDNNLWZING1xQWtoV3RVeTdYSlo3TmticS1yM25iZ2RLVXBwUHpCeWhjdUFPZ2tjM1EwcTBJa1ZodW9RbEtHLXRjYU5zUmJWSEtua0J4ZnAtckFEeElkLVBHeVF3akpyV2dnTmJPZUF0X0gxTXhHdkNmYjY1dXhsZTRJSmJVd3hUbmJxY3JPTTc5aXVR?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "iata-demanda-de-carga-aerea-en-america-latina-crece-un-5-1-en-agosto",
+      "datetime": "2026-10-05T19:52:30Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "IATA: Demanda de carga aérea en América Latina crece un 5,1% en agosto",
+      "summary": "Nota publicada por Mundo Marítimo. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte aéreo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Mundo Marítimo",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPemNNZ3hqRm5SZkJtX0k5RERFbkliYmhFRjcyUmFiZnA1UDkxNTZMUkw5VFJENkRDRDdleG9lN2lNSkpWS19wWnFnT3ZsbHJQWVZ6T3Zwd3E3cEtSQnRGdHJxZ01kbnZwdnlMenVJeEM0S0hkUTdsNXNNWWFLWkpsMW9MNWthcUNHbmJQemowSnFUZUd4b3MxT3RHRm1sczd5bU9r?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "oscar-figueroa-avances-en-infraestructura-para-el-comercio-exterior",
+      "datetime": "2026-10-05T19:30:06Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Oscar Figueroa: Avances en infraestructura para el comercio exterior",
+      "summary": "Oscar Figueroa es académico del Instituto de Estudios Urbanos de la Pontificia Universidad Católica de Chile y miembro del Comité La entrada Oscar Figueroa: Avances en infraestructura para el comercio exterior se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/oscar-figueroa-avances-en-infraestructura-para-el-comercio-exterior/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/Oscar-Figueroa-es-academico-del-Instituto-Estudios-Urbanos-de-la-Pontificia-Universidad-Catolica-de-Chile-e-integrante-del-Comite-de-Logistica-del-Consejo-de-Politicas-de-Infraestructura-scaled-e1791227302900.jpg",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/oscar-figueroa-avances-en-infraestructura-para-el-comercio-exterior/",
+        "alt": "Oscar Figueroa: Avances en infraestructura para el comercio exterior"
+      }
+    },
+    {
+      "id": "por-que-el-gobierno-cubano-flexibiliza-importaciones-que-durante-anos-mantuvo-pr",
+      "datetime": "2026-10-05T19:29:19Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "¿Por qué el gobierno cubano flexibiliza importaciones que durante años mantuvo prohibidas?",
+      "summary": "Nota publicada por Periódico Cubano. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Periódico Cubano",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVXllUHdrWHExelhIWS1EdVN3dWJHLW15TDZWWnkyUGhxXzg0SFVNa3pIemo2b3RnakJvU19nMlZNMFRvVVpiNFdqUGwtQW5ORzhDRW5FMEQ5LVdPSGliQ25aTGREbkF1LVItQ2w0Z2t3Vm5Bd3JxVURlRFNnbkFYY0tMc2RocFFlWmsweGtibnJBSjU5RVl6RzV1TGd3Q3RubUJDeGxjRkxZc0RZT2lMcnUyQTI4TEFacGUydmJB0gHGAUFVX3lxTE5zanExMW1tN2tkRE9rSFBfUkg2QWRtTFpmS2o3bnlNMFNpTnVpTnAybUVFVGtRRFNpZU40akJEZllDTU4zbGRmQTBzZ3YtU1RHM0owRER4ZW1WY0dhcFdTdTNpYktRLVd4OVhuLS0xak1GRlE1ZjZVanh1LTdKMFpLYmdKdU9DTjlrS3JUaXpub0JZeUtRWnY3cU5fZEEteGcwVmJhai1wOVdkS1RmSm9lMHBLM0laTFBwQWhQTWQwdWs3Zm95Zw?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "centros-de-dialisis-de-salta-y-jujuy-reclaman-a-pami-una-actualizacion-urgente-d",
+      "datetime": "2026-10-05T19:03:42Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Centros de diálisis de Salta y Jujuy reclaman a PAMI una actualización urgente de los aranceles",
+      "summary": "Nota publicada por Nuevo Diario de Salta. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Nuevo Diario de Salta",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOU1QeEVqZm42TWppYnkwcTV1WmxRdmlBTlFqTjZkaHNvTzQ3cEhQc0gwY0UwbFdUenhxZ1pyR1FZMk1BcFUyaE5YYTBidW01YmVNcGFYYXlQOWFGd0lWZVdvTnM4VWg3Sl9UenltalF4aWdaVWhJWC1nOHdkajFjcU4yb010RDhhb2dLOERMb2VDZUpKUVpja0tNWjRfSDRNaURmeEtsNkU4T1FMbGdKamw3eGVYTkwyZTRFS2lBYTA0cnRpWER0UFlR?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "aduanas-de-chile-recibe-a-delegacion-de-indonesia-para-fortalecer-intercambio-co",
+      "datetime": "2026-10-05T19:00:23Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Aduanas de Chile recibe a delegación de Indonesia para fortalecer intercambio comercial",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario Con el propósito de fortalecer los vínculos institucionales y contribuir al desarrollo de nuevas oportunidades de La entrada Aduanas de Chile recibe a delegación de Indonesia para fortalecer intercambio comercial se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aduanas",
+        "Puertos",
+        "Latinoamérica",
+        "Asia"
+      ],
+      "countries": [
+        "Chile",
+        "Indonesia"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/aduanas-de-chile-recibe-a-delegacion-de-indonesia-para-fortalecer-intercambio-comercial/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/Aduanas-de-Chile-recibe-a-delegacion-de-Indonesia-para-fortalecer-el-intercambio-comercial-entre-ambos-paises.jpeg",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/aduanas-de-chile-recibe-a-delegacion-de-indonesia-para-fortalecer-intercambio-comercial/",
+        "alt": "Aduanas de Chile recibe a delegación de Indonesia para fortalecer intercambio comercial"
+      }
+    },
+    {
+      "id": "notarias-y-conservadores-tendran-nuevo-tarifario-justicia-avanza-en-fijacion-de",
+      "datetime": "2026-10-05T19:00:00Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Notarías y conservadores tendrán nuevo tarifario: Justicia avanza en fijación de aranceles máximos para todo el sistema",
+      "summary": "Nota publicada por La Tercera. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "court",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "La Tercera",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZEZmUk42V1FpblREek1XWFJkbE93Y3lFWUM2Z05DSjhIQkI1QlRGbW5IR1VWN3I0aHNkbjRGZHBDMVFyZWpNcC1qSGFZRkp0MjI2YWU2NjRQb19LMldHRkE1Yk5sX3phQnZFa2dwNlgxX1U0bEhlUUlzc0lGWXZaVWNIQUI2UF9iRDl1clFoOXFDSmxVVVNHOGhoMzU3WVU5elpHWkRTbmUyZE1ueEpQMXp0cW15b2xCQTgtV0tGaVZib1BNUFVuLW9peDVLNzdFcng5bUpOOTZvRDZLM0lxaVl6UkQxaDZ4TTY3RTNmQ0k2NTNn0gGWAkFVX3lxTFAtRnJQbThwazhscUVQdWdKWUJNVnlVTVFaZGRaSGtrTjRPOFFWM25WNng3Q0NqSFJnWGp5V1dVTmtHWUJ3dExfMGRCTlNqR18tSG1qNVg2RFFFbDJpTjAxN3B6cWdQVERPSXo5UlJTOFJZZ0pQQlVkQ09oN3IwWVpxN3hReV9QanIxYkUtd3hZWGQxdkFWeXVRdWF0LXB4cEVIYmUtc1Y4QU1NNkpvOXE1bVZMeXN3cjBTUFFxTTc3MjFfeFdkd1M5Sml1bHc4N2F0a0NteVVuUXRfdGdWLS01SU8zMncxcUlMUzJMVnVBNFk3aDd6Vnk3bllNd0tsVWl5X0ltWnozblVaN2M3NlI2OVF0ZHFB?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "panama-y-singapur-impulsan-cooperacion-para-ampliar-la-carga-aerea-en-tocumen",
+      "datetime": "2026-10-05T18:50:45Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Panamá y Singapur impulsan cooperación para ampliar la carga aérea en Tocumen",
+      "summary": "Nota publicada por www.metrolibre.com. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte aéreo",
+        "Latinoamérica",
+        "Asia"
+      ],
+      "countries": [
+        "Panamá",
+        "Singapur"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "www.metrolibre.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORzJUcEVlaGRMbUlZa2lWdFNRbGIyb0FUWGRtQmJ4ZnVRVmJIcUthancyOXZ4eDJyOEJVLTZkVU9aRDVBVHVDZko2TzVGZm9XdTRra0p1VkdsdTc2bWQwZmNSUmxGd2taVUNSZFRNeURuT293OWUtR3hXQUFVUnhvbm12dDA5NlA1em92d2FkOWFMSVZ5R2JjSVN2S01QR21wYzZrYnhRMkpsMFFMNmhmNG9mbTJNcXNsM092WnJTNVJaQQ?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "santa-fe-busca-aprovechar-el-acuerdo-mercosur-ue-para-potenciar-exportaciones-in",
+      "datetime": "2026-10-05T18:49:55Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Santa Fe busca aprovechar el acuerdo Mercosur-UE para potenciar exportaciones, inversiones y producción",
+      "summary": "Nota publicada por SOL 91.5. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Tratados y acuerdos",
+        "Mercosur",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "SOL 91.5",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQS0pCcmJDSlhTVnRBUU13c0l1Vm9PWUo1MmMzZjBWZVFlZHNVWkxnejYtWnFJelpKMnpkNU40YkxzZFJFaE1ET1J6WjEyR0F1S1BzaElHSE1kMmJfMWRqaTQ1eTJVUktpSE9La3FDMFBtdUJqa2hGcTJXakxYVkl2WEt6QkJSN2JHcU9zMGpJMG9rQXNkUE1PWVZMR3RHWXhaRktTUW5Kejc0eE96OS1LVEpPTkR5blQ0Wm55akJWcVR5WlhxSVJHcA?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "dolar-exportaciones-y-mercosur-como-podria-impactar-la-victoria-de-flavio-bolson",
+      "datetime": "2026-10-05T18:47:00Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Dólar, exportaciones y Mercosur: cómo podría impactar la victoria de Flávio Bolsonaro en Argentina",
+      "summary": "Nota publicada por Ambito. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones",
+        "Mercosur"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Ambito",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOLW1ySlN5WmVrRW53V1pFamdOdWIyblU5S2xOWmJuS2lpSGZ5djFfRjZ3bjI3dnRjanVzU0FTQ0lWYlVfNTg4ZzNEbXlVWXJaLXQwUktxN1FnOGdRMFpjQXhIRG9oNTRBSjl6SHNDX1BUYjBWYUNQZ3EzZjFRODFmd3BFUFRSdjFKQWdIVmZoNEU5akVEY0hVM216TzZtWFFEVlUtVlZVMDhuSkxMZTg0aTJVZjdEUURjWmRWb3RmbFA1ZG1DcnVWUlJxMER1enZU0gHQAUFVX3lxTE4tbXJKU3laZWtFbndXWkVqZ051YjJuVTlLbE5aYm5LaWlIZnl2MV9GNnduMjd2dGNqdXNTQVNDSVZiVV81ODhnM0RteVVZclotdDBSS3E3UWc4Z1EwWmNBeEhEb2g1NEFKOXpIc0NfUFRiMFZhQ1BncTNmMVE4MWZ3cEVQVFJ2MUpBZ0hWZmg0RTlqRURjSFUzbXpPNm1YUURWVS1WVlUwOG5KTExlODRpMlVmN0RRRGNaZFZvdGZsUDVkbUNydVZSUnEwRHV6dlQ?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "el-embajador-de-la-union-europea-visito-santa-fe-la-provincia-busca-abrir-mercad",
+      "datetime": "2026-10-05T18:42:20Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "El embajador de la Unión Europea visitó Santa Fe: la provincia busca abrir mercados y atraer inversiones con foco en las exportaciones",
+      "summary": "Nota publicada por Diario Uno Santa Fe. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Diario Uno Santa Fe",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPNXBWeTItUDdOX2pkSTFCNXkxOHJLdk9XeXRqRENEUk8wTVYzLVFZb2RseUlaQ1J0aDJ2WVJhYnlZZ1lyXy10N1NRdFpfN1NWbEowdFBLbkRWUlRORi1zRmhQRVY4aG10Uk15S2NaTTBHU090SVo0WXpZOHpWb05MbzhVOW9YM0YzbEpsakZ2bEFqN3JsSy1TdkxjUldkWU5SdXVhUXJhQ3lpX2FuNk5wTHZjc0p3MFhFSjZZZFpSWDI3WlpaUHB5al9jTGUyOGoyN1cyQ0x3S2hXWG1wbXRZVFR5YThnNDhIRUpaZUMyeE1sVGRiekJDZUR1bFB6UnN2U09KSjRDc9IBhwJBVV95cUxPNXBWeTItUDdOX2pkSTFCNXkxOHJLdk9XeXRqRENEUk8wTVYzLVFZb2RseUlaQ1J0aDJ2WVJhYnlZZ1lyXy10N1NRdFpfN1NWbEowdFBLbkRWUlRORi1zRmhQRVY4aG10Uk15S2NaTTBHU090SVo0WXpZOHpWb05MbzhVOW9YM0YzbEpsakZ2bEFqN3JsSy1TdkxjUldkWU5SdXVhUXJhQ3lpX2FuNk5wTHZjc0p3MFhFSjZZZFpSWDI3WlpaUHB5al9jTGUyOGoyN1cyQ0x3S2hXWG1wbXRZVFR5YThnNDhIRUpaZUMyeE1sVGRiekJDZUR1bFB6UnN2U09KSjRDcw?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "autoridad-del-canal-de-panama-anuncia-nueva-fase-del-programa-de-asignacion-de-c",
+      "datetime": "2026-10-05T18:30:15Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Autoridad del Canal de Panamá anuncia nueva fase del Programa de Asignación de Cupos a Largo Plazo",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario La Autoridad del Canal de Panamá anunció el inicio de una fase de su programa Asignación La entrada Autoridad del Canal de Panamá anuncia nueva fase del Programa de Asignación de Cupos a Largo Plazo se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "Transporte marítimo",
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Panamá"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/autoridad-del-canal-de-panama-anuncia-nueva-fase-del-programa-de-asignacion-de-cupos-a-largo-plazo/",
+          "primary": true,
+          "author": "Gabriel"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/Canal-de-Panama-esclusa-e1791223104356.png",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/autoridad-del-canal-de-panama-anuncia-nueva-fase-del-programa-de-asignacion-de-cupos-a-largo-plazo/",
+        "alt": "Autoridad del Canal de Panamá anuncia nueva fase del Programa de Asignación de Cupos a Largo Plazo"
+      }
+    },
+    {
+      "id": "ajustan-la-produccion-para-reducir-el-impacto-de-las-importaciones",
+      "datetime": "2026-10-05T18:05:09Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Ajustan la producción para reducir el impacto de las importaciones",
+      "summary": "Nota publicada por El Miércoles Digital. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "El Miércoles Digital",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMkNXNlFOVkpwa2JuRnhPMGVfd0ozSGUxeTE1QUYwNEVoTndrWUtJSGhRbmoxbzMta0Q1VVNSZGNkOFQyb0Y1SFJqVDRqVjVBeUZaSTNGRENZNS13dy1TWWNTZE9JOW5oZVpmLW1PRVBkay1LU0pmUnFPeExXcTY4YzZYRU1nak83TkRNcE81THdHdFM3TFlrZk5oSXBnbHRadEx4ZWxWNkc?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "movimiento-de-carga-portuaria-en-region-del-bio-bio-aumenta-6-4-en-agosto-de-202",
+      "datetime": "2026-10-05T18:00:22Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Movimiento de carga portuaria en Región del Bio Bio aumenta 6,4% en agosto de 2026",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario La carga total movilizada en los puertos de la Región del Bio Bio durante agosto de La entrada Movimiento de carga portuaria en Región del Bio Bio aumenta 6,4% en agosto de 2026 se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/movimiento-de-carga-portuaria-en-region-del-bio-bio-aumenta-64-en-agosto-de-2026/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/08/Escala-inaugural-del-MSC-Senegal-a-Puerto-Coronel.jpeg",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/movimiento-de-carga-portuaria-en-region-del-bio-bio-aumenta-64-en-agosto-de-2026/",
+        "alt": "Movimiento de carga portuaria en Región del Bio Bio aumenta 6,4% en agosto de 2026"
+      }
+    },
+    {
+      "id": "centro-despachantes-de-aduana-de-la-republica-argentina-hasta-siempre-querido-ca",
+      "datetime": "2026-10-05T17:41:20Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T17:42:13Z",
+      "title": "Centro Despachantes de Aduana de la Republica Argentina - Hasta siempre querido Canta Yoy!",
+      "summary": "Nota publicada por Centro Despachantes de Aduana (CDA). Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Aduanas"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Centro Despachantes de Aduana (CDA)",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9jc0ZFWEZUX1QwNXV1YWxueldyZmVzOGNPdWtlMFBuS1JzeTVGOVU3d1M0QzE1MTJqY1A3dnd1aVZKZHMyN0J4SXI3YjN6Wk1LUlNjWGVSTUttc3ZBN3lz?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "mercados-dolar-exportaciones-y-turismo-que-impacto-tendra-en-la-argentina-el-res",
+      "datetime": "2026-10-05T17:35:00Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T17:42:13Z",
+      "title": "Mercados, dólar, exportaciones y turismo: que impacto tendrá en la Argentina el resultado de las elecciones en Brasil",
+      "summary": "Nota publicada por Infobae. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Argentina",
+        "Brasil"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Infobae",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQNGxzR2w1bGtHMzItd3ZBeUlCLWIyS3NKcmxYbmVobnh0VUJfcnpEZjRkeGJpSTFjR0VmbGtpUWdDcy10SEp6ZEloTms4SnBIZVhubzlvVThSUTdxbXpGWW9KV0Vyd2t5dnhweUc3c2dyclVjT3Y2TXZJWUkwd25NTnEyaHA1U3VPc3l4N1VveWd0anVoRW9ac1hLanpSLWJhNlVzV09xVmdLMks0YWJISUVEUXd2XzZsbFh5a1FXUWdVUUYxZk1jQ0lQYURQWW1XbVhkT0RUcFBHR0x0d0NSSGY1cDlGRDRvWGE4LVdNYWnSAYsCQVVfeXFMTlpQQ0U4Tl9VMGZGVlFjQmU0YVpBclVpclhESVhJYmh6M1JjRGkwXzctdTVSUjk5eFdOZ2U4STFBWFF2VjN5SEV2dDc2QVIxVUJJTHFGNGZuSGpCNWlmQzZWM3R3bzNKelVvQlB0REtxVURHM2g1NW9HUWpYOTlrLXhJZ2I3QnViZ0x3cUlwTjJyV3ZWSWpkMjd1Q0RabWlEX1JBVVZINnNMcmJyWkJtTURXX3VrRFlWRVFFWWtuZ3dVZXhzN2JPM0J2dmNDQjNqR1pnSmpHWUExRGEtWTNBVE9jc25nR3ZYdEFWSmk0OGdueTdONnlWTnZXVFFMcmFZV1hYSkp2cDNBRVZV?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
     {
       "id": "pullaro-busca-abrir-mas-mercados-y-atraer-inversiones-en-el-marco-del-acuerdo-me",
       "datetime": "2026-10-05T17:34:51Z",
@@ -308,6 +1280,39 @@
       }
     },
     {
+      "id": "centro-despachantes-de-aduana-de-la-republica-argentina-en-memoria-de-carlos-a-c",
+      "datetime": "2026-10-05T17:26:54Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Centro Despachantes de Aduana de la Republica Argentina - En memoria de Carlos A. Canta Yoy",
+      "summary": "Nota publicada por Centro Despachantes de Aduana (CDA). Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Aduanas"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Centro Despachantes de Aduana (CDA)",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAwZEFEODZQb2dNTTZvMy1ES0ctQ2ExYkYxMm1vdG5Vd0FLZ0VRZmVLcG9NOXMwY1hfZTFMQTE3aVRVaWRyUlhkWlVxYWRTZHNtWFdmWmxiNlk4UGlwaFhZ?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "que-provincias-lideran-el-record-de-exportaciones-mineras-argentinas",
       "datetime": "2026-10-05T17:11:00Z",
       "date": "2026-10-05",
@@ -417,6 +1422,40 @@
       ]
     },
     {
+      "id": "sector-servicios-de-canada-se-contrae-por-cuarto-mes-por-aranceles",
+      "datetime": "2026-10-05T16:59:07Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T17:42:13Z",
+      "title": "Sector servicios de Canadá se contrae por cuarto mes por aranceles",
+      "summary": "Nota publicada por Investing.com México. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles"
+      ],
+      "countries": [
+        "Canadá"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Investing.com México",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaUtyVkVNQXJMSlBjbzZyVV9veEFINmxXQVcxQTlyaTBCbWJVYTlPVHVldzZLMFp0bUFUWWlSLU1wb0ZobHBJUkhpdURycE16amg5ZFRsbzE1akFQTmtBUjk4THFvZmlxWkhCX2VvY3ZQckE0bUtGYUlsQnQwdkhvMVVsOER2dEZJZXVPWElOUHktTDdqQjBTd3ZhY2M3OERtaVNDcG42Ny1SVC03TENncV9zOVRsYmMzdTJjdE5MNA?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "tarifas-de-flete-maritimo-intraasiatico-suben-un-2-mientras-navieras-anuncian-al",
       "datetime": "2026-10-05T16:47:24Z",
       "date": "2026-10-05",
@@ -452,24 +1491,27 @@
       ]
     },
     {
-      "id": "mercados-dolar-exportaciones-y-turismo-que-impacto-tendra-en-la-argentina-el-res",
-      "datetime": "2026-10-05T16:39:01Z",
+      "id": "argentina-anuncio-acuerdo-con-japon-para-abrir-exportaciones-de-carne-vacuna",
+      "datetime": "2026-10-05T16:45:00Z",
       "date": "2026-10-05",
-      "firstSeen": "2026-10-05T17:42:13Z",
-      "title": "Mercados, dólar, exportaciones y turismo: que impacto tendrá en la Argentina el resultado de las elecciones en Brasil",
-      "summary": "Nota publicada por Infobae. Abrí el artículo original para leer el texto completo.",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Argentina anunció acuerdo con Japón para abrir exportaciones de carne vacuna",
+      "summary": "Nota publicada por El Observador. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
         "Argentina",
         "Exportaciones",
-        "Latinoamérica"
+        "Tratados y acuerdos",
+        "Asia"
       ],
       "countries": [
         "Argentina",
-        "Brasil"
+        "Japón"
       ],
-      "tags": [],
+      "tags": [
+        "Carne"
+      ],
       "visual": "customs",
       "impact": 1,
       "affectsArgentina": true,
@@ -478,9 +1520,9 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "Infobae",
+          "name": "El Observador",
           "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQNGxzR2w1bGtHMzItd3ZBeUlCLWIyS3NKcmxYbmVobnh0VUJfcnpEZjRkeGJpSTFjR0VmbGtpUWdDcy10SEp6ZEloTms4SnBIZVhubzlvVThSUTdxbXpGWW9KV0Vyd2t5dnhweUc3c2dyclVjT3Y2TXZJWUkwd25NTnEyaHA1U3VPc3l4N1VveWd0anVoRW9ac1hLanpSLWJhNlVzV09xVmdLMks0YWJISUVEUXd2XzZsbFh5a1FXUWdVUUYxZk1jQ0lQYURQWW1XbVhkT0RUcFBHR0x0d0NSSGY1cDlGRDRvWGE4LVdNYWnSAYsCQVVfeXFMTlpQQ0U4Tl9VMGZGVlFjQmU0YVpBclVpclhESVhJYmh6M1JjRGkwXzctdTVSUjk5eFdOZ2U4STFBWFF2VjN5SEV2dDc2QVIxVUJJTHFGNGZuSGpCNWlmQzZWM3R3bzNKelVvQlB0REtxVURHM2g1NW9HUWpYOTlrLXhJZ2I3QnViZ0x3cUlwTjJyV3ZWSWpkMjd1Q0RabWlEX1JBVVZINnNMcmJyWkJtTURXX3VrRFlWRVFFWWtuZ3dVZXhzN2JPM0J2dmNDQjNqR1pnSmpHWUExRGEtWTNBVE9jc25nR3ZYdEFWSmk0OGdueTdONnlWTnZXVFFMcmFZV1hYSkp2cDNBRVZV?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOc21hbWVfMzFILXEwRkRHVkhmX2FVRFl3dllRQWpHeENMOXJxVzRZaEV3RXZyX2k2bjQ1ckJFdzhIOFVYbmlsb2lFRE5OY2dhWTc0d21wR2tyRWNvaXU2NUJ1eG5rNkVqODc2RkZiMjFsWkU5eEY1bmNJSWd1UGgyNTNFV3pVQUFoNndWNnNHckhMR2RVeEVUd2xqT3lVNnVQQ2UzMC0tYTFCVTNLbW130gG0AUFVX3lxTE5LMVBZVW9kMjhla3lTZjJvZWEtd3FlejFzYlhHMmV4NnZvX1FweWtKQV9HYUdZMnpYd0p6bEx6MktiTDVoV2c2dlNSajZWQmU5eFdNM2l6Z0w4NDBoT19BWkVvN0hCMWhBc0JSZjhUcWQxMWI1YTRYSUlWaXA2dzNtS3RSTWxZeV8wdFZHVnh3bzFTNlRpeXZxM3dPTjdGSmFHWUt4NVVQek1rYVNzdDEzT3pvaQ?oc=5",
           "primary": true,
           "author": ""
         }
@@ -742,6 +1784,76 @@
       }
     },
     {
+      "id": "logistica-y-transporte-de-carga-aerea-la-capacidad-de-reaccion-toma-el-relevo-de",
+      "datetime": "2026-10-05T15:34:59Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Logística y transporte de carga aérea: la capacidad de reacción toma el relevo de la velocidad",
+      "summary": "Nota publicada por logisticaprofesional.com. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Transporte aéreo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "logisticaprofesional.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZ29BcjY0R2prWC1KU1dqRERyY1hGTkpUNmstNGRlc2xSc2dsN2RhRVhSa2w4ZDh5anFtNFlNRjJoSnFpZ19raHhEanhZYm9QUXN6RjRjSEpLaHlqUXB5NkhYSktGX0tFTk9reVhjSTNIY0ZKaE5PRXI1NEhjUEIxZ0dNS1RUa2ZDTkJBOWN5NGV6ZDZjck1fajNaTmpSeDIyaWVfQkJwdHdJSHdxaUV3TE9lcjNCOFYzZ0RIQnZPY0JiNWZ4alBCUW9jVEtJMkpzbGlYZGln?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "mercosur-y-ue-la-logistica-se-vuelve-clave-para-aprovechar-el-acuerdo",
+      "datetime": "2026-10-05T15:06:17Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T09:44:23Z",
+      "title": "Mercosur y UE: la logística se vuelve clave para aprovechar el acuerdo",
+      "summary": "Nota publicada por Identidad Correntina. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "Logística",
+        "Mercosur",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Identidad Correntina",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNcjVGdWRFcXhCNGM2eHpFLVQ5Q2xvTmN5RU13clNWNzZIU0RFTWJrMmw5eTZBTmRDcUkweVd0cW5PU2xfV2tTYmdaRTJIdXl6SlE3NWNMd0FaNFhpMWNFNkgtcDZ1WXBkemU4MmJseTBZR1g1X2pZdFREVWlGUmJrVFYzckZMblFrTTdfUzl4U01pbDRyQ096V19ianNyWi11ZkxOR09takpkLWxOdDVMdVRITXJYeFk4bFlfN2JxeTlPNk0?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "rusia-intensifica-ataques-contra-infraestructura-portuaria-y-buques-ligados-a-uc",
       "datetime": "2026-10-05T15:00:02Z",
       "date": "2026-10-05",
@@ -786,61 +1898,29 @@
       }
     },
     {
-      "id": "mercosur-y-ue-la-logistica-se-vuelve-clave-para-aprovechar-el-acuerdo",
-      "datetime": "2026-10-05T14:57:23Z",
+      "id": "trump-amenaza-con-duplicar-los-aranceles-a-corea-del-sur-por-el-proyecto-de-gnl",
+      "datetime": "2026-10-05T14:56:07Z",
       "date": "2026-10-05",
-      "firstSeen": "2026-10-05T09:44:23Z",
-      "title": "Mercosur y UE: la logística se vuelve clave para aprovechar el acuerdo",
-      "summary": "Nota publicada por Identidad Correntina. Abrí el artículo original para leer el texto completo.",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Trump amenaza con duplicar los aranceles a Corea del Sur por el proyecto de GNL de Alaska",
+      "summary": "Nota publicada por DiarioBitcoin. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
-        "Tratados y acuerdos",
-        "Logística",
-        "Mercosur",
-        "Europa"
+        "Aranceles",
+        "Estados Unidos",
+        "Asia"
       ],
       "countries": [
-        "Unión Europea"
+        "Estados Unidos",
+        "Corea del Sur"
       ],
       "tags": [
-        "Mercosur"
+        "Energía",
+        "Aranceles",
+        "Estados Unidos"
       ],
-      "visual": "treaty",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
-      "sources": [
-        {
-          "name": "Identidad Correntina",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNcjVGdWRFcXhCNGM2eHpFLVQ5Q2xvTmN5RU13clNWNzZIU0RFTWJrMmw5eTZBTmRDcUkweVd0cW5PU2xfV2tTYmdaRTJIdXl6SlE3NWNMd0FaNFhpMWNFNkgtcDZ1WXBkemU4MmJseTBZR1g1X2pZdFREVWlGUmJrVFYzckZMblFrTTdfUzl4U01pbDRyQ096V19ianNyWi11ZkxOR09takpkLWxOdDVMdVRITXJYeFk4bFlfN2JxeTlPNk0?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
-      "id": "sector-servicios-de-canada-se-contrae-por-cuarto-mes-por-aranceles",
-      "datetime": "2026-10-05T14:37:30Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-05T17:42:13Z",
-      "title": "Sector servicios de Canadá se contrae por cuarto mes por aranceles",
-      "summary": "Nota publicada por Investing.com México. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Aranceles"
-      ],
-      "countries": [
-        "Canadá"
-      ],
-      "tags": [
-        "Aranceles"
-      ],
-      "visual": "customs",
+      "visual": "tanker",
       "impact": 1,
       "affectsArgentina": false,
       "kind": "noticia",
@@ -848,42 +1928,44 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "Investing.com México",
+          "name": "DiarioBitcoin",
           "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaUtyVkVNQXJMSlBjbzZyVV9veEFINmxXQVcxQTlyaTBCbWJVYTlPVHVldzZLMFp0bUFUWWlSLU1wb0ZobHBJUkhpdURycE16amg5ZFRsbzE1akFQTmtBUjk4THFvZmlxWkhCX2VvY3ZQckE0bUtGYUlsQnQwdkhvMVVsOER2dEZJZXVPWElOUHktTDdqQjBTd3ZhY2M3OERtaVNDcG42Ny1SVC03TENncV9zOVRsYmMzdTJjdE5MNA?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQ1p3YktJaHJxeXh6NGc2dWZjUkhiMVU0ckVaX1FNYnY1c2k5Zk5pallKdzZfOFgwbmVyZndpVURCa0pUaEhOcUJ1N2xWVjBIWVFLZ0c0X2VwQkdNdEdTS0pIY3Zqd05pRWVIWGhWYU9lX0J6R0RET0EzNUZxSjNTYTh1d1BlbDhXajFqUXM2VmJSay15ZmZWRFBoVzdMRUpDUFNNLUdIZVNBeWJmTy1TLW5FdUNpZUNvRHR4LXhWbkdQRzZFZ0xuVXdqSlRBME5p?oc=5",
           "primary": true,
           "author": ""
         }
       ]
     },
     {
-      "id": "centro-despachantes-de-aduana-de-la-republica-argentina-hasta-siempre-querido-ca",
-      "datetime": "2026-10-05T14:35:51Z",
+      "id": "figueroa-busca-potenciar-las-exportaciones-de-gas-de-neuquen-a-chile",
+      "datetime": "2026-10-05T14:38:56Z",
       "date": "2026-10-05",
-      "firstSeen": "2026-10-05T17:42:13Z",
-      "title": "Centro Despachantes de Aduana de la Republica Argentina - Hasta siempre querido Canta Yoy!",
-      "summary": "Nota publicada por Centro Despachantes de Aduana (CDA). Abrí el artículo original para leer el texto completo.",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Figueroa busca potenciar las exportaciones de gas de Neuquén a Chile",
+      "summary": "Nota publicada por ADNSUR. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
-        "Argentina",
-        "Aduanas"
+        "Exportaciones",
+        "Latinoamérica"
       ],
       "countries": [
-        "Argentina"
+        "Chile"
       ],
-      "tags": [],
+      "tags": [
+        "Energía"
+      ],
       "visual": "customs",
-      "impact": 2,
-      "affectsArgentina": true,
+      "impact": 1,
+      "affectsArgentina": false,
       "kind": "noticia",
       "label": "Automática",
-      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "Centro Despachantes de Aduana (CDA)",
+          "name": "ADNSUR",
           "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9jc0ZFWEZUX1QwNXV1YWxueldyZmVzOGNPdWtlMFBuS1JzeTVGOVU3d1M0QzE1MTJqY1A3dnd1aVZKZHMyN0J4SXI3YjN6Wk1LUlNjWGVSTUttc3ZBN3lz?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNUmEzOFFQWGF1cV9fQzlnbVpNVl9zN2xDZ0VrUVlGSEFPR1FFZHJyamNFSW5vLUs4UUFBaUk2MUpZakdBNjZCazJKbHVld2hTTU9abXZjYXkxdVNQRHY3eVk5SjlSOFZLalV0a2N6TG9pYk0wZnVPb0Y0WkFsR3BpOGNZcFc2cWw5OG5BUlY0cmd2cXhyQUJ4TlFLOEppTF9IRlBSRUFjY3R0N3lZS0tFcUQzaHhxR1EzNDREMFBybVBVTHFMeWFDa1pPU2Z0d2JGVXpj?oc=5",
           "primary": true,
           "author": ""
         }
@@ -1010,41 +2092,6 @@
       }
     },
     {
-      "id": "panama-y-singapur-impulsan-cooperacion-para-ampliar-la-carga-aerea-en-tocumen",
-      "datetime": "2026-10-05T13:45:51Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-05T13:45:14Z",
-      "title": "Panamá y Singapur impulsan cooperación para ampliar la carga aérea en Tocumen",
-      "summary": "Nota publicada por www.metrolibre.com. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Transporte aéreo",
-        "Latinoamérica",
-        "Asia"
-      ],
-      "countries": [
-        "Panamá",
-        "Singapur"
-      ],
-      "tags": [],
-      "visual": "plane",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Logística y fletes",
-      "sources": [
-        {
-          "name": "www.metrolibre.com",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORzJUcEVlaGRMbUlZa2lWdFNRbGIyb0FUWGRtQmJ4ZnVRVmJIcUthancyOXZ4eDJyOEJVLTZkVU9aRDVBVHVDZko2TzVGZm9XdTRra0p1VkdsdTc2bWQwZmNSUmxGd2taVUNSZFRNeURuT293OWUtR3hXQUFVUnhvbm12dDA5NlA1em92d2FkOWFMSVZ5R2JjSVN2S01QR21wYzZrYnhRMkpsMFFMNmhmNG9mbTJNcXNsM092WnJTNVJaQQ?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
       "id": "india-y-estados-unidos-frenan-negociaciones-de-acuerdo-comercial",
       "datetime": "2026-10-05T13:34:55Z",
       "date": "2026-10-05",
@@ -1076,40 +2123,6 @@
           "name": "Xpectro FM",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSHJOTVgzZDlzUmRHNkhwNTJWa0NNTi1kYTVTdEs3X2pKMnFnYVRHRllac0RLWE50NE5GNENjSjdsYm1PV3dubWRuQmRFa0xrQUs0ajBLMHRlUk41YklZTGh5WmNzM1NCNTR6Slc4bTg0cE1NNWhGQjJaMEtTbDJrLUh1S0ZxY1Vnclg5NGUwaW8?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
-      "id": "centros-de-dialisis-de-salta-y-jujuy-reclaman-a-pami-una-actualizacion-urgente-d",
-      "datetime": "2026-10-05T13:31:40Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-05T13:45:14Z",
-      "title": "Centros de diálisis de Salta y Jujuy reclaman a PAMI una actualización urgente de los aranceles",
-      "summary": "Nota publicada por Nuevo Diario de Salta. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Aranceles"
-      ],
-      "countries": [
-        "Global"
-      ],
-      "tags": [
-        "Aranceles"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
-      "sources": [
-        {
-          "name": "Nuevo Diario de Salta",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOU1QeEVqZm42TWppYnkwcTV1WmxRdmlBTlFqTjZkaHNvTzQ3cEhQc0gwY0UwbFdUenhxZ1pyR1FZMk1BcFUyaE5YYTBidW01YmVNcGFYYXlQOWFGd0lWZVdvTnM4VWg3Sl9UenltalF4aWdaVWhJWC1nOHdkajFjcU4yb010RDhhb2dLOERMb2VDZUpKUVpja0tNWjRfSDRNaURmeEtsNkU4T1FMbGdKamw3eGVYTkwyZTRFS2lBYTA0cnRpWER0UFlR?oc=5",
           "primary": true,
           "author": ""
         }
@@ -1157,39 +2170,6 @@
       }
     },
     {
-      "id": "logistica-y-transporte-de-carga-aerea-la-capacidad-de-reaccion-toma-el-relevo-de",
-      "datetime": "2026-10-05T13:26:51Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-05T13:45:14Z",
-      "title": "Logística y transporte de carga aérea: la capacidad de reacción toma el relevo de la velocidad",
-      "summary": "Nota publicada por Logística Profesional. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Logística",
-        "Transporte aéreo"
-      ],
-      "countries": [
-        "Global"
-      ],
-      "tags": [],
-      "visual": "plane",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Logística y fletes",
-      "sources": [
-        {
-          "name": "Logística Profesional",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZ29BcjY0R2prWC1KU1dqRERyY1hGTkpUNmstNGRlc2xSc2dsN2RhRVhSa2w4ZDh5anFtNFlNRjJoSnFpZ19raHhEanhZYm9QUXN6RjRjSEpLaHlqUXB5NkhYSktGX0tFTk9reVhjSTNIY0ZKaE5PRXI1NEhjUEIxZ0dNS1RUa2ZDTkJBOWN5NGV6ZDZjck1fajNaTmpSeDIyaWVfQkJwdHdJSHdxaUV3TE9lcjNCOFYzZ0RIQnZPY0JiNWZ4alBCUW9jVEtJMkpzbGlYZGln?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
       "id": "tocumen-y-sats-pactan-alianza-para-impulsar-carga-aerea-entre-asia-y-america",
       "datetime": "2026-10-05T13:19:25Z",
       "date": "2026-10-05",
@@ -1216,45 +2196,6 @@
           "name": "CRÍTICA",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcXl0QUVTeE0ya3I3ZnJlM1JsQWg0MDBLM0ZDa09ISDRpNFBFQXEwYkZCWlViUVRqVUpyOHhuNm1EZWhGSkt5dlFBQS13cS1KSEpfbXE0VzVoUXRITE5raXJWYkpBYXRxNURwTTIyVEFuTUxXZ3ZKaElRNUFQRjVvRVNwVGNuT0l3ZUdIUzdkc01BTk8wN1ZpX2dONExBN3BQTF9JZWtTUlVpYjJDTlI1UW5ZTnNlZkVxM0VJ0gHAAUFVX3lxTE4zUjZCRzlKSEU1X1ZmODZ0S3BfLTBnMEd1TVptYzdjVEpJeU10Y3NWVjV6eFhRUG5laGNFT1JlbjVXU3V0ZEFjWWY0bklUcllIU0Y3b2pwRm1HS3Y3dE9EN2VfYkxWbGdSS0VLUWVhbkVhaWtuTkRVc1o4YW15VEw2UW1VcnhEbTlsdGkzYlVBWkNPaU5UVDhXWGZTeXBVS0dQQ0MyWlhIWG91YTZBZG41Q0I5NFVJZmdCa0lZQ25VVg?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
-      "id": "trump-amenaza-con-duplicar-los-aranceles-a-corea-del-sur-por-el-proyecto-de-gnl",
-      "datetime": "2026-10-05T13:11:05Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-05T13:45:14Z",
-      "title": "Trump amenaza con duplicar los aranceles a Corea del Sur por el proyecto de GNL de Alaska",
-      "summary": "Nota publicada por DiarioBitcoin. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Aranceles",
-        "Estados Unidos",
-        "Asia"
-      ],
-      "countries": [
-        "Estados Unidos",
-        "Corea del Sur"
-      ],
-      "tags": [
-        "Energía",
-        "Aranceles",
-        "Estados Unidos"
-      ],
-      "visual": "tanker",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
-      "sources": [
-        {
-          "name": "DiarioBitcoin",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQ1p3YktJaHJxeXh6NGc2dWZjUkhiMVU0ckVaX1FNYnY1c2k5Zk5pallKdzZfOFgwbmVyZndpVURCa0pUaEhOcUJ1N2xWVjBIWVFLZ0c0X2VwQkdNdEdTS0pIY3Zqd05pRWVIWGhWYU9lX0J6R0RET0EzNUZxSjNTYTh1d1BlbDhXajFqUXM2VmJSay15ZmZWRFBoVzdMRUpDUFNNLUdIZVNBeWJmTy1TLW5FdUNpZUNvRHR4LXhWbkdQRzZFZ0xuVXdqSlRBME5p?oc=5",
           "primary": true,
           "author": ""
         }
@@ -1300,8 +2241,8 @@
       "datetime": "2026-10-05T13:05:01Z",
       "date": "2026-10-05",
       "firstSeen": "2026-10-05T13:45:14Z",
-      "title": "Impacto en el real, exportaciones y vacaciones en Brasil: los escenarios económicos que se abren con Bolsonaro y Lula ante el balotaje",
-      "summary": "Nota publicada por clarin.com. Abrí el artículo original para leer el texto completo.",
+      "title": "Impacto en el real, exportaciones y vacaciones en Brasil: los escenarios que se abren con Bolsonaro y Lula ante el balotaje",
+      "summary": "Nota publicada por Clarin.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1320,13 +2261,14 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "clarin.com",
+          "name": "Clarin.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPN3RVcW93ZG9ITDE2M2RxUWJaV2kzNDlqX3FOT2xCUWsxZW9ER2laUzlHdWV4UThTQ0RWWkRqWld3MlhROXk2R2V5NUdkckQtQ3JzMTFXdnBMU3UzQ2F4RXNIT3lkdjBmWUxSREwtY2F0LXVsbGxUc1p1UV91aU5pbU1OODNZZ0MtRjBFbG54dnFzcmY4c0RxNUhITFpHVzhDNnBzMUY0RTU0SG12MTBHS1g4c2tNNW5YTE1yQ3BKdC1JZmZ6QTVrUzQ5RHRoeXVaTGFzcnFwcm1MakRrVlpR?oc=5",
           "primary": true,
           "author": ""
         }
-      ]
+      ],
+      "updated": "2026-10-05T21:42:25Z"
     },
     {
       "id": "centauro-cumple-40-anos-logistica-crecimiento-y-conexion-con-el-mundo",
@@ -1585,41 +2527,6 @@
       ]
     },
     {
-      "id": "figueroa-busca-potenciar-las-exportaciones-de-gas-de-neuquen-a-chile",
-      "datetime": "2026-10-05T12:06:50Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-05T13:45:14Z",
-      "title": "Figueroa busca potenciar las exportaciones de gas de Neuquén a Chile",
-      "summary": "Nota publicada por ADNSUR. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Exportaciones",
-        "Latinoamérica"
-      ],
-      "countries": [
-        "Chile"
-      ],
-      "tags": [
-        "Energía"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
-      "sources": [
-        {
-          "name": "ADNSUR",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNUmEzOFFQWGF1cV9fQzlnbVpNVl9zN2xDZ0VrUVlGSEFPR1FFZHJyamNFSW5vLUs4UUFBaUk2MUpZakdBNjZCazJKbHVld2hTTU9abXZjYXkxdVNQRHY3eVk5SjlSOFZLalV0a2N6TG9pYk0wZnVPb0Y0WkFsR3BpOGNZcFc2cWw5OG5BUlY0cmd2cXhyQUJ4TlFLOEppTF9IRlBSRUFjY3R0N3lZS0tFcUQzaHhxR1EzNDREMFBybVBVTHFMeWFDa1pPU2Z0d2JGVXpj?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
       "id": "mercosur-union-europea-el-agro-emerge-como-el-gran-ganador-pero-enfrenta-exigenc",
       "datetime": "2026-10-05T12:02:13Z",
       "date": "2026-10-05",
@@ -1732,6 +2639,75 @@
       ]
     },
     {
+      "id": "vaca-muerta-pone-a-neuquen-en-camino-de-ser-la-principal-provincia-exportadora-d",
+      "datetime": "2026-10-05T11:48:00Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Vaca Muerta pone a Neuquén en camino de ser la principal provincia exportadora de Argentina",
+      "summary": "Nota publicada por Lmneuquen.com. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Energía"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Lmneuquen.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNM0xFam9ILWR2cVptOWE1eGZhUmhEOEpJcWlGbVJMTmNiM2UwdEQyMFFieTR0a3JRRE9JQ2FkUG1ZY2FibDFRZXRKY1c0MEVRNUd0dmtLMVU3UW13VFN0dHFEWktiMXdIUDlVNE1yS0MxTzNSNWpmWkZfU2FCaDh3RlNrZjZ1elViNDRvSHFQb0xNU2FEZmZsRFpCbDVEbEVNTUhtc2h2SDlpVWZTUEswN25LLUFFN1d4c2dxQlctNmtJU1hyVm1Z0gHMAUFVX3lxTE03YWx4SHZzZ3F5cHgzNFlsNDNYbTVuZXU2REdTb1ZCZmphbzlFMm5feEtENGY5UE5YWVFoc09LWFNGa2YyRW1fbnpUV0NlUmlJX19XRXlybzFTc3FHUzhULVBYOTk5aGxEdlZYUk9EbTVTSmdNckw4MkFZLVlYamZEV3ZPc2d5c2I5QUJkeW4tOTdWcEZBWG8wWW5oenZmQXR6a1dHTHVRUmYxMVhSMldZY3hMZk5IbEJPOFM5NGd6azVSMnNlTjBVaTkxQg?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "vaca-muerta-impulsa-a-neuquen-hacia-el-liderazgo-en-exportaciones-nacionales",
+      "datetime": "2026-10-05T11:48:00Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T21:42:25Z",
+      "title": "Vaca Muerta impulsa a Neuquén hacia el liderazgo en exportaciones nacionales",
+      "summary": "Nota publicada por ZapalaYa. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Energía"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "ZapalaYa",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbFpkUjBNMkZ0WG1kazdhTFd3NTYyRUpuX3RyS0FxRnliM3EtZVA2XzVwaWNDU3FRUElxQ3RGeENlX28tVjhObE45eWhLNXlZdnloOWM4UF9HenZvaGZDNm80UjRLTlAxQVo2anNqdnJweGhGMzlQcWFtVzBwZm9wTUxrZXFZRVJ3MjkxaThyWW9KV0Z3cXZ4akhyNmZ2b01pRlUzYTY4Z3pxZVdJczRXcXBn?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "wenceslao-bunge-saravia-diserta-sobre-mercosur-y-europa-en-foro-de-cadiz",
       "datetime": "2026-10-05T11:35:08Z",
       "date": "2026-10-05",
@@ -1820,7 +2796,7 @@
       "affectsArgentina": true,
       "kind": "noticia",
       "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "feed": "Google Noticias · Comercio exterior Argentina",
       "sources": [
         {
           "name": "Infobae",
@@ -1933,7 +2909,7 @@
       "affectsArgentina": true,
       "kind": "noticia",
       "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
+      "feed": "Google Noticias · Comercio exterior Argentina",
       "sources": [
         {
           "name": "LA17",
@@ -2017,7 +2993,7 @@
       "date": "2026-10-05",
       "firstSeen": "2026-10-05T13:45:14Z",
       "title": "El embajador de Argentina analiza en Cádiz las relaciones entre Mercosur y Europa",
-      "summary": "Nota publicada por El Estrecho Digital. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por elestrechodigital.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2038,7 +3014,7 @@
       "feed": "Google Noticias · Mercosur",
       "sources": [
         {
-          "name": "El Estrecho Digital",
+          "name": "elestrechodigital.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNjNfVGxrRTB6MnpYTkU5X0Q5bWstcWp6dFkzXzZDNTBNZ3lQN1FNWlZjbGJKclZ3RFRhWnAxRUMwaHIyMFVhVEYxS0hDUmdkZXN6VWgxanFFWUhkaU5BaTBmUmJfemFIa2tFd0VpZXh5aURNNVhWUWNjN1A2WTYyaWV5LXVlRXBDR2RmTC1JSzJzMVQ0OUh3MnNoNm5lUThQQXRyRnBZbU82Y0VONE1faXo2QmlrY09wNGkydEhUSTB1MnBJ?oc=5",
           "primary": true,
@@ -2306,7 +3282,7 @@
       "date": "2026-10-05",
       "firstSeen": "2026-10-05T09:44:23Z",
       "title": "Los servicios basados en el conocimiento lograron un récord exportador histórico: qué actividades sobresalen",
-      "summary": "Nota publicada por infobae.com. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Infobae. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2324,7 +3300,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "infobae.com",
+          "name": "Infobae",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOQnYwaXcwZEo5LWpKY1Q0OFdmZ2hJcUF1dGdzNEJaSzRzS2RpVXYwWVZuQ2V0S2h5d09XMjF0TlFiNHpETzU2azE5SjJORk1NcndDOHhfUE1LbGZTNGpLVVZLZmtVSmhBY2ZxeXZORUVYd2JTU215cm5uUGVUY1otWTlVOExVUmhkZ2VPaGs5MzlzRGNVc0NVamlfUGJwRjdwMU5pVnNwUWp1VTJTd0o4LVNwNjZJVjVLdnRGa01ON3BuaS1NYTRkeE1mdm4yYVVTTVNxX1E5RzRZTjBGbEJQRFBWZTU1eldESXJFd2xoUXVsVXJIanZJNXJvQm04MnQwSnfSAYICQVVfeXFMTkJ2MGl3MGRKOS1qSmNUNDhXZmdoSXFBdXRnczRCWks0c0tkaVV2MFlWbkNldEtoeXdPVzIxdE5RYjR6RE81NmsxOUoyTkZNTXJ3Qzh4X1BNS2xmUzRqS1VWS2ZrVUpoQWNmcXl2TkVFWHdiU1NteXJublBlVGNaLVk5VThMVVJoZGdlT2hrOTM5c0RjVXNDVWppX1BicEY3cDFOaVZzcFFqdVUyU3dKOC1TcDY2SVY1S3Z0RmtNTjdwbmktTWE0ZHhNZnZuMmFVU01TcV9ROUc0WU4wRmxCUERQVmU1NXpXRElyRXdsaFF1bFVySGp2STVyb0JtODJ0MEp3?oc=5",
           "primary": true,
@@ -2858,7 +3834,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Cierre de jugueterías en Argentina por importaciones",
-      "summary": "Nota publicada por cuestionentrerriana.com.ar. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Cuestión Entrerriana. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2877,7 +3853,7 @@
       "feed": "Google Noticias · Aduana e importaciones Argentina",
       "sources": [
         {
-          "name": "cuestionentrerriana.com.ar",
+          "name": "Cuestión Entrerriana",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSmVMVW9haHVScGRZY2d4WFZEZGtlc0xEVFRTd0JUZ3JOUlhoZWtuQjNBeWRNa3Y2NmNmOVV2cURPUkxJVkg0b0wwYlQwM3F4cjJKcWlSZC10bVk2U0NHeWh1OGtMWGxIdHg1eFJRcEJUa0o1WmN0SkNoQkRpSF9UZlU3UXpycnFpMmo4aThaeTRlMVlEY1BIU3RDTzVvektTYXFxSnVpVVBTdUlZUGVLVjJFS2tFb3pwTGZ3Qmhoa005N2tncFIxNQ?oc=5",
           "primary": true,
@@ -2926,7 +3902,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-05T00:53:37Z",
       "title": "La exportación de lana también mostró un importante crecimiento interanual en 2026",
-      "summary": "Nota publicada por iprofesional.com. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por iProfesional. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2945,7 +3921,7 @@
       "feed": "Google Noticias · Comercio exterior Argentina",
       "sources": [
         {
-          "name": "iprofesional.com",
+          "name": "iProfesional",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNV1oySnB4UVVieGR6eHNVMVdjNHZBUENFcDRtb0hWNFhoeGpnU0xxZkMwRjc4T1M4a25ZNlIwbGlDdHN5QVRPWWxmU0wwVDNmYV9mVDIwVnhZd3daYTMwMGZmTVExYm51TkkyUnJweUdxVDZMUGVvZ2psQ1loM3dKVzVyY0otbFZLWFE1SXo2allMWDJ4dl9RX0VSelIxSDA1ODUyVVFiWUlJaDJTTmp0RGdSVFdGWFRiOWh2Nm9HbF9WUdIBxwFBVV95cUxNaG9odHJTN1N6WUkzSkJodXpyRzNkOVF6TTMxZnE1N1NCT0VYRnJPOG0ydlFQek9TdzhKT09GMkpsb1BtN08taDNDdmstazVjVjZhc2NpdTNDbm9iV0ZfYzhqZmhkdDJEakFWRzQ1S0xhUGpPZWJUV0JsZ1ZnTzI4LXpKbEFqdUkyZUNJUThaSjRhVHNkVHFEdEN4aFg5dTJGSTVYYk5CNGZrQkZDNkJUVkVLbUdMRjUtY3dPeGhkaVhTU3FMbnVr?oc=5",
           "primary": true,
@@ -3484,7 +4460,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Puerto Quequén: 156 años desde aquel primer embarque que marcó el inicio de su historia exportadora",
-      "summary": "Nota publicada por Comex Online. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por comexonline.com.ar. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -3505,7 +4481,7 @@
       "feed": "Google Noticias · Comercio exterior Argentina",
       "sources": [
         {
-          "name": "Comex Online",
+          "name": "comexonline.com.ar",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNOXA1SUw5UkhHUk8xeUNtbDUxYlpMUFJtdEY3czYycThJeURwZHFFR3lHdXRNbWxZTU5xa2d3dzN1aXV3TTdYMEUwT1hSVGJZX1pNbW5GcXpqdkNUNTJZOUNjekpVV2dZYTQ0Sk94LVc4cFZZZjVPRlA4WHpxdjJuMm5ZdmNzVldNNHhWUGNCbmw3aDh6eXRMRDEzR3B6M0lpSFp3U1owLUJfTmQ1QmczeXRIM2dIdF84aWtvaVFTLVRVUW83eUx6ekI4MHhpWEExcUFyVmNhNE9pd0M5d205SXNqRQ?oc=5",
           "primary": true,
@@ -4055,7 +5031,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Las exportaciones de lana argentina crecieron 28% y generaron un 66% más de dólares",
-      "summary": "Nota publicada por diarioelnorte.com.ar. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Diario El Norte - San Nicolás. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -4074,7 +5050,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "diarioelnorte.com.ar",
+          "name": "Diario El Norte - San Nicolás",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRVNrVU9wX3M2UndLTE1TZDk3Nlg5cHZkcF9iLTN6eEpOanFaZUJqMlJ6NEJpRGxaOThXSURreWhvMktBTFRGV3VFckM3NW1kMHFtVHVzSmdrNHE4OWxpb1V0VE1kYm5LOXFqR2hqb0VDRFdtZERJbGtic29iSzZ1dFFpN0gxYmhHa0hORjl4U0xCcUk2cVhYR2s2Mm9qc29RRTg1WURxcUYzY0dNSko0bQ?oc=5",
           "primary": true,
@@ -4655,7 +5631,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Cinco pymes que están haciendo uso del reciente acuerdo Mercosur-UE para sumar exportaciones",
-      "summary": "Nota publicada por fmdelcondado.com.ar. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por FM Del Condado. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -4678,7 +5654,7 @@
       "feed": "Google Noticias · Mercosur",
       "sources": [
         {
-          "name": "fmdelcondado.com.ar",
+          "name": "FM Del Condado",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSnpIZ01JcEw4bmJnc2prWHItZ05SdnZsY295NHBKZWlkNnlvV3FiX0lkcFFhU0habVJDU3lDb3pQU1VNVV8xQjFjMDZQR1poWk5vUEtnZ052OEs5Y2RWVFJubHNhb2tibW9KVXBTVEVnTUdDd0pVMEs1WE0wTnUwMTloSFFsTGM1amFWb25uSjVfdDc2ckFoa2RuanB6WnVlVFBmWndfQWU0TEt0T0Z6T0lMZ1BKY01HYmhsMg?oc=5",
           "primary": true,
@@ -4764,6 +5740,39 @@
         "page": "https://aduananews.com/por-que-los-principales-beneficiarios-del-acuerdo-entre-la-union-europea-y-el-mercosur-no-lo-usan-segunda-parte/?utm_source=rss&utm_medium=rss&utm_campaign=por-que-los-principales-beneficiarios-del-acuerdo-entre-la-union-europea-y-el-mercosur-no-lo-usan-segunda-parte",
         "alt": "¿Por qué los principales beneficiarios del acuerdo entre la Unión Europea y el MERCOSUR no lo usan? (SEGUNDA PARTE)"
       }
+    },
+    {
+      "id": "menos-fabricas-menos-empleo-mas-importaciones-el-desguace-de-la-industria-textil",
+      "datetime": "2026-10-04T07:30:00Z",
+      "date": "2026-10-04",
+      "firstSeen": "2026-10-04T00:14:26Z",
+      "title": "Menos fábricas, menos empleo, más importaciones: el desguace de la industria textil argentina",
+      "summary": "Nota publicada por Data Diario. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Data Diario",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVGwxeUkwMHdvWlVrR0FsSG5HUGVRanpqaFQwYldGQVhwV0ZyNVhYTjJrT0lfYVFfLWRlb1B0bFRlMVZOOFpvWlhSYWNOdXl3S0w0QzU3NlFIMzhIWV9RMnFtWjV6aUlhWXNTbmhRYlFQZHN5ZUlhbElpbldxOGo0b0hEd3Q3WmpINEZVNV9nSXRZMVZHcWZwWWxzUjVVOFlxODQ2VWxuUE5ydFFoNTZDcEJaOEtWQVRqQkdxdW9QdkR0UWJLSTA0VXoybTFaRTJ4dFpZZ1h3?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
     },
     {
       "id": "la-lana-teje-un-crecimiento-sostenido-inicio-la-zafra-2026-27-con-el-doble-de-do",
@@ -4901,39 +5910,6 @@
           "name": "Europa Sur",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYW9qUlBUeUIzQUFuR3huc1gtT1g5ek9SWGtqb1ctWXBPSHZtVlVFV1RyZDRiRlBFRk9XYU9qbVdKQ0JrcVlvU19oM05YUlRvV0Rlc0E0dThrd1ppTTdrQUZQa0lEbHJCYzJqR3dUclhBbGZFblQ3V1FBU3JYeVRGbTk0ZDZFZFZPSWNsX1h0WXRtSlF0YUR3UFN1UU1aZEJKNk9vWNIBqgFBVV95cUxQSmdCN0hpc0VvNVNKNEhqcWx5c1N0Nm1lN2w0cW11V2MzX2FEMzIzc29hVHJTNzZEQ0pFMHRfRlVhYmRLbjdRajU2cHY0WFZBRjE5MVE4Y2x2YndhTmRON3BndGU2ZmdiaVBDNExSYW1lUGRLaXVqaC03aTJYci1NQ1hDZFJzVFpTMm9Rc211SjgyV3ZHOW91S0hlbmhaZzR4dmFRcWlnclc3QQ?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
-      "id": "menos-fabricas-menos-empleo-mas-importaciones-el-desguace-de-la-industria-textil",
-      "datetime": "2026-10-04T05:19:37Z",
-      "date": "2026-10-04",
-      "firstSeen": "2026-10-04T00:14:26Z",
-      "title": "Menos fábricas, menos empleo, más importaciones: el desguace de la industria textil argentina",
-      "summary": "Nota publicada por datadiario.com. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina",
-        "Importaciones"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aduana e importaciones Argentina",
-      "sources": [
-        {
-          "name": "datadiario.com",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVGwxeUkwMHdvWlVrR0FsSG5HUGVRanpqaFQwYldGQVhwV0ZyNVhYTjJrT0lfYVFfLWRlb1B0bFRlMVZOOFpvWlhSYWNOdXl3S0w0QzU3NlFIMzhIWV9RMnFtWjV6aUlhWXNTbmhRYlFQZHN5ZUlhbElpbldxOGo0b0hEd3Q3WmpINEZVNV9nSXRZMVZHcWZwWWxzUjVVOFlxODQ2VWxuUE5ydFFoNTZDcEJaOEtWQVRqQkdxdW9QdkR0UWJLSTA0VXoybTFaRTJ4dFpZZ1h3?oc=5",
           "primary": true,
           "author": ""
         }
@@ -5079,7 +6055,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Alabarce: “Trabajamos para que Rosario sea el hub logístico de la minería argentina”",
-      "summary": "Nota publicada por Comex Online. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por comexonline.com.ar. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -5100,7 +6076,7 @@
       "feed": "Google Noticias · Comercio exterior Argentina",
       "sources": [
         {
-          "name": "Comex Online",
+          "name": "comexonline.com.ar",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVEFmUVVJTUtpNThaenZ4U3cwSVdGSjU5a3hZdmZpLVJoREc1aGd4NWlMaTdnZFNzdEI4ZXpTSjdmMGQzem9wZm9udkt6ZEpfc0VLWGowc0tDV0ROUmxqY2UycVRqbXlXYjl3ZWlCTjVmWU4xMm44a3Q4U2hadVRzUEdJc0ptaGxaakVaMUJGOWQxNGdCeUdJQVZtUnhHRXRxRXY1SHBjN1htWG0wdk1Ba0o1alNLQVBVbFJacFkxVzVBbmFvM1BnOGVWaUs?oc=5",
           "primary": true,
@@ -5649,18 +6625,18 @@
       "body": [],
       "keyData": [],
       "topics": [
-        "Mercosur"
+        "Argentina"
       ],
       "countries": [
-        "Global"
+        "Argentina"
       ],
       "tags": [],
       "visual": "globe",
       "impact": 1,
-      "affectsArgentina": false,
+      "affectsArgentina": true,
       "kind": "noticia",
       "label": "Automática",
-      "feed": "Google Noticias · Mercosur",
+      "feed": "Google Noticias · Comercio exterior Argentina",
       "sources": [
         {
           "name": "Diario Río Uruguay",
@@ -12722,14 +13698,14 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-05T17:42:13Z",
+    "ranAt": "2026-10-05T21:42:25Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
         "url": "https://www.wto.org/library/rss/latest_news_s.xml",
         "ok": true,
         "items": 6,
-        "added": 1,
+        "added": 0,
         "updated": 0,
         "skipped": 0
       },
@@ -12738,7 +13714,7 @@
         "url": "https://www.aduananews.com/feed/",
         "ok": true,
         "items": 12,
-        "added": 1,
+        "added": 0,
         "updated": 0,
         "skipped": 2
       },
@@ -12747,62 +13723,62 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 4,
+        "added": 8,
         "updated": 0,
-        "skipped": 6
+        "skipped": 4
       },
       {
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 49,
+        "items": 45,
         "added": 3,
-        "updated": 5,
-        "skipped": 35
+        "updated": 4,
+        "skipped": 28
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 51,
+        "items": 49,
         "added": 3,
-        "updated": 5,
-        "skipped": 35
+        "updated": 3,
+        "skipped": 32
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 53,
+        "items": 60,
         "added": 4,
-        "updated": 10,
-        "skipped": 27
+        "updated": 5,
+        "skipped": 29
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 41,
+        "items": 34,
         "added": 1,
-        "updated": 4,
-        "skipped": 22
+        "updated": 2,
+        "skipped": 21
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 53,
+        "items": 54,
         "added": 4,
-        "updated": 1,
-        "skipped": 36
+        "updated": 3,
+        "skipped": 35
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 59,
+        "items": 63,
         "added": 4,
-        "updated": 6,
+        "updated": 2,
         "skipped": 38
       }
     ],
