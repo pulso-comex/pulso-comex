@@ -43,30 +43,38 @@ const SITECFG = (() => {
   catch (e) { return {}; }
 })();
 CONFIG.social = (SITECFG.redes || []).map(r => ({ name: r.nombre, url: r.url }));
+// Taxonomía de secciones y glosario: data/taxonomy.json y data/glossary.json → inyectados por scripts/build_pages.py
+const SITE_DATA = (() => {
+  try { const t = document.getElementById('site-data')?.textContent?.trim(); return t && !t.startsWith('{{') ? JSON.parse(t) : {}; }
+  catch (e) { return {}; }
+})();
 
 /* =====================================================================
    2. TAXONOMÍA
    ===================================================================== */
 const TOPICS = ['Argentina','Latinoamérica','Estados Unidos','Europa','Asia','China','Oceanía','Mercosur','Importaciones','Exportaciones','Aduanas','Aranceles','Impuestos','Tratados y acuerdos','Logística','Transporte marítimo','Transporte aéreo','Puertos','Economía internacional','Geopolítica y comercio','Empresas','Regulaciones','Tecnología COMEX'];
 
-// Secciones de la navegación principal: cada una agrupa una o más categorías.
-const SECTIONS = [
-  { slug:'argentina', label:'Argentina', topics:['Argentina'], desc:'Exportaciones, importaciones, saldo comercial, ARCA, Mercosur y normativa que cambia las condiciones para operar desde la Argentina.' },
-  { slug:'mercosur', label:'Mercosur', topics:['Mercosur'], desc:'El bloque, sus socios y sus acuerdos externos, con el acuerdo UE–Mercosur como eje.' },
-  { slug:'aduanas', label:'Aduanas', topics:['Aduanas'], desc:'Normativa aduanera, procedimientos, sistemas informáticos y controles en frontera.' },
-  { slug:'importaciones', label:'Importaciones', topics:['Importaciones'], desc:'Regímenes, permisos, percepciones y medidas que alcanzan a la importación.' },
-  { slug:'exportaciones', label:'Exportaciones', topics:['Exportaciones'], desc:'Ventas externas, cuotas, mercados de destino y datos de balanza comercial.' },
-  { slug:'aranceles', label:'Aranceles', topics:['Aranceles','Impuestos'], desc:'Aranceles, salvaguardias, represalias y tributos sobre el comercio.' },
-  { slug:'logistica', label:'Logística', topics:['Logística'], desc:'Cadenas de suministro, fletes, disponibilidad de bodega y costos logísticos.' },
-  { slug:'transporte', label:'Transporte', topics:['Transporte marítimo','Transporte aéreo'], desc:'Transporte marítimo y aéreo de carga: tarifas, capacidad y rutas.' },
-  { slug:'puertos', label:'Puertos', topics:['Puertos'], desc:'Terminales, congestión, esperas y operación portuaria.' },
-  { slug:'economia', label:'Economía Internacional', topics:['Economía internacional'], desc:'Comercio mundial, balanzas de las grandes economías y organismos internacionales.' },
-  { slug:'tratados', label:'Tratados y Acuerdos', topics:['Tratados y acuerdos'], desc:'Acuerdos comerciales, negociaciones, cupos y su aplicación.' },
-  { slug:'regulaciones', label:'Regulaciones', topics:['Regulaciones'], desc:'Normas, resoluciones y decisiones judiciales que cambian las reglas del comercio.' },
-  { slug:'geopolitica', label:'Geopolítica', topics:['Geopolítica y comercio'], desc:'Conflictos comerciales, sanciones y tensiones que alteran rutas y mercados.' },
-  { slug:'tecnologia', label:'Tecnología COMEX', topics:['Tecnología COMEX'], desc:'Digitalización aduanera, ventanillas únicas, trazabilidad y herramientas para operadores.' },
-];
-const sectionBySlug = s => SECTIONS.find(x => x.slug === s);
+// Secciones del menú (data/taxonomy.json), agrupadas en bloques: Comercio mundial, Argentina, Logística y Mercados.
+// Una nota entra en una sección por categoría, país, etiqueta o palabras clave (misma lógica que scripts/taxonomy.py).
+const TAXO = SITE_DATA.taxonomy || {};
+const SECTIONS = (TAXO.sections || []).map(s => ({ ...s, title: s.title || s.label, topics: s.topics || [], countries: s.countries || [],
+  tags: s.tags || [], children: s.children || [], rx: (() => { try { return s.match ? new RegExp(s.match) : null; } catch (e) { return null; } })() }));
+const GROUPS = (TAXO.groups || []).map(g => ({ ...g, sections: g.sections.filter(x => SECTIONS.some(s => s.slug === x)) }));
+const GROUP_SLUGS = new Set(GROUPS.map(g => g.slug));
+const sectionBySlug = slug => SECTIONS.find(x => x.slug === slug) || SECTIONS.find(x => x.slug === (TAXO.aliases || {})[slug]);
+const groupOf = slug => GROUPS.find(g => g.slug === slug) || GROUPS.find(g => g.sections.includes(slug));
+const itemText = it => it._txt || (it._txt = norm([it.title, it.summary, (it.tags || []).join(' ')].join(' ')));
+function inSection(it, s, depth = 0){
+  if (!s) return false;
+  if (s.topics.some(t => it.topics.includes(t)) || s.countries.some(c => it.countries.includes(c)) || s.tags.some(t => it.tags.includes(t))) return true;
+  if (s.rx && s.rx.test(itemText(it))) return true;
+  return depth === 0 && s.children.some(c => inSection(it, sectionBySlug(c), 1));
+}
+// Sección más específica de una nota (para la ruta de navegación y el menú).
+function sectionOf(it){
+  const leaf = SECTIONS.filter(s => !GROUP_SLUGS.has(s.slug));
+  return leaf.find(s => s.topics.includes(category(it))) || leaf.find(s => inSection(it, s)) || SECTIONS.find(s => inSection(it, s));
+}
 
 const REGIONS = ['Argentina','Mercosur','Latinoamérica','Norteamérica','Europa','Asia','Oceanía','Medio Oriente','Global'];
 const COUNTRY_REGIONS = {
@@ -314,7 +322,7 @@ const filterCount = f => Object.values(f).filter(Boolean).length;
 const anyFilter = () => filterCount(state.filters) > 0;
 
 function matches(it, f = state.filters){
-  if (f.section){ const s = sectionBySlug(f.section); if (s && !it.topics.some(t => s.topics.includes(t))) return false; }
+  if (f.section){ const s = sectionBySlug(f.section); if (s && !inSection(it, s)) return false; }
   if (f.topic && !it.topics.includes(f.topic)) return false;
   if (f.region && !regionsOf(it).has(f.region)) return false;
   if (f.country && !it.countries.includes(f.country)) return false;
@@ -511,6 +519,27 @@ const tagRow = (it, n = 3) => it.tags.length ? `<div class="tagrow">${it.tags.sl
 const headRow = it => `<div class="eyebrow-row">${eyebrow(it)}${kindBadge(it)}${newBadge(it)}${argFlag(it)}</div>`;
 
 const sitePath = () => new URL(BASE).pathname.replace(/\/+$/, '');
+// Direcciones propias (indexables) de secciones y herramientas. scripts/build_pages.py genera una página en cada una.
+const PRETTY = { datos:'datos', agenda:'agenda', glosario:'glosario', fuentes:'fuentes', calculadora:'calculadora-importacion',
+  acerca:'quienes-somos', contacto:'contacto', privacidad:'privacidad', terminos:'terminos' };
+function prettyPath(h){   // h: ruta con hash sin '#', ej. 'tema-aduanas' → 'seccion/aduanas/'
+  if (PRETTY[h]) return PRETTY[h] + '/';
+  if (h.startsWith('tema-')){ const sec = sectionBySlug(h.slice(5)); if (sec) return 'seccion/' + sec.slug + '/'; }
+  if (h.startsWith('hilo-') && (state.stories || []).some(x => x.id === h.slice(5))) return 'tema/' + h.slice(5) + '/';
+  return null;
+}
+function hashFromPretty(rel){
+  const k = Object.keys(PRETTY).find(k => PRETTY[k] === rel); if (k) return k;
+  let m = rel.match(/^seccion\/([a-z0-9-]+)$/); if (m && sectionBySlug(m[1])) return 'tema-' + m[1];
+  m = rel.match(/^tema\/([a-z0-9-]+)$/); if (m) return 'hilo-' + m[1];
+  return null;
+}
+const prettyHref = h => `${sitePath()}/${prettyPath(h)}`;
+// Cambia los enlaces internos con hash (#datos, #tema-…) por su dirección propia.
+function prettifyLinks(){
+  if (!CONFIG.prettyUrls) return;
+  for (const a of $$('a[href^="#"]')){ const h = decodeURIComponent(a.getAttribute('href').slice(1)); if (prettyPath(h)) a.setAttribute('href', prettyHref(h)); }
+}
 function articleHref(it){
   return CONFIG.prettyUrls ? `${sitePath()}/noticias/${encodeURIComponent(it.id)}/` : `#${it.id}`;
 }
@@ -652,54 +681,7 @@ function storyBox(it){
   </section>`;
 }
 
-const GLOSSARY = [
-  ['ACTK', 'ACTK', 'Toneladas-kilómetro de carga disponibles: mide la capacidad de carga aérea que ofrecen las aerolíneas.'],
-  ['Antidumping', '[Aa]ntidumping', 'Derecho adicional que se cobra a un producto importado a un precio menor que el de su mercado de origen, cuando eso daña a la industria local.'],
-  ['ARCA', 'ARCA', 'Agencia de Recaudación y Control Aduanero. Organismo argentino que recauda impuestos y controla la Aduana; reemplazó a la AFIP en 2024.'],
-  ['CIARA-CEC', 'CIARA-CEC', 'Cámara de la Industria Aceitera y Centro de Exportadores de Cereales de la Argentina. Informan cada mes los dólares que liquidan sus empresas.'],
-  ['CIF', 'CIF', 'Cost, insurance and freight: Incoterm en el que el vendedor paga el flete y el seguro hasta el puerto de destino.'],
-  ['Contingente arancelario', '[Cc]ontingentes? arancelarios?|[Cc]uotas? arancelarias?', 'Cantidad de un producto que puede ingresar con un arancel reducido o nulo; lo que excede ese volumen paga el arancel general.'],
-  ['CTK', 'CTK', 'Toneladas-kilómetro de carga: medida de la demanda de carga aérea que multiplica las toneladas transportadas por los kilómetros recorridos.'],
-  ['Depositario fiel', '[Dd]epositarios? fiel(?:es)?', 'Régimen por el que el importador o exportador guarda la documentación original de sus operaciones aduaneras y debe presentarla cuando la Aduana la pida.'],
-  ['Derechos de exportación', '[Dd]erechos de exportación', 'Tributo que se cobra sobre las exportaciones; en la Argentina también se los llama retenciones.'],
-  ['Despachante de aduana', '[Dd]espachantes? de aduana', 'Profesional que tramita ante la Aduana las importaciones y exportaciones en nombre de terceros.'],
-  ['EUR.1', 'EUR\\.1', 'Certificado de circulación que acredita el origen preferencial de una mercadería para acceder a aranceles reducidos en acuerdos comerciales con la UE y otros socios.'],
-  ['FEU', 'FEU', 'Unidad equivalente a un contenedor de 40 pies (dos TEU). Los índices de flete marítimo suelen cotizar por FEU.'],
-  ['FOB', 'FOB', 'Free on board («libre a bordo»): Incoterm en el que el vendedor entrega la mercadería cargada en el buque. El valor FOB no incluye el flete ni el seguro internacional.'],
-  ['Fusión y colada', '[Ff]usión y colada', 'Lugar donde el acero se produjo en estado líquido y se solidificó por primera vez. La UE lo usa para determinar el origen del acero importado.'],
-  ['IACI', 'IACI', 'Intra-Asia Container Index de Drewry: índice semanal de fletes de contenedores dentro de Asia.'],
-  ['IATA', 'IATA', 'Asociación de Transporte Aéreo Internacional: agrupa a las aerolíneas y publica estadísticas de pasajeros y carga.'],
-  ['Incoterms', 'Incoterms?', 'Reglas de la Cámara de Comercio Internacional que definen qué costos y riesgos asumen el vendedor y el comprador en una operación internacional (por ejemplo, FOB o CIF).'],
-  ['INDEC', 'INDEC', 'Instituto Nacional de Estadística y Censos de la Argentina. Publica cada mes el intercambio comercial argentino (ICA).'],
-  ['JMIC', 'JMIC', 'Centro Conjunto de Información Marítima: evalúa el nivel de amenaza para los buques comerciales en Medio Oriente.'],
-  ['Liquidación de divisas', '[Ll]iquidación de divisas', 'Venta en el mercado de cambios de los dólares que cobran los exportadores por sus ventas al exterior.'],
-  ['MDIC', 'MDIC', 'Ministerio de Desarrollo, Industria, Comercio y Servicios de Brasil, que publica la balanza comercial brasileña.'],
-  ['Nación más favorecida', '[Nn]ación más favorecida', 'Principio de la OMC por el que una ventaja arancelaria concedida a un país debe extenderse a todos los miembros.'],
-  ['NC', 'NC(?= \\d)', 'Nomenclatura Combinada: código de clasificación de mercaderías de la Unión Europea, de ocho dígitos, basado en el Sistema Armonizado.'],
-  ['NCM', 'NCM', 'Nomenclatura Común del Mercosur: código de ocho dígitos, basado en el Sistema Armonizado, con el que se clasifican las mercaderías en el bloque.'],
-  ['OEA', 'OEA', 'Operador Económico Autorizado: certificación que la Aduana otorga a empresas confiables, con beneficios como menos controles y despachos más rápidos.'],
-  ['OMA', 'OMA', 'Organización Mundial de Aduanas: fija estándares internacionales, como el Sistema Armonizado.'],
-  ['OMC', 'OMC', 'Organización Mundial del Comercio: administra las reglas del comercio internacional entre sus miembros.'],
-  ['Percepción', '[Pp]ercepci(?:ón|ones)', 'Pago a cuenta de un impuesto que se cobra al importar; después se descuenta del impuesto que corresponde pagar.'],
-  ['Precios de transferencia', '[Pp]recios de transferencia', 'Precios de las operaciones entre empresas vinculadas; el fisco controla que sean iguales a los que pactarían partes independientes.'],
-  ['RG', 'RG(?= \\d)', 'Resolución General: norma con la que ARCA reglamenta impuestos y trámites aduaneros.'],
-  ['RIGI', 'RIGI', 'Régimen de Incentivo para Grandes Inversiones de la Argentina, con beneficios impositivos, aduaneros y cambiarios para proyectos grandes.'],
-  ['Salvaguardia', '[Ss]alvaguardias?', 'Medida temporal, como un arancel o un cupo, que un país aplica para proteger a su industria ante un aumento brusco de importaciones que le causa un perjuicio grave.'],
-  ['Sección 301', '[Ss]ección 301', 'Norma de la Ley de Comercio de EE.UU. de 1974 que permite aplicar represalias, como aranceles, ante prácticas comerciales extranjeras consideradas injustas.'],
-  ['Semana Dorada', '[Ss]emana [Dd]orada', 'Feriado nacional de China de la primera semana de octubre: muchas fábricas cierran y bajan los embarques.'],
-  ['Sistema Armonizado', '[Ss]istema [Aa]rmonizado', 'Nomenclatura internacional de la OMA que clasifica las mercaderías con códigos de seis dígitos; es la base de los aranceles de casi todos los países.'],
-  ['Sistema Informático Malvina', '[Ss]istema [Ii]nformático Malvina', 'Sistema con el que la Aduana argentina registra y gestiona las destinaciones de importación y exportación.'],
-  ['Spot', 'spot', 'Tarifa para un embarque inmediato, sin contrato de largo plazo; refleja el precio de mercado del momento.'],
-  ['T-MEC', 'T-MEC', 'Tratado comercial entre México, Estados Unidos y Canadá (USMCA en inglés), que reemplazó al TLCAN en 2020.'],
-  ['TEU', 'TEU', 'Unidad equivalente a un contenedor de 20 pies. Se usa para medir la capacidad de los buques y el movimiento de los puertos.'],
-  ['TJUE', 'TJUE', 'Tribunal de Justicia de la Unión Europea.'],
-  ['TLC', 'TLC', 'Tratado de libre comercio: acuerdo entre países para eliminar o reducir aranceles y otras barreras entre ellos.'],
-  ['UKMTO', 'UKMTO', 'Operaciones de Comercio Marítimo del Reino Unido: centro de la Marina Real británica que recibe y difunde reportes de incidentes contra buques en Medio Oriente y el océano Índico.'],
-  ['USTR', 'USTR', 'Oficina del Representante Comercial de EE.UU.: negocia acuerdos y administra medidas como la Sección 301.'],
-  ['VLCC', 'VLCC', 'Very large crude carrier: superpetrolero que transporta alrededor de 2 millones de barriles de crudo.'],
-  ['VUCEA', 'VUCEA', 'Ventanilla Única de Comercio Exterior Argentino: plataforma para tramitar en un solo lugar los permisos y certificados de importación y exportación.'],
-  ['WCI', 'WCI', 'World Container Index de Drewry: índice semanal del flete spot de un contenedor de 40 pies en ocho rutas principales.'],
-].map(([term, pat, def]) => ({ term, def, rx: new RegExp('^(?:' + pat + ')$', 'u'), pat }));
+const GLOSSARY = (SITE_DATA.glossary || []).map(([term, pat, def]) => ({ term, def, rx: new RegExp('^(?:' + pat + ')$', 'u'), pat }));
 const GLOSS_RX = new RegExp('(?<![\\p{L}\\p{N}])(?:' + [...GLOSSARY].sort((a, b) => b.pat.length - a.pat.length).map(g => g.pat).join('|') + ')(?![\\p{L}\\p{N}])', 'gu');
 const glossEntry = term => GLOSSARY.find(g => g.term === term);
 // Recibe texto ya escapado; marca la primera aparición de cada término en la nota.
@@ -833,23 +815,35 @@ function renderHome(){
 }
 
 function sectionHeader(s, n, extra = ''){
-  return `<div class="sec-intro"><div style="min-width:0"><span class="eyebrow">Sección</span><h2>${esc(s.label)}</h2><p>${esc(s.desc)}</p></div><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="rcount"><b>${n}</b> ${n===1?'noticia':'noticias'}</span>${extra}</div></div>`;
+  const g = s.slug && groupOf(s.slug);
+  const eyebrowTxt = g && g.slug !== s.slug ? `<a href="#tema-${g.slug}">${esc(g.label)}</a>` : 'Sección';
+  return `<div class="sec-intro"><div style="min-width:0"><span class="eyebrow">${eyebrowTxt}</span><h2>${esc(s.title || s.label)}</h2><p>${esc(s.desc)}</p></div><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="rcount"><b>${n}</b> ${n===1?'noticia':'noticias'}</span>${extra}</div></div>${subNav(s)}`;
+}
+// Accesos a las secciones del mismo bloque (en la página del bloque, sus secciones; en una sección, sus hermanas).
+function subNav(s){
+  const g = s.slug && groupOf(s.slug); if (!g) return '';
+  const list = g.sections.map(sectionBySlug).filter(x => x && x.slug !== s.slug)
+    .map(x => [x, state.items.filter(i => inSection(i, x)).length]).filter(([, n]) => n);
+  if (!list.length) return '';
+  return `<nav class="subnav" aria-label="${g.slug === s.slug ? 'Secciones de ' : 'Más en '}${esc(g.label)}"><span class="note">${g.slug === s.slug ? 'En esta sección:' : 'Más en ' + esc(g.label) + ':'}</span>${list.map(([x, n]) => `<a href="#tema-${x.slug}">${esc(x.label)} <span>${n}</span></a>`).join('')}</nav>`;
 }
 function renderSection(){
   const s = sectionBySlug(state.filters.section);
   const list = byDate(state.items.filter(it => matches(it)));
   if (!list.length){
-    $('#main').innerHTML = sectionHeader(s, 0) + emptyState(`Todavía no hay noticias en ${s.label}`,
-      `Cuando el feed incorpore notas con la categoría «${esc(s.topics.join('» o «'))}», aparecerán acá automáticamente. Mientras tanto podés recorrer las secciones relacionadas.`,
-      `<div class="tagrow">${SECTIONS.filter(x => x.slug !== s.slug).slice(0,6).map(x => `<button type="button" data-section="${esc(x.slug)}">${esc(x.label)}</button>`).join('')}</div>`);
+    $('#main').innerHTML = sectionHeader(s, 0) + emptyState(`Todavía no hay noticias en ${s.title}`,
+      'Cuando el sitio incorpore notas sobre este tema, aparecerán acá automáticamente. Mientras tanto podés recorrer las secciones relacionadas.',
+      `<div class="tagrow">${(groupOf(s.slug)?.sections || []).filter(x => x !== s.slug).slice(0,6).map(sectionBySlug).filter(Boolean).map(x => `<button type="button" data-section="${esc(x.slug)}">${esc(x.label)}</button>`).join('')}</div>`);
   } else {
     const lead = byScore(list)[0], rest = list.filter(i => i !== lead);
     $('#main').innerHTML = sectionHeader(s, list.length, `<a class="btn sm" href="${filterHash({ section: s.slug, date:'7' })}">Últimos 7 días</a>`) + `
       <article class="hero" style="margin-bottom:30px"><a href="${esc(articleHref(lead))}" class="art" tabindex="-1" aria-hidden="true">${media(lead, 1100, { eager:true })}</a>
         <div class="hero-body">${headRow(lead)}<h2><a href="${esc(articleHref(lead))}">${esc(lead.title)}</a></h2><p class="sum">${esc(lead.summary)}</p>${metaLine(lead, { ago:true })}</div></article>
-      ${rest.length ? `<div class="sec-h"><h2>Más en ${esc(s.label)}</h2><p>Orden cronológico</p></div>${chronoList(rest)}` : ''}`;
+      ${rest.length ? `<div class="sec-h"><h2>Más en ${esc(s.title)}</h2><p>Orden cronológico</p></div>${chronoList(rest.slice(0, state.listCount * 3))}${rest.length > state.listCount * 3 ? `<div class="more"><button class="btn" type="button" id="loadMore">Cargar más (${rest.length - state.listCount * 3})</button></div>` : ''}` : ''}`;
   }
-  setSEO({ title:`${s.label} · ${CONFIG.siteName}`, desc: s.desc, crumbs:[['Noticias','#inicio'],[s.label]] });
+  const g = groupOf(s.slug);
+  setSEO({ title:`${s.title} · Noticias de comercio exterior · ${CONFIG.siteName}`, desc: s.desc,
+    crumbs: g && g.slug !== s.slug ? [[g.label, '#tema-' + g.slug], [s.label]] : [[s.title]] });
 }
 
 function renderArgentina(){
@@ -862,7 +856,7 @@ function renderArgentina(){
   const axes = [['Energía','energia'],['Minería','mineria'],['Agroexportaciones','agro'],['Puertos argentinos','puerto'],['ARCA','arca'],['Carne vacuna','carne']]
     .map(([label, q]) => [label, q, state.items.filter(i => textScore(i, q) >= 0 && (i.topics.includes('Argentina') || i.affectsArgentina)).length]).filter(x => x[2]);
   $('#main').innerHTML = `
-    ${sectionHeader({ label:'Comercio exterior argentino', desc: s.desc }, local.length)}
+    ${sectionHeader(s, local.length)}
     ${inds.length ? `<section class="sec"><div class="sec-h"><h2>Datos del intercambio</h2><a class="more-link" href="#datos">Todos los indicadores →</a></div><div class="ind-grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">${inds.map(d => indicatorCard(d)).join('')}</div></section>` : ''}
     ${axes.length ? `<div class="active" style="margin-top:22px"><span class="note">Ejes que sigue la sección:</span>${axes.map(([l,q,n]) => `<button type="button" data-q="${esc(q)}" data-arg="1">${esc(l)} <span>${n}</span></button>`).join('')}</div>` : ''}
     ${block('Exportaciones', pick('Exportaciones'), filterHash({ section:'argentina', flow:'exportaciones' }))}
@@ -872,7 +866,7 @@ function renderArgentina(){
     ${block('Regulaciones', pick('Regulaciones'), filterHash({ section:'argentina', topic:'Regulaciones' }))}
     <section class="sec"><div class="sec-h"><h2>Noticias internacionales con impacto en Argentina</h2><p>Hechos de otros países o bloques que cambian condiciones para operadores argentinos</p></div>
       ${intl.length ? `<div class="cards">${intl.slice(0,6).map(card).join('')}</div>` : emptyState('Sin noticias internacionales marcadas', 'No hay notas del exterior con impacto en Argentina en el archivo actual.')}</section>`;
-  setSEO({ title:`Comercio exterior argentino · ${CONFIG.siteName}`, desc: s.desc, crumbs:[['Noticias','#inicio'],['Argentina']] });
+  setSEO({ title:`Comercio exterior argentino · ${CONFIG.siteName}`, desc: s.desc, crumbs:[['Argentina']] });
 }
 
 const FILTER_LABELS = {
@@ -937,7 +931,7 @@ function renderArticle(it){
     .map(o => ({ o, s: o.topics.filter(t => it.topics.includes(t)).length * 2 + o.countries.filter(c => it.countries.includes(c) && c !== 'Global').length + o.tags.filter(t => it.tags.includes(t)).length * 3 + (Math.abs(dayDiff(o) - dayDiff(it)) <= 7 ? 1 : 0) }))
     .filter(x => x.s > 1).sort((a,b) => b.s - a.s || itemDate(b.o) - itemDate(a.o)).slice(0,4).map(x => x.o);
   const url = shareUrl(it), t = encodeURIComponent(it.title), u = encodeURIComponent(url);
-  const sec = SECTIONS.find(s => s.topics.includes(category(it)));
+  const sec = sectionOf(it);
   $('#main').innerHTML = `<article class="article" id="art" itemscope itemtype="https://schema.org/NewsArticle">
     <div class="article-top"><a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>${eyebrow(it)}${kindBadge(it, true)}${newBadge(it)}${argFlag(it)}
       <div class="textsize" role="group" aria-label="Tamaño del texto">${[['1','A','Texto normal'],['1.12','A','Texto grande'],['1.25','A','Texto muy grande']].map(([v,l,a]) => `<button type="button" data-size="${v}" aria-label="${a}" aria-pressed="${prefs.size===v}">${l}</button>`).join('')}</div></div>
@@ -1342,23 +1336,31 @@ function renderStatus(){
 function currentNav(){
   if (state.view === 'home') return 'inicio';
   if ((state.view === 'section' || state.view === 'argentina')) return state.filters.section;
-  if (state.view === 'article'){ const it = state.items.find(i => i.id === state.articleId); return SECTIONS.find(s => it && s.topics.includes(category(it)))?.slug; }
+  if (state.view === 'article'){ const it = state.items.find(i => i.id === state.articleId); const s = it && sectionOf(it); return s ? (groupOf(s.slug)?.slug || s.slug) : ''; }
   return '';
 }
 function renderNav(){
   const cur = currentNav();
-  const cnt = s => state.items.filter(i => i.topics.some(t => s.topics.includes(t))).length;
-  $('#navList').innerHTML = `<li><a href="#inicio" ${cur==='inicio'?'aria-current="page"':''}>Inicio<span class="n">${state.items.length}</span></a></li>` +
-    SECTIONS.map(s => `<li><a href="#tema-${s.slug}" ${cur===s.slug?'aria-current="page"':''}>${esc(s.label)}<span class="n">${cnt(s)}</span></a></li>`).join('') +
+  const cnt = s => state.items.filter(i => inSection(i, s)).length;
+  const curGroup = groupOf(cur)?.slug;
+  const extra = [['datos','Datos','datos'],['agenda','Agenda','agenda'],['buscar?tipo=analisis','Análisis','analisis'],['calculadora','Calculadoras','calculadora']];
+  const curExtra = state.view === 'results' && state.filters.kind === 'analisis' && filterCount(state.filters) === 1 ? 'analisis' : state.view;
+  const sub = g => `<div class="sub" id="sub-${g.slug}"><ul>${[g.slug, ...g.sections].map(sectionBySlug).filter(s => s && (s.slug === g.slug || s.slug === cur || cnt(s))).map(s =>
+    `<li><a href="#tema-${s.slug}" ${cur===s.slug?'aria-current="page"':''}>${s.slug === g.slug ? `Todo ${esc(g.label)}` : esc(s.label)}<span class="n">${cnt(s)}</span></a></li>`).join('')}</ul></div>`;
+  $('#navList').innerHTML = `<li class="nav-top"><a href="#inicio" ${cur==='inicio'?'aria-current="page"':''}>Inicio<span class="n">${state.items.length}</span></a></li>` +
+    GROUPS.map(g => `<li class="has-sub${curGroup===g.slug?' cur':''}"><a class="grp" href="#tema-${g.slug}" ${cur===g.slug?'aria-current="page"':''}>${esc(g.label)}</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-${g.slug}" aria-label="Ver secciones de ${esc(g.label)}"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>${sub(g)}</li>`).join('') +
+    extra.map(([h, l, k]) => `<li class="nav-top nav-x nav-${k}"><a href="#${h}" ${curExtra===k?'aria-current="page"':''}>${l}</a></li>`).join('') +
     '<li class="nav-prefs"><button type="button" data-open-prefs>Preferencias: tema, texto y mis temas</button></li>';
   const tc = t => state.items.filter(i => i.topics.includes(t)).length;
   const f = state.filters, onlyTopic = f.topic && filterCount(f) === 1;
   $('#chips').innerHTML = [['Todas',''], ...TOPICS.map(t => [t,t])].map(([l,v]) =>
     `<button class="chip" type="button" data-topic="${esc(v)}" aria-pressed="${v ? String(onlyTopic && f.topic === v) : String(state.view === 'home')}">${esc(l)}${v ? `<span class="n">${tc(v)}</span>` : ''}</button>`).join('');
-  $('#footSections').innerHTML = SECTIONS.slice(0,8).map(s => `<li><a href="#tema-${s.slug}">${esc(s.label)}</a></li>`).join('');
-  $('#footTopics').innerHTML = SECTIONS.slice(8).map(s => `<li><a href="#tema-${s.slug}">${esc(s.label)}</a></li>`).join('');
+  const link = slug => { const s = sectionBySlug(slug); return s ? `<li><a href="#tema-${s.slug}">${esc(GROUP_SLUGS.has(slug) ? groupOf(slug).label : s.title)}</a></li>` : ''; };
+  $('#footSections').innerHTML = ['mundo','argentina','logistica','mercados','aranceles','aduanas','arca','importaciones','exportaciones'].map(link).join('');
+  $('#footTopics').innerHTML = ['fletes','contenedores','puertos','agro','energia','mineria','china','estados-unidos','union-europea','mercosur'].map(link).join('');
   $('#social').innerHTML = CONFIG.social.length ? `<p style="display:flex;gap:12px;flex-wrap:wrap">${CONFIG.social.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>`).join('')}</p>` : '';
 }
+function closeSubs(except){ $$('#navList .has-sub.open').forEach(li => { if (li !== except){ li.classList.remove('open'); li.querySelector('.sub-btn')?.setAttribute('aria-expanded','false'); } }); }
 function renderTicker(){
   const list = state.indicators;
   $('#tickerList').innerHTML = list.length ? list.map(tickerItem).join('') : '<span class="tk"><span class="l">Sin indicadores disponibles</span></span>';
@@ -1424,7 +1426,7 @@ function render(){
   else if (v === 'notfound') renderNotFound();
   else renderHome();
   $('#main').setAttribute('aria-busy', 'false');
-  renderAside(); syncControls(); updateProgress();
+  renderAside(); syncControls(); updateProgress(); prettifyLinks();
 }
 
 /* =====================================================================
@@ -1456,18 +1458,30 @@ function parseHash(){
 function route(){
   if (!state.loaded){ state.view = 'loading'; return; }
   const m = location.pathname.match(/\/noticias\/([^/]+)\/?(?:index\.html)?$/);
+  const rel = location.pathname.slice(sitePath().length).replace(/index\.html$/, '').replace(/^\/+|\/+$/g, '');
+  const staticHash = CONFIG.prettyUrls && !m ? hashFromPretty(rel) : null; 
   let path, params;
-  if (m && location.hash.length > 1) {
+  if (staticHash && location.hash.length > 1 && location.hash !== '#main') {
+    // Desde una página con dirección propia, los filtros y búsquedas vuelven a la portada.
+    location.replace(BASE + location.hash);
+    return;
+  }
+  if (staticHash) {
+    path = staticHash;
+    params = new URLSearchParams();
+  } else if (m && location.hash.length > 1) {
     // Desde una nota, los enlaces de sección (#tema-…, #buscar?…) vuelven a la portada.
     location.replace(BASE + (FILE_MODE ? 'index.html' : '') + location.hash);
     return;
-  }
-  if (m) {
+  } else if (m) {
     path = decodeURIComponent(m[1]);
     params = new URLSearchParams();
   } else {
     ({ path, params } = parseHash());
+    // Enlaces viejos o internos con hash (#calculadora, #tema-aduanas): van a su dirección propia.
+    if (CONFIG.prettyUrls && !m && prettyPath(path) && ![...params.keys()].length){ location.replace(prettyHref(path)); return; }
   }
+  state.pretty = prettyPath(path);
   state.listCount = CONFIG.pageSize;
   const prevView = state.view;
   if (path === '' || path === 'inicio'){ state.filters = emptyFilters(); state.view = 'home'; }
@@ -1562,9 +1576,14 @@ function openPrefs(){
 /* =====================================================================
    17. SEO DINÁMICO
    ===================================================================== */
+function crumbUrl(h){
+  const base = CONFIG.canonicalBase || location.href.split('#')[0].replace(/\/$/, '');
+  const p = h?.startsWith('#') ? prettyPath(h.slice(1)) : null;
+  return p ? `${base}/${p}` : h?.startsWith('#') ? `${base}/` : h;
+}
 function setSEO({ title, desc, image, url, type = 'website', crumbs, ld, noindex = false }){
   document.title = title;
-  const pageUrl = url || (CONFIG.canonicalBase ? CONFIG.canonicalBase : location.href.split('#')[0]);
+  const pageUrl = url || (CONFIG.canonicalBase ? CONFIG.canonicalBase + '/' + (state.pretty || '') : location.href.split('#')[0]);
   const meta = (sel, attr, val) => { let m = document.querySelector(sel); if (!m){ m = document.createElement('meta'); const [k, v] = attr; m.setAttribute(k, v); document.head.appendChild(m); } m.setAttribute('content', val); };
   meta('meta[name="description"]', ['name','description'], desc);
   meta('meta[property="og:title"]', ['property','og:title'], title);
@@ -1580,7 +1599,7 @@ function setSEO({ title, desc, image, url, type = 'website', crumbs, ld, noindex
   const graph = [];
   if (ld) graph.push(ld);
   const bc = [['Inicio','#inicio'], ...(crumbs || [])];
-  graph.push({ '@type':'BreadcrumbList', itemListElement: bc.map(([l, h], i) => ({ '@type':'ListItem', position: i + 1, name: l, ...(h ? { item: (CONFIG.canonicalBase || location.href.split('#')[0]) + (h?.startsWith('#') ? '' : h) } : {}) })) });
+  graph.push({ '@type':'BreadcrumbList', itemListElement: bc.map(([l, h], i) => ({ '@type':'ListItem', position: i + 1, name: l, ...(h ? { item: crumbUrl(h) } : {}) })) });
   $('#ld').textContent = JSON.stringify({ '@context':'https://schema.org', '@graph': graph });
 }
 
@@ -1600,6 +1619,7 @@ function updateProgress(){
   p.style.width = Math.min(100, Math.max(0, (-r.top + mastH()) / Math.max(1,total) * 100)) + '%';
 }
 function closeMenus(){
+  closeSubs();
   $('#nav').classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded','false'); $('#menuBtn').setAttribute('aria-label','Abrir menú de secciones');
   setMastVar();
 }
@@ -1608,6 +1628,9 @@ function closeMenus(){
    19. EVENTOS
    ===================================================================== */
 document.addEventListener('click', e => {
+  const sb = e.target.closest('.sub-btn');
+  if (sb){ const li = sb.closest('.has-sub'); closeSubs(li); const open = li.classList.toggle('open'); sb.setAttribute('aria-expanded', String(open)); return; }
+  if (!e.target.closest('.has-sub')) closeSubs();
   const a = e.target.closest('a[href^="#"]');
   if (a && a.getAttribute('href') === location.hash){ e.preventDefault(); route(); return; }
   if (a && a.getAttribute('href') === '#main'){ e.preventDefault(); $('#main').focus(); return; }
@@ -1673,6 +1696,7 @@ function showGloss(el){
 addEventListener('keydown', e => {
   if ((e.key === 'Enter' || e.key === ' ') && e.target.closest?.('[data-gl]')){ e.preventDefault(); showGloss(e.target.closest('[data-gl]')); return; }
   if (e.key === 'Escape'){
+    const sub = $('#navList .has-sub.open'); if (sub){ closeSubs(); sub.querySelector('.sub-btn')?.focus(); }
     if ($('#nav').classList.contains('open')){ closeMenus(); $('#menuBtn').focus(); }
     if ($('#mast').classList.contains('search-open')){ $('#mast').classList.remove('search-open'); $('#searchJump').setAttribute('aria-expanded','false'); setMastVar(); }
   }
@@ -1684,6 +1708,7 @@ matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', paintThe
    20. ARRANQUE
    ===================================================================== */
 (async function init(){
+  if (FILE_MODE) $$('a[data-h]').forEach(a => a.setAttribute('href', '#' + a.dataset.h));   // abierto con doble clic: sin direcciones propias
   applyPrefs(); setMastVar(); renderStatus();
   await loadFeeds();
   trackNew();

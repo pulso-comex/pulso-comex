@@ -6,6 +6,8 @@ Salidas:
 - noticias/<id>/index.html   una página liviana por nota, con su propio título, descripción,
                              imagen para redes (Open Graph) y texto visible sin JavaScript
 - data/latest.json           feed que lee la página (notas recientes, con tope de tamaño)
+- seccion/<slug>/, tema/<id>/ y las herramientas (datos/, agenda/, glosario/, calculadora-importacion/…):
+                             páginas con dirección propia, contenido visible sin JavaScript y metadatos propios
 - sitemap.xml, news-sitemap.xml, feed.xml
 También borra las carpetas de /noticias/ cuyas notas ya no están en el archivo.
 
@@ -23,6 +25,10 @@ import re
 import shutil
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from taxonomy import Taxonomy, norm  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 # Dirección pública del sitio. El workflow la detecta sola desde GitHub Pages (github.io o dominio propio).
@@ -237,7 +243,30 @@ def feed_payload(news, items):
     return {k: news.get(k) for k in ('schemaVersion', 'feedId', 'updatedAt', 'timezone', 'editorialNote', 'indicators', 'stories') if k in news} | {'items': items}
 
 
-def render(template, *, meta, prerender, feed, bank, version, base=''):
+# Enlaces fijos de la plantilla (#datos, #agenda…) → dirección propia. data-h permite volver al hash al abrir con doble clic.
+TOOL_PATHS = {'datos': 'datos', 'agenda': 'agenda', 'glosario': 'glosario', 'fuentes': 'fuentes', 'calculadora': 'calculadora-importacion',
+              'acerca': 'quienes-somos', 'contacto': 'contacto', 'privacidad': 'privacidad', 'terminos': 'terminos'}
+
+
+def site_data(news):
+    tax = json.loads((ROOT / 'data' / 'taxonomy.json').read_text(encoding='utf-8'))
+    tax.pop('_ayuda', None)
+    glo = json.loads((ROOT / 'data' / 'glossary.json').read_text(encoding='utf-8'))
+    return {'taxonomy': tax, 'glossary': glo.get('terms', [])}
+
+
+def pretty_links(page, base):
+    def sub(m):
+        h = m.group(1)
+        if h in TOOL_PATHS:
+            return f'href="{base}{TOOL_PATHS[h]}/" data-h="{h}"'
+        if h.startswith('tema-'):
+            return f'href="{base}seccion/{h[5:]}/" data-h="{h}"'
+        return m.group(0)
+    return re.sub(r'href="#([a-z][a-z0-9-]*)"', sub, page)
+
+
+def render(template, *, meta, prerender, feed, bank, version, base='', sitedata=None):
     """prerender: función que recibe el contenido por defecto de <main> (el esqueleto de carga) y devuelve el final."""
     a, b = template.index('<!--meta:start-->'), template.index('<!--meta:end-->') + len('<!--meta:end-->')
     page = template[:a] + meta + template[b:]
@@ -247,16 +276,169 @@ def render(template, *, meta, prerender, feed, bank, version, base=''):
     start, end = '<!--prerender:start-->', '<!--prerender:end-->'
     a, b = page.index(start), page.index(end)
     page = page[:a] + prerender(page[a + len(start):b]) + page[b + len(end):]
+    page = pretty_links(page, base)
     return (page.replace('{{PHOTO_BANK}}', json_script(bank))
+                .replace('{{SITE_DATA}}', json_script(sitedata or {}))
                 .replace('{{FEED}}', json_script(feed))
                 .replace('{{ASSET_VERSION}}', version)
                 .replace('{{BASE}}', base)
                 .replace('{{SITE_CONFIG}}', json_script(SITECFG)))
 
 
+def headline_list(lst, base, n=30):
+    return '<ul class="pre-list">' + ''.join(
+        f'<li><a href="{base}noticias/{esc(i["id"])}/">{esc(i["title"])}</a><small>{esc(primary(i).get("name"))} · {fmt_day(item_dt(i))}</small></li>'
+        for i in lst[:n]) + '</ul>'
+
+
+def static_article(h1, lede, body='', crumb=None, base='../'):
+    trail = f'<a href="{base}">Inicio</a>' + (f' · {crumb}' if crumb else '')
+    return f'''    <article class="pre-article">
+      <p class="pre-meta">{trail}</p>
+      <h1>{esc(h1)}</h1>
+      <p class="lede">{esc(lede)}</p>
+      {body}
+    </article>
+'''
+
+
+def tool_body(key, news, items, sitedata, base):
+    """Contenido visible sin JavaScript (y para buscadores) de cada herramienta."""
+    if key == 'datos':
+        rows = ''.join(f'<li><b>{esc(d.get("label"))}</b>: {esc(d.get("value") or "Sin datos")}'
+                       f'{(" · " + esc(d.get("period"))) if d.get("period") else ""} <small>Fuente: {esc(d.get("source"))}</small></li>'
+                       for d in news.get('indicators', []))
+        return f'<h2>Indicadores</h2><ul class="pre-list">{rows}</ul>'
+    if key == 'glosario':
+        terms = sorted(sitedata['glossary'], key=lambda t: norm(t[0]))
+        return '<dl class="gloss-list">' + ''.join(f'<dt>{esc(t[0])}</dt><dd>{esc(t[2])}</dd>' for t in terms) + '</dl>'
+    if key == 'agenda':
+        today = NOW.astimezone(TZ).date().isoformat()
+        rows = []
+        for it in items:
+            if is_auto(it):
+                continue
+            for d in it.get('deadlines') or []:
+                if str(d.get('date', '')) >= today[:len(str(d.get('date', '')))]:
+                    rows.append((str(d['date']), d.get('label', ''), it))
+        rows.sort(key=lambda r: r[0])
+        return '<h2>Próximas fechas</h2><ul class="pre-list">' + ''.join(
+            f'<li><b>{esc(dt)}</b> · {esc(lbl)} <small><a href="{base}noticias/{esc(it["id"])}/">{esc(it["title"])}</a></small></li>'
+            for dt, lbl, it in rows[:60]) + '</ul>'
+    if key == 'calculadora':
+        return ('<h2>Cómo se calcula</h2>'
+                '<p>El valor CIF es la suma del precio FOB, el flete internacional y el seguro. Sobre el CIF se aplican el derecho de importación '
+                '(según la posición arancelaria NCM) y la tasa de estadística. La suma de esos tres conceptos es la base imponible del IVA, '
+                'de la percepción de IVA y de la percepción de Ganancias; Ingresos Brutos se percibe según la provincia.</p>'
+                '<p>Es una estimación orientativa: no contempla regímenes especiales, valores criterio, derechos antidumping ni licencias. '
+                'Antes de operar, confirmá las alícuotas con tu despachante de aduana.</p>')
+    if key == 'fuentes':
+        names = sorted({primary(i).get('name') for i in items if primary(i).get('name')}, key=norm)
+        return '<h2>Fuentes citadas</h2><ul class="pre-list">' + ''.join(f'<li>{esc(n)}</li>' for n in names) + '</ul>'
+    return ''
+
+
+TOOLS = {
+    'datos': ('Datos e indicadores de comercio exterior', 'Tipo de cambio, soja, petróleo, fletes, carga aérea e intercambio comercial argentino: los indicadores del comercio exterior, con su fuente oficial.'),
+    'agenda': ('Agenda de comercio exterior', 'Vencimientos, entradas en vigor, publicaciones oficiales y fechas clave del comercio exterior argentino e internacional.'),
+    'glosario': ('Glosario de comercio exterior', 'Qué significan CIF, FOB, NCM, ARCA, antidumping, Incoterms y otros términos del comercio exterior, explicados en simple.'),
+    'calculadora': ('Calculadora de costo de importación', 'Calculá el valor CIF, los derechos de importación, la tasa de estadística, el IVA y las percepciones para importar en la Argentina.'),
+    'fuentes': ('Fuentes de información', 'Organismos oficiales, aduanas, organizaciones internacionales y medios especializados que usa Pulso Comex.'),
+    'acerca': ('Quiénes somos', 'Pulso Comex es un portal de noticias, datos y análisis sobre comercio exterior, con foco en Argentina y Latinoamérica.'),
+    'contacto': ('Contacto', 'Cómo comunicarte con Pulso Comex para sugerencias, correcciones o propuestas.'),
+    'privacidad': ('Política de privacidad', 'Cómo trata Pulso Comex los datos de quienes visitan el sitio.'),
+    'terminos': ('Términos y condiciones', 'Condiciones de uso del contenido de Pulso Comex.'),
+}
+TOOLS_INDEXED = {'datos', 'agenda', 'glosario', 'calculadora', 'fuentes', 'acerca'}
+
+
+def build_static_pages(template, news, items, bank, version, sitedata, tax):
+    """Genera /seccion/<slug>/, /tema/<id>/ y las herramientas. Devuelve [(ruta, lastmod)] para el sitemap."""
+    out, keep = [], set()
+    curated = [i for i in items if not is_auto(i)]
+    updated = news.get('updatedAt') or NOW.isoformat()
+
+    def write(rel, page):
+        d = ROOT / rel
+        d.mkdir(parents=True, exist_ok=True)
+        (d / 'index.html').write_text(page, encoding='utf-8')
+
+    def page_for(rel, title, desc, body, feed_items, robots, crumbs, ld_type='CollectionPage'):
+        base = '../' * rel.count('/')
+        url = f'{SITE}/{rel}'
+        ld = {'@context': 'https://schema.org', '@graph': [
+            {'@type': ld_type, 'name': title, 'description': desc, 'url': url, 'inLanguage': 'es-AR',
+             'isPartOf': {'@type': 'WebSite', 'name': SITE_NAME, 'url': f'{SITE}/'}},
+            {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': n + 1, 'name': c[0], 'item': c[1]}
+                                                              for n, c in enumerate([('Inicio', f'{SITE}/')] + crumbs)]}]}
+        meta = meta_block(title=f'{title} · {SITE_NAME}', desc=desc, url=url, image=OG_DEFAULT, image_alt=SITE_NAME,
+                          robots=robots, ld=ld, image_size=(1200, 630), base=base)
+        return render(template, meta=meta, prerender=lambda inner: body(base), feed=feed_payload(news, feed_items),
+                      bank=bank, version=version, base=base, sitedata=sitedata)
+
+    # Secciones
+    for slug, sec in tax.sections.items():
+        lst = tax.items_for(slug, items)
+        rel = f'seccion/{slug}/'
+        keep.add(('seccion', slug))
+        indexed = len(lst) >= tax.min_index
+        title = sec.get('title') or sec['label']
+        g = tax.group_of(slug)
+        crumbs = ([(g['label'], f'{SITE}/seccion/{g["slug"]}/')] if g and g['slug'] != slug else []) + [(title, f'{SITE}/{rel}')]
+        trail = (f'<a href="../../seccion/{g["slug"]}/">{esc(g["label"])}</a> · ' if g and g['slug'] != slug else '') + esc(title)
+        siblings = ''
+        if g:
+            sl = [tax.sections[x] for x in ([g['slug']] + g['sections']) if x in tax.sections and x != slug]
+            siblings = '<p class="pre-meta">' + ' · '.join(f'<a href="../../seccion/{x["slug"]}/">{esc(x["label"])}</a>' for x in sl) + '</p>'
+        body = lambda base, lst=lst, title=title, sec=sec, trail=trail, siblings=siblings: static_article(
+            f'{title}: noticias de comercio exterior', sec.get('desc', ''),
+            siblings + ('<h2>Últimas noticias</h2>' + headline_list(lst, base) if lst else '<p>Todavía no hay noticias en esta sección.</p>'),
+            crumb=trail, base=base)
+        feed_items = (sorted([i for i in lst if not is_auto(i)], key=item_dt, reverse=True) + [i for i in lst if is_auto(i)])[:60]
+        write(rel, page_for(rel, f'{title} · Noticias de comercio exterior', sec.get('desc', ''), body, feed_items,
+                            'index,follow' if indexed else 'noindex,follow', crumbs))
+        if indexed:
+            out.append((rel, item_dt(lst[0]).isoformat()))
+
+    # Temas en desarrollo
+    for st in news.get('stories', []):
+        own = [i for i in curated if i.get('story') == st['id']]
+        rel = f'tema/{st["id"]}/'
+        keep.add(('tema', st['id']))
+        body = lambda base, own=own, st=st: static_article(st['title'], st.get('desc', ''),
+                                                            '<h2>Cronología</h2>' + headline_list(own, base) if own else '', crumb='Temas en desarrollo', base=base)
+        indexed = len(own) >= 2
+        write(rel, page_for(rel, st['title'], st.get('desc', ''), body, own, 'index,follow' if indexed else 'noindex,follow',
+                            [(st['title'], f'{SITE}/{rel}')]))
+        if indexed:
+            out.append((rel, item_dt(own[0]).isoformat()))
+
+    # Herramientas y páginas institucionales
+    for key, (title, desc) in TOOLS.items():
+        rel = f'{TOOL_PATHS[key]}/'
+        feed_items = curated[:80] if key in ('agenda', 'datos', 'fuentes') else curated[:12]
+        body = lambda base, key=key, title=title, desc=desc: static_article(title, desc, tool_body(key, news, items, sitedata, base), base=base)
+        ld_type = 'WebApplication' if key == 'calculadora' else 'WebPage'
+        write(rel, page_for(rel, title, desc, body, feed_items, 'index,follow' if key in TOOLS_INDEXED else 'noindex,follow',
+                            [(title, f'{SITE}/{rel}')], ld_type))
+        if key in TOOLS_INDEXED:
+            out.append((rel, updated))
+
+    # Borra secciones o temas que ya no existen
+    for folder in ('seccion', 'tema'):
+        d = ROOT / folder
+        if d.exists():
+            for sub in d.iterdir():
+                if sub.is_dir() and (folder, sub.name) not in keep:
+                    shutil.rmtree(sub)
+    return out
+
+
 def main():
     template = (ROOT / 'templates' / 'page.html').read_text(encoding='utf-8')
     news, bank = load()
+    sitedata = site_data(news)
+    tax = Taxonomy.load()
     items = sorted([i for i in news.get('items', []) if i.get('id') and i.get('title')], key=item_dt, reverse=True)
     version = hashlib.sha1((ROOT / 'assets/app.js').read_bytes() + (ROOT / 'assets/app.css').read_bytes()).hexdigest()[:10]
 
@@ -277,7 +459,8 @@ def main():
     noscript = f'    <noscript><h2>Últimas noticias</h2><ul class="pre-list">{headlines}</ul></noscript>\n'
     home = render(template, meta=meta_block(title=HOME_TITLE, desc=HOME_DESC, url=f'{SITE}/', image=OG_DEFAULT,
                                             image_alt='Pulso Comex · Noticias de Comercio Exterior', ld=org_ld, image_size=(1200, 630)),
-                  prerender=lambda inner: inner + noscript, feed=feed_payload(news, items[:INLINE_MAX]), bank=bank, version=version)
+                  prerender=lambda inner: inner + noscript, feed=feed_payload(news, items[:INLINE_MAX]), bank=bank, version=version,
+                  sitedata=sitedata)
     # La portada lleva el CSS y el JS embebidos: así funciona sola, incluso abierta con doble clic
     # desde adentro del zip (Windows extrae solo ese archivo). Las páginas de notas usan /assets/.
     css = (ROOT / 'assets' / 'app.css').read_text(encoding='utf-8')
@@ -312,7 +495,7 @@ def main():
                           image_alt=img_alt, og_type='article', robots=robots, ld=ld, extra=extra, base='../../')
         pre = prerender_article(it, img, img_alt, source_img)
         page = render(template, meta=meta, prerender=lambda inner: pre,
-                      feed=feed_payload(news, [it]), bank=bank, version=version, base='../../')
+                      feed=feed_payload(news, [it]), bank=bank, version=version, base='../../', sitedata=sitedata)
         d = out_dir / it['id']
         d.mkdir(parents=True, exist_ok=True)
         (d / 'index.html').write_text(page, encoding='utf-8')
@@ -322,10 +505,15 @@ def main():
             shutil.rmtree(d)
             removed += 1
 
+    # Páginas con dirección propia: secciones, temas en desarrollo y herramientas
+    static_urls = build_static_pages(template, news, items, bank, version, sitedata, tax)
+
     # Sitemaps y RSS
     indexable = [i for i in items if INDEX_AUTOMATIC or not is_auto(i)]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
           f'  <url><loc>{SITE}/</loc><lastmod>{esc(news.get("updatedAt") or NOW.isoformat())}</lastmod><changefreq>hourly</changefreq></url>']
+    for u, lastmod in static_urls:
+        sm.append(f'  <url><loc>{SITE}/{u}</loc><lastmod>{esc(lastmod)}</lastmod></url>')
     for it in indexable:
         sm.append(f'  <url><loc>{SITE}/noticias/{esc(it["id"])}/</loc><lastmod>{esc(it.get("updated") or it.get("datetime") or it.get("date"))}</lastmod></url>')
     sm.append('</urlset>')
@@ -353,6 +541,7 @@ def main():
     (ROOT / 'feed.xml').write_text('\n'.join(rss) + '\n', encoding='utf-8')
     (ROOT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/news-sitemap.xml\n', encoding='utf-8')
 
+    print(f'Páginas con dirección propia en el sitemap: {len(static_urls)}')
     print(f'Páginas generadas: {len(items)} · carpetas viejas borradas: {removed} · en latest.json: {len(latest)} · '
           f'fotos de archivo locales: {sum(1 for v in bank.values() for p in v if p.get("local"))}')
 

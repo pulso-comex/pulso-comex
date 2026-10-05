@@ -1,0 +1,54 @@
+{
+  "_ayuda": "Secciones del menú, agrupadas en bloques. Una nota entra en una sección si cumple cualquiera de sus reglas: 'topics' (categorías), 'countries' (países), 'tags' (etiquetas) o 'match' (expresión regular sobre título, resumen y etiquetas, en minúsculas y sin acentos). 'children' suma las notas de otras secciones (páginas de bloque). Cada sección tiene su página en /seccion/<slug>/; se indexa en buscadores cuando reúne al menos 'minIndex' notas. La usan assets/app.js y scripts/build_pages.py.",
+  "minIndex": 5,
+  "groups": [
+    { "slug": "mundo", "label": "Comercio mundial", "sections": ["aranceles", "omc", "china", "estados-unidos", "union-europea", "asia", "america-latina", "tratados", "geopolitica", "economia", "regulaciones"] },
+    { "slug": "argentina", "label": "Argentina", "sections": ["importaciones", "exportaciones", "aduanas", "arca", "bcra", "mercosur", "puertos", "regimen-cambiario"] },
+    { "slug": "logistica", "label": "Logística", "sections": ["maritimo", "aereo", "terrestre", "ferrocarril", "puertos", "fletes", "contenedores", "tecnologia-comex"] },
+    { "slug": "mercados", "label": "Mercados", "sections": ["agro", "energia", "mineria", "automotriz", "tecnologia", "alimentos", "textil", "quimica"] }
+  ],
+  "sections": [
+    { "slug": "mundo", "label": "Comercio mundial", "desc": "Aranceles, OMC, acuerdos y tensiones entre las grandes economías: lo que mueve el comercio internacional.", "topics": ["Economía internacional", "Geopolítica y comercio"], "children": ["aranceles", "omc", "china", "estados-unidos", "union-europea", "asia", "america-latina", "tratados"] },
+    { "slug": "aranceles", "label": "Aranceles", "desc": "Aranceles, salvaguardias, antidumping, represalias y tributos sobre el comercio.", "topics": ["Aranceles", "Impuestos"] },
+    { "slug": "omc", "label": "OMC", "desc": "La Organización Mundial del Comercio: disputas, reglas, reuniones ministeriales y sus informes sobre el comercio mundial.", "tags": ["OMC"], "match": "\\bomc\\b|\\bwto\\b|organizacion mundial del comercio|world trade organization" },
+    { "slug": "china", "label": "China", "desc": "La política comercial de China, sus compras y ventas al mundo y su relación con la Argentina y el Mercosur.", "topics": ["China"], "countries": ["China"] },
+    { "slug": "estados-unidos", "label": "EE.UU.", "title": "Estados Unidos", "desc": "Aranceles, acuerdos y decisiones comerciales de Estados Unidos y su efecto en el resto del mundo.", "topics": ["Estados Unidos"], "countries": ["Estados Unidos"] },
+    { "slug": "union-europea", "label": "Unión Europea", "desc": "Política comercial europea, el acuerdo UE–Mercosur, normas ambientales y medidas de la Comisión Europea.", "countries": ["Unión Europea"], "tags": ["UE-Mercosur"], "match": "union europea|european union|comision europea|bruselas|\\bue\\b" },
+    { "slug": "asia", "label": "Asia", "desc": "Japón, India, Corea, Sudeste Asiático y el resto de Asia: comercio, acuerdos y cadenas de suministro.", "topics": ["Asia"] },
+    { "slug": "america-latina", "label": "América Latina", "desc": "Comercio de los países de la región: Brasil, Chile, México, Uruguay, Paraguay, Perú y el resto de América Latina.", "topics": ["Latinoamérica"] },
+    { "slug": "tratados", "label": "Tratados y acuerdos", "desc": "Acuerdos comerciales, negociaciones, cupos y su aplicación.", "topics": ["Tratados y acuerdos"] },
+    { "slug": "geopolitica", "label": "Geopolítica", "desc": "Conflictos comerciales, sanciones y tensiones que alteran rutas y mercados.", "topics": ["Geopolítica y comercio"] },
+    { "slug": "economia", "label": "Economía internacional", "desc": "Comercio mundial, balanzas de las grandes economías y organismos internacionales.", "topics": ["Economía internacional"] },
+    { "slug": "regulaciones", "label": "Regulaciones", "desc": "Normas, resoluciones y decisiones judiciales que cambian las reglas del comercio.", "topics": ["Regulaciones"] },
+
+    { "slug": "argentina", "label": "Argentina", "title": "Comercio exterior argentino", "desc": "Exportaciones, importaciones, saldo comercial, ARCA, BCRA, Mercosur y normativa que cambia las condiciones para operar desde la Argentina.", "topics": ["Argentina"] },
+    { "slug": "importaciones", "label": "Importaciones", "desc": "Regímenes, permisos, percepciones y medidas que alcanzan a la importación.", "topics": ["Importaciones"] },
+    { "slug": "exportaciones", "label": "Exportaciones", "desc": "Ventas externas, cuotas, mercados de destino y datos de balanza comercial.", "topics": ["Exportaciones"] },
+    { "slug": "aduanas", "label": "Aduana", "title": "Aduanas", "desc": "Normativa aduanera, procedimientos, sistemas informáticos y controles en frontera.", "topics": ["Aduanas"] },
+    { "slug": "arca", "label": "ARCA", "desc": "Resoluciones generales, sistemas y controles de la Agencia de Recaudación y Control Aduanero que alcanzan a importadores y exportadores.", "tags": ["ARCA"], "match": "\\barca\\b|\\bafip\\b|agencia de recaudacion y control aduanero|resolucion general" },
+    { "slug": "bcra", "label": "BCRA", "desc": "Comunicaciones del Banco Central sobre pagos al exterior, cobros de exportaciones y acceso al mercado de cambios.", "match": "\\bbcra\\b|banco central de la republica argentina|comunicacion \\W?a\\W? ?\\d{4}" },
+    { "slug": "mercosur", "label": "Mercosur", "desc": "El bloque, sus socios y sus acuerdos externos, con el acuerdo UE–Mercosur como eje.", "topics": ["Mercosur"] },
+    { "slug": "puertos", "label": "Puertos", "desc": "Terminales, congestión, esperas, dragado y operación portuaria en la Argentina y el mundo.", "topics": ["Puertos"] },
+    { "slug": "regimen-cambiario", "label": "Régimen cambiario", "desc": "Dólar oficial, acceso al mercado de cambios, plazos para pagar importaciones y liquidar exportaciones.", "match": "cambiari|\\bcepo\\b|mercado (libre )?de cambios|\\bmlc\\b|dolar (oficial|mayorista|blend|exportador|importador)|tipo de cambio|liquidacion de (divisas|exportaciones)|bopreal|brecha" },
+
+    { "slug": "logistica", "label": "Logística", "title": "Logística internacional", "desc": "Cadenas de suministro, fletes, transporte marítimo, aéreo y terrestre, puertos y contenedores.", "topics": ["Logística", "Transporte marítimo", "Transporte aéreo", "Puertos"], "children": ["terrestre", "ferrocarril", "fletes", "contenedores"] },
+    { "slug": "maritimo", "label": "Marítimo", "title": "Transporte marítimo", "desc": "Navieras, rutas, capacidad de bodega, canales y estrechos: el transporte de carga por mar.", "topics": ["Transporte marítimo"] },
+    { "slug": "aereo", "label": "Aéreo", "title": "Carga aérea", "desc": "Demanda y capacidad de carga aérea, tarifas y aeropuertos.", "topics": ["Transporte aéreo"] },
+    { "slug": "terrestre", "label": "Terrestre", "title": "Transporte terrestre", "desc": "Camiones, pasos fronterizos y transporte de cargas por carretera.", "match": "camion|transporte (terrestre|por carretera|automotor de cargas|de cargas)|paso fronterizo|pasos fronterizos|cristo redentor|trucking|\\btruck|transportistas" },
+    { "slug": "ferrocarril", "label": "Ferrocarril", "title": "Transporte ferroviario", "desc": "Trenes de carga, concesiones ferroviarias y corredores que conectan la producción con los puertos.", "match": "ferrocarril|ferroviari|trenes? de carga|belgrano cargas|\\brail(way)?\\b" },
+    { "slug": "fletes", "label": "Fletes", "desc": "Tarifas de flete marítimo y aéreo: índices Drewry, recargos y tendencias de costos.", "tags": ["Fletes"], "match": "flete|freight|\\bwci\\b|\\bscfi\\b|drewry|recargo" },
+    { "slug": "contenedores", "label": "Contenedores", "desc": "Movimiento de contenedores, terminales, disponibilidad de equipos y portacontenedores.", "tags": ["Contenedores"], "match": "contenedor|container|\\bteu\\b|\\bfeu\\b" },
+    { "slug": "tecnologia-comex", "label": "Digitalización", "title": "Tecnología y digitalización COMEX", "desc": "Digitalización aduanera, ventanillas únicas, trazabilidad y herramientas para operadores.", "topics": ["Tecnología COMEX"] },
+
+    { "slug": "mercados", "label": "Mercados", "title": "Mercados y sectores", "desc": "El comercio exterior por sector: agro, energía, minería, automotriz, tecnología, alimentos, textil y química.", "children": ["agro", "energia", "mineria", "automotriz", "tecnologia", "alimentos", "textil", "quimica"] },
+    { "slug": "agro", "label": "Agro", "title": "Agro y agroexportación", "desc": "Granos, oleaginosas, carnes y economías regionales: precios, cosechas, cupos y destinos.", "tags": ["Agro", "Soja", "Carne"], "match": "\\bsoja|\\btrigo|\\bmaiz|granos|cereal|oleaginos|agroexport|cosecha|girasol|\\bciara|\\bcarne|ganad|frigorific|harina de soja|aceite de soja" },
+    { "slug": "energia", "label": "Energía", "desc": "Petróleo, gas, GNL y energía: precios, exportaciones y rutas.", "tags": ["Energía"], "match": "petrol|crudo|\\bgas\\b|\\bgnl\\b|\\blng\\b|vaca muerta|\\bbrent\\b|\\bopep|\\bopec|combustible|energia|hidrocarbur|refiner" },
+    { "slug": "mineria", "label": "Minería", "desc": "Litio, cobre, oro y otros minerales: proyectos, exportaciones y demanda mundial.", "tags": ["Minería"], "match": "miner|\\blitio|\\bcobre|\\boro\\b|tierras raras|\\brigi\\b" },
+    { "slug": "automotriz", "label": "Automotriz", "desc": "Autos, autopartes y vehículos: comercio, aranceles y producción regional.", "tags": ["Autos"], "match": "automotr|autopartes|\\bautos\\b|\\bautomoviles?\\b|\\badefa\\b|camionetas|vehiculos (electricos|hibridos|livianos|nuevos|importados)" },
+    { "slug": "tecnologia", "label": "Tecnología", "desc": "Semiconductores, electrónica y bienes tecnológicos: controles de exportación, aranceles y cadenas de producción.", "match": "semiconductor|\\bchips?\\b|electronic|celulares|smartphone|computadoras|notebooks|inteligencia artificial|controles de exportacion|tierra del fuego" },
+    { "slug": "alimentos", "label": "Alimentos", "desc": "Alimentos y bebidas: lácteos, vinos, frutas, pesca, yerba y otros productos de consumo.", "match": "alimento|\\bfood\\b|bebida|\\bvinos?\\b|lacteo|\\bleche\\b|azucar|\\bcafe\\b|frutas?\\b|pesca|langostino|yerba|\\bmiel\\b|cacao|arroz" },
+    { "slug": "textil", "label": "Textil", "desc": "Textiles, indumentaria y calzado: importaciones, aranceles y producción local.", "match": "textil|indumentaria|calzado|\\bropa\\b|algodon|apparel|clothing" },
+    { "slug": "quimica", "label": "Química", "desc": "Química, petroquímica, fertilizantes, plásticos y farmacéutica.", "match": "quimic|petroquimic|fertiliz|\\burea\\b|farmac|plastic|chemical|medicamento" }
+  ],
+  "aliases": { "transporte": "maritimo" }
+}
