@@ -245,14 +245,20 @@ def feed_payload(news, items):
 
 # Enlaces fijos de la plantilla (#datos, #agenda…) → dirección propia. data-h permite volver al hash al abrir con doble clic.
 TOOL_PATHS = {'datos': 'datos', 'agenda': 'agenda', 'glosario': 'glosario', 'fuentes': 'fuentes', 'calculadora': 'calculadora-importacion',
-              'acerca': 'quienes-somos', 'contacto': 'contacto', 'privacidad': 'privacidad', 'terminos': 'terminos'}
+              'exportacion': 'calculadora-exportacion', 'guias': 'guias', 'acerca': 'quienes-somos', 'contacto': 'contacto', 'privacidad': 'privacidad', 'terminos': 'terminos'}
 
 
 def site_data(news):
     tax = json.loads((ROOT / 'data' / 'taxonomy.json').read_text(encoding='utf-8'))
     tax.pop('_ayuda', None)
     glo = json.loads((ROOT / 'data' / 'glossary.json').read_text(encoding='utf-8'))
-    return {'taxonomy': tax, 'glossary': glo.get('terms', [])}
+    return {'taxonomy': tax, 'glossary': glo.get('terms', []),
+            'guides': [{k: g.get(k) for k in ('slug', 'title', 'desc', 'updated')} for g in load_guides()]}
+
+
+def load_guides():
+    f = ROOT / 'data' / 'guides.json'
+    return json.loads(f.read_text(encoding='utf-8')).get('guides', []) if f.exists() else []
 
 
 def pretty_links(page, base):
@@ -262,6 +268,8 @@ def pretty_links(page, base):
             return f'href="{base}{TOOL_PATHS[h]}/" data-h="{h}"'
         if h.startswith('tema-'):
             return f'href="{base}seccion/{h[5:]}/" data-h="{h}"'
+        if h.startswith('guia-'):
+            return f'href="{base}guias/{h[5:]}/" data-h="{h}"'
         return m.group(0)
     return re.sub(r'href="#([a-z][a-z0-9-]*)"', sub, page)
 
@@ -332,6 +340,14 @@ def tool_body(key, news, items, sitedata, base):
                 'de la percepción de IVA y de la percepción de Ganancias; Ingresos Brutos se percibe según la provincia.</p>'
                 '<p>Es una estimación orientativa: no contempla regímenes especiales, valores criterio, derechos antidumping ni licencias. '
                 'Antes de operar, confirmá las alícuotas con tu despachante de aduana.</p>')
+    if key == 'exportacion':
+        return ('<h2>Cómo se calcula</h2>'
+                '<p>Los derechos de exportación y los reintegros se calculan sobre el valor FOB, del que, según el régimen, se descuentan los insumos '
+                'importados incorporados. El ingreso neto estimado es el FOB menos el derecho y los gastos hasta el embarque, más el reintegro.</p>'
+                '<p>Las alícuotas dependen de la posición arancelaria y cambian con frecuencia: confirmalas con tu despachante de aduana.</p>')
+    if key == 'guias':
+        return '<ul class="pre-list">' + ''.join(f'<li><a href="{base}guias/{esc(g["slug"])}/">{esc(g["title"])}</a><small>{esc(g["desc"])}</small></li>'
+                                                for g in load_guides()) + '</ul>'
     if key == 'fuentes':
         names = sorted({primary(i).get('name') for i in items if primary(i).get('name')}, key=norm)
         return '<h2>Fuentes citadas</h2><ul class="pre-list">' + ''.join(f'<li>{esc(n)}</li>' for n in names) + '</ul>'
@@ -343,13 +359,15 @@ TOOLS = {
     'agenda': ('Agenda de comercio exterior', 'Vencimientos, entradas en vigor, publicaciones oficiales y fechas clave del comercio exterior argentino e internacional.'),
     'glosario': ('Glosario de comercio exterior', 'Qué significan CIF, FOB, NCM, ARCA, antidumping, Incoterms y otros términos del comercio exterior, explicados en simple.'),
     'calculadora': ('Calculadora de costo de importación', 'Calculá el valor CIF, los derechos de importación, la tasa de estadística, el IVA y las percepciones para importar en la Argentina.'),
+    'exportacion': ('Calculadora de exportación', 'Calculá los derechos de exportación, los reintegros y los gastos de una exportación desde la Argentina, y cuánto te queda a partir del valor FOB.'),
+    'guias': ('Guías de comercio exterior', 'Guías prácticas: cómo calcular el costo de importar, qué es el valor CIF y el FOB, Incoterms 2020 y posición arancelaria NCM.'),
     'fuentes': ('Fuentes de información', 'Organismos oficiales, aduanas, organizaciones internacionales y medios especializados que usa Pulso Comex.'),
     'acerca': ('Quiénes somos', 'Pulso Comex es un portal de noticias, datos y análisis sobre comercio exterior, con foco en Argentina y Latinoamérica.'),
     'contacto': ('Contacto', 'Cómo comunicarte con Pulso Comex para sugerencias, correcciones o propuestas.'),
     'privacidad': ('Política de privacidad', 'Cómo trata Pulso Comex los datos de quienes visitan el sitio.'),
     'terminos': ('Términos y condiciones', 'Condiciones de uso del contenido de Pulso Comex.'),
 }
-TOOLS_INDEXED = {'datos', 'agenda', 'glosario', 'calculadora', 'fuentes', 'acerca'}
+TOOLS_INDEXED = {'datos', 'agenda', 'glosario', 'calculadora', 'exportacion', 'guias', 'fuentes', 'acerca'}
 
 
 def build_static_pages(template, news, items, bank, version, sitedata, tax):
@@ -418,18 +436,40 @@ def build_static_pages(template, news, items, bank, version, sitedata, tax):
         rel = f'{TOOL_PATHS[key]}/'
         feed_items = curated[:80] if key in ('agenda', 'datos', 'fuentes') else curated[:12]
         body = lambda base, key=key, title=title, desc=desc: static_article(title, desc, tool_body(key, news, items, sitedata, base), base=base)
-        ld_type = 'WebApplication' if key == 'calculadora' else 'WebPage'
+        ld_type = 'WebApplication' if key in ('calculadora', 'exportacion') else 'CollectionPage' if key == 'guias' else 'WebPage'
         write(rel, page_for(rel, title, desc, body, feed_items, 'index,follow' if key in TOOLS_INDEXED else 'noindex,follow',
                             [(title, f'{SITE}/{rel}')], ld_type))
         if key in TOOLS_INDEXED:
             out.append((rel, updated))
 
-    # Borra secciones o temas que ya no existen
-    for folder in ('seccion', 'tema'):
+    # Guías
+    for g in load_guides():
+        rel = f'guias/{g["slug"]}/'
+        keep.add(('guias', g['slug']))
+        gdata = dict(sitedata, guide={'slug': g['slug'], 'body': g.get('body', '')})
+        url = f'{SITE}/{rel}'
+        ld = {'@context': 'https://schema.org', '@graph': [
+            {'@type': 'Article', 'headline': g['title'], 'description': g.get('desc', ''), 'url': url, 'inLanguage': 'es-AR',
+             'dateModified': g.get('updated'), 'author': {'@type': 'Organization', 'name': SITE_NAME, 'url': f'{SITE}/'},
+             'publisher': {'@type': 'NewsMediaOrganization', 'name': SITE_NAME, 'logo': {'@type': 'ImageObject', 'url': f'{SITE}/logo.png'}}},
+            {'@type': 'BreadcrumbList', 'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': 'Inicio', 'item': f'{SITE}/'},
+                {'@type': 'ListItem', 'position': 2, 'name': 'Guías', 'item': f'{SITE}/guias/'},
+                {'@type': 'ListItem', 'position': 3, 'name': g['title'], 'item': url}]}]}
+        meta = meta_block(title=f'{g["title"]} · {SITE_NAME}', desc=g.get('desc', ''), url=url, image=OG_DEFAULT, image_alt=SITE_NAME,
+                          og_type='article', ld=ld, image_size=(1200, 630), base='../../')
+        body_html = pretty_links(g.get('body', ''), '../../')
+        pre = static_article(g['title'], g.get('desc', ''), body_html, crumb='<a href="../">Guías</a>', base='../../')
+        write(rel, render(template, meta=meta, prerender=lambda inner, pre=pre: pre, feed=feed_payload(news, curated[:12]),
+                          bank=bank, version=version, base='../../', sitedata=gdata))
+        out.append((rel, g.get('updated') or updated))
+
+    # Borra secciones, temas o guías que ya no existen
+    for folder in ('seccion', 'tema', 'guias'):
         d = ROOT / folder
         if d.exists():
             for sub in d.iterdir():
-                if sub.is_dir() and (folder, sub.name) not in keep:
+                if sub.is_dir() and (folder, sub.name) not in keep and not (folder == 'guias' and sub.name == 'index.html'):
                     shutil.rmtree(sub)
     return out
 
