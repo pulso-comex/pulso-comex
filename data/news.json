@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-05T09:44:23Z",
+  "updatedAt": "2026-10-05T13:45:14Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -115,24 +115,28 @@
       "obsDate": "2026-10-02",
       "change": "0,0% vs. día hábil anterior",
       "trend": "flat",
-      "checkedAt": "2026-10-05T09:44:31Z"
+      "checkedAt": "2026-10-05T13:45:25Z"
     },
     {
       "id": "soja",
       "label": "Soja · precio pizarra Rosario",
-      "value": "$ 552.500/t",
-      "period": "Rosario · 1 oct 2026 · US$ 364,57/t",
+      "value": "$ 554.000/t",
+      "period": "Rosario · 2 oct 2026 · US$ 366,64/t",
       "source": "Bolsa de Comercio de Rosario",
       "url": "https://www.cac.bcr.com.ar/es/precios-de-pizarra",
       "group": "Mercados",
-      "obsDate": "2026-10-01",
-      "change": "",
-      "trend": "flat",
+      "obsDate": "2026-10-02",
+      "change": "+0,3% vs. pizarra anterior",
+      "trend": "up",
       "_last": {
+        "date": "2026-10-02",
+        "ars": 554000.0
+      },
+      "checkedAt": "2026-10-05T13:45:28Z",
+      "_prev": {
         "date": "2026-10-01",
         "ars": 552500.0
-      },
-      "checkedAt": "2026-10-05T09:44:34Z"
+      }
     },
     {
       "id": "brent",
@@ -145,47 +149,921 @@
       "obsDate": "2026-09-29",
       "change": "-5,0% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-05T09:44:34Z"
+      "checkedAt": "2026-10-05T13:45:28Z"
     },
     {
       "id": "maiz",
       "label": "Maíz · precio pizarra Rosario",
-      "value": "$ 287.900/t",
+      "value": "$ 287.090/t",
       "group": "Mercados",
-      "period": "Rosario · 1 oct 2026 · US$ 189,97/t",
-      "obsDate": "2026-10-01",
-      "change": "",
-      "trend": "flat",
+      "period": "Rosario · 2 oct 2026 · US$ 190,00/t",
+      "obsDate": "2026-10-02",
+      "change": "-0,3% vs. pizarra anterior",
+      "trend": "down",
       "source": "Bolsa de Comercio de Rosario",
       "url": "https://www.cac.bcr.com.ar/es/precios-de-pizarra",
       "_last": {
+        "date": "2026-10-02",
+        "ars": 287090.0
+      },
+      "checkedAt": "2026-10-05T13:45:28Z",
+      "_prev": {
         "date": "2026-10-01",
         "ars": 287900.0
-      },
-      "checkedAt": "2026-10-05T09:44:34Z"
+      }
     },
     {
       "id": "trigo",
       "label": "Trigo · precio pizarra Rosario",
-      "value": "$ 333.000/t",
+      "value": "$ 339.975/t",
       "group": "Mercados",
-      "period": "Rosario · 1 oct 2026 · US$ 219,73/t",
-      "obsDate": "2026-10-01",
-      "change": "",
-      "trend": "flat",
+      "period": "Rosario · 2 oct 2026 · US$ 225,00/t",
+      "obsDate": "2026-10-02",
+      "change": "+2,1% vs. pizarra anterior",
+      "trend": "up",
       "source": "Bolsa de Comercio de Rosario",
       "url": "https://www.cac.bcr.com.ar/es/precios-de-pizarra",
       "_last": {
+        "date": "2026-10-02",
+        "ars": 339975.0
+      },
+      "checkedAt": "2026-10-05T13:45:28Z",
+      "_prev": {
         "date": "2026-10-01",
         "ars": 333000.0
-      },
-      "checkedAt": "2026-10-05T09:44:34Z"
+      }
     }
   ],
   "items": [
     {
+      "id": "panama-y-singapur-impulsan-cooperacion-para-ampliar-la-carga-aerea-en-tocumen",
+      "datetime": "2026-10-05T13:36:41Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Panamá y Singapur impulsan cooperación para ampliar la carga aérea en Tocumen",
+      "summary": "Nota publicada por www.metrolibre.com. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte aéreo",
+        "Latinoamérica",
+        "Asia"
+      ],
+      "countries": [
+        "Panamá",
+        "Singapur"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "www.metrolibre.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORzJUcEVlaGRMbUlZa2lWdFNRbGIyb0FUWGRtQmJ4ZnVRVmJIcUthancyOXZ4eDJyOEJVLTZkVU9aRDVBVHVDZko2TzVGZm9XdTRra0p1VkdsdTc2bWQwZmNSUmxGd2taVUNSZFRNeURuT293OWUtR3hXQUFVUnhvbm12dDA5NlA1em92d2FkOWFMSVZ5R2JjSVN2S01QR21wYzZrYnhRMkpsMFFMNmhmNG9mbTJNcXNsM092WnJTNVJaQQ?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "india-y-estados-unidos-frenan-negociaciones-de-acuerdo-comercial",
+      "datetime": "2026-10-05T13:34:55Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "India y Estados Unidos frenan negociaciones de acuerdo comercial",
+      "summary": "Nota publicada por Xpectro FM. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "Estados Unidos",
+        "Asia"
+      ],
+      "countries": [
+        "Estados Unidos",
+        "India"
+      ],
+      "tags": [
+        "Estados Unidos"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Xpectro FM",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSHJOTVgzZDlzUmRHNkhwNTJWa0NNTi1kYTVTdEs3X2pKMnFnYVRHRllac0RLWE50NE5GNENjSjdsYm1PV3dubWRuQmRFa0xrQUs0ajBLMHRlUk41YklZTGh5WmNzM1NCNTR6Slc4bTg0cE1NNWhGQjJaMEtTbDJrLUh1S0ZxY1Vnclg5NGUwaW8?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "centros-de-dialisis-de-salta-y-jujuy-reclaman-a-pami-una-actualizacion-urgente-d",
+      "datetime": "2026-10-05T13:31:40Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Centros de diálisis de Salta y Jujuy reclaman a PAMI una actualización urgente de los aranceles",
+      "summary": "Nota publicada por Nuevo Diario de Salta. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Nuevo Diario de Salta",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOU1QeEVqZm42TWppYnkwcTV1WmxRdmlBTlFqTjZkaHNvTzQ3cEhQc0gwY0UwbFdUenhxZ1pyR1FZMk1BcFUyaE5YYTBidW01YmVNcGFYYXlQOWFGd0lWZVdvTnM4VWg3Sl9UenltalF4aWdaVWhJWC1nOHdkajFjcU4yb010RDhhb2dLOERMb2VDZUpKUVpja0tNWjRfSDRNaURmeEtsNkU4T1FMbGdKamw3eGVYTkwyZTRFS2lBYTA0cnRpWER0UFlR?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "one-y-classnk-investigan-eficacia-de-tanques-de-amortiguacion-de-balanceo-en-por",
+      "datetime": "2026-10-05T13:30:57Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "ONE y ClassNK investigan eficacia de tanques de amortiguación de balanceo en portacontenedores",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario Ocean Network Express (ONE) y Nippon Kaiji Kyokai (ClassNK) pusieron en marcha un proyecto de investigación La entrada ONE y ClassNK investigan eficacia de tanques de amortiguación de balanceo en portacontenedores se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Contenedores"
+      ],
+      "visual": "container",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/one-y-classnk-investigan-eficacia-de-tanques-de-amortiguacion-de-balanceo-en-portacontenedores/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/ONE-y-ClassNK-investigan-eficacia-de-tanques-de-amortiguacion-de-balanceo-en-portacontenedores.jpg",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/one-y-classnk-investigan-eficacia-de-tanques-de-amortiguacion-de-balanceo-en-portacontenedores/",
+        "alt": "ONE y ClassNK investigan eficacia de tanques de amortiguación de balanceo en portacontenedores"
+      }
+    },
+    {
+      "id": "logistica-y-transporte-de-carga-aerea-la-capacidad-de-reaccion-toma-el-relevo-de",
+      "datetime": "2026-10-05T13:26:51Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Logística y transporte de carga aérea: la capacidad de reacción toma el relevo de la velocidad",
+      "summary": "Nota publicada por Logística Profesional. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Transporte aéreo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Logística Profesional",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZ29BcjY0R2prWC1KU1dqRERyY1hGTkpUNmstNGRlc2xSc2dsN2RhRVhSa2w4ZDh5anFtNFlNRjJoSnFpZ19raHhEanhZYm9QUXN6RjRjSEpLaHlqUXB5NkhYSktGX0tFTk9reVhjSTNIY0ZKaE5PRXI1NEhjUEIxZ0dNS1RUa2ZDTkJBOWN5NGV6ZDZjck1fajNaTmpSeDIyaWVfQkJwdHdJSHdxaUV3TE9lcjNCOFYzZ0RIQnZPY0JiNWZ4alBCUW9jVEtJMkpzbGlYZGln?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "tocumen-y-sats-pactan-alianza-para-impulsar-carga-aerea-entre-asia-y-america",
+      "datetime": "2026-10-05T13:19:25Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Tocumen y SATS pactan alianza para impulsar carga aérea entre Asia y América",
+      "summary": "Nota publicada por CRÍTICA. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte aéreo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "CRÍTICA",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcXl0QUVTeE0ya3I3ZnJlM1JsQWg0MDBLM0ZDa09ISDRpNFBFQXEwYkZCWlViUVRqVUpyOHhuNm1EZWhGSkt5dlFBQS13cS1KSEpfbXE0VzVoUXRITE5raXJWYkpBYXRxNURwTTIyVEFuTUxXZ3ZKaElRNUFQRjVvRVNwVGNuT0l3ZUdIUzdkc01BTk8wN1ZpX2dONExBN3BQTF9JZWtTUlVpYjJDTlI1UW5ZTnNlZkVxM0VJ0gHAAUFVX3lxTE4zUjZCRzlKSEU1X1ZmODZ0S3BfLTBnMEd1TVptYzdjVEpJeU10Y3NWVjV6eFhRUG5laGNFT1JlbjVXU3V0ZEFjWWY0bklUcllIU0Y3b2pwRm1HS3Y3dE9EN2VfYkxWbGdSS0VLUWVhbkVhaWtuTkRVc1o4YW15VEw2UW1VcnhEbTlsdGkzYlVBWkNPaU5UVDhXWGZTeXBVS0dQQ0MyWlhIWG91YTZBZG41Q0I5NFVJZmdCa0lZQ25VVg?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "trump-amenaza-con-duplicar-los-aranceles-a-corea-del-sur-por-el-proyecto-de-gnl",
+      "datetime": "2026-10-05T13:11:05Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Trump amenaza con duplicar los aranceles a Corea del Sur por el proyecto de GNL de Alaska",
+      "summary": "Nota publicada por DiarioBitcoin. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "Estados Unidos",
+        "Asia"
+      ],
+      "countries": [
+        "Estados Unidos",
+        "Corea del Sur"
+      ],
+      "tags": [
+        "Energía",
+        "Aranceles",
+        "Estados Unidos"
+      ],
+      "visual": "tanker",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "DiarioBitcoin",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQ1p3YktJaHJxeXh6NGc2dWZjUkhiMVU0ckVaX1FNYnY1c2k5Zk5pallKdzZfOFgwbmVyZndpVURCa0pUaEhOcUJ1N2xWVjBIWVFLZ0c0X2VwQkdNdEdTS0pIY3Zqd05pRWVIWGhWYU9lX0J6R0RET0EzNUZxSjNTYTh1d1BlbDhXajFqUXM2VmJSay15ZmZWRFBoVzdMRUpDUFNNLUdIZVNBeWJmTy1TLW5FdUNpZUNvRHR4LXhWbkdQRzZFZ0xuVXdqSlRBME5p?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "el-aeropuerto-de-tocumen-firma-acuerdo-en-singapur-para-fortalecer-la-carga-aere",
+      "datetime": "2026-10-05T13:06:56Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "El aeropuerto de Tocumen firma acuerdo en Singapur para fortalecer la carga aérea entre las Américas y Asia",
+      "summary": "Nota publicada por Aviacionline. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "Transporte aéreo",
+        "Puertos",
+        "Asia"
+      ],
+      "countries": [
+        "Singapur"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Aviacionline",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPYVJGNXdZQUFpSXJYT2lkazA3aWtGSEtTV2VRaTVFeXJRaVdiTThvRXBYcGZMTjgxdUUwblJzSERuTC0yby1IcG5sMU0wRjI2NDZ4cmVxZDQxMjFTVXo1OHRpa3J3ZmxubWFUbFRzckFkRmZLRnM4S3QzSVFDbHhTNzZkdDVCWjFCYkRCMGhLQ3JUa09iQ1MxTjFyRmo4c2g0ZVMwR0IyWVJRUS1uQml6WEpWMTJHMmNiLU5VdUtLdS1FU2xjb3JsZFJKVWpxUExWWHdUMWFtU2w2X2xUR1VFU2c3eV9uTG92MWprUVB4dGtadjkzdHlCTzRBYzFyUDhvR1FmVEJ0SklWSURVMkNnTUhHYXdXOUVWSjllaWtGQVUyeEZyVHdBSDZ6Q01aYUk4Q0FTNjVOZzlpQWZmLUtLWW4xdWdXWTZaY1FJN21qekRldmdNRnl0NFNPTjctYjY0U3l5cThScFpzT1liVUlFZTFnZ0E3dDNYaGZDbVJNUUZFUQ?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-economico",
+      "datetime": "2026-10-05T13:05:01Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Impacto en el real, exportaciones y vacaciones en Brasil: los escenarios económicos que se abren con Bolsonaro y Lula ante el balotaje",
+      "summary": "Nota publicada por clarin.com. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "clarin.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPN3RVcW93ZG9ITDE2M2RxUWJaV2kzNDlqX3FOT2xCUWsxZW9ER2laUzlHdWV4UThTQ0RWWkRqWld3MlhROXk2R2V5NUdkckQtQ3JzMTFXdnBMU3UzQ2F4RXNIT3lkdjBmWUxSREwtY2F0LXVsbGxUc1p1UV91aU5pbU1OODNZZ0MtRjBFbG54dnFzcmY4c0RxNUhITFpHVzhDNnBzMUY0RTU0SG12MTBHS1g4c2tNNW5YTE1yQ3BKdC1JZmZ6QTVrUzQ5RHRoeXVaTGFzcnFwcm1MakRrVlpR?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "centauro-cumple-40-anos-logistica-crecimiento-y-conexion-con-el-mundo",
+      "datetime": "2026-10-05T13:04:11Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Centauro cumple 40 años: logística, crecimiento y conexión con el mundo",
+      "summary": "Nota publicada por Punto a Punto - Mendoza. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "chart",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Punto a Punto - Mendoza",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOXzJ5WE1TUDN2c3VqNTZMMWVfbWNWbVdGU3BjRE5tdjA3b1lPRVNXVzh0ZHNBLXdUSmw2cDVFODlybFlaVzMzUlg2dm5OcFdmM2pZdE9ySVNicjgtcFZhS0hUYUJfTDBhMGRqUDRsVW40c0FlUlM1Y0hnZ1JxYzR5MHNFTW92QW5CcklFOG1XRzlwQWtiOWxmNXB3ZkE4OVdsQ1FRcnFuaXc?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "mercosur-financia-rehabilitacion-de-vias-ferreas",
+      "datetime": "2026-10-05T12:55:07Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Mercosur financia rehabilitación de vías férreas",
+      "summary": "Nota publicada por latribuna.com.py. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Mercosur"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "latribuna.com.py",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNE5VTU9OZHhkU0xDbWtsQThsTVB3bk5BNGtCTFg5N21uZFdDeGV1TzRaVktaOXhCVWd0cGVPb0dVUGs0Mm5GLVJ5VEdpbk91eFJyY1d5Wi1NQk42NU9XWWdOUFFaU2NBMFBLQWFzZU9EaFR1ZHoyWFlWQTdVRktET2dKZmFCMnhVMGdxSVFuRldTdGZ2V01pWEhXS0J1Wm5oREVHNzJuN3NpTE0?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "la-declaracion-jurada-de-destino-minero-se-incorpora-a-la-vucea",
+      "datetime": "2026-10-05T12:32:50Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "La declaración jurada de destino minero se incorpora a la VUCEA",
+      "summary": "La Agencia de Recaudación y Control Aduanero (ARCA) incorporó al Régimen Nacional de Ventanilla Única de Comercio Exterior Argentino (VUCEA) la declaración jurada de destino minero correspondiente al Régimen de Inversiones para la Actividad Minera. Así lo establece la Resolución General 5909/2026, publicada hoy…",
+      "body": [
+        "La Agencia de Recaudación y Control Aduanero (ARCA) incorporó al Régimen Nacional de Ventanilla Única de Comercio Exterior Argentino (VUCEA) la declaración jurada de destino minero correspondiente al Régimen de Inversiones para la Actividad Minera. Así lo establece la Resolución General 5909/2026, publicada hoy (05.10.2026), en el Boletín Oficial. La norma dispone que la declaración […] The post La declaración jurada de destino minero se incorpora a la VUCEA appeared first on Aduana News ."
+      ],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Aduanas",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "ARCA",
+        "Minería"
+      ],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Aduana News",
+      "sources": [
+        {
+          "name": "Aduana News",
+          "type": "Medio especializado · Argentina",
+          "url": "https://aduananews.com/la-declaracion-jurada-de-destino-minero-se-incorpora-a-la-vucea/?utm_source=rss&utm_medium=rss&utm_campaign=la-declaracion-jurada-de-destino-minero-se-incorpora-a-la-vucea",
+          "primary": true,
+          "author": "Aduana News"
+        }
+      ],
+      "photo": {
+        "src": "https://aduananews.com/wp-content/uploads/2024/04/comercio-mineria-argentina.jpeg",
+        "by": "Aduana News",
+        "page": "https://aduananews.com/la-declaracion-jurada-de-destino-minero-se-incorpora-a-la-vucea/?utm_source=rss&utm_medium=rss&utm_campaign=la-declaracion-jurada-de-destino-minero-se-incorpora-a-la-vucea",
+        "alt": "La declaración jurada de destino minero se incorpora a la VUCEA"
+      }
+    },
+    {
+      "id": "togo-rusia-busca-oportunidades-de-cooperacion-con-puerto-autonomo-de-lome",
+      "datetime": "2026-10-05T12:30:58Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Togo: Rusia busca oportunidades de cooperación con Puerto Autónomo de Lomé",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario El Puerto Autónomo de Lomé (PAL) recibió una delegación rusa presente en Togo, como parte de La entrada Togo: Rusia busca oportunidades de cooperación con Puerto Autónomo de Lomé se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Europa"
+      ],
+      "countries": [
+        "Rusia"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/togo-rusia-busca-oportunidades-de-cooperacion-con-puerto-autonomo-de-lome/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/lome.jpg",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/togo-rusia-busca-oportunidades-de-cooperacion-con-puerto-autonomo-de-lome/",
+        "alt": "Togo: Rusia busca oportunidades de cooperación con Puerto Autónomo de Lomé"
+      }
+    },
+    {
+      "id": "peru-nuevo-escenario-en-el-comercio-internacional",
+      "datetime": "2026-10-05T12:11:35Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Perú: nuevo escenario en el comercio internacional",
+      "summary": "Nota publicada por lacamara.pe. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Perú"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "lacamara.pe",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5IY2xIVUZRZmdWT2lyOHJXUER2QVo1cnNCNndNREM0dVlncVVva1NkdE9IOEMtS2xHamNybzd3M2xsRk5acW1JV3QtVHZDYktTQ01xcnFaRjJMd0tjY08zaGhKMFNzb1JadXluMVhZQlVsS2pmZHdaa0VB?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "figueroa-busca-potenciar-las-exportaciones-de-gas-de-neuquen-a-chile",
+      "datetime": "2026-10-05T12:06:50Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Figueroa busca potenciar las exportaciones de gas de Neuquén a Chile",
+      "summary": "Nota publicada por ADNSUR. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Energía"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "ADNSUR",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNUmEzOFFQWGF1cV9fQzlnbVpNVl9zN2xDZ0VrUVlGSEFPR1FFZHJyamNFSW5vLUs4UUFBaUk2MUpZakdBNjZCazJKbHVld2hTTU9abXZjYXkxdVNQRHY3eVk5SjlSOFZLalV0a2N6TG9pYk0wZnVPb0Y0WkFsR3BpOGNZcFc2cWw5OG5BUlY0cmd2cXhyQUJ4TlFLOEppTF9IRlBSRUFjY3R0N3lZS0tFcUQzaHhxR1EzNDREMFBybVBVTHFMeWFDa1pPU2Z0d2JGVXpj?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "mercosur-union-europea-el-agro-emerge-como-el-gran-ganador-pero-enfrenta-exigenc",
+      "datetime": "2026-10-05T12:02:13Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Mercosur-Unión Europea: el agro emerge como el gran ganador, pero enfrenta exigencias sanitarias y un lento desarme impositivo",
+      "summary": "Nota publicada por TN. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Mercosur",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea"
+      ],
+      "tags": [
+        "Mercosur",
+        "Agro"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "TN",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPSEQ5M1RmT3ZBWXBpcGl0SGlIOTFjZHNnVlN3bGhYUEx6YzVNX08zQ0tkOUJNVXFfMkJiU1NpWDZqVDRTQ1NiOEkycnJhbWlwMjNLNU5MT0lPU01wR0Y0SHI2Q0Utd1ZQSHNycXBldW1fdm96NXk4Z2tEWks2Ri1MZTZjU0dnalpldkpuZGlXMUloLV96azR2elNndHptLTVHbk15eHRWbllaLUpNcWxERHl5REtyVmxUaDdoeXZ4NDM2QnBLaUNqaTRUekxUQk9GbXRxVS1xVlM2ZGJGWGRQWTdVQnV1cms2SUhhWVRDT1I2QdIBhgJBVV95cUxPdElNbmhoVUkwYjd6MUcxSHVmN1ZueTY3cV9ESnEzeS13NlZOOEFGWWM0MWNURUpmcVdfOVMwNnV0ZG5DeU9rUTVDYkZqb1R3SDVtU1dEdHRNQmYwQ2tVR3BlMTFRRnB1YmRIN0Z5dnE0N3RmNXZmWmY2ODhYQ3prTW5OclhLSjlKWlV1Vk9VbGxUY2JDVUZmMmhFY0o0UHA2cVNXcUVQQkZzYUhVaVo4SVJMSWgyZDkwakI4WUFxdkowQmM0NHFsc2NPWkMtS0dka3lyVGpKNVM0NlNwUjNJMnlxNU5UWWNCVnBGZGxNLUZKNGh4d3dFM1Q4Z20wLXI0V1MySUdn?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "avances-en-puerto-de-keflavik-permiten-mejorar-atencion-de-cruceros",
+      "datetime": "2026-10-05T12:00:43Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Avances en Puerto de Keflavik permiten mejorar atención de cruceros",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario El Puerto de Keflavik, en Islandia, se encuentra en un proceso de desarrollo por fases. La La entrada Avances en Puerto de Keflavik permiten mejorar atención de cruceros se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Cruceros",
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/avances-en-puerto-de-keflavik-permiten-mejorar-atencion-de-cruceros/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/1__keflavik_harbour.jpg",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/avances-en-puerto-de-keflavik-permiten-mejorar-atencion-de-cruceros/",
+        "alt": "Avances en Puerto de Keflavik permiten mejorar atención de cruceros"
+      }
+    },
+    {
+      "id": "por-que-la-india-se-transformo-en-un-mercado-clave-para-las-exportaciones-agroin",
+      "datetime": "2026-10-05T11:59:05Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Por qué la India se transformó en un mercado clave para las exportaciones agroindustriales de la Argentina",
+      "summary": "Nota publicada por infobae.com. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones",
+        "Asia"
+      ],
+      "countries": [
+        "Argentina",
+        "India"
+      ],
+      "tags": [
+        "Agro"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "infobae.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNMmZkU2ttSnBJNC04T2FHUktyOEE0LWtydHg5azJlUm1WaTBVd25zYnhrdEluR3dRR214TDI2VlZtYUdVc01PQnd3NUpaVE9DVGxndmxaQ1dURDlVdXZ6M2VnLXlYYVpNMTUzQ0gzeWNaRnNLSy1rSG5kczM5RTg2RHc2UVNZZHdCeWo4TG9BUzFLdDdUdnZRQllIRHM5a1V3MEZjcW0zOFFXVGpjRW9yOFcwRXpyVFlnNFAxa2RkRG1yRXNQVW5lZGgtdjFTT1k3MUI5SnMwTTFsTTg2YU1JenkySk5iZ9IBgAJBVV95cUxOT0tXR2xqbDNUX2NSWHVVQmU0bk9NcThxUUZSMnFJNFZRQm9fckdQOU5nM2xxcFFtaEtrSVh0NnZZSHdYR0h3TkotYWZZcGhyQVdBTVNMUmpCOF9QSUJ5aHdzSTZJWEtFcVQwUHl5cjhiVFBvUU0waGQtNzljRk03UU85cEVBY29tZW5kX0FGQTJoeGdPeEp5bXhiWlFtNXVMc0NDWjIyQkZqU1VYVzRneGtIZWxUc2xuWUJMcTVxX1FWdXBaWWdKcmZabllNdUtLdzROdTl2U1pnb0FpVGRXS3AzSVRqNGMwMXd1X0ZnLW5QTWxFdUlQZXVCUXI2Rkk4?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "brasil-despues-de-las-elecciones-por-que-para-argentina-puede-importar-mas-la-ec",
+      "datetime": "2026-10-05T11:57:23Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Brasil después de las elecciones: por qué para Argentina puede importar más la economía que la política",
+      "summary": "Nota publicada por qpasó. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Importaciones",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Argentina",
+        "Brasil"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "qpasó",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOXp6RTFUZnlvTUN1WXAwb0JvNFAzNVNlVG0zajg3Q01jYnNLeXhZM2x6UVcxM1VlV29LWTZvSUZJcHFGeG1fWHBZcEpDYm5XQlVpeVVzVGpwVERLYXlQMGN5ZFpvMTk4Nk94OEtwX3lQT3d5WndaNk5acTBZdjYtekZUTi1kNkFwa2tjTFFFMWxIMm5pQWJFTkVKYXFfeDBVbVlRYjhrNWkwWVRGMnhFb3AySEctLUtFcDkyN2RVZjM5bjlyT29n?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "wenceslao-bunge-saravia-diserta-sobre-mercosur-y-europa-en-foro-de-cadiz",
+      "datetime": "2026-10-05T11:35:08Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Wenceslao Bunge Saravia diserta sobre Mercosur y Europa en foro de Cádiz",
+      "summary": "Nota publicada por Data Portuaria. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Mercosur"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Data Portuaria",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSTRadi15N3ljN2QxRnYzdkVDX1VtbER4OHVtRVRwZWxoWGg0TC1tVFlMNzg0bEc0RUxESWJUcUQwdTJRTDNweWdwTmtSLXpkZlVRd0IwMmxKVW5BSnZwWUhtc29fekk4NkFXOXUxak5ZSnVwcC0xelNfZDNqWUFOamVjeXlXS01HVHB0Um1Ka0liNDBad0RVREVaT1lGNUtSY0tFMjVOZno4V0RySE04M0NST0Y1REJGY3dfR3FjOWY3QmJSRVFyWDk3SUE0QWYyc1NuWjdEbw?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "regulacion-de-arca-para-importadores-y-exportadores-simplificacion-de-documentac",
+      "datetime": "2026-10-05T11:19:07Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Regulación de ARCA para importadores y exportadores: simplificación de documentación aduanera",
+      "summary": "Nota publicada por Mundo Empresarial AR. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Importaciones",
+        "Exportaciones",
+        "Aduanas"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "ARCA"
+      ],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Mundo Empresarial AR",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE90MnJxLXhOelcybmY5UkE4U3dHVENrMy1XZ3BMS2R1WlhsRkFUM1lPV3NEb21uOTB6YXBhdEJoNTRweWR6QXJRbkg5U0lheDBIQmc?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "catorce-exportadores-argentinos-confirman-su-participacion-en-la-world-bulk-wine",
+      "datetime": "2026-10-05T11:05:55Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Catorce exportadores argentinos confirman su participación en la World Bulk Wine Exhibition de Ámsterdam",
+      "summary": "Nota publicada por Revista Entorno Económico. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Revista Entorno Económico",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQb0txYS1IWGIyU2F2RkdvT1ktWUVDOU1LTnRXSmI0ellRRlJyX0NDVFFuTVduX3EyTmlFa0ZQNUJnVlVDdV9jLXNvc1hyY2tSTXJfNlJfVzdmcVpFYS1tWmpEa1p5ajZqRDR3c3VOMjBNMUR0OVoxcTJfc0xHV29odjZyc0pfMWoyVXhXb2lyNmdzUDFpYXNISVJydE1ScjE1RkVzVmxib2JLR3dyODh0YjRWcVZ0bTJJSm1pekh3WTNUZmNRX0U3dHFoNjFIRnNTLVMwSkV6eFhZME9Ja3FTSHNRenk?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "reglas-estables-para-exportar-a-europa-el-foco-de-la-agenda-argentina-en-paris",
+      "datetime": "2026-10-05T10:39:35Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Reglas estables para exportar a Europa: el foco de la agenda argentina en París",
+      "summary": "Nota publicada por infobae.com. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "infobae.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOaFZ2elhIc2dRWTdNazB4ekwyeHdqNldycDdpVmNyWExlY2ZJWXJrZV95MmVLZXVxRUhEVXg0RnNLWjcyc04xZU1YR2ZWZnhSWkJVTXJseHR4bXEwSmt3aWZSR2ZCUjY3OXlXTi1rNEtRdDdibUNuZksyU05CNFpfWmxPaENoXzdEN01GOFhRZGF6bl9OTktEdk9FQlRUZWZ2SEdpb1FRTVlaUFJISDNmQUtCNVY3ZEtnUXlwdnZTc0NDV0J4eUNNM1ZOVFRVd05ZTkY5UE1QR0PSAdgBQVVfeXFMTmhWdnpYSHNnUVk3TWsweHpMMnh3ajZXcnA3aVZjclhMZWNmSVlya2VfeTJlS2V1cUVIRFV4NEZzS1o3MnNOMWVNWEdmVmZ4UlpCVU1ybHh0eG1xMEprd2lmUkdmQlI2Nzl5V04tazRLUXQ3Ym1DbmZLMlNOQjRaX1psT2hDaF83RDdNRjhYUWRhem5fTk5LRHZPRUJUVGVmdkhHaW9RUU1ZWlBSSEgzZkFLQjVWN2RLZ1F5cHZ2U3NDQ1dCeHlDTTNWTlRUVXdOWU5GOVBNUEdD?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "temporada-de-cruceros-2026-27-evidencia-caida-sostenida-de-recaladas-en-puertos",
+      "datetime": "2026-10-05T10:00:31Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "Temporada de cruceros 2026/27 evidencia caída sostenida de recaladas en puertos del norte de Chile",
+      "summary": "Por Gabriel Campos Roullet @PortalPortuario Una fuerte caída de recaladas en los puertos del norte de Chile se proyecta para La entrada Temporada de cruceros 2026/27 evidencia caída sostenida de recaladas en puertos del norte de Chile se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Cruceros",
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/temporada-de-cruceros-2026-27-evidencia-caida-sostenida-de-recaladas-en-puertos-del-norte-de-chile/",
+          "primary": true,
+          "author": "Gabriel"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2025/05/Silver-Wind-en-antofagasta-e1747442998507.jpg",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/temporada-de-cruceros-2026-27-evidencia-caida-sostenida-de-recaladas-en-puertos-del-norte-de-chile/",
+        "alt": "Temporada de cruceros 2026/27 evidencia caída sostenida de recaladas en puertos del norte de Chile"
+      }
+    },
+    {
       "id": "navieras-refuerzan-defensas-contra-drones-tras-ataques-en-el-mar-negro",
-      "datetime": "2026-10-05T09:19:32Z",
+      "datetime": "2026-10-05T09:33:45Z",
       "date": "2026-10-05",
       "firstSeen": "2026-10-05T09:44:23Z",
       "title": "Navieras refuerzan defensas contra drones tras ataques en el Mar Negro",
@@ -210,41 +1088,6 @@
           "name": "Investing.com México",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNbHRuXzA1Ump0MllIVU1BV2NvT0FoUWEydEZiVXI2SHdla2MxMm5YdF9RZkxaUFFrOGpRRTJaeUNhSDc5U285WXlWQ0luQzNGN004UzZLY3k1Q0JrZk1SYW9pRkJZS2tDWlhreWVtalRSRG9tRkN3cGR3SlBJV2FJZHpOVm41dEI0NGdPT0syT1dkVTV6aU94U2Q5SXVWUExvRXRGR2E5TG9PTkE4angyNC1aQnhzNG5kcmhVVjRCSEgzTWJSVHJTRU9Bcw?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
-      "id": "las-navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principa",
-      "datetime": "2026-10-05T09:16:34Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-05T09:44:23Z",
-      "title": "Las navieras anuncian alzas de fletes hacia Latinoamérica aunque en las principales rutas globales apuntan a la baja",
-      "summary": "Nota publicada por ace-cargadores.com. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Logística",
-        "Transporte marítimo"
-      ],
-      "countries": [
-        "Global"
-      ],
-      "tags": [
-        "Fletes"
-      ],
-      "visual": "ship",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Logística y fletes",
-      "sources": [
-        {
-          "name": "ace-cargadores.com",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNUm5wNVNmS19BUnBIeXIwVWtLWHRzemhkcHJtTDNDYWw1ZURjTGZMTkI5VXI4OFBZdGE3Mi0ybUNBd00wMVBLdGY5bUhmZzJSUjE1c0lNVGt2dUE3elV1SUplSlVTSW5uY2YwaW5kejRDeVZta2Q4eW1iekxyenFQbUF6TWxCMXNtNDlkYmk0RFc1Mm1qTERjdHBnWXNRR2tLbHdSSmxrX3FsZjlGYUtLY1JxWkpzMERaNDZqNl9MZENUZjR4T3Z2TFBJRnB0bkFVcmdxYU5HWWxEWjExZ3VRbGZYOEFQbTBTbTBpR3hNRmk?oc=5",
           "primary": true,
           "author": ""
         }
@@ -291,7 +1134,7 @@
       "date": "2026-10-05",
       "firstSeen": "2026-10-05T09:44:23Z",
       "title": "Mercosur y UE: la logística se vuelve clave para aprovechar el acuerdo",
-      "summary": "Nota publicada por identidadcorrentina.com.ar. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Identidad Correntina. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -314,9 +1157,44 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "identidadcorrentina.com.ar",
+          "name": "Identidad Correntina",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNcjVGdWRFcXhCNGM2eHpFLVQ5Q2xvTmN5RU13clNWNzZIU0RFTWJrMmw5eTZBTmRDcUkweVd0cW5PU2xfV2tTYmdaRTJIdXl6SlE3NWNMd0FaNFhpMWNFNkgtcDZ1WXBkemU4MmJseTBZR1g1X2pZdFREVWlGUmJrVFYzckZMblFrTTdfUzl4U01pbDRyQ096V19ianNyWi11ZkxOR09takpkLWxOdDVMdVRITXJYeFk4bFlfN2JxeTlPNk0?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "el-embajador-de-argentina-analiza-en-cadiz-las-relaciones-entre-mercosur-y-europ",
+      "datetime": "2026-10-05T09:03:17Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-05T13:45:14Z",
+      "title": "El embajador de Argentina analiza en Cádiz las relaciones entre Mercosur y Europa",
+      "summary": "Nota publicada por El Estrecho Digital. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Mercosur"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "El Estrecho Digital",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNjNfVGxrRTB6MnpYTkU5X0Q5bWstcWp6dFkzXzZDNTBNZ3lQN1FNWlZjbGJKclZ3RFRhWnAxRUMwaHIyMFVhVEYxS0hDUmdkZXN6VWgxanFFWUhkaU5BaTBmUmJfemFIa2tFd0VpZXh5aURNNVhWUWNjN1A2WTYyaWV5LXVlRXBDR2RmTC1JSzJzMVQ0OUh3MnNoNm5lUThQQXRyRnBZbU82Y0VONE1faXo2QmlrY09wNGkydEhUSTB1MnBJ?oc=5",
           "primary": true,
           "author": ""
         }
@@ -371,7 +1249,7 @@
       "date": "2026-10-05",
       "firstSeen": "2026-10-05T09:44:23Z",
       "title": "No tomaban mate en su casa, invirtieron US$ 500 y exportaron a 25 países antes de vender en la Argentina: hoy facturan US$ 1,7 millones",
-      "summary": "Nota publicada por Clarin.com. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por clarin.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -390,7 +1268,7 @@
       "feed": "Google Noticias · Comercio exterior Argentina",
       "sources": [
         {
-          "name": "Clarin.com",
+          "name": "clarin.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNLWRlRzdZVXZYMURBZUxCcWRrbWJUdExVTUlHem9zMlQwYWVwMy1qOFZqUmhmQVZ3NVdYZGdzVWlzMTd2bkczWDA5NkJCbEtXcDZqR1JpSndNWWFGNjNSUko0UW50MlB1azgyQnZUajBLVVkzNy1QdWNmVXpDeUsyQ3B5QlBPSk9nSjZQSF9QdG82UlFuUmR1Q2NOT3F3YXZjdHAwSEFPQWJUY19DRU9CQWZQTVgxX01tbWdPSTdxTVVwLVZGVDFSckpPUDV2djNiM2ZiNVdoYmNRZV9XRkJsYzl5ak85Qnc?oc=5",
           "primary": true,
@@ -404,7 +1282,7 @@
       "date": "2026-10-05",
       "firstSeen": "2026-10-05T09:44:23Z",
       "title": "Argentina se prepara para aumentar las exportaciones de gas desde Vaca Muerta",
-      "summary": "Nota publicada por ZapalaYa. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por zapalaya.com.ar. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -425,7 +1303,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "ZapalaYa",
+          "name": "zapalaya.com.ar",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGc4c0t6SGNiYi1Qckk4ZzBROFZKcmFtVVp2SnhsaXBYa2pYRUNRNFBZQWR0cWJuVG9ING9zOFo3NkVZUEpwcFRPRkRHamZ2WHFJNFFLRDFZc2tNSWU3VzBuQUdUWXItem44aXlLQTF4eFBnbDRBeXJmUExMNVI4cklMUTRqWVJaeUtkNG5HTGhEbkVoSDJoc0V5MVBIT3hIaWoycklVN3NKbklXWnRaZVNmUQ?oc=5",
           "primary": true,
@@ -472,7 +1350,7 @@
       "date": "2026-10-05",
       "firstSeen": "2026-10-05T09:44:23Z",
       "title": "Gran Bretaña analiza aranceles para los coches eléctricos importados de China, ante el temor a la competencia desleal",
-      "summary": "Nota publicada por informat.ro. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Informat.ro. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -496,7 +1374,7 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "informat.ro",
+          "name": "Informat.ro",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNc2NVZFFsUl9NSkIxcXB4SmhuVThKX1o4bUxPckFBa0ROOTJtTTVCSXVEaXdUbFpjLWdQZG1od2RkT2tjTzcwVmpFRmZvaDJMeFkzZkttWFppN2VXX1lnb3ZfVnJ1Ykw2NTdKSU4wdlp6eEIzQjZJVU9kVmN5NWtrU0xhMnhzWmhya0tleGpvQ0drSUpicU4wdXNlLXY5ZC1UMmRZUEJLQVJacVFJSFJHNWVB?oc=5",
           "primary": true,
@@ -540,47 +1418,12 @@
       ]
     },
     {
-      "id": "potenza-impulsa-la-emergencia-de-la-industria-del-calzado-y-pide-derogar-la-baja",
-      "datetime": "2026-10-05T06:36:17Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-05T00:53:37Z",
-      "title": "Potenza impulsa la emergencia de la industria del calzado y pide derogar la baja de aranceles a las importaciones",
-      "summary": "Nota publicada por Parlamentario. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Importaciones",
-        "Aranceles"
-      ],
-      "countries": [
-        "Global"
-      ],
-      "tags": [
-        "Aranceles"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
-      "sources": [
-        {
-          "name": "Parlamentario",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPRklfQXoxLUcxODJCM0liWDhsM2s1UEx6T0xUM3NYXzJqRXFvR2pLek5iLTNTTmtldEN0aHF5R1RNLVpmcHpYeGFnSW5XV3NUSzVSZlJYVXVjUWx3eER2MnpQWGFrSWMyc2FPVUIxN1BxV04tTlJOYnlUQmtyUjBBUXZ3YjBwdC1saWRXbWtVVVZKQ1lCLWdxSDVmM2gyaVRNUUVpTjRWZFNXZlMtU3paRGR5MUFXcGFacDV3OTRjUnJHSzFfWHdKWnJPWUlnSXNkaGY3ZGd3dDYwNE5fREpsTFY2eEpURE1ReklN?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
       "id": "los-lideres-europeos-se-creyeron-muy-listos-con-los-aranceles-pero-china-es-un-m",
       "datetime": "2026-10-05T05:30:00Z",
       "date": "2026-10-05",
       "firstSeen": "2026-10-05T09:44:23Z",
       "title": "Los líderes europeos se creyeron muy listos con los aranceles pero China es un monstruo dispuesto a arrasar con todo",
-      "summary": "Nota publicada por Híbridos y Eléctricos. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por hibridosyelectricos.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -603,7 +1446,7 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "Híbridos y Eléctricos",
+          "name": "hibridosyelectricos.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOaUhOSlJ4M1VNVE0xYnJlZmZQUlNjYmIxWVZhSDBkV0V6cUxXUnIxUGwxZklCMmxtbG9zZi1udmU1akhxSjZoRlRDb3Z1UTY1MThmdVpyWHJrbENHZ1p3a2p1V3hzQ1pxeGU4Njk3SlJFOVU4SmRsTXd0RXNVdV9mZFZRMWNQRXg3WGRsVnV5WTlBdUo5MkQtUVNQY0Q0cU1WR2dvYmhzY29CbnRMVm1yTkJ1UTczZXU0Wm9SeDYtd2hDZGdrbElsQzRmc3NGVjdYSXMyeXV1OGs2OFlwbzlSWVlfTXFJYm5EWm9FZzJ5RFRCdGc?oc=5",
           "primary": true,
@@ -644,36 +1487,244 @@
       ]
     },
     {
-      "id": "tres-navieras-deciden-desde-diciembre-que-carga-argentina-viaja-directo-a-asia",
-      "datetime": "2026-10-05T04:38:06Z",
+      "id": "analisis-servicios-directos-asia-rio-de-la-plata-diciembre",
       "date": "2026-10-05",
-      "firstSeen": "2026-10-05T09:44:23Z",
-      "title": "Tres navieras deciden desde diciembre qué carga argentina viaja directo a Asia",
-      "summary": "Nota publicada por nuestromar.org. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
+      "datetime": "2026-10-05T01:36:02-03:00",
+      "label": "Análisis",
+      "kind": "analisis",
+      "title": "Desde diciembre, solo tres navieras tendrán servicios directos entre Asia y el Río de la Plata",
+      "summary": "Con el fin del servicio compartido ASAS2 y el rediseño de la red de CMA CGM, las escalas directas en Buenos Aires desde Asia quedan en manos de Maersk, MSC y CMA CGM, según un análisis publicado por NUESTROMAR. La capacidad semanal nominal desde Asia caería cerca de 4%.",
       "topics": [
         "Argentina",
-        "Transporte marítimo"
+        "Transporte marítimo",
+        "Logística",
+        "Puertos",
+        "Asia",
+        "Importaciones",
+        "Exportaciones"
       ],
       "countries": [
-        "Argentina"
+        "Argentina",
+        "Uruguay",
+        "Brasil",
+        "China"
       ],
-      "tags": [],
-      "visual": "ship",
-      "impact": 1,
+      "tags": [
+        "Navieras",
+        "Contenedores",
+        "Puerto de Buenos Aires",
+        "Maersk",
+        "CMA CGM",
+        "MSC"
+      ],
+      "visual": "port",
+      "impact": 2,
       "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Logística y fletes",
+      "argentinaNote": "Menos operadores con escala directa en Buenos Aires desde Asia reduce las alternativas de los cargadores argentinos para negociar fletes y tiempos de tránsito, según el análisis citado.",
+      "argentinaImpact": {
+        "change": "Desde diciembre, las escalas directas Asia–Buenos Aires quedan concentradas en Maersk, MSC y CMA CGM; clientes de PIL, Yang Ming, ONE y HMM pierden esa opción directa.",
+        "who": "Importadores y exportadores que operan contenedores entre la Argentina y Asia, agentes de carga y terminales del Río de la Plata.",
+        "sectors": [],
+        "flows": {
+          "importaciones": true,
+          "exportaciones": true,
+          "logistica": true,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "Maersk y CMA CGM dan por terminada su cooperación en el servicio ASAS2 entre Asia y la costa este de Sudamérica: la última salida conjunta parte de Shanghái el 8 de diciembre. Maersk aclaró que mantiene su servicio ASAS, que pasará a operar y controlar por su cuenta y que, según el análisis, incluye escalas en Buenos Aires y Montevideo.",
+        "CMA CGM, por su parte, rediseña su red con dos servicios desde mediados de diciembre. El SEAS 2 arranca el 14 de diciembre en Tianjin y une puertos chinos con cinco terminales brasileñas, sin escalas en el Río de la Plata. El SEAS A sale el 17 de diciembre de Ningbo y es el que mantiene la cobertura directa de Buenos Aires y Montevideo, además de Santos y Navegantes; la naviera lo presenta con foco en la carga refrigerada.",
+        "Según el análisis de Emiliano Galli publicado por NUESTROMAR, con este esquema las escalas directas en Buenos Aires desde Asia quedan en manos de tres navieras: Maersk, MSC y CMA CGM. Los clientes de PIL, Yang Ming, ONE y HMM pierden alternativas de servicio directo, y la capacidad semanal nominal desde Asia bajaría alrededor de 4% por el retiro de CMA CGM del ASAS2. El autor también señala que el nuevo servicio conjunto de Zim y Hapag-Lloyd (ZFS o AS3), que evaluó escalar en Buenos Aires y Montevideo, terminó accediendo al Río de la Plata por transbordo en Rio Grande.",
+        "El autor sostiene que es la primera vez que un servicio importante entre Asia y la costa este de Sudamérica se lanza sin escala argentina por decisión propia, y que la concentración resta poder de negociación a los cargadores. Esas valoraciones son del análisis y no de las navieras, que en sus anuncios hablan de salidas semanales más confiables y mejores tiempos de tránsito."
+      ],
+      "keyData": [
+        [
+          "Última salida conjunta ASAS2",
+          "8 de diciembre, desde Shanghái"
+        ],
+        [
+          "CMA CGM SEAS 2 (sin Río de la Plata)",
+          "Desde el 14/12, Tianjin"
+        ],
+        [
+          "CMA CGM SEAS A (Buenos Aires y Montevideo)",
+          "Desde el 17/12, Ningbo"
+        ],
+        [
+          "Navieras con escala directa Asia–Buenos Aires",
+          "Maersk, MSC y CMA CGM (según el análisis)"
+        ],
+        [
+          "Capacidad semanal nominal desde Asia",
+          "≈ -4% (estimación del análisis)"
+        ]
+      ],
+      "explainer": {
+        "what": "Con el fin del servicio ASAS2 de Maersk y CMA CGM y la nueva red de CMA CGM, desde diciembre solo Maersk, MSC y CMA CGM tendrían escalas directas entre Asia y Buenos Aires.",
+        "why": "Menos navieras con servicio directo implica menos alternativas para negociar fletes y tiempos de tránsito; el análisis estima además una baja de cerca de 4% en la capacidad semanal nominal desde Asia.",
+        "who": "Importadores y exportadores argentinos que operan contenedores con Asia, agentes de carga, clientes de PIL, Yang Ming, ONE y HMM, y terminales del Río de la Plata.",
+        "products": [
+          "Carga en contenedores Asia–Río de la Plata",
+          "Carga refrigerada"
+        ],
+        "next": "La última salida conjunta del ASAS2 parte de Shanghái el 8 de diciembre; el SEAS 2 de CMA CGM empieza el 14 de diciembre y el SEAS A, con escala en Buenos Aires, el 17 de diciembre.",
+        "nextSource": {
+          "name": "PortalPortuario",
+          "url": "https://portalportuario.cl/cma-cgm-optimizara-rutas-de-carga-entre-asia-y-costa-este-de-sudamerica"
+        }
+      },
+      "deadlines": [
+        {
+          "date": "2026-12-08",
+          "label": "Última salida conjunta del servicio ASAS2 (Maersk–CMA CGM) desde Shanghái",
+          "url": "https://portalportuario.cl/maersk-y-cma-cgm-ponen-fin-a-servicio-conjunto-entre-asia-y-sudamerica"
+        },
+        {
+          "date": "2026-12-17",
+          "label": "Primera salida del servicio SEAS A de CMA CGM (Ningbo–Buenos Aires–Montevideo)",
+          "url": "https://portalportuario.cl/cma-cgm-optimizara-rutas-de-carga-entre-asia-y-costa-este-de-sudamerica"
+        }
+      ],
       "sources": [
         {
-          "name": "nuestromar.org",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZG90aWRQUVdIa2RYLThRRGJzUjNkTU5SOF9LMG9lRm9HX1RQTjJDa3R1ZkJ6YW01MVJYNG1QOEhPWGQ3X0cwbHJwNkFUZzVDMzY4dHlYQWU4Tk1NVThLQkswQWNYLWU2Rm9XRl9sWnFRay1TM0d0Y3U0QTFLZTlGWjR6M3VBaUZnTnVON01TakMyTjNvdlh0OHRPelZkM0lPaWgwRFcwZWV6dw?oc=5",
-          "primary": true,
-          "author": ""
+          "name": "Fundación NUESTROMAR (Trade News)",
+          "type": "Medio especializado",
+          "url": "https://www.nuestromar.org/tres-navieras-deciden-desde-diciembre-que-carga-argentina-viaja-directo-a-asia/",
+          "primary": true
+        },
+        {
+          "name": "PortalPortuario (CMA CGM)",
+          "type": "Medio especializado",
+          "url": "https://portalportuario.cl/cma-cgm-optimizara-rutas-de-carga-entre-asia-y-costa-este-de-sudamerica"
+        },
+        {
+          "name": "PortalPortuario (Maersk y CMA CGM)",
+          "type": "Medio especializado",
+          "url": "https://portalportuario.cl/maersk-y-cma-cgm-ponen-fin-a-servicio-conjunto-entre-asia-y-sudamerica"
         }
+      ],
+      "story": "fletes-contenedores",
+      "absorbs": [
+        "tres-navieras-deciden-desde-diciembre-que-carga-argentina-viaja-directo-a-asia"
+      ]
+    },
+    {
+      "id": "gri-asia-latinoamerica-hapag-cma-cgm-15-octubre",
+      "date": "2026-10-05",
+      "title": "Hapag-Lloyd y CMA CGM suben USD 1.000 por contenedor los fletes de Asia a Sudamérica desde el 15 de octubre",
+      "summary": "Las dos navieras anunciaron aumentos generales de tarifas para las cargas desde Asia hacia ambas costas de Sudamérica, México, Centroamérica y el Caribe. Van a contramano de las rutas globales, donde el índice de Drewry viene en baja.",
+      "topics": [
+        "Transporte marítimo",
+        "Logística",
+        "Latinoamérica",
+        "Asia",
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina",
+        "Brasil",
+        "China",
+        "Global"
+      ],
+      "tags": [
+        "Fletes",
+        "Contenedores",
+        "GRI",
+        "Hapag-Lloyd",
+        "CMA CGM"
+      ],
+      "visual": "container",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Las importaciones argentinas en contenedor desde Asia viajan por la ruta Lejano Oriente–Costa Este de Sudamérica, alcanzada por ambos aumentos.",
+      "argentinaImpact": {
+        "change": "Hapag-Lloyd y CMA CGM aplican un aumento general de USD 1.000 por contenedor en los fletes desde Asia hacia la costa este de Sudamérica desde el 15 de octubre.",
+        "who": "Importadores que traen mercadería en contenedor desde Asia, agentes de carga y exportadores que usan los mismos servicios.",
+        "sectors": [],
+        "flows": {
+          "importaciones": true,
+          "exportaciones": false,
+          "logistica": true,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "Hapag-Lloyd y CMA CGM comunicaron aumentos generales de tarifas (GRI, por su sigla en inglés) de USD 1.000 por contenedor para las cargas que salen de Asia con destino a la costa este y la costa oeste de Sudamérica, la costa oeste de México, Centroamérica y el Caribe. En ambos casos el aumento rige desde el 15 de octubre de 2026.",
+        "En el caso de Hapag-Lloyd, la suba alcanza a los contenedores secos de 20 y 40 pies y a los reefer de 40 pies usados como secos (NOR), con alguna excepción puntual en la ruta hacia el Caribe y Panamá. La de CMA CGM comprende a todos los puertos asiáticos y se aplica según la fecha de embarque a cargas secas, refrigeradas, fuera de medida y contenedores vacíos que pagan flete.",
+        "Las navieras también movieron precios dentro de la región. Hapag-Lloyd sumará desde el 1 de noviembre un aumento de USD 400 por contenedor seco de la costa este a la costa oeste de Sudamérica en su servicio CON, y de USD 300 hacia otros destinos regionales en los servicios GS1 y SEC. CMA CGM aplica desde el 1 de octubre en su servicio Brazex, entre ambas costas, USD 1.000 por contenedor de 20 pies y USD 500 por el de 40 pies.",
+        "Los anuncios contrastan con la tendencia global: el World Container Index de Drewry bajó 1% hasta USD 4.434 por FEU en la medición del 1 de octubre, arrastrado por la ruta Asia–Europa. Que una naviera anuncie un GRI no garantiza que el aumento se traslade completo a las tarifas efectivamente pagadas, que dependen de la demanda y de los contratos de cada cargador."
+      ],
+      "keyData": [
+        [
+          "Aumento Asia → Sudamérica",
+          "USD 1.000 por contenedor"
+        ],
+        [
+          "Vigencia",
+          "15 de octubre de 2026"
+        ],
+        [
+          "Hapag-Lloyd, costa este → costa oeste de Sudamérica",
+          "+USD 400 (servicio CON) desde el 1/11"
+        ],
+        [
+          "CMA CGM Brazex (entre costas)",
+          "+USD 1.000 (20') / +USD 500 (40') desde el 1/10"
+        ],
+        [
+          "Drewry WCI (1/10)",
+          "USD 4.434 / FEU (-1%)"
+        ]
+      ],
+      "explainer": {
+        "what": "Hapag-Lloyd y CMA CGM suben USD 1.000 por contenedor los fletes desde Asia hacia Sudamérica, México, Centroamérica y el Caribe desde el 15 de octubre.",
+        "why": "La ruta Lejano Oriente–Costa Este de Sudamérica es la que usan las importaciones argentinas desde Asia, y el aumento va en sentido contrario a la baja de los fletes en las rutas globales.",
+        "who": "Importadores que traen carga en contenedor desde Asia, agentes de carga y operadores logísticos de la región.",
+        "products": [
+          "Carga en contenedores secos de 20 y 40 pies",
+          "Contenedores refrigerados (CMA CGM)"
+        ],
+        "next": "El aumento general de ambas navieras rige desde el 15 de octubre; el de Hapag-Lloyd entre la costa este y la costa oeste de Sudamérica, desde el 1 de noviembre.",
+        "nextSource": {
+          "name": "MundoMarítimo",
+          "url": "https://www.mundomaritimo.cl/noticias/navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principales-rutas-globales-apuntan-a-la-baja"
+        }
+      },
+      "deadlines": [
+        {
+          "date": "2026-10-15",
+          "label": "Rige el aumento de USD 1.000 por contenedor de Hapag-Lloyd y CMA CGM en fletes Asia–Sudamérica",
+          "url": "https://www.mundomaritimo.cl/noticias/navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principales-rutas-globales-apuntan-a-la-baja"
+        },
+        {
+          "date": "2026-11-01",
+          "label": "Hapag-Lloyd aplica el aumento entre la costa este y la costa oeste de Sudamérica",
+          "url": "https://www.mundomaritimo.cl/noticias/navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principales-rutas-globales-apuntan-a-la-baja"
+        }
+      ],
+      "kind": "noticia",
+      "sources": [
+        {
+          "name": "MundoMarítimo",
+          "type": "Medio especializado",
+          "url": "https://www.mundomaritimo.cl/noticias/navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principales-rutas-globales-apuntan-a-la-baja",
+          "primary": true
+        },
+        {
+          "name": "Container News (Hapag-Lloyd)",
+          "type": "Medio especializado",
+          "url": "https://container-news.com/hapag-lloyd-raises-far-east-latin-america-rates/"
+        },
+        {
+          "name": "Container News (CMA CGM)",
+          "type": "Medio especializado",
+          "url": "https://container-news.com/cma-cgm-raises-asia-to-latin-america-rates-by-usd-1000-per-container/"
+        }
+      ],
+      "story": "fletes-contenedores",
+      "absorbs": [
+        "las-navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principa"
       ]
     },
     {
@@ -817,6 +1868,41 @@
       ]
     },
     {
+      "id": "potenza-impulsa-la-emergencia-de-la-industria-del-calzado-y-pide-derogar-la-baja",
+      "datetime": "2026-10-05T00:47:21Z",
+      "date": "2026-10-04",
+      "firstSeen": "2026-10-05T00:53:37Z",
+      "title": "Potenza impulsa la emergencia de la industria del calzado y pide derogar la baja de aranceles a las importaciones",
+      "summary": "Nota publicada por Parlamentario. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones",
+        "Aranceles"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Parlamentario",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPRklfQXoxLUcxODJCM0liWDhsM2s1UEx6T0xUM3NYXzJqRXFvR2pLek5iLTNTTmtldEN0aHF5R1RNLVpmcHpYeGFnSW5XV3NUSzVSZlJYVXVjUWx3eER2MnpQWGFrSWMyc2FPVUIxN1BxV04tTlJOYnlUQmtyUjBBUXZ3YjBwdC1saWRXbWtVVVZKQ1lCLWdxSDVmM2gyaVRNUUVpTjRWZFNXZlMtU3paRGR5MUFXcGFacDV3OTRjUnJHSzFfWHdKWnJPWUlnSXNkaGY3ZGd3dDYwNE5fREpsTFY2eEpURE1ReklN?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
       "id": "la-mineria-ya-alcanzo-casi-todo-lo-exportado-durante-2025",
       "datetime": "2026-10-05T00:08:48Z",
       "date": "2026-10-04",
@@ -856,7 +1942,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-05T00:53:37Z",
       "title": "Tres médicos chilenos crean naviera que abastecerá Malvinas",
-      "summary": "Nota publicada por El Ecosistema Startup. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por ecosistemastartup.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -875,7 +1961,7 @@
       "feed": "Google Noticias · Logística y fletes",
       "sources": [
         {
-          "name": "El Ecosistema Startup",
+          "name": "ecosistemastartup.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRFAxX25GbWZSeDBCQVA3anNqZ2ZDeFY2eFRTMTgyc3JFRDJScERycnN3R2ZieXpzU3J6eEtpdUl0S0RXS3hRc2tVTmZQSTdmWlVWUkpnMzdOV3I5TGo4TGRuWHNZU0NHMWpPNVhlcjFMWXVsWWFuZl9MZjRuN29FQko1UGxhODRoWXk4T3dTT0M3czNa?oc=5",
           "primary": true,
@@ -1071,7 +2157,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Exportaciones pesqueras argentinas buscan sortear desafíos en mercados internacionales",
-      "summary": "Nota publicada por crprensa.com. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por CRprensa.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1090,7 +2176,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "crprensa.com",
+          "name": "CRprensa.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbEpsdnBGMjlaRlJMY3hQcmZBbHRTZUF0SGs3elpZOEg0dTdtMkwtNm5fMzBFSU5RdDV1MHhqVGdCX2dqeDVPZVNiU0dLSVFNQW5UbHJLWDdjYlRzMEJaSlZhXzQyWllPQ2g1Wm9EbUVzMHFLa2xhUU50SHR5TjZBaW9YejIwY1FlUGpjdEVUSnFTTXgycUEtRG9UZWtZOVVZMHE2TVNqN3VzSF8zR0FBN2IwVFN3OWNWN2Jn?oc=5",
           "primary": true,
@@ -1223,7 +2309,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-05T00:53:37Z",
       "title": "La demanda global de carga aérea sube 4,4% mientras las aerolíneas enfrentan un jet fuel 79,2% más caro",
-      "summary": "Nota publicada por Flipr.news. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por flipr.com.ar. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1241,7 +2327,7 @@
       "feed": "Google Noticias · Logística y fletes",
       "sources": [
         {
-          "name": "Flipr.news",
+          "name": "flipr.com.ar",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTlYweVRTSmRmWkZ5amI5el9vVHJxMFF6b1lWSnhrbUtxTmpYRDh0Ulc0ejVvazNSbldFbzYtWHd3T2VidjlIaDRPN0tGelcxRUJOdHNmTlMydUpScUxfQlM4cmZpMGhSenBXbzZvYUViU3JkaEFfYkhKa0JhWndCbHFKTWphUk91UDRQNE5XNnI5UjJmM21hOXEzUWo3bnUxZm50MWVhN3B3U294Y1RHTi1MakRFdXZEb2wwcV9BbThrdHFnX1BSRjZOZF91MGx2em04dVdGaVJEVzZxcVhwZUZWelg3ZmVYRnFhcFFDZmhMZw?oc=5",
           "primary": true,
@@ -1331,7 +2417,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-05T00:53:37Z",
       "title": "Macquarie concede a Technomar una línea de deuda sénior de 99 millones de dólares para siete portacontenedores",
-      "summary": "Nota publicada por IndexBox. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por indexbox.io. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1351,7 +2437,7 @@
       "feed": "Google Noticias · Logística y fletes",
       "sources": [
         {
-          "name": "IndexBox",
+          "name": "indexbox.io",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMjZnN3JveV9SdWg3eHJqQTJxaEhJVXA4My1LUnBreE9VUWxndVNLX1pIanp3X3JuZVNxSkRfOVUwdzl5OUUteDc1emNLcW8wOFQ0WVFjYjhWem5LWHRBTldpZnQ3WnB1dTh6VDJFNzdIcHg0a3ZFajh3THBXalVTanBmcDVJNk9TRlNhbWkxd3FlN19VS3hmbHFBOGQ0VnVLRkIwcVV1bW9OSXN0Mld4ZllzTTQ?oc=5",
           "primary": true,
@@ -1365,7 +2451,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-05T00:53:37Z",
       "title": "Figueroa busca impulsar exportaciones de gas a Chile mediante un nuevo gasoducto",
-      "summary": "Nota publicada por ZapalaYa. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por zapalaya.com.ar. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1386,7 +2472,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "ZapalaYa",
+          "name": "zapalaya.com.ar",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNW1LenBiS0RiRGU2bmU5VHpDUF80TmR0czY2STZuQm9CQm9NcWpIcTdjVDBWN3hud29KTG9EZHBuN3lIMmJFcVczYkJ2bE0wODVmdV9pNHlFQWJRbHZpUVdKb1A0SmVFX2xBMGRYaERYRW05VmQ1QTFtcy1MNk5ZSXBMdmVlenRvNWlaQVpZcERJZ2U1dGEzdFZ4Z1NaQndvYWotVDNLTVItakxGVGZobnZPX1lIRE0?oc=5",
           "primary": true,
@@ -1627,7 +2713,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T20:25:23Z",
       "title": "Exportación de gas de Vaca Muerta: ¿beneficios para la economía argentina?",
-      "summary": "Nota publicada por ZapalaYa. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por zapalaya.com.ar. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1648,7 +2734,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "ZapalaYa",
+          "name": "zapalaya.com.ar",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcDFUZk1KRG1ldWxMSXNWWGozdUdEOTYxTDV6QkYtcFJCWlU2bmpxaWNMV1JIX2VLMlJvd1Atc0ZIclA5eDB3eDh5Q1NfWUg0MDJXZUZfX0RydnJnbnhIVkFTRWlqMmNsbWprSDcydzRQdG9acERPWUNHY2wzMWQ1ODB4dV9UYVJOSDFOSUQ2REVZbFRka2U4RUNmQkY0X2NTWDUzNTB1Q0F5NHM?oc=5",
           "primary": true,
@@ -1662,7 +2748,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T19:43:53Z",
       "title": "Brasil, un socio clave para San Juan: qué exporta la provincia y por qué las elecciones generan atención",
-      "summary": "Nota publicada por tiempodesanjuan.com. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Tiempo de San Juan. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1681,7 +2767,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "tiempodesanjuan.com",
+          "name": "Tiempo de San Juan",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWlp5VTA5Wm9hTVQ2a0lzZGdSSWxZZ1FXcUx1VVNFRGZ5YzVVb2RmeXZPTm8zU1lfck02NFM4aWt2T01NT3RvcTRvMk96T1pzVmRjYTNzZHJOUUlkZWtWeUtldFo1eHNDNVFwNlBPZlFpRHk1QVFXWjl6dzJtSEpLMjJMMW5PUGc2VXpJa3R6NEFlU3FfVE1rX1hSRVE0eHFNVVM3MEJxbG1VdFNsTEhqLWMtVlpsRUYzbzR3SXo5V2VMUmZqOGVieFVHbjkzSGJQdUd5Yl9aeFpWSjdzX1BkcmZMMHRsOXFlenc?oc=5",
           "primary": true,
@@ -2444,7 +3530,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T17:24:54Z",
       "title": "Cae al mar un camión portacontenedores en el Puerto de Vilagarcía",
-      "summary": "Nota publicada por Diario de Arousa. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por diariodearousa.elidealgallego.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2466,7 +3552,7 @@
       "feed": "Google Noticias · Logística y fletes",
       "sources": [
         {
-          "name": "Diario de Arousa",
+          "name": "diariodearousa.elidealgallego.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZkFydTZOMm5NUUN5RmhMS3VpNk9FMGFKQl9Rbmw3Um5SQVotLW9JNGNzWHNkZkdFcVlWSkJpaTF1SjNEUjY3NTFSQTdkTzc3dFZwbWNUc05tZkR6a05xLU9kQjlDRzUyN3lWbUdNbXdoOU1lXzM5X3NOX3NVaVM2bXZTZEl5SS13ckQ1NmN1M1FfbHl3dUZZeElCdGlaMU5OM015U1RVOVRDc1k0cURIaXYxTGhMcE9HV3lKbG92QzZvMzNGNUd4MlBMaTZmdW5sODRKUjhLLW4?oc=5",
           "primary": true,
@@ -2686,7 +3772,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Cinco pymes que están haciendo uso del reciente acuerdo Mercosur-UE para sumar exportaciones",
-      "summary": "Nota publicada por fmdelcondado.com.ar. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por FM Del Condado. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2709,7 +3795,7 @@
       "feed": "Google Noticias · Mercosur",
       "sources": [
         {
-          "name": "fmdelcondado.com.ar",
+          "name": "FM Del Condado",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSnpIZ01JcEw4bmJnc2prWHItZ05SdnZsY295NHBKZWlkNnlvV3FiX0lkcFFhU0habVJDU3lDb3pQU1VNVV8xQjFjMDZQR1poWk5vUEtnZ052OEs5Y2RWVFJubHNhb2tibW9KVXBTVEVnTUdDd0pVMEs1WE0wTnUwMTloSFFsTGM1amFWb25uSjVfdDc2ckFoa2RuanB6WnVlVFBmWndfQWU0TEt0T0Z6T0lMZ1BKY01HYmhsMg?oc=5",
           "primary": true,
@@ -2944,7 +4030,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T17:24:54Z",
       "title": "Vaca Muerta podría posicionar a Neuquén como principal exportador en el futuro cercano",
-      "summary": "Nota publicada por ZapalaYa. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por zapalaya.com.ar. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2964,44 +4050,9 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "ZapalaYa",
+          "name": "zapalaya.com.ar",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPM3o2RHYzUVEzakZNUEJ3Q1RPR25LYmwxVTBXRDNNZkxLai15Yl9rN2Y1RFRtMnUwQW1zeWhQSXRxaVJBMEtmQ01wSzZRT2NrRXlIVWEtVkZuclQtN20tWl92VzE5UzJoVDk5cDJmTUhydTFQMG45bFF6Um9DSUhLNGpFQ3NHTUlSeUNuUlQ4T0xsS2gxYUtFWHlXZE9XS2t4S0UtNUtlZnFFcm1fMExOLWZjQWNQYVloY0dqU2dVbw?oc=5",
-          "primary": true,
-          "author": ""
-        }
-      ]
-    },
-    {
-      "id": "bolivia-en-el-mercosur-de-la-adhesion-a-la-estrategia-de-integracion-regional",
-      "datetime": "2026-10-04T04:35:35Z",
-      "date": "2026-10-04",
-      "firstSeen": "2026-10-04T00:14:26Z",
-      "title": "Bolivia en el MERCOSUR: de la adhesión a la estrategia de integración regional",
-      "summary": "Nota publicada por Escenario Mundial. Abrí el artículo original para leer el texto completo.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Latinoamérica",
-        "Mercosur"
-      ],
-      "countries": [
-        "Bolivia"
-      ],
-      "tags": [
-        "Mercosur"
-      ],
-      "visual": "treaty",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Mercosur",
-      "sources": [
-        {
-          "name": "Escenario Mundial",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeGxnT21QNU9sSXI3YmNQWjh5VFAtSTNkV1p3QmVsRXJodHpuYm9jQ2pCSlkweHVLeUVJR1drQ3pqNWNDcFBsLXBNOTdjMnNqbUlwZEx1NW0wbW9kTEc3T05XODBBTVZnQ1IzQ2V1MTJJV3VYRGRKc1hIdEl2dlZJSTlIVjBiUXFzTi1zVWc0czlkVTIyM1JoOFpsTVJRYjhwNFRJXzFkaFFyOFludldyT2l3SDJLTVhnd1FyWVJTc9IBxwFBVV95cUxNTUhoLXc4NWxwbmZ5R2pobW4tZ3VIRkk0V0I1dW5LNzZxMzdSMElBWE5USWVvNzJnNllQNm5ud1RVaUY0MmZlMlBiUWgzSmxnQ0ljUjZKZGRkQ3RTRk83dkRZdjIyRWxydlZfRE5ucU9tUk1aaUFhY1FfUmdLZy1ZVGZpM2ltUHBqQmFnajRQVWFJbkJTVkFJcHFzbVdieUxpdEJwdmpVRjc0M1lGU013ZlZCMmg0enR3cXBVX0VNck9mcGRTLU1v?oc=5",
           "primary": true,
           "author": ""
         }
@@ -3214,7 +4265,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T17:24:54Z",
       "title": "Neuquén se proyecta como líder en exportaciones hacia 2032, superando a Buenos Aires",
-      "summary": "Nota publicada por ZapalaYa. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por zapalaya.com.ar. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -3233,7 +4284,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "ZapalaYa",
+          "name": "zapalaya.com.ar",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQY2liUXFfYWkxOGFhZm5jaVo1RDh1eGtJdmlES2hoSlZJdFQ3dTVDMkdNRnRpY1phXzlHdXBpb0F2VTRPQVgxdTJpNGhIcDAtWUZLTzJRekkzTmhjdFFITElYOS1DaFpoYXhQaktZVU9RdE5QZi1qaDctazVSV2RVdTJlT0Q5MEt1dnJSVFpTNGZtUG9YUjlCdFVONHRzbkU2R3VnSG1pUXBYRUJCUEdQWnl4cDlfQUpMSWRj?oc=5",
           "primary": true,
@@ -3860,7 +4911,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T00:14:26Z",
       "title": "“Muy preciado”: cuál es el producto estrella que asoma para las exportaciones de carne argentina a Japón",
-      "summary": "Nota publicada por La Nación. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por lanacion.com.ar. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -3883,7 +4934,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "La Nación",
+          "name": "lanacion.com.ar",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOc01GVVFZakNLZjJFTjhRQUt1QzhVSXNqQW4xdTVzaDE5R3Y1UGZkODRDb19DcWNlSUtEU0dwUkpEbURJV3RHZFZtUjdBaEo1NDVZYmViUG9aM282X2NENXdNeDdrd1pBQkV3Tm5BbTRESUdCSkdVcXhBYWRaeG0xQ0VpVXVXcm9yU0FIQ2o3SkZOa3A4eTUzSEpMMnVjOFJLb0RmYTJwMDRjVjNudEtwc1JUREYwOWk3cGhLdHBpUm1CVHFKcHlYS1NSMTlDV1k0MS0zRzNMQXJMRzI0cmdtYUdLdkhldw?oc=5",
           "primary": true,
@@ -3965,7 +5016,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T02:13:13Z",
       "title": "El crecimiento de Vaca Muerta podría llevar a Neuquén al primer lugar de las exportaciones",
-      "summary": "Nota publicada por DameNoticias. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por damenoticias.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -3985,9 +5036,44 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "DameNoticias",
+          "name": "damenoticias.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSm11VXdvYWVTRGVjY29nenJxR043WG80ZFZwUVc2NHo1dFRsN0ZPSVVkNGt5b0lCWjhwV2NoUWRVNXE5em5rX0swa1ZVVE1VTENzS0RHeWZVTDA5RkhkMGlERFhpVVRzOXdXWmVSbTU4NUxsWExSNjMyQ0t6Yk02bE81MzQ5YXVzQlQ3UFdTZG43SFhFQXFZVl8tN3dwcmVYblpHbHNpZXhXNzNLLUp6NGhBOWJzaDFEaE1IeTR3ZjhCWF9YMWExV21hcw?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "bolivia-en-el-mercosur-de-la-adhesion-a-la-estrategia-de-integracion-regional",
+      "datetime": "2026-10-03T20:31:15Z",
+      "date": "2026-10-03",
+      "firstSeen": "2026-10-04T00:14:26Z",
+      "title": "Bolivia en el MERCOSUR: de la adhesión a la estrategia de integración regional",
+      "summary": "Nota publicada por Escenario Mundial. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Latinoamérica",
+        "Mercosur"
+      ],
+      "countries": [
+        "Bolivia"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Escenario Mundial",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeGxnT21QNU9sSXI3YmNQWjh5VFAtSTNkV1p3QmVsRXJodHpuYm9jQ2pCSlkweHVLeUVJR1drQ3pqNWNDcFBsLXBNOTdjMnNqbUlwZEx1NW0wbW9kTEc3T05XODBBTVZnQ1IzQ2V1MTJJV3VYRGRKc1hIdEl2dlZJSTlIVjBiUXFzTi1zVWc0czlkVTIyM1JoOFpsTVJRYjhwNFRJXzFkaFFyOFludldyT2l3SDJLTVhnd1FyWVJTc9IBxwFBVV95cUxNTUhoLXc4NWxwbmZ5R2pobW4tZ3VIRkk0V0I1dW5LNzZxMzdSMElBWE5USWVvNzJnNllQNm5ud1RVaUY0MmZlMlBiUWgzSmxnQ0ljUjZKZGRkQ3RTRk83dkRZdjIyRWxydlZfRE5ucU9tUk1aaUFhY1FfUmdLZy1ZVGZpM2ltUHBqQmFnajRQVWFJbkJTVkFJcHFzbVdieUxpdEJwdmpVRjc0M1lGU013ZlZCMmg0enR3cXBVX0VNck9mcGRTLU1v?oc=5",
           "primary": true,
           "author": ""
         }
@@ -10708,251 +11794,10 @@
         }
       ],
       "story": "arca-normativa"
-    },
-    {
-      "id": "gri-asia-latinoamerica-hapag-cma-cgm-15-octubre",
-      "date": "2026-10-05",
-      "title": "Hapag-Lloyd y CMA CGM suben USD 1.000 por contenedor los fletes de Asia a Sudamérica desde el 15 de octubre",
-      "summary": "Las dos navieras anunciaron aumentos generales de tarifas para las cargas desde Asia hacia ambas costas de Sudamérica, México, Centroamérica y el Caribe. Van a contramano de las rutas globales, donde el índice de Drewry viene en baja.",
-      "topics": [
-        "Transporte marítimo",
-        "Logística",
-        "Latinoamérica",
-        "Asia",
-        "Importaciones"
-      ],
-      "countries": [
-        "Argentina",
-        "Brasil",
-        "China",
-        "Global"
-      ],
-      "tags": [
-        "Fletes",
-        "Contenedores",
-        "GRI",
-        "Hapag-Lloyd",
-        "CMA CGM"
-      ],
-      "visual": "container",
-      "impact": 2,
-      "affectsArgentina": true,
-      "argentinaNote": "Las importaciones argentinas en contenedor desde Asia viajan por la ruta Lejano Oriente–Costa Este de Sudamérica, alcanzada por ambos aumentos.",
-      "argentinaImpact": {
-        "change": "Hapag-Lloyd y CMA CGM aplican un aumento general de USD 1.000 por contenedor en los fletes desde Asia hacia la costa este de Sudamérica desde el 15 de octubre.",
-        "who": "Importadores que traen mercadería en contenedor desde Asia, agentes de carga y exportadores que usan los mismos servicios.",
-        "sectors": [],
-        "flows": {
-          "importaciones": true,
-          "exportaciones": false,
-          "logistica": true,
-          "aranceles": false
-        }
-      },
-      "body": [
-        "Hapag-Lloyd y CMA CGM comunicaron aumentos generales de tarifas (GRI, por su sigla en inglés) de USD 1.000 por contenedor para las cargas que salen de Asia con destino a la costa este y la costa oeste de Sudamérica, la costa oeste de México, Centroamérica y el Caribe. En ambos casos el aumento rige desde el 15 de octubre de 2026.",
-        "En el caso de Hapag-Lloyd, la suba alcanza a los contenedores secos de 20 y 40 pies y a los reefer de 40 pies usados como secos (NOR), con alguna excepción puntual en la ruta hacia el Caribe y Panamá. La de CMA CGM comprende a todos los puertos asiáticos y se aplica según la fecha de embarque a cargas secas, refrigeradas, fuera de medida y contenedores vacíos que pagan flete.",
-        "Las navieras también movieron precios dentro de la región. Hapag-Lloyd sumará desde el 1 de noviembre un aumento de USD 400 por contenedor seco de la costa este a la costa oeste de Sudamérica en su servicio CON, y de USD 300 hacia otros destinos regionales en los servicios GS1 y SEC. CMA CGM aplica desde el 1 de octubre en su servicio Brazex, entre ambas costas, USD 1.000 por contenedor de 20 pies y USD 500 por el de 40 pies.",
-        "Los anuncios contrastan con la tendencia global: el World Container Index de Drewry bajó 1% hasta USD 4.434 por FEU en la medición del 1 de octubre, arrastrado por la ruta Asia–Europa. Que una naviera anuncie un GRI no garantiza que el aumento se traslade completo a las tarifas efectivamente pagadas, que dependen de la demanda y de los contratos de cada cargador."
-      ],
-      "keyData": [
-        [
-          "Aumento Asia → Sudamérica",
-          "USD 1.000 por contenedor"
-        ],
-        [
-          "Vigencia",
-          "15 de octubre de 2026"
-        ],
-        [
-          "Hapag-Lloyd, costa este → costa oeste de Sudamérica",
-          "+USD 400 (servicio CON) desde el 1/11"
-        ],
-        [
-          "CMA CGM Brazex (entre costas)",
-          "+USD 1.000 (20') / +USD 500 (40') desde el 1/10"
-        ],
-        [
-          "Drewry WCI (1/10)",
-          "USD 4.434 / FEU (-1%)"
-        ]
-      ],
-      "explainer": {
-        "what": "Hapag-Lloyd y CMA CGM suben USD 1.000 por contenedor los fletes desde Asia hacia Sudamérica, México, Centroamérica y el Caribe desde el 15 de octubre.",
-        "why": "La ruta Lejano Oriente–Costa Este de Sudamérica es la que usan las importaciones argentinas desde Asia, y el aumento va en sentido contrario a la baja de los fletes en las rutas globales.",
-        "who": "Importadores que traen carga en contenedor desde Asia, agentes de carga y operadores logísticos de la región.",
-        "products": [
-          "Carga en contenedores secos de 20 y 40 pies",
-          "Contenedores refrigerados (CMA CGM)"
-        ],
-        "next": "El aumento general de ambas navieras rige desde el 15 de octubre; el de Hapag-Lloyd entre la costa este y la costa oeste de Sudamérica, desde el 1 de noviembre.",
-        "nextSource": {
-          "name": "MundoMarítimo",
-          "url": "https://www.mundomaritimo.cl/noticias/navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principales-rutas-globales-apuntan-a-la-baja"
-        }
-      },
-      "deadlines": [
-        {
-          "date": "2026-10-15",
-          "label": "Rige el aumento de USD 1.000 por contenedor de Hapag-Lloyd y CMA CGM en fletes Asia–Sudamérica",
-          "url": "https://www.mundomaritimo.cl/noticias/navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principales-rutas-globales-apuntan-a-la-baja"
-        },
-        {
-          "date": "2026-11-01",
-          "label": "Hapag-Lloyd aplica el aumento entre la costa este y la costa oeste de Sudamérica",
-          "url": "https://www.mundomaritimo.cl/noticias/navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principales-rutas-globales-apuntan-a-la-baja"
-        }
-      ],
-      "kind": "noticia",
-      "sources": [
-        {
-          "name": "MundoMarítimo",
-          "type": "Medio especializado",
-          "url": "https://www.mundomaritimo.cl/noticias/navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principales-rutas-globales-apuntan-a-la-baja",
-          "primary": true
-        },
-        {
-          "name": "Container News (Hapag-Lloyd)",
-          "type": "Medio especializado",
-          "url": "https://container-news.com/hapag-lloyd-raises-far-east-latin-america-rates/"
-        },
-        {
-          "name": "Container News (CMA CGM)",
-          "type": "Medio especializado",
-          "url": "https://container-news.com/cma-cgm-raises-asia-to-latin-america-rates-by-usd-1000-per-container/"
-        }
-      ],
-      "story": "fletes-contenedores",
-      "absorbs": [
-        "las-navieras-anuncian-alzas-de-fletes-hacia-latinoamerica-aunque-en-las-principa"
-      ]
-    },
-    {
-      "id": "analisis-servicios-directos-asia-rio-de-la-plata-diciembre",
-      "date": "2026-10-05",
-      "datetime": "2026-10-05T01:36:02-03:00",
-      "label": "Análisis",
-      "kind": "analisis",
-      "title": "Desde diciembre, solo tres navieras tendrán servicios directos entre Asia y el Río de la Plata",
-      "summary": "Con el fin del servicio compartido ASAS2 y el rediseño de la red de CMA CGM, las escalas directas en Buenos Aires desde Asia quedan en manos de Maersk, MSC y CMA CGM, según un análisis publicado por NUESTROMAR. La capacidad semanal nominal desde Asia caería cerca de 4%.",
-      "topics": [
-        "Argentina",
-        "Transporte marítimo",
-        "Logística",
-        "Puertos",
-        "Asia",
-        "Importaciones",
-        "Exportaciones"
-      ],
-      "countries": [
-        "Argentina",
-        "Uruguay",
-        "Brasil",
-        "China"
-      ],
-      "tags": [
-        "Navieras",
-        "Contenedores",
-        "Puerto de Buenos Aires",
-        "Maersk",
-        "CMA CGM",
-        "MSC"
-      ],
-      "visual": "port",
-      "impact": 2,
-      "affectsArgentina": true,
-      "argentinaNote": "Menos operadores con escala directa en Buenos Aires desde Asia reduce las alternativas de los cargadores argentinos para negociar fletes y tiempos de tránsito, según el análisis citado.",
-      "argentinaImpact": {
-        "change": "Desde diciembre, las escalas directas Asia–Buenos Aires quedan concentradas en Maersk, MSC y CMA CGM; clientes de PIL, Yang Ming, ONE y HMM pierden esa opción directa.",
-        "who": "Importadores y exportadores que operan contenedores entre la Argentina y Asia, agentes de carga y terminales del Río de la Plata.",
-        "sectors": [],
-        "flows": {
-          "importaciones": true,
-          "exportaciones": true,
-          "logistica": true,
-          "aranceles": false
-        }
-      },
-      "body": [
-        "Maersk y CMA CGM dan por terminada su cooperación en el servicio ASAS2 entre Asia y la costa este de Sudamérica: la última salida conjunta parte de Shanghái el 8 de diciembre. Maersk aclaró que mantiene su servicio ASAS, que pasará a operar y controlar por su cuenta y que, según el análisis, incluye escalas en Buenos Aires y Montevideo.",
-        "CMA CGM, por su parte, rediseña su red con dos servicios desde mediados de diciembre. El SEAS 2 arranca el 14 de diciembre en Tianjin y une puertos chinos con cinco terminales brasileñas, sin escalas en el Río de la Plata. El SEAS A sale el 17 de diciembre de Ningbo y es el que mantiene la cobertura directa de Buenos Aires y Montevideo, además de Santos y Navegantes; la naviera lo presenta con foco en la carga refrigerada.",
-        "Según el análisis de Emiliano Galli publicado por NUESTROMAR, con este esquema las escalas directas en Buenos Aires desde Asia quedan en manos de tres navieras: Maersk, MSC y CMA CGM. Los clientes de PIL, Yang Ming, ONE y HMM pierden alternativas de servicio directo, y la capacidad semanal nominal desde Asia bajaría alrededor de 4% por el retiro de CMA CGM del ASAS2. El autor también señala que el nuevo servicio conjunto de Zim y Hapag-Lloyd (ZFS o AS3), que evaluó escalar en Buenos Aires y Montevideo, terminó accediendo al Río de la Plata por transbordo en Rio Grande.",
-        "El autor sostiene que es la primera vez que un servicio importante entre Asia y la costa este de Sudamérica se lanza sin escala argentina por decisión propia, y que la concentración resta poder de negociación a los cargadores. Esas valoraciones son del análisis y no de las navieras, que en sus anuncios hablan de salidas semanales más confiables y mejores tiempos de tránsito."
-      ],
-      "keyData": [
-        [
-          "Última salida conjunta ASAS2",
-          "8 de diciembre, desde Shanghái"
-        ],
-        [
-          "CMA CGM SEAS 2 (sin Río de la Plata)",
-          "Desde el 14/12, Tianjin"
-        ],
-        [
-          "CMA CGM SEAS A (Buenos Aires y Montevideo)",
-          "Desde el 17/12, Ningbo"
-        ],
-        [
-          "Navieras con escala directa Asia–Buenos Aires",
-          "Maersk, MSC y CMA CGM (según el análisis)"
-        ],
-        [
-          "Capacidad semanal nominal desde Asia",
-          "≈ -4% (estimación del análisis)"
-        ]
-      ],
-      "explainer": {
-        "what": "Con el fin del servicio ASAS2 de Maersk y CMA CGM y la nueva red de CMA CGM, desde diciembre solo Maersk, MSC y CMA CGM tendrían escalas directas entre Asia y Buenos Aires.",
-        "why": "Menos navieras con servicio directo implica menos alternativas para negociar fletes y tiempos de tránsito; el análisis estima además una baja de cerca de 4% en la capacidad semanal nominal desde Asia.",
-        "who": "Importadores y exportadores argentinos que operan contenedores con Asia, agentes de carga, clientes de PIL, Yang Ming, ONE y HMM, y terminales del Río de la Plata.",
-        "products": [
-          "Carga en contenedores Asia–Río de la Plata",
-          "Carga refrigerada"
-        ],
-        "next": "La última salida conjunta del ASAS2 parte de Shanghái el 8 de diciembre; el SEAS 2 de CMA CGM empieza el 14 de diciembre y el SEAS A, con escala en Buenos Aires, el 17 de diciembre.",
-        "nextSource": {
-          "name": "PortalPortuario",
-          "url": "https://portalportuario.cl/cma-cgm-optimizara-rutas-de-carga-entre-asia-y-costa-este-de-sudamerica"
-        }
-      },
-      "deadlines": [
-        {
-          "date": "2026-12-08",
-          "label": "Última salida conjunta del servicio ASAS2 (Maersk–CMA CGM) desde Shanghái",
-          "url": "https://portalportuario.cl/maersk-y-cma-cgm-ponen-fin-a-servicio-conjunto-entre-asia-y-sudamerica"
-        },
-        {
-          "date": "2026-12-17",
-          "label": "Primera salida del servicio SEAS A de CMA CGM (Ningbo–Buenos Aires–Montevideo)",
-          "url": "https://portalportuario.cl/cma-cgm-optimizara-rutas-de-carga-entre-asia-y-costa-este-de-sudamerica"
-        }
-      ],
-      "sources": [
-        {
-          "name": "Fundación NUESTROMAR (Trade News)",
-          "type": "Medio especializado",
-          "url": "https://www.nuestromar.org/tres-navieras-deciden-desde-diciembre-que-carga-argentina-viaja-directo-a-asia/",
-          "primary": true
-        },
-        {
-          "name": "PortalPortuario (CMA CGM)",
-          "type": "Medio especializado",
-          "url": "https://portalportuario.cl/cma-cgm-optimizara-rutas-de-carga-entre-asia-y-costa-este-de-sudamerica"
-        },
-        {
-          "name": "PortalPortuario (Maersk y CMA CGM)",
-          "type": "Medio especializado",
-          "url": "https://portalportuario.cl/maersk-y-cma-cgm-ponen-fin-a-servicio-conjunto-entre-asia-y-sudamerica"
-        }
-      ],
-      "story": "fletes-contenedores",
-      "absorbs": [
-        "tres-navieras-deciden-desde-diciembre-que-carga-argentina-viaja-directo-a-asia"
-      ]
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-05T09:44:23Z",
+    "ranAt": "2026-10-05T13:45:14Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -10968,7 +11813,7 @@
         "url": "https://www.aduananews.com/feed/",
         "ok": true,
         "items": 12,
-        "added": 0,
+        "added": 1,
         "updated": 0,
         "skipped": 2
       },
@@ -10977,63 +11822,63 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 1,
+        "added": 4,
         "updated": 0,
-        "skipped": 4
+        "skipped": 3
       },
       {
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 39,
-        "added": 1,
-        "updated": 7,
-        "skipped": 26
+        "items": 44,
+        "added": 4,
+        "updated": 1,
+        "skipped": 30
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 43,
+        "items": 49,
         "added": 1,
-        "updated": 2,
-        "skipped": 30
+        "updated": 0,
+        "skipped": 35
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 53,
+        "items": 59,
         "added": 4,
-        "updated": 6,
-        "skipped": 21
+        "updated": 9,
+        "skipped": 31
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 37,
-        "added": 1,
-        "updated": 5,
-        "skipped": 20
+        "items": 39,
+        "added": 3,
+        "updated": 3,
+        "skipped": 19
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 29,
-        "added": 3,
-        "updated": 2,
-        "skipped": 19
+        "items": 48,
+        "added": 4,
+        "updated": 3,
+        "skipped": 31
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 47,
+        "items": 46,
         "added": 4,
-        "updated": 0,
-        "skipped": 30
+        "updated": 6,
+        "skipped": 27
       }
     ],
     "curatedDuplicates": [
@@ -11046,6 +11891,16 @@
         "title": "Autos híbridos y eléctricos: desde el 1° de octubre amplían los topes para importar con arancel 0 %",
         "url": "https://aduananews.com/autos-hibridos-y-electricos-desde-el-1-de-octubre-amplian-los-topes-para-importar-con-arancel-0/?utm_source=rss&utm_medium=rss&utm_campaign=autos-hibridos-y-electricos-desde-el-1-de-octubre-amplian-los-topes-para-importar-con-arancel-0",
         "curated": "decreto-1128-tope-fob-autos-electricos-hibridos"
+      },
+      {
+        "title": "Las navieras anuncian alzas de fletes hacia Latinoamérica aunque en las principales rutas globales apuntan a la baja",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNUm5wNVNmS19BUnBIeXIwVWtLWHRzemhkcHJtTDNDYWw1ZURjTGZMTkI5VXI4OFBZdGE3Mi0ybUNBd00wMVBLdGY5bUhmZzJSUjE1c0lNVGt2dUE3elV1SUplSlVTSW5uY2YwaW5kejRDeVZta2Q4eW1iekxyenFQbUF6TWxCMXNtNDlkYmk0RFc1Mm1qTERjdHBnWXNRR2tLbHdSSmxrX3FsZjlGYUtLY1JxWkpzMERaNDZqNl9MZENUZjR4T3Z2TFBJRnB0bkFVcmdxYU5HWWxEWjExZ3VRbGZYOEFQbTBTbTBpR3hNRmk?oc=5",
+        "curated": "gri-asia-latinoamerica-hapag-cma-cgm-15-octubre"
+      },
+      {
+        "title": "Tres navieras deciden desde diciembre qué carga argentina viaja directo a Asia",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZG90aWRQUVdIa2RYLThRRGJzUjNkTU5SOF9LMG9lRm9HX1RQTjJDa3R1ZkJ6YW01MVJYNG1QOEhPWGQ3X0cwbHJwNkFUZzVDMzY4dHlYQWU4Tk1NVThLQkswQWNYLWU2Rm9XRl9sWnFRay1TM0d0Y3U0QTFLZTlGWjR6M3VBaUZnTnVON01TakMyTjNvdlh0OHRPelZkM0lPaWgwRFcwZWV6dw?oc=5",
+        "curated": "analisis-servicios-directos-asia-rio-de-la-plata-diciembre"
       }
     ]
   },
