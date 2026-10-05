@@ -3,7 +3,7 @@
 
 Indicadores (por id en "indicators"):
 - tc-mayorista: tipo de cambio mayorista de referencia (Com. A 3500), API de estadísticas del BCRA.
-- soja: precio pizarra de la soja en Rosario, Cámara Arbitral de Cereales de la Bolsa de Comercio de Rosario.
+- soja, maiz, trigo: precio pizarra en Rosario, Cámara Arbitral de Cereales de la Bolsa de Comercio de Rosario.
 - brent: petróleo Brent spot (serie de la EIA de EE.UU.), publicada por FRED (Reserva Federal de St. Louis).
 
 Si una fuente no responde o cambia su formato, el indicador conserva el último valor válido
@@ -80,16 +80,31 @@ def bcra_tc() -> dict:
             'source': 'BCRA', 'url': BCRA_PAGE, 'raw': v}
 
 
-def bcr_soja(old: dict) -> dict:
-    page = fetch(BCR_URL, 'text/html')
-    text = html.unescape(re.sub(r'<[^>]+>', ' ', re.sub(r'<(script|style)[\s\S]*?</\1>', ' ', page, flags=re.I)))
-    text = re.sub(r'\s+', ' ', text)
-    m = re.search(r'Soja\s*(?:S/C\s*)?(\(E\)\s*)?\$\s*([\d.]+,\d{2})\s*US\$\s*(\(E\)\s*)?([\d.]+,\d{2})', text)
+_BCR_TEXT = {}
+
+
+def bcr_text() -> str:
+    if 't' not in _BCR_TEXT:   # una sola descarga para los tres granos
+        page = fetch(BCR_URL, 'text/html')
+        text = html.unescape(re.sub(r'<[^>]+>', ' ', re.sub(r'<(script|style)[\s\S]*?</\1>', ' ', page, flags=re.I)))
+        _BCR_TEXT['t'] = re.sub(r'\s+', ' ', text)
+    return _BCR_TEXT['t']
+
+
+def bcr_grain(name: str, label: str):
+    def get(old: dict) -> dict:
+        return bcr_price(old, name, label)
+    return get
+
+
+def bcr_price(old: dict, name: str, label: str) -> dict:
+    text = bcr_text()
+    m = re.search(name + r'\s*(?:S/C\s*)?(\(E\)\s*)?\$\s*([\d.]+,\d{2})\s*US\$\s*(\(E\)\s*)?([\d.]+,\d{2})', text)
     if not m:
-        raise ValueError('no se encontró el precio de la soja en la página')
+        raise ValueError(f'no se encontró el precio de {label} en la página')
     ars, usd = parse_es(m.group(2)), parse_es(m.group(4))
     est = bool(m.group(1) or m.group(3))
-    if not 1_000 < ars < 100_000_000 or not 50 < usd < 5_000:
+    if not 1_000 < ars < 100_000_000 or not 30 < usd < 5_000:
         raise ValueError(f'valores fuera de rango: {ars} / {usd}')
     dm = re.search(r'Precios? Pizarra del d[ií]a\s*(\d{2})/(\d{2})/(\d{4})', text, re.I)
     d = date(int(dm.group(3)), int(dm.group(2)), int(dm.group(1))) if dm else None
@@ -126,7 +141,9 @@ def fred_brent() -> dict:
 
 SOURCES = {
     'tc-mayorista': ('Tipo de cambio mayorista ARS/USD', lambda old: bcra_tc()),
-    'soja': ('Soja · precio pizarra Rosario', bcr_soja),
+    'soja': ('Soja · precio pizarra Rosario', bcr_grain(r'Soja', 'la soja')),
+    'maiz': ('Maíz · precio pizarra Rosario', bcr_grain(r'Ma[ií]z', 'el maíz')),
+    'trigo': ('Trigo · precio pizarra Rosario', bcr_grain(r'Trigo', 'el trigo')),
     'brent': ('Petróleo Brent', lambda old: fred_brent()),
 }
 

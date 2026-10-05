@@ -698,3 +698,9 @@ if __name__ == '__main__':
         update_indicators.main()
     except Exception as e:
         print(f'Aviso: no se pudieron actualizar los indicadores de mercado ({e}).', file=sys.stderr)
+    # Intercambio comercial argentino (INDEC, datos.gob.ar) para el panel de datos.
+    try:
+        import update_trade
+        update_trade.main()
+    except Exception as e:
+        print(f'Aviso: no se pudo actualizar el intercambio comercial ({e}).', file=sys.stderr)

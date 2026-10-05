@@ -127,6 +127,9 @@ def json_script(obj) -> str:
 
 def load():
     news = json.loads((ROOT / 'data' / 'news.json').read_text(encoding='utf-8'))
+    trade_f = ROOT / 'data' / 'trade.json'   # intercambio comercial (INDEC), lo genera scripts/update_trade.py
+    if trade_f.exists():
+        news['trade'] = json.loads(trade_f.read_text(encoding='utf-8'))
     bank = json.loads((ROOT / 'data' / 'photos.json').read_text(encoding='utf-8'))
     status_f = ROOT / 'img' / 'stock' / 'status.json'
     status = json.loads(status_f.read_text(encoding='utf-8')) if status_f.exists() else {}
@@ -240,7 +243,7 @@ def prerender_article(it, img, img_alt, source_img):
 
 
 def feed_payload(news, items):
-    return {k: news.get(k) for k in ('schemaVersion', 'feedId', 'updatedAt', 'timezone', 'editorialNote', 'indicators', 'stories') if k in news} | {'items': items}
+    return {k: news.get(k) for k in ('schemaVersion', 'feedId', 'updatedAt', 'timezone', 'editorialNote', 'indicators', 'stories', 'trade') if k in news} | {'items': items}
 
 
 # Enlaces fijos de la plantilla (#datos, #agenda…) → dirección propia. data-h permite volver al hash al abrir con doble clic.

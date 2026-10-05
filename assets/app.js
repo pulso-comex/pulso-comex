@@ -198,7 +198,7 @@ function hl(text, q = state.filters.q){
 const emptyFilters = () => ({ q:'', section:'', topic:'', region:'', country:'', date:'', source:'', tag:'', arg:'', flow:'', kind:'' });
 const PARAM = { q:'q', section:'seccion', topic:'categoria', region:'region', country:'pais', date:'fecha', source:'fuente', tag:'tema', arg:'argentina', flow:'operacion', kind:'tipo' };
 const state = {
-  items: [], indicators: [], stories: [], updatedAt: null, checkedAt: null, live: false, loaded: false,
+  items: [], indicators: [], stories: [], trade: null, updatedAt: null, checkedAt: null, live: false, loaded: false,
   filters: emptyFilters(), sort: 'relevancia', view: 'loading', articleId: null,
   listCount: CONFIG.pageSize, newIds: new Set(), firstRoute: true
 };
@@ -266,6 +266,7 @@ async function loadFeeds(){
       if (src.type !== 'inline') live = true;
       if (Array.isArray(feed.indicators)) indicators = feed.indicators.map(normalizeIndicator).filter(Boolean);
       if (Array.isArray(feed.stories)) stories = feed.stories.map(normalizeStory).filter(Boolean);
+      if (feed.trade && Array.isArray(feed.trade.monthly) && feed.trade.monthly.length) state.trade = feed.trade;
       if (feed.updatedAt && (!updated || new Date(feed.updatedAt) > new Date(updated))) updated = feed.updatedAt;
       for (const raw of feed.items || []){
         const it = normalize(raw); if (!it) continue;
@@ -860,7 +861,7 @@ function renderArgentina(){
     .map(([label, q]) => [label, q, state.items.filter(i => textScore(i, q) >= 0 && (i.topics.includes('Argentina') || i.affectsArgentina)).length]).filter(x => x[2]);
   $('#main').innerHTML = `
     ${sectionHeader(s, local.length)}
-    ${inds.length ? `<section class="sec"><div class="sec-h"><h2>Datos del intercambio</h2><a class="more-link" href="#datos">Todos los indicadores →</a></div><div class="ind-grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">${inds.map(d => indicatorCard(d)).join('')}</div></section>` : ''}
+    ${state.trade ? tradePanel({ full: false }) : inds.length ? `<section class="sec"><div class="sec-h"><h2>Datos del intercambio</h2><a class="more-link" href="#datos">Todos los indicadores →</a></div><div class="ind-grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">${inds.map(d => indicatorCard(d)).join('')}</div></section>` : ''}
     ${axes.length ? `<div class="active" style="margin-top:22px"><span class="note">Ejes que sigue la sección:</span>${axes.map(([l,q,n]) => `<button type="button" data-q="${esc(q)}" data-arg="1">${esc(l)} <span>${n}</span></button>`).join('')}</div>` : ''}
     ${block('Exportaciones', pick('Exportaciones'), filterHash({ section:'argentina', flow:'exportaciones' }))}
     ${block('Importaciones', pick('Importaciones'), filterHash({ section:'argentina', flow:'importaciones' }))}
@@ -1029,17 +1030,124 @@ function renderGlosario(){
   </article>`;
   setSEO({ title:`Glosario de comercio exterior · ${CONFIG.siteName}`, desc:'Qué significan FOB, TEU, OEA, salvaguardia, Sección 301 y otras siglas y términos del comercio exterior.', crumbs:[['Noticias','#inicio'],['Glosario']] });
 }
+/* =====================================================================
+   PANEL ARGENTINA: intercambio comercial del INDEC (data/trade.json, scripts/update_trade.py)
+   ===================================================================== */
+const nfM = new Intl.NumberFormat('es-AR', { maximumFractionDigits: 0 });
+const nf1 = new Intl.NumberFormat('es-AR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const fmtM = n => `USD ${nfM.format(n)} M`;
+const fmtChg = n => n == null ? '' : `${n > 0 ? '+' : ''}${nf1.format(n)} %`;
+const chgCls = n => n == null ? 'flat' : n > 0 ? 'up' : n < 0 ? 'down' : 'flat';
+const MES_CORTO = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const monthShort = m => `${MES_CORTO[+m.slice(5) - 1]} ${m.slice(2, 4)}`;
+const monthLong = m => `${['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'][+m.slice(5) - 1]} de ${m.slice(0, 4)}`;
+
+function tradeTiles(t){
+  const s = t.summary || {};
+  const tile = (label, v, chg, note) => `<div class="tr-tile"><span class="l">${label}</span><b>${fmtM(v)}</b>${chg != null ? `<span class="c ${chgCls(chg)}">${fmtChg(chg)} <span class="note">interanual</span></span>` : `<span class="c flat">${note || ''}</span>`}</div>`;
+  return `<div class="tr-tiles">
+    ${tile(`Exportaciones · ${esc(monthLong(t.lastMonth))}`, s.expo, s.expoChange)}
+    ${tile(`Importaciones · ${esc(monthLong(t.lastMonth))}`, s.impo, s.impoChange)}
+    ${tile('Saldo comercial del mes', s.saldo, null, s.saldo >= 0 ? 'Superávit' : 'Déficit')}
+  </div>
+  <div class="tr-tiles ytd">
+    ${tile(`Exportaciones ${esc(s.ytdLabel || '')}`, s.expoYtd, s.expoYtdChange)}
+    ${tile(`Importaciones ${esc(s.ytdLabel || '')}`, s.impoYtd, s.impoYtdChange)}
+    ${tile(`Saldo ${esc(s.ytdLabel || '')}`, s.saldoYtd, null, s.saldoYtd >= 0 ? 'Superávit acumulado' : 'Déficit acumulado')}
+  </div>`;
+}
+function tradeChartBlock(t){
+  return `<figure class="tr-fig">
+    <figcaption><b>Exportaciones e importaciones por mes</b><span>En millones de dólares · últimos ${t.monthly.length} meses</span></figcaption>
+    <div class="tr-legend" aria-hidden="true"><span><i class="sw expo"></i>Exportaciones</span><span><i class="sw impo"></i>Importaciones</span></div>
+    <div class="tr-chart" data-trade-chart role="img" aria-label="Exportaciones e importaciones mensuales de la Argentina, de ${esc(monthLong(t.monthly[0].m))} a ${esc(monthLong(t.lastMonth))}"></div>
+    <details class="tr-table"><summary>Ver los datos en tabla</summary>
+      <div class="tr-scroll"><table><tr><th>Mes</th><th>Exportaciones</th><th>Importaciones</th><th>Saldo</th></tr>
+      ${[...t.monthly].reverse().map(r => `<tr><td>${esc(monthShort(r.m))}</td><td>${nfM.format(r.expo)}</td><td>${nfM.format(r.impo)}</td><td>${nfM.format(r.expo - r.impo)}</td></tr>`).join('')}</table></div>
+    </details>
+  </figure>`;
+}
+function drawTradeCharts(){
+  const t = state.trade; if (!t) return;
+  $$('[data-trade-chart]').forEach(el => {
+    const W = Math.max(280, el.clientWidth), H = W < 500 ? 220 : 260, padL = 46, padR = W < 500 ? 12 : 116, padT = 12, padB = 26;
+    const rows = t.monthly, n = rows.length;
+    const max = Math.max(...rows.flatMap(r => [r.expo, r.impo])) * 1.08;
+    const step = max > 8000 ? 2000 : max > 4000 ? 1000 : 500;
+    const x = i => padL + (W - padL - padR) * i / (n - 1), y = v => padT + (H - padT - padB) * (1 - v / max);
+    const path = k => rows.map((r, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(r[k]).toFixed(1)}`).join('');
+    const grid = []; for (let v = 0; v <= max; v += step) grid.push(v);
+    const ticks = rows.map((r, i) => [r, i]).filter(([r]) => r.m.endsWith('-01') || (W >= 500 && r.m.endsWith('-07')));
+    const L = rows[n - 1];
+    el.innerHTML = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" aria-hidden="true">
+      ${grid.map(v => `<line class="g" x1="${padL}" x2="${W - padR}" y1="${y(v)}" y2="${y(v)}"/><text class="ax" x="${padL - 8}" y="${y(v) + 4}" text-anchor="end">${nfM.format(v)}</text>`).join('')}
+      ${ticks.map(([r, i]) => `<text class="ax" x="${x(i)}" y="${H - 6}" text-anchor="middle">${esc(monthShort(r.m))}</text>`).join('')}
+      <path class="ln impo" d="${path('impo')}"/><path class="ln expo" d="${path('expo')}"/>
+      <circle class="dot expo" cx="${x(n - 1)}" cy="${y(L.expo)}" r="4"/><circle class="dot impo" cx="${x(n - 1)}" cy="${y(L.impo)}" r="4"/>
+      ${W >= 500 ? (() => { let ye = y(L.expo), yi = y(L.impo); if (Math.abs(ye - yi) < 30){ const mid = (ye + yi) / 2; if (ye < yi){ ye = mid - 15; yi = mid + 15; } else { ye = mid + 15; yi = mid - 15; } }
+        return `<text class="dl" x="${x(n - 1) + 10}" y="${ye - 2}">Exportaciones</text><text class="dl v" x="${x(n - 1) + 10}" y="${ye + 12}">${nfM.format(L.expo)}</text>
+          <text class="dl" x="${x(n - 1) + 10}" y="${yi - 2}">Importaciones</text><text class="dl v" x="${x(n - 1) + 10}" y="${yi + 12}">${nfM.format(L.impo)}</text>`; })() : ''}
+      <g class="xh" hidden><line class="xl" y1="${padT}" y2="${H - padB}"/><circle class="dot expo" r="5"/><circle class="dot impo" r="5"/></g>
+      <rect class="hit" x="${padL}" y="0" width="${W - padL - padR}" height="${H}" fill="transparent"/>
+    </svg><div class="tr-tip" hidden></div>`;
+    const svg = el.querySelector('svg'), xh = el.querySelector('.xh'), tip = el.querySelector('.tr-tip');
+    const show = ev => {
+      const r = svg.getBoundingClientRect(), px = ev.clientX - r.left;
+      const i = Math.max(0, Math.min(n - 1, Math.round((px - padL) / (W - padL - padR) * (n - 1)))), d = rows[i];
+      xh.hidden = false; tip.hidden = false;
+      xh.querySelector('.xl').setAttribute('x1', x(i)); xh.querySelector('.xl').setAttribute('x2', x(i));
+      const [ce, ci] = xh.querySelectorAll('circle'); ce.setAttribute('cx', x(i)); ce.setAttribute('cy', y(d.expo)); ci.setAttribute('cx', x(i)); ci.setAttribute('cy', y(d.impo));
+      tip.innerHTML = `<b>${esc(monthLong(d.m))}</b><span><i class="sw expo"></i>Exportaciones <em>${fmtM(d.expo)}</em></span><span><i class="sw impo"></i>Importaciones <em>${fmtM(d.impo)}</em></span><span>Saldo <em>${fmtM(d.expo - d.impo)}</em></span>`;
+      const tw = tip.offsetWidth; tip.style.left = Math.min(Math.max(0, x(i) + 12 + tw > W ? x(i) - tw - 12 : x(i) + 12), W - tw) + 'px';
+    };
+    const hide = () => { xh.hidden = true; tip.hidden = true; };
+    svg.addEventListener('pointermove', show); svg.addEventListener('pointerdown', show); svg.addEventListener('pointerleave', hide);
+  });
+}
+let tradeResizeT; addEventListener('resize', () => { clearTimeout(tradeResizeT); tradeResizeT = setTimeout(drawTradeCharts, 150); });
+
+function tradeBars(title, sub, list, cls, { shareOf = 'ytd' } = {}){
+  if (!list || !list.length) return '';
+  const max = Math.max(...list.map(e => e[shareOf]));
+  return `<section class="tr-bars ${cls}"><h3>${esc(title)}</h3><p class="note">${esc(sub)}</p>
+    <ol>${list.map(e => `<li title="${esc(e.name)}: ${fmtM(e[shareOf])}${e.share != null ? ` · ${nf1.format(e.share)} % del total` : ''}${e.change ?? e.ytdChange ? ` · ${fmtChg(e.change ?? e.ytdChange)} interanual` : ''}">
+      <span class="n">${esc(e.name)}</span>
+      <span class="bar"><i style="width:${(e[shareOf] / max * 100).toFixed(1)}%"></i></span>
+      <span class="v">${nfM.format(e[shareOf])}${e.share != null ? ` <small>${nf1.format(e.share)} %</small>` : ''}</span>
+      <span class="c ${chgCls(e.change ?? e.ytdChange)}">${fmtChg(e.change ?? e.ytdChange)}</span></li>`).join('')}</ol></section>`;
+}
+function tradePanel({ full = true } = {}){
+  const t = state.trade;
+  if (!t || !t.summary) return '';
+  const ytd = t.summary.ytdLabel || '';
+  return `<section class="trade" aria-labelledby="h-trade">
+    <div class="sec-h"><h2 id="h-trade">Comercio exterior argentino en datos</h2>${full ? '' : `<a class="more-link" href="#datos">Panel completo →</a>`}</div>
+    <p class="note">Último dato: ${esc(monthLong(t.lastMonth))}. Fuente: <a href="${esc(t.sourceUrl)}" target="_blank" rel="noopener noreferrer">INDEC</a>. Exportaciones FOB e importaciones CIF, en millones de dólares. Variaciones contra el mismo período del año anterior.</p>
+    ${tradeTiles(t)}
+    ${tradeChartBlock(t)}
+    ${full ? `<div class="tr-grid">
+      ${tradeBars('Exportaciones por rubro', `Acumulado ${ytd}`, t.rubros, 'expo')}
+      ${tradeBars('Importaciones por uso económico', `Acumulado ${ytd}`, t.usos, 'impo')}
+      ${tradeBars('Principales destinos', `Exportaciones acumuladas ${ytd}`, (t.destinos || []).slice(0, 10), 'expo')}
+      ${tradeBars('Principales orígenes', `Importaciones acumuladas ${ytd}`, (t.origenes || []).slice(0, 10), 'impo')}
+    </div>
+    ${(t.destinosBloques || []).length ? `<div class="tr-grid">${tradeBars('Exportaciones por bloque', `Acumulado ${ytd}`, t.destinosBloques, 'expo')}${tradeBars('Importaciones por bloque', `Acumulado ${ytd}`, t.origenesBloques, 'impo')}</div>` : ''}` : ''}
+  </section>`;
+}
+
 function renderDatos(){
   const groups = {}; state.indicators.forEach(d => (groups[d.group] ||= []).push(d));
   $('#main').innerHTML = `<article class="article doc">
     <a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>
-    <h1>Indicadores COMEX</h1>
-    <p class="lede">Fletes, carga aérea, balanza comercial y otros datos de referencia. Cada valor es el último publicado por su fuente y enlaza al original; cuando un dato todavía no está conectado se indica «Sin datos disponibles».</p>
+    <h1>Datos e indicadores de comercio exterior</h1>
+    <p class="lede">El intercambio comercial argentino, el tipo de cambio, los granos, el petróleo y los fletes, con el último dato de cada fuente oficial. Se actualizan solos varias veces por día.</p>
+    ${tradePanel()}
+    <h2 class="ind-head">Indicadores de mercado</h2>
     ${Object.entries(groups).map(([g, list]) => `<h2 class="ind-group-h">${esc(g)}</h2><div class="ind-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">${list.map(d => indicatorCard(d)).join('')}</div>`).join('') || emptyState('Sin indicadores', 'El feed no trae indicadores en este momento.')}
     <h2>Cómo se actualizan</h2>
-    <div class="prose"><p>Los indicadores llegan en el mismo feed que las noticias (campo <span class="mono">indicators</span>). Para datos que cambian a diario, como el tipo de cambio o los precios de granos, conviene que el servidor los consulte en la API de la fuente y los publique con su período y enlace.</p></div>
+    <div class="prose"><p>Un proceso automático consulta las fuentes oficiales cinco veces por día: el INDEC (intercambio comercial, a través de las series de tiempo de datos.gob.ar), el Banco Central (tipo de cambio mayorista), la Bolsa de Comercio de Rosario (precios pizarra) y la EIA (petróleo Brent). Si una fuente no responde, se mantiene el último dato publicado con su fecha. Ningún valor se estima ni se completa a mano.</p></div>
   </article>`;
-  setSEO({ title:`Indicadores COMEX · ${CONFIG.siteName}`, desc:'Fletes marítimos y aéreos, balanza comercial argentina y otros indicadores de comercio exterior con su fuente original.', crumbs:[['Noticias','#inicio'],['Indicadores']] });
+  setSEO({ title:`Datos de comercio exterior argentino: exportaciones, importaciones e indicadores · ${CONFIG.siteName}`, desc:'Exportaciones, importaciones y saldo comercial de la Argentina por mes, rubro, uso económico, destino y origen (INDEC), con tipo de cambio, granos, petróleo y fletes.', crumbs:[['Datos']] });
 }
 function renderFuentes(){
   const used = {}; state.items.forEach(i => i.sources.forEach(s => { (used[s.name] ||= { n:0, type:s.type }).n++; }));
@@ -1573,7 +1681,7 @@ function render(){
   else if (v === 'notfound') renderNotFound();
   else renderHome();
   $('#main').setAttribute('aria-busy', 'false');
-  renderAside(); syncControls(); updateProgress(); prettifyLinks();
+  renderAside(); syncControls(); updateProgress(); prettifyLinks(); drawTradeCharts();
 }
 
 /* =====================================================================
