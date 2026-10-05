@@ -11,9 +11,10 @@ El workflow `.github/workflows/update-news.yml` corre a las 06:30, 10:30, 14:30,
    - Deduplica por enlace original y descarta notas casi iguales (mismo hecho en dos medios).
    - Detecta países, categorías y si la nota menciona a Argentina.
    - Usa la imagen que publica la propia fuente (en el RSS o en la página original), con crédito.
-   - Al terminar, `scripts/update_indicators.py` actualiza los indicadores de mercado: tipo de cambio mayorista (API del BCRA), precio pizarra de la soja (Bolsa de Comercio de Rosario) y petróleo Brent (serie de la EIA publicada por FRED). Si una fuente falla, se conserva el último dato.
+   - Al terminar, `scripts/update_indicators.py` actualiza los indicadores de mercado: tipo de cambio mayorista (API del BCRA), precio pizarra de soja, maíz y trigo (Bolsa de Comercio de Rosario) y petróleo Brent (serie de la EIA publicada por FRED). Si una fuente falla, se conserva el último dato.
+   - Después, `scripts/update_trade.py` arma `data/trade.json` con el intercambio comercial argentino del INDEC (series de tiempo de datos.gob.ar): exportaciones e importaciones por mes, por rubro, por uso económico, por destino y por origen. Es la base del panel de `/datos/`.
 2. `scripts/fetch_photos.py` descarga una copia local de las fotos de archivo (`img/stock/`), usadas cuando la nota no trae imagen.
-3. `scripts/build_pages.py` genera `index.html`, una página liviana por nota en `/noticias/<id>/` (con su propio título, descripción e imagen para redes), `data/latest.json`, `sitemap.xml`, `news-sitemap.xml` y `feed.xml`. Borra las páginas de notas que salieron del archivo.
+3. `scripts/build_pages.py` genera `index.html`, una página liviana por nota en `/noticias/<id>/` (con su propio título, descripción e imagen para redes), una página por sección (`/seccion/<slug>/`), por tema en desarrollo (`/tema/<id>/`) y por guía (`/guias/<slug>/`), las herramientas (`/datos/`, `/agenda/`, `/glosario/`, `/calculadora-importacion/`, `/calculadora-exportacion/`, `/guias/`…), `data/latest.json`, `sitemap.xml`, `news-sitemap.xml` y `feed.xml`. Borra las páginas que ya no corresponden.
 4. Guarda los cambios en el repositorio y publica el sitio.
 
 La página, además, vuelve a consultar `data/latest.json` cada 10 minutos y suma las notas nuevas sin recargar.
@@ -27,6 +28,9 @@ La página, además, vuelve a consultar `data/latest.json` cada 10 minutos y sum
 | Funcionamiento de la página | `assets/app.js` |
 | Fuentes de noticias | `sources.json` |
 | Notas curadas a mano e indicadores | `data/news.json` |
+| Secciones del menú (4 bloques) y sus reglas | `data/taxonomy.json` |
+| Guías prácticas | `data/guides.json` |
+| Glosario | `data/glossary.json` |
 | Fotos de archivo | `data/photos.json` |
 
 `index.html` y todo `/noticias/` se generan solos: no los edites a mano.
@@ -63,6 +67,11 @@ Campos opcionales de una nota curada:
 - `"deadlines": [{ "date": "2026-11-02", "label": "Qué pasa ese día", "url": "fuente de la fecha (opcional)" }]`: fechas que aparecen en **Próximas fechas** (portada), en la nota y en la **Agenda** (`#agenda`). Usá `"date": "2026-11"` si la fuente solo informa el mes.
 - `"story": "ormuz"`: agrupa la nota en un **tema en desarrollo**. Los temas se definen en la lista `"stories"` de la raíz de `data/news.json` (`id`, `title`, `desc` y `match`, expresiones para sumar notas automáticas del mismo tema en la página `#hilo-<id>`). Un tema aparece en la portada cuando tiene al menos dos notas.
 - `"absorbs": ["id-de-nota-automática"]`: notas automáticas que repiten esta nota; el bot las retira y no las vuelve a agregar.
+- `"explainer"`: el bloque **COMEX explicado** que encabeza la nota: `{ "what": "Qué pasó", "why": "Por qué importa", "who": "A quién afecta", "products": ["…"], "next": "Qué puede pasar ahora", "nextSource": { "name", "url" } }`. `next` solo se completa si una fuente lo dice (plazos, entradas en vigor, proyecciones atribuidas); nunca con predicciones propias.
+
+### Secciones
+
+Las secciones se definen en `data/taxonomy.json`, agrupadas en cuatro bloques (Comercio mundial, Argentina, Logística y Mercados). Una nota entra en una sección por su categoría, país, etiqueta o por palabras clave (`match`), así que las secciones nuevas se llenan solas con las notas existentes. Cada sección tiene su página en `/seccion/<slug>/`, que se indexa en buscadores cuando reúne al menos `minIndex` notas.
 
 Las siglas y los términos técnicos de las notas curadas se explican solos con el glosario (`GLOSSARY` en `assets/app.js`, página `#glosario`).
 
