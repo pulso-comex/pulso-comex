@@ -225,6 +225,16 @@ def fmt_day(dt):
     return f'{d.day} de {meses[d.month - 1]} de {d.year}'
 
 
+def explainer_html(it):
+    x = it.get('explainer') or {}
+    rows = [('Qué pasó', x.get('what')), ('Por qué importa', x.get('why')), ('A quién afecta', x.get('who')),
+            ('Productos involucrados', ', '.join(x.get('products') or [])), ('Qué puede pasar ahora', x.get('next'))]
+    rows = [(k, v) for k, v in rows if v]
+    if not rows:
+        return ''
+    return '<section><h2>COMEX explicado</h2><dl>' + ''.join(f'<dt>{esc(k)}</dt><dd>{esc(v)}</dd>' for k, v in rows) + '</dl></section>'
+
+
 def prerender_article(it, img, img_alt, source_img):
     p = primary(it)
     body = it.get('body') or [it.get('summary', '')]
@@ -236,6 +246,7 @@ def prerender_article(it, img, img_alt, source_img):
       <p class="pre-meta">Fuente: <a href="{esc(p.get('url'))}" rel="noopener noreferrer">{esc(p.get('name'))}</a></p>
       <img src="{esc(img)}" alt="{esc(img_alt)}" width="1200" height="675"{' referrerpolicy="no-referrer"' if source_img else ''}>
       <p class="pre-meta">{credit}</p>
+      {explainer_html(it)}
       {''.join(f'<p>{esc(x)}</p>' for x in body)}
       <p><a href="{esc(p.get('url'))}" rel="noopener noreferrer">Leer el original en {esc(p.get('name'))}</a></p>
     </article>

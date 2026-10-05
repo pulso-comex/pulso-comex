@@ -58,7 +58,7 @@ NAMES = {'espana': 'España', 'japon': 'Japón', 'peru': 'Perú', 'mexico': 'Mé
          'paises_bajos': 'Países Bajos', 'reino_unido': 'Reino Unido', 'estados_unidos': 'Estados Unidos', 'sudafrica': 'Sudáfrica',
          'nueva_zelanda': 'Nueva Zelanda', 'corea': 'Corea del Sur', 'autria': 'Austria', 'taiwan': 'Taiwán', 'argelia': 'Argelia',
          'marruecos': 'Marruecos', 'tailandia': 'Tailandia', 'israel': 'Israel', 'egipto': 'Egipto'}
-BLOCS = {'total_mercosur': 'Mercosur', 'total_ue_28': 'Unión Europea (serie UE-28)', 'total_asia_pacifico': 'Asia Pacífico',
+BLOCS = {'total_mercosur': 'Mercosur', 'total_asia_pacifico': 'Asia Pacífico',
          'total_pacifico': 'Asia Pacífico', 'total_america_latina': 'América Latina', 'total_africa': 'África', 'asean': 'ASEAN',
          'medio_oriente': 'Medio Oriente', 'total_nafta': 'América del Norte (ex-NAFTA)', 'alianza_pacifico': 'Alianza del Pacífico',
          'total_alianza_pacifico': 'Alianza del Pacífico'}

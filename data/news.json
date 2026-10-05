@@ -5506,7 +5506,21 @@
           "date": "2026-11-02",
           "label": "México: empieza a exigirse el permiso previo para importar preparaciones con azúcar (fracción 2106.90.99)"
         }
-      ]
+      ],
+      "explainer": {
+        "what": "México postergó al 2 de noviembre la exigencia de permiso previo para importar preparaciones alimenticias con azúcar de la fracción 2106.90.99.",
+        "why": "Busca frenar el ingreso de azúcar disfrazada de mezclas: las compras promedio pasaron de 2.185 a 35.872 toneladas mensuales.",
+        "who": "Importadores mexicanos y exportadores de preparaciones con azúcar a México, sobre todo desde Guatemala.",
+        "products": [
+          "Preparaciones alimenticias con azúcar (2106.90.99)",
+          "Azúcar"
+        ],
+        "next": "Hasta el 2 de noviembre la mercadería puede ingresar con la declaración de excepción; desde esa fecha se exige el permiso previo.",
+        "nextSource": {
+          "name": "El Financiero (EFE)",
+          "url": "https://elfinanciero.com.mx/economia/2026/10/02/mexico-pone-freno-a-las-importaciones-de-azucar-pero-aplaza-nuevos-controles-hasta-noviembre"
+        }
+      }
     },
     {
       "id": "iti-prepara-puesta-en-marcha-de-nuevas-gruas-portacontenedores-electricas",
@@ -5858,7 +5872,21 @@
           "author": "Mike Schuler"
         }
       ],
-      "story": "ormuz"
+      "story": "ormuz",
+      "explainer": {
+        "what": "Al menos seis buques fueron alcanzados por proyectiles en el estrecho de Ormuz desde el 28 de septiembre; el último, un petrolero, el 2 de octubre.",
+        "why": "Ormuz es una vía clave para el comercio mundial de petróleo y gas. Los ataques presionan sobre los seguros, los fletes de buques tanque y los precios de la energía.",
+        "who": "Navieras y cargadores de petróleo y gas, y quienes pagan fletes y seguros de buques tanque.",
+        "products": [
+          "Petróleo crudo",
+          "Gas"
+        ],
+        "next": "El Centro Conjunto de Información Marítima (JMIC) mantiene el nivel de amenaza en severo y considera muy probables nuevos ataques contra buques comerciales.",
+        "nextSource": {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/six-vessels-hit-in-strait-of-hormuz-since-sunday/"
+        }
+      }
     },
     {
       "id": "propuesta-para-reducir-los-peajes-en-la-autopista-hanoi-hai-phong-con-el-fin-de",
@@ -7245,7 +7273,16 @@
           "url": "https://theindianeye.com/2026/10/02/india-us-trade-deal-nears-final-phase-ustr-greer/"
         }
       ],
-      "story": "g20-milwaukee"
+      "story": "g20-milwaukee",
+      "explainer": {
+        "what": "La reunión de ministros de Comercio del G20 en Milwaukee cerró con una declaración de la presidencia de EE.UU., en lugar de un comunicado conjunto.",
+        "why": "Muestra los límites del consenso: solo hubo acuerdo pleno contra el uso de los alimentos como arma comercial; no en sobrecapacidad industrial, trabajo forzoso ni reforma de la OMC.",
+        "who": "Exportadores de alimentos y los gobiernos que negocian en la OMC. La Argentina firmó con EE.UU. y México la declaración sobre trabajo forzoso.",
+        "products": [
+          "Alimentos y productos agroalimentarios",
+          "Gasoil"
+        ]
+      }
     },
     {
       "id": "xeneta-fletes-transpacifico-pico-golden-week",
@@ -7315,7 +7352,20 @@
           "author": "Gavin van Marle"
         }
       ],
-      "story": "fletes-contenedores"
+      "story": "fletes-contenedores",
+      "explainer": {
+        "what": "Las tarifas spot del Lejano Oriente a EE.UU. subieron levemente en la semana, mientras las de Asia–Europa encadenaron 12 semanas de baja.",
+        "why": "Según Xeneta, el mercado tocó su pico posterior a la crisis de Ormuz: con demanda débil, los fletes bajarían de forma gradual.",
+        "who": "Importadores y exportadores con cargas en contenedor desde Asia, y sus agentes de carga.",
+        "products": [
+          "Carga en contenedores (FEU)"
+        ],
+        "next": "Xeneta proyecta para los próximos tres meses USD 6.000–7.000 por FEU hacia la costa este de EE.UU. y USD 4.500–5.500 hacia la costa oeste.",
+        "nextSource": {
+          "name": "American Journal of Transportation (Xeneta)",
+          "url": "https://www.ajot.com/news/xeneta-weekly-ocean-container-shipping-market-update-october-2-2026"
+        }
+      }
     },
     {
       "id": "biodiesel-argentino-la-ue-frena-una-medida-que-ponia-en-jaque-las-exportaciones",
@@ -7422,7 +7472,20 @@
           "label": "EE.UU.: decisión preliminar de la investigación sobre importaciones de cordero"
         }
       ],
-      "story": "g20-milwaukee"
+      "story": "g20-milwaukee",
+      "explainer": {
+        "what": "El ministro de Comercio de Australia propuso que los fondos de jubilación del país inviertan en plantas de cordero en EE.UU. para evitar nuevos aranceles.",
+        "why": "EE.UU. investiga las importaciones de cordero: el arancel podría pasar del 12,5% actual a uno específico de 30% para Australia, que abastece más del 70% de esas compras.",
+        "who": "Exportadores australianos de carne ovina e importadores y procesadores de cordero en EE.UU.",
+        "products": [
+          "Carne ovina (cordero)"
+        ],
+        "next": "La investigación estadounidense tiene una audiencia pública en octubre y una decisión preliminar prevista para noviembre de 2026.",
+        "nextSource": {
+          "name": "ABC News (Australia)",
+          "url": "https://www.abc.net.au/news/2026-10-02/don-farrell-pitches-lamb-investment-to-avoid-tariffs/107219472"
+        }
+      }
     },
     {
       "id": "uruguay-exportaciones-septiembre-2026-ue-61",
@@ -7497,7 +7560,17 @@
       "absorbs": [
         "exportaciones-crecieron-10-interanual-en-setiembre-y-a-la-union-europea-aumentar"
       ],
-      "story": "ue-mercosur"
+      "story": "ue-mercosur",
+      "explainer": {
+        "what": "Uruguay exportó bienes por USD 1.398 millones en septiembre, 10% más que un año antes, según Uruguay XXI.",
+        "why": "Las ventas a la Unión Europea crecieron 61% en el primer semestre de aplicación provisional del acuerdo UE–Mercosur, aunque el informe no atribuye el aumento a una causa específica.",
+        "who": "Exportadores del Mercosur que siguen la demanda de China, Brasil y la UE. Las compras argentinas a Uruguay cayeron 5%.",
+        "products": [
+          "Soja",
+          "Carne vacuna",
+          "Celulosa"
+        ]
+      }
     },
     {
       "id": "las-exportaciones-agroindustriales-argentinas-a-europa-crecieron-21-entre-mayo-y",
@@ -7615,7 +7688,21 @@
           "label": "MSC aplica recargos por piratería (US$ 55/TEU) y por Suez (US$ 36/TEU); ONE retoma Suez con el servicio IOX"
         }
       ],
-      "story": "fletes-contenedores"
+      "story": "fletes-contenedores",
+      "explainer": {
+        "what": "La Premier Alliance (ONE, HMM y Yang Ming) devuelve su servicio FE1 Asia–Europa al canal de Suez, y MSC cobrará recargos por piratería y por Suez a las cargas de Asia al Mediterráneo.",
+        "why": "Era la única gran alianza que seguía rodeando África. Volver a Suez acorta los tiempos de tránsito entre Asia y Europa, mientras los recargos de MSC suben el costo de algunas rutas.",
+        "who": "Importadores y exportadores con cargas entre Asia y Europa o el Mediterráneo, y sus agentes de carga.",
+        "products": [
+          "Carga en contenedores Asia–Europa",
+          "Carga Asia–Mediterráneo"
+        ],
+        "next": "El FE1 zarpa el 17 de octubre desde Laem Chabang y su llegada a Rotterdam está prevista para el 19 de noviembre. Los recargos de MSC (US$ 55 y US$ 36 por TEU) rigen desde el 19 de octubre.",
+        "nextSource": {
+          "name": "El Mercantil",
+          "url": "https://elmercantil.com/2026/10/01/la-premier-alliance-devuelve-servicios-al-mar-rojo-y-msc-se-pertrecha-contra-la-pirateria/"
+        }
+      }
     },
     {
       "id": "agro-liquido-3228-millones-septiembre-2026",
@@ -7692,7 +7779,18 @@
           "type": "Medio de comunicación",
           "url": "https://www.infobae.com/economia/2026/10/01/la-soja-trae-alivio-al-gobierno-liquido-usd-3200-millones-en-septiembre-y-aportara-otros-usd-11000-millones-hasta-el-verano/"
         }
-      ]
+      ],
+      "explainer": {
+        "what": "Las empresas de CIARA-CEC liquidaron US$ 3.228 millones en septiembre, 17% más que en agosto: el mejor mes del año y el tercer septiembre más alto en 25 años.",
+        "why": "La liquidación mide los dólares que la agroexportación vende en el mercado de cambios. El salto vino de los embarques de maíz, tras una cosecha récord de 64 millones de toneladas.",
+        "who": "Exportadores de granos y oleaginosas; indirectamente, importadores, por la oferta de divisas.",
+        "products": [
+          "Maíz",
+          "Soja y derivados",
+          "Granos y oleaginosas"
+        ],
+        "next": "La Bolsa de Cereales de Buenos Aires proyecta para la campaña 2026/27 una producción de 157,9 millones de toneladas, con 53,6 millones de soja y 66 millones de maíz."
+      }
     },
     {
       "id": "brasil-avanza-hacia-la-reanudacion-de-exportaciones-de-aves-y-miel-al-mercado-eu",

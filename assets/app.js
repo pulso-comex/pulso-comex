@@ -247,7 +247,8 @@ function normalize(raw){
     visual: raw.visual || 'globe', impact: Math.min(3, Math.max(1, raw.impact || 1)), kind, label,
     breaking: !!raw.breaking, affectsArgentina: !!raw.affectsArgentina, argentinaNote: raw.argentinaNote || '', argentinaImpact: raw.argentinaImpact || null,
     photo: raw.photo || null, sources: raw.sources, primary,
-    deadlines: Array.isArray(raw.deadlines) ? raw.deadlines : [], story: raw.story || ''
+    deadlines: Array.isArray(raw.deadlines) ? raw.deadlines : [], story: raw.story || '',
+    explainer: raw.explainer && typeof raw.explainer === 'object' ? raw.explainer : null
   };
 }
 function normalizeIndicator(d){
@@ -925,6 +926,25 @@ function impactBlock(it){
     <p class="basis">${derived ? 'Áreas marcadas según la clasificación de la nota.' : 'Elaborado por la redacción a partir de las fuentes citadas.'} No constituye asesoramiento.</p>
   </section>`;
 }
+// «COMEX explicado»: qué pasó, por qué importa, a quién afecta, productos y qué puede pasar (solo lo que dicen las fuentes).
+const OFFICIAL_RX = /oficial|organismo|gobierno|aduana|ministerio|banco central|bolet[ií]n|estad[ií]stic|internacional/i;
+function explainerBlock(it, gl){
+  const x = it.explainer; if (!x) return '';
+  const row = (label, html) => html ? `<div class="ex-row"><dt>${label}</dt><dd>${html}</dd></div>` : '';
+  const next = x.next ? `${gl(x.next)}${x.nextSource?.url ? ` <span class="ex-src">Según <a href="${esc(x.nextSource.url)}" target="_blank" rel="noopener noreferrer">${esc(x.nextSource.name || 'la fuente')}</a></span>` : ''}` : '';
+  const official = it.sources.filter(s => OFFICIAL_RX.test(s.type || ''));
+  return `<section class="explainer" aria-labelledby="h-ex">
+    <h2 class="panel-h" id="h-ex"><span class="ex-tag">COMEX explicado</span> Lo esencial de esta noticia</h2>
+    <dl>
+      ${row('Qué pasó', x.what ? gl(x.what) : '')}
+      ${row('Por qué importa', x.why ? gl(x.why) : '')}
+      ${row('A quién afecta', x.who ? gl(x.who) : '')}
+      ${row('Productos involucrados', Array.isArray(x.products) && x.products.length ? `<ul class="ex-products">${x.products.map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : '')}
+      ${row('Qué puede pasar ahora', next)}
+      ${row('Fuentes oficiales', official.length ? official.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>`).join(' · ') : '')}
+    </dl>
+  </section>`;
+}
 function renderArticle(it){
   const used = new Set(), gl = txt => it.label === 'Automática' ? esc(txt) : gloss(esc(txt), used);
   const dls = deadlineList([it]);
@@ -953,6 +973,7 @@ function renderArticle(it){
     </div>
     <div class="art article-media">${media(it, 1200, { eager:true })}</div>
     <p class="credit" id="photoCredit">${photoCredit(photoFor(it))}</p>
+    ${explainerBlock(it, gl)}
     ${impactBlock(it)}
     <div class="prose" itemprop="articleBody">${it.body.length ? it.body.map(p => `<p>${gl(p)}</p>`).join('') : `<p>${gl(it.summary)}</p>`}</div>
     ${it.keyData.length ? `<section class="keydata" aria-labelledby="h-key"><h2 class="panel-h" id="h-key">Datos clave</h2><table>${it.keyData.map(([k,v]) => `<tr><td>${gl(k)}</td><td>${gl(v)}</td></tr>`).join('')}</table></section>` : ''}

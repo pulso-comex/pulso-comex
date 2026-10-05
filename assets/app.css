@@ -809,3 +809,18 @@ abbr.gl:hover,abbr.gl:focus-visible{text-decoration-color:var(--accent-ink);back
 .tr-bars.expo .bar i{background:var(--viz-expo)}.tr-bars.impo .bar i{background:var(--viz-impo)}
 .ind-head{margin-top:34px}
 @media (max-width:760px){.tr-tiles{grid-template-columns:minmax(0,1fr)}.tr-grid{grid-template-columns:minmax(0,1fr)}.tr-tile b{font-size:20px}}
+
+/* ===== COMEX explicado ===== */
+.explainer{margin:22px 0;border:1px solid var(--line-2);border-top:3px solid var(--accent);border-radius:var(--r);background:var(--surface-2);padding:18px 20px}
+.explainer .panel-h{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.ex-tag{font-family:var(--f-body);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:var(--navy);color:var(--on-navy);padding:4px 8px;border-radius:4px}
+.explainer dl{margin:12px 0 0;display:flex;flex-direction:column;gap:0}
+.ex-row{display:grid;grid-template-columns:170px minmax(0,1fr);gap:4px 16px;padding:11px 0;border-top:1px solid var(--line)}
+.ex-row:first-child{border-top:0;padding-top:4px}
+.ex-row dt{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink);padding-top:2px}
+.ex-row dd{margin:0;font-size:16px;line-height:1.55;color:var(--ink)}
+.ex-row dd a{color:inherit;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:3px}
+.ex-src{display:block;font-size:13px;color:var(--muted);margin-top:4px}
+.ex-products{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.ex-products li{border:1px solid var(--line-2);background:var(--surface);border-radius:999px;padding:3px 11px;font-size:14px}
+@media (max-width:640px){.ex-row{grid-template-columns:minmax(0,1fr)}.explainer{padding:16px}}
