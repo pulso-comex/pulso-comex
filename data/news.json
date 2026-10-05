@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-05T00:53:37Z",
+  "updatedAt": "2026-10-05T01:41:44Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -115,7 +115,7 @@
       "obsDate": "2026-10-02",
       "change": "0,0% vs. día hábil anterior",
       "trend": "flat",
-      "checkedAt": "2026-10-05T00:53:46Z"
+      "checkedAt": "2026-10-05T01:41:53Z"
     },
     {
       "id": "soja",
@@ -132,7 +132,7 @@
         "date": "2026-10-01",
         "ars": 552500.0
       },
-      "checkedAt": "2026-10-05T00:53:48Z"
+      "checkedAt": "2026-10-05T01:41:57Z"
     },
     {
       "id": "brent",
@@ -145,7 +145,7 @@
       "obsDate": "2026-09-29",
       "change": "-5,0% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-05T00:53:48Z"
+      "checkedAt": "2026-10-05T01:41:57Z"
     },
     {
       "id": "maiz",
@@ -162,7 +162,7 @@
         "date": "2026-10-01",
         "ars": 287900.0
       },
-      "checkedAt": "2026-10-05T00:53:48Z"
+      "checkedAt": "2026-10-05T01:41:57Z"
     },
     {
       "id": "trigo",
@@ -179,10 +179,80 @@
         "date": "2026-10-01",
         "ars": 333000.0
       },
-      "checkedAt": "2026-10-05T00:53:48Z"
+      "checkedAt": "2026-10-05T01:41:57Z"
     }
   ],
   "items": [
+    {
+      "id": "portcastello-presenta-estrategia-para-albergar-hub-industrial-de-energia-eolica",
+      "datetime": "2026-10-05T01:00:42Z",
+      "date": "2026-10-04",
+      "firstSeen": "2026-10-05T01:41:44Z",
+      "title": "PortCastelló presenta estrategia para albergar hub industrial de energía eólica marina",
+      "summary": "Por Redacción PortalPortuario @PortalPortuario La Autoridad Portuaria de Castellón (PortCastelló) presentó en Valencia, en el marco de las Jornadas Técnicas La entrada PortCastelló presenta estrategia para albergar hub industrial de energía eólica marina se publicó primero en PortalPortuario .",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/portcastello-presenta-estrategia-para-albergar-hub-industrial-de-energia-eolica-marina/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ],
+      "photo": {
+        "src": "https://portalportuario.cl/wp-content/uploads/2026/10/Infografia-eolica-PortCS-enermar.jpg",
+        "by": "PortalPortuario",
+        "page": "https://portalportuario.cl/portcastello-presenta-estrategia-para-albergar-hub-industrial-de-energia-eolica-marina/",
+        "alt": "PortCastelló presenta estrategia para albergar hub industrial de energía eólica marina"
+      }
+    },
+    {
+      "id": "easter-island-naviera-asegura-83-de-abastecimiento-en-rapa-nui-y-buscara-operar",
+      "datetime": "2026-10-05T00:50:00Z",
+      "date": "2026-10-04",
+      "firstSeen": "2026-10-05T01:41:44Z",
+      "title": "Easter Island Naviera asegura 83% de abastecimiento en Rapa Nui y buscará operar en Malvinas.",
+      "summary": "Nota publicada por El Congresista. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "ship",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "El Congresista",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMVVqWF9MUXN2eGVfY28zemN4UUNRbEZ5eWlURHYwRDJfdUN0VV9mT1JxMVpSbmxfQ2Ntek9hLW5INURlN1c3aXJIZkh6ZmxvdmNaVms2YUt1X0ZrTGJscDFyNGpldHFsdFFlemdPbTJJOTZGVzVPLWM5S1JndXJBYVdGTVJyZGRIOTBXeFlVOU92dw?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
     {
       "id": "potenza-impulsa-la-emergencia-de-la-industria-del-calzado-y-pide-derogar-la-baja",
       "datetime": "2026-10-05T00:47:21Z",
@@ -291,7 +361,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Vaca Muerta: qué beneficios puede traer para los argentinos la exportación de gas al mundo",
-      "summary": "Nota publicada por NewsDigitales. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por newsdigitales.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -312,7 +382,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "NewsDigitales",
+          "name": "newsdigitales.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQREhZWmJlU3JpbVlURng5V2tKNWlzNDhiZ1BlaVJNb0xhSmJyR0tsODdfRFZzWmpTMm5XeVBXdncwbktnYXpCdU5kbDdxZndSSGYwZVhNdnJfZmRlRk9rLWV2NE9TRzBLeHZQbmJNbFB2aUZvYW5aeU9EVkZ6NGZHakZHME90Y3dOUXRIUFNFd2NVbGt2Q29mVTdaNEgwbmVyZHJ5c0pDUkxrUVVyc2R5RjRXZUhsQS1FUGZuSHUwWHhCOVZReHVXQ2diY3k?oc=5",
           "primary": true,
@@ -664,7 +734,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Cierre de jugueterías en Argentina por importaciones",
-      "summary": "Nota publicada por cuestionentrerriana.com.ar. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Cuestión Entrerriana. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -683,7 +753,7 @@
       "feed": "Google Noticias · Aduana e importaciones Argentina",
       "sources": [
         {
-          "name": "cuestionentrerriana.com.ar",
+          "name": "Cuestión Entrerriana",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSmVMVW9haHVScGRZY2d4WFZEZGtlc0xEVFRTd0JUZ3JOUlhoZWtuQjNBeWRNa3Y2NmNmOVV2cURPUkxJVkg0b0wwYlQwM3F4cjJKcWlSZC10bVk2U0NHeWh1OGtMWGxIdHg1eFJRcEJUa0o1WmN0SkNoQkRpSF9UZlU3UXpycnFpMmo4aThaeTRlMVlEY1BIU3RDTzVvektTYXFxSnVpVVBTdUlZUGVLVjJFS2tFb3pwTGZ3Qmhoa005N2tncFIxNQ?oc=5",
           "primary": true,
@@ -1418,7 +1488,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Muere el conductor de una carretilla portacontenedores tras caer al mar",
-      "summary": "Nota publicada por tribunasalamanca.com. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Tribuna de Salamanca.. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -1438,7 +1508,7 @@
       "feed": "Google Noticias · Logística y fletes",
       "sources": [
         {
-          "name": "tribunasalamanca.com",
+          "name": "Tribuna de Salamanca.",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbHNuVVlacUhVWDdoZFIwQ2Y1ZElFRG9TbGtJejRsclhvTDBOQXZiVTN3WFhVUTRZRDByU0tHNzhPZS1wR2gtV3FMdTFtY3kwTk5WbkFVT3VkM1RSbV83WlZDZUt5VjVUbEdwVlUwSlRneURhZUszSXJRUHlRUWZUdFNpTzZJcDViS1ZRZUhMUW9uaVFlU05PbzZGZHFrclFmRmhLUFJmWnZJU2duWUtJUnhqRmZ0bDF5d1RNUQ?oc=5",
           "primary": true,
@@ -2021,7 +2091,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "La minería generó un superávit de USD 543 millones en agosto y las exportaciones rozaron un récord",
-      "summary": "Nota publicada por mendozatoday.com.ar. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Diario Mendoza Today. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2041,7 +2111,7 @@
       "feed": "Google Noticias · Aduana e importaciones Argentina",
       "sources": [
         {
-          "name": "mendozatoday.com.ar",
+          "name": "Diario Mendoza Today",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQ3hRUEtwNXh3V0dYNkdCcWxZN2FtbGhrSXlqMUFqUmgwUVhwTzh5NXZMNzV3Wk9tS2Z4X1FZVl9FNTVIWU9wYW9rLWx3TW9XbUZYZFhxWEZNckNBODdzbGVGWmQzQ0dWWjZjZktxOHA1NGg2OG9NNG5OazRtWlMyaWJ2TUVVS0JOSnhFNFdpUGdVaEVVN0hycG1xV1RUUTZIM2o2ZndtVTZ5cldnUTBFc3FqclFZMkg5NGZtXzF6djNjSFU3UkJQcUVSUkY5UGM3Q3fSAdIBQVVfeXFMTkN4UVBLcDV4d1dHWDZHQnFsWTdhbWxoa0l5ajFBalJoMFFYcE84eTV2TDc1d1pPbUtmeF9RWVZfRTU1SFlPcGFvay1sd01vV21GWGRYcVhGTXJDQTg3c2xlRlpkM0NHVlo2Y2ZLcThwNTRoNjhvTTRuTms0bVpTMmlidk1FVUtCTkp4RTRXaVBnVWhFVTdIcnBtcVdUVFE2SDNqNmZ3bVU2eXJXZ1EwRXNxanJRWTJIOTRmbV8xenYzY0hVN1JCUHFFUlJGOVBjN0N3?oc=5",
           "primary": true,
@@ -2203,7 +2273,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "El precio de la soja se hunde en China: se esfuman las esperanzas de rebaja de aranceles con EE UU",
-      "summary": "Nota publicada por motor16.com. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por Motor16. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2227,7 +2297,7 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "motor16.com",
+          "name": "Motor16",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVWl5bGRmczNEQ3ZzQ0Z3VEFYbExVNUlkb1lwTGE1TEZ0dDFDZTN6dTU1OUM1SXRMakVsQV9EUDRLT1lRdzI3LUhZU2hDUk5PRkRZSmsxa1B3UnEyT2lCR25FMkxEWko5VWd3cHB2NmtXMjJSTEpyZ0w5MFRsbmM4VlhGWGZLUQ?oc=5",
           "primary": true,
@@ -2480,7 +2550,7 @@
       "date": "2026-10-04",
       "firstSeen": "2026-10-04T15:58:50Z",
       "title": "Las empresas españolas buscan su sitio en un mundo de aranceles, guerras y dependencias",
-      "summary": "Nota publicada por La Nueva España. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por lne.es. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -2500,7 +2570,7 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "La Nueva España",
+          "name": "lne.es",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTVFDM3Y4R0ZGTEU1SGF3SEw3RFF0VGlnTDRUTDBDRUludmE3N0JERW1xWWd6RFBCeHNkVlZ2VjZOWEszUHVZbXl4SFktTkRrSVhoRmZ5cUVMQnBSU3h3N3dBeGV1X3lwamh2ZXVQWGs3azJDcEtrSlRyZlRLSU8xVXlHVHlkM1B5RUZCR2Y5am9yR3lQMnfSAZsBQVVfeXFMUHVaTk01UjYwVTIwLUphbjNMdUdhRHcyUmtJekczc0Z2V01scDEzdGp0ZXJqUjFSUUwwXy1xcWZjeENvbl9wS1FNZTdLT1gwSnhpcFJFbXYzMkoyOTZQUGVscGVsMGhjNEUtN1BfdG9Jb0dhMG9tODlBbkJGakpRYjdfdWM3ZG9SRkU1dUJMUzE4b3dfTWVBdW5tUmc?oc=5",
           "primary": true,
@@ -2637,6 +2707,45 @@
           "name": "ZapalaYa",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQY2liUXFfYWkxOGFhZm5jaVo1RDh1eGtJdmlES2hoSlZJdFQ3dTVDMkdNRnRpY1phXzlHdXBpb0F2VTRPQVgxdTJpNGhIcDAtWUZLTzJRekkzTmhjdFFITElYOS1DaFpoYXhQaktZVU9RdE5QZi1qaDctazVSV2RVdTJlT0Q5MEt1dnJSVFpTNGZtUG9YUjlCdFVONHRzbkU2R3VnSG1pUXBYRUJCUEdQWnl4cDlfQUpMSWRj?oc=5",
+          "primary": true,
+          "author": ""
+        }
+      ]
+    },
+    {
+      "id": "acuerdo-mercosur-union-europea-la-perdida-por-aranceles-se-gana-en-impuestos-y-e",
+      "datetime": "2026-10-04T02:55:00Z",
+      "date": "2026-10-03",
+      "firstSeen": "2026-10-05T01:41:44Z",
+      "title": "Acuerdo Mercosur-Unión Europea: \"la pérdida por aranceles\" se \"gana\" en impuestos y en nuevo flujo de inversiones",
+      "summary": "Nota publicada por EL PAÍS Uruguay. Abrí el artículo original para leer el texto completo.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "Impuestos",
+        "Tratados y acuerdos",
+        "Mercosur",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea"
+      ],
+      "tags": [
+        "Mercosur",
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "EL PAÍS Uruguay",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQeDV6ODh6eFBIUi1YSThQZDQtRU9WckFLREVnZlg5cFBQSUZSVXRDUlV5bTRYNjl6WTNJbFo0dUNVMDlSMTNrZXFpWVBTZ0h0QS1iYzQyMDZmM2hITV9JdEE2Yjc1a1RHUjhlRzRGd3NDZmlacEtOdEpTZ2xDbWh3NW1Jel9vR015Rnl0TjVtaGsxOW5qTVo0c0ZaRWV1V3BGWUl3VXVOc0Q3ZmVucjZkdTVLSlhLWFJxdVF5X0FRMjlxZEx5OFVQb2NLQ2pma0VETWRlbVYyS0cwd0JsQnh0Wm0tOVlkZFk?oc=5",
           "primary": true,
           "author": ""
         }
@@ -3363,7 +3472,7 @@
       "date": "2026-10-03",
       "firstSeen": "2026-10-04T02:13:13Z",
       "title": "El crecimiento de Vaca Muerta podría llevar a Neuquén al primer lugar de las exportaciones",
-      "summary": "Nota publicada por DameNoticias. Abrí el artículo original para leer el texto completo.",
+      "summary": "Nota publicada por damenoticias.com. Abrí el artículo original para leer el texto completo.",
       "body": [],
       "keyData": [],
       "topics": [
@@ -3383,7 +3492,7 @@
       "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "DameNoticias",
+          "name": "damenoticias.com",
           "type": "Medio · vía Google Noticias",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSm11VXdvYWVTRGVjY29nenJxR043WG80ZFZwUVc2NHo1dFRsN0ZPSVVkNGt5b0lCWjhwV2NoUWRVNXE5em5rX0swa1ZVVE1VTENzS0RHeWZVTDA5RkhkMGlERFhpVVRzOXdXWmVSbTU4NUxsWExSNjMyQ0t6Yk02bE81MzQ5YXVzQlQ3UFdTZG43SFhFQXFZVl8tN3dwcmVYblpHbHNpZXhXNzNLLUp6NGhBOWJzaDFEaE1IeTR3ZjhCWF9YMWExV21hcw?oc=5",
           "primary": true,
@@ -10073,7 +10182,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-05T00:53:37Z",
+    "ranAt": "2026-10-05T01:41:44Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -10098,7 +10207,7 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 2,
+        "added": 1,
         "updated": 0,
         "skipped": 4
       },
@@ -10107,16 +10216,16 @@
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
         "items": 44,
-        "added": 1,
-        "updated": 1,
-        "skipped": 31
+        "added": 0,
+        "updated": 0,
+        "skipped": 33
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 41,
-        "added": 2,
+        "items": 40,
+        "added": 0,
         "updated": 2,
         "skipped": 27
       },
@@ -10125,8 +10234,8 @@
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
         "items": 50,
-        "added": 1,
-        "updated": 1,
+        "added": 0,
+        "updated": 2,
         "skipped": 20
       },
       {
@@ -10134,27 +10243,27 @@
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
         "items": 39,
-        "added": 0,
-        "updated": 4,
-        "skipped": 20
+        "added": 1,
+        "updated": 0,
+        "skipped": 19
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
         "items": 14,
-        "added": 2,
+        "added": 0,
         "updated": 2,
-        "skipped": 6
+        "skipped": 5
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 53,
-        "added": 3,
+        "items": 52,
+        "added": 1,
         "updated": 1,
-        "skipped": 41
+        "skipped": 39
       }
     ],
     "curatedDuplicates": [

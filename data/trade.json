@@ -455,14 +455,6 @@
    "change": 1.0,
    "share": 4.7,
    "last": 399.4
-  },
-  {
-   "name": "Unión Europea (serie UE-28)",
-   "ytd": 415.6,
-   "prevYtd": 397.7,
-   "change": 4.5,
-   "share": 0.6,
-   "last": 47.0
   }
  ],
  "destinosMonth": "2026-08",
@@ -620,19 +612,11 @@
    "change": -22.5,
    "share": 0.7,
    "last": 56.7
-  },
-  {
-   "name": "Unión Europea (serie UE-28)",
-   "ytd": 313.7,
-   "prevYtd": 351.4,
-   "change": -10.7,
-   "share": 0.6,
-   "last": 38.7
   }
  ],
  "origenesMonth": "2026-08",
  "source": "INDEC · Intercambio comercial argentino (series de tiempo de datos.gob.ar)",
  "sourceUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-40",
  "units": "millones de dólares (exportaciones FOB, importaciones CIF)",
- "checkedAt": "2026-10-05T00:53:55Z"
+ "checkedAt": "2026-10-05T01:42:01Z"
 }
