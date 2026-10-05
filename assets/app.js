@@ -1618,7 +1618,7 @@ function renderNav(){
   const curGroup = groupOf(cur)?.slug;
   const extra = [['datos','Datos','datos'],['agenda','Agenda','agenda'],['buscar?tipo=analisis','Análisis','analisis'],['calculadora','Calculadoras','calculadora']];
   const curExtra = state.view === 'results' && state.filters.kind === 'analisis' && filterCount(state.filters) === 1 ? 'analisis' : state.view;
-  const sub = g => `<div class="sub" id="sub-${g.slug}"><ul>${[g.slug, ...g.sections].map(sectionBySlug).filter(s => s && (s.slug === g.slug || s.slug === cur || cnt(s))).map(s =>
+  const sub = g => `<div class="nav-sub" id="sub-${g.slug}"><ul>${[g.slug, ...g.sections].map(sectionBySlug).filter(s => s && (s.slug === g.slug || s.slug === cur || cnt(s))).map(s =>
     `<li><a href="#tema-${s.slug}" ${cur===s.slug?'aria-current="page"':''}>${s.slug === g.slug ? `Todo ${esc(g.label)}` : esc(s.label)}<span class="n">${cnt(s)}</span></a></li>`).join('')}</ul></div>`;
   $('#navList').innerHTML = `<li class="nav-top"><a href="#inicio" ${cur==='inicio'?'aria-current="page"':''}>Inicio<span class="n">${state.items.length}</span></a></li>` +
     GROUPS.map(g => `<li class="has-sub${curGroup===g.slug?' cur':''}"><a class="grp" href="#tema-${g.slug}" ${cur===g.slug?'aria-current="page"':''}>${esc(g.label)}</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-${g.slug}" aria-label="Ver secciones de ${esc(g.label)}"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>${sub(g)}</li>`).join('') +
