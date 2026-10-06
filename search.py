@@ -6,18 +6,9 @@ from PIL import Image, ImageDraw, ImageFont
 UA = 'PulsoComexPhotoSearch/1.0 (https://pulso-comex.github.io; pulso.comex26@gmail.com)'
 API = 'https://commons.wikimedia.org/w/api.php'
 QUERIES = {
-  'customs': ['customs cargo inspection container', 'cargo x-ray scanner container', 'trucks border crossing freight', 'customs officer inspecting shipment', 'warehouse pallets forklift', 'freight trucks queue border'],
-  'treaty': ['flags of the world row', 'Mercosur flags', 'World Trade Organization headquarters Geneva', 'flags of South American countries'],
-  'port': ['container terminal gantry cranes', 'port of Buenos Aires containers', 'container port aerial', 'port of Santos', 'container cranes port night'],
-  'agro': ['grain elevator ship loading', 'soybean harvest combine', 'soybeans close', 'wheat harvest combine', 'grain terminal port', 'corn harvest field'],
-  'mining': ['lithium brine evaporation ponds', 'open pit copper mine', 'salar lithium', 'mining trucks open pit'],
-  'globe': ['Earth from space Americas', 'Earth night lights from space', 'globe Earth blue marble'],
-  'ship': ['container ship at sea', 'cargo ship underway', 'bulk carrier at sea'],
-  'container': ['shipping containers stacked', 'intermodal containers yard', 'container train'],
-  'tanker': ['oil tanker underway', 'LNG carrier ship', 'crude oil tanker'],
-  'plane': ['cargo aircraft loading airport', 'air cargo pallets airport', 'freighter aircraft'],
-  'steel': ['steel coils', 'steel mill hot rolling', 'aluminium ingots'],
-  'chart': ['stock exchange trading floor', 'financial charts screen'],
+  'treaty': ['Palais des Nations flags Geneva', 'row of national flags flagpoles', 'flags of nations in front of building', 'Mercosur', 'Centre William Rappard'],
+  'customs': ['commercial trucks port of entry', 'truck border crossing cargo', 'customs house building', 'cargo inspection port containers officers', 'semi trucks highway freight'],
+  'river': ['Parana River barge', 'barge convoy river grain', 'river barges towboat', 'Rosario Parana river ship'],
 }
 PD_FILTERS = ['haswbstatement:P6216=Q19652', 'haswbstatement:P275=Q6938433']
 BAD_RESTR = re.compile(r'personality|trademark|insignia|ngo|costume|currency|statue|design', re.I)
