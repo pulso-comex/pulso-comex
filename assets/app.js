@@ -439,7 +439,8 @@ const photoUrl = (p, w) => {
 };
 const photoSrcset = (p, w) => p.local && p.localSmall ? `${at(p.localSmall)} 800w, ${at(p.local)} 1600w`
   : isUnsplash(p) ? `${photoUrl(p, w)} ${w}w, ${photoUrl(p, w*2)} ${w*2}w` : '';
-const capText = p => p.source ? `Imagen: ${p.by}` : `Foto de archivo: ${p.by}${p.page?.includes('unsplash') ? ' / Unsplash' : ''}`;
+const isCommons = p => !!p.page?.includes('commons.wikimedia.org');
+const capText = p => p.source ? `Imagen: ${p.by}` : `Foto de archivo: ${p.by}${p.page?.includes('unsplash') ? ' / Unsplash' : isCommons(p) ? ' / Wikimedia Commons' : ''}`;
 function imgTag(p, w, eager, sizes){
   const set = photoSrcset(p, w);
   return `<img class="photo" src="${esc(photoUrl(p, w))}"${set ? ` srcset="${esc(set)}" sizes="${sizes}"` : ''} alt="${esc(p.alt || '')}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"${p.source ? ' referrerpolicy="no-referrer"' : ''}>`;
@@ -457,6 +458,8 @@ const photoCredit = p => p.source
   ? `Imagen: ${p.page ? `<a href="${esc(p.page)}" target="_blank" rel="noopener noreferrer">${esc(p.by)}</a>` : esc(p.by)}, publicada junto a la nota original.`
   : p.page?.includes('unsplash.com')
   ? `Foto de archivo de <a href="${esc(p.page)}?utm_source=comex_global&utm_medium=referral" target="_blank" rel="noopener noreferrer">${esc(p.by)}</a> en <a href="https://unsplash.com/?utm_source=comex_global&utm_medium=referral" target="_blank" rel="noopener noreferrer">Unsplash</a>. Imagen ilustrativa, no corresponde al hecho de la noticia.`
+  : isCommons(p)
+  ? `Foto de archivo: ${esc(p.by)}, vía <a href="${esc(p.page)}" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> (${esc(p.license || 'dominio público')}). Imagen ilustrativa, no corresponde al hecho de la noticia.`
   : `Foto: ${p.page ? `<a href="${esc(p.page)}" target="_blank" rel="noopener noreferrer">${esc(p.by)}</a>` : esc(p.by)}.`;
 document.addEventListener('error', e => {
   const img = e.target;
@@ -1264,7 +1267,7 @@ const PAGES = {
     <p>El contenido de Pulso Comex es informativo y no constituye asesoramiento legal, aduanero, tributario ni financiero. Las calculadoras dan estimaciones orientativas. Antes de operar, verificá la normativa vigente en la fuente oficial y consultá con un despachante de aduana o un profesional.</p>
     <h2>Fuentes y derechos de terceros</h2>
     <p>Las notas de la redacción son resúmenes de elaboración propia: los datos, cifras y declaraciones pertenecen a las fuentes citadas, que se identifican y enlazan en cada nota. Las notas marcadas como «Automática» reproducen el título y, cuando existe, el extracto que la propia fuente publica en su canal de difusión (RSS), siempre con su nombre y el enlace al artículo original, como establece el artículo 28 de la Ley 11.723 para las noticias de interés general.</p>
-    <p>Las imágenes son fotos de archivo de uso libre (Unsplash), con crédito a su autor, o ilustraciones y gráficos propios del sitio. Las fotos de archivo son ilustrativas y no corresponden al hecho de la noticia. Los nombres y marcas de los medios y organismos citados pertenecen a sus titulares.</p>
+    <p>Las imágenes son fotos de archivo de uso libre (Unsplash) o de dominio público (Wikimedia Commons), con crédito a su autor, o ilustraciones y gráficos propios del sitio. Las fotos de archivo son ilustrativas y no corresponden al hecho de la noticia. Los nombres y marcas de los medios y organismos citados pertenecen a sus titulares.</p>
     <h2>Pedidos de corrección o retiro</h2>
     <p>Si sos titular de derechos sobre algún contenido, o una nota te menciona y considerás que contiene un error, escribinos${SITECFG.contactEmail ? ` a <a href="mailto:${esc(SITECFG.contactEmail)}">${esc(SITECFG.contactEmail)}</a>` : ''} con el enlace a la nota. Revisamos cada pedido y, cuando corresponde, corregimos o retiramos el contenido.</p>
     <h2>Uso del contenido de Pulso Comex</h2>

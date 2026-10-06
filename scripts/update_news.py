@@ -119,6 +119,8 @@ VISUAL_RULES = [
     ('port', [r'puerto', r'\bport\b', r'terminal']),
     ('container', [r'contenedor', r'container', r'\bteu\b', r'\bfeu\b']),
     ('ship', [r'maritim', r'shipping', r'buque', r'vessel', r'naviera', r'flete']),
+    ('mining', [r'miner', r'\blitio', r'lithium', r'\bcobre\b', r'copper', r'\bmining\b']),
+    ('agro', [r'\bsoja', r'soybean', r'\btrigo', r'\bmaiz\b', r'granos', r'cereal', r'cosecha', r'agroexport', r'\bagro\b', r'oleaginos']),
     ('customs', [r'aduan', r'customs', r'arancel', r'tariff', r'import(?!an)', r'export']),
     ('treaty', [r'acuerdo', r'tratado', r'agreement', r'mercosur', r'\bomc\b', r'\bwto\b']),
     ('chart', [r'balanza', r'estadistic', r'statistic', r'indice', r'index', r'crecimiento', r'growth']),
@@ -923,6 +925,7 @@ def main():
         if ph.get('src') and (BAD_IMAGE.search(ph['src']) or not src_cfg.get('use_source_images', USE_SOURCE_IMAGES_DEFAULT)):
             it.pop('photo', None)
         it['tags'] = make_tags(' '.join([it.get('title', ''), it.get('summary', '')]), {})
+        it['visual'] = next((v for v, pats in VISUAL_RULES if any_match(norm(it.get('title', '') + ' ' + it.get('summary', '')), pats)), 'globe')
 
     # Google Noticias: enlace del medio, descripción e imagen de la página original.
     gn = resolve_gnews(by_url)

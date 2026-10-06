@@ -20,6 +20,33 @@
       "by": "Anastasios Antoniadis",
       "page": "https://unsplash.com/photos/cargo-ship-on-sea-under-cloudy-sky-during-daytime-AMXFr97d00c",
       "alt": "Buque de carga bajo un cielo nublado"
+    },
+    {
+      "id": "wm-10c90df1f9df",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Port_bow_view_of_the_Russian_merchant_container_ship_CHITA_underway._The_ship_has_numerous_commercial_vehicles_as_deck_cargo_-_DPLA_-_e120d3e0e4cf053032385cc8b2eca1fe.jpeg/1920px-thumbnail.jpeg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Port_bow_view_of_the_Russian_merchant_container_ship_CHITA_underway._The_ship_has_numerous_commercial_vehicles_as_deck_cargo_-_DPLA_-_e120d3e0e4cf053032385cc8b2eca1fe.jpeg",
+      "by": "Departamento de Defensa (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Port_bow_view_of_the_Russian_merchant_container_ship_CHITA_underway._The_ship_has_numerous_commercial_vehicles_as_deck_cargo_-_DPLA_-_e120d3e0e4cf053032385cc8b2eca1fe.jpeg",
+      "alt": "Buque portacontenedores navegando en mar abierto, vista aérea",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-1d35a905eff5",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Container_ship_in_Koper_2013.jpg/1920px-Container_ship_in_Koper_2013.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Container_ship_in_Koper_2013.jpg",
+      "by": "Martin Dörsch",
+      "page": "https://commons.wikimedia.org/wiki/File:Container_ship_in_Koper_2013.jpg",
+      "alt": "Portacontenedores entrando al puerto de Koper",
+      "license": "CC0 (dominio público)"
+    },
+    {
+      "id": "wm-9f30ab810032",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Towboat_Herbert_Hoover_with_a_tow_of_six_barges_-_NARA_-_285940.jpg/1920px-Towboat_Herbert_Hoover_with_a_tow_of_six_barges_-_NARA_-_285940.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Towboat_Herbert_Hoover_with_a_tow_of_six_barges_-_NARA_-_285940.jpg",
+      "by": "Archivos Nacionales (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Towboat_Herbert_Hoover_with_a_tow_of_six_barges_-_NARA_-_285940.jpg",
+      "alt": "Remolcador empujando un convoy de barcazas por un río",
+      "license": "Dominio público"
     }
   ],
   "container": [
@@ -43,6 +70,15 @@
       "by": "taro ohtani",
       "page": "https://unsplash.com/photos/5T5zmIqs0AM",
       "alt": "Grúas pórtico y contenedores en el puerto de Shinagawa"
+    },
+    {
+      "id": "wm-20c781093e87",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/210728-H-AT513-020.jpg/1920px-210728-H-AT513-020.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/6/62/210728-H-AT513-020.jpg",
+      "by": "CBP (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:210728-H-AT513-020.jpg",
+      "alt": "Contenedores apilados a bordo de un buque",
+      "license": "Dominio público"
     }
   ],
   "port": [
@@ -66,6 +102,87 @@
       "by": "Nathan Cima",
       "page": "https://unsplash.com/photos/MHXJ9p64Jw8",
       "alt": "Portacontenedores en la terminal de Hai Phong, Vietnam"
+    },
+    {
+      "id": "wm-1f696d5ed402",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Aerial_photograph_of_the_Port_of_Miami_Container_Port.jpg/1920px-Aerial_photograph_of_the_Port_of_Miami_Container_Port.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/5/52/Aerial_photograph_of_the_Port_of_Miami_Container_Port.jpg",
+      "by": "James R. Tourtellotte",
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_the_Port_of_Miami_Container_Port.jpg",
+      "alt": "Vista aérea de la terminal de contenedores del puerto de Miami",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-8cd3d96c78a8",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/Port_of_Long_Beach%2C_California_-4.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/1/12/Port_of_Long_Beach%2C_California_-4.jpg",
+      "by": "Charles Csavossy",
+      "page": "https://commons.wikimedia.org/wiki/File:Port_of_Long_Beach,_California_-4.jpg",
+      "alt": "Patio de contenedores del puerto de Long Beach",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-4169181c6734",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/FDA%E2%80%99s_China_Offices_Focus_on_Product_Safety_%286549753597%29.jpg/1920px-FDA%E2%80%99s_China_Offices_Focus_on_Product_Safety_%286549753597%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/a/a1/FDA%E2%80%99s_China_Offices_Focus_on_Product_Safety_%286549753597%29.jpg",
+      "by": "FDA (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:FDA%E2%80%99s_China_Offices_Focus_on_Product_Safety_(6549753597).jpg",
+      "alt": "Buques portacontenedores y grúas en el puerto de Los Ángeles",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-23aec57a3212",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Container_cranes_at_Skandiahamnen_1.jpg/1920px-Container_cranes_at_Skandiahamnen_1.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Container_cranes_at_Skandiahamnen_1.jpg",
+      "by": "W.carter",
+      "page": "https://commons.wikimedia.org/wiki/File:Container_cranes_at_Skandiahamnen_1.jpg",
+      "alt": "Grúas de contenedores en el puerto de Gotemburgo",
+      "license": "CC0 (dominio público)"
+    },
+    {
+      "id": "wm-bc7f2ae5ed58",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Container_Crane_Lyttelton._%2812807777564%29.jpg/1920px-Container_Crane_Lyttelton._%2812807777564%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/5/53/Container_Crane_Lyttelton._%2812807777564%29.jpg",
+      "by": "Bernard Spragg",
+      "page": "https://commons.wikimedia.org/wiki/File:Container_Crane_Lyttelton._(12807777564).jpg",
+      "alt": "Grúa de contenedores al atardecer en el puerto de Lyttelton",
+      "license": "CC0 (dominio público)"
+    },
+    {
+      "id": "wm-abf8c543c8fd",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Container_cranes_in_Tokyo_Bay_2.jpg/1920px-Container_cranes_in_Tokyo_Bay_2.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/9/92/Container_cranes_in_Tokyo_Bay_2.jpg",
+      "by": "Syced",
+      "page": "https://commons.wikimedia.org/wiki/File:Container_cranes_in_Tokyo_Bay_2.jpg",
+      "alt": "Grúas de contenedores iluminadas de noche en la bahía de Tokio",
+      "license": "CC0 (dominio público)"
+    },
+    {
+      "id": "wm-ca3c93df4904",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Aerial_view_of_the_Port_of_Galveston_September_22_2008.jpg/1920px-Aerial_view_of_the_Port_of_Galveston_September_22_2008.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Aerial_view_of_the_Port_of_Galveston_September_22_2008.jpg",
+      "by": "Brooks O. Hubbard IV, USACE (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Port_of_Galveston_September_22_2008.jpg",
+      "alt": "Vista aérea del puerto de Galveston",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-c1de36e5cede",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Ship_Tina_%283%29.jpg/1920px-Ship_Tina_%283%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ship_Tina_%283%29.jpg",
+      "by": "Tvabutzku1234",
+      "page": "https://commons.wikimedia.org/wiki/File:Ship_Tina_(3).jpg",
+      "alt": "Buque feeder saliendo de la terminal de contenedores de Bremerhaven",
+      "license": "CC0 (dominio público)"
+    },
+    {
+      "id": "wm-e65a554e2532",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/MSC_Branka_at_Bremerhaven_port.png/1920px-MSC_Branka_at_Bremerhaven_port.png",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/f/fa/MSC_Branka_at_Bremerhaven_port.png",
+      "by": "Spielvogel",
+      "page": "https://commons.wikimedia.org/wiki/File:MSC_Branka_at_Bremerhaven_port.png",
+      "alt": "Portacontenedores amarrado y grúas en el puerto de Bremerhaven",
+      "license": "CC0 (dominio público)"
     }
   ],
   "plane": [
@@ -105,6 +222,24 @@
       "by": "Fredrick F.",
       "page": "https://unsplash.com/photos/red-and-white-ship-on-sea-under-cloudy-sky-during-daytime-U9_pRASawlc",
       "alt": "Buque tanque navegando cerca de Johor, Malasia"
+    },
+    {
+      "id": "wm-a6a1b717e034",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Caribbean_Air_and_Marine_Branch_monitors_seas_around_Puerto_Rico_%2832746890877%29.jpg/1920px-Caribbean_Air_and_Marine_Branch_monitors_seas_around_Puerto_Rico_%2832746890877%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/6/62/Caribbean_Air_and_Marine_Branch_monitors_seas_around_Puerto_Rico_%2832746890877%29.jpg",
+      "by": "CBP (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Caribbean_Air_and_Marine_Branch_monitors_seas_around_Puerto_Rico_(32746890877).jpg",
+      "alt": "Buque metanero (GNL) amarrado en una terminal",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-9fe233cc4bde",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/LNG_tanker_seen_from_Sellin_S%C3%BCdstrand_2023-05-28_16.jpg/1920px-LNG_tanker_seen_from_Sellin_S%C3%BCdstrand_2023-05-28_16.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/b/be/LNG_tanker_seen_from_Sellin_S%C3%BCdstrand_2023-05-28_16.jpg",
+      "by": "Leo 'Jace' Anderson, FEMA (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:LNG_tanker_seen_from_Sellin_S%C3%BCdstrand_2023-05-28_16.jpg",
+      "alt": "Buque metanero navegando en el horizonte",
+      "license": "CC0 (dominio público)"
     }
   ],
   "customs": [
@@ -128,6 +263,51 @@
       "by": "Ashley",
       "page": "https://unsplash.com/photos/a-warehouse-filled-with-lots-of-boxes-and-pallets-28b8xlTT5t4",
       "alt": "Autoelevador en un depósito con estanterías de mercadería"
+    },
+    {
+      "id": "wm-57bc1c92dcfa",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Vehicle_%26_Cargo_Inspection_System_%28VACIS%29_%285765148180%29.jpg/1920px-Vehicle_%26_Cargo_Inspection_System_%28VACIS%29_%285765148180%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/5/59/Vehicle_%26_Cargo_Inspection_System_%28VACIS%29_%285765148180%29.jpg",
+      "by": "CBP (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Vehicle_%26_Cargo_Inspection_System_(VACIS)_(5765148180).jpg",
+      "alt": "Escáner de rayos gamma inspeccionando un camión con contenedor en un puerto",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-1fb9971f80c2",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/CBP_Officers_and_Agriculture_Specialists_working_at_the_Baltimore_Seaport_%2843228599574%29.jpg/1920px-CBP_Officers_and_Agriculture_Specialists_working_at_the_Baltimore_Seaport_%2843228599574%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/c/c9/CBP_Officers_and_Agriculture_Specialists_working_at_the_Baltimore_Seaport_%2843228599574%29.jpg",
+      "by": "CBP (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:CBP_Officers_and_Agriculture_Specialists_working_at_the_Baltimore_Seaport_(43228599574).jpg",
+      "alt": "Muestra de granos de soja en un tamiz durante una inspección en el puerto",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-8b325956ab51",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/FEMA_-_44999_-_Pallets_of_water_in_Iowa.jpg/1920px-FEMA_-_44999_-_Pallets_of_water_in_Iowa.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/2/29/FEMA_-_44999_-_Pallets_of_water_in_Iowa.jpg",
+      "by": "Leo 'Jace' Anderson, FEMA (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:FEMA_-_44999_-_Pallets_of_water_in_Iowa.jpg",
+      "alt": "Autoelevador y pallets de mercadería en un depósito",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-ae475ce24379",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Santa_Teresa_Port_of_Entry_Primary_Border_Inspection_Station_%289526056346%29.jpg/1920px-Santa_Teresa_Port_of_Entry_Primary_Border_Inspection_Station_%289526056346%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Santa_Teresa_Port_of_Entry_Primary_Border_Inspection_Station_%289526056346%29.jpg",
+      "by": "CBP (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Santa_Teresa_Port_of_Entry_Primary_Border_Inspection_Station_(9526056346).jpg",
+      "alt": "Cabinas de control en un paso fronterizo de cargas",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-34bbfa4f648b",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Santa_Teresa_Port_of_Entry_Primary_Border_Inspection_Station_%289526056946%29.jpg/1920px-Santa_Teresa_Port_of_Entry_Primary_Border_Inspection_Station_%289526056946%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Santa_Teresa_Port_of_Entry_Primary_Border_Inspection_Station_%289526056946%29.jpg",
+      "by": "CBP (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Santa_Teresa_Port_of_Entry_Primary_Border_Inspection_Station_(9526056946).jpg",
+      "alt": "Carriles de control aduanero en un paso de frontera",
+      "license": "Dominio público"
     }
   ],
   "chart": [
@@ -167,6 +347,33 @@
       "by": "Nicholas Cappello",
       "page": "https://unsplash.com/photos/close-up-photo-of-monitor-displaying-graph-Wb63zqJ5gnE",
       "alt": "Monitor con gráficos de mercado"
+    },
+    {
+      "id": "wm-f946f2b0a520",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Earth%27s_City_Lights_by_DMSP%2C_1994-1995_%28large%29.jpg/1920px-Earth%27s_City_Lights_by_DMSP%2C_1994-1995_%28large%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Earth%27s_City_Lights_by_DMSP%2C_1994-1995_%28large%29.jpg",
+      "by": "NASA",
+      "page": "https://commons.wikimedia.org/wiki/File:Earth%27s_City_Lights_by_DMSP,_1994-1995_(large).jpg",
+      "alt": "Mapa de las luces nocturnas de las ciudades del mundo",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-992d0a0cc62c",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Good_Morning_From_the_International_Space_Station.jpg/1920px-Good_Morning_From_the_International_Space_Station.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Good_Morning_From_the_International_Space_Station.jpg",
+      "by": "Scott Kelly",
+      "page": "https://commons.wikimedia.org/wiki/File:Good_Morning_From_the_International_Space_Station.jpg",
+      "alt": "Ciudades iluminadas de noche vistas desde la Estación Espacial",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-5ae6a8fba2d1",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Earth_From_the_Perspective_of_Artemis_II.jpg/1920px-Earth_From_the_Perspective_of_Artemis_II.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/6/63/Earth_From_the_Perspective_of_Artemis_II.jpg",
+      "by": "NASA",
+      "page": "https://commons.wikimedia.org/wiki/File:Earth_From_the_Perspective_of_Artemis_II.jpg",
+      "alt": "La Tierra vista desde la nave Orion de la misión Artemis II",
+      "license": "Dominio público"
     }
   ],
   "treaty": [
@@ -183,6 +390,33 @@
       "by": "Dmitrii E.",
       "page": "https://unsplash.com/photos/european-union-flag-flies-over-a-stone-building-9IijGDLb1D4",
       "alt": "Bandera de la Unión Europea sobre un edificio en Berlín"
+    },
+    {
+      "id": "wm-fdb242bce6cf",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Palace_of_Nations_-_flags_-_2.JPG/1920px-Palace_of_Nations_-_flags_-_2.JPG",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Palace_of_Nations_-_flags_-_2.JPG",
+      "by": "Benoît Prieur",
+      "page": "https://commons.wikimedia.org/wiki/File:Palace_of_Nations_-_flags_-_2.JPG",
+      "alt": "Avenida de banderas frente al Palacio de las Naciones en Ginebra",
+      "license": "CC0 (dominio público)"
+    },
+    {
+      "id": "wm-120cd182ea1b",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Alley_of_flags_UNO_Geneva.jpg/1920px-Alley_of_flags_UNO_Geneva.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/0/08/Alley_of_flags_UNO_Geneva.jpg",
+      "by": "Tinux",
+      "page": "https://commons.wikimedia.org/wiki/File:Alley_of_flags_UNO_Geneva.jpg",
+      "alt": "Entrada del Palacio de las Naciones en Ginebra con banderas",
+      "license": "CC0 (dominio público)"
+    },
+    {
+      "id": "wm-de5cd8b94fa5",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Flags_fly_in_front_of_the_UN_building_in_New_York_City%2C_Sept._20%2C_2019._%2848770836482%29.jpg/1920px-Flags_fly_in_front_of_the_UN_building_in_New_York_City%2C_Sept._20%2C_2019._%2848770836482%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flags_fly_in_front_of_the_UN_building_in_New_York_City%2C_Sept._20%2C_2019._%2848770836482%29.jpg",
+      "by": "Departamento de Estado (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Flags_fly_in_front_of_the_UN_building_in_New_York_City,_Sept._20,_2019._(48770836482).jpg",
+      "alt": "Banderas frente a la sede de las Naciones Unidas en Nueva York",
+      "license": "Dominio público"
     }
   ],
   "steel": [
@@ -215,6 +449,73 @@
       "by": "Tingey Injury Law Firm",
       "page": "https://unsplash.com/photos/brown-wooden-tool-on-white-surface-veNb0DDegzE",
       "alt": "Martillo de juez sobre una superficie blanca"
+    }
+  ],
+  "agro": [
+    {
+      "id": "wm-67fbe811afe5",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Visiting_Cargill-Westgo_Grain_Elevator_and_port_facility%2C_Nine_Mile_Point%2C_Louisiana%2C_10_March_2022_-_06.jpg/1920px-Visiting_Cargill-Westgo_Grain_Elevator_and_port_facility%2C_Nine_Mile_Point%2C_Louisiana%2C_10_March_2022_-_06.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Visiting_Cargill-Westgo_Grain_Elevator_and_port_facility%2C_Nine_Mile_Point%2C_Louisiana%2C_10_March_2022_-_06.jpg",
+      "by": "USDA (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Visiting_Cargill-Westgo_Grain_Elevator_and_port_facility,_Nine_Mile_Point,_Louisiana,_10_March_2022_-_06.jpg",
+      "alt": "Elevador de granos y muelle de carga sobre el río Misisipi",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-edc8ee6c8da3",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Mike_Starkey_Soybean_Harvest_%2852490323837%29.jpg/1920px-Mike_Starkey_Soybean_Harvest_%2852490323837%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Mike_Starkey_Soybean_Harvest_%2852490323837%29.jpg",
+      "by": "USDA (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Mike_Starkey_Soybean_Harvest_(52490323837).jpg",
+      "alt": "Cosecha de soja con una cosechadora en el campo",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-00d2bd48f592",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Mike_Starkey_Soybean_Harvest_%2852490323312%29.jpg/1920px-Mike_Starkey_Soybean_Harvest_%2852490323312%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/0/04/Mike_Starkey_Soybean_Harvest_%2852490323312%29.jpg",
+      "by": "USDA (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Mike_Starkey_Soybean_Harvest_(52490323312).jpg",
+      "alt": "Cosechadora y tolva trabajando en un lote de soja",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-6bd8cc267774",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Mike_Starkey_Soybean_Harvest_%2852490323222%29.jpg/1920px-Mike_Starkey_Soybean_Harvest_%2852490323222%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Mike_Starkey_Soybean_Harvest_%2852490323222%29.jpg",
+      "by": "USDA (EE.UU.)",
+      "page": "https://commons.wikimedia.org/wiki/File:Mike_Starkey_Soybean_Harvest_(52490323222).jpg",
+      "alt": "Plantas de soja maduras en primer plano y cosecha al fondo",
+      "license": "Dominio público"
+    }
+  ],
+  "mining": [
+    {
+      "id": "wm-24c0750ec41c",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/The_Salty_Lake_of_Gas_Hure_%28154538%29.jpg/1920px-The_Salty_Lake_of_Gas_Hure_%28154538%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/f/f2/The_Salty_Lake_of_Gas_Hure_%28154538%29.jpg",
+      "by": "NASA",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Salty_Lake_of_Gas_Hure_(154538).jpg",
+      "alt": "Piletas de evaporación de salmuera en un salar, vistas desde el espacio",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-c6d8631df310",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/KENNECOTT_MINE_IS_THE_LARGEST_OPEN-PIT_COPPER_OPERATION_IN_THE_WORLD_-_NARA_-_544789.jpg/1920px-KENNECOTT_MINE_IS_THE_LARGEST_OPEN-PIT_COPPER_OPERATION_IN_THE_WORLD_-_NARA_-_544789.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/1/1e/KENNECOTT_MINE_IS_THE_LARGEST_OPEN-PIT_COPPER_OPERATION_IN_THE_WORLD_-_NARA_-_544789.jpg",
+      "by": "Bruce McAllister",
+      "page": "https://commons.wikimedia.org/wiki/File:KENNECOTT_MINE_IS_THE_LARGEST_OPEN-PIT_COPPER_OPERATION_IN_THE_WORLD_-_NARA_-_544789.jpg",
+      "alt": "Vista aérea de una mina de cobre a cielo abierto",
+      "license": "Dominio público"
+    },
+    {
+      "id": "wm-517bd7391688",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/The_Salar_de_Uyuni_in_Bolivia_is_the_world%27s_largest_salt_flat_%28iss074e0319935%29.jpg/1920px-The_Salar_de_Uyuni_in_Bolivia_is_the_world%27s_largest_salt_flat_%28iss074e0319935%29.jpg",
+      "orig": "https://upload.wikimedia.org/wikipedia/commons/2/29/The_Salar_de_Uyuni_in_Bolivia_is_the_world%27s_largest_salt_flat_%28iss074e0319935%29.jpg",
+      "by": "NASA",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Salar_de_Uyuni_in_Bolivia_is_the_world%27s_largest_salt_flat_(iss074e0319935).jpg",
+      "alt": "Salar de Uyuni con piletas de evaporación, visto desde la Estación Espacial",
+      "license": "Dominio público"
     }
   ]
 }

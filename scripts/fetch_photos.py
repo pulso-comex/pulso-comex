@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Descarga una copia local de las fotos de archivo (data/photos.json) en img/stock/.
 
-Así las fotos se sirven desde el propio sitio y no dependen de que Unsplash esté disponible.
-La licencia de Unsplash permite descargarlas y usarlas; el sitio mantiene el crédito al autor.
+Así las fotos se sirven desde el propio sitio y no dependen de servicios externos.
+Fuentes admitidas (solo licencias que no requieren permiso):
+- Unsplash (licencia Unsplash: uso libre, también comercial). Se mantiene el crédito al autor.
+- Wikimedia Commons, solo archivos de dominio público o CC0, sin restricciones (derechos de imagen, marcas,
+  insignias). Cada entrada guarda "license" y el enlace a su página de descripción en "page".
 Se ejecuta en cada corrida del workflow, pero solo descarga lo que falta.
 Las fotos que ya no existen en Unsplash quedan marcadas en img/stock/status.json y build_pages.py las omite.
 """
@@ -19,9 +22,36 @@ SIZES = {'1600': 1600, '800': 800}
 
 
 def download(url: str) -> bytes:
-    req = Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; PulsoComexBot/1.1)'})
+    # Wikimedia pide un User-Agent que identifique al sitio y un contacto.
+    req = Request(url, headers={'User-Agent': 'PulsoComexBot/1.2 (https://pulso-comex.github.io; pulso.comex26@gmail.com)'})
     with urlopen(req, timeout=30) as r:
-        return r.read(8_000_000)
+        return r.read(40_000_000)
+
+
+def fetch_variant(p: dict, w: int) -> bytes:
+    if 'images.unsplash.com' in p['src']:
+        return download(f"{p['src']}?auto=format&fit=crop&w={w}&q=72&fm=jpg")
+    # Wikimedia Commons u otra fuente: se baja una vez y se achica acá (requiere Pillow).
+    from io import BytesIO
+    from PIL import Image
+    key = p['src']
+    if key not in _ORIG:
+        try:
+            raw = download(p['src'])
+        except Exception:
+            if not p.get('orig'):
+                raise
+            raw = download(p['orig'])   # si la miniatura no está disponible, el original
+        _ORIG[key] = Image.open(BytesIO(raw)).convert('RGB')
+    im = _ORIG[key].copy()
+    if im.width > w:
+        im = im.resize((w, round(im.height * w / im.width)), Image.LANCZOS)
+    out = BytesIO()
+    im.save(out, 'JPEG', quality=80, optimize=True, progressive=True)
+    return out.getvalue()
+
+
+_ORIG = {}
 
 
 def main():
@@ -36,7 +66,7 @@ def main():
                 if f.exists() and f.stat().st_size > 5000:
                     continue
                 try:
-                    data = download(f"{p['src']}?auto=format&fit=crop&w={w}&q=72&fm=jpg")
+                    data = fetch_variant(p, w)
                     if not data.startswith(b'\xff\xd8') or len(data) < 5000:
                         raise ValueError('la respuesta no es una imagen JPEG')
                     f.write_bytes(data)

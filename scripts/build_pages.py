@@ -145,7 +145,7 @@ def load():
         for p in photos:
             if status.get(p['id']) == 'missing':
                 continue
-            q = {x: p[x] for x in ('src', 'by', 'page', 'alt')}
+            q = {x: p[x] for x in ('src', 'by', 'page', 'alt', 'license') if p.get(x)}
             big, small = ROOT / 'img/stock' / f"{p['id']}-1600.jpg", ROOT / 'img/stock' / f"{p['id']}-800.jpg"
             if big.exists() and small.exists():
                 q['local'] = f"/img/stock/{p['id']}-1600.jpg"
@@ -167,7 +167,12 @@ def photo_for(it, bank):
     if not photos:
         return OG_DEFAULT, SITE_NAME, False
     q = photos[js_hash(it['id']) % len(photos)]
-    src = SITE + q['local'] if q.get('local') else f"{q['src']}?auto=format&fit=crop&w=1200&h=630&q=70&fm=jpg"
+    if q.get('local'):
+        src = SITE + q['local']
+    elif 'images.unsplash.com' in q['src']:
+        src = f"{q['src']}?auto=format&fit=crop&w=1200&h=630&q=70&fm=jpg"
+    else:
+        src = q['src']
     return src, q.get('alt', ''), False
 
 
