@@ -57,7 +57,7 @@ GROUP_MIN_SIM = 0.55       # parecido mínimo de títulos (palabras raras pesan 
 GROUP_MIN_SHARED = 3       # palabras significativas compartidas como mínimo
 
 # Google Noticias: resolver el enlace original para leer descripción e imagen del medio.
-MAX_GN_RESOLVE = 30        # enlaces resueltos por corrida (las nuevas primero; después, las viejas sin resumen)
+MAX_GN_RESOLVE = 60        # enlaces resueltos por corrida (las nuevas primero; después, las viejas sin resumen)
 
 # Taxonomía: debe coincidir con TOPICS en assets/app.js
 TOPICS = ['Argentina', 'Latinoamérica', 'Estados Unidos', 'Europa', 'Asia', 'China', 'Oceanía', 'Mercosur', 'Importaciones',
