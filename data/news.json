@@ -196,6 +196,218 @@
   ],
   "items": [
     {
+      "id": "adefa-septiembre-2026-exportaciones-suben-produccion-cae",
+      "date": "2026-10-05",
+      "kind": "datos",
+      "title": "Autos: las exportaciones crecieron 6,8% en septiembre mientras la producción cayó 15,6%",
+      "summary": "Según ADEFA, las terminales exportaron 28.213 unidades en septiembre, 6,8% más que un año atrás, y fabricaron 39.747 vehículos, 15,6% menos. El 71% de lo producido en el mes se vendió al exterior y en nueve meses las exportaciones acumulan una suba de 1,6%.",
+      "topics": [
+        "Argentina",
+        "Exportaciones",
+        "Empresas"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "ADEFA",
+        "Industria automotriz",
+        "Vehículos",
+        "Utilitarios"
+      ],
+      "visual": "chart",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Con el mercado interno en baja, la exportación se volvió el principal destino de la producción automotriz: en septiembre absorbió el 71% de lo fabricado, según ADEFA.",
+      "argentinaImpact": {
+        "change": "En septiembre las exportaciones de vehículos subieron 6,8% interanual (28.213 unidades) y la producción cayó 15,6% (39.747 unidades).",
+        "who": "Terminales automotrices, autopartistas, operadores logísticos y terminales portuarias que mueven vehículos de exportación.",
+        "sectors": [
+          "Automotriz"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": true,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "La Asociación de Fábricas de Automotores (ADEFA) informó que en septiembre de 2026 las terminales produjeron 39.747 vehículos, apenas 0,9% más que en agosto pero 15,6% menos que en septiembre de 2025, cuando se habían fabricado 47.108 unidades.",
+        "Las exportaciones fueron el dato positivo del mes: se enviaron al exterior 28.213 unidades, 14,7% más que en agosto y 6,8% más que un año antes. De esta manera, el 71% de la producción de septiembre tuvo como destino otros mercados.",
+        "Las ventas de las fábricas a la red de concesionarios sumaron 43.214 unidades, con una suba de 10,6% frente a agosto y una caída de 20,4% interanual. El presidente de ADEFA, Rodrigo Pérez Graziano, sostuvo que el mes mostró señales de recuperación mensual, sobre todo en ventas a concesionarios y exportaciones, y destacó el crecimiento exportador como el dato más alentador.",
+        "En el acumulado de enero a septiembre, la producción llegó a 314.975 unidades (-16,9% frente a 2025) y las ventas mayoristas a 344.589 (-24,3%), mientras que las exportaciones sumaron 203.072 vehículos, 1,6% por encima de las 199.811 unidades del mismo período del año pasado."
+      ],
+      "keyData": [
+        [
+          "Producción septiembre",
+          "39.747 unidades (-15,6% i.a.; +0,9% vs. agosto)"
+        ],
+        [
+          "Exportaciones septiembre",
+          "28.213 unidades (+6,8% i.a.; +14,7% vs. agosto)"
+        ],
+        [
+          "Ventas a concesionarios septiembre",
+          "43.214 unidades (-20,4% i.a.)"
+        ],
+        [
+          "Producción exportada en septiembre",
+          "71%"
+        ],
+        [
+          "Exportaciones enero–septiembre",
+          "203.072 unidades (+1,6% i.a.)"
+        ],
+        [
+          "Producción enero–septiembre",
+          "314.975 unidades (-16,9% i.a.)"
+        ]
+      ],
+      "explainer": {
+        "what": "En septiembre las automotrices argentinas exportaron 28.213 vehículos, 6,8% más que un año atrás, mientras la producción cayó 15,6% hasta 39.747 unidades, según ADEFA.",
+        "why": "Con ventas internas en baja, la exportación sostiene a la industria: el 71% de lo fabricado en septiembre salió al exterior y las exportaciones acumulan una suba de 1,6% en nueve meses.",
+        "who": "Terminales automotrices, autopartistas, concesionarios, operadores logísticos y terminales portuarias de vehículos.",
+        "products": [
+          "Automóviles",
+          "Utilitarios (pick-ups y vehículos comerciales)"
+        ]
+      },
+      "sources": [
+        {
+          "name": "El Economista",
+          "type": "Medio de comunicación",
+          "url": "https://eleconomista.com.ar/autos/en-septiembre-crecieron-exportaciones-ventas-mayoristas-autos-n98632",
+          "primary": true
+        },
+        {
+          "name": "iProfesional",
+          "type": "Medio de comunicación",
+          "url": "https://www.iprofesional.com/autos/465967-la-produccion-de-autos-volvio-a-caer-pero-se-recuperan-las-exportaciones"
+        }
+      ],
+      "absorbs": [
+        "la-produccion-automotriz-cayo-15-6-anual-en-septiembre-pero-las-exportaciones-to",
+        "en-septiembre-crecieron-las-exportaciones-y-las-ventas-mayoristas-de-autos"
+      ]
+    },
+    {
+      "id": "exportaciones-mineras-6059-millones-enero-agosto-2026",
+      "date": "2026-10-05",
+      "kind": "datos",
+      "title": "La minería exportó USD 6.059 millones en ocho meses, casi lo mismo que en todo 2025",
+      "summary": "Las exportaciones mineras crecieron 65,7% interanual entre enero y agosto, según el informe mensual de la Secretaría de Minería. El oro aportó USD 3.623 millones y el litio, USD 1.467 millones, con una suba de 190,5%. En agosto se exportaron USD 652 millones.",
+      "topics": [
+        "Argentina",
+        "Exportaciones",
+        "China"
+      ],
+      "countries": [
+        "Argentina",
+        "Suiza",
+        "China",
+        "Estados Unidos",
+        "Corea del Sur"
+      ],
+      "tags": [
+        "Minería",
+        "Litio",
+        "Oro",
+        "Plata",
+        "Secretaría de Minería"
+      ],
+      "visual": "chart",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "La minería ya exportó en ocho meses el 99,8% de lo vendido en todo 2025 y se consolida como una fuente creciente de divisas, con el litio como motor.",
+      "argentinaImpact": {
+        "change": "Las exportaciones mineras sumaron USD 6.059 millones en enero–agosto, 65,7% más que un año antes; el litio creció 190,5%.",
+        "who": "Empresas mineras y sus proveedores, provincias productoras, operadores logísticos y puertos que despachan minerales y concentrados.",
+        "sectors": [
+          "Minería",
+          "Litio",
+          "Oro y plata"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": true,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "Las exportaciones mineras argentinas alcanzaron USD 6.059 millones entre enero y agosto de 2026, un 65,7% más que en igual período de 2025, de acuerdo con el informe mensual de la Secretaría de Minería basado en datos aduaneros. La cifra equivale al 99,8% de todo lo exportado por el sector en 2025, que había cerrado en USD 6.074 millones. Solo en agosto, las ventas al exterior fueron de USD 652 millones, 43,3% más que en el mismo mes del año pasado.",
+        "Los minerales metalíferos explicaron USD 4.472 millones, el 73,8% del total. Dentro de ese grupo, el oro sumó USD 3.623 millones (cerca del 60% de las exportaciones mineras, con un alza de 42,8%) y la plata, USD 726 millones (12%, con una suba de 64,1%). El cobre y el resto de los metalíferos aportaron USD 123 millones.",
+        "El litio fue el producto de mayor crecimiento: exportó USD 1.467 millones, el 24,2% del total, con un aumento de 190,5% en valor y de 56,8% en volumen frente a los primeros ocho meses de 2025.",
+        "Por destino, Suiza (USD 1.891 millones), China (USD 1.546 millones), Estados Unidos (USD 1.039 millones) y Corea del Sur (USD 321 millones) concentraron el 79% de las ventas del período. El informe aclara que se trata de información de carácter referencial, que puede incluir estimaciones."
+      ],
+      "keyData": [
+        [
+          "Exportaciones mineras enero–agosto 2026",
+          "USD 6.059 millones (+65,7% i.a.)"
+        ],
+        [
+          "Exportaciones mineras agosto 2026",
+          "USD 652 millones (+43,3% i.a.)"
+        ],
+        [
+          "Total exportado en 2025",
+          "USD 6.074 millones"
+        ],
+        [
+          "Oro (enero–agosto)",
+          "USD 3.623 millones (+42,8%)"
+        ],
+        [
+          "Litio (enero–agosto)",
+          "USD 1.467 millones (+190,5%)"
+        ],
+        [
+          "Plata (enero–agosto)",
+          "USD 726 millones (+64,1%)"
+        ],
+        [
+          "Principales destinos",
+          "Suiza, China, EE.UU. y Corea del Sur: 79%"
+        ]
+      ],
+      "explainer": {
+        "what": "Entre enero y agosto de 2026 la minería argentina exportó USD 6.059 millones, 65,7% más que un año antes y casi lo mismo que en todo 2025 (USD 6.074 millones).",
+        "why": "El sector se afirma como fuente de divisas: el litio creció 190,5% y ya explica el 24,2% de las ventas mineras, mientras el oro sigue siendo el principal producto.",
+        "who": "Empresas mineras y sus proveedores, provincias productoras y operadores logísticos y portuarios que despachan minerales hacia Suiza, China, EE.UU. y Corea del Sur.",
+        "products": [
+          "Oro",
+          "Litio",
+          "Plata",
+          "Cobre"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Infobae",
+          "type": "Medio de comunicación",
+          "url": "https://www.infobae.com/economia/2026/10/05/la-mineria-sigue-marcando-records-en-ocho-meses-el-sector-ya-exporto-casi-todo-lo-registrado-durante-2025/",
+          "primary": true
+        },
+        {
+          "name": "Ámbito",
+          "type": "Medio de comunicación",
+          "url": "https://www.ambito.com/energia/exportaciones-mineras-superan-us6000-millones-ocho-meses-y-el-litio-crece-190-n6328351"
+        },
+        {
+          "name": "LM Neuquén (+E)",
+          "type": "Medio de comunicación",
+          "url": "https://mase.lmneuquen.com/mineria/record-historico-la-mineria-argentina-exporto-usd-6059-millones-agosto-n1255607"
+        }
+      ],
+      "absorbs": [
+        "las-exportaciones-mineras-marcaron-un-record-historico-y-superaron-los-us-6-000",
+        "la-mineria-argentina-quedo-a-un-paso-de-romper-su-record-exportador",
+        "mineria-2026-exportaciones-casi-igualan-record-anual-en-solo-ocho-meses",
+        "las-exportaciones-mineras-sumaron-us-6-059-millones-en-ocho-meses-y-ya-igualan-e"
+      ]
+    },
+    {
       "id": "brasil-define-presidente-y-argentina-mira-de-cerca-que-esta-en-juego-para-el-com",
       "datetime": "2026-10-06T09:12:30Z",
       "date": "2026-10-06",
