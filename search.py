@@ -1,92 +1,24 @@
-"""Busca en Wikimedia Commons fotos de dominio público o CC0 (sin restricciones) y arma hojas de contacto para revisar."""
-import io, json, re, sys, time, urllib.parse
-from urllib.request import Request, urlopen
-from PIL import Image, ImageDraw, ImageFont
-
-UA = 'PulsoComexPhotoSearch/1.0 (https://pulso-comex.github.io; pulso.comex26@gmail.com)'
-API = 'https://commons.wikimedia.org/w/api.php'
-QUERIES = {
-  'treaty': ['Palais des Nations flags Geneva', 'row of national flags flagpoles', 'flags of nations in front of building', 'Mercosur', 'Centre William Rappard'],
-  'customs': ['commercial trucks port of entry', 'truck border crossing cargo', 'customs house building', 'cargo inspection port containers officers', 'semi trucks highway freight'],
-  'river': ['Parana River barge', 'barge convoy river grain', 'river barges towboat', 'Rosario Parana river ship'],
-}
-PD_FILTERS = ['haswbstatement:P6216=Q19652', 'haswbstatement:P275=Q6938433']
-BAD_RESTR = re.compile(r'personality|trademark|insignia|ngo|costume|currency|statue|design', re.I)
-
-def api(params):
-    params = {**params, 'format': 'json', 'formatversion': '2'}
-    req = Request(API + '?' + urllib.parse.urlencode(params), headers={'User-Agent': UA})
-    for i in range(3):
+# Prueba de descarga: usa fetch_photos.fetch_variant con las fotos nuevas y arma una hoja de contacto.
+import json, io, sys
+from pathlib import Path
+from PIL import Image, ImageDraw
+sys.path.insert(0, '.')
+import fetch_photos as fp
+bank = json.load(open('photos.json'))
+rows, tiles = [], []
+for cat, lst in bank.items():
+    for p in lst:
+        if not p['id'].startswith('wm-'):
+            continue
         try:
-            with urlopen(req, timeout=40) as r:
-                return json.load(r)
+            data = fp.fetch_variant(p, 800)
+            im = Image.open(io.BytesIO(data)); rows.append(f"OK {cat} {p['id']} {im.size} {len(data)//1024}KB")
+            t = im.copy(); t.thumbnail((360, 240)); tiles.append((f"{cat}:{p['id'][3:9]}", t))
         except Exception as e:
-            time.sleep(3 * (i + 1)); err = e
-    raise err
-
-def license_ok(m):
-    lic = (m.get('LicenseShortName', {}).get('value') or '').strip()
-    l = lic.lower()
-    ok = l.startswith('public domain') or l.startswith('pd') or l == 'cc0' or l.startswith('cc0') or 'cc-zero' in l
-    restr = m.get('Restrictions', {}).get('value') or ''
-    nonfree = (m.get('NonFree', {}).get('value') or '').lower() == 'true'
-    return ok and not nonfree and not BAD_RESTR.search(restr), lic, restr
-
-def strip(h):
-    return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', h or '')).strip()
-
-out = {}
-seen = set()
-for cat, qs in QUERIES.items():
-    found = []
-    for q in qs:
-        for f in PD_FILTERS:
-            try:
-                d = api({'action': 'query', 'generator': 'search', 'gsrnamespace': 6, 'gsrsearch': f'{q} filetype:bitmap {f}',
-                         'gsrlimit': 20, 'prop': 'imageinfo', 'iiprop': 'url|size|extmetadata|mime', 'iiurlwidth': 480})
-            except Exception as e:
-                print('error', q, e, file=sys.stderr); continue
-            for p in (d.get('query') or {}).get('pages', []):
-                ii = (p.get('imageinfo') or [{}])[0]
-                t = p['title']
-                if t in seen or ii.get('mime') not in ('image/jpeg', 'image/png'):
-                    continue
-                w, h = ii.get('width', 0), ii.get('height', 0)
-                if w < 1600 or w < h * 1.25:
-                    continue
-                ok, lic, restr = license_ok(ii.get('extmetadata') or {})
-                if not ok:
-                    continue
-                m = ii['extmetadata']
-                seen.add(t)
-                found.append({'title': t, 'thumb': ii.get('thumburl'), 'url': ii.get('url'), 'page': ii.get('descriptionurl'),
-                              'w': w, 'h': h, 'license': lic, 'restrictions': restr,
-                              'artist': strip(m.get('Artist', {}).get('value'))[:120],
-                              'credit': strip(m.get('Credit', {}).get('value'))[:160],
-                              'desc': strip(m.get('ImageDescription', {}).get('value'))[:300],
-                              'categories': strip(m.get('Categories', {}).get('value'))[:300], 'q': q})
-            time.sleep(0.5)
-    out[cat] = found[:30]
-    print(cat, len(found))
-
-json.dump(out, open('candidates.json', 'w'), ensure_ascii=False, indent=1)
-
-# Hojas de contacto: 4 columnas x 3 filas por hoja, numeradas
-font = ImageFont.load_default(size=22) if hasattr(ImageFont, 'load_default') else None
-for cat, lst in out.items():
-    tiles = []
-    for i, c in enumerate(lst):
-        try:
-            req = Request(c['thumb'], headers={'User-Agent': UA})
-            im = Image.open(io.BytesIO(urlopen(req, timeout=40).read())).convert('RGB')
-            im.thumbnail((480, 300)); tiles.append((i, im))
-        except Exception as e:
-            print('thumb error', c['title'], e, file=sys.stderr)
-        time.sleep(0.3)
-    for s in range(0, len(tiles), 12):
-        chunk = tiles[s:s + 12]
-        sheet = Image.new('RGB', (4 * 490, 3 * 340), 'white'); d = ImageDraw.Draw(sheet)
-        for k, (i, im) in enumerate(chunk):
-            x, y = (k % 4) * 490 + 5, (k // 4) * 340 + 5
-            sheet.paste(im, (x, y + 30)); d.text((x, y), f'#{i}', fill='red', font=font)
-        sheet.save(f'sheet-{cat}-{s // 12}.jpg', quality=80)
+            rows.append(f"FAIL {cat} {p['id']} {e}")
+open('download-report.txt', 'w').write('\n'.join(rows) + '\n')
+sheet = Image.new('RGB', (6 * 370, ((len(tiles) + 5) // 6) * 270), 'white'); d = ImageDraw.Draw(sheet)
+for k, (lab, t) in enumerate(tiles):
+    x, y = (k % 6) * 370 + 5, (k // 6) * 270 + 5
+    sheet.paste(t, (x, y + 22)); d.text((x, y), lab, fill='red')
+sheet.save('sheet-final.jpg', quality=80)
