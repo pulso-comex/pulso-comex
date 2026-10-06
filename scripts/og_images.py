@@ -22,7 +22,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 FONTS = Path(__file__).resolve().parent / 'fonts'
 OUT = ROOT / 'img' / 'og'
-VERSION = '1'          # cambiarlo fuerza a regenerar todas las imágenes (por ejemplo, tras un rediseño)
+VERSION = '2'          # cambiarlo fuerza a regenerar todas las imágenes (por ejemplo, tras un rediseño)
 MAX_AGE_DAYS = 180     # notas más viejas vuelven a la foto de archivo y su imagen se borra
 W, H = 1200, 630
 PAD = 72
@@ -77,14 +77,18 @@ def clip(draw, text, fnt, width):
     return text.rstrip(' ,;:') + '…'
 
 
-def logo(draw, x, y, s):
-    """Marca del sitio (pulso + carga), la misma figura del SVG del encabezado, escalada."""
-    p = lambda a, b: (x + a * s, y + b * s)
-    draw.line([p(8, 84), p(58, 84), p(70, 56), p(84, 108), p(98, 30), p(110, 84), p(120, 84)],
-              fill=ACCENT, width=max(3, round(10 * s)), joint='curve')
-    for bx, by in ((124, 62), (158, 62), (141, 36)):
-        draw.rounded_rectangle([p(bx, by), p(bx + 30, by + 22)], radius=max(1, round(2 * s)), fill=WHITE)
-    draw.polygon([p(116, 90), p(194, 90), p(184, 106), p(126, 106)], fill=WHITE)
+LOGO_PNG = ROOT / 'img' / 'brand' / 'logo-negativo-og.png'   # logo en negativo (blanco + turquesa), fondo transparente
+
+
+def logo(im, x, y, h):
+    """Pega el logo del sitio con altura h; si falta el archivo, escribe el nombre."""
+    try:
+        lg = Image.open(LOGO_PNG).convert('RGBA')
+    except OSError:
+        ImageDraw.Draw(im).text((x, y), 'PULSO COMEX', font=font('IBMPlexSans-SemiBold.ttf', round(h * 0.6)), fill=WHITE)
+        return
+    lg = lg.resize((round(lg.width * h / lg.height), h), Image.LANCZOS)
+    im.paste(lg, (x, y), lg)
 
 
 def day_label(it) -> str:
@@ -115,9 +119,7 @@ def draw_card(it, category: str, host: str) -> Image.Image:
             d.rounded_rectangle([x0, y0, x0 + 50, y0 + 26], radius=3, outline=(30, 62, 104), width=2)
 
     # Marca
-    logo(d, PAD, 50, 0.42)
-    d.text((PAD + 92, 50), 'Pulso Comex', font=font('SourceSerif4-Bold.ttf', 32), fill=WHITE)
-    d.text((PAD + 93, 90), 'COMERCIO EXTERIOR · NOTICIAS Y DATOS', font=font('IBMPlexSans-SemiBold.ttf', 14), fill=MUTED)
+    logo(im, PAD, 46, 64)
 
     # Categoría e impacto en Argentina
     y = 168
