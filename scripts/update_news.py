@@ -395,6 +395,11 @@ def gnews_resolve(url: str) -> str:
         return ''
 
 
+# Fotos de los medios: desactivadas. Mostrar la foto de otro medio sin licencia expone a reclamos de derecho de autor
+# (las fotos suelen ser de agencias o fotógrafos, no del medio). Las notas usan fotos de archivo con licencia.
+# Para habilitar una fuente puntual que lo autorice por escrito: "use_source_images": true en sources.json.
+USE_SOURCE_IMAGES_DEFAULT = False
+
 # ---------------------------------------------------------------- limpieza de textos
 BYLINE = re.compile(r'^(Por\s+[^@\n]{2,60}?\s+@\w+\s*|Por\s+Redacci[oó]n\s*[|:–-]?\s*)', re.I)
 # Pie que agregan los feeds de WordPress: «La entrada <título> se publicó primero en <medio>.»
@@ -726,7 +731,7 @@ def resolve_gnews(by_url: dict) -> dict:
         if desc and len(desc) >= 60 and norm(desc)[:60] != norm(it['title'])[:60] and not excluded(desc):
             it['summary'] = trim(desc, 320)
             stats['withSummary'] += 1
-        if meta.get('image') and not it.get('photo'):
+        if meta.get('image') and not it.get('photo') and USE_SOURCE_IMAGES_DEFAULT:
             it['photo'] = {'src': meta['image'], 'by': src.get('name', ''), 'page': real, 'alt': it['title'][:140]}
             stats['withPhoto'] += 1
         del by_url[key]
@@ -827,7 +832,9 @@ def main():
 
             source_name = p['origin'] or name
             photo = (old or {}).get('photo')
-            if not photo and src.get('use_source_images', True):
+            if not src.get('use_source_images', USE_SOURCE_IMAGES_DEFAULT):
+                photo = None
+            elif not photo:
                 img = p['image']
                 if not img and src.get('fetch_og') and og_used < MAX_OG_FETCH and not old:
                     og_used += 1
@@ -912,7 +919,8 @@ def main():
             del by_url[key]
             continue
         ph = it.get('photo') or {}
-        if ph.get('src') and BAD_IMAGE.search(ph['src']):
+        src_cfg = next((s for s in sources if s.get('name') == feed), {})
+        if ph.get('src') and (BAD_IMAGE.search(ph['src']) or not src_cfg.get('use_source_images', USE_SOURCE_IMAGES_DEFAULT)):
             it.pop('photo', None)
         it['tags'] = make_tags(' '.join([it.get('title', ''), it.get('summary', '')]), {})
 

@@ -156,9 +156,12 @@ def load():
     return news, front
 
 
+USE_SOURCE_IMAGES = False   # fotos de los medios desactivadas por derechos de autor (igual que assets/app.js)
+
+
 def photo_for(it, bank):
     p = it.get('photo') or {}
-    if p.get('src'):
+    if USE_SOURCE_IMAGES and p.get('src'):
         return p['src'], p.get('alt') or it['title'], True
     photos = bank.get(it.get('visual')) or bank.get('globe') or []
     if not photos:

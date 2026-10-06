@@ -29,6 +29,7 @@ const CONFIG = {
   pageSize: 8,
   breakingWindowDays: 2,     // ÚLTIMA HORA se apaga sola pasado este plazo
   social: [],               // ej.: [{ name:'LinkedIn', url:'https://www.linkedin.com/company/…' }]
+  useSourceImages: false,    // fotos de los medios: desactivadas por derechos de autor (ver scripts/update_news.py)
   sources: [
     ...(FILE_MODE ? [] : [{ type: 'json', url: at('data/latest.json') }]),  // generado por scripts/build_pages.py
     { type: 'inline', id: 'feed-data' },
@@ -428,7 +429,7 @@ const PHOTOS = {
 })();
 const stockFor = it => { const bank = PHOTOS[it.visual] || PHOTOS.globe; return bank[hash(it.id) % bank.length]; };
 function photoFor(it){
-  if (it.photo?.src) return { ...it.photo, source: true };
+  if (CONFIG.useSourceImages && it.photo?.src) return { ...it.photo, source: true };
   return stockFor(it);
 }
 const isUnsplash = p => p.src.includes('images.unsplash.com');
@@ -1258,7 +1259,16 @@ function renderGuardadas(){
 }
 const PAGES = {
   privacidad: ['Política de privacidad', `<p>Esta sección no utiliza cuentas de usuario ni recopila datos personales. Las noticias guardadas, las preferencias y el contador de lecturas se almacenan solo en tu navegador y podés borrarlos limpiando los datos del sitio.</p><p>Al seguir un enlace a una fuente externa, rige la política de privacidad de ese sitio.</p>`],
-  terminos: ['Términos y condiciones', `<p>El contenido es informativo y no constituye asesoramiento legal, aduanero, tributario ni financiero. Antes de operar, verificá la normativa vigente en la fuente oficial.</p><p>Los resúmenes son redacción propia de Pulso Comex. Los datos, cifras y declaraciones pertenecen a las fuentes citadas, que se enlazan en cada nota. Las imágenes son las publicadas por la fuente junto a la nota original, con crédito y enlace, o fotos de archivo de uso libre de Unsplash, con crédito a su autor.</p>`],
+  terminos: ['Términos y condiciones', `
+    <h2>Carácter del contenido</h2>
+    <p>El contenido de Pulso Comex es informativo y no constituye asesoramiento legal, aduanero, tributario ni financiero. Las calculadoras dan estimaciones orientativas. Antes de operar, verificá la normativa vigente en la fuente oficial y consultá con un despachante de aduana o un profesional.</p>
+    <h2>Fuentes y derechos de terceros</h2>
+    <p>Las notas de la redacción son resúmenes de elaboración propia: los datos, cifras y declaraciones pertenecen a las fuentes citadas, que se identifican y enlazan en cada nota. Las notas marcadas como «Automática» reproducen el título y, cuando existe, el extracto que la propia fuente publica en su canal de difusión (RSS), siempre con su nombre y el enlace al artículo original, como establece el artículo 28 de la Ley 11.723 para las noticias de interés general.</p>
+    <p>Las imágenes son fotos de archivo de uso libre (Unsplash), con crédito a su autor, o ilustraciones y gráficos propios del sitio. Las fotos de archivo son ilustrativas y no corresponden al hecho de la noticia. Los nombres y marcas de los medios y organismos citados pertenecen a sus titulares.</p>
+    <h2>Pedidos de corrección o retiro</h2>
+    <p>Si sos titular de derechos sobre algún contenido, o una nota te menciona y considerás que contiene un error, escribinos${SITECFG.contactEmail ? ` a <a href="mailto:${esc(SITECFG.contactEmail)}">${esc(SITECFG.contactEmail)}</a>` : ''} con el enlace a la nota. Revisamos cada pedido y, cuando corresponde, corregimos o retiramos el contenido.</p>
+    <h2>Uso del contenido de Pulso Comex</h2>
+    <p>Podés compartir los enlaces a las notas libremente. Para reproducir los textos, gráficos o herramientas propias del sitio, citá a Pulso Comex con un enlace a la nota.</p>`],
   acerca: ['Sobre Pulso Comex', `<p>Pulso Comex es un portal de noticias, datos y análisis sobre comercio exterior, pensado para importadores, exportadores, despachantes de aduana, operadores logísticos y portuarios, estudiantes y docentes.</p>
     <h2>Criterios editoriales</h2><ul><li>Cada nota se verifica contra su fuente original y la enlaza.</li><li>Los resúmenes son redacción propia; las cifras y declaraciones pertenecen a las fuentes.</li><li>Se distingue entre <b>noticias</b>, <b>análisis de terceros</b>, <b>datos</b> y <b>opinión</b>.</li><li>El bloque «Impacto en Argentina» solo aparece cuando la información disponible lo sustenta.</li><li>No se publican noticias sin título, fecha y fuente con enlace.</li></ul>
     <h2>Cómo se actualiza</h2><p>La página lee un feed normalizado que puede alimentarse con APIs, RSS, una base de datos o webhooks, y lo vuelve a consultar cada ${CONFIG.refreshMinutes} minutos sin recargar. Un proceso automático consulta las fuentes varias veces por día; el encabezado muestra la hora de la última actualización. Las notas marcadas como «Automática» provienen directamente del feed de la fuente y no tienen revisión editorial.</p>`]
@@ -1310,7 +1320,10 @@ PAGES.privacidad = ['Política de privacidad', `
   ${hasNewsletter ? `<h2>Newsletter</h2><p>Si te suscribís, tu correo se guarda en MailerLite, el servicio que usamos para enviar el newsletter. Solo lo usamos para mandarte el boletín y podés darte de baja en cualquier momento con el enlace que aparece en cada envío.</p>` : ''}
   <h2>Enlaces externos</h2>
   <p>Al seguir un enlace a una fuente externa, rige la política de privacidad de ese sitio.</p>
-  ${mail ? `<h2>Consultas</h2><p>Por cualquier consulta sobre tus datos escribinos a ${mailLink}.</p>` : ''}`];
+  ${resp.nombre ? `<h2>Responsable</h2><p>El responsable del sitio y de los datos que se mencionan en esta política es ${esc(resp.nombre)}${mail ? `, con domicilio electrónico en ${mailLink}` : ''}.</p>` : ''}
+  <h2>Tus derechos</h2>
+  <p>Podés pedir acceso, rectificación o supresión de tus datos${mail ? ` escribiendo a ${mailLink}` : ''}. El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la Ley N° 25.326.</p>
+  <p>La AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley N° 25.326, tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales.</p>`];
 
 /* =====================================================================
    NEWSLETTER (MailerLite u otro servicio, configurado en site.json)

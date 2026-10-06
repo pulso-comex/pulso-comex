@@ -59,7 +59,7 @@ Sumá un bloque a `sources.json`:
 - `min_relevance`: 0 acepta todo; 1 o más exige palabras de comercio exterior (útil en medios generales).
 - `fetch_og`: busca la imagen en la página original cuando el RSS no la trae.
 - `aggregator: true` y `max_new`: para Google Noticias (toma el medio real de cada nota y limita cuántas notas suma por corrida).
-- `use_source_images: false`: no usar las imágenes de esa fuente (queda la foto de archivo).
+- `use_source_images: true`: usar las imágenes de esa fuente. **Desactivado por defecto**: activalo solo si el medio lo autorizó por escrito, y cambiá también `USE_SOURCE_IMAGES` en `scripts/build_pages.py` y `useSourceImages` en `assets/app.js`.
 
 ### Notas curadas a mano
 
@@ -82,7 +82,7 @@ Las siglas y los términos técnicos de las notas curadas se explican solos con 
 
 - No se inventan noticias: cada nota automática es un enlace atribuido a su fuente, con la fecha que informa la fuente (o la de la primera vez que se vio, si no la informa).
 - Las notas automáticas llevan `noindex` y no van al sitemap, porque solo resumen y enlazan contenido ajeno; indexarlas en masa puede perjudicar al sitio en Google. Para cambiarlo, poné `INDEX_AUTOMATIC = True` en `scripts/build_pages.py` y `indexAutomatic: true` en `assets/app.js`.
-- Las imágenes de las fuentes se muestran enlazadas a su servidor (no se copian), con crédito y link a la nota original. Si una fuente lo objeta, desactivalas con `use_source_images: false`.
+- Las imágenes de los medios **no se muestran**: aunque estén enlazadas a su servidor, mostrarlas sin licencia expone a reclamos de derecho de autor (suelen ser de agencias o fotógrafos). Las notas usan fotos de archivo de Unsplash y, las curadas, una tarjeta propia para redes (`img/og/`).
 
 ## Ver el sitio en tu computadora
 
