@@ -829,3 +829,41 @@ abbr.gl:hover,abbr.gl:focus-visible{text-decoration-color:var(--accent-ink);back
 .ex-products{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
 .ex-products li{border:1px solid var(--line-2);background:var(--surface);border-radius:999px;padding:3px 11px;font-size:14px}
 @media (max-width:640px){.ex-row{grid-template-columns:minmax(0,1fr)}.explainer{padding:16px}}
+
+/* ---------- Portada: jerarquía editorial (6 oct 2026) ---------- */
+.top{align-items:start}
+.hero .art{aspect-ratio:16/9}
+.wire li a{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+/* Qué cambia para Argentina */
+.argnow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.argnow-card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px 18px 16px 20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.argnow-card::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:3px;border-radius:0 3px 3px 0;background:linear-gradient(#74ACDF 0 33%,var(--line-2) 33% 66%,#74ACDF 66%)}
+.argnow-card .eyebrow-row{justify-content:space-between}
+.argnow-card h3{font-family:var(--f-display);font-size:18px;line-height:1.22;margin:0;font-weight:700;text-wrap:balance}
+.argnow-card h3 a{text-decoration:none}.argnow-card h3 a:hover{text-decoration:underline;text-underline-offset:3px}
+.argnow-card p{margin:0;font-size:14px;line-height:1.45;color:var(--ink-2)}
+.argnow-card p.who{font-size:13px;color:var(--muted)}
+.argnow-card .k{display:block;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.argnow-card .chg{color:var(--ink)}
+.argnow-card .flows{margin-top:auto;padding-top:4px}
+.flows.mini span{font-size:11px;padding:2px 7px}
+/* Minigráfico de tendencia en los indicadores */
+.spark{display:block;width:100%;max-width:140px;height:26px;margin:4px 0 2px;overflow:visible}
+.spark polyline{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.spark circle{fill:currentColor}
+.spark.up{color:var(--pos)}.spark.down{color:var(--neg)}.spark.flat{color:var(--neutral)}
+/* Portada sin JavaScript (lo que leen buscadores y vistas previas) */
+.pre-home h2{font-family:var(--f-display);font-size:23px;margin:28px 0 12px;border-top:2px solid var(--ink);padding-top:10px}
+.pre-home h2:first-child{margin-top:0}
+.pre-lead{display:grid;gap:18px}
+.pre-lead article{border-bottom:1px solid var(--line);padding-bottom:16px}
+.pre-lead h3{font-family:var(--f-display);font-size:20px;line-height:1.25;margin:4px 0 6px}
+.pre-lead h3 a{text-decoration:none}
+.pre-lead p{margin:0 0 6px;color:var(--ink-2)}
+.pre-lead small{color:var(--muted);font-size:12.5px}
+@media (max-width:980px){.argnow{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+@media (max-width:760px){.argnow{grid-template-columns:minmax(0,1fr)}.argnow-card h3{font-size:17px}}
+.argnow-card .eyebrow-row .note{font-size:12px}
+.argnow-card .chg,.argnow-card .who{display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+.argnow-card .chg{-webkit-line-clamp:5}.argnow-card .who{-webkit-line-clamp:3}
+.argnow-card .chg .k,.argnow-card .who .k{display:block}

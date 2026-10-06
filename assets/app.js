@@ -236,6 +236,15 @@ const adapters = {
 
 // Resumen genérico de versiones anteriores del bot (notas de Google Noticias sin descripción): no se muestra.
 const GENERIC_SUM = /^Nota publicada por .*Abrí el artículo original/i;
+// Pies y firmas que agregan algunos feeds («La entrada … se publicó primero en …», «Por Nombre @medio»).
+const WP_FOOTER = /\s*(?:\[(?:…|\.\.\.)\]\s*)?La entrada .+? se public[oó] primero en .+?\.?\s*$/s;
+const BYLINE_RX = /^(?:Por\s+[^@\n]{2,60}?\s+@\w+\s*|Por\s+Redacci[oó]n\s*[|:–-]?\s*)/i;
+function cleanSummary(t){
+  let s = String(t || '').trim().replace(BYLINE_RX, '').trim();
+  const cut = s.replace(WP_FOOTER, '').trim();
+  if (cut !== s) s = cut ? cut.replace(/[\s,;:]+$/, '') + (/[.…!?]$/.test(cut) ? '' : '…') : '';
+  return GENERIC_SUM.test(s) || s.length < 40 ? '' : s;
+}
 const sumP = (it, cls = '', txt = it.summary) => txt ? `<p${cls ? ` class="${cls}"` : ''}>${hl(txt)}</p>` : '';
 const alsoChip = it => it.also && it.also.length ? `<span class="dot"></span><span class="also" title="${esc('También en: ' + it.also.map(s => s.name).join(', '))}">+${it.also.length} ${it.also.length === 1 ? 'medio' : 'medios'}</span>` : '';
 function normalize(raw){
@@ -246,7 +255,7 @@ function normalize(raw){
   const kind = KINDS[raw.kind] ? raw.kind : (norm(label) === 'analisis' ? 'analisis' : 'noticia');
   return {
     id: raw.id || slug(raw.title).slice(0,80), date: raw.date, datetime: raw.datetime || null, updated: raw.updated || null,
-    title: raw.title, summary: GENERIC_SUM.test(raw.summary || '') ? '' : (raw.summary || ''), body: raw.body || [], keyData: raw.keyData || [],
+    title: raw.title, summary: raw.label === 'Automática' ? cleanSummary(raw.summary) : (raw.summary || ''), body: raw.body || [], keyData: raw.keyData || [],
     topics: (raw.topics || []).filter(t => TOPICS.includes(t)), countries: raw.countries || [], tags: raw.tags || [],
     visual: raw.visual || 'globe', impact: Math.min(3, Math.max(1, raw.impact || 1)), kind, label,
     breaking: !!raw.breaking, affectsArgentina: !!raw.affectsArgentina, argentinaNote: raw.argentinaNote || '', argentinaImpact: raw.argentinaImpact || null,
@@ -259,7 +268,8 @@ function normalizeIndicator(d){
   if (!d || !d.label) return null;
   const has = d.value !== null && d.value !== undefined && String(d.value).trim() !== '';
   return { id: d.id || slug(d.label), label: d.label, value: has ? String(d.value) : null, change: d.change || '', trend: d.trend || 'flat',
-    period: d.period || '', source: d.source || '', url: d.url || '', group: d.group || 'Otros', pending: d.pending || '' };
+    period: d.period || '', source: d.source || '', url: d.url || '', group: d.group || 'Otros', pending: d.pending || '',
+    history: Array.isArray(d.history) ? d.history.filter(p => Array.isArray(p) && Number.isFinite(p[1])) : [] };
 }
 
 async function loadFeeds(){
@@ -305,6 +315,7 @@ const byScore = list => [...list].sort((a,b) => score(b).total - score(a).total 
 const byDate = list => [...list].sort((a,b) => itemDate(b) - itemDate(a));
 const isBreaking = it => it.breaking && dayDiff(it) <= CONFIG.breakingWindowDays;
 const isIntl = it => it.countries.some(c => c !== 'Argentina');
+const isAuto = it => it.label === 'Automática';
 
 function regionsOf(it){
   const set = new Set();
@@ -592,13 +603,31 @@ function chronoList(list){
   }
   return `<ul class="list">${out}</ul>`;
 }
+// Serie del indicador: la guardada por scripts/update_indicators.py o, para el INDEC, los últimos 12 meses de data/trade.json.
+const TRADE_SERIES = { 'arg-expo': m => m.expo, 'arg-impo': m => m.impo, 'arg-saldo': m => m.expo - m.impo };
+function seriesOf(d){
+  if (d.history?.length >= 3) return d.history.map(p => p[1]);
+  const f = TRADE_SERIES[d.id], mo = state.trade?.monthly;
+  if (f && Array.isArray(mo) && mo.length >= 3) return mo.slice(-12).map(f).filter(Number.isFinite);
+  return [];
+}
+function spark(d){
+  const v = seriesOf(d); if (v.length < 3) return '';
+  const W = 120, H = 30, min = Math.min(...v), max = Math.max(...v), span = max - min || 1;
+  const pts = v.map((y, i) => [(i / (v.length - 1)) * W, H - 3 - ((y - min) / span) * (H - 6)]);
+  const line = pts.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' ');
+  const [lx, ly] = pts[pts.length - 1];
+  const dir = v[v.length - 1] > v[0] ? 'up' : v[v.length - 1] < v[0] ? 'down' : 'flat';
+  const n = d.history?.length >= 3 ? `${v.length} datos` : `${v.length} meses`;
+  return `<svg class="spark ${dir}" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Tendencia de los últimos ${n}"><polyline points="${line}"/><circle cx="${lx.toFixed(1)}" cy="${ly.toFixed(1)}" r="2.6"/></svg>`;
+}
 function indicatorCard(d, tag = 'a'){
   const arrow = d.trend === 'up' ? '▲' : d.trend === 'down' ? '▼' : '';
   const dir = d.trend === 'up' ? 'up' : d.trend === 'down' ? 'down' : 'flat';
   const value = d.value
     ? `<span class="v">${esc(d.value)}</span>${d.change ? `<span class="c ${dir}"><span aria-hidden="true">${arrow}</span> ${esc(d.change)}<span class="sr">${dir === 'up' ? ' (sube)' : dir === 'down' ? ' (baja)' : ''}</span></span>` : ''}`
     : `<span class="v na">Sin datos disponibles</span><span class="c flat">${esc(d.pending || 'Pendiente de conexión')}</span>`;
-  const body = `<span class="l">${esc(d.label)}</span>${value}<span class="p">${esc(d.period || '—')}</span><span class="s">Fuente: ${esc(d.source || 'sin fuente')}</span>`;
+  const body = `<span class="l">${esc(d.label)}</span>${value}${d.value ? spark(d) : ''}<span class="p">${esc(d.period || '—')}</span><span class="s">Fuente: ${esc(d.source || 'sin fuente')}</span>`;
   return d.url && tag === 'a' ? `<a class="ind-card" href="${esc(d.url)}" target="_blank" rel="noopener noreferrer">${body}</a>` : `<div class="ind-card">${body}</div>`;
 }
 const tickerItem = d => {
@@ -713,12 +742,26 @@ function renderHome(){
     return;
   }
   const ranked = byScore(items);
-  const hero = ranked[0];
-  const featured = ranked.slice(1, 7);
-  const wire = items.slice(0, 6);
-  const arItems = items.filter(i => i.topics.includes('Argentina') || i.affectsArgentina).slice(0, 4);
+  // Jerarquía editorial: las notas curadas (verificadas y redactadas por el sitio) van al frente;
+  // las automáticas alimentan «Al minuto» y «Últimas noticias».
+  const curated = items.filter(i => !isAuto(i));
+  const rankedCur = byScore(curated.filter(i => dayDiff(i) <= 10));
+  const hero = rankedCur[0] || ranked[0];
+  const used = new Set([hero.id]);
+  const argNow = byDate(curated.filter(i => !used.has(i.id) && i.affectsArgentina && i.argentinaImpact?.change && dayDiff(i) <= 10)).slice(0, 3);
+  if (argNow.length < 2) argNow.length = 0;
+  argNow.forEach(i => used.add(i.id));
+  const featured = [...rankedCur, ...byScore(curated), ...ranked.filter(i => isAuto(i) && i.summary)]
+    .filter((i, n, a) => !used.has(i.id) && a.indexOf(i) === n).slice(0, 6);
+  featured.forEach(i => used.add(i.id));
+  const perSource = new Map();
+  const wire = items.filter(i => i.id !== hero.id && (perSource.set(i.primary.name, (perSource.get(i.primary.name) || 0) + 1).get(i.primary.name) <= 2)).slice(0, 6);
+  const arItems = [...byDate(curated.filter(i => i.affectsArgentina && !used.has(i.id))),
+    ...items.filter(i => isAuto(i) && i.topics.includes('Argentina') && i.summary)].slice(0, 4);
   const arInd = ['arg-expo','arg-impo','arg-saldo'].map(id => state.indicators.find(d => d.id === id)).filter(Boolean);
-  const mainInd = state.indicators.filter(d => d.value).slice(0, 8);
+  const PRIO = ['tc-mayorista','soja','brent','wci','arg-saldo','arg-expo','maiz','iata'];
+  const mainInd = [...PRIO.map(id => state.indicators.find(d => d.id === id)), ...state.indicators]
+    .filter((d, n, a) => d && d.value && a.indexOf(d) === n).slice(0, 8);
   const latest = items.slice(0, state.listCount);
   const sc = score(hero);
   const forYou = prefs.topics.length ? items.filter(i => i.topics.some(t => prefs.topics.includes(t))).slice(0, 4) : [];
@@ -753,6 +796,19 @@ function renderHome(){
     </section>
   </section>
 
+  ${argNow.length ? `<section class="sec" aria-labelledby="h-argnow">
+    <div class="sec-h"><h2 id="h-argnow">Qué cambia para Argentina</h2><a class="more-link" href="${filterHash({ arg:'1' }, 'fecha')}">Todas con impacto local →</a></div>
+    <div class="argnow">${argNow.map(it => { const ai = it.argentinaImpact; const fl = ai.flows || {};
+      const chips = [['importaciones','Importación'],['exportaciones','Exportación'],['logistica','Logística'],['aranceles','Aranceles']].filter(([k]) => fl[k]);
+      return `<article class="argnow-card">
+        <div class="eyebrow-row">${eyebrow(it)}<span class="note" data-rel="${esc(it.id)}">${esc(relTime(it))}</span></div>
+        <h3><a href="${esc(articleHref(it))}">${esc(it.title)}</a></h3>
+        <p class="chg"><span class="k">Qué cambia</span>${esc(ai.change)}</p>
+        ${ai.who ? `<p class="who"><span class="k">A quién afecta</span>${esc(ai.who)}</p>` : ''}
+        ${chips.length ? `<div class="flows mini" aria-label="Áreas alcanzadas">${chips.map(([, l]) => `<span class="on">${l}</span>`).join('')}</div>` : ''}
+      </article>`; }).join('')}</div>
+  </section>` : ''}
+
   ${forYou.length ? `<section class="sec" aria-labelledby="h-you">
     <div class="sec-h"><h2 id="h-you">Para vos</h2><p>Según tus temas: ${esc(prefs.topics.slice(0,4).join(', '))}${prefs.topics.length>4?'…':''} · <button class="btn sm" type="button" data-open-prefs>Editar</button></p></div>
     <div class="cards">${forYou.slice(0,3).map(card).join('')}</div>
@@ -770,7 +826,7 @@ function renderHome(){
   </section>` : ''}
 
   <section class="sec" aria-labelledby="h-dest">
-    <div class="sec-h"><h2 id="h-dest">Noticias destacadas</h2><p>Ordenadas por relevancia editorial</p></div>
+    <div class="sec-h"><h2 id="h-dest">Noticias destacadas</h2><p>Verificadas por la redacción · ordenadas por relevancia</p></div>
     <div class="cards">${featured.map(card).join('')}</div>
   </section>
 
@@ -1007,7 +1063,9 @@ function renderArticle(it){
   $('#saveBtn').onclick = () => toggleSave(it.id);
   $('#copyBtn').onclick = () => copy(url, 'Enlace copiado');
   $('#nativeShare') && ($('#nativeShare').onclick = () => navigator.share({ title: it.title, text: it.summary || it.title, url }).catch(() => {}));
-  const img = new URL(photoUrl(photoFor(it), 1200), CONFIG.canonicalBase || location.origin).href;
+  // Si la página de la nota trae su tarjeta para redes (img/og/), se conserva; si no, la foto.
+  const ogNow = document.querySelector('meta[property="og:image"]')?.getAttribute('content') || '';
+  const img = ogNow.includes('/img/og/' + it.id + '.png') ? ogNow : new URL(photoUrl(photoFor(it), 1200), CONFIG.canonicalBase || location.origin).href;
   setSEO({ title:`${it.title} · ${CONFIG.siteName}`, desc: it.summary || it.title, image: img, url, type:'article', noindex: it.label === 'Automática' && !CONFIG.indexAutomatic,
     crumbs: [['Noticias','#inicio'], sec ? [sec.label, '#tema-' + sec.slug] : [category(it)], [it.title]],
     ld: { '@type':'NewsArticle', headline: it.title, description: it.summary || it.title, image:[img], datePublished: it.datetime || it.date,
@@ -1578,11 +1636,11 @@ function renderAside(){
   boxes.push(`<section class="box"><h2>Temas en tendencia <small>últimos 14 días</small></h2>
     <div class="trend">${trends.map((t,i) => `<button type="button" class="${i<3?'hot':''}" data-${t.type}="${esc(t.label)}">${t.type==='tag'?'#':''}${esc(t.label)}<span class="n">${t.n}</span></button>`).join('')}</div>
     <p class="note" style="margin-top:10px">Según la frecuencia en las noticias recientes y tus lecturas en este navegador.</p></section>`);
-  boxes.push(`<section class="box"><h2>Más leídas <small>en este navegador</small></h2>
-    ${mostRead.length ? `<ol class="mini num">${mostRead.map(([it,n]) => `<li><span><a href="${esc(articleHref(it))}">${esc(it.title)}</a><span class="sub">${plural(n,'lectura')}</span></span></li>`).join('')}</ol>`
-      : `<p class="note">Cuando abras noticias, las más consultadas aparecerán acá. Con un servicio de analítica conectado, este bloque muestra las más leídas por todo el público.</p>`}</section>`);
-  boxes.push(`<section class="box"><h2>Guardadas <small>${saved.length}</small></h2>
-    ${saved.length ? `<ol class="mini">${saved.slice(0,5).map(it => `<li><a href="${esc(articleHref(it))}">${esc(it.title)}</a></li>`).join('')}</ol><a class="foot-link" href="#guardadas">Ver todas →</a>` : `<p class="note">Usá «Guardar noticia» dentro de cada nota para leerla más tarde.</p>`}</section>`);
+  // «Más leídas» y «Guardadas» solo aparecen cuando tienen algo que mostrar (sin cajas vacías).
+  if (mostRead.length >= 2) boxes.push(`<section class="box"><h2>Tus más leídas <small>en este navegador</small></h2>
+    <ol class="mini num">${mostRead.map(([it,n]) => `<li><span><a href="${esc(articleHref(it))}">${esc(it.title)}</a><span class="sub">${plural(n,'lectura')}</span></span></li>`).join('')}</ol></section>`);
+  if (saved.length) boxes.push(`<section class="box"><h2>Guardadas <small>${saved.length}</small></h2>
+    <ol class="mini">${saved.slice(0,5).map(it => `<li><a href="${esc(articleHref(it))}">${esc(it.title)}</a></li>`).join('')}</ol><a class="foot-link" href="#guardadas">Ver todas →</a></section>`);
   if (view === 'home' || view === 'article') boxes.push(`<section class="box"><h2>Fuentes confiables</h2>
     <ul class="srcdir">${SOURCE_DIRECTORY.flatMap(g => g.items).filter(([n]) => /INDEC|ARCA|OMC|OMA|IATA|Mercosur|Comisión Europea/.test(n)).map(([n,u]) => `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(n)}</a></li>`).join('')}</ul>
     <a class="foot-link" href="#fuentes">Directorio completo →</a></section>`);
@@ -1594,6 +1652,7 @@ function renderAside(){
 /* =====================================================================
    13. ESTRUCTURA FIJA (encabezado, navegación, ticker, última hora, pie)
    ===================================================================== */
+const FOOT_FEED = 'Cada mañana la redacción verifica y resume las noticias más relevantes contra su fuente original. Además, cinco veces por día se suman titulares de medios especializados y se actualizan los indicadores de mercado.';
 function renderStatus(){
   const now = new Date();
   $('#today').textContent = cap(fmtDay.format(now));
@@ -1609,7 +1668,7 @@ function renderStatus(){
   $('#liveBadge').title = state.live ? `Feed automático: las fuentes se consultan varias veces por día y la página lo revisa cada ${CONFIG.refreshMinutes} minutos.` : `Feed curado. Se revisa cada ${CONFIG.refreshMinutes} minutos.`;
   const week = state.items.filter(i => dayDiff(i) <= 7).length, today = state.items.filter(i => dayDiff(i) === 0).length;
   $('#countLine').innerHTML = `<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><b>${state.items.length}</b>&nbsp;noticias · <b>${week}</b>&nbsp;en 7 días${today ? ` · <b>${today}</b>&nbsp;hoy` : ''}`;
-  $('#footFeed').textContent = `Las noticias se actualizan automáticamente mediante un feed normalizado y GitHub Actions. Las fuentes se consultan periódicamente y los artículos nuevos se incorporan sin editar el HTML. La página consulta el feed cada ${CONFIG.refreshMinutes} minutos y suma lo nuevo sin recargar.`;
+  $('#footFeed').textContent = FOOT_FEED;
 }
 function currentNav(){
   if (state.view === 'home') return 'inicio';

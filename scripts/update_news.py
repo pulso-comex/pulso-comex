@@ -143,7 +143,8 @@ EXCLUDE = [
     r'notari', r'conservador(es)? de bienes', r'honorarios', r'colegio de (abogados|escribanos|medicos)',
     r'arancel(es)? (universitari|medic|profesional|judicial|notarial|escolar|de (los )?(medicos|abogados|escribanos))',
     r'\bbuen fin\b', r'\binapam\b', r'\bhot sale\b', r'black friday', r'cyber ?monday',
-    r'crucer', r'turismo receptivo',
+    r'crucer', r'turismo receptivo', r'\bviking (mira|\w+ cruise)', r'royal caribbean', r'carnival (cruise|corporation)', r'norwegian cruise',
+    r'\baccidente (de transito|vial|con un)\b', r'empotrad', r'\batropell',
     r'\b(fallec\w*|muere|murio|cadaver|homicid\w*|asesina\w*)\b', r'(hallan|encuentran) muert[oa]', r'(hallan|localizado|rescatan) (el )?cuerpo', r'en memoria de', r'hasta siempre',
     r'\bfutbol', r'\bhoroscopo', r'\bquiniela', r'\bloteria',
 ]
@@ -395,13 +396,18 @@ def gnews_resolve(url: str) -> str:
 
 
 # ---------------------------------------------------------------- limpieza de textos
-BYLINE = re.compile(r'^(Por\s+(Redacci[oó]n|Equipo|Staff)\s+[^@]{1,60}?\s+@\w+\s*|Por\s+Redacci[oó]n\s*[|:–-]?\s*)', re.I)
+BYLINE = re.compile(r'^(Por\s+[^@\n]{2,60}?\s+@\w+\s*|Por\s+Redacci[oó]n\s*[|:–-]?\s*)', re.I)
+# Pie que agregan los feeds de WordPress: «La entrada <título> se publicó primero en <medio>.»
+WP_FOOTER = re.compile(r'\s*(?:\[(?:…|\.\.\.)\]\s*)?La entrada .+? se public[oó] primero en .+?\.?\s*$', re.S)
 GENERIC_SUMMARY = re.compile(r'^Nota publicada por .*Abrí el artículo original', re.I)
 
 
 def clean_summary(s: str) -> str:
     s = BYLINE.sub('', (s or '').strip()).strip()
-    return '' if GENERIC_SUMMARY.match(s) else s
+    cut = WP_FOOTER.sub('', s).strip()
+    if cut != s:
+        s = cut.rstrip(' ,;:') + ('' if cut.endswith(('.', '…', '!', '?')) else '…') if cut else ''
+    return '' if GENERIC_SUMMARY.match(s) or len(s) < 40 else s
 
 
 def excluded(text: str) -> bool:

@@ -28,7 +28,8 @@ NEWS = ROOT / 'data' / 'news.json'
 UA = 'Mozilla/5.0 (compatible; PulsoComexBot/1.1; +https://pulso-comex.github.io)'
 MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
 
-BCRA_URL = 'https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/5?limit=10'
+BCRA_URL = 'https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/5?limit=40'
+HISTORY_MAX = 30   # puntos guardados por indicador para el minigráfico de tendencia
 BCRA_PAGE = 'https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp'
 BCR_URL = 'https://www.cac.bcr.com.ar/es/precios-de-pizarra'
 FRED_CSV = 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU'
@@ -77,7 +78,8 @@ def bcra_tc() -> dict:
         raise ValueError(f'valor fuera de rango: {v}')
     return {'value': f'$ {num_es(v, 2)}', 'period': f'Com. A 3500 · {day_es(d)}', 'obsDate': d.isoformat(),
             **change_fields(v, float(prev['valor']) if prev else None, 'vs. día hábil anterior'),
-            'source': 'BCRA', 'url': BCRA_PAGE, 'raw': v}
+            'source': 'BCRA', 'url': BCRA_PAGE, 'num': v,
+            'series': [(x['fecha'][:10], float(x['valor'])) for x in det if 10 < float(x['valor']) < 1_000_000]}
 
 
 _BCR_TEXT = {}
@@ -118,7 +120,7 @@ def bcr_price(old: dict, name: str, label: str) -> dict:
     out = {'value': f'$ {num_es(ars, 0)}/t', 'period': f'Rosario · {day_es(d)} · US$ {num_es(usd, 2)}/t' + (' (estimado)' if est else ''),
            'obsDate': d.isoformat(), **change_fields(ars, prev.get('ars'), 'vs. pizarra anterior'),
            'source': 'Bolsa de Comercio de Rosario', 'url': BCR_URL,
-           '_last': {'date': d.isoformat(), 'ars': ars}, '_prev': prev or None}
+           '_last': {'date': d.isoformat(), 'ars': ars}, '_prev': prev or None, 'num': ars}
     return out
 
 
@@ -136,7 +138,8 @@ def fred_brent() -> dict:
     if not 5 < v < 500:
         raise ValueError(f'valor fuera de rango: {v}')
     return {'value': f'USD {num_es(v, 2)}', 'period': f'Barril, spot · {day_es(d)}', 'obsDate': d.isoformat(),
-            **change_fields(v, pv, 'vs. día anterior'), 'source': 'EIA (vía FRED)', 'url': FRED_PAGE}
+            **change_fields(v, pv, 'vs. día anterior'), 'source': 'EIA (vía FRED)', 'url': FRED_PAGE,
+            'num': v, 'series': [(x.isoformat(), y) for x, y in obs[-HISTORY_MAX:]]}
 
 
 SOURCES = {
@@ -146,6 +149,18 @@ SOURCES = {
     'trigo': ('Trigo · precio pizarra Rosario', bcr_grain(r'Trigo', 'el trigo')),
     'brent': ('Petróleo Brent', lambda old: fred_brent()),
 }
+
+
+def merge_history(old: dict, new: dict) -> None:
+    """Serie corta [[fecha, valor], …] para el minigráfico: solo datos publicados por la fuente, uno por fecha."""
+    pts = {d: v for d, v in (old.get('history') or []) if isinstance(d, str) and isinstance(v, (int, float))}
+    for d, v in new.pop('series', None) or []:
+        pts[d] = round(v, 4)
+    num = new.pop('num', None)
+    if num is not None and new.get('obsDate'):
+        pts[new['obsDate']] = round(num, 4)
+    if pts:
+        old['history'] = [[d, pts[d]] for d in sorted(pts)][-HISTORY_MAX:]
 
 
 def main():
@@ -164,7 +179,7 @@ def main():
         except Exception as e:  # una fuente caída no frena a las demás ni borra el último dato
             report.append((ind_id, False, str(e)[:160]))
             continue
-        new.pop('raw', None)
+        merge_history(old, new)
         old.update({k: v for k, v in new.items() if v is not None or k == '_prev'})
         if old.get('_prev') is None:
             old.pop('_prev', None)

@@ -29,6 +29,11 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from taxonomy import Taxonomy, norm  # noqa: E402
+try:   # imágenes para redes de las notas curadas (requiere Pillow; sin él se usa la foto de archivo)
+    import og_images  # noqa: E402
+except ImportError as e:
+    og_images = None
+    print(f'Aviso: sin imágenes para redes ({e}). Instalá Pillow para generarlas.')
 
 ROOT = Path(__file__).resolve().parents[1]
 # Dirección pública del sitio. El workflow la detecta sola desde GitHub Pages (github.io o dominio propio).
@@ -90,6 +95,7 @@ def load_site_config():
 
 
 SITECFG = load_site_config()
+STATUS = {}   # textos fijos que la página muestra antes de que cargue el JavaScript (fecha del feed, año)
 
 
 def parse_date(v):
@@ -299,12 +305,36 @@ def render(template, *, meta, prerender, feed, bank, version, base='', sitedata=
     a, b = page.index(start), page.index(end)
     page = page[:a] + prerender(page[a + len(start):b]) + page[b + len(end):]
     page = pretty_links(page, base)
+    if STATUS:
+        page = (page.replace('<b id="updatedLong">—</b>', f'<b id="updatedLong">{esc(STATUS["updated"])}</b>')
+                    .replace('<span id="footUpdated">—</span>', f'<span id="footUpdated">{esc(STATUS["updated"])}</span>')
+                    .replace('<span id="year"></span>', f'<span id="year">{STATUS["year"]}</span>'))
     return (page.replace('{{PHOTO_BANK}}', json_script(bank))
                 .replace('{{SITE_DATA}}', json_script(sitedata or {}))
                 .replace('{{FEED}}', json_script(feed))
                 .replace('{{ASSET_VERSION}}', version)
                 .replace('{{BASE}}', base)
                 .replace('{{SITE_CONFIG}}', json_script(SITECFG)))
+
+
+def home_prerender(items, base=''):
+    """Portada visible sin JavaScript (buscadores y vistas previas): primero las notas curadas, después
+    los titulares automáticos, con un máximo de dos por medio para que ninguno acapare la lista."""
+    curated = [i for i in items if not is_auto(i)][:10]
+    per, auto = {}, []
+    for i in items:
+        if is_auto(i):
+            n = per[primary(i).get('name')] = per.get(primary(i).get('name'), 0) + 1
+            if n <= 2:
+                auto.append(i)
+    def lead_item(i):
+        summary = f'<p>{esc(i["summary"])}</p>' if i.get('summary') else ''
+        return (f'<article><small>{esc(category(i))} · {fmt_day(item_dt(i))}</small>'
+                f'<h3><a href="{base}noticias/{esc(i["id"])}/">{esc(i["title"])}</a></h3>{summary}'
+                f'<small>Fuente: {esc(primary(i).get("name"))}</small></article>')
+    lead = ''.join(lead_item(i) for i in curated)
+    return (f'    <div class="pre-home">\n      <h2>Noticias verificadas por la redacción</h2>\n      <div class="pre-lead">{lead}</div>\n'
+            f'      <h2>Otras noticias de comercio exterior</h2>\n      {headline_list(auto, base, 20)}\n    </div>\n')
 
 
 def headline_list(lst, base, n=30):
@@ -495,6 +525,16 @@ def main():
     tax = Taxonomy.load()
     items = sorted([i for i in news.get('items', []) if i.get('id') and i.get('title')], key=item_dt, reverse=True)
     version = hashlib.sha1((ROOT / 'assets/app.js').read_bytes() + (ROOT / 'assets/app.css').read_bytes()).hexdigest()[:10]
+    up = parse_date(news.get('updatedAt')) or NOW
+    up_local = up.astimezone(TZ)
+    meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
+    STATUS.update(updated=f'{up_local.day} {meses[up_local.month - 1]} {up_local.year}, {up_local:%H:%M} h', year=NOW.astimezone(TZ).year)
+    og_map = {}
+    if og_images:
+        try:
+            og_map = og_images.build([i for i in items if not is_auto(i)], category, SITE.split('://', 1)[-1])
+        except Exception as e:   # una falla en las imágenes no frena la publicación
+            print(f'Aviso: no se pudieron generar las imágenes para redes ({e}).')
 
     # Feed para la página: todas las curadas + las automáticas más recientes, con tope.
     curated = [i for i in items if not is_auto(i)]
@@ -507,13 +547,11 @@ def main():
          'description': 'Portal de noticias, datos y análisis sobre comercio exterior, con foco en Argentina y Latinoamérica.', 'inLanguage': 'es-AR'},
         {'@type': 'WebSite', '@id': f'{SITE}/#web', 'name': SITE_NAME, 'url': f'{SITE}/', 'inLanguage': 'es-AR', 'publisher': {'@id': f'{SITE}/#org'},
          'potentialAction': {'@type': 'SearchAction', 'target': f'{SITE}/#buscar?q={{q}}', 'query-input': 'required name=q'}}]}
-    headlines = ''.join(
-        f'<li><a href="noticias/{esc(i["id"])}/">{esc(i["title"])}</a><small>{esc(primary(i).get("name"))} · {fmt_day(item_dt(i))}</small></li>'
-        for i in items[:30])
-    noscript = f'    <noscript><h2>Últimas noticias</h2><ul class="pre-list">{headlines}</ul></noscript>\n'
+    # Feed embebido: primero las curadas recientes (así la portada arma su jerarquía antes de leer latest.json).
+    inline = sorted(curated[:INLINE_MAX // 2] + [i for i in items if is_auto(i)][:INLINE_MAX // 2], key=item_dt, reverse=True)
     home = render(template, meta=meta_block(title=HOME_TITLE, desc=HOME_DESC, url=f'{SITE}/', image=OG_DEFAULT,
                                             image_alt='Pulso Comex · Noticias de Comercio Exterior', ld=org_ld, image_size=(1200, 630)),
-                  prerender=lambda inner: inner + noscript, feed=feed_payload(news, items[:INLINE_MAX]), bank=bank, version=version,
+                  prerender=lambda inner: home_prerender(items), feed=feed_payload(news, inline), bank=bank, version=version,
                   sitedata=sitedata)
     # La portada lleva el CSS y el JS embebidos: así funciona sola, incluso abierta con doble clic
     # desde adentro del zip (Windows extrae solo ese archivo). Las páginas de notas usan /assets/.
@@ -532,10 +570,13 @@ def main():
         ids.add(it['id'])
         url = f'{SITE}/noticias/{it["id"]}/'
         img, img_alt, source_img = photo_for(it, bank)
+        share_img, share_alt, share_size = img, img_alt, None
+        if it['id'] in og_map:   # tarjeta propia para redes (título + dato clave + marca)
+            share_img, share_alt, share_size = SITE + og_map[it['id']], f'{it["title"]} · {SITE_NAME}', (1200, 630)
         p = primary(it)
         robots = 'noindex,follow' if is_auto(it) and not INDEX_AUTOMATIC else 'index,follow,max-image-preview:large'
         ld = {'@context': 'https://schema.org', '@graph': [{
-            '@type': 'NewsArticle', 'headline': it['title'][:110], 'description': it.get('summary') or it['title'], 'image': [img],
+            '@type': 'NewsArticle', 'headline': it['title'][:110], 'description': it.get('summary') or it['title'], 'image': [img] + ([share_img] if share_img != img else []),
             'datePublished': it.get('datetime') or it.get('date'), 'dateModified': it.get('updated') or it.get('datetime') or it.get('date'),
             'inLanguage': 'es-AR', 'mainEntityOfPage': url, 'articleSection': category(it),
             'keywords': ', '.join(it.get('tags', []) + it.get('topics', [])),
@@ -545,8 +586,8 @@ def main():
         }]}
         extra = '\n'.join([f'<meta property="article:published_time" content="{esc(it.get("datetime") or it.get("date"))}">',
                            f'<meta property="article:section" content="{esc(category(it))}">'])
-        meta = meta_block(title=f'{it["title"]} · {SITE_NAME}', desc=it.get('summary') or it['title'], url=url, image=img,
-                          image_alt=img_alt, og_type='article', robots=robots, ld=ld, extra=extra, base='../../')
+        meta = meta_block(title=f'{it["title"]} · {SITE_NAME}', desc=it.get('summary') or it['title'], url=url, image=share_img,
+                          image_alt=share_alt, og_type='article', robots=robots, ld=ld, extra=extra, base='../../', image_size=share_size)
         pre = prerender_article(it, img, img_alt, source_img)
         page = render(template, meta=meta, prerender=lambda inner: pre,
                       feed=feed_payload(news, [it]), bank=bank, version=version, base='../../', sitedata=sitedata)
