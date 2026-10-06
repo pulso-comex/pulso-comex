@@ -234,6 +234,10 @@ const adapters = {
   }
 };
 
+// Resumen genérico de versiones anteriores del bot (notas de Google Noticias sin descripción): no se muestra.
+const GENERIC_SUM = /^Nota publicada por .*Abrí el artículo original/i;
+const sumP = (it, cls = '', txt = it.summary) => txt ? `<p${cls ? ` class="${cls}"` : ''}>${hl(txt)}</p>` : '';
+const alsoChip = it => it.also && it.also.length ? `<span class="dot"></span><span class="also" title="${esc('También en: ' + it.also.map(s => s.name).join(', '))}">+${it.also.length} ${it.also.length === 1 ? 'medio' : 'medios'}</span>` : '';
 function normalize(raw){
   const primary = (raw.sources || []).find(s => s.primary) || (raw.sources || [])[0];
   // Verificabilidad: sin título, fecha o fuente con enlace, la noticia no se publica.
@@ -242,11 +246,11 @@ function normalize(raw){
   const kind = KINDS[raw.kind] ? raw.kind : (norm(label) === 'analisis' ? 'analisis' : 'noticia');
   return {
     id: raw.id || slug(raw.title).slice(0,80), date: raw.date, datetime: raw.datetime || null, updated: raw.updated || null,
-    title: raw.title, summary: raw.summary || '', body: raw.body || [], keyData: raw.keyData || [],
+    title: raw.title, summary: GENERIC_SUM.test(raw.summary || '') ? '' : (raw.summary || ''), body: raw.body || [], keyData: raw.keyData || [],
     topics: (raw.topics || []).filter(t => TOPICS.includes(t)), countries: raw.countries || [], tags: raw.tags || [],
     visual: raw.visual || 'globe', impact: Math.min(3, Math.max(1, raw.impact || 1)), kind, label,
     breaking: !!raw.breaking, affectsArgentina: !!raw.affectsArgentina, argentinaNote: raw.argentinaNote || '', argentinaImpact: raw.argentinaImpact || null,
-    photo: raw.photo || null, sources: raw.sources, primary,
+    photo: raw.photo || null, sources: raw.sources, primary, also: (raw.sources || []).filter(s => s.alsoIn && s.url),
     deadlines: Array.isArray(raw.deadlines) ? raw.deadlines : [], story: raw.story || '',
     explainer: raw.explainer && typeof raw.explainer === 'object' ? raw.explainer : null
   };
@@ -509,7 +513,7 @@ const srcStamp = (it, link = true) => {
   const inner = `<span class="k">Fuente</span><b>${esc(it.primary.name)}</b><span>· ${esc(shortDate(itemDate(it)))}</span>`;
   return link ? `<a class="srcstamp" href="${esc(it.primary.url)}" target="_blank" rel="noopener noreferrer" title="Abrir el artículo original en ${esc(it.primary.name)}">${inner}</a>` : `<span class="srcstamp">${inner}</span>`;
 };
-const metaLine = (it, { ago = false } = {}) => `<div class="meta">${srcStamp(it)}<span class="dot"></span><span>${esc(placeLine(it))}</span>${ago ? `<span class="dot"></span><span data-rel="${esc(it.id)}">${esc(relTime(it))}</span>` : ''}</div>`;
+const metaLine = (it, { ago = false } = {}) => `<div class="meta">${srcStamp(it)}${alsoChip(it)}<span class="dot"></span><span>${esc(placeLine(it))}</span>${ago ? `<span class="dot"></span><span data-rel="${esc(it.id)}">${esc(relTime(it))}</span>` : ''}</div>`;
 const category = it => it.topics.find(t => t !== 'Argentina') || it.topics[0] || 'Comercio exterior';
 const eyebrow = it => `<span class="eyebrow">${esc(category(it))}</span>`;
 const kindBadge = (it, always = false) => (always || it.kind !== 'noticia') ? `<span class="kind ${esc(it.kind)}">${esc(KINDS[it.kind])}</span>` : '';
@@ -563,7 +567,7 @@ function card(it){
     <a href="${esc(articleHref(it))}" class="art" tabindex="-1" aria-hidden="true">${media(it, 640)}</a>
     ${headRow(it)}
     <h3><a href="${esc(articleHref(it))}">${hl(it.title)}</a></h3>
-    <p>${hl(it.summary)}</p>
+    ${sumP(it)}
     ${metaLine(it, { ago: true })}
   </article>`;
 }
@@ -574,7 +578,7 @@ function listItem(it){
     <div style="min-width:0">
       <div class="eyebrow-row"><span class="when${d<=1?' fresh':''}" data-rel="${esc(it.id)}">${esc(relTime(it))}${it.datetime ? ' · ' + esc(timeLabel(it)) : ''}</span>${eyebrow(it)}${kindBadge(it)}${newBadge(it)}${argFlag(it)}</div>
       <h3><a href="${esc(articleHref(it))}">${hl(it.title)}</a></h3>
-      <p>${hl(it.summary)}</p>
+      ${sumP(it)}
       <div class="bottom">${metaLine(it)}${tagRow(it)}</div>
     </div>
   </li>`;
@@ -728,7 +732,7 @@ function renderHome(){
       <div class="hero-body">
         <div class="eyebrow-row"><span class="eyebrow">Noticia principal · ${esc(category(hero))}</span>${kindBadge(hero)}${argFlag(hero)}</div>
         <h2 id="h-hero"><a href="${esc(articleHref(hero))}">${esc(hero.title)}</a></h2>
-        <p class="sum">${esc(hero.summary)}</p>
+        ${hero.summary ? `<p class="sum">${esc(hero.summary)}</p>` : ''}
         <dl class="facts">
           <div><dt>Fecha</dt><dd>${esc(shortDate(itemDate(hero)))}${hero.datetime ? ' · ' + esc(timeLabel(hero)) : ''}</dd></div>
           <div><dt>Fuente</dt><dd><a href="${esc(hero.primary.url)}" target="_blank" rel="noopener noreferrer">${esc(hero.primary.name)}</a></dd></div>
@@ -787,7 +791,7 @@ function renderHome(){
       ${arInd.length ? `<div class="ar-kpis">${arInd.map(d => indicatorCard(d)).join('')}</div>` : ''}
       <div class="ar-rows">${arItems.map(it => `<div class="ar-row">
         <div style="min-width:0"><div class="eyebrow-row">${eyebrow(it)}${isIntl(it) && it.affectsArgentina ? '<span class="flag-ar">Internacional con impacto local</span>' : ''}</div>
-        <h3><a href="${esc(articleHref(it))}">${esc(it.title)}</a></h3><p>${esc(it.argentinaNote || it.summary)}</p></div>
+        <h3><a href="${esc(articleHref(it))}">${esc(it.title)}</a></h3>${(it.argentinaNote || it.summary) ? `<p>${esc(it.argentinaNote || it.summary)}</p>` : ''}</div>
         <span class="note" data-rel="${esc(it.id)}">${esc(relTime(it))}</span>
       </div>`).join('')}</div>
     </div>
@@ -843,7 +847,7 @@ function renderSection(){
     const lead = byScore(list)[0], rest = list.filter(i => i !== lead);
     $('#main').innerHTML = sectionHeader(s, list.length, `<a class="btn sm" href="${filterHash({ section: s.slug, date:'7' })}">Últimos 7 días</a>`) + `
       <article class="hero" style="margin-bottom:30px"><a href="${esc(articleHref(lead))}" class="art" tabindex="-1" aria-hidden="true">${media(lead, 1100, { eager:true })}</a>
-        <div class="hero-body">${headRow(lead)}<h2><a href="${esc(articleHref(lead))}">${esc(lead.title)}</a></h2><p class="sum">${esc(lead.summary)}</p>${metaLine(lead, { ago:true })}</div></article>
+        <div class="hero-body">${headRow(lead)}<h2><a href="${esc(articleHref(lead))}">${esc(lead.title)}</a></h2>${lead.summary ? `<p class="sum">${esc(lead.summary)}</p>` : ''}${metaLine(lead, { ago:true })}</div></article>
       ${rest.length ? `<div class="sec-h"><h2>Más en ${esc(s.title)}</h2><p>Orden cronológico</p></div>${chronoList(rest.slice(0, state.listCount * 3))}${rest.length > state.listCount * 3 ? `<div class="more"><button class="btn" type="button" id="loadMore">Cargar más (${rest.length - state.listCount * 3})</button></div>` : ''}` : ''}`;
   }
   const g = groupOf(s.slug);
@@ -960,7 +964,7 @@ function renderArticle(it){
     <div class="article-top"><a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>${eyebrow(it)}${kindBadge(it, true)}${newBadge(it)}${argFlag(it)}
       <div class="textsize" role="group" aria-label="Tamaño del texto">${[['1','A','Texto normal'],['1.12','A','Texto grande'],['1.25','A','Texto muy grande']].map(([v,l,a]) => `<button type="button" data-size="${v}" aria-label="${a}" aria-pressed="${prefs.size===v}">${l}</button>`).join('')}</div></div>
     <h1 itemprop="headline">${esc(it.title)}</h1>
-    <p class="lede" itemprop="description">${esc(it.summary)}</p>
+    ${it.summary ? `<p class="lede" itemprop="description">${esc(it.summary)}</p>` : ''}
     <div class="srcbar">
       <a class="src-main" href="${esc(it.primary.url)}" target="_blank" rel="noopener noreferrer"><span class="k">Fuente</span><b>${esc(it.primary.name)} ${I.ext}</b><span class="note">${esc(it.primary.type || '')}</span></a>
       ${it.primary.author ? `<div><dt>Autor</dt><dd>${esc(it.primary.author)}</dd></div>` : ''}
@@ -975,7 +979,8 @@ function renderArticle(it){
     <p class="credit" id="photoCredit">${photoCredit(photoFor(it))}</p>
     ${explainerBlock(it, gl)}
     ${impactBlock(it)}
-    <div class="prose" itemprop="articleBody">${it.body.length ? it.body.map(p => `<p>${gl(p)}</p>`).join('') : `<p>${gl(it.summary)}</p>`}</div>
+    <div class="prose" itemprop="articleBody">${it.body.length ? it.body.map(p => `<p>${gl(p)}</p>`).join('') : it.summary ? `<p>${gl(it.summary)}</p>` : `<p class="note no-sum">Esta nota llegó por un agregador sin resumen: solo mostramos el titular. El texto completo está en ${esc(it.primary.name)}.</p>`}</div>
+    ${it.also.length ? `<section class="srcs also-in" aria-labelledby="h-also"><h2 class="panel-h" id="h-also">También publicaron esta noticia</h2><ul>${it.also.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>${s.title ? ` <span class="t">· ${esc(s.title)}</span>` : ''}</li>`).join('')}</ul></section>` : ''}
     ${it.keyData.length ? `<section class="keydata" aria-labelledby="h-key"><h2 class="panel-h" id="h-key">Datos clave</h2><table>${it.keyData.map(([k,v]) => `<tr><td>${gl(k)}</td><td>${gl(v)}</td></tr>`).join('')}</table></section>` : ''}
     ${dls.length ? `<section class="keydata dl-box" aria-labelledby="h-dl"><h2 class="panel-h" id="h-dl">Fechas clave</h2>${deadlineListHtml(dls, { link:false })}<a class="foot-link" href="#agenda">Ver la agenda completa →</a></section>` : ''}
     ${storyBox(it)}
@@ -993,7 +998,7 @@ function renderArticle(it){
       <a href="https://twitter.com/intent/tweet?text=${t}&url=${u}" target="_blank" rel="noopener noreferrer">X</a>
       <a href="https://www.facebook.com/sharer/sharer.php?u=${u}" target="_blank" rel="noopener noreferrer">Facebook</a>
     </div>
-    <section class="srcs" aria-labelledby="h-srcs"><h2 class="panel-h" id="h-srcs">Fuentes consultadas</h2><ol>${it.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>${s.author ? `, ${esc(s.author)}` : ''} <span class="t">· ${esc(s.type || 'Fuente')}${s.primary ? ' · fuente principal' : ''}</span></li>`).join('')}</ol></section>
+    <section class="srcs" aria-labelledby="h-srcs"><h2 class="panel-h" id="h-srcs">Fuentes consultadas</h2><ol>${it.sources.filter(s => !s.alsoIn).map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>${s.author ? `, ${esc(s.author)}` : ''} <span class="t">· ${esc(s.type || 'Fuente')}${s.primary ? ' · fuente principal' : ''}</span></li>`).join('')}</ol></section>
     <div class="tags-block"><span class="note">Etiquetas</span><div class="tagrow" style="margin-top:6px">${[...it.tags.map(x => `<button type="button" data-tag="${esc(x)}">#${esc(x)}</button>`), ...it.topics.map(x => `<button type="button" data-topic="${esc(x)}">${esc(x)}</button>`), ...it.countries.filter(c=>c!=='Global').map(c => `<button type="button" data-country="${esc(c)}">${esc(c)}</button>`)].join('')}</div></div>
     <p class="disclaimer">${it.kind === 'analisis' ? 'Este contenido resume un <b>análisis de terceros</b>: las interpretaciones pertenecen a la fuente citada, no a la redacción. ' : ''}Resumen elaborado por Pulso Comex o, cuando se indique, información normalizada desde un feed público. Para el texto completo y oficial, consultá el artículo original. Cuando la imagen proviene de la fuente se indica su origen; las fotos de archivo son ilustrativas y no corresponden al hecho.</p>
     ${newsletterBox('band')}
@@ -1001,11 +1006,11 @@ function renderArticle(it){
   </article>`;
   $('#saveBtn').onclick = () => toggleSave(it.id);
   $('#copyBtn').onclick = () => copy(url, 'Enlace copiado');
-  $('#nativeShare') && ($('#nativeShare').onclick = () => navigator.share({ title: it.title, text: it.summary, url }).catch(() => {}));
+  $('#nativeShare') && ($('#nativeShare').onclick = () => navigator.share({ title: it.title, text: it.summary || it.title, url }).catch(() => {}));
   const img = new URL(photoUrl(photoFor(it), 1200), CONFIG.canonicalBase || location.origin).href;
-  setSEO({ title:`${it.title} · ${CONFIG.siteName}`, desc: it.summary, image: img, url, type:'article', noindex: it.label === 'Automática' && !CONFIG.indexAutomatic,
+  setSEO({ title:`${it.title} · ${CONFIG.siteName}`, desc: it.summary || it.title, image: img, url, type:'article', noindex: it.label === 'Automática' && !CONFIG.indexAutomatic,
     crumbs: [['Noticias','#inicio'], sec ? [sec.label, '#tema-' + sec.slug] : [category(it)], [it.title]],
-    ld: { '@type':'NewsArticle', headline: it.title, description: it.summary, image:[img], datePublished: it.datetime || it.date,
+    ld: { '@type':'NewsArticle', headline: it.title, description: it.summary || it.title, image:[img], datePublished: it.datetime || it.date,
       dateModified: it.updated || state.updatedAt || it.date, inLanguage:'es-AR', mainEntityOfPage: url, articleSection: category(it),
       keywords: [...it.tags, ...it.topics].join(', '), author: { '@type':'Organization', name: CONFIG.siteName + ' · Redacción' }, publisher: { '@id':'#org' },
       isBasedOn: it.sources.map(s => ({ '@type':'CreativeWork', url: s.url, publisher: { '@type':'Organization', name: s.name }, ...(s.author ? { author: { '@type':'Person', name: s.author } } : {}) })),

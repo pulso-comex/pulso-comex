@@ -237,12 +237,12 @@ def explainer_html(it):
 
 def prerender_article(it, img, img_alt, source_img):
     p = primary(it)
-    body = it.get('body') or [it.get('summary', '')]
+    body = it.get('body') or ([it['summary']] if it.get('summary') else [])
     credit = f'Imagen: {esc(p.get("name"))}' if source_img else 'Foto de archivo ilustrativa'
     return f'''    <article class="pre-article">
       <p class="pre-meta"><a href="../../">Noticias</a> · {esc(category(it))} · <time datetime="{esc(it.get('datetime') or it.get('date'))}">{fmt_day(item_dt(it))}</time></p>
       <h1>{esc(it['title'])}</h1>
-      <p class="lede">{esc(it.get('summary'))}</p>
+      {f'<p class="lede">{esc(it["summary"])}</p>' if it.get('summary') else ''}
       <p class="pre-meta">Fuente: <a href="{esc(p.get('url'))}" rel="noopener noreferrer">{esc(p.get('name'))}</a></p>
       <img src="{esc(img)}" alt="{esc(img_alt)}" width="1200" height="675"{' referrerpolicy="no-referrer"' if source_img else ''}>
       <p class="pre-meta">{credit}</p>
@@ -535,7 +535,7 @@ def main():
         p = primary(it)
         robots = 'noindex,follow' if is_auto(it) and not INDEX_AUTOMATIC else 'index,follow,max-image-preview:large'
         ld = {'@context': 'https://schema.org', '@graph': [{
-            '@type': 'NewsArticle', 'headline': it['title'][:110], 'description': it.get('summary', ''), 'image': [img],
+            '@type': 'NewsArticle', 'headline': it['title'][:110], 'description': it.get('summary') or it['title'], 'image': [img],
             'datePublished': it.get('datetime') or it.get('date'), 'dateModified': it.get('updated') or it.get('datetime') or it.get('date'),
             'inLanguage': 'es-AR', 'mainEntityOfPage': url, 'articleSection': category(it),
             'keywords': ', '.join(it.get('tags', []) + it.get('topics', [])),
@@ -553,6 +553,18 @@ def main():
         d = out_dir / it['id']
         d.mkdir(parents=True, exist_ok=True)
         (d / 'index.html').write_text(page, encoding='utf-8')
+        # Notas automáticas unidas a esta (mismo hecho, otro medio): su dirección vieja redirige acá.
+        for old_id in it.get('mergedIds') or []:
+            if not old_id or old_id in ids or '/' in old_id or old_id.startswith('.'):
+                continue
+            ids.add(old_id)
+            rd = out_dir / old_id
+            rd.mkdir(parents=True, exist_ok=True)
+            (rd / 'index.html').write_text(
+                f'<!doctype html><html lang="es"><head><meta charset="utf-8"><title>{esc(it["title"])}</title>'
+                f'<link rel="canonical" href="{esc(url)}"><meta name="robots" content="noindex,follow">'
+                f'<meta http-equiv="refresh" content="0; url=../{esc(it["id"])}/"></head>'
+                f'<body><p><a href="../{esc(it["id"])}/">{esc(it["title"])}</a></p></body></html>\n', encoding='utf-8')
     removed = 0
     for d in out_dir.iterdir():
         if d.is_dir() and d.name not in ids:
@@ -590,7 +602,7 @@ def main():
         u = f'{SITE}/noticias/{it["id"]}/'
         rss.append(f'<item><title>{esc(it["title"])}</title><link>{u}</link><guid isPermaLink="true">{u}</guid>'
                    f'<pubDate>{email.utils.format_datetime(item_dt(it))}</pubDate><source url="{esc(primary(it).get("url"))}">{esc(primary(it).get("name"))}</source>'
-                   f'<description>{esc(it.get("summary", ""))}</description></item>')
+                   f'<description>{esc(it.get("summary") or ("Nota de " + (primary(it).get("name") or SITE_NAME)))}</description></item>')
     rss.append('</channel></rss>')
     (ROOT / 'feed.xml').write_text('\n'.join(rss) + '\n', encoding='utf-8')
     (ROOT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/news-sitemap.xml\n', encoding='utf-8')

@@ -389,6 +389,7 @@ aside{min-width:0;display:flex;flex-direction:column;gap:22px}
 .mini li:first-child{border-top:0;padding-top:0}
 .mini a{text-decoration:none;font-weight:500}.mini a:hover{text-decoration:underline}
 .mini .sub{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.mini.num{font-family:inherit;font-size:inherit;text-align:left;color:inherit}
 .mini.num li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px}
 .mini.num li::before{counter-increment:m;content:counter(m);font-family:var(--f-mono);color:var(--accent-ink);font-weight:500}
 .ind-mini{display:grid}
@@ -455,6 +456,10 @@ aside{min-width:0;display:flex;flex-direction:column;gap:22px}
 .srcs ol{margin:0;padding-left:20px;display:grid;gap:9px;font-size:14.5px}
 .srcs .t{color:var(--muted);font-size:12.5px}
 .srcs a{word-break:break-word}
+.srcs ul{margin:0;padding-left:20px;display:grid;gap:9px;font-size:14.5px}
+.meta .also{font-weight:600;color:var(--accent-ink);white-space:nowrap}
+.prose p.no-sum::first-letter{all:unset}
+.prose .no-sum{color:var(--muted);font-size:15px;border-left:3px solid var(--line-2);padding-left:12px}
 .actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:24px 0 14px}
 .share{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .share .k{font-size:12px;color:var(--muted);margin-right:4px}

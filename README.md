@@ -8,7 +8,10 @@ El workflow `.github/workflows/update-news.yml` corre a las 06:30, 10:30, 14:30,
 
 1. `scripts/update_news.py` lee las fuentes de `sources.json` y guarda las notas en `data/news.json`.
    - Una fuente caída no frena a las demás; el resumen de cada corrida (qué fuentes respondieron y cuántas notas nuevas hubo) aparece en la página de la ejecución en Actions y en `data/sources-status.json`.
-   - Deduplica por enlace original y descarta notas casi iguales (mismo hecho en dos medios).
+   - Deduplica por enlace original. Las notas que cuentan el mismo hecho con otro título se agrupan (`group_auto`): queda la más completa y las demás pasan a «También publicaron esta noticia» (fuentes con `alsoIn: true`); sus direcciones viejas redirigen a la que quedó (`mergedIds`).
+   - Descarta notas fuera de tema aunque usen palabras del rubro: lista `EXCLUDE` (aranceles médicos o notariales, accidentes, cruceros, promociones de consumo…). Se aplica también a lo que ya estaba guardado.
+   - Google Noticias no trae resumen: el bot resuelve el enlace del medio (hasta `MAX_GN_RESOLVE` por corrida) y toma la descripción y la imagen que la página publica para compartir. Si no puede, la nota se muestra solo con el titular y un aviso (nunca con texto de relleno).
+   - Limpia firmas al inicio de los resúmenes («Por Redacción … @…»).
    - Detecta países, categorías y si la nota menciona a Argentina.
    - Usa la imagen que publica la propia fuente (en el RSS o en la página original), con crédito.
    - Al terminar, `scripts/update_indicators.py` actualiza los indicadores de mercado: tipo de cambio mayorista (API del BCRA), precio pizarra de soja, maíz y trigo (Bolsa de Comercio de Rosario) y petróleo Brent (serie de la EIA publicada por FRED). Si una fuente falla, se conserva el último dato.

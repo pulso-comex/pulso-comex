@@ -49,6 +49,15 @@ CURATED_WINDOW_DAYS = 4    # solo se compara con notas curadas de ±4 días
 CURATED_MIN_FULL = 0.38    # parecido mínimo con título + resumen + datos de la nota curada
 CURATED_MIN_TITLE = 0.25   # parecido mínimo con el título y las etiquetas de la nota curada
 CURATED_STRONG = 0.30      # además: parecido de título ≥ esto, o una cifra en común, o parecido total ≥ 0.70
+CURATED_MIN_SHARED = 4     # sin cifra en común, hacen falta al menos 4 palabras compartidas
+
+# Agrupamiento de automáticas que cuentan el mismo hecho (ver group_auto). Calibrado con el archivo de octubre de 2026.
+GROUP_WINDOW_HOURS = 60    # solo se agrupan notas publicadas con menos de 60 h de diferencia
+GROUP_MIN_SIM = 0.55       # parecido mínimo de títulos (palabras raras pesan más; sobre el título más corto)
+GROUP_MIN_SHARED = 3       # palabras significativas compartidas como mínimo
+
+# Google Noticias: resolver el enlace original para leer descripción e imagen del medio.
+MAX_GN_RESOLVE = 30        # enlaces resueltos por corrida (las nuevas primero; después, las viejas sin resumen)
 
 # Taxonomía: debe coincidir con TOPICS en assets/app.js
 TOPICS = ['Argentina', 'Latinoamérica', 'Estados Unidos', 'Europa', 'Asia', 'China', 'Oceanía', 'Mercosur', 'Importaciones',
@@ -56,7 +65,8 @@ TOPICS = ['Argentina', 'Latinoamérica', 'Estados Unidos', 'Europa', 'Asia', 'Ch
           'Transporte aéreo', 'Puertos', 'Economía internacional', 'Geopolítica y comercio', 'Empresas', 'Regulaciones',
           'Tecnología COMEX']
 
-RELEVANCE = ['comercio exterior', 'comercio internacional', 'comex', 'trade', 'export', 'import', 'arancel', 'tariff',
+RELEVANCE = ['comercio exterior', 'comercio internacional', 'comex', 'trade', 'export', 'importac', 'importad', 'importar',
+             'imports', 'arancel', 'tariff',
              'aduana', 'customs', 'mercosur', 'omc', 'wto', 'acuerdo comercial', 'free trade', 'tratado', 'logistic',
              'logistica', 'flete', 'freight', 'shipping', 'puerto', 'port ', 'contenedor', 'container', 'antidumping',
              'anti-dumping', 'salvaguardia', 'safeguard', 'cupo', 'cuota', 'balanza comercial', 'trade balance',
@@ -86,7 +96,7 @@ ASIA = {'China', 'Japón', 'India', 'Corea del Sur', 'Vietnam', 'Indonesia', 'Si
 OCEANIA = {'Australia', 'Nueva Zelanda'}
 
 TOPIC_RULES = [
-    ('Importaciones', [r'importa', r'\bimport']),
+    ('Importaciones', [r'importa(?!n[tc])', r'\bimport(?!an)']),
     ('Exportaciones', [r'exporta', r'\bexport']),
     ('Aduanas', [r'aduan', r'customs', r'despachante', r'\barca\b', r'\bsim\b', r'ventanilla unica']),
     ('Aranceles', [r'arancel', r'tariff', r'antidumping', r'anti-dumping', r'salvaguard', r'safeguard', r'derechos de exportacion', r'retenciones', r'represalia']),
@@ -109,7 +119,7 @@ VISUAL_RULES = [
     ('port', [r'puerto', r'\bport\b', r'terminal']),
     ('container', [r'contenedor', r'container', r'\bteu\b', r'\bfeu\b']),
     ('ship', [r'maritim', r'shipping', r'buque', r'vessel', r'naviera', r'flete']),
-    ('customs', [r'aduan', r'customs', r'arancel', r'tariff', r'import', r'export']),
+    ('customs', [r'aduan', r'customs', r'arancel', r'tariff', r'import(?!an)', r'export']),
     ('treaty', [r'acuerdo', r'tratado', r'agreement', r'mercosur', r'\bomc\b', r'\bwto\b']),
     ('chart', [r'balanza', r'estadistic', r'statistic', r'indice', r'index', r'crecimiento', r'growth']),
 ]
@@ -120,11 +130,23 @@ BAD_IMAGE = re.compile(r'(logo|avatar|gravatar|pixel|spacer|1x1|blank|placeholde
 
 # Términos fuertes: una nota de un agregador (Google Noticias) debe tener al menos uno.
 # Evita falsos positivos como "contenedores de basura" o "puerto" en sentido no comercial.
-STRONG = [r'comercio exterior', r'comercio internacional', r'\bcomex\b', r'exporta', r'importa', r'arancel', r'aduan',
+STRONG = [r'comercio exterior', r'comercio internacional', r'\bcomex\b', r'exporta', r'importa(?!n[tc])', r'arancel', r'aduan',
           r'mercosur', r'\bomc\b', r'acuerdo comercial', r'tratado de libre comercio', r'balanza comercial', r'flete',
           r'naviera', r'transporte maritimo', r'carga aerea', r'logistica internacional', r'antidumping', r'salvaguardia',
           r'guerra comercial', r'cadena de suministro', r'portacontenedores', r'contenedores maritimos', r'\bteu\b',
           r'logistic', r'transito de (contenedores|mercaderia|carga)', r'(etapa|relacion|intercambio|socio|apertura) comercial']
+
+# Notas que no son de comercio exterior aunque usen sus palabras ("aranceles" médicos o notariales, accidentes
+# laborales en un puerto, turismo de cruceros, promociones de consumo). Se descartan al ingresar y se retiran del archivo.
+EXCLUDE = [
+    r'\bpami\b', r'dialisis', r'obras? socia(l|les)\b', r'prestador(es)? (de salud|medic)', r'clinicas?\b', r'hospital',
+    r'notari', r'conservador(es)? de bienes', r'honorarios', r'colegio de (abogados|escribanos|medicos)',
+    r'arancel(es)? (universitari|medic|profesional|judicial|notarial|escolar|de (los )?(medicos|abogados|escribanos))',
+    r'\bbuen fin\b', r'\binapam\b', r'\bhot sale\b', r'black friday', r'cyber ?monday',
+    r'crucer', r'turismo receptivo',
+    r'\b(fallec\w*|muere|murio|cadaver|homicid\w*|asesina\w*)\b', r'(hallan|encuentran) muert[oa]', r'(hallan|localizado|rescatan) (el )?cuerpo', r'en memoria de', r'hasta siempre',
+    r'\bfutbol', r'\bhoroscopo', r'\bquiniela', r'\bloteria',
+]
 
 # Etiquetas propias detectadas en el texto (las categorías de los feeds traían ruido: "inter", "ig", "Titulares"…)
 TAG_RULES = [
@@ -277,21 +299,113 @@ def absolute_image(url: str, base: str) -> str:
     return url
 
 
+def meta_content(raw: str, props) -> str:
+    for prop in props:
+        for pat in (rf'<meta[^>]+(?:property|name)=["\']{re.escape(prop)}["\'][^>]*content=["\']([^"\']*)["\']',
+                    rf'<meta[^>]+content=["\']([^"\']*)["\'][^>]*(?:property|name)=["\']{re.escape(prop)}["\']'):
+            m = re.search(pat, raw, re.I)
+            if m and m.group(1).strip():
+                return html.unescape(m.group(1)).strip()
+    return ''
+
+
+def page_meta(page_url: str) -> dict:
+    """Descripción, imagen y enlace canónico que la página original publica para compartir (og:/twitter:/meta)."""
+    try:
+        raw = fetch(page_url, limit=800_000, accept='text/html,application/xhtml+xml').decode('utf-8', 'ignore')
+    except Exception:
+        return {}
+    head = raw[: raw.lower().find('</head>')] if '</head>' in raw.lower() else raw[:300_000]
+    image = ''
+    for prop in ('og:image:secure_url', 'og:image', 'twitter:image', 'twitter:image:src'):
+        image = absolute_image(meta_content(head, [prop]), page_url)
+        if image:
+            break
+    desc = clean_text(meta_content(head, ['og:description', 'description', 'twitter:description']))
+    canon = ''
+    m = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]*href=["\']([^"\']+)["\']', head, re.I) or \
+        re.search(r'<link[^>]+href=["\']([^"\']+)["\'][^>]*rel=["\']canonical["\']', head, re.I)
+    if m and m.group(1).startswith('http'):
+        canon = html.unescape(m.group(1))
+    return {'image': image, 'desc': desc, 'canonical': canon}
+
+
 def og_image(page_url: str) -> str:
     """Busca la imagen principal (og:image / twitter:image) en la página original."""
+    return page_meta(page_url).get('image', '')
+
+
+# ---------------------------------------------------------------- Google Noticias
+def is_gnews(url: str) -> bool:
+    return urlparse(url or '').netloc.endswith('news.google.com')
+
+
+def gnews_id(url: str) -> str:
+    parts = urlparse(url).path.split('/')
+    return parts[parts.index('articles') + 1] if 'articles' in parts and parts.index('articles') + 1 < len(parts) else ''
+
+
+def gnews_resolve(url: str) -> str:
+    """Devuelve el enlace del medio detrás de un enlace de Google Noticias, o '' si no se pudo.
+
+    Formato viejo: el enlace va codificado en base64 dentro del id. Formato actual (AU_yqL…): Google exige
+    pedirlo con la firma y la marca de tiempo que publica en la página del artículo."""
+    import base64
+    gid = gnews_id(url)
+    if not gid:
+        return ''
     try:
-        raw = fetch(page_url, limit=600_000, accept='text/html,application/xhtml+xml').decode('utf-8', 'ignore')
+        raw = base64.urlsafe_b64decode(gid + '=' * (-len(gid) % 4))
+        if raw.startswith(b'\x08\x13"'):
+            raw = raw[3:]
+            n, raw = raw[0], raw[1:]
+            if n >= 0x80:
+                n, raw = (n & 0x7f) | (raw[0] << 7), raw[1:]
+            cand = raw[:n].decode('utf-8', 'ignore')
+            if cand.startswith('http'):
+                return cand
+    except Exception:
+        pass
+    try:
+        page = ''
+        for base in ('https://news.google.com/articles/', 'https://news.google.com/rss/articles/'):
+            try:
+                page = fetch(base + gid, limit=600_000, accept='text/html').decode('utf-8', 'ignore')
+            except Exception:
+                continue
+            if 'data-n-a-sg' in page:
+                break
+        sig = re.search(r'data-n-a-sg="([^"]+)"', page)
+        ts = re.search(r'data-n-a-ts="([^"]+)"', page)
+        if not sig or not ts:
+            return ''
+        inner = ('["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'
+                 f'"X","X",1,[1,1,1],1,1,null,0,0,null,0],"{gid}",{ts.group(1)},"{sig.group(1)}"]')
+        body = urlencode({'f.req': json.dumps([[['Fbv4je', inner, None, 'generic']]])}).encode()
+        req = Request('https://news.google.com/_/DotsSplashUi/data/batchexecute', data=body, headers={
+            'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'})
+        with urlopen(req, timeout=25) as r:
+            txt = r.read(400_000).decode('utf-8', 'ignore')
+        chunk = txt.split('\n\n', 1)[1] if '\n\n' in txt else txt
+        data = json.loads(chunk)
+        decoded = json.loads(data[0][2])[1]
+        return decoded if isinstance(decoded, str) and decoded.startswith('http') else ''
     except Exception:
         return ''
-    for prop in ('og:image:secure_url', 'og:image', 'twitter:image', 'twitter:image:src'):
-        for pat in (rf'<meta[^>]+(?:property|name)=["\']{re.escape(prop)}["\'][^>]*content=["\']([^"\']+)["\']',
-                    rf'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\']{re.escape(prop)}["\']'):
-            m = re.search(pat, raw, re.I)
-            if m:
-                img = absolute_image(m.group(1), page_url)
-                if img:
-                    return img
-    return ''
+
+
+# ---------------------------------------------------------------- limpieza de textos
+BYLINE = re.compile(r'^(Por\s+(Redacci[oó]n|Equipo|Staff)\s+[^@]{1,60}?\s+@\w+\s*|Por\s+Redacci[oó]n\s*[|:–-]?\s*)', re.I)
+GENERIC_SUMMARY = re.compile(r'^Nota publicada por .*Abrí el artículo original', re.I)
+
+
+def clean_summary(s: str) -> str:
+    s = BYLINE.sub('', (s or '').strip()).strip()
+    return '' if GENERIC_SUMMARY.match(s) else s
+
+
+def excluded(text: str) -> bool:
+    return any_match(norm(text), EXCLUDE)
 
 
 def parse_feed(raw: bytes, source: dict):
@@ -461,10 +575,98 @@ class CuratedIndex:
             full = sum(self.idf(w) for w in a & c['full']) / total
             title_sim = sum(self.idf(w) for w in a & c['title']) / total
             shared_number = any(w.startswith('#') for w in a & c['full'])
+            if not shared_number and len(a & c['full']) < CURATED_MIN_SHARED:
+                continue
             if (full >= CURATED_MIN_FULL and title_sim >= CURATED_MIN_TITLE
                     and (title_sim >= CURATED_STRONG or shared_number or full >= 0.70) and full > best_score):
                 best, best_score = c['id'], full
         return best
+
+
+# ---------------------------------------------------------------- agrupamiento de automáticas
+def item_score(it: dict) -> tuple:
+    """Cuál nota de un grupo queda como principal: con resumen, con foto, de un medio propio (no agregador), la primera."""
+    src = (it.get('sources') or [{}])[0]
+    return (1 if clean_summary(it.get('summary', '')) else 0, 1 if it.get('photo') else 0,
+            0 if 'vía' in src.get('type', '') else 1,
+            -(parse_date(it.get('datetime') or it.get('date')) or NOW).timestamp())
+
+
+def group_auto(items: list) -> list:
+    """Une las notas automáticas que cuentan el mismo hecho con distinto título.
+
+    Queda una sola nota (la más completa); las demás pasan a "También en" (fuentes con alsoIn: true) y sus IDs
+    se guardan en mergedIds para redirigir sus páginas viejas. Devuelve la lista de grupos formados."""
+    import math
+    auto = [it for it in items if it.get('label') == 'Automática']
+    docs = {id(it): tokens(it.get('title', '')) for it in auto}
+    df = {}
+    for d in docs.values():
+        for w in d:
+            df[w] = df.get(w, 0) + 1
+    n = len(auto) or 1
+    idf = lambda w: math.log((n + 1) / (df.get(w, 0) + 1)) + (1.0 if w.startswith('#') else 0)
+    when = {id(it): parse_date(it.get('datetime') or it.get('date')) or NOW for it in auto}
+    auto.sort(key=lambda it: when[id(it)])
+    parent = {id(it): id(it) for it in auto}
+
+    def root(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    for i, a in enumerate(auto):
+        ta = docs[id(a)]
+        if len(ta) < 3:
+            continue
+        ca = detect_countries(a.get('title', ''))
+        for b in auto[i + 1:]:
+            if (when[id(b)] - when[id(a)]).total_seconds() > GROUP_WINDOW_HOURS * 3600:
+                break
+            tb = docs[id(b)]
+            shared = ta & tb
+            if len(shared) < GROUP_MIN_SHARED or len(tb) < 3:
+                continue
+            cb = detect_countries(b.get('title', ''))
+            if ca and cb and not (ca & cb):
+                continue  # mismos términos, distintos países: no es el mismo hecho
+            sim = sum(idf(w) for w in shared) / min(sum(idf(w) for w in ta), sum(idf(w) for w in tb))
+            if sim >= GROUP_MIN_SIM:
+                parent[root(id(b))] = root(id(a))
+
+    clusters = {}
+    for it in auto:
+        clusters.setdefault(root(id(it)), []).append(it)
+    drop, groups = set(), []
+    for members in clusters.values():
+        if len(members) < 2:
+            continue
+        members.sort(key=item_score, reverse=True)
+        main, rest = members[0], members[1:]
+        seen = {canonical_url(s.get('url', '')) for s in main.get('sources') or []}
+        merged = list(main.get('mergedIds') or [])
+        for o in rest:
+            for s in o.get('sources') or []:
+                u = canonical_url(s.get('url', ''))
+                if u and u not in seen:
+                    seen.add(u)
+                    main.setdefault('sources', []).append({'name': s.get('name', ''), 'type': 'También publicó esta noticia',
+                                                           'url': s['url'], 'alsoIn': True, 'title': o.get('title', '')})
+            for oid in [o.get('id')] + list(o.get('mergedIds') or []):
+                if oid and oid not in merged and oid != main.get('id'):
+                    merged.append(oid)
+            for k in ('aliasUrls',):
+                main[k] = sorted((set(main.get(k) or []) | set(o.get(k) or []) | {canonical_url(primary_url(o)),
+                                  canonical_url(o.get('gnUrl', ''))}) - {''})
+            if not main.get('photo') and o.get('photo'):
+                main['photo'] = o['photo']
+            main['affectsArgentina'] = bool(main.get('affectsArgentina') or o.get('affectsArgentina'))
+            drop.add(id(o))
+        main['mergedIds'] = merged
+        groups.append({'main': main.get('id'), 'merged': [o.get('id') for o in rest]})
+    items[:] = [it for it in items if id(it) not in drop]
+    return groups
 
 
 # ---------------------------------------------------------------- archivo
@@ -484,6 +686,48 @@ def primary_url(it: dict) -> str:
     return p.get('url', '')
 
 
+def resolve_gnews(by_url: dict) -> dict:
+    """Reemplaza el enlace de Google Noticias por el del medio y toma su descripción e imagen públicas."""
+    pending = [(k, it) for k, it in by_url.items()
+               if it.get('label') == 'Automática' and is_gnews(primary_url(it))
+               and (parse_date(it.get('gnTried')) or NOW - timedelta(days=9)) < NOW - timedelta(hours=20)]
+    pending.sort(key=lambda kv: parse_date(kv[1].get('datetime') or kv[1].get('date')) or NOW, reverse=True)
+    stats = {'pending': len(pending), 'resolved': 0, 'withSummary': 0, 'withPhoto': 0, 'failed': 0, 'duplicates': 0}
+    for key, it in pending[:MAX_GN_RESOLVE]:
+        it['gnTried'] = iso(NOW)
+        gurl = primary_url(it)
+        real = gnews_resolve(gurl)
+        if not real or is_gnews(real):
+            stats['failed'] += 1
+            continue
+        stats['resolved'] += 1
+        meta = page_meta(real)
+        canon = meta.get('canonical') or ''
+        if canon and urlparse(canon).netloc.replace('www.', '') == urlparse(real).netloc.replace('www.', ''):
+            real = canon
+        new_key = canonical_url(real)
+        if new_key in by_url and by_url[new_key] is not it:
+            # La misma nota ya entró por otra fuente: queda esa, y este enlace se recuerda como alias.
+            other = by_url[new_key]
+            other['aliasUrls'] = sorted(set(other.get('aliasUrls') or []) | {canonical_url(gurl)})
+            del by_url[key]
+            stats['duplicates'] += 1
+            continue
+        src = next((s for s in it['sources'] if s.get('primary')), it['sources'][0])
+        src['url'] = real
+        it['gnUrl'] = gurl
+        desc = clean_summary(meta.get('desc', ''))
+        if desc and len(desc) >= 60 and norm(desc)[:60] != norm(it['title'])[:60] and not excluded(desc):
+            it['summary'] = trim(desc, 320)
+            stats['withSummary'] += 1
+        if meta.get('image') and not it.get('photo'):
+            it['photo'] = {'src': meta['image'], 'by': src.get('name', ''), 'page': real, 'alt': it['title'][:140]}
+            stats['withPhoto'] += 1
+        del by_url[key]
+        by_url[new_key] = it
+    return stats
+
+
 def main():
     sources = load_json(ROOT / 'sources.json', [])
     store = load_json(NEWS, {})
@@ -500,8 +744,13 @@ def main():
             continue
         by_url[key] = it
         ids.add(it.get('id'))
-    recent_titles = [title_key(it['title']) for it in by_url.values()
-                     if (parse_date(it.get('datetime') or it.get('date')) or NOW) > NOW - timedelta(days=4)]
+    # Enlaces de notas fusionadas en otra (agrupamiento) o de Google Noticias ya resueltos: apuntan a la nota que quedó.
+    alias = {}
+    for k, it in by_url.items():
+        for u in list(it.get('aliasUrls') or []) + [it.get('gnUrl', '')] + \
+                [s.get('url', '') for s in it.get('sources') or [] if s.get('alsoIn')]:
+            if u and canonical_url(u) not in by_url:
+                alias[canonical_url(u)] = k
     curated = CuratedIndex(list(by_url.values()))
     suppressed = []  # automáticas descartadas o retiradas por repetir una nota curada
 
@@ -527,6 +776,8 @@ def main():
         for p in parsed:
             key = canonical_url(p['url'])
             text = ' '.join([p['title'], p['desc'], ' '.join(p['categories'])])
+            if key in alias:
+                continue  # ya está dentro de otra nota (agrupada o resuelta desde Google Noticias)
             old = by_url.get(key)
             if old and old.get('label') != 'Automática':
                 continue  # nunca pisar una nota curada a mano
@@ -540,7 +791,10 @@ def main():
                 if src.get('aggregator') and not strong(p['title']):
                     skipped += 1
                     continue
-                if near_duplicate(p['title'], recent_titles) or added >= max_new:
+                if excluded(p['title'] + ' ' + p['desc']):
+                    skipped += 1
+                    continue
+                if added >= max_new:  # las repetidas con otro título se agrupan después (group_auto)
                     skipped += 1
                     continue
                 dup = curated.match(slug(p['title']), p['url'], p['title'], p['pub'] or NOW)
@@ -575,8 +829,10 @@ def main():
                 if img:
                     photo = {'src': img, 'by': source_name, 'page': p['url'], 'alt': p['title'][:140]}
 
-            summary = trim(p['desc'], 320) if p['desc'] else (
-                f'Nota publicada por {source_name}. Abrí el artículo original para leer el texto completo.')
+            desc = clean_summary(p['desc'])
+            summary = trim(desc, 320) if desc else ''
+            if old and not summary and clean_summary(old.get('summary', '')):
+                summary = old['summary']  # resumen obtenido antes de la página original (Google Noticias)
             item = {
                 'id': item_id,
                 'datetime': iso(pub),
@@ -584,7 +840,7 @@ def main():
                 'firstSeen': iso(first_seen),
                 'title': trim(p['title'], 180),
                 'summary': summary,
-                'body': [trim(p['desc'], 900)] if len(p['desc']) > 320 else [],
+                'body': [trim(desc, 900)] if len(desc) > 320 else [],
                 'keyData': [],
                 'topics': topics,
                 'countries': countries,
@@ -605,7 +861,11 @@ def main():
             }
             if photo:
                 item['photo'] = photo
-            if old:
+            if old:  # conserva lo que agregaron el agrupamiento y la resolución de Google Noticias
+                for k in ('mergedIds', 'aliasUrls', 'gnUrl', 'gnTried'):
+                    if old.get(k):
+                        item[k] = old[k]
+                item['sources'] += [s for s in old.get('sources') or [] if s.get('alsoIn')]
                 if old.get('title') != item['title']:
                     item['updated'] = iso(NOW)
                 elif old.get('updated'):
@@ -614,7 +874,6 @@ def main():
                     updated += 1
             else:
                 added += 1
-                recent_titles.append(title_key(p['title']))
             by_url[key] = item
 
         status[name] = {'ok': True, 'lastRun': iso(NOW), 'lastOk': iso(NOW), 'failures': 0,
@@ -624,6 +883,7 @@ def main():
 
     # Limpieza de notas automáticas ya guardadas (aplica las reglas actuales a lo que entró antes).
     disabled = {s['name'] for s in sources if not s.get('enabled', True)}
+    excluded_n = 0
     aggregators = {s['name'] for s in sources if s.get('aggregator')}
     for key in list(by_url):
         it = by_url[key]
@@ -631,9 +891,14 @@ def main():
             continue
         feed = it.get('feed') or (it.get('sources') or [{}])[0].get('name', '')
         via_aggregator = feed in aggregators or 'vía Google Noticias' in (it.get('sources') or [{}])[0].get('type', '')
-        if feed in disabled or (via_aggregator and not strong(it.get('title', ''))):
+        if feed in disabled or (via_aggregator and not strong(it.get('title', ''))) \
+                or excluded(it.get('title', '') + ' ' + it.get('summary', '')):
+            excluded_n += 1
             del by_url[key]
             continue
+        it['summary'] = clean_summary(it.get('summary', ''))
+        if it.get('body'):
+            it['body'] = [b for b in (clean_summary(x) for x in it['body']) if b]
         dup = curated.match(it.get('id', ''), primary_url(it), it.get('title', ''),
                             parse_date(it.get('datetime') or it.get('date')))
         if dup:
@@ -644,6 +909,14 @@ def main():
         if ph.get('src') and BAD_IMAGE.search(ph['src']):
             it.pop('photo', None)
         it['tags'] = make_tags(' '.join([it.get('title', ''), it.get('summary', '')]), {})
+
+    # Google Noticias: enlace del medio, descripción e imagen de la página original.
+    gn = resolve_gnews(by_url)
+
+    # Notas automáticas que cuentan el mismo hecho: una sola, con "También en".
+    values = list(by_url.values())
+    groups = group_auto(values)
+    by_url = {(canonical_url(primary_url(it)) or it.get('id')): it for it in values}
 
     # Archivo: notas automáticas hasta un año y con tope; las curadas no se borran.
     cutoff = NOW - timedelta(days=ARCHIVE_DAYS)
@@ -664,7 +937,8 @@ def main():
     store.update({'schemaVersion': '2.1', 'feedId': 'pulso-comex', 'timezone': 'America/Argentina/Buenos_Aires', 'items': kept})
     if before != after or not store.get('updatedAt'):
         store['updatedAt'] = iso(NOW)
-    store['ingestion'] = {'ranAt': iso(NOW), 'sources': report, 'curatedDuplicates': suppressed}
+    store['ingestion'] = {'ranAt': iso(NOW), 'sources': report, 'curatedDuplicates': suppressed,
+                          'excluded': excluded_n, 'grouped': groups, 'googleNews': gn}
     NEWS.write_text(json.dumps(store, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
@@ -673,6 +947,8 @@ def main():
     print(f'Fuentes OK: {ok}/{len(report)} · notas nuevas: {new} · total en archivo: {len(kept)}')
     for d in suppressed:
         print(f"  ↺ repetida de «{d['curated']}»: {d['title']}")
+    print(f"Fuera de tema retiradas: {excluded_n} · grupos formados: {len(groups)} "
+          f"({sum(len(g['merged']) for g in groups)} notas unidas) · Google Noticias: {gn}")
     for r in report:
         print(('  ✔ ' if r.get('ok') else '  ✘ ') + r['source'] + (f" · {r.get('items', 0)} leídas, {r.get('added', 0)} nuevas" if r.get('ok') else f" · {r.get('error')}"))
     summary = os.environ.get('GITHUB_STEP_SUMMARY')

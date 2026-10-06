@@ -8398,7 +8398,12 @@
           "url": "https://www.infobae.com/movant/2026/10/03/lo-que-otros-paises-resolvieron-hace-30-anos-y-el-comercio-exterior-argentino-todavia-espera/",
           "primary": true
         }
-      ]
+      ],
+      "explainer": {
+        "what": "En una entrevista con Infobae Movant, el despachante Pablo Pardal sostuvo que hoy documentar y retirar una carga puede demorar hasta siete días.",
+        "why": "Es la mirada de un operador sobre los tiempos de despacho, no un dato oficial. Propone dar beneficios reales al Operador Económico Autorizado (OEA), como en Estados Unidos y Europa.",
+        "who": "Despachantes, importadores y exportadores."
+      }
     },
     {
       "id": "estados-unidos-reclamo-un-avance-con-el-acuerdo-comercial-con-argentina",
@@ -9159,7 +9164,15 @@
           "url": "https://shipandbunker.com/news/world/714603-ukmto-reports-new-ship-attack-in-strait-of-hormuz"
         }
       ],
-      "story": "ormuz"
+      "story": "ormuz",
+      "explainer": {
+        "what": "Dos petroleros fueron alcanzados por proyectiles no identificados el sábado 3 de octubre en Ormuz, y los hutíes se atribuyeron un ataque contra una instalación de Aramco al sur de Riad que Arabia Saudita no confirmó.",
+        "why": "La UKMTO registra 91 incidentes con daños a buques desde febrero. La extensión de los ataques a infraestructura energética saudí suma riesgo al abastecimiento de crudo y a los costos de seguro y flete de buques tanque.",
+        "who": "Navieras, aseguradoras y compradores de crudo y combustibles.",
+        "products": [
+          "Petróleo crudo"
+        ]
+      }
     },
     {
       "id": "el-alza-de-aranceles-fortalece-el-contrabando-la-alerta-de-la-asociacion-andina",
@@ -12307,7 +12320,17 @@
           "date": "2027-01-01",
           "label": "Ucrania empieza a aplicar las preferencias del TLC a los productos turcos"
         }
-      ]
+      ],
+      "explainer": {
+        "what": "El 1 de octubre entró en vigor el tratado de libre comercio entre Ucrania y Turquía, firmado en febrero de 2022.",
+        "why": "Elimina o reduce aranceles y cuotas para bienes de los capítulos 01 a 97 del Sistema Armonizado y abarca servicios, inversiones, comercio electrónico y cooperación aduanera. Turquía fijó como meta un intercambio bilateral de US$ 10.000 millones.",
+        "who": "Exportadores e importadores de Ucrania y Turquía. Los exportadores ucranianos deben presentar certificado EUR.1 o declaración de origen; hasta 6.000 euros alcanza con la declaración del exportador.",
+        "next": "Según la Aduana ucraniana, las preferencias para las mercaderías turcas que ingresan a Ucrania empiezan el 1 de enero de 2027.",
+        "nextSource": {
+          "name": "Mezha (Servicio Estatal de Aduanas de Ucrania)",
+          "url": "https://mezha.net/eng/news/7103b91f_ukraine-turkey_free_trade/"
+        }
+      }
     },
     {
       "id": "comalep-2026-aduanas-de-america-latina-espana-y-portugal-fortalecieron-la-cooper",
@@ -12414,7 +12437,17 @@
       "absorbs": [
         "las-tasas-de-transporte-maritimo-de-contenedores-descienden-un-1-por-la-caida-de"
       ],
-      "story": "fletes-contenedores"
+      "story": "fletes-contenedores",
+      "explainer": {
+        "what": "El World Container Index de Drewry bajó 1% el 1 de octubre y quedó en USD 4.434 por contenedor de 40 pies.",
+        "why": "Es una referencia habitual para contratos de flete. Cayó Asia–Europa (Shanghái–Génova -3%, Shanghái–Róterdam -2%) y el transpacífico se mantuvo estable.",
+        "who": "Importadores y exportadores que contratan fletes marítimos en contenedor.",
+        "next": "Drewry espera nuevas bajas la semana siguiente porque las fábricas chinas cierran durante la Semana Dorada.",
+        "nextSource": {
+          "name": "Drewry",
+          "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry"
+        }
+      }
     },
     {
       "id": "drewry-iaci-record-intra-asia",
@@ -12477,7 +12510,17 @@
           "primary": true
         }
       ],
-      "story": "fletes-contenedores"
+      "story": "fletes-contenedores",
+      "explainer": {
+        "what": "El índice intra-Asia de Drewry subió 2% hasta USD 1.518 por contenedor de 40 pies, su sexto máximo histórico consecutivo.",
+        "why": "Tifones, congestión portuaria (82 horas de espera en Shanghái y 56 en Ningbo) y la situación en Medio Oriente encarecen los fletes dentro de Asia. Shanghái–Jebel Ali sigue en USD 8.662 por FEU.",
+        "who": "Cargadores con rutas dentro de Asia y hacia el Golfo.",
+        "next": "Drewry espera que la baja de volúmenes durante la Semana Dorada ayude a descomprimir los atrasos.",
+        "nextSource": {
+          "name": "Drewry",
+          "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/intra-asia-container-index"
+        }
+      }
     },
     {
       "id": "ue-acero-pais-fusion-colada",
@@ -12549,7 +12592,20 @@
           "date": "2027-10",
           "label": "UE: la Comisión empieza a usar el país de fusión y colada para repartir los contingentes de acero"
         }
-      ]
+      ],
+      "explainer": {
+        "what": "Desde el 1 de octubre, quien importe ciertos productos siderúrgicos en la UE debe acreditar al despachar el país de fusión y colada del acero, por regla general con un certificado de laminador que indique país y número de colada.",
+        "why": "Es parte del régimen siderúrgico que desde el 1 de julio reemplazó la salvaguardia de 2018: redujo las cuotas libres de arancel a 18,3 millones de toneladas anuales y elevó al 50% el arancel fuera de cuota.",
+        "who": "Importadores de acero en la Unión Europea y exportadores que les venden, que deben conseguir el certificado del laminador.",
+        "products": [
+          "Productos siderúrgicos"
+        ],
+        "next": "Desde octubre de 2027 la Comisión usará esta información para repartir los contingentes.",
+        "nextSource": {
+          "name": "Empresa Exterior",
+          "url": "https://empresaexterior.com/nueva-normativa-de-la-ue-los-importadores-de-acero-afrontan-requisitos-aduaneros-mas-estrictos-desde-el-1-de-octubre/"
+        }
+      }
     },
     {
       "id": "la-directora-general-expresa-su-preocupacion-por-el-ritmo-de-las-negociaciones-m",
@@ -12713,7 +12769,17 @@
           "url": "https://zonos.com/es/docs/guides/us-tariff-changes"
         }
       ],
-      "story": "aranceles-eeuu"
+      "story": "aranceles-eeuu",
+      "explainer": {
+        "what": "La Corte de Comercio Internacional de EE.UU. escuchó el 30 de septiembre a pequeñas empresas y a estados que cuestionan los recargos de 10% y 12,5% de la Sección 301, vigentes desde el 24 de julio.",
+        "why": "Está en discusión la base legal de recargos que alcanzan a decenas de economías: los demandantes sostienen que la ley exige conclusiones específicas para cada país.",
+        "who": "Importadores en Estados Unidos y exportadores de los países alcanzados por los recargos.",
+        "next": "El tribunal emitirá una opinión escrita sin fecha prevista. Según CNN, la disputa puede pasar después al Circuito Federal y eventualmente a la Corte Suprema.",
+        "nextSource": {
+          "name": "CNN en Español",
+          "url": "https://cnnespanol.cnn.com/2026/09/30/eeuu/aranceles-trump-tribunales-trax"
+        }
+      }
     },
     {
       "id": "decreto-1128-tope-fob-autos-electricos-hibridos",
@@ -12799,7 +12865,22 @@
           "type": "Medio de comunicación",
           "url": "https://www.cronista.com/economia-politica/el-gobierno-amplio-los-topes-para-importar-autos-electricos-e-hibridos-sin-arancel-su-impacto-en-precios/"
         }
-      ]
+      ],
+      "explainer": {
+        "what": "El Decreto 1128/2026 fija topes FOB por tecnología para el cupo anual de 50.000 vehículos electrificados con arancel cero: USD 35.000 para eléctricos, USD 18.000 para híbridos y enchufables y USD 16.000 para mild hybrid.",
+        "why": "Antes regía un tope único de USD 16.000. El cambio admite modelos más caros dentro del cupo; fuera de él, los eléctricos pagan un arancel de 35%.",
+        "who": "Importadores y terminales que postulan al cupo anual de vehículos electrificados.",
+        "products": [
+          "Autos eléctricos",
+          "Híbridos e híbridos enchufables",
+          "Híbridos livianos (mild hybrid)"
+        ],
+        "next": "La norma rige desde el 1 de octubre y se aplicará en la próxima asignación del cupo.",
+        "nextSource": {
+          "name": "Infobae",
+          "url": "https://www.infobae.com/economia/2026/10/01/cambian-los-montos-del-cupo-2027-para-autos-electricos-e-hibridos-que-vehiculos-ganan-lugar-y-cuales-perderan-volumen/"
+        }
+      }
     },
     {
       "id": "japon-abre-mercado-carne-vacuna-argentina",
@@ -12882,7 +12963,20 @@
       ],
       "absorbs": [
         "la-argentina-y-japon-acuerdan-requisitos-para-la-exportacion-de-carne-bovina-al"
-      ]
+      ],
+      "explainer": {
+        "what": "Japón aceptó las condiciones sanitarias para importar carne vacuna de las zonas argentinas libres de aftosa con vacunación, tras cerca de 20 años de negociaciones.",
+        "why": "Hasta ahora solo accedía la carne patagónica, con una única planta habilitada. Según el Gobierno, Japón importa carnes de alta calidad por más de USD 3.000 millones al año.",
+        "who": "Frigoríficos de las zonas libres de aftosa con vacunación que quieran exportar a Japón.",
+        "products": [
+          "Carne vacuna"
+        ],
+        "next": "Las autoridades japonesas deben inspeccionar y aprobar las plantas interesadas; todavía no hay fecha para los primeros embarques.",
+        "nextSource": {
+          "name": "Infobae",
+          "url": "https://www.infobae.com/economia/2026/09/30/el-gobierno-anuncio-que-la-argentina-volvera-a-exportar-carne-a-japon-despues-de-20-anos/"
+        }
+      }
     },
     {
       "id": "brasil-eeuu-grupo-trabajo-aranceles-milwaukee",
@@ -12945,7 +13039,17 @@
           "url": "https://www.dgabc.com.br/Noticia/4349968/eua-devem-enviar-proposta-para-avancar-em-questao-tarifaria-e-nao-tarifaria-dizem-mre-e-mdic"
         }
       ],
-      "story": "g20-milwaukee"
+      "story": "g20-milwaukee",
+      "explainer": {
+        "what": "Brasil y EE.UU. acordaron en Milwaukee crear un grupo de trabajo para negociar los obstáculos comerciales bilaterales.",
+        "why": "Brasil enfrenta un recargo de 25% sobre productos seleccionados (Sección 301, desde julio) y recargos de 10% o 12,5% vinculados con trabajo forzoso. Para el Mercosur importa porque Brasil es el principal socio comercial de la región.",
+        "who": "Exportadores brasileños a Estados Unidos y, en forma indirecta, los socios del Mercosur.",
+        "next": "EE.UU. enviará en las próximas semanas un documento con el alcance propuesto para las conversaciones arancelarias y no arancelarias.",
+        "nextSource": {
+          "name": "O Povo",
+          "url": "https://www.opovo.com.br/noticias/mundo/2026/09/30/brasil-e-eua-criam-grupo-especifico-para-negociar-tarifaco.html"
+        }
+      }
     },
     {
       "id": "arca-rg-5903-precios-transferencia-intermediarios",
@@ -13025,7 +13129,17 @@
           "url": "https://urgente24.com/dinero/arca-cambia-las-reglas-del-comercio-exterior-y-pone-la-lupa-los-intermediarios-n633905"
         }
       ],
-      "story": "arca-normativa"
+      "story": "arca-normativa",
+      "explainer": {
+        "what": "La RG 5903/2026 de ARCA reordena el régimen de precios de transferencia y de operaciones internacionales, y deroga cinco resoluciones anteriores.",
+        "why": "Endurece el control sobre los intermediarios del exterior: hay que acreditar su sustancia real, documentar el análisis funcional y demostrar que su remuneración corresponde a sus funciones.",
+        "who": "Exportadores e importadores que operan con intermediarios internacionales o partes vinculadas.",
+        "next": "Según especialistas, la norma se aplica a los ejercicios iniciados desde el 1 de octubre de 2026: para las empresas con cierre en diciembre, el primer impacto será el ejercicio 2027.",
+        "nextSource": {
+          "name": "TPC Group",
+          "url": "https://tpcgroup-int.com/noticias/rg-5903-2026-argentina-reescribe-su-regimen-de-precios-de-transferencia/"
+        }
+      }
     },
     {
       "id": "seguridad-y-fronteras-el-mercosur-impulsa-una-mayor-cooperacion-regional",
@@ -13158,7 +13272,17 @@
           "aranceles": true
         }
       },
-      "story": "ue-mercosur"
+      "story": "ue-mercosur",
+      "explainer": {
+        "what": "El vicepresidente del Tribunal de Justicia de la UE rechazó, en la etapa cautelar del caso que inició Polonia (C-460/26 R), frenar la aplicación provisional del acuerdo interino UE–Mercosur.",
+        "why": "Las preferencias arancelarias que rigen desde el 1 de mayo siguen operativas. El acuerdo liberaliza el 91% de las importaciones del Mercosur desde la UE y el 92% de las de la UE desde el Mercosur.",
+        "who": "Exportadores e importadores argentinos que comercian con la Unión Europea.",
+        "next": "Sigue abierta la discusión de fondo: si separar el acuerdo interino comercial del acuerdo de asociación respeta el reparto de competencias de los Tratados europeos.",
+        "nextSource": {
+          "name": "Aduana News",
+          "url": "https://aduananews.com/la-division-juridica-del-acuerdo-mercosur-union-europea-ita-empa-competencias-aplicacion-provisional-y-el-auto-del-tjue-c-460-26-r-republica-de-polonia-consejo/"
+        }
+      }
     },
     {
       "id": "iata-carga-aerea-agosto-2026",
@@ -13221,7 +13345,12 @@
           "type": "Medio especializado",
           "url": "https://volavi.co/aviacion/noticias/carga-aerea-mundial-agosto-2026-iata"
         }
-      ]
+      ],
+      "explainer": {
+        "what": "La demanda mundial de carga aérea creció 4,4% interanual en agosto, con una capacidad casi estable (-0,1%), según IATA.",
+        "why": "La demanda firme y los mayores factores de ocupación ayudaron a las aerolíneas a compensar un combustible muy caro. América Latina y el Caribe creció 5,1%, por encima del promedio.",
+        "who": "Exportadores e importadores que usan carga aérea, aerolíneas y agentes de carga."
+      }
     },
     {
       "id": "eeuu-prohibiciones-importaciones-canada",
@@ -13286,7 +13415,18 @@
           "url": "https://cnnespanol.cnn.com/2026/08/25/eeuu/canada-represalias-economia-trax"
         }
       ],
-      "story": "aranceles-eeuu"
+      "story": "aranceles-eeuu",
+      "explainer": {
+        "what": "Entraron en vigor las prohibiciones de EE.UU. a las importaciones de alcohol, lácteos y motocicletas de Canadá.",
+        "why": "Responden a los aranceles de 15%, 25% y 50% que Canadá cobra desde el 8 de septiembre sobre más de 700 productos estadounidenses, por unos USD 20.000 millones. La escalada sigue al anuncio de EE.UU. de no renovar el T-MEC.",
+        "who": "Exportadores canadienses y estadounidenses de los rubros alcanzados.",
+        "products": [
+          "Alcohol",
+          "Lácteos",
+          "Motocicletas",
+          "Acero y aluminio"
+        ]
+      }
     },
     {
       "id": "ricardo-trevino-chapa-dejara-la-secretaria-general-adjunta-de-la-oma-el-31-de-oc",
@@ -13434,7 +13574,23 @@
           "label": "Vence la tregua de escalada arancelaria entre EE.UU. y China"
         }
       ],
-      "story": "aranceles-eeuu"
+      "story": "aranceles-eeuu",
+      "explainer": {
+        "what": "EE.UU. y China acordaron reducir aranceles sobre bienes por USD 60.000 millones: unos USD 30.000 millones de comercio no sensible por cada lado.",
+        "why": "Washington bajará los gravámenes a 77 líneas de productos chinos y, según Greer, mejorará el acceso al mercado chino para cerca del 30% de las exportaciones estadounidenses.",
+        "who": "Importadores estadounidenses de esos bienes chinos y exportadores de EE.UU. a China.",
+        "products": [
+          "Juguetes",
+          "Vajilla y accesorios de cocina",
+          "Cortinas",
+          "Afeitadoras eléctricas"
+        ],
+        "next": "Ambos países suspendieron la escalada arancelaria hasta el 10 de enero.",
+        "nextSource": {
+          "name": "CNN en Español",
+          "url": "https://cnnespanol.cnn.com/2026/09/28/economia/ee-uu-y-china-reduccion-aranceles-60-000-millones-trax"
+        }
+      }
     },
     {
       "id": "los-miembros-de-la-omc-intensifican-los-debates-sobre-las-medidas-comerciales-y",
@@ -13758,7 +13914,17 @@
           "aranceles": false
         }
       },
-      "story": "arca-normativa"
+      "story": "arca-normativa",
+      "explainer": {
+        "what": "La RG 5900/2026 eliminó la autorización previa de ARCA para destruir documentación aduanera una vez vencidos los plazos fiscales.",
+        "why": "Simplifica el archivo y la digitalización: los declarantes pueden mantener el autoarchivo o contratar prestadores habilitados.",
+        "who": "Importadores y exportadores que actúan como depositarios fieles de la documentación de sus operaciones.",
+        "next": "ARCA publicará el cronograma de implementación operativa en el micrositio Depositario Fiel.",
+        "nextSource": {
+          "name": "GlobalPorts",
+          "url": "https://www.globalports.com.ar/arca-desregula-tramites-aduaneros-comercio-exterior/"
+        }
+      }
     },
     {
       "id": "los-miembros-examinan-las-politicas-agropecuarias-en-la-primera-reunion-celebrad",
@@ -13949,7 +14115,15 @@
           "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/intra-asia-container-index"
         }
       ],
-      "story": "ormuz"
+      "story": "ormuz",
+      "explainer": {
+        "what": "Solo 17 buques de materias primas cruzaron el estrecho de Ormuz el fin de semana previo al 21 de septiembre, frente a 37 una semana antes, según Kpler.",
+        "why": "Por el estrecho sale crudo clave de Arabia Saudita e Irak: 42 millones de barriles en 22 tanqueros en la semana del 13 de septiembre. La tensión en el Golfo sigue afectando los costos de energía y de flete.",
+        "who": "Importadores de energía, navieras y cargadores con destino al Golfo.",
+        "products": [
+          "Petróleo crudo"
+        ]
+      }
     },
     {
       "id": "brasil-exportaciones-tercera-semana-septiembre",
@@ -14008,7 +14182,12 @@
           "type": "Organismo oficial",
           "url": "https://www.gov.br/mdic/pt-br/assuntos/noticias/2026-periodo-eleitoral/setembro/mdic-divulga-balanca-comercial-da-3a-semana-de-setembro-de-2026"
         }
-      ]
+      ],
+      "explainer": {
+        "what": "Hasta la tercera semana de septiembre, las exportaciones de Brasil sumaron USD 21.890 millones (+21,5% interanual) y el superávit, USD 4.280 millones, según el MDIC.",
+        "why": "Lideró la industria extractiva (+44,7%), seguida por la industria de transformación (+15,3%) y el agro (+12,5%). En el año, las exportaciones brasileñas crecen 11,1%.",
+        "who": "Exportadores e importadores del Mercosur que siguen la demanda y la competencia de Brasil."
+      }
     },
     {
       "id": "indec-superavit-agosto-2026",
@@ -14103,7 +14282,20 @@
           "label": "INDEC publica el intercambio comercial argentino de octubre",
           "url": "https://www.indec.gob.ar/ftp/cuadros/publicaciones/calendario_2sem2026.pdf"
         }
-      ]
+      ],
+      "explainer": {
+        "what": "Argentina tuvo en agosto un superávit comercial de USD 2.187 millones: exportó USD 8.883 millones (+12,4%) e importó USD 6.696 millones (+3,6%).",
+        "why": "Las exportaciones crecieron por precios (+16%), mientras las cantidades cayeron 3,1%. Es el mes 33 consecutivo con saldo positivo.",
+        "who": "Dato de referencia para todo el comercio exterior argentino.",
+        "products": [
+          "Semillas y frutos oleaginosos"
+        ],
+        "next": "El INDEC publicará en octubre el informe de septiembre, según su calendario.",
+        "nextSource": {
+          "name": "INDEC",
+          "url": "https://www.indec.gob.ar/uploads/informesdeprensa/ica_09_266E5973E036.pdf"
+        }
+      }
     },
     {
       "id": "mercosur-sin-acuerdo-cuota-carne-ue",
@@ -14188,7 +14380,21 @@
           "aranceles": true
         }
       },
-      "story": "ue-mercosur"
+      "story": "ue-mercosur",
+      "explainer": {
+        "what": "Argentina, Brasil, Paraguay y Uruguay todavía no acordaron cómo repartir la cuota de 99.000 toneladas de carne vacuna con arancel de 7,5% que otorgó la UE.",
+        "why": "La UE no fijó cuánto le corresponde a cada socio: el Mercosur debe definir el reparto y certificar las exportaciones, y de eso depende cuánto podrá vender la Argentina dentro del cupo.",
+        "who": "Frigoríficos y exportadores de carne vacuna a la Unión Europea.",
+        "products": [
+          "Carne vacuna refrigerada",
+          "Carne vacuna congelada"
+        ],
+        "next": "En 2026 se habilitaron 11.000 toneladas y el volumen crecerá en forma progresiva hasta completarse en 2031. La asociación brasileña Abiec prepara una propuesta de reparto.",
+        "nextSource": {
+          "name": "La Nación",
+          "url": "https://www.lanacion.com.ar/economia/campo/las-posiciones-siguen-alejadas-sigue-la-grieta-en-el-mercosur-por-una-cuota-clave-para-la-carne-nid18092026/"
+        }
+      }
     },
     {
       "id": "ue-salvaguardia-provisional-acero-magnetico",
@@ -14238,7 +14444,21 @@
           "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-81427",
           "primary": true
         }
-      ]
+      ],
+      "explainer": {
+        "what": "La Comisión Europea fijó el 18 de septiembre un derecho provisional de salvaguardia sobre ciertos laminados de acero magnético al silicio de grano orientado y sobre laminaciones y núcleos para transformadores (NC 7225 11 00, 7226 11 00 y 8504 90 13).",
+        "why": "La Comisión concluyó de forma preliminar que los productores europeos sufren un perjuicio grave y decidió actuar antes de cerrar la investigación, iniciada en marzo de 2026.",
+        "who": "Exportadores de ese acero hacia la Unión Europea e importadores europeos de núcleos y laminaciones para transformadores.",
+        "products": [
+          "Acero magnético al silicio de grano orientado",
+          "Laminaciones y núcleos para transformadores"
+        ],
+        "next": "El derecho provisional se aplica durante 155 días naturales.",
+        "nextSource": {
+          "name": "BOE – Diario Oficial de la UE",
+          "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-81427"
+        }
+      }
     },
     {
       "id": "china-exportaciones-agosto-25",
@@ -14299,7 +14519,16 @@
           "type": "Medio de comunicación",
           "url": "https://es.euronews.com/2026/09/08/las-exportaciones-de-china-se-aceleran-por-la-fuerte-demanda-de-coches-y-productos-tecnolo"
         }
-      ]
+      ],
+      "explainer": {
+        "what": "Las exportaciones de China crecieron 25% interanual en agosto y el superávit comercial llegó a USD 119.100 millones.",
+        "why": "Autos y productos de alta tecnología impulsaron las ventas: entre enero y agosto, las exportaciones de computadoras y componentes subieron 49,4%. China también amplió sus ventas a América Latina, África y el Sudeste Asiático.",
+        "who": "Industrias que compiten con productos chinos y compradores de esos bienes, incluida América Latina.",
+        "products": [
+          "Autos",
+          "Computadoras y componentes"
+        ]
+      }
     },
     {
       "id": "aduana-news-reconfiguracion-comercio-argentino",
@@ -14370,7 +14599,22 @@
           "author": "Héctor Gustavo Fadda",
           "primary": true
         }
-      ]
+      ],
+      "explainer": {
+        "what": "Un análisis de Héctor Gustavo Fadda en Aduana News describe a la Argentina con tres motores exportadores: agroindustria, energía y minería.",
+        "why": "Según los datos citados, los complejos exportadores sumaron USD 49.511 millones en el primer semestre (+24,6%), pero la logística sigue con escasez de bodega y contenedores. La RG 5891/2026 permite rectificar operaciones en el SITA en tres horas.",
+        "who": "Exportadores afectados por la falta de bodega y contenedores.",
+        "products": [
+          "Agroindustria",
+          "Energía",
+          "Minería"
+        ],
+        "next": "La consultora LCG proyecta exportaciones por USD 103.740 millones en 2026, por encima del récord de 2022.",
+        "nextSource": {
+          "name": "Aduana News",
+          "url": "https://aduananews.com/reconfiguracion-del-comercio-exterior-argentino/"
+        }
+      }
     },
     {
       "id": "arca-rg-5892-lineas-produccion-usadas",
@@ -14431,7 +14675,15 @@
           "aranceles": false
         }
       },
-      "story": "arca-normativa"
+      "story": "arca-normativa",
+      "explainer": {
+        "what": "Con la RG 5892/2026, las autorizaciones para importar líneas de producción usadas se tramitan en la Ventanilla Única de Comercio Exterior (VUCEA).",
+        "why": "La autoridad las envía en forma digital y quedan disponibles para validar en el Sistema Malvina de la Aduana, lo que reduce trámites en papel.",
+        "who": "Empresas que importan equipamiento industrial usado.",
+        "products": [
+          "Líneas de producción usadas (bienes de capital)"
+        ]
+      }
     },
     {
       "id": "arca-rg-5868-prorroga-percepciones-importacion",
@@ -14501,7 +14753,17 @@
           "label": "Vencen las excepciones a las percepciones de IVA y Ganancias en ciertas importaciones (RG 5868)"
         }
       ],
-      "story": "arca-normativa"
+      "story": "arca-normativa",
+      "explainer": {
+        "what": "La RG 5868/2026 extendió hasta el 31 de diciembre de 2026 la exclusión de percepciones de IVA y Ganancias en la importación de ciertos bienes de primera necesidad.",
+        "why": "Los importadores de esos rubros evitan adelantar esos tributos en la Aduana durante el segundo semestre.",
+        "who": "Importadores de los bienes alcanzados por las excepciones de las RG 5490 y 5501.",
+        "next": "Las excepciones vencen el 31 de diciembre de 2026.",
+        "nextSource": {
+          "name": "El Cronista",
+          "url": "https://www.cronista.com/economia-politica/arca-mantiene-un-beneficio-clave-para-importaciones-quienes-evitaran-adelantos-de-iva-y-ganancias-en-aduana/"
+        }
+      }
     }
   ],
   "ingestion": {
