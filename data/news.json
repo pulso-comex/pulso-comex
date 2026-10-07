@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-07T09:43:45Z",
+  "updatedAt": "2026-10-07T13:42:43Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -115,7 +115,7 @@
       "obsDate": "2026-10-06",
       "change": "+0,1% vs. día hábil anterior",
       "trend": "up",
-      "checkedAt": "2026-10-07T09:45:03Z",
+      "checkedAt": "2026-10-07T13:43:21Z",
       "history": [
         [
           "2026-08-26",
@@ -242,22 +242,22 @@
     {
       "id": "soja",
       "label": "Soja · precio pizarra Rosario",
-      "value": "$ 552.500/t",
-      "period": "Rosario · 5 oct 2026 · US$ 365,65/t",
+      "value": "$ 560.000/t",
+      "period": "Rosario · 6 oct 2026 · US$ 370,62/t",
       "source": "Bolsa de Comercio de Rosario",
       "url": "https://www.cac.bcr.com.ar/es/precios-de-pizarra",
       "group": "Mercados",
-      "obsDate": "2026-10-05",
-      "change": "-0,3% vs. pizarra anterior",
-      "trend": "down",
+      "obsDate": "2026-10-06",
+      "change": "+1,4% vs. pizarra anterior",
+      "trend": "up",
       "_last": {
+        "date": "2026-10-06",
+        "ars": 560000.0
+      },
+      "checkedAt": "2026-10-07T13:43:23Z",
+      "_prev": {
         "date": "2026-10-05",
         "ars": 552500.0
-      },
-      "checkedAt": "2026-10-07T09:45:06Z",
-      "_prev": {
-        "date": "2026-10-02",
-        "ars": 554000.0
       },
       "history": [
         [
@@ -267,6 +267,10 @@
         [
           "2026-10-05",
           552500.0
+        ],
+        [
+          "2026-10-06",
+          560000.0
         ]
       ]
     },
@@ -281,7 +285,7 @@
       "obsDate": "2026-09-29",
       "change": "-5,0% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-07T09:45:08Z",
+      "checkedAt": "2026-10-07T13:43:24Z",
       "history": [
         [
           "2026-08-18",
@@ -408,21 +412,21 @@
     {
       "id": "maiz",
       "label": "Maíz · precio pizarra Rosario",
-      "value": "$ 287.090/t",
+      "value": "$ 294.000/t",
       "group": "Mercados",
-      "period": "Rosario · 5 oct 2026 · US$ 190,00/t",
-      "obsDate": "2026-10-05",
-      "change": "0,0% vs. pizarra anterior",
-      "trend": "flat",
+      "period": "Rosario · 6 oct 2026 · US$ 194,57/t",
+      "obsDate": "2026-10-06",
+      "change": "+2,4% vs. pizarra anterior",
+      "trend": "up",
       "source": "Bolsa de Comercio de Rosario",
       "url": "https://www.cac.bcr.com.ar/es/precios-de-pizarra",
       "_last": {
-        "date": "2026-10-05",
-        "ars": 287090.0
+        "date": "2026-10-06",
+        "ars": 294000.0
       },
-      "checkedAt": "2026-10-07T09:45:06Z",
+      "checkedAt": "2026-10-07T13:43:23Z",
       "_prev": {
-        "date": "2026-10-02",
+        "date": "2026-10-05",
         "ars": 287090.0
       },
       "history": [
@@ -433,27 +437,31 @@
         [
           "2026-10-05",
           287090.0
+        ],
+        [
+          "2026-10-06",
+          294000.0
         ]
       ]
     },
     {
       "id": "trigo",
       "label": "Trigo · precio pizarra Rosario",
-      "value": "$ 339.975/t",
+      "value": "$ 343.000/t",
       "group": "Mercados",
-      "period": "Rosario · 5 oct 2026 · US$ 225,00/t",
-      "obsDate": "2026-10-05",
-      "change": "0,0% vs. pizarra anterior",
-      "trend": "flat",
+      "period": "Rosario · 6 oct 2026 · US$ 227,00/t",
+      "obsDate": "2026-10-06",
+      "change": "+0,9% vs. pizarra anterior",
+      "trend": "up",
       "source": "Bolsa de Comercio de Rosario",
       "url": "https://www.cac.bcr.com.ar/es/precios-de-pizarra",
       "_last": {
-        "date": "2026-10-05",
-        "ars": 339975.0
+        "date": "2026-10-06",
+        "ars": 343000.0
       },
-      "checkedAt": "2026-10-07T09:45:06Z",
+      "checkedAt": "2026-10-07T13:43:23Z",
       "_prev": {
-        "date": "2026-10-02",
+        "date": "2026-10-05",
         "ars": 339975.0
       },
       "history": [
@@ -464,311 +472,552 @@
         [
           "2026-10-05",
           339975.0
+        ],
+        [
+          "2026-10-06",
+          343000.0
         ]
       ]
     }
   ],
   "items": [
     {
-      "id": "deficit-argentina-brasil-septiembre-2026-51-millones",
+      "id": "asenav-avanza-hacia-una-construccion-naval-mas-sostenible-con-medicion-de-su-hue",
+      "datetime": "2026-10-07T13:30:22Z",
       "date": "2026-10-07",
-      "kind": "datos",
-      "title": "El déficit comercial con Brasil se achicó a USD 51 millones en septiembre por la caída de las compras de autos",
-      "summary": "Las exportaciones argentinas a Brasil subieron 5,5% y las importaciones cayeron 25,2%, según datos difundidos por la consultora Abeceb. El rojo bilateral pasó de USD 578 millones a USD 51 millones en un año.",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Asenav avanza hacia una construcción naval más sostenible con medición de su huella de carbono",
+      "summary": "Un nuevo paso en materia de gestión ambiental dio Astilleros y Servicios Navales (Asenav), luego de…",
+      "body": [],
+      "keyData": [],
       "topics": [
-        "Argentina",
-        "Latinoamérica",
-        "Mercosur",
-        "Exportaciones",
-        "Importaciones"
+        "Puertos",
+        "Latinoamérica"
       ],
       "countries": [
-        "Argentina",
-        "Brasil"
+        "Chile"
       ],
-      "tags": [
-        "Balanza comercial",
-        "Abeceb",
-        "Sector automotriz",
-        "Brasil"
-      ],
-      "visual": "chart",
-      "impact": 2,
-      "affectsArgentina": true,
-      "argentinaNote": "Brasil es uno de los principales socios comerciales del país: la mejora del saldo responde sobre todo a menores compras argentinas, más que a un salto de las ventas, según el análisis citado.",
-      "argentinaImpact": {
-        "change": "En septiembre el déficit con Brasil bajó a USD 51 millones (USD 578 millones un año antes): importaciones -25,2% y exportaciones +5,5%.",
-        "who": "Importadores y concesionarias del sector automotor, exportadores de camiones y vehículos especiales, energía, aluminio y lácteos con destino a Brasil.",
-        "sectors": [
-          "Automotriz",
-          "Energía",
-          "Aluminio",
-          "Lácteos"
-        ],
-        "flows": {
-          "importaciones": true,
-          "exportaciones": true,
-          "logistica": false,
-          "aranceles": false
-        }
-      },
-      "body": [
-        "El intercambio entre la Argentina y Brasil cerró septiembre con un déficit de USD 51 millones para el país, contra USD 578 millones del mismo mes de 2025, según el informe de la consultora Abeceb que difundieron Infobae y Ámbito el 7 de octubre. Las exportaciones argentinas al vecino sumaron USD 1.305 millones, 5,5% más que un año antes, mientras que las importaciones desde Brasil bajaron 25,2%, a USD 1.357 millones.",
-        "La mayor parte de la mejora vino por el lado de las compras. Las cuatro principales categorías del sector automotor pasaron de USD 795 millones a USD 433 millones en un año, y las importaciones de autos de pasajeros cayeron 51,5%, a USD 201 millones, en un contexto de patentamientos de 0 km 11,4% más bajos que en septiembre de 2025. Las compras de energía eléctrica retrocedieron 63,7%, a USD 43,1 millones, con el fin del invierno.",
-        "Del lado exportador se destacaron el petróleo crudo (+42,2%, USD 61,8 millones), el aluminio (+121,1%, USD 53 millones), los camiones y vehículos especiales (+4%, USD 350,6 millones) y los quesos y lácteos (+80%, USD 31,8 millones). Ámbito, que también difundió los datos, señala que las ventas de trigo a Brasil retrocedieron porque ese país diversifica proveedores.",
-        "En los primeros nueve meses del año el déficit bilateral acumuló USD 1.686 millones, frente a USD 4.696 millones en igual período de 2025. Abeceb proyecta que el saldo negativo del año cierre cerca de USD 2.200 millones, menos de la mitad de los USD 5.201 millones de 2025, y atribuye la mejora a las menores compras argentinas antes que a un aumento de las exportaciones."
-      ],
-      "keyData": [
-        [
-          "Exportaciones a Brasil, septiembre",
-          "USD 1.305 M (+5,5%)"
-        ],
-        [
-          "Importaciones desde Brasil, septiembre",
-          "USD 1.357 M (-25,2%)"
-        ],
-        [
-          "Saldo bilateral, septiembre",
-          "-USD 51 M (vs. -USD 578 M en sep. 2025)"
-        ],
-        [
-          "Principales rubros automotores importados",
-          "USD 433 M (vs. USD 795 M)"
-        ],
-        [
-          "Saldo enero–septiembre",
-          "-USD 1.686 M (vs. -USD 4.696 M)"
-        ],
-        [
-          "Proyección Abeceb para 2026",
-          "≈ -USD 2.200 M"
-        ]
-      ],
-      "explainer": {
-        "what": "En septiembre la Argentina tuvo con Brasil un déficit comercial de USD 51 millones, contra USD 578 millones un año antes.",
-        "why": "Brasil es un socio clave y el saldo mejoró sobre todo porque las importaciones cayeron 25,2%, con un derrumbe de las compras de autos, mientras las exportaciones subieron 5,5%.",
-        "who": "Importadores del sector automotor, concesionarias y exportadores argentinos de energía, aluminio, camiones y vehículos especiales, y lácteos que venden a Brasil.",
-        "products": [
-          "Autos de pasajeros",
-          "Camiones y vehículos especiales",
-          "Petróleo crudo",
-          "Aluminio",
-          "Quesos y lácteos",
-          "Energía eléctrica",
-          "Trigo"
-        ],
-        "next": "Abeceb proyecta que el déficit bilateral de 2026 cierre cerca de USD 2.200 millones, menos de la mitad de los USD 5.201 millones de 2025.",
-        "nextSource": {
-          "name": "Infobae (informe de Abeceb)",
-          "url": "https://www.infobae.com/economia/2026/10/07/el-deficit-comercial-con-brasil-se-redujo-casi-90-en-un-ano-que-esconde-la-fuerte-mejora/"
-        }
-      },
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
       "sources": [
         {
-          "name": "Infobae (informe de Abeceb)",
-          "type": "Medio de comunicación",
-          "url": "https://www.infobae.com/economia/2026/10/07/el-deficit-comercial-con-brasil-se-redujo-casi-90-en-un-ano-que-esconde-la-fuerte-mejora/",
-          "primary": true
-        },
-        {
-          "name": "Ámbito",
-          "type": "Medio de comunicación",
-          "url": "https://www.ambito.com/economia/el-deficit-brasil-se-redujo-91-anual-septiembre-derrumbe-las-importaciones-que-factores-influyeron-n6330894"
-        }
-      ],
-      "absorbs": [
-        "argentina-reduce-importaciones-desde-brasil-y-achica-el-deficit-comercial",
-        "deficit-con-brasil-suben-exportaciones-pero-sigue-el-rojo",
-        "la-balanza-comercial-con-brasil-registro-un-deficit-de-us-51-millones-en-septiem",
-        "intercambio-con-brasil-notable-baja-de-las-importaciones-y-nuevo-crecimiento-de"
-      ]
-    },
-    {
-      "id": "brasil-superavit-septiembre-2026-7740-millones-mdic",
-      "date": "2026-10-06",
-      "kind": "datos",
-      "title": "Brasil tuvo un superávit comercial de USD 7.740 millones en septiembre y recortó su proyección anual",
-      "summary": "Las exportaciones brasileñas crecieron 12,9% y las importaciones bajaron 2,4%, según el MDIC. El gobierno redujo a USD 84.400 millones el saldo positivo esperado para 2026.",
-      "topics": [
-        "Latinoamérica",
-        "Exportaciones",
-        "Importaciones",
-        "Economía internacional"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "tags": [
-        "MDIC",
-        "Balanza comercial",
-        "Brasil",
-        "Petróleo"
-      ],
-      "visual": "chart",
-      "impact": 2,
-      "affectsArgentina": true,
-      "argentinaNote": "Brasil es uno de los principales destinos de las exportaciones argentinas; su balanza muestra hacia dónde se mueve la demanda y la oferta del principal socio del Mercosur.",
-      "argentinaImpact": {
-        "change": "Brasil exportó USD 34.420 millones en septiembre (+12,9%) e importó USD 26.680 millones (-2,4%); las compras de manufacturas cayeron 3,2%.",
-        "who": "Exportadores argentinos que venden a Brasil y empresas que compiten con productos brasileños en terceros mercados.",
-        "sectors": [
-          "Petróleo",
-          "Mineral de cobre",
-          "Soja y derivados",
-          "Combustibles"
-        ],
-        "flows": {
-          "importaciones": false,
-          "exportaciones": true,
-          "logistica": false,
-          "aranceles": false
-        }
-      },
-      "body": [
-        "El Ministerio de Desarrollo, Industria, Comercio y Servicios de Brasil (MDIC) informó el 6 de octubre que la balanza comercial del país cerró septiembre con un superávit de USD 7.740 millones, contra USD 3.140 millones del mismo mes de 2025. Las exportaciones llegaron a USD 34.420 millones, 12,9% más que un año antes, y las importaciones a USD 26.680 millones, con una baja de 2,4%. Según Agência Brasil, fue el segundo mejor septiembre de la serie, detrás de 2023.",
-        "La industria extractiva explicó buena parte del salto exportador: vendió USD 9.440 millones (+39,8%), con fuertes subas del petróleo crudo y del mineral de cobre. La industria de transformación exportó USD 17.670 millones (+5,3%), con avances de la harina de soja y los combustibles, y el agro USD 7.000 millones (+4,8%), con subas de la soja y del café en grano. Por destino, crecieron las ventas a Europa (+51,9%) y a América del Norte (+30,6%), mientras que las dirigidas a Asia bajaron 2,5%.",
-        "Del lado de las compras, las importaciones de la industria de transformación cayeron 3,2%, a USD 24.786 millones, mientras subieron las del agro y la industria extractiva. En los primeros nueve meses del año, el superávit acumulado fue de USD 62.400 millones, 34,8% más que en igual período de 2025.",
-        "El MDIC revisó a la baja su proyección para todo 2026: ahora espera un superávit de USD 84.400 millones, frente a los USD 90.000 millones estimados antes, con exportaciones por USD 382.500 millones e importaciones por USD 298.100 millones."
-      ],
-      "keyData": [
-        [
-          "Exportaciones septiembre",
-          "USD 34.420 M (+12,9%)"
-        ],
-        [
-          "Importaciones septiembre",
-          "USD 26.680 M (-2,4%)"
-        ],
-        [
-          "Saldo septiembre",
-          "USD 7.740 M (vs. USD 3.140 M en sep. 2025)"
-        ],
-        [
-          "Saldo enero–septiembre",
-          "USD 62.400 M (+34,8%)"
-        ],
-        [
-          "Proyección de saldo 2026 (MDIC)",
-          "USD 84.400 M (antes USD 90.000 M)"
-        ]
-      ],
-      "explainer": {
-        "what": "Brasil cerró septiembre con un superávit comercial de USD 7.740 millones, con exportaciones en alza de 12,9% e importaciones en baja de 2,4%.",
-        "why": "Es el balance del principal socio del Mercosur: muestra exportaciones impulsadas por petróleo y cobre y menores compras de manufacturas, y el gobierno bajó a USD 84.400 millones el superávit esperado para el año.",
-        "who": "Exportadores argentinos que venden a Brasil y empresas que compiten con productos brasileños en terceros mercados.",
-        "products": [
-          "Petróleo crudo",
-          "Mineral de cobre",
-          "Harina de soja",
-          "Combustibles",
-          "Soja",
-          "Café"
-        ],
-        "next": "El MDIC proyecta para 2026 un superávit de USD 84.400 millones, con exportaciones por USD 382.500 millones e importaciones por USD 298.100 millones.",
-        "nextSource": {
-          "name": "Jornal de Brasília",
-          "url": "https://jornaldebrasilia.com.br/noticias/economia/balanca-comercial-tem-superavit-em-setembro-de-us-7741-bilhoes/"
-        }
-      },
-      "sources": [
-        {
-          "name": "Agência Brasil (datos del MDIC)",
-          "type": "Agencia pública de noticias",
-          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/balanca-comercial-tem-superavit-de-us-774-bilhoes-em-setembro",
-          "primary": true
-        },
-        {
-          "name": "Jornal de Brasília",
-          "type": "Medio de comunicación",
-          "url": "https://jornaldebrasilia.com.br/noticias/economia/balanca-comercial-tem-superavit-em-setembro-de-us-7741-bilhoes/"
-        },
-        {
-          "name": "O Povo",
-          "type": "Medio de comunicación",
-          "url": "https://www.opovo.com.br/noticias/economia/2026/10/06/balanca-comercial-tem-superavit-de-uss-774-bilhoes-em-setembro.html"
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/asenav-avanza-hacia-una-construccion-naval-mas-sostenible-con-medicion-de-su-huella-de-carbono/",
+          "primary": true,
+          "author": "Luis Alonso"
         }
       ]
     },
     {
-      "id": "eeuu-deficit-comercial-agosto-2026-105600-millones",
-      "date": "2026-10-06",
-      "kind": "datos",
-      "title": "El déficit comercial de EE.UU. subió 13,7% en agosto, a USD 105.600 millones, por importaciones récord",
-      "summary": "Las importaciones estadounidenses crecieron 4,3% y las exportaciones 1,4%, según el Departamento de Comercio. En lo que va del año, el déficit es 19,9% menor que en 2025.",
+      "id": "el-contenido-de-las-negociaciones-para-un-acuerdo-comercial-reciproco-con-estado",
+      "datetime": "2026-10-07T13:19:43Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "El contenido de las negociaciones para un acuerdo comercial recíproco con Estados Unidos ya está prácticamente finalizado.",
+      "summary": "Un representante del Ministerio de Industria y Comercio declaró que Vietnam y Estados Unidos han concluido prácticamente las negociaciones en el marco de un acuerdo comercial recíproco, justo y equilibrado entre ambos países.",
+      "body": [],
+      "keyData": [],
       "topics": [
-        "Estados Unidos",
-        "Importaciones",
-        "Exportaciones",
-        "Economía internacional",
+        "Tratados y acuerdos",
+        "Estados Unidos"
+      ],
+      "countries": [
+        "Estados Unidos"
+      ],
+      "tags": [
+        "Estados Unidos"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Vietnam.vn",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.vietnam.vn/es/co-ban-hoan-tat-noi-dung-dam-phan-hiep-dinh-thuong-mai-doi-ung-voi-hoa-ky",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "Xpectro FM",
+          "type": "También publicó esta noticia",
+          "url": "https://xpectrofm.com/india-y-estados-unidos-frenan-negociaciones-de-acuerdo-comercial/",
+          "alsoIn": true,
+          "title": "India y Estados Unidos frenan negociaciones de acuerdo comercial"
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVTctSjc1LXJnMTNCNkw4bFFGNGhueW1NcDBXR0VSMktPcEdZM1pXRm4wRFE4XzRCWG5QMU4wcWtpUHFLWjJIblpuQWpiV2FpazJtcnp0R2JBSXMwV0NWUGpYMElWSHg2emp3MXNwd2FvNDdWbTMtclM2XzAzdnVfbFQzVnJsZFFXUGJMVERyZllDU0JqZm50Rk5yQ1RiWW56?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSHJOTVgzZDlzUmRHNkhwNTJWa0NNTi1kYTVTdEs3X2pKMnFnYVRHRllac0RLWE50NE5GNENjSjdsYm1PV3dubWRuQmRFa0xrQUs0ajBLMHRlUk41YklZTGh5WmNzM1NCNTR6Slc4bTg0cE1NNWhGQjJaMEtTbDJrLUh1S0ZxY1Vnclg5NGUwaW8",
+        "https://xpectrofm.com/india-y-estados-unidos-frenan-negociaciones-de-acuerdo-comercial"
+      ],
+      "mergedIds": [
+        "india-y-estados-unidos-frenan-negociaciones-de-acuerdo-comercial"
+      ]
+    },
+    {
+      "id": "fruit-attraction-vox-plantea-romper-el-acuerdo-comercial-entre-espana-y-marrueco",
+      "datetime": "2026-10-07T13:10:00Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "FRUIT ATTRACTION: Vox plantea romper el acuerdo comercial entre España y Marruecos",
+      "summary": "El portavoz nacional de Vox de Trabajo y Campo, Rodrigo Alonso, en su visita a la feria Fruit Attraction ha pedido protección para el tomate español frente al marroquí.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "Europa"
+      ],
+      "countries": [
+        "España"
+      ],
+      "tags": [],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Canal Sur",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.canalsur.es/noticias/espana/vox-plantea-romper-acuerdo-comercial_1_1441954.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWDZiR0lWMEZrNm15NThHNHJ2cXFOWEwzXzNFVmRoNDg0cHNEdEVzRktBRXktd000bzlXeTRsaUhrbW9FNUNmMHF4czJ4ZjUtRU5QOHpEN3pnZ0FVbjFCRVJaM2dHSHl4cjlHVHRGV2lSWXl5dGY3cFFxN0Q1TkxncmtGNm1ubU1kSFF1VmxrMFAwV3RObkE?oc=5"
+    },
+    {
+      "id": "inquietud-por-supresion-aranceles-al-arroz-estadounidense",
+      "datetime": "2026-10-07T13:02:34Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Inquietud por supresión aranceles al arroz estadounidense",
+      "summary": "Por tratarse de uno de los pilares de la dieta diaria, todo lo que se relacione con el arroz, como la eliminación de los aranceles a las imp",
+      "body": [],
+      "keyData": [],
+      "topics": [
         "Aranceles"
       ],
       "countries": [
-        "Estados Unidos",
-        "México",
-        "China",
-        "Canadá"
+        "Global"
       ],
       "tags": [
-        "Balanza comercial",
-        "Census Bureau",
-        "BEA"
+        "Aranceles"
       ],
-      "visual": "chart",
+      "visual": "customs",
       "impact": 1,
       "affectsArgentina": false,
-      "body": [
-        "El déficit comercial de bienes y servicios de Estados Unidos aumentó 13,7% en agosto y llegó a USD 105.600 millones, según los datos de la Oficina del Censo y la Oficina de Análisis Económico (BEA) difundidos el 6 de octubre. En julio, con cifras revisadas, había sido de USD 92.800 millones. Es el nivel más alto desde marzo de 2025, de acuerdo con EFE.",
-        "Las importaciones crecieron 4,3%, a USD 420.800 millones, un récord según Bloomberg Línea, mientras que las exportaciones subieron 1,4%, a USD 315.200 millones. El déficit de bienes fue de USD 136.600 millones y el superávit de servicios se mantuvo en torno a USD 31.000 millones. La suba de las compras se explicó por suministros y materiales industriales —entre ellos petróleo y derivados— y por bienes de capital.",
-        "Por país, los mayores déficits de bienes fueron con México (USD 27.700 millones), China (USD 16.400 millones), la Unión Europea (USD 11.000 millones) y Canadá (USD 7.100 millones). Pese al salto mensual, en los primeros ocho meses del año el déficit acumulado es 19,9% menor que en igual período de 2025, con exportaciones 11,8% más altas e importaciones 4,4% mayores."
-      ],
-      "keyData": [
-        [
-          "Déficit agosto",
-          "USD 105.600 M (+13,7% mensual)"
-        ],
-        [
-          "Importaciones agosto",
-          "USD 420.800 M (+4,3%)"
-        ],
-        [
-          "Exportaciones agosto",
-          "USD 315.200 M (+1,4%)"
-        ],
-        [
-          "Déficit de bienes",
-          "USD 136.600 M"
-        ],
-        [
-          "Déficit acumulado enero–agosto",
-          "-19,9% vs. 2025"
-        ]
-      ],
-      "explainer": {
-        "what": "El déficit comercial de Estados Unidos aumentó 13,7% en agosto y llegó a USD 105.600 millones, el nivel más alto desde marzo de 2025.",
-        "why": "Muestra que, pese a los aranceles, las importaciones estadounidenses subieron 4,3% en el mes, impulsadas por bienes de capital y suministros industriales, aunque en el acumulado del año el déficit sigue 19,9% por debajo de 2025.",
-        "who": "Exportadores que venden a Estados Unidos y empresas atentas a la política arancelaria estadounidense, en especial de México, China, la Unión Europea y Canadá.",
-        "products": [
-          "Bienes de capital",
-          "Petróleo y derivados",
-          "Suministros y materiales industriales"
-        ]
-      },
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "Infobae (EFE)",
-          "type": "Agencia de noticias",
-          "url": "https://www.infobae.com/america/agencias/2026/10/06/el-deficit-comercial-de-eeuu-aumento-un-137-en-agosto-hasta-105600-millones-de-dolares/",
-          "primary": true
-        },
-        {
-          "name": "Bloomberg Línea",
-          "type": "Medio especializado",
-          "url": "https://www.bloomberglinea.com/mundo/estados-unidos/deficit-comercial-de-eeuu-se-amplia-a-us105600-millones-mientras-importaciones-alcanzan-record/"
+          "name": "El Nacional — La voz de todos",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://elnacional.com.do/opinion/inquietud-supresion-aranceles-arroz-estadounidense_582784.html",
+          "primary": true,
+          "author": ""
         }
       ],
-      "story": "aranceles-eeuu",
-      "absorbs": [
-        "deficit-comercial-de-eeuu-se-expandio-en-agosto-a-pesar-de-aranceles-de-trump"
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcXhUSVV3QUoxNERwNENwLVZfZTB1YWVTNVVZZHYzVUhaYTZJNHNuOHRkcXhCalNZNnpHWEV2X192Q0gwSExUWmxHU2hHb204blgzb0NOQWp1REQwS05wcnpxbGtaLTdkNjdCVDZvY1NlNHZmVkJ0UEt6emZXajN4SzJCMWFySnk4TkFHTlFYM2pUQ19WaEtSbkIwVVPSAaIBQVVfeXFMTURZS2owbFFqQ0NKdHpfcG5KU1NaRF9BV0hORFlyWUkyeW94amZOY18zbkNYV0NrYV9qQlpiREgwYlFLTmJ0R211aF9aSEppVVprNDNVMHpqWUI0MjZwbnVWc2FxMWtmOVFmeW10ZjdJMl84T1NSTFBzTnZScUczVTFjcWZpV1hxQVdTa2hiUVI0SDhfTXplNjB3Z2Z3ZGU3UTlR?oc=5"
+    },
+    {
+      "id": "la-trazabilidad-que-viene-en-el-comercio-exterior-se-escribe-en-tokens",
+      "datetime": "2026-10-07T12:54:07Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "La trazabilidad que viene en el comercio exterior se escribe en tokens",
+      "summary": "Federico Loizzo, despachante de aduana, agente de transporte aduanero y profesional de comercio exterior, plantea que la blockchain puede ser para los documentos lo que el precinto es para la carga",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Infobae",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.infobae.com/movant/2026/10/07/la-trazabilidad-que-viene-en-el-comercio-exterior-se-escribe-en-tokens/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVHJUWU1TcFZHTXEzOGJCdjVDRF9CZFVtcmNxbzRtTmJnRjV2NWxxdVVhUFRZU0RvRm9GQVJlUWg0RThaT0hkN0JseFVodldGZjJLSmFVel92bmR0dGhDUjdsYW90RnpkUUVoekxrQUdGRHhtWXoyOS13WmpfaEljM3YwajNOSGZzWkFqLWdxUmJwSHlHNTN3RkVoTjNRZVQ0THh5bDVmcnFlQW1WcF9QeEdXNA?oc=5"
+    },
+    {
+      "id": "maersk-oferta-y-demanda-ya-no-bastan-para-comprender-el-transporte-maritimo-de-c",
+      "datetime": "2026-10-07T12:32:39Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Maersk: oferta y demanda ya no bastan para comprender el transporte marítimo de contenedores",
+      "summary": "Inventarios, geopolítica y restricciones de infraestructura modifican el mercado más allá de las cifras globales",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "container",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Mundo Marítimo",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.mundomaritimo.cl/noticias/maersk-oferta-y-demanda-ya-no-bastan-para-comprender-el-transporte-maritimo-de-contenedores",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeDA4SVJjbTQ4dW9iT1lYbE04ZEVxa19TOVZQTERwQ01XenJxeEFYTmY2UGEtTEZwOVIxZjhEc0dka3dNOHdDMFo0X3Zybl9GTjlGd2h0QkFKMDBtVzFxTXd1WS1FWEFzalRDLVVLMEFra0drdmtVcWx5QXNuSkJoOGx2X09WUGxZY0FRZnNfOU9oWmtuXzd0NHYxTEsyUXIwa2RlSWtSYmVkbmdEdVk4SFNFY2ZXYXZZSTlGMF9FOF9hcDRBdURaNA?oc=5"
+    },
+    {
+      "id": "la-inteligencia-artificial-impulsa-el-comercio-global-pese-a-aranceles-y-tension",
+      "datetime": "2026-10-07T12:31:40Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "La inteligencia artificial impulsa el comercio global pese a aranceles y tensiones, según DHL",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "Tecnología COMEX"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Demócrata",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.democrata.es/economia/la-inteligencia-artificial-impulsa-el-comercio-global-pese-a-aranceles-y-tensiones-segun-dhl/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUGJYSHlkc203bS1TY1YyenN6aGFDd3d3OUVJMlJXaTRTbURLTzdrQVZoR1lkUVd6RFlNQ050ZkxHWjF0Ml9zcThISzFkTXpzaVlLVDFyS3lEcjNTMG1iUVFwczJ2QmF0UkxiaHVXbXFNeEtWOWl2anc4ME5MMDI5VElDSTI0Sk1rT0hnenRPWDhubWh0RmNQR2dvU2Y5bXgxOWFsbkNwUmxSUlRURm9Md04zaTFPMWhHa1lvTlRCVUI0XzlCdFHSAcsBQVVfeXFMTXhUbElTTGR5LWNiT3JoVWh6ZDNPSjJEdzFmTUJvLXNTZnJkT1BzQ3U5ckRHa1d0TUl6Q3lDUks0aXY1Q194Y0hZdkw3ZHlkNmdYdmlPbVlnbm96T2Ricld6VzM3YVQ0eHp6Ykxwck5CM0hSdkF2MWlwcXRZSVg4YUJYRjRudVNUVTBoWHRfenBIUU5KaHcyeU9na2NybEZlTU9aOW1jUU1mRU5KRFh2dDdJc012YTZpNEhkNkNaUzh4LXJhc0Qxel9YWjg?oc=5"
+    },
+    {
+      "id": "yinson-greentech-y-puerto-de-langkawi-buscaran-desarrollar-primer-servicio-de-fe",
+      "datetime": "2026-10-07T12:30:11Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Yinson GreenTech y Puerto de Langkawi buscarán desarrollar primer servicio de ferry eléctrico en alta mar de Malasia",
+      "summary": "Yinson GreenTech (YGT), a través de su división de electrificación marítima marinEV, firmó un Memorando de…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/yinson-greentech-y-puerto-de-langkawi-buscaran-desarrollar-primer-servicio-de-ferry-electrico-en-alta-mar-de-malasia/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "lineas-navieras-reordenan-servicios-entre-asia-y-la-costa-este-de-sudamerica",
+      "datetime": "2026-10-07T12:28:09Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Líneas navieras reordenan servicios entre Asia y la Costa Este de Sudamérica",
+      "summary": "ZIM y Hapag-Lloyd comparten servicio y CMA CGM renovará su cobertura de Brasil y el Río de la Plata",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "ship",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Mundo Marítimo",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.mundomaritimo.cl/noticias/lineas-navieras-reordenan-servicios-entre-asia-y-la-costa-este-de-sudamerica",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNc2R6emVkRE1QZzA5Z3M4WDNTQW1jYXB3SlR2NVJWTnFtT0xrZ1UwU01JRHBzVnczSExvQWsyS1BEc1lQUm5MTkNvazJkYjd1a0MtUGY5Sk0xQzIxbENGUWI1aUNJajFnT192d2ZfRzM3LVp3VUEtODMtQU1pT3NRS0VnU2x2SVZnTDZBUFp4cG5tZTg5YVhpcC1kVERUNkc3MllvNlVhMEt0eGZROF91RFh3Y2E?oc=5"
+    },
+    {
+      "id": "biodiesel-argentino-las-exportaciones-a-europa-se-cuadruplicaron-en-pocos-meses",
+      "datetime": "2026-10-07T12:01:42Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Biodiésel argentino: las exportaciones a Europa se cuadruplicaron en pocos meses",
+      "summary": "Tras meses de incertidumbre regulatoria en Europa, la Argentina reactiv sus ventas de biodisel de soja y ya export unas 220.000 toneladas en 2026.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "AgroLatam",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.agrolatam.com/argentina/actualidad/biodiesel-argentino-europa-exportaciones-soja-2026/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOEhFazQwazIweldlX1VvbWgwWUFMem5xNVZWeW1IekRxUEQ5SUUydkhDRXZKNEN4NGJlQUZuT2U5VDZUb2NFSnExemJicHBRS2xuU21vSVNXRDRwSnNBQmx6My1zVmJ2eVdZeHRzNVpoQXdZT2pZSFRnd0JicHB0T3dkdnZTYXl4Wjl3aVFSbUduamhsTHI1UUQ2amlKSzg?oc=5"
+    },
+    {
+      "id": "brasil-tcp-bate-records-historicos-y-moviliza-mas-de-150-000-teu-en-un-solo-mes",
+      "datetime": "2026-10-07T12:00:33Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Brasil: TCP bate récords históricos y moviliza más de 150.000 TEU en un solo mes",
+      "summary": "En septiembre, TCP, la empresa que gestiona la Terminal de Contenedores de Paranaguá, manejó el equivalente…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "tags": [
+        "Contenedores"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/brasil-tcp-bate-records-historicos-y-moviliza-mas-de-150-000-teu-en-un-solo-mes/",
+          "primary": true,
+          "author": "cmeza"
+        }
+      ]
+    },
+    {
+      "id": "autoridad-portuaria-de-santos-busca-entablar-relaciones-comerciales-con-el-puert",
+      "datetime": "2026-10-07T11:00:58Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Autoridad Portuaria de Santos busca entablar relaciones comerciales con el Puerto de Trieste en Italia",
+      "summary": "El superintendente jurídico de la Autoridad Portuaria de Santos (APS), Marcelo Zovico, inició conversaciones con el…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Europa"
+      ],
+      "countries": [
+        "Italia"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/autoridad-portuaria-de-santos-busca-entablar-relaciones-comerciales-con-el-puerto-de-trieste-en-italia/",
+          "primary": true,
+          "author": "cmeza"
+        }
+      ]
+    },
+    {
+      "id": "4-hallazgos-del-mercado-de-carga-aerea-latinoamericano-que-van-mas-alla-del-crec",
+      "datetime": "2026-10-07T10:40:07Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "4 hallazgos del mercado de carga aérea latinoamericano que van más allá del crecimiento",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte aéreo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "THE LOGISTICS WORLD",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://thelogisticsworld.com/transporte/hallazgos-mercado-carga-aerea-latinoamericano-mas-alla-crecimiento/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdDVtZEtYVmdSRkxrcTU5SmQ1RFRxdU0wSDFScG9lRzJHRzhkd0xCQll3UHZ4S2tXUU5Xb1RUblVXbkNiWGY4Y3AtNzdGWjNaZkszazY5OURIWl9GaWVyUUVIM09qelpmNXdmQmV5Z0s5bHFOQklUUUgzMDBmUHZPREI4RlV1TjJ1d2pwbFJLRERtM2dkUnNJSm1DQjNFNHNqQW94Qk44azlEWFZp?oc=5"
+    },
+    {
+      "id": "santa-fe-busca-convertir-las-nuevas-oportunidades-comerciales-en-mas-exportacion",
+      "datetime": "2026-10-07T10:31:13Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Santa Fe busca convertir las nuevas oportunidades comerciales en más exportaciones",
+      "summary": "El acuerdo con la Unión Europea abre un nuevo escenario para la agroindustria provincial. Menores aranceles, nuevas cuotas y mejores condiciones de acceso aparecen como una oportunidad para carnes, lácteos, miel, maíz y otros productos, aunque el desafío será cumplir con las exigencias sanitarias, ambientales y de…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Cadena 3 Argentina",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.cadena3.com/noticia/actualidad/santa-fe-busca-convertir-las-nuevas-oportunidades-comerciales-en-mas-exportaciones_601181",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdFdfSUR5bmhZNjhLSHMtQVJ1RTFKTHFBR2pRNy0xSzlaWHg3a2tlLV9DUlA0Z1V2N0ttSmwtS0oyaXo4QTlXYmJJajVYMkZUdF94S1hKS1FORHZIVFltZXVETTBSUHczYjY1M0RTNXhDazlpUWEtM1FIUHhfaWRoTktsU0ktZ3lhSTZOZFBnN2dXRUo0WkNVVzdCcEY3OUV5QklCZTVvR3NSNTBLb2I3ckVsX0dmWVlLRVhfZDV1Q3Z0SFZMcFVEX3RlaHlGa1h0NHc?oc=5"
+    },
+    {
+      "id": "puerto-de-iquique-transfiere-633-mil-toneladas-de-carga-boliviana-de-enero-a-ago",
+      "datetime": "2026-10-07T10:00:10Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Puerto de Iquique transfiere 633 mil toneladas de carga boliviana de enero a agosto de 2026",
+      "summary": "De enero a agosto de 2026, el Puerto de Iquique manipuló un total de 633.533 toneladas de…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile",
+        "Bolivia"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/puerto-de-iquique-transfiere-633-mil-toneladas-de-carga-boliviana-de-enero-a-agosto-de-2026/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
       ]
     },
     {
@@ -788,7 +1037,8 @@
         "Reino Unido"
       ],
       "tags": [
-        "Aranceles"
+        "Aranceles",
+        "China"
       ],
       "visual": "customs",
       "impact": 1,
@@ -853,6 +1103,13 @@
           "url": "https://algecirasalminuto.com/articulo/destacadasi/tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-portacontenedores/",
           "alsoIn": true,
           "title": "Tres detenidos cuando intentaban extraer 50 kilos de cocaína de un buque portacontenedores"
+        },
+        {
+          "name": "EFE - Agencia de noticias",
+          "type": "También publicó esta noticia",
+          "url": "https://efe.com/andalucia/tres-detenidos-al-intentar-extraer-cocaina-de-un-portacontenedores-en-algeciras/",
+          "alsoIn": true,
+          "title": "Tres detenidos al intentar extraer cocaína de un portacontenedores en Algeciras"
         }
       ],
       "gnTried": "2026-10-07T09:43:45Z",
@@ -860,12 +1117,15 @@
       "aliasUrls": [
         "https://algecirasalminuto.com/articulo/destacadasi/tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-portacontenedores",
         "https://cadenaser.com/andalucia/2026/10/07/tres-detenidos-en-algeciras-al-intentar-extraer-50-kilos-de-coca-de-un-portacontenedores-radio-algeciras",
+        "https://efe.com/andalucia/tres-detenidos-al-intentar-extraer-cocaina-de-un-portacontenedores-en-algeciras",
         "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQV2JpbWZ5SVljdlRQYmV6dmdiRUJjVHRhVnotS01SWFNmQTNkWWd0eER3U0lBbmVrTmFCcU1ZZ2tIRmhnYlJxU3ZnVWFvWEc1SzJoS1dIUGliNUhEYkd6M29sMGN5VDJDUVdoczh1SWRYYWwwenJmTnQ0elJpcnJFRlJaYnpFUTFXaXNVZUNZLW81T2xheVdGclo4bnF0RDJQQXhFVXBDcmRMNExjd25ROS1uVFRkcWRZdl8xSXV6cDhyZ2FJelJ5am5sZjlneXdaeXBaSXcxMUlzZw",
-        "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRGRvWDNhVDFsUXBIVG40RURjUmhlWWtBRkRiVmRlUm55bzh5QVVMS1VwM0FnemgzWmNOb3Q3VjFzb0Z3S0oyRWtxSmZXTmhydFhSaGlpZ0FoSFYzVUlaY2p4X0ljeGhDczJfOFoxOEd0c3ZxSWYwLXNyUUh1bWJaZEZxbVhDblRGSHRESHNYR29nMGhSNFZGTi05MTYxX0dRdDgwd3R6b1Vwa0xicHlIcHVlMnpDRVZpcEFFS0NBVG1ZRUtSWlRjSUtPbnoteGQzZE5PeEFHd1doZXVpTW00Ny1B0gH2AUFVX3lxTE1VN2xlNUc2ZG8zNmhlTmlSdERvSXpNeFhfbnZQUGxoZG9pOTZEVnZ1YkpRaWd4QXVvZTB4QldlcG9YZlpRdmtUa05jdG9sbURHdWU5ZnNwZ0JQc2JOdkFPc1VRNV80S1ctdlVZRDBUOWI1SzlSQVJEREtIOFJ0T0JSX3o5cjVEeDNvaUM0eVlHaDFpNHZOTmxJQWNiUWVEQ19yUUxma094Ynpndkk5Q3VZTFVjajEyTnVXWkluek5fVXY4YUxFQ2xWd1VjNHJUMnRjcnRwMURjekpHSGxhbDEzNWxISlgxQXVxWDJKU2RKbTU0alV6dw"
+        "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRGRvWDNhVDFsUXBIVG40RURjUmhlWWtBRkRiVmRlUm55bzh5QVVMS1VwM0FnemgzWmNOb3Q3VjFzb0Z3S0oyRWtxSmZXTmhydFhSaGlpZ0FoSFYzVUlaY2p4X0ljeGhDczJfOFoxOEd0c3ZxSWYwLXNyUUh1bWJaZEZxbVhDblRGSHRESHNYR29nMGhSNFZGTi05MTYxX0dRdDgwd3R6b1Vwa0xicHlIcHVlMnpDRVZpcEFFS0NBVG1ZRUtSWlRjSUtPbnoteGQzZE5PeEFHd1doZXVpTW00Ny1B0gH2AUFVX3lxTE1VN2xlNUc2ZG8zNmhlTmlSdERvSXpNeFhfbnZQUGxoZG9pOTZEVnZ1YkpRaWd4QXVvZTB4QldlcG9YZlpRdmtUa05jdG9sbURHdWU5ZnNwZ0JQc2JOdkFPc1VRNV80S1ctdlVZRDBUOWI1SzlSQVJEREtIOFJ0T0JSX3o5cjVEeDNvaUM0eVlHaDFpNHZOTmxJQWNiUWVEQ19yUUxma094Ynpndkk5Q3VZTFVjajEyTnVXWkluek5fVXY4YUxFQ2xWd1VjNHJUMnRjcnRwMURjekpHSGxhbDEzNWxISlgxQXVxWDJKU2RKbTU0alV6dw",
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUkVpa0pfVzVrUTZfZVM1cnoxZFNJUEkybTRLQUtWYUNjYXdDcWNxMTdHZGpQOHZMX0k0UGxTRmVtVktxcGdqN21BM05CLXRqTTRFS211UU12N2VVMnhmUVJ4TVVpZW1CM2Z4cVpjRXNaTmtfQUMtNUVzNTBCWGlrbFFBTWpVcEt4eWpmSEJJLXV2OEtCMVd3WkV6S19SeWVCUEV0ZUpTTFg2UQ"
       ],
       "mergedIds": [
         "tres-detenidos-en-algeciras-al-intentar-extraer-50-kilos-de-coca-de-un-portacont",
-        "tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-portaco"
+        "tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-portaco",
+        "tres-detenidos-al-intentar-extraer-cocaina-de-un-portacontenedores-en-algeciras"
       ]
     },
     {
@@ -1155,6 +1415,120 @@
       "gnUrl": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPa3RkZEk4ZVBQNlF3R0JmLUM0ck54ZExXQVl3UzlvaEFDODRScDdZcHVnV0hrQmVRcHhwdDV4MTluOGd4V2xUNWtoTFZGNEswVm9XZkJHenFYWWEtWC1pYVE2ZHFkQmlldUpEWVliZlo3LS1JeGhUZUxSR0lJSk9DcWE4MG45MDlCeG9GS1FoVFNYNFJxMk45blloVXc1eFJXZGN1NGZMTDlJak5IOUZPNWhsWWZ5Q0VXZURVU3FMTGVYYmt4R1Y4Mjh3QlpNcFQ2OEtnTWh0M1BmWmt2bWVuUTZQTDNtc0xCaDBEVXc1N1FVTE5CejNEQXoyVUx0d9IB_gFBVV95cUxPa3RkZEk4ZVBQNlF3R0JmLUM0ck54ZExXQVl3UzlvaEFDODRScDdZcHVnV0hrQmVRcHhwdDV4MTluOGd4V2xUNWtoTFZGNEswVm9XZkJHenFYWWEtWC1pYVE2ZHFkQmlldUpEWVliZlo3LS1JeGhUZUxSR0lJSk9DcWE4MG45MDlCeG9GS1FoVFNYNFJxMk45blloVXc1eFJXZGN1NGZMTDlJak5IOUZPNWhsWWZ5Q0VXZURVU3FMTGVYYmt4R1Y4Mjh3QlpNcFQ2OEtnTWh0M1BmWmt2bWVuUTZQTDNtc0xCaDBEVXc1N1FVTE5CejNEQXoyVUx0dw?oc=5"
     },
     {
+      "id": "deficit-argentina-brasil-septiembre-2026-51-millones",
+      "date": "2026-10-07",
+      "kind": "datos",
+      "title": "El déficit comercial con Brasil se achicó a USD 51 millones en septiembre por la caída de las compras de autos",
+      "summary": "Las exportaciones argentinas a Brasil subieron 5,5% y las importaciones cayeron 25,2%, según datos difundidos por la consultora Abeceb. El rojo bilateral pasó de USD 578 millones a USD 51 millones en un año.",
+      "topics": [
+        "Argentina",
+        "Latinoamérica",
+        "Mercosur",
+        "Exportaciones",
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina",
+        "Brasil"
+      ],
+      "tags": [
+        "Balanza comercial",
+        "Abeceb",
+        "Sector automotriz",
+        "Brasil"
+      ],
+      "visual": "chart",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Brasil es uno de los principales socios comerciales del país: la mejora del saldo responde sobre todo a menores compras argentinas, más que a un salto de las ventas, según el análisis citado.",
+      "argentinaImpact": {
+        "change": "En septiembre el déficit con Brasil bajó a USD 51 millones (USD 578 millones un año antes): importaciones -25,2% y exportaciones +5,5%.",
+        "who": "Importadores y concesionarias del sector automotor, exportadores de camiones y vehículos especiales, energía, aluminio y lácteos con destino a Brasil.",
+        "sectors": [
+          "Automotriz",
+          "Energía",
+          "Aluminio",
+          "Lácteos"
+        ],
+        "flows": {
+          "importaciones": true,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "El intercambio entre la Argentina y Brasil cerró septiembre con un déficit de USD 51 millones para el país, contra USD 578 millones del mismo mes de 2025, según el informe de la consultora Abeceb que difundieron Infobae y Ámbito el 7 de octubre. Las exportaciones argentinas al vecino sumaron USD 1.305 millones, 5,5% más que un año antes, mientras que las importaciones desde Brasil bajaron 25,2%, a USD 1.357 millones.",
+        "La mayor parte de la mejora vino por el lado de las compras. Las cuatro principales categorías del sector automotor pasaron de USD 795 millones a USD 433 millones en un año, y las importaciones de autos de pasajeros cayeron 51,5%, a USD 201 millones, en un contexto de patentamientos de 0 km 11,4% más bajos que en septiembre de 2025. Las compras de energía eléctrica retrocedieron 63,7%, a USD 43,1 millones, con el fin del invierno.",
+        "Del lado exportador se destacaron el petróleo crudo (+42,2%, USD 61,8 millones), el aluminio (+121,1%, USD 53 millones), los camiones y vehículos especiales (+4%, USD 350,6 millones) y los quesos y lácteos (+80%, USD 31,8 millones). Ámbito, que también difundió los datos, señala que las ventas de trigo a Brasil retrocedieron porque ese país diversifica proveedores.",
+        "En los primeros nueve meses del año el déficit bilateral acumuló USD 1.686 millones, frente a USD 4.696 millones en igual período de 2025. Abeceb proyecta que el saldo negativo del año cierre cerca de USD 2.200 millones, menos de la mitad de los USD 5.201 millones de 2025, y atribuye la mejora a las menores compras argentinas antes que a un aumento de las exportaciones."
+      ],
+      "keyData": [
+        [
+          "Exportaciones a Brasil, septiembre",
+          "USD 1.305 M (+5,5%)"
+        ],
+        [
+          "Importaciones desde Brasil, septiembre",
+          "USD 1.357 M (-25,2%)"
+        ],
+        [
+          "Saldo bilateral, septiembre",
+          "-USD 51 M (vs. -USD 578 M en sep. 2025)"
+        ],
+        [
+          "Principales rubros automotores importados",
+          "USD 433 M (vs. USD 795 M)"
+        ],
+        [
+          "Saldo enero–septiembre",
+          "-USD 1.686 M (vs. -USD 4.696 M)"
+        ],
+        [
+          "Proyección Abeceb para 2026",
+          "≈ -USD 2.200 M"
+        ]
+      ],
+      "explainer": {
+        "what": "En septiembre la Argentina tuvo con Brasil un déficit comercial de USD 51 millones, contra USD 578 millones un año antes.",
+        "why": "Brasil es un socio clave y el saldo mejoró sobre todo porque las importaciones cayeron 25,2%, con un derrumbe de las compras de autos, mientras las exportaciones subieron 5,5%.",
+        "who": "Importadores del sector automotor, concesionarias y exportadores argentinos de energía, aluminio, camiones y vehículos especiales, y lácteos que venden a Brasil.",
+        "products": [
+          "Autos de pasajeros",
+          "Camiones y vehículos especiales",
+          "Petróleo crudo",
+          "Aluminio",
+          "Quesos y lácteos",
+          "Energía eléctrica",
+          "Trigo"
+        ],
+        "next": "Abeceb proyecta que el déficit bilateral de 2026 cierre cerca de USD 2.200 millones, menos de la mitad de los USD 5.201 millones de 2025.",
+        "nextSource": {
+          "name": "Infobae (informe de Abeceb)",
+          "url": "https://www.infobae.com/economia/2026/10/07/el-deficit-comercial-con-brasil-se-redujo-casi-90-en-un-ano-que-esconde-la-fuerte-mejora/"
+        }
+      },
+      "sources": [
+        {
+          "name": "Infobae (informe de Abeceb)",
+          "type": "Medio de comunicación",
+          "url": "https://www.infobae.com/economia/2026/10/07/el-deficit-comercial-con-brasil-se-redujo-casi-90-en-un-ano-que-esconde-la-fuerte-mejora/",
+          "primary": true
+        },
+        {
+          "name": "Ámbito",
+          "type": "Medio de comunicación",
+          "url": "https://www.ambito.com/economia/el-deficit-brasil-se-redujo-91-anual-septiembre-derrumbe-las-importaciones-que-factores-influyeron-n6330894"
+        }
+      ],
+      "absorbs": [
+        "argentina-reduce-importaciones-desde-brasil-y-achica-el-deficit-comercial",
+        "deficit-con-brasil-suben-exportaciones-pero-sigue-el-rojo",
+        "la-balanza-comercial-con-brasil-registro-un-deficit-de-us-51-millones-en-septiem",
+        "intercambio-con-brasil-notable-baja-de-las-importaciones-y-nuevo-crecimiento-de"
+      ]
+    },
+    {
       "id": "agl-costa-de-marfil-entrega-cinco-locomotoras-para-el-metro-de-abiyan",
       "datetime": "2026-10-07T02:30:15Z",
       "date": "2026-10-06",
@@ -1224,43 +1598,6 @@
       ]
     },
     {
-      "id": "argentina-reduce-importaciones-desde-brasil-y-achica-el-deficit-comercial",
-      "datetime": "2026-10-07T00:11:51Z",
-      "date": "2026-10-06",
-      "firstSeen": "2026-10-07T09:43:45Z",
-      "title": "Argentina reduce importaciones desde Brasil y achica el déficit comercial",
-      "summary": "Las compras argentinas a Brasil bajaron 25,2% en septiembre, mientras que las exportaciones aumentaron 5,7%.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina",
-        "Importaciones",
-        "Latinoamérica"
-      ],
-      "countries": [
-        "Argentina",
-        "Brasil"
-      ],
-      "tags": [],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
-      "sources": [
-        {
-          "name": "BAE Negocios",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://www.baenegocios.com/economia/argentina-reduce-las-importaciones-desde-brasil-y-achica-el-deficit-comercial/",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-07T09:43:45Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWURvdGk3UmF4aUJxY2p1eF9aaGN2eHlSd0NRb3dnazV6ZzdIOFJPU01mMVRlRURIX2ZiX0h2WS1NbHhObDZpVW1ZYld2MjZORnVNVFhVZjlfMEx1YlBxNl9hQ3kxQnB2UVBsYVU3NUs0SVVza2RBUzl2ZWhaWHh0U0k3MHppaDA2dmFrU2U0cHd1NU40SHRWMlN5eXVqNWVMTHR0NmxJWUpqc2tHaHBQNG1VYngzZ9IBrwFBVV95cUxOT1lpZ094bFdWd1RyXy1ON1NSRl9GdndoNHdUdzdaZzNNUkdxYXAxQnBXUzJfM1NkTVBhYUZGSlRKVlBieWl4V3lMM3ZwZEV6dmhHR2s3T3Fud2RwcUpWSWs1Q2UtQ0dGLVl1QXYwLVFsVGpzc0ZhU2JVelU0RVZ4M1JIQlFRcm9XWGlsSXgwUFRBUmpCbkFncXJlM2FCNWNWcHg3dDRTZ2h4RVYxNUtZ?oc=5"
-    },
-    {
       "id": "hs-schiffahrt-recibe-buques-seaboard-legend-y-seaboard-liberty",
       "datetime": "2026-10-07T00:00:20Z",
       "date": "2026-10-06",
@@ -1308,8 +1645,10 @@
       "countries": [
         "Argentina"
       ],
-      "tags": [],
-      "visual": "globe",
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
       "impact": 1,
       "affectsArgentina": true,
       "kind": "noticia",
@@ -1646,76 +1985,6 @@
       ]
     },
     {
-      "id": "deficit-con-brasil-suben-exportaciones-pero-sigue-el-rojo",
-      "datetime": "2026-10-06T22:06:04Z",
-      "date": "2026-10-06",
-      "firstSeen": "2026-10-07T09:43:45Z",
-      "title": "Déficit con Brasil: suben exportaciones pero sigue el rojo",
-      "summary": "",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Exportaciones",
-        "Latinoamérica"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "tags": [],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
-      "sources": [
-        {
-          "name": "Diario El Norte - San Nicolás",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://diarioelnorte.com.ar/deficit-con-brasil-suben-exportaciones-pero-sigue-el-rojo/",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-07T09:43:45Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaWEzT0hnakNpTFRRenpkbGlFbUFhQVRteDJua1BhYUJpeXktV3c5dlpLRDduLWVSdmVxRHpfaGpQbU1aeklJMXJEVk4tZ1VUVVlhOWhCMnk0VkphMncxc3hmMktXRkMwTXJzNDdwSFZzSEVqRHF0TUNjeFhwc2hINkg2RUhWbXZWYjlSdXdkeWs?oc=5"
-    },
-    {
-      "id": "la-balanza-comercial-con-brasil-registro-un-deficit-de-us-51-millones-en-septiem",
-      "datetime": "2026-10-06T22:05:00Z",
-      "date": "2026-10-06",
-      "firstSeen": "2026-10-07T09:43:45Z",
-      "title": "La balanza comercial con Brasil registró un déficit de US$ 51 millones en septiembre",
-      "summary": "",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Economía internacional",
-        "Latinoamérica"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "tags": [],
-      "visual": "chart",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
-      "sources": [
-        {
-          "name": "LA17",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://lu17.com/contenido/151827/la-balanza-comercial-con-brasil-registro-un-deficit-de-us-51-millones-en-septiembre",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-07T09:43:45Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdDlwOENlWWlTSjUzWjdjaHp2MUUwTVpEMnRtdGxyNGxrM0lyYVhZWVRqSHI4QWs3Zk1CYmhNVXQ3Y1BCcF94ekVWdlh3OXhlemhaeE5wWW91VTZMa3E2T1ItbDZ4YXIzNWxXTjFWQXNfYWtCU0p6UWpKd1F6TGg0bkluRWotN1RKSm1kUzB3Vlg4VWJZS1lfak9uOEtKNEhSOFJKVHIwVGdPQVRmUlBOeXY0cnlEeHA1?oc=5"
-    },
-    {
       "id": "rusia-importa-176-mil-toneladas-de-productos-petroliferos-desde-puertos-surcorea",
       "datetime": "2026-10-06T21:59:05Z",
       "date": "2026-10-06",
@@ -1894,54 +2163,6 @@
       "gnUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUjc4c2RORGtIWVA2M1lyeHl0YnE3bEpDMUp0aUYyOWhwenBRY3dTdzkyZ25md0QwMHB5dmtjR2hUamNNMWN4NlBqNWpzMmpMdXI0ZXZDMElvTVMzRWNrZURhTS1lWGNqUjhqZGJCQ185N0R1eVZqRko1amVoblJCeHlQcFhJU0lsWVNzMnBodVp5akp5U0U5amNCRVlrd1ZDdk9wTEpNbGF2ZUlmWGFubW5OU01WY3F3T3hWanZFcnFDM3F0czRUMWlxWGpxXy1vUHkwc1d5QUx5bUsxakE?oc=5"
     },
     {
-      "id": "las-importaciones-de-smartphones-crecieron-un-746-por-ciento",
-      "datetime": "2026-10-06T21:12:00Z",
-      "date": "2026-10-06",
-      "firstSeen": "2026-10-07T09:43:45Z",
-      "title": "Las importaciones de smartphones crecieron un 746 por ciento",
-      "summary": "La venta de celulares que provienen del exterior afecta gravemente a la industria vernácula.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Importaciones"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aduana e importaciones Argentina",
-      "sources": [
-        {
-          "name": "Somos Pymes",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://www.somospymes.com.ar/informes/las-importaciones-smartphones-crecieron-un-746-ciento-n5404535",
-          "primary": true,
-          "author": ""
-        },
-        {
-          "name": "Los Andes",
-          "type": "También publicó esta noticia",
-          "url": "https://www.losandes.com.ar/economia/las-importaciones-smartphones-crecieron-746-mientras-la-produccion-tecnologica-argentina-se-desplomo-n6009268",
-          "alsoIn": true,
-          "title": "Las importaciones de smartphones crecieron 746%, mientras la producción tecnológica argentina se desplomó"
-        }
-      ],
-      "gnTried": "2026-10-07T09:43:45Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQREo5X0VIbVhMNE45SUFmVldubVdEeGE3U2w0aXU1WENwSUtBNng4VFhuMm5TQ3NMeGJfODM3TjFsU3pSRlZTaGR4RVN0YTFqcVpfQkpodTJJV2tDdzJ0MVpQVE1PVEpROEJSXzVldWFBeWRCbmNsOTB4UW5ZcFh3TGtrNEUtVGtHeVN5VHJUZlhmRVk1TnVreXh2S3NXd3EycElEWUdVak_SAagBQVVfeXFMUERKOV9FSG1YTDROOUlBZlZXbm1XRHhhN1NsNGl1NVhDcElLQTZ4OFRYbjJuU0NzTHhiXzgzN04xbFN6UkZWU2hkeEVTdGExanFaX0JKaHUySVdrQ3cydDFaUFRNT1RKUThCUl81ZXVhQXlkQm5jbDkweFFuWXBYd0xrazRFLVRrR3lTeVRyVGZYZkVZNU51a3l4dktzV3dxMnBJRFlHVWpP?oc=5",
-      "aliasUrls": [
-        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUW9sX0VfZVFpWWs3MlBCMHdXN05CaU1QYXo0RjkwUHVpcDdJdFdMUTJhaVBhcDZFZ3IzLTJ5NjBkMDdLb2tmclpXS1VBQWxYWkxPel9DaXRhaUJDUmdSeGpQODBhNUlVMjBGY1BmcTQtSnhNYXRwSFVSWHNBOW1IamlPMDJvMHNkYndVaW01aWZydmFkWFUtMXJnRjZSRHpab2FNR1QtUnhmMzg0ZzlYcDZud0lPak9KY3QydVIxdXBzcGxPMzRNX2hha2tvWVFXal9CVjNqN0pKb285VnI4",
-        "https://www.losandes.com.ar/economia/las-importaciones-smartphones-crecieron-746-mientras-la-produccion-tecnologica-argentina-se-desplomo-n6009268"
-      ],
-      "mergedIds": [
-        "las-importaciones-de-smartphones-crecieron-746-mientras-la-produccion-tecnologic"
-      ]
-    },
-    {
       "id": "fa-rechaza-derogacion-aranceles-a-importacion-de-arroz-y-advierte-riesgos-a-prod",
       "datetime": "2026-10-06T20:57:27Z",
       "date": "2026-10-06",
@@ -1977,42 +2198,6 @@
       ],
       "gnTried": "2026-10-06T21:40:51Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNYXJvajZjbm9WbE5HcWJUdjVuSVNINExGTEZLQURtUnZYMk5hMUpiR0wxc05lVVNwSmdldFZ4RTk4QTRpRm9aTEdmX091YkxhS2pvNlZWR05BLXItQVVlVUxxQjk0aU4xQlBLREVHNmpMWlM5TkJJSnpyd0hXMEpHeUQ2clJDTnFpR3JJRVpCMEJIcERGNmY1Wi1wellfVE10WHBGTTJTTlRtb01IcDNsSF9CWVV3bXFVRU9TbjQ2LXpaak9qclM5dw?oc=5"
-    },
-    {
-      "id": "intercambio-con-brasil-notable-baja-de-las-importaciones-y-nuevo-crecimiento-de",
-      "datetime": "2026-10-06T20:47:36Z",
-      "date": "2026-10-06",
-      "firstSeen": "2026-10-06T21:40:51Z",
-      "title": "Intercambio con Brasil: notable baja de las importaciones y nuevo crecimiento de las exportaciones",
-      "summary": "",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Importaciones",
-        "Exportaciones",
-        "Latinoamérica"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "tags": [],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
-      "sources": [
-        {
-          "name": "Comex Online",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://comexonline.com.ar/noticias/val/63720/intercambio-con-brasil-notable-baja-de-las-importaciones-y-nuevo-crecimiento-de-las-exportaciones.html",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-06T21:40:51Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQeHJzNUlfaXZtbnUyVVpiMkxhSXQyWW5PYmFKRHhIazhDTTIwcHJ2X2NSTzVXWlJzaU9qNW5yNWNpUUZtSGFmYmJ1cHdmb1BfOE1Zc3RkY2MwamFxWWt6RXEwUWlvbmZ6ejZOTWVSVTlIdWtpMDdhcW5HZVBBeDVHOWJ4alJ0SXRFVy1ONjZQMUxzNm1QUTJiMmpXM2otSkJOUk92SkVuNjRoY3dtRTdDcm5uMVhUdFdpeXdlemxYZ0xzR3ZwWEJ1TTFHUzQyRHNid0IxRXRrandJakhSNDU1WnRR?oc=5"
     },
     {
       "id": "mexico-alcanza-record-de-682-mil-817-mdd-en-comercio-con-ee-uu-pese-a-los-arance",
@@ -2558,6 +2743,98 @@
       "gnUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT3dSLVZzMVcwR0FSZUpnTnFYQVEwMXhENFRyOGN4LXQ4TGU2bGZoN1FPTTB4Rlg0ZXhtOE9Hb05FMFNhOUEwdjZIUkIzTXdzWXNPOHZxQU56T1dXT2dqZjFXX2trajM0MkY0M0R6TExnMFFDX3BFT1EyV2lSLUNrZ2cyRjY0T18xUlNTX0xkQ0RkOEpGU2FNaEltVXNSTGVpQ200bEc3d1hnbGNjM1JRR0diTHlndWZCUzVwRjdHdnF3Zw?oc=5"
     },
     {
+      "id": "las-importaciones-de-smartphones-crecieron-un-746-y-se-desploma-la-produccion-lo",
+      "datetime": "2026-10-06T18:21:58Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Las importaciones de smartphones crecieron un 746% y se desploma la producción local",
+      "summary": "Un informe de la consultora Analytica advirtió que la venta de celulares que provienen del exterior aumentó exponencialmente, lo que afecta gravemente a la industria argentina.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Agencia Noticias Argentinas",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://noticiasargentinas.com/economia/las-importaciones-de-smartphones-crecieron-un-746--y-se-desploma-la-produccion-local_a6ac52f5b61c1587439f75b91",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "Somos Pymes",
+          "type": "También publicó esta noticia",
+          "url": "https://www.somospymes.com.ar/informes/las-importaciones-smartphones-crecieron-un-746-ciento-n5404535",
+          "alsoIn": true,
+          "title": "Las importaciones de smartphones crecieron un 746 por ciento"
+        },
+        {
+          "name": "Los Andes",
+          "type": "También publicó esta noticia",
+          "url": "https://www.losandes.com.ar/economia/las-importaciones-smartphones-crecieron-746-mientras-la-produccion-tecnologica-argentina-se-desplomo-n6009268",
+          "alsoIn": true,
+          "title": "Las importaciones de smartphones crecieron un 746 por ciento"
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQSXQ0ekJWaVpjY05YX1U4azBQb2R1akpzV3FEZlFzVGJ0MUJwRmVQQVpNQ1ozNzRISWJNdnViY1JZUTUwT0RtQWpxMWNscGdEdVF4Z2RSM1dtS1JxbS1vX2V4dWlkb3A3azJuaXIyTVVVa3d6QzUtN3EtUFdVZ2x2YUphVUNpdGR4RzVDaW5qbWR1N0NYOHBnZVlSUkRCN3BlbWtmQmVQR2FFdUViZlkzbEZlYVBHRVIzUWFSWWxhOElSMno3X2VhbGtwaDFSdF9hR1Z5T3JzOVI5WmRqWFVnU21EWVTSAfMBQVVfeXFMTXV4Y3Jac1dST0ZWWHZXX2J4XzRfMTRkMnhJVWlkdFBLd0VUb3hmSHdDb2lJM1JJcTVBMlhXVnNlQUVJclczSjY5V2lzOUh3NER4UDFZTmVLNTkwU28tSDRteU1IbzAtdzBrcDFLb3VOcFV3QXJ2MkZ6QTlOcVFSNHlyekhpOWxTWERzaHNfZmZSdGNfQWIzUnMxdndPMVhJeEU3QXhlQUY0VTNGbmxwdThGREdBNjZiT3pHSUdpR1U5M3pqc0lPM0daODQ1ekl2Vkd4QVBneHBtSDFraGZXTE5yX3ZvTF9VOEUxVDBia1VlVkxr?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUW9sX0VfZVFpWWs3MlBCMHdXN05CaU1QYXo0RjkwUHVpcDdJdFdMUTJhaVBhcDZFZ3IzLTJ5NjBkMDdLb2tmclpXS1VBQWxYWkxPel9DaXRhaUJDUmdSeGpQODBhNUlVMjBGY1BmcTQtSnhNYXRwSFVSWHNBOW1IamlPMDJvMHNkYndVaW01aWZydmFkWFUtMXJnRjZSRHpab2FNR1QtUnhmMzg0ZzlYcDZud0lPak9KY3QydVIxdXBzcGxPMzRNX2hha2tvWVFXal9CVjNqN0pKb285VnI4",
+        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQREo5X0VIbVhMNE45SUFmVldubVdEeGE3U2w0aXU1WENwSUtBNng4VFhuMm5TQ3NMeGJfODM3TjFsU3pSRlZTaGR4RVN0YTFqcVpfQkpodTJJV2tDdzJ0MVpQVE1PVEpROEJSXzVldWFBeWRCbmNsOTB4UW5ZcFh3TGtrNEUtVGtHeVN5VHJUZlhmRVk1TnVreXh2S3NXd3EycElEWUdVak_SAagBQVVfeXFMUERKOV9FSG1YTDROOUlBZlZXbm1XRHhhN1NsNGl1NVhDcElLQTZ4OFRYbjJuU0NzTHhiXzgzN04xbFN6UkZWU2hkeEVTdGExanFaX0JKaHUySVdrQ3cydDFaUFRNT1RKUThCUl81ZXVhQXlkQm5jbDkweFFuWXBYd0xrazRFLVRrR3lTeVRyVGZYZkVZNU51a3l4dktzV3dxMnBJRFlHVWpP",
+        "https://www.losandes.com.ar/economia/las-importaciones-smartphones-crecieron-746-mientras-la-produccion-tecnologica-argentina-se-desplomo-n6009268",
+        "https://www.somospymes.com.ar/informes/las-importaciones-smartphones-crecieron-un-746-ciento-n5404535"
+      ],
+      "mergedIds": [
+        "las-importaciones-de-smartphones-crecieron-un-746-por-ciento",
+        "las-importaciones-de-smartphones-crecieron-746-mientras-la-produccion-tecnologic"
+      ]
+    },
+    {
+      "id": "aduana-paralela-que-revelan-las-intervenciones-telefonicas",
+      "datetime": "2026-10-06T18:11:00Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Aduana paralela: qué revelan las intervenciones telefónicas",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aduanas"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Aries On Line",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://ariesonline.com.ar/contenido/212936/aduana-paralela-que-revelan-las-intervenciones-telefonicas",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcVNjQUlqUE4xWWJ4TXRpN1NEbEotRy1sSGxBX3BlNmo3V2haM3ZYcFRQcXp4bkNHeTQ5VWVWTzhYM2U5cF9hRGZFQVpCY0UyQWtaNk9Db3d4ZzUyWUdmZk16bTlaOHB2bTJ3dUZ1dTNidE1kNjN5bkFZVlRLNk9UWXQ4WkVjT294WHFRZ0dPNzJOTjBFQjRidGI3RHFZYWNxTndHNdIBnAFBVV95cUxQcDREUEY3R1hkMUctZm8tck5BNERLR2M1UWsyaXBQTElnTEQ5aEJ5ZHkxemNidGNSTHNFMllCZzNjS3FFMVRKT2h2RkhHUC1YWDVoNTQzeGk4QmVUcHB1VW0tWDVBemVoWUZ1cXdkay1MUDVYR3BadU1URXN1a082dExOVFNJX3JWZ1A4dkx2ZlFvaFN5bHpDTThJVDM?oc=5"
+    },
+    {
       "id": "cuando-cada-hora-de-demora-cuesta-el-comercio-exterior-exige-conocer-la-mercader",
       "datetime": "2026-10-06T18:02:54Z",
       "date": "2026-10-06",
@@ -2806,6 +3083,40 @@
       "gnUrl": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNR290NHRJRWJDYi1aMUVWTFkyWmNPbE1XSE5OY2JFcDRyaE1ITHM0NzV4UDZZMUhWQmQ0dHRBanBKQUJEOC1WdDZLeHlodVdobVhIV2QyazZsMHhWX0VoaHFJelRaU2NqMktER1UwWnRJZUZWbkpKSEpWRDNlZW9QYzc5MTRxNUFVQUlyb2dRTm1VUDVoQzZGOHpNYjVRMHJiRnZYMmhNTmduSVJESVZsWjdQWDhQUFhFaXhqVEhraTVYS3NzQ24wQlpld2s2cTNSTy1heHEyd2JLME12elJFblQyM1hsQ182?oc=5"
     },
     {
+      "id": "la-paradoja-pyme-como-convertir-las-importaciones-en-una-herramienta-de-competit",
+      "datetime": "2026-10-06T16:56:11Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "La paradoja PyME: cómo convertir las importaciones en una herramienta de competitividad",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Diario EL SOL",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://elsolnoticias.com.ar/la-paradoja-pyme-como-convertir-las-importaciones/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTElQZEN3X1I1UGkyLXRpTEZZcTFtdUplQTM4ampsSXpwZHlndTk2ZTlJY2QyY2lRTEhVSldTTFpKd3o4alQwOEZvMUFRSjRnYlo2dllQOHA4UTViZW9mMi00ZFlJeF9vZ21rTTdVOXRxQ1ZpWWhCWEVkSzVYRFp3UEU1bDlKUQ?oc=5"
+    },
+    {
       "id": "codessd-ve-preocupante-que-el-gobierno-haya-quitado-aranceles-al-arroz-extranjer",
       "datetime": "2026-10-06T16:53:24Z",
       "date": "2026-10-06",
@@ -2893,7 +3204,10 @@
       "countries": [
         "Argentina"
       ],
-      "tags": [],
+      "tags": [
+        "Soja",
+        "Estados Unidos"
+      ],
       "visual": "agro",
       "impact": 1,
       "affectsArgentina": true,
@@ -3282,58 +3596,6 @@
           "primary": true,
           "author": "Diego Hermosilla"
         }
-      ]
-    },
-    {
-      "id": "deficit-comercial-de-eeuu-se-expandio-en-agosto-a-pesar-de-aranceles-de-trump",
-      "datetime": "2026-10-06T14:43:00Z",
-      "date": "2026-10-06",
-      "firstSeen": "2026-10-06T17:41:39Z",
-      "title": "Déficit comercial de EEUU se expandió en agosto a pesar de aranceles de Trump",
-      "summary": "El déficit comercial de Estados Unidos se amplió un 77% interanual en agosto, alcanzando los u$s105.600 millones, impulsado por una fuerte demanda importadora que podría afectar el crecimiento económico.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Aranceles",
-        "Estados Unidos"
-      ],
-      "countries": [
-        "Estados Unidos"
-      ],
-      "tags": [
-        "Aranceles",
-        "Estados Unidos"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
-      "sources": [
-        {
-          "name": "Rosario Finanzas",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://rosariofinanzas.ar/noticias/deficit-comercial-de-eeuu-se-expandio-en-agosto-a-pesar-de-aranceles-de-trump",
-          "primary": true,
-          "author": ""
-        },
-        {
-          "name": "FM Alpina",
-          "type": "También publicó esta noticia",
-          "url": "https://www.fmalpina.com.ar/articulo/el-deficit-comercial-de-eeuu-se-expandio-en-agosto-a-pesar-de-la-guerra-de-aranceles-de-donald-trump.php",
-          "alsoIn": true,
-          "title": "El déficit comercial de EEUU se expandió en agosto a pesar de la guerra de aranceles de Donald Trump"
-        }
-      ],
-      "gnTried": "2026-10-06T17:41:39Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOY25QcXdLXy1RQl8tenZvNEltN3BOSGN4dmQ3dWE3NUhBZ0RxTHMxSXZxVXgzYXkxaEN0Tno3WjBvTWd5d0hhaXJZMGFJYkRlWEk3S0tBNEExbmQ0eWNEd3g5M3ZhZjVzSFQwRGxsQ0VrSVlXUWZQbzhfdHc4dHd0eW9Xcnc2ekdPdjZUbEhOTGpTdk1Fa1RnRzlYdmc4anF2b2FwdlNXNW41UlE1SHpiNWpsOA?oc=5",
-      "aliasUrls": [
-        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNd0RJMC0ycThlN2JlRVA3azJLYkJxN0lRZGx2V2NmWWQyQXNPTkdTUTJWY2pYWFB3dU9UZU1XYUNmX0pJSF9Fa2dmVzBnUXdRN0JXR05GOGJZT0NEU1VsT0hENkQzWGdRaFlMQzJQMGtZQTZLaE05amM4SmkzcWNOWm16VXJRRW1GNERJdk9XZlU3OHJoN181V0NkWTZCaHhuZllSREw4TXQyenBUeERuang5YXhaZ3o2MzZVUFAyaE5vbG5LWVpVWXpYblZpM0lGbklla3QtQ0M",
-        "https://www.fmalpina.com.ar/articulo/el-deficit-comercial-de-eeuu-se-expandio-en-agosto-a-pesar-de-la-guerra-de-aranceles-de-donald-trump.php"
-      ],
-      "mergedIds": [
-        "el-deficit-comercial-de-eeuu-se-expandio-en-agosto-a-pesar-de-la-guerra-de-aranc"
       ]
     },
     {
@@ -4840,6 +5102,194 @@
       "gnUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNLS0tOE9CSlF1V0hnRzBUczN6cVFHMTRhQzJnN3htSmhNVVFudGpDUWZJdW1oVUY1RGtrUHl2WmdpSnNYVkowNXdzaDdQOW1NT2s1cl9EcVVCX294NW93Ui1yT1B4R3hPOUlLSmIxbS15aHRwa1VEd3d4aUQ0dmcxZXQ4ZGZSdmZvQmdXWE01dVJOWEI4YVpEOEhhNGZfVlhsWllwWW9B?oc=5"
     },
     {
+      "id": "brasil-superavit-septiembre-2026-7740-millones-mdic",
+      "date": "2026-10-06",
+      "kind": "datos",
+      "title": "Brasil tuvo un superávit comercial de USD 7.740 millones en septiembre y recortó su proyección anual",
+      "summary": "Las exportaciones brasileñas crecieron 12,9% y las importaciones bajaron 2,4%, según el MDIC. El gobierno redujo a USD 84.400 millones el saldo positivo esperado para 2026.",
+      "topics": [
+        "Latinoamérica",
+        "Exportaciones",
+        "Importaciones",
+        "Economía internacional"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "tags": [
+        "MDIC",
+        "Balanza comercial",
+        "Brasil",
+        "Petróleo"
+      ],
+      "visual": "chart",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Brasil es uno de los principales destinos de las exportaciones argentinas; su balanza muestra hacia dónde se mueve la demanda y la oferta del principal socio del Mercosur.",
+      "argentinaImpact": {
+        "change": "Brasil exportó USD 34.420 millones en septiembre (+12,9%) e importó USD 26.680 millones (-2,4%); las compras de manufacturas cayeron 3,2%.",
+        "who": "Exportadores argentinos que venden a Brasil y empresas que compiten con productos brasileños en terceros mercados.",
+        "sectors": [
+          "Petróleo",
+          "Mineral de cobre",
+          "Soja y derivados",
+          "Combustibles"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "El Ministerio de Desarrollo, Industria, Comercio y Servicios de Brasil (MDIC) informó el 6 de octubre que la balanza comercial del país cerró septiembre con un superávit de USD 7.740 millones, contra USD 3.140 millones del mismo mes de 2025. Las exportaciones llegaron a USD 34.420 millones, 12,9% más que un año antes, y las importaciones a USD 26.680 millones, con una baja de 2,4%. Según Agência Brasil, fue el segundo mejor septiembre de la serie, detrás de 2023.",
+        "La industria extractiva explicó buena parte del salto exportador: vendió USD 9.440 millones (+39,8%), con fuertes subas del petróleo crudo y del mineral de cobre. La industria de transformación exportó USD 17.670 millones (+5,3%), con avances de la harina de soja y los combustibles, y el agro USD 7.000 millones (+4,8%), con subas de la soja y del café en grano. Por destino, crecieron las ventas a Europa (+51,9%) y a América del Norte (+30,6%), mientras que las dirigidas a Asia bajaron 2,5%.",
+        "Del lado de las compras, las importaciones de la industria de transformación cayeron 3,2%, a USD 24.786 millones, mientras subieron las del agro y la industria extractiva. En los primeros nueve meses del año, el superávit acumulado fue de USD 62.400 millones, 34,8% más que en igual período de 2025.",
+        "El MDIC revisó a la baja su proyección para todo 2026: ahora espera un superávit de USD 84.400 millones, frente a los USD 90.000 millones estimados antes, con exportaciones por USD 382.500 millones e importaciones por USD 298.100 millones."
+      ],
+      "keyData": [
+        [
+          "Exportaciones septiembre",
+          "USD 34.420 M (+12,9%)"
+        ],
+        [
+          "Importaciones septiembre",
+          "USD 26.680 M (-2,4%)"
+        ],
+        [
+          "Saldo septiembre",
+          "USD 7.740 M (vs. USD 3.140 M en sep. 2025)"
+        ],
+        [
+          "Saldo enero–septiembre",
+          "USD 62.400 M (+34,8%)"
+        ],
+        [
+          "Proyección de saldo 2026 (MDIC)",
+          "USD 84.400 M (antes USD 90.000 M)"
+        ]
+      ],
+      "explainer": {
+        "what": "Brasil cerró septiembre con un superávit comercial de USD 7.740 millones, con exportaciones en alza de 12,9% e importaciones en baja de 2,4%.",
+        "why": "Es el balance del principal socio del Mercosur: muestra exportaciones impulsadas por petróleo y cobre y menores compras de manufacturas, y el gobierno bajó a USD 84.400 millones el superávit esperado para el año.",
+        "who": "Exportadores argentinos que venden a Brasil y empresas que compiten con productos brasileños en terceros mercados.",
+        "products": [
+          "Petróleo crudo",
+          "Mineral de cobre",
+          "Harina de soja",
+          "Combustibles",
+          "Soja",
+          "Café"
+        ],
+        "next": "El MDIC proyecta para 2026 un superávit de USD 84.400 millones, con exportaciones por USD 382.500 millones e importaciones por USD 298.100 millones.",
+        "nextSource": {
+          "name": "Jornal de Brasília",
+          "url": "https://jornaldebrasilia.com.br/noticias/economia/balanca-comercial-tem-superavit-em-setembro-de-us-7741-bilhoes/"
+        }
+      },
+      "sources": [
+        {
+          "name": "Agência Brasil (datos del MDIC)",
+          "type": "Agencia pública de noticias",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/balanca-comercial-tem-superavit-de-us-774-bilhoes-em-setembro",
+          "primary": true
+        },
+        {
+          "name": "Jornal de Brasília",
+          "type": "Medio de comunicación",
+          "url": "https://jornaldebrasilia.com.br/noticias/economia/balanca-comercial-tem-superavit-em-setembro-de-us-7741-bilhoes/"
+        },
+        {
+          "name": "O Povo",
+          "type": "Medio de comunicación",
+          "url": "https://www.opovo.com.br/noticias/economia/2026/10/06/balanca-comercial-tem-superavit-de-uss-774-bilhoes-em-setembro.html"
+        }
+      ]
+    },
+    {
+      "id": "eeuu-deficit-comercial-agosto-2026-105600-millones",
+      "date": "2026-10-06",
+      "kind": "datos",
+      "title": "El déficit comercial de EE.UU. subió 13,7% en agosto, a USD 105.600 millones, por importaciones récord",
+      "summary": "Las importaciones estadounidenses crecieron 4,3% y las exportaciones 1,4%, según el Departamento de Comercio. En lo que va del año, el déficit es 19,9% menor que en 2025.",
+      "topics": [
+        "Estados Unidos",
+        "Importaciones",
+        "Exportaciones",
+        "Economía internacional",
+        "Aranceles"
+      ],
+      "countries": [
+        "Estados Unidos",
+        "México",
+        "China",
+        "Canadá"
+      ],
+      "tags": [
+        "Balanza comercial",
+        "Census Bureau",
+        "BEA"
+      ],
+      "visual": "chart",
+      "impact": 1,
+      "affectsArgentina": false,
+      "body": [
+        "El déficit comercial de bienes y servicios de Estados Unidos aumentó 13,7% en agosto y llegó a USD 105.600 millones, según los datos de la Oficina del Censo y la Oficina de Análisis Económico (BEA) difundidos el 6 de octubre. En julio, con cifras revisadas, había sido de USD 92.800 millones. Es el nivel más alto desde marzo de 2025, de acuerdo con EFE.",
+        "Las importaciones crecieron 4,3%, a USD 420.800 millones, un récord según Bloomberg Línea, mientras que las exportaciones subieron 1,4%, a USD 315.200 millones. El déficit de bienes fue de USD 136.600 millones y el superávit de servicios se mantuvo en torno a USD 31.000 millones. La suba de las compras se explicó por suministros y materiales industriales —entre ellos petróleo y derivados— y por bienes de capital.",
+        "Por país, los mayores déficits de bienes fueron con México (USD 27.700 millones), China (USD 16.400 millones), la Unión Europea (USD 11.000 millones) y Canadá (USD 7.100 millones). Pese al salto mensual, en los primeros ocho meses del año el déficit acumulado es 19,9% menor que en igual período de 2025, con exportaciones 11,8% más altas e importaciones 4,4% mayores."
+      ],
+      "keyData": [
+        [
+          "Déficit agosto",
+          "USD 105.600 M (+13,7% mensual)"
+        ],
+        [
+          "Importaciones agosto",
+          "USD 420.800 M (+4,3%)"
+        ],
+        [
+          "Exportaciones agosto",
+          "USD 315.200 M (+1,4%)"
+        ],
+        [
+          "Déficit de bienes",
+          "USD 136.600 M"
+        ],
+        [
+          "Déficit acumulado enero–agosto",
+          "-19,9% vs. 2025"
+        ]
+      ],
+      "explainer": {
+        "what": "El déficit comercial de Estados Unidos aumentó 13,7% en agosto y llegó a USD 105.600 millones, el nivel más alto desde marzo de 2025.",
+        "why": "Muestra que, pese a los aranceles, las importaciones estadounidenses subieron 4,3% en el mes, impulsadas por bienes de capital y suministros industriales, aunque en el acumulado del año el déficit sigue 19,9% por debajo de 2025.",
+        "who": "Exportadores que venden a Estados Unidos y empresas atentas a la política arancelaria estadounidense, en especial de México, China, la Unión Europea y Canadá.",
+        "products": [
+          "Bienes de capital",
+          "Petróleo y derivados",
+          "Suministros y materiales industriales"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Infobae (EFE)",
+          "type": "Agencia de noticias",
+          "url": "https://www.infobae.com/america/agencias/2026/10/06/el-deficit-comercial-de-eeuu-aumento-un-137-en-agosto-hasta-105600-millones-de-dolares/",
+          "primary": true
+        },
+        {
+          "name": "Bloomberg Línea",
+          "type": "Medio especializado",
+          "url": "https://www.bloomberglinea.com/mundo/estados-unidos/deficit-comercial-de-eeuu-se-amplia-a-us105600-millones-mientras-importaciones-alcanzan-record/"
+        }
+      ],
+      "story": "aranceles-eeuu",
+      "absorbs": [
+        "deficit-comercial-de-eeuu-se-expandio-en-agosto-a-pesar-de-aranceles-de-trump"
+      ]
+    },
+    {
       "id": "frigerio-presento-en-paris-el-potencial-productivo-y-exportador-de-entre-rios-an",
       "datetime": "2026-10-06T02:53:00Z",
       "date": "2026-10-05",
@@ -5272,54 +5722,6 @@
       ],
       "gnTried": "2026-10-06T09:42:32Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZ29BcjY0R2prWC1KU1dqRERyY1hGTkpUNmstNGRlc2xSc2dsN2RhRVhSa2w4ZDh5anFtNFlNRjJoSnFpZ19raHhEanhZYm9QUXN6RjRjSEpLaHlqUXB5NkhYSktGX0tFTk9reVhjSTNIY0ZKaE5PRXI1NEhjUEIxZ0dNS1RUa2ZDTkJBOWN5NGV6ZDZjck1fajNaTmpSeDIyaWVfQkJwdHdJSHdxaUV3TE9lcjNCOFYzZ0RIQnZPY0JiNWZ4alBCUW9jVEtJMkpzbGlYZGln?oc=5"
-    },
-    {
-      "id": "impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-que-se-ab",
-      "datetime": "2026-10-05T23:01:20Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-06T02:16:04Z",
-      "title": "Impacto en el real, exportaciones y vacaciones en Brasil: los escenarios que se abren con Bolsonaro y Lula ante el balotaje",
-      "summary": "Suben los activos brasileños y se espera un “arrastre” al mercado argentino. La evolución de la actividad brasileña será determinante. Cómo afectaría a la Argentina el triunfo en cada c…",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Exportaciones",
-        "Latinoamérica"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "tags": [],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
-      "sources": [
-        {
-          "name": "Radio Profesional 89.9",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://fm899.com.ar/impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-que-se-abren-con-bolsonaro-y-lula-ante-el-balotaje/",
-          "primary": true,
-          "author": ""
-        },
-        {
-          "name": "Clarin.com",
-          "type": "También publicó esta noticia",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPN3RVcW93ZG9ITDE2M2RxUWJaV2kzNDlqX3FOT2xCUWsxZW9ER2laUzlHdWV4UThTQ0RWWkRqWld3MlhROXk2R2V5NUdkckQtQ3JzMTFXdnBMU3UzQ2F4RXNIT3lkdjBmWUxSREwtY2F0LXVsbGxUc1p1UV91aU5pbU1OODNZZ0MtRjBFbG54dnFzcmY4c0RxNUhITFpHVzhDNnBzMUY0RTU0SG12MTBHS1g4c2tNNW5YTE1yQ3BKdC1JZmZ6QTVrUzQ5RHRoeXVaTGFzcnFwcm1MakRrVlpR?oc=5",
-          "alsoIn": true,
-          "title": "Impacto en el real, exportaciones y vacaciones en Brasil: los escenarios que se abren con Bolsonaro y Lula ante el balotaje"
-        }
-      ],
-      "gnTried": "2026-10-06T02:16:04Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSGpxX1UyLTNVdUx1SVZDcWJFZEw0UVc4b3dxVlZpanlQVVFmUWlHRzRQUEJQc1o4QUJsOV9LX05mNGlmcDI1QjUyVmdQUWRrNG5uU2tHX1R2SXFaQ3g3X3JCSlkzam1nQ0xzb0xVX0hKNHluRXJJa2Vhcjh6ekdudkpmNDFFWmFqcFhnVkI4eXlCa1lDQms5WnJRbGZwbFdLcEJVZXBIaGhmWTduSDJrYU9MZDF0dHJWUHVmSTlWSUhJdWdQUF9NSFFhdV81VFppUDVrQzNPc2E2MEk?oc=5",
-      "aliasUrls": [
-        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPN3RVcW93ZG9ITDE2M2RxUWJaV2kzNDlqX3FOT2xCUWsxZW9ER2laUzlHdWV4UThTQ0RWWkRqWld3MlhROXk2R2V5NUdkckQtQ3JzMTFXdnBMU3UzQ2F4RXNIT3lkdjBmWUxSREwtY2F0LXVsbGxUc1p1UV91aU5pbU1OODNZZ0MtRjBFbG54dnFzcmY4c0RxNUhITFpHVzhDNnBzMUY0RTU0SG12MTBHS1g4c2tNNW5YTE1yQ3BKdC1JZmZ6QTVrUzQ5RHRoeXVaTGFzcnFwcm1MakRrVlpR"
-      ],
-      "mergedIds": [
-        "impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-economico"
-      ]
     },
     {
       "id": "finaliza-campana-exploratoria-de-ecopetrol-petrobras-con-puerto-santa-marta-como",
@@ -5807,6 +6209,74 @@
       ],
       "gnTried": "2026-10-06T02:16:04Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUEk5bGVqVk45UkJBVU5OOWhuam83YTVKOHFZeUpMcTFWOHRUWHpac2xxLWRaUUQycjZVNjg4RzAtY01sa1hxRG0xZ2dpcndfOXRFQkRSZXNaMmdmVlczUTBnRkxVRG1vUURJSkgtX3IxMkttdUFKQW9za01NNndJTWlZYnp1ZEszVUVwSXJXNjRsdi1ZUTNjTU41UWZDTVlleG5HbUxuT3p5ZVZSc0NqSDQ5elQ?oc=5"
+    },
+    {
+      "id": "impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-que-s-2",
+      "datetime": "2026-10-05T21:05:02Z",
+      "date": "2026-10-05",
+      "firstSeen": "2026-10-07T13:42:43Z",
+      "title": "Impacto en el real, exportaciones y vacaciones en Brasil: los escenarios que se abren con Bolsonaro y Lula ante el balotaje",
+      "summary": "Suben los activos brasileños y se espera un \"arrastre\" al mercado argentino.La evolución de la actividad brasileña será determinante.Cómo afectaría a la Argentina el triunfo en cada caso.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "qpasó",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://qpaso.ar/noticias/clarin/economia/impacto-real-exportaciones-vacaciones-brasil-escenarios-economicos-abren-bolsonaro-lula-balotaje_0_NcPgUsYSxP.html",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "Radio Profesional 89.9",
+          "type": "También publicó esta noticia",
+          "url": "https://fm899.com.ar/impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-que-se-abren-con-bolsonaro-y-lula-ante-el-balotaje/",
+          "alsoIn": true,
+          "title": "Impacto en el real, exportaciones y vacaciones en Brasil: los escenarios que se abren con Bolsonaro y Lula ante el balotaje"
+        },
+        {
+          "name": "Clarin.com",
+          "type": "También publicó esta noticia",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPN3RVcW93ZG9ITDE2M2RxUWJaV2kzNDlqX3FOT2xCUWsxZW9ER2laUzlHdWV4UThTQ0RWWkRqWld3MlhROXk2R2V5NUdkckQtQ3JzMTFXdnBMU3UzQ2F4RXNIT3lkdjBmWUxSREwtY2F0LXVsbGxUc1p1UV91aU5pbU1OODNZZ0MtRjBFbG54dnFzcmY4c0RxNUhITFpHVzhDNnBzMUY0RTU0SG12MTBHS1g4c2tNNW5YTE1yQ3BKdC1JZmZ6QTVrUzQ5RHRoeXVaTGFzcnFwcm1MakRrVlpR?oc=5",
+          "alsoIn": true,
+          "title": "Impacto en el real, exportaciones y vacaciones en Brasil: los escenarios que se abren con Bolsonaro y Lula ante el balotaje"
+        },
+        {
+          "name": "noticiasdebariloche.com.ar",
+          "type": "También publicó esta noticia",
+          "url": "https://www.noticiasdebariloche.com.ar/impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-que-se-abren-con-bolsonaro-y-lula-ante-el-balotaje/",
+          "alsoIn": true,
+          "title": "Impacto en el real, exportaciones y vacaciones en Brasil"
+        }
+      ],
+      "gnTried": "2026-10-07T13:42:43Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNMXBWMW11V1VJYVNHUHFWSzVYSWZ1cFNrMXE0MGVmbjRCc0dPRl9tellZY2lVYTc4UmVEY1VfTjhpcWNYWURNQ0NHSWdGTnU4d2ZaQzlFTzlvdjNZX1cyaDFKLVNFdEh5RmViLWdvN0dNRW1DZ05GajlyNV9mTkV6Zk1fN1pYd0dKUzAtdHk2enNTQ1pOdm9Za3JZNmFNYnBPQjh6Rl9FTUVwQmxBTUtxdERKOHh6X1JEMDJiaEo4ZXQ3UFFlc2NVUzZWZS1Qc2xPUFplOEdDcElUN0ZLTkxadVhaTWRhbWFWRkJPQw?oc=5",
+      "aliasUrls": [
+        "https://fm899.com.ar/impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-que-se-abren-con-bolsonaro-y-lula-ante-el-balotaje",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSGpxX1UyLTNVdUx1SVZDcWJFZEw0UVc4b3dxVlZpanlQVVFmUWlHRzRQUEJQc1o4QUJsOV9LX05mNGlmcDI1QjUyVmdQUWRrNG5uU2tHX1R2SXFaQ3g3X3JCSlkzam1nQ0xzb0xVX0hKNHluRXJJa2Vhcjh6ekdudkpmNDFFWmFqcFhnVkI4eXlCa1lDQms5WnJRbGZwbFdLcEJVZXBIaGhmWTduSDJrYU9MZDF0dHJWUHVmSTlWSUhJdWdQUF9NSFFhdV81VFppUDVrQzNPc2E2MEk",
+        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPN3RVcW93ZG9ITDE2M2RxUWJaV2kzNDlqX3FOT2xCUWsxZW9ER2laUzlHdWV4UThTQ0RWWkRqWld3MlhROXk2R2V5NUdkckQtQ3JzMTFXdnBMU3UzQ2F4RXNIT3lkdjBmWUxSREwtY2F0LXVsbGxUc1p1UV91aU5pbU1OODNZZ0MtRjBFbG54dnFzcmY4c0RxNUhITFpHVzhDNnBzMUY0RTU0SG12MTBHS1g4c2tNNW5YTE1yQ3BKdC1JZmZ6QTVrUzQ5RHRoeXVaTGFzcnFwcm1MakRrVlpR",
+        "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNanV5V09BdDl2bUFxVnJrcWlRb0NEZUhJOHBrLXBESC1qWGlTVGhlOV9GS2NoeC0yTU9UVXRFN1JkY1FwTDdTZFhtOU5wNElJZmFHS0lvTFY4OXlMNDdmMWQ0R2tBV2V0cWVLaWRwNTE3Vnp2c0VqN2NGMkJYQzFWMlJhWENYUjAzS2czamRBMU1uZlR5dWxXejdhMEp6Zm13dk03R1JmSW5MZ1Q2UVpHYkRUQWxxS3RiNlk2WG9taWlLbE1zbnI2d1psMEtmSlFaSmRfUUdFNE1wV3dOc195SjdDUTFOcTdpd0daRHdUNWRHYms",
+        "https://www.noticiasdebariloche.com.ar/impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-que-se-abren-con-bolsonaro-y-lula-ante-el-balotaje"
+      ],
+      "mergedIds": [
+        "impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-que-se-ab",
+        "impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-economico",
+        "impacto-en-el-real-exportaciones-y-vacaciones-en-brasil"
+      ]
     },
     {
       "id": "pullaro-impulsa-inversiones-y-exportaciones-hacia-europa",
@@ -7170,10 +7640,24 @@
           "url": "https://www.elobservador.com.uy/agro/argentina-anuncia-acuerdo-japon-abrir-exportaciones-carne-vacuna-n6059485",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "Radio Hache 97.7",
+          "type": "También publicó esta noticia",
+          "url": "https://www.radiohache.com/articulo/japon-abrio-las-exportaciones-de-carne-vacuna-para-argentina-y-aseguran-que-es-el-tercer-importador-de-carne-del-mundo.php",
+          "alsoIn": true,
+          "title": "Japón abrió las exportaciones de carne vacuna para Argentina y aseguran que, “es el tercer importador de carne del mundo”"
         }
       ],
       "gnTried": "2026-10-06T09:42:32Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOc21hbWVfMzFILXEwRkRHVkhmX2FVRFl3dllRQWpHeENMOXJxVzRZaEV3RXZyX2k2bjQ1ckJFdzhIOFVYbmlsb2lFRE5OY2dhWTc0d21wR2tyRWNvaXU2NUJ1eG5rNkVqODc2RkZiMjFsWkU5eEY1bmNJSWd1UGgyNTNFV3pVQUFoNndWNnNHckhMR2RVeEVUd2xqT3lVNnVQQ2UzMC0tYTFCVTNLbW130gG0AUFVX3lxTE5LMVBZVW9kMjhla3lTZjJvZWEtd3FlejFzYlhHMmV4NnZvX1FweWtKQV9HYUdZMnpYd0p6bEx6MktiTDVoV2c2dlNSajZWQmU5eFdNM2l6Z0w4NDBoT19BWkVvN0hCMWhBc0JSZjhUcWQxMWI1YTRYSUlWaXA2dzNtS3RSTWxZeV8wdFZHVnh3bzFTNlRpeXZxM3dPTjdGSmFHWUt4NVVQek1rYVNzdDEzT3pvaQ?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOc21hbWVfMzFILXEwRkRHVkhmX2FVRFl3dllRQWpHeENMOXJxVzRZaEV3RXZyX2k2bjQ1ckJFdzhIOFVYbmlsb2lFRE5OY2dhWTc0d21wR2tyRWNvaXU2NUJ1eG5rNkVqODc2RkZiMjFsWkU5eEY1bmNJSWd1UGgyNTNFV3pVQUFoNndWNnNHckhMR2RVeEVUd2xqT3lVNnVQQ2UzMC0tYTFCVTNLbW130gG0AUFVX3lxTE5LMVBZVW9kMjhla3lTZjJvZWEtd3FlejFzYlhHMmV4NnZvX1FweWtKQV9HYUdZMnpYd0p6bEx6MktiTDVoV2c2dlNSajZWQmU5eFdNM2l6Z0w4NDBoT19BWkVvN0hCMWhBc0JSZjhUcWQxMWI1YTRYSUlWaXA2dzNtS3RSTWxZeV8wdFZHVnh3bzFTNlRpeXZxM3dPTjdGSmFHWUt4NVVQek1rYVNzdDEzT3pvaQ?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOd1lDZVFtZnkzVkVjNjdsbDRUeW1WMTlWMjRlTVoyVHlnamJMcjlTektfV0VSUGM1VllLRHdJeGRibHhoRXpGTnZ4QmpoeDQ4bFdUbXJkTGdaUnlCUGNiUDNwZzdodUk4NDVLbFQ1NW9UVkZMV0NZejViakJTYnh2cElIbVJRUU5TRUp6WjlYVnFENFlDN3QySlZXbnA0R2RObTMtdXFCMUduLXhwV1lPNGFHeTNyWGU1eFA2YVBveDZKMmtwWTFYeUExSmVaOGtPeHJHSE5oZGtZRk1Wa2dPS0c5NFhCUFRkRVFIOEVycw",
+        "https://www.radiohache.com/articulo/japon-abrio-las-exportaciones-de-carne-vacuna-para-argentina-y-aseguran-que-es-el-tercer-importador-de-carne-del-mundo.php"
+      ],
+      "mergedIds": [
+        "japon-abrio-las-exportaciones-de-carne-vacuna-para-argentina-y-aseguran-que-es-e"
+      ]
     },
     {
       "id": "semana-comex-2026-tres-dias-de-capacitaciones-negocios-y-comercio-exterior-en-sa",
@@ -7731,45 +8215,6 @@
           "author": "Luis Alonso"
         }
       ]
-    },
-    {
-      "id": "india-y-estados-unidos-frenan-negociaciones-de-acuerdo-comercial",
-      "datetime": "2026-10-05T13:34:55Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-05T13:45:14Z",
-      "title": "India y Estados Unidos frenan negociaciones de acuerdo comercial",
-      "summary": "",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Tratados y acuerdos",
-        "Estados Unidos",
-        "Asia"
-      ],
-      "countries": [
-        "Estados Unidos",
-        "India"
-      ],
-      "tags": [
-        "Estados Unidos"
-      ],
-      "visual": "treaty",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
-      "sources": [
-        {
-          "name": "Xpectro FM",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://xpectrofm.com/india-y-estados-unidos-frenan-negociaciones-de-acuerdo-comercial/",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-06T09:42:32Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSHJOTVgzZDlzUmRHNkhwNTJWa0NNTi1kYTVTdEs3X2pKMnFnYVRHRllac0RLWE50NE5GNENjSjdsYm1PV3dubWRuQmRFa0xrQUs0ajBLMHRlUk41YklZTGh5WmNzM1NCNTR6Slc4bTg0cE1NNWhGQjJaMEtTbDJrLUh1S0ZxY1Vnclg5NGUwaW8?oc=5"
     },
     {
       "id": "one-y-classnk-investigan-eficacia-de-tanques-de-amortiguacion-de-balanceo-en-por",
@@ -19035,7 +19480,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-07T09:43:45Z",
+    "ranAt": "2026-10-07T13:42:43Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -19053,7 +19498,7 @@
         "items": 12,
         "added": 0,
         "updated": 0,
-        "skipped": 3
+        "skipped": 4
       },
       {
         "source": "PortalPortuario",
@@ -19062,52 +19507,52 @@
         "items": 15,
         "added": 5,
         "updated": 0,
-        "skipped": 6
+        "skipped": 5
       },
       {
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 54,
-        "added": 3,
+        "items": 56,
+        "added": 2,
         "updated": 0,
-        "skipped": 29
+        "skipped": 34
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 49,
-        "added": 4,
+        "items": 46,
+        "added": 3,
         "updated": 0,
-        "skipped": 30
+        "skipped": 27
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 70,
+        "items": 76,
         "added": 4,
         "updated": 0,
-        "skipped": 31
+        "skipped": 37
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 35,
-        "added": 3,
+        "items": 36,
+        "added": 0,
         "updated": 0,
-        "skipped": 17
+        "skipped": 19
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 96,
+        "items": 100,
         "added": 4,
         "updated": 0,
-        "skipped": 77
+        "skipped": 85
       },
       {
         "source": "Google Noticias · Logística y fletes",
@@ -19120,6 +19565,11 @@
       }
     ],
     "curatedDuplicates": [
+      {
+        "title": "Argentina-Brasil: septiembre cerró con un menor déficit de US$ 51 millones",
+        "url": "https://aduananews.com/bras-septiembre-cerro-con-un-menor-deficit-de-us-51-millones/?utm_source=rss&utm_medium=rss&utm_campaign=bras-septiembre-cerro-con-un-menor-deficit-de-us-51-millones",
+        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
+      },
       {
         "title": "Tribunal de Justicia de la UE rechaza pedido de Polonia para suspender el acuerdo comercial interino UE-Mercosur",
         "url": "https://aduananews.com/tribunal-de-justicia-de-la-ue-rechaza-pedido-de-polonia-sobre-el-acuerdo-ue-mercosur/?utm_source=rss&utm_medium=rss&utm_campaign=tribunal-de-justicia-de-la-ue-rechaza-pedido-de-polonia-sobre-el-acuerdo-ue-mercosur",
@@ -19134,55 +19584,138 @@
         "title": "Las exportaciones mineras marcaron un récord histórico y superaron los US$6.000 millones",
         "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUnFDd0k4SkdHNW5xTWpsSGtSZks2WEQ3WTR1SzlMTDRUM0txUTlEci0yajVDVXJkbnVQRmFzbVpCcldqejhyWHM5UUZ1Tm44dzZWRlo3V1dWcjlUb0MwS2txOTZBdWpSUVNvY0xCYndNdERsMXpXN0xnN3RKbmp2a29FaDFtTm1vcWI1cVdfQTZXbDE4eWh1THNuQU9CZ1dQSDRWZVVkcTc1VVZTbmU1TFRUZGZMN0NUNzR5OFUwU2RSWlMtVTBHMXBqdXV2RGxYUDdPdEQ5aGJxY1RPamZBctIB4AFBVV95cUxOUnFDd0k4SkdHNW5xTWpsSGtSZks2WEQ3WTR1SzlMTDRUM0txUTlEci0yajVDVXJkbnVQRmFzbVpCcldqejhyWHM5UUZ1Tm44dzZWRlo3V1dWcjlUb0MwS2txOTZBdWpSUVNvY0xCYndNdERsMXpXN0xnN3RKbmp2a29FaDFtTm1vcWI1cVdfQTZXbDE4eWh1THNuQU9CZ1dQSDRWZVVkcTc1VVZTbmU1TFRUZGZMN0NUNzR5OFUwU2RSWlMtVTBHMXBqdXV2RGxYUDdPdEQ5aGJxY1RPamZBcg?oc=5",
         "curated": "exportaciones-mineras-6059-millones-enero-agosto-2026"
+      },
+      {
+        "title": "Por la caída en la venta de autos, las importaciones desde Brasil se derrumbaron un 25,2% interanual",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLXYzTzRUUTd4X3pqZThPdjJDLU9MWEJ5bHlVOFRtUFpqMERIdmpoVG1Pd1Bvajh0UTNfXzN6eFRtR3kxcmFkZHp2MXh4RWQ0bzd3WHcyYm1jMWNMQVQzMG82cVdVMjVXSjNtRzl1UXZlczVVZURVX1RDeWRBMFRVWU8wNm9mazNuUXdPdlpUUHBfRGtCbDNIOFF4aEtSM19uc0pDTjBlbTVOdVRxMkwyTlpHelRmZWJjQ0N2eTlDa9IBxAFBVV95cUxNcEg4TG9MSkpBLTR5QklvUmo4MW9zNnoxVndmN3RtdWMzcHh3aDlLZ1pPdmhFaDA2bkdpanp4cGs0RDVRX2k5eVZNUExLUjlyMG9mUEpfdWVaWWtOMUM4Mi1hZ2poSFZ4VklGRDlwazl4WDFoMHN5ZUpJSzEwNmh0c3BSWWhQNkVmeUtJdXpXZHZpd1VveUdubDVKMUY4bzJvR2JzcHdKYTVxZEpzcmFqTUZtNDlCY3JxdGtQejluUG1qbnpz?oc=5",
+        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
+      },
+      {
+        "title": "Argentina reduce importaciones desde Brasil y achica el déficit comercial",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdWdiVk15Smh3b2U0VGJzMENkbmUyWWY0UGRjb2pBWUktbXV6VWRPVkN0VWd2RVZlSnhBMkpSRE03dmxpMmxfclduSHB4bG5LcVFfRDRFWHZ1Rlc5Y1lFSGxBNEhzMmp6SGRvMnp0VE56bE9FRVdGTEFqci1QbEQ3QzRvWG1jWHRjUmE0cGpLaDNPWERCd2hFelVFNlJtOFhlSGZpVmZ6OVh3MjdnUEI40gGvAUFVX3lxTFB1Z2JWTXlKaHdvZTRUYnMwQ2RuZTJZZjRQZGNvakFZSS1tdXpVZE9WQ3RVZ3ZFVmVKeEEySlJETTd2bGkybF9yV25IcHhsbktxUV9ENEVYdnVGVzljWUVIbEE0SHMyanpIZG8yenRUTnpsT0VFV0ZMQWpyLVBsRDdDNG9YbWNYdGNSYTRwaktoM09YREJ3aEV6VUU2Um04WGVIZmlWZno5WHcyN2dQQjg?oc=5",
+        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
+      },
+      {
+        "title": "Por la caída en la venta de autos, las importaciones desde Brasil se derrumbaron un 25,2% interanual",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLXYzTzRUUTd4X3pqZThPdjJDLU9MWEJ5bHlVOFRtUFpqMERIdmpoVG1Pd1Bvajh0UTNfXzN6eFRtR3kxcmFkZHp2MXh4RWQ0bzd3WHcyYm1jMWNMQVQzMG82cVdVMjVXSjNtRzl1UXZlczVVZURVX1RDeWRBMFRVWU8wNm9mazNuUXdPdlpUUHBfRGtCbDNIOFF4aEtSM19uc0pDTjBlbTVOdVRxMkwyTlpHelRmZWJjQ0N2eTlDa9IBxAFBVV95cUxNcEg4TG9MSkpBLTR5QklvUmo4MW9zNnoxVndmN3RtdWMzcHh3aDlLZ1pPdmhFaDA2bkdpanp4cGs0RDVRX2k5eVZNUExLUjlyMG9mUEpfdWVaWWtOMUM4Mi1hZ2poSFZ4VklGRDlwazl4WDFoMHN5ZUpJSzEwNmh0c3BSWWhQNkVmeUtJdXpXZHZpd1VveUdubDVKMUY4bzJvR2JzcHdKYTVxZEpzcmFqTUZtNDlCY3JxdGtQejluUG1qbnpz?oc=5",
+        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
+      },
+      {
+        "title": "Argentina reduce importaciones desde Brasil y achica el déficit comercial",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdWdiVk15Smh3b2U0VGJzMENkbmUyWWY0UGRjb2pBWUktbXV6VWRPVkN0VWd2RVZlSnhBMkpSRE03dmxpMmxfclduSHB4bG5LcVFfRDRFWHZ1Rlc5Y1lFSGxBNEhzMmp6SGRvMnp0VE56bE9FRVdGTEFqci1QbEQ3QzRvWG1jWHRjUmE0cGpLaDNPWERCd2hFelVFNlJtOFhlSGZpVmZ6OVh3MjdnUEI40gGvAUFVX3lxTFB1Z2JWTXlKaHdvZTRUYnMwQ2RuZTJZZjRQZGNvakFZSS1tdXpVZE9WQ3RVZ3ZFVmVKeEEySlJETTd2bGkybF9yV25IcHhsbktxUV9ENEVYdnVGVzljWUVIbEE0SHMyanpIZG8yenRUTnpsT0VFV0ZMQWpyLVBsRDdDNG9YbWNYdGNSYTRwaktoM09YREJ3aEV6VUU2Um04WGVIZmlWZno5WHcyN2dQQjg?oc=5",
+        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
+      },
+      {
+        "title": "Producción automotriz cae 15,6% en septiembre; exportaciones suben 6,8%",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTUtTRDJrbm52WlFkUkxoaHdZYjJVZlYzckd1RzB2Rl96NFAwSUQ0ekJFcE5NMGdPWnZ5YlBwSmptaXpqU1NsWGdnWG5EQVYyakNGT0FfTG9IdENuUEVVdFpRMWN5NDBwbml2Q05vNTI4Qm4yR0JsUGpKdTd4bGFiVTlqQnFQNWJqWWh3RVhhN1gwQUViUndxbUZmTQ?oc=5",
+        "curated": "adefa-septiembre-2026-exportaciones-suben-produccion-cae"
+      },
+      {
+        "title": "La producción automotriz cayó 15,6% en septiembre, pero las exportaciones alcanzaron un récord en 2026",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPRUdSdFJULXdJSW1LMjdKczlZOGZFQ084X1NyRUhxTkpIbTZkRHlLN0tQNWVKVzVYSkNIaGlBMlRrM0w4Ynppbk5MUmJ6V3BTYUQ5ZkRtZ3ZoczFBNjJnUmpNYnNmT0EzTTFnYU4wclkyZ1F1WU9SbWV1dUEya0d5dTNTMklpTEdKRFVCbzc3NS1iRWZnZEpqTmQ1Q3prSGVrTEgtbVpJNHpZS2FTbTRSdTlPX3oxMC1oZVQyQ01NN3h1RVNjSGNPSzAySkk0dS1ac1hFU0JB?oc=5",
+        "curated": "adefa-septiembre-2026-exportaciones-suben-produccion-cae"
+      },
+      {
+        "title": "Exportaciones mineras: más de u$s 6.000 millones en ocho meses de 2026. El litio crece 190",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeTluc2NweWpXX2tpZnE3TjNYVnJteWstVXpuUkJObU1lY1hjeWZ2cUVpWUFGbDlhWng0bldJczZsTDl2VlBvSXU1NUROMkx4ZWxQaWVGc1lPenhyZEpPMTZJbnFIbTRuUGtBZzJZQ3JVVHd6SlRqNTZhMnJ0Qk9TdFE0RjBiSG1iN3VrNkctTk5xMDB2V1FrZTZFVWtCYWYxc0stSVEwa2NtUk5rWjBvazNQUmV0RDhMcGY2VEFHaFZha1k?oc=5",
+        "curated": "exportaciones-mineras-6059-millones-enero-agosto-2026"
+      },
+      {
+        "title": "La producción de autos cayó 15,6% en septiembre, pero las exportaciones marcaron un récord",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWFNoT2FrbXBaanVTT25pdTRCMXJXNGljRnFwSGFKZW1tcWwzd3RVSndDWURYT1dCTjFsenZyLXFnaHpHUGtZZzU0Rm94SGl4M1dZdjdKLXdrNy1ZOVY1bkpTQ2ZOTC1rVkZ4WHJiVVNRN1Q4TE1VMFNhQy1TMzFjU3hhd1dBT3Q1Yk1DNVR1ZUNlMUtJSHZjclNlaXRvMnNDWHM5cWxaczZxempMbERjTjRkcGkzVlFGSUZPLVZMTU56bU5qbWlQRGVhMktrZU9GMHVMU3JfWjN6ajB2?oc=5",
+        "curated": "adefa-septiembre-2026-exportaciones-suben-produccion-cae"
+      },
+      {
+        "title": "La minería argentina quedó a un paso de romper su récord exportador",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR1lnRmM3bmowR0l2Z1FxM2JMSjhMbWJiWGoxcmkyeHNFS0NZcnpaX2NnMjJFdEtrZHgxeFRGMm84ZFR1MUdSQUVnRUxMbjNNRFc2aUxpOHRkUDdraHdLMlA4Zmk2d2NFSkpwWnEza3lNYXdsekpzalhFLVVFQm1XTmdqWl9OV3BfTGlWdVp5REZQTjBLRW9FM1hFaHhJZkRJMVFZT0pUcDlRQkwxVncwd2lTSE5meDd2SWgzTXZCbjBHQQ?oc=5",
+        "curated": "exportaciones-mineras-6059-millones-enero-agosto-2026"
+      },
+      {
+        "title": "La producción automotriz cayó 15,6% anual en septiembre, pero las exportaciones tocaron máximos del año",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcDA0bHcyYUQ5Z3ZJZUN5UmM4Rl9IOGxWM0RIZFFCbVFkVjhfWWdjcUhtbFloNUVaS19YM1dYOU5ZdDJTWmhtbEJ0ZzYxNWw0dE81elp6Y1N5a1JfTEdGbE5FdnhhX000Ujh5WVdLNjhnY2gybEdYcUdURGNnYWJrSW80ZUtRaVZ2RVdCMHJvNHFEOEwyc3dYYUphM3VPdE1kZC1DN2NEY3pJQ3RGRURFZndvbC1ZM3hSWEVzcGNzd21fMGtXb21WRjVhZF9RV2M?oc=5",
+        "curated": "adefa-septiembre-2026-exportaciones-suben-produccion-cae"
+      },
+      {
+        "title": "La producción automotriz cayó 15,6% anual en septiembre, pero las exportaciones tocaron máximos del año",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPb1NWaDBsVDdDZzhIUmpoM0NmbVQwUnZZNFZ6b2dHTk5fZWttR05iX09scnJpX0hEM1JkSzBKbFFEMkZOR3RSZUVMTFNmVGp6eWFzY2tZdUVZaUE1S05NRTFyaHR2ekR4RlpwdnlfUWVwNUV0bTVDc0NRTW5iMXptWXg1S2pUX1Iwb3NDQk5ZcWk3Z1VNU1E1Yk5xTHpGYkdmaHNKNDg5VVkzNlBDOHBiMlB5ajVyZmdDVG5YNVZIX3VCWjNCQzFYY21rSEpva2JQdjB1bmdpLU1BZ9IB2gFBVV95cUxPb1NWaDBsVDdDZzhIUmpoM0NmbVQwUnZZNFZ6b2dHTk5fZWttR05iX09scnJpX0hEM1JkSzBKbFFEMkZOR3RSZUVMTFNmVGp6eWFzY2tZdUVZaUE1S05NRTFyaHR2ekR4RlpwdnlfUWVwNUV0bTVDc0NRTW5iMXptWXg1S2pUX1Iwb3NDQk5ZcWk3Z1VNU1E1Yk5xTHpGYkdmaHNKNDg5VVkzNlBDOHBiMlB5ajVyZmdDVG5YNVZIX3VCWjNCQzFYY21rSEpva2JQdjB1bmdpLU1BZw?oc=5",
+        "curated": "adefa-septiembre-2026-exportaciones-suben-produccion-cae"
+      },
+      {
+        "title": "En septiembre crecieron las exportaciones y las ventas mayoristas de autos",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPU1V4ZnVJVmRpeTZmb25mOVNDX3FfV090Sm1pRXFZMVkyX2xfTjZVNXVDUkdlaEFqMTNkN1FuM2xUeEJZdnY3OEhGVmJNUHZQOU9iS0VfcE1YbU5KajlHNEVETjJQckQyTEpXUlV4ZTRKUkh5SXM4V09Xc0NtNFNUN3AxRHhqek5DdWU2MjdfWU1IZTJJdXFNQkJRdXhYNUlMa2Z4UNIBqgFBVV95cUxPR01BS0ZyankwT1lUaktNS24xWThGNmM3UFBzd1lhQTR0aFdGRmR6S0tNVWhNRzRaeWxZbTRjMWdCY001YlBsaEhoTW1NOU1xbU5xWXk1VHh3cWJIcC0tSkdNWkZOTF9EOHdlUmtTYlBHVmdoMFdES2k3WnBodjFCeE1EUUtDeFNfMlBzT1I5T3A1Ni01SDg4TnJxczUwYlE0cWlkNW1zZE9aZw?oc=5",
+        "curated": "adefa-septiembre-2026-exportaciones-suben-produccion-cae"
+      },
+      {
+        "title": "Las exportaciones mineras marcaron un récord histórico y superaron los US$6.000 millones",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUnFDd0k4SkdHNW5xTWpsSGtSZks2WEQ3WTR1SzlMTDRUM0txUTlEci0yajVDVXJkbnVQRmFzbVpCcldqejhyWHM5UUZ1Tm44dzZWRlo3V1dWcjlUb0MwS2txOTZBdWpSUVNvY0xCYndNdERsMXpXN0xnN3RKbmp2a29FaDFtTm1vcWI1cVdfQTZXbDE4eWh1THNuQU9CZ1dQSDRWZVVkcTc1VVZTbmU1TFRUZGZMN0NUNzR5OFUwU2RSWlMtVTBHMXBqdXV2RGxYUDdPdEQ5aGJxY1RPamZBctIB4AFBVV95cUxOUnFDd0k4SkdHNW5xTWpsSGtSZks2WEQ3WTR1SzlMTDRUM0txUTlEci0yajVDVXJkbnVQRmFzbVpCcldqejhyWHM5UUZ1Tm44dzZWRlo3V1dWcjlUb0MwS2txOTZBdWpSUVNvY0xCYndNdERsMXpXN0xnN3RKbmp2a29FaDFtTm1vcWI1cVdfQTZXbDE4eWh1THNuQU9CZ1dQSDRWZVVkcTc1VVZTbmU1TFRUZGZMN0NUNzR5OFUwU2RSWlMtVTBHMXBqdXV2RGxYUDdPdEQ5aGJxY1RPamZBcg?oc=5",
+        "curated": "exportaciones-mineras-6059-millones-enero-agosto-2026"
+      },
+      {
+        "title": "Argentina reduce importaciones desde Brasil y achica el déficit comercial",
+        "url": "https://www.baenegocios.com/economia/argentina-reduce-las-importaciones-desde-brasil-y-achica-el-deficit-comercial/",
+        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
+      },
+      {
+        "title": "Déficit con Brasil: suben exportaciones pero sigue el rojo",
+        "url": "https://diarioelnorte.com.ar/deficit-con-brasil-suben-exportaciones-pero-sigue-el-rojo/",
+        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
+      },
+      {
+        "title": "La balanza comercial con Brasil registró un déficit de US$ 51 millones en septiembre",
+        "url": "https://lu17.com/contenido/151827/la-balanza-comercial-con-brasil-registro-un-deficit-de-us-51-millones-en-septiembre",
+        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
+      },
+      {
+        "title": "Intercambio con Brasil: notable baja de las importaciones y nuevo crecimiento de las exportaciones",
+        "url": "https://comexonline.com.ar/noticias/val/63720/intercambio-con-brasil-notable-baja-de-las-importaciones-y-nuevo-crecimiento-de-las-exportaciones.html",
+        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
+      },
+      {
+        "title": "Déficit comercial de EEUU se expandió en agosto a pesar de aranceles de Trump",
+        "url": "https://rosariofinanzas.ar/noticias/deficit-comercial-de-eeuu-se-expandio-en-agosto-a-pesar-de-aranceles-de-trump",
+        "curated": "eeuu-deficit-comercial-agosto-2026-105600-millones"
       }
     ],
     "excluded": 0,
     "grouped": [
       {
-        "main": "gran-bretana-analiza-aranceles-para-los-coches-electricos-importados-de-china-an",
+        "main": "el-contenido-de-las-negociaciones-para-un-acuerdo-comercial-reciproco-con-estado",
         "merged": [
-          "gran-bretana-se-prepara-para-imponer-aranceles-a-los-coches-electricos-chinos"
+          "india-y-estados-unidos-frenan-negociaciones-de-acuerdo-comercial"
         ]
       },
       {
-        "main": "argentina-se-prepara-para-aumentar-las-exportaciones-de-gas-desde-vaca-muerta",
+        "main": "argentina-anuncio-acuerdo-con-japon-para-abrir-exportaciones-de-carne-vacuna",
         "merged": [
-          "el-gas-de-vaca-muerta-busca-ganar-la-region-que-necesita-argentina-para-multipli",
-          "vaca-muerta-prepara-el-salto-exportador"
+          "japon-abrio-las-exportaciones-de-carne-vacuna-para-argentina-y-aseguran-que-es-e"
         ]
       },
       {
-        "main": "acuerdo-mercosur-union-europea-una-gran-oportunidad-para-el-agro-con-letra-chica",
+        "main": "impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-que-s-2",
         "merged": [
-          "acuerdo-mercosur-union-europea-y-su-impacto-en-el-sector-agro"
+          "impacto-en-el-real-exportaciones-y-vacaciones-en-brasil-los-escenarios-que-se-ab",
+          "impacto-en-el-real-exportaciones-y-vacaciones-en-brasil"
         ]
       },
       {
-        "main": "el-salto-del-litio-argentino-puede-superar-a-chile-y-8-de-cada-10-exportaciones",
+        "main": "las-importaciones-de-smartphones-crecieron-un-746-y-se-desploma-la-produccion-lo",
         "merged": [
-          "el-salto-del-litio-argentino-puede-superar-a-chile-y-8-de-cada-10-exportacio-2"
-        ]
-      },
-      {
-        "main": "las-importaciones-de-smartphones-crecieron-un-746-por-ciento",
-        "merged": [
-          "las-importaciones-de-smartphones-crecieron-746-mientras-la-produccion-tecnologic"
+          "las-importaciones-de-smartphones-crecieron-un-746-por-ciento"
         ]
       },
       {
         "main": "tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-por-2",
         "merged": [
-          "tres-detenidos-en-algeciras-al-intentar-extraer-50-kilos-de-coca-de-un-portacont",
-          "tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-portaco"
+          "tres-detenidos-al-intentar-extraer-cocaina-de-un-portacontenedores-en-algeciras"
         ]
       }
     ],
     "googleNews": {
-      "pending": 23,
-      "resolved": 22,
-      "withSummary": 15,
+      "pending": 17,
+      "resolved": 17,
+      "withSummary": 11,
       "withPhoto": 0,
-      "failed": 1,
+      "failed": 0,
       "duplicates": 0
     }
   },
