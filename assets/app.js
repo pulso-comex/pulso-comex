@@ -556,7 +556,8 @@ const headRow = it => `<div class="eyebrow-row">${eyebrow(it)}${kindBadge(it)}${
 const sitePath = () => new URL(BASE).pathname.replace(/\/+$/, '');
 // Direcciones propias (indexables) de secciones y herramientas. scripts/build_pages.py genera una página en cada una.
 const PRETTY = { datos:'datos', agenda:'agenda', glosario:'glosario', fuentes:'fuentes', calculadora:'calculadora-importacion',
-  exportacion:'calculadora-exportacion', guias:'guias', acerca:'quienes-somos', contacto:'contacto', privacidad:'privacidad', terminos:'terminos' };
+  exportacion:'calculadora-exportacion', guias:'guias', acerca:'quienes-somos', contacto:'contacto', privacidad:'privacidad', terminos:'terminos',
+  publicidad:'publicidad', directorio:'directorio' };
 const guideBySlug = slug => (SITE_DATA.guides || []).find(g => g.slug === slug);
 function prettyPath(h){   // h: ruta con hash sin '#', ej. 'tema-aduanas' → 'seccion/aduanas/'
   if (PRETTY[h]) return PRETTY[h] + '/';
@@ -898,6 +899,8 @@ function renderHome(){
 }
 
 function sectionHeader(s, n, extra = ''){
+  const sp = sponsorFor(s.slug);
+  if (sp) extra = `<span class="sp-by"><span class="sp-tag">Patrocinio</span>Sección presentada por <a href="${esc(sp.url)}" target="_blank" rel="sponsored noopener noreferrer">${esc(sp.marca)}</a></span>` + extra;
   const g = s.slug && groupOf(s.slug);
   const eyebrowTxt = g && g.slug !== s.slug ? `<a href="#tema-${g.slug}">${esc(g.label)}</a>` : 'Sección';
   return `<div class="sec-intro"><div style="min-width:0"><span class="eyebrow">${eyebrowTxt}</span><h2>${esc(s.title || s.label)}</h2><p>${esc(s.desc)}</p></div><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="rcount"><b>${n}</b> ${n===1?'noticia':'noticias'}</span>${extra}</div></div>${subNav(s)}`;
@@ -1620,6 +1623,88 @@ function renderGuide(g){
   setSEO({ title:`${g.title} · ${CONFIG.siteName}`, desc: g.desc, type:'article', crumbs:[['Guías','#guias'],[g.title]],
     ld: { '@type':'Article', headline: g.title, description: g.desc, inLanguage:'es-AR', dateModified: g.updated, author: { '@type':'Organization', name: CONFIG.siteName } } });
 }
+/* =====================================================================
+   PATROCINIOS, KIT PARA ANUNCIANTES Y DIRECTORIO (site.json → patrocinios; data/directorio.json)
+   Los avisos se marcan siempre como «Publicidad»/«Patrocinio» y sus enlaces llevan rel="sponsored".
+   ===================================================================== */
+const PATRO = SITECFG.patrocinios || { activo:false };
+const sponsorFor = slug => PATRO.activo && slug ? (PATRO.secciones || {})[slug] : null;
+function sponsorBox(sp){
+  return `<section class="box sp-box" aria-label="Publicidad"><h2>Publicidad <small><a href="#publicidad">¿Qué es esto?</a></small></h2>
+    <p class="sp-brand">${esc(sp.marca)}</p>${sp.texto ? `<p class="sp-txt">${esc(sp.texto)}</p>` : ''}
+    <a class="btn sm" href="${esc(sp.url)}" target="_blank" rel="sponsored noopener noreferrer">${esc(sp.cta || 'Conocer más')} →</a></section>`;
+}
+function renderPublicidad(){
+  const cur = state.items.filter(i => !isAuto(i));
+  const last30 = cur.filter(i => dayDiff(i) <= 30).length;
+  const secs = (TAXO.sections || []).length;
+  const srcs = new Set(cur.flatMap(i => i.sources.map(s => s.name))).size;
+  const mail = SITECFG.contactEmail;
+  const stat = (v, l, note = '') => `<div class="kit-stat"><span class="v">${v}</span><span class="l">${l}</span>${note ? `<span class="n">${note}</span>` : ''}</div>`;
+  const fmt = (name, what, where, price) => `<tr><th scope="row">${name}</th><td>${what}</td><td>${where}</td><td>${price}</td></tr>`;
+  $('#main').innerHTML = `<article class="article doc kit">
+    <a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>
+    <span class="eyebrow">Kit para anunciantes</span>
+    <h1>Llegá a quienes deciden en el comercio exterior argentino</h1>
+    <p class="kit-lead">Pulso Comex es un medio especializado: cada día verifica y resume las novedades que cambian costos, plazos y reglas para importadores, exportadores, despachantes de aduana y operadores logísticos.</p>
+    <h2>El medio en números</h2>
+    <div class="kit-stats">
+      ${stat(cur.length, 'notas verificadas', `${last30} en los últimos 30 días`)}
+      ${stat(secs, 'secciones temáticas', 'Aduanas, Logística, Aranceles, Mercosur…')}
+      ${stat(srcs, 'fuentes citadas', 'organismos oficiales y medios especializados')}
+      ${stat(state.indicators.filter(d => d.value).length, 'indicadores en vivo', 'dólar, granos, fletes, Brent, INDEC')}
+    </div>
+    <div class="kit-pending"><b>Audiencia:</b> visitas mensuales, suscriptores del newsletter y tasa de apertura se completan con los datos reales de Google Analytics y MailerLite antes de presentar el kit.</div>
+    <h2>Quién nos lee</h2>
+    <ul class="kit-who"><li><b>Importadores y exportadores</b> que siguen aranceles, cupos y normas de ARCA.</li><li><b>Despachantes de aduana</b> y estudios de comercio exterior.</li><li><b>Agentes de carga, transportistas y puertos</b> atentos a fletes y rutas.</li><li><b>Estudiantes y docentes</b> de comercio exterior.</li></ul>
+    <h2>Formatos</h2>
+    <div class="table-wrap"><table class="kit-table"><thead><tr><th>Formato</th><th>Qué incluye</th><th>Dónde se ve</th><th>Precio</th></tr></thead><tbody>
+      ${fmt('Patrocinio del newsletter', 'Logo, 2 líneas y enlace en el resumen semanal', 'Correo de los martes', 'A definir')}
+      ${fmt('Sección presentada por', '«Sección presentada por» con enlace en la cabecera de una sección', 'Logística, Aduanas, Aranceles…', 'A definir · mensual')}
+      ${fmt('Aviso lateral', 'Marca, texto breve y botón', 'Portada, notas y secciones', 'A definir · mensual')}
+      ${fmt('Ficha destacada en el directorio', 'Primer lugar en su rubro, servicios y web', 'Directorio de comercio exterior', 'A definir · anual')}
+      ${fmt('Contenido patrocinado', 'Nota escrita con la marca, etiquetada como patrocinada', 'Portada y newsletter', 'A definir · por nota')}
+    </tbody></table></div>
+    <h2>Así se ven</h2>
+    <div class="kit-demo">
+      <div><p class="note">Aviso lateral</p>${sponsorBox({ marca:'Tu marca', texto:'Una línea sobre tu servicio para importadores y exportadores.', url:'#publicidad', cta:'Tu llamado a la acción' })}</div>
+      <div><p class="note">Sección presentada por</p><div class="sec-intro" style="margin:0"><div><span class="eyebrow">Logística</span><h2>Fletes y transporte</h2></div><span class="sp-by"><span class="sp-tag">Patrocinio</span>Sección presentada por <a href="#publicidad">Tu marca</a></span></div></div>
+    </div>
+    <h2>Reglas editoriales</h2>
+    <ul><li>Todo aviso se identifica como <b>Publicidad</b> o <b>Patrocinio</b>, y sus enlaces se marcan como patrocinados para los buscadores.</li>
+      <li>Los anunciantes no eligen ni revisan las notas de la redacción: la línea editorial no se vende.</li>
+      <li>El contenido patrocinado va siempre con la etiqueta «Contenido patrocinado» y separado de las notas verificadas.</li></ul>
+    <div class="kit-cta"><h2>¿Hablamos?</h2><p>Contanos qué querés comunicar y te proponemos el formato que mejor se ajusta.</p>
+      ${mail ? `<a class="btn primary" href="mailto:${esc(mail)}?subject=${encodeURIComponent('Publicidad en Pulso Comex')}">Escribinos a ${esc(mail)}</a>` : ''}</div>
+  </article>`;
+  setSEO({ title:`Publicidad y patrocinios · ${CONFIG.siteName}`, desc:'Formatos para llegar a importadores, exportadores, despachantes y operadores logísticos.', crumbs:[['Publicidad']], noindex:true });
+}
+function renderDirectorio(){
+  const D = SITE_DATA.directorio || { rubros:[], fichas:[] };
+  const f = state.dirRubro || '';
+  const list = D.fichas.filter(x => !f || x.rubro === f).sort((a,b) => (b.destacada?1:0) - (a.destacada?1:0) || a.nombre.localeCompare(b.nombre, 'es'));
+  const anyDemo = D.fichas.some(x => x.ejemplo);
+  const ficha = x => `<article class="dir-card${x.destacada ? ' is-top' : ''}">
+    <div class="dir-head"><span class="eyebrow">${esc(x.rubro)}</span>${x.destacada ? '<span class="sp-tag">Destacada</span>' : ''}</div>
+    <h3>${esc(x.nombre)}</h3><p class="dir-loc">${esc(x.ciudad)}, ${esc(x.provincia)}</p>
+    <p>${esc(x.descripcion || '')}</p>
+    ${(x.servicios || []).length ? `<div class="tagrow">${x.servicios.map(s => `<span class="dir-svc">${esc(s)}</span>`).join('')}</div>` : ''}
+    ${x.web ? `<a class="btn sm" href="${esc(x.web)}" target="_blank" rel="${x.destacada ? 'sponsored ' : ''}noopener noreferrer">Visitar sitio →</a>` : ''}</article>`;
+  $('#main').innerHTML = `<article class="article doc dir">
+    <a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>
+    <span class="eyebrow">Directorio</span><h1>Directorio de comercio exterior</h1>
+    <p class="kit-lead">Despachantes de aduana, agentes de carga, transportistas, depósitos fiscales y consultoras. La ficha básica es gratuita; las destacadas aparecen primero en su rubro.</p>
+    ${anyDemo ? '<div class="kit-pending"><b>Demostración:</b> las fichas son de ejemplo y no corresponden a empresas reales.</div>' : ''}
+    <div class="dir-filter" role="group" aria-label="Filtrar por rubro"><button type="button" data-dir="" class="${f ? '' : 'on'}">Todos <span>${D.fichas.length}</span></button>${D.rubros.map(r => [r, D.fichas.filter(x => x.rubro === r).length]).filter(([, n]) => n).map(([r, n]) => `<button type="button" data-dir="${esc(r)}" class="${f === r ? 'on' : ''}">${esc(r)} <span>${n}</span></button>`).join('')}</div>
+    <div class="dir-grid">${list.map(ficha).join('')}</div>
+    <div class="kit-cta"><h2>¿Tu empresa no está?</h2><p>Sumá tu ficha gratis o destacala en tu rubro.</p><a class="btn primary" href="#publicidad">Ver opciones</a></div>
+  </article>`;
+  setSEO({ title:`Directorio de comercio exterior · ${CONFIG.siteName}`, desc:'Despachantes, agentes de carga, transportistas y consultoras de comercio exterior.', crumbs:[['Directorio']], noindex:true });
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-dir]'); if (!b) return;
+  state.dirRubro = b.dataset.dir; renderDirectorio();
+});
 function renderPage(key){
   const [title, html] = PAGES[key];
   $('#main').innerHTML = `<article class="article doc"><a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a><h1>${esc(title)}</h1><div class="prose">${html}</div></article>`;
@@ -1654,6 +1739,7 @@ function renderAside(){
   const tc = t => items.filter(i => i.topics.includes(t)).length;
   const boxes = [];
   if (hasNewsletter && view !== 'calculadora') boxes.push(newsletterBox('aside'));
+  if (PATRO.activo && PATRO.lateral && !['publicidad','directorio'].includes(view)) boxes.splice(view === 'home' ? 0 : 1, 0, sponsorBox(PATRO.lateral));
   if (view !== 'home') boxes.push(`<section class="box"><h2>Indicadores <small>últimos datos</small></h2>
     <div class="ind-mini">${state.indicators.filter(d => d.value).slice(0,6).map(d => `<a href="${esc(d.url)}" target="_blank" rel="noopener noreferrer"><span class="l">${esc(d.label)}</span><span class="v">${esc(d.value)}</span><span class="p">${esc(d.period)} · ${esc(d.source)}</span><span class="c ${d.trend==='up'?'up':d.trend==='down'?'down':'flat'}">${d.trend==='up'?'▲':d.trend==='down'?'▼':''} ${esc(d.change)}</span></a>`).join('')}</div>
     <a class="foot-link" href="#datos">Ver todos los indicadores →</a></section>`);
@@ -1791,6 +1877,8 @@ function render(){
   else if (v === 'guide') renderGuide(guideBySlug(state.guideId));
   else if (v === 'agenda') renderAgenda();
   else if (v === 'glosario') renderGlosario();
+  else if (v === 'publicidad') renderPublicidad();
+  else if (v === 'directorio') renderDirectorio();
   else if (v === 'story'){ const st = storyById(state.storyId); st ? renderStory(st) : renderNotFound(); }
   else if (PAGES[v]) renderPage(v);
   else if (v === 'notfound') renderNotFound();
@@ -1869,7 +1957,7 @@ function route(){
     state.filters = f; state.sort = params.get('orden') === 'fecha' ? 'fecha' : 'relevancia';
     state.view = viewFor(f);
   }
-  else if (['datos','fuentes','guardadas','calculadora','exportacion','guias','agenda','glosario'].includes(path) || PAGES[path]) state.view = path;
+  else if (['datos','fuentes','guardadas','calculadora','exportacion','guias','agenda','glosario','publicidad','directorio'].includes(path) || PAGES[path]) state.view = path;
   else if (path.startsWith('guia-') && guideBySlug(path.slice(5))){ state.view = 'guide'; state.guideId = path.slice(5); }
   else if (path.startsWith('hilo-') && storyById(path.slice(5))){ state.view = 'story'; state.storyId = path.slice(5); }
   else if (state.items.some(i => i.id === path)){ state.view = 'article'; state.articleId = path; countRead(path); }
@@ -2022,7 +2110,7 @@ document.addEventListener('click', e => {
   }
   if (d.section) return go('#tema-' + d.section);
   if (d.q) return go(filterHash({ q: d.q, arg: d.arg || '' }));
-  const base = ['article','datos','fuentes','guardadas','notfound','agenda','glosario','story','calculadora','exportacion','guias','guide'].includes(state.view) || PAGES[state.view] ? emptyFilters() : state.filters;
+  const base = ['article','datos','fuentes','guardadas','notfound','agenda','glosario','story','calculadora','exportacion','guias','guide','publicidad','directorio'].includes(state.view) || PAGES[state.view] ? emptyFilters() : state.filters;
   if (d.tag) return go(filterHash({ ...base, tag: d.tag }));
   if (d.country) return go(filterHash({ ...base, country: d.country }));
   if (d.region) return go(filterHash({ ...base, region: d.region }));

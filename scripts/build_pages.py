@@ -89,6 +89,15 @@ def load_site_config():
     cfg['newsletter'] = {k: str(nl.get(k) or '').strip() for k in ('formAction', 'url')
                          if str(nl.get(k) or '').strip().startswith('https://')}
     cfg['redes'] = [r for r in (cfg.get('redes') or []) if str(r.get('url') or '').startswith('https://')]
+    # Patrocinios (avisos de marcas): solo enlaces https y textos cortos; si "activo" no es true, no se muestra nada.
+    pat = cfg.get('patrocinios') or {}
+    def spot(x):
+        x = x if isinstance(x, dict) else {}
+        out = {k: str(x.get(k) or '').strip()[:220] for k in ('marca', 'texto', 'cta', 'url')}
+        return out if out['marca'] and out['url'].startswith('https://') else None
+    cfg['patrocinios'] = {'activo': pat.get('activo') is True, 'lateral': spot(pat.get('lateral')),
+                          'secciones': {k: v for k, v in ((k, spot(v)) for k, v in (pat.get('secciones') or {}).items()) if v},
+                          'newsletter': spot(pat.get('newsletter'))} if pat.get('activo') is True else {'activo': False}
     resp = cfg.get('responsable') or {}
     cfg['responsable'] = {k: str(resp.get(k) or '').strip() for k in ('nombre', 'rol', 'descripcion', 'linkedin')}
     return cfg
@@ -273,14 +282,18 @@ def feed_payload(news, items):
 
 # Enlaces fijos de la plantilla (#datos, #agenda…) → dirección propia. data-h permite volver al hash al abrir con doble clic.
 TOOL_PATHS = {'datos': 'datos', 'agenda': 'agenda', 'glosario': 'glosario', 'fuentes': 'fuentes', 'calculadora': 'calculadora-importacion',
-              'exportacion': 'calculadora-exportacion', 'guias': 'guias', 'acerca': 'quienes-somos', 'contacto': 'contacto', 'privacidad': 'privacidad', 'terminos': 'terminos'}
+              'exportacion': 'calculadora-exportacion', 'guias': 'guias', 'acerca': 'quienes-somos', 'contacto': 'contacto', 'privacidad': 'privacidad', 'terminos': 'terminos',
+              'publicidad': 'publicidad', 'directorio': 'directorio'}
 
 
 def site_data(news):
     tax = json.loads((ROOT / 'data' / 'taxonomy.json').read_text(encoding='utf-8'))
     tax.pop('_ayuda', None)
     glo = json.loads((ROOT / 'data' / 'glossary.json').read_text(encoding='utf-8'))
+    dirf = ROOT / 'data' / 'directorio.json'
+    dire = json.loads(dirf.read_text(encoding='utf-8')) if dirf.exists() else {}
     return {'taxonomy': tax, 'glossary': glo.get('terms', []),
+            'directorio': {'rubros': dire.get('rubros', []), 'fichas': [f for f in dire.get('fichas', []) if f.get('nombre')]},
             'guides': [{k: g.get(k) for k in ('slug', 'title', 'desc', 'updated')} for g in load_guides()]}
 
 
@@ -418,6 +431,8 @@ TOOLS = {
     'contacto': ('Contacto', 'Cómo comunicarte con Pulso Comex para sugerencias, correcciones o propuestas.'),
     'privacidad': ('Política de privacidad', 'Cómo trata Pulso Comex los datos de quienes visitan el sitio.'),
     'terminos': ('Términos y condiciones', 'Condiciones de uso del contenido de Pulso Comex.'),
+    'publicidad': ('Publicidad y patrocinios', 'Formatos para llegar a importadores, exportadores, despachantes y operadores logísticos: patrocinio de newsletter, de sección, avisos y directorio.'),
+    'directorio': ('Directorio de comercio exterior', 'Despachantes de aduana, agentes de carga, transportistas y consultoras de comercio exterior en la Argentina.'),
 }
 TOOLS_INDEXED = {'datos', 'agenda', 'glosario', 'calculadora', 'exportacion', 'guias', 'fuentes', 'acerca'}
 

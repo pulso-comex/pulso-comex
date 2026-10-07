@@ -14,9 +14,47 @@
     "url": ""
   },
   "redes": [
-    { "nombre": "LinkedIn", "url": "" },
-    { "nombre": "Instagram", "url": "" },
-    { "nombre": "X", "url": "" },
-    { "nombre": "WhatsApp", "url": "" }
-  ]
+    {
+      "nombre": "LinkedIn",
+      "url": ""
+    },
+    {
+      "nombre": "Instagram",
+      "url": ""
+    },
+    {
+      "nombre": "X",
+      "url": ""
+    },
+    {
+      "nombre": "WhatsApp",
+      "url": ""
+    }
+  ],
+  "patrocinios": {
+    "_ayuda": "DEMO: marcas ficticias. Para activar avisos reales, cambiar marca/texto/url y dejar activo: true.",
+    "activo": true,
+    "lateral": {
+      "marca": "Paraná Cargo Logística (ejemplo)",
+      "texto": "Consolidados marítimos desde Asia a Buenos Aires y Rosario, con seguimiento online de cada embarque.",
+      "cta": "Cotizar un embarque",
+      "url": "https://example.com"
+    },
+    "secciones": {
+      "logistica": {
+        "marca": "Paraná Cargo Logística (ejemplo)",
+        "url": "https://example.com"
+      },
+      "aduanas": {
+        "marca": "Despachos Mediterráneo (ejemplo)",
+        "url": "https://example.com"
+      }
+    },
+    "newsletter": {
+      "marca": "Despachos Mediterráneo (ejemplo)",
+      "texto": "Despachante de aduana en Córdoba: importaciones de bienes de capital e insumos para pymes del interior.",
+      "cta": "Consultar",
+      "url": "https://example.com"
+    }
+  }
 }

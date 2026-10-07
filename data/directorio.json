@@ -1,0 +1,24 @@
+{
+  "_ayuda": "Directorio de empresas de comercio exterior. Cada ficha: nombre, rubro, ciudad, provincia, descripcion, servicios, web (https), destacada (true si paga la ficha destacada), ejemplo (true = ficha de muestra, no es una empresa real).",
+  "rubros": ["Despachante de aduana", "Agente de carga", "Transporte terrestre", "Depósito fiscal", "Consultora de comercio exterior", "Seguros de carga"],
+  "fichas": [
+    {"nombre": "Despachos Mediterráneo (ejemplo)", "rubro": "Despachante de aduana", "ciudad": "Córdoba", "provincia": "Córdoba",
+     "descripcion": "Importación y exportación de bienes de capital, insumos industriales y alimentos. Atención a pymes del interior.",
+     "servicios": ["Clasificación arancelaria", "Licencias y certificados", "Regímenes de importación temporaria"], "web": "https://example.com", "destacada": true, "ejemplo": true},
+    {"nombre": "Paraná Cargo Logística (ejemplo)", "rubro": "Agente de carga", "ciudad": "Rosario", "provincia": "Santa Fe",
+     "descripcion": "Consolidados marítimos desde Asia y Europa, carga aérea y coordinación de puerta a puerta.",
+     "servicios": ["FCL y LCL", "Carga aérea", "Seguro de carga"], "web": "https://example.com", "destacada": true, "ejemplo": true},
+    {"nombre": "Aduana Sur Consultores (ejemplo)", "rubro": "Consultora de comercio exterior", "ciudad": "Buenos Aires", "provincia": "CABA",
+     "descripcion": "Planificación de importaciones, precios de transferencia y acceso a mercados con preferencias arancelarias.",
+     "servicios": ["Estudios de mercado", "Reglas de origen", "Capacitación"], "web": "https://example.com", "destacada": false, "ejemplo": true},
+    {"nombre": "Transportes del Centro (ejemplo)", "rubro": "Transporte terrestre", "ciudad": "Villa María", "provincia": "Córdoba",
+     "descripcion": "Transporte de contenedores entre el interior, Rosario y Buenos Aires. Tránsitos aduaneros.",
+     "servicios": ["Contenedores 20' y 40'", "Tránsito aduanero", "Carga general"], "web": "https://example.com", "destacada": false, "ejemplo": true},
+    {"nombre": "Depósito Fiscal Pampeano (ejemplo)", "rubro": "Depósito fiscal", "ciudad": "Zárate", "provincia": "Buenos Aires",
+     "descripcion": "Almacenamiento bajo control aduanero, desconsolidado y verificación.",
+     "servicios": ["Depósito fiscal", "Desconsolidado", "Cámaras de frío"], "web": "https://example.com", "destacada": false, "ejemplo": true},
+    {"nombre": "Cobertura Marítima (ejemplo)", "rubro": "Seguros de carga", "ciudad": "Buenos Aires", "provincia": "CABA",
+     "descripcion": "Seguros de transporte internacional por viaje o pólizas flotantes.",
+     "servicios": ["Pólizas por viaje", "Pólizas flotantes", "Gestión de siniestros"], "web": "https://example.com", "destacada": false, "ejemplo": true}
+  ]
+}
