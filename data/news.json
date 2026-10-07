@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-07T01:42:33Z",
+  "updatedAt": "2026-10-07T09:43:45Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -115,7 +115,7 @@
       "obsDate": "2026-10-06",
       "change": "+0,1% vs. día hábil anterior",
       "trend": "up",
-      "checkedAt": "2026-10-07T01:43:23Z",
+      "checkedAt": "2026-10-07T09:45:03Z",
       "history": [
         [
           "2026-08-26",
@@ -254,7 +254,7 @@
         "date": "2026-10-05",
         "ars": 552500.0
       },
-      "checkedAt": "2026-10-07T01:43:25Z",
+      "checkedAt": "2026-10-07T09:45:06Z",
       "_prev": {
         "date": "2026-10-02",
         "ars": 554000.0
@@ -281,7 +281,7 @@
       "obsDate": "2026-09-29",
       "change": "-5,0% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-07T01:43:26Z",
+      "checkedAt": "2026-10-07T09:45:08Z",
       "history": [
         [
           "2026-08-18",
@@ -420,7 +420,7 @@
         "date": "2026-10-05",
         "ars": 287090.0
       },
-      "checkedAt": "2026-10-07T01:43:25Z",
+      "checkedAt": "2026-10-07T09:45:06Z",
       "_prev": {
         "date": "2026-10-02",
         "ars": 287090.0
@@ -451,7 +451,7 @@
         "date": "2026-10-05",
         "ars": 339975.0
       },
-      "checkedAt": "2026-10-07T01:43:25Z",
+      "checkedAt": "2026-10-07T09:45:06Z",
       "_prev": {
         "date": "2026-10-02",
         "ars": 339975.0
@@ -469,6 +469,422 @@
     }
   ],
   "items": [
+    {
+      "id": "un-organismo-britanico-propone-aranceles-de-hasta-el-82-9-sobre-las-plataformas",
+      "datetime": "2026-10-07T09:02:16Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Un organismo británico propone aranceles de hasta el 82,9% sobre las plataformas elevadoras chinas.",
+      "summary": "La Autoridad de Remedios Comerciales (TRA) del Reino Unido ha propuesto aranceles de hasta el 82,9% sobre las plataformas elevadoras procedentes de China, ante la preocupación de que estas máquinas se estén introduciendo a precios inferiores a los del mercado británico.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "Europa"
+      ],
+      "countries": [
+        "Reino Unido"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Construction Briefing",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.constructionbriefing.com/es/news/un-organismo-britanico-propone-aranceles-de-hasta-el-82-9-sobre-las-plataformas-elevadoras-chinas/8133156.article",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQaHk2azU4V1l1UG95TjhwZWtiQTEwTHpUS1pLaVQ2Q1J3dDZJdXdpakEtSWRSakZheXU2ZzVMVS0zY0hCU3JSNzdGdUkwTW4zVEYzQzI3ZFF2MFZlTGRvOWNMZExHMUE3RkNHVGM3U2ZQYVNsZHh3NDBNQ0VTQ3llOFVteVFKN2V6U0hTcUVPSkczLXlVazV6UjZXTzhmZXBvbV9ZczZmeTZVVXNDQ1phMnY4MVNETy1uM3NUWHhWZ0F3amZRMnZXSjhwbk15a0QwSFJ1Vl9QOWdrS3pyVzVyZk5MdktxWVhCa2RWQ0lUOA?oc=5"
+    },
+    {
+      "id": "tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-por-2",
+      "datetime": "2026-10-07T08:17:41Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Tres detenidos cuando intentaban extraer 50 kilos de cocaína de un buque portacontenedores en Algeciras",
+      "summary": "La Unidad de Análisis de Riesgo (ULAR), integrada por funcionarios de Vigilancia Aduanera de la Agencia Tributaria y guardias civiles de la Compañía de Fisca...",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Contenedores"
+      ],
+      "visual": "container",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Teleprensa",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.teleprensa.com/andalucia/cadiz/tres-detenidos-cuando-intentaban-extraer-50-kilos-cocaina-buque-portacontenedores-algeciras/202610070817412526323.html",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "Cadena SER",
+          "type": "También publicó esta noticia",
+          "url": "https://cadenaser.com/andalucia/2026/10/07/tres-detenidos-en-algeciras-al-intentar-extraer-50-kilos-de-coca-de-un-portacontenedores-radio-algeciras/",
+          "alsoIn": true,
+          "title": "Tres detenidos en Algeciras al intentar extraer 50 kilos de coca de un portacontenedores"
+        },
+        {
+          "name": "Algecirasalminuto.com",
+          "type": "También publicó esta noticia",
+          "url": "https://algecirasalminuto.com/articulo/destacadasi/tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-portacontenedores/",
+          "alsoIn": true,
+          "title": "Tres detenidos cuando intentaban extraer 50 kilos de cocaína de un buque portacontenedores"
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOU0k3b2NVN2FTdzAtTzVJYXRhOTg2ZEh1aVQ1WXowaFJhMENRQlA4ZS1ZZ0cwOXN0dFI4VXNrU2M5dHF6WXRXTmV5Q002cDQ5eHlaelk0MlRGNDh2bnBraTBKazdrdkFyTnYxc2QteEpqNWZrcFFGYS16RVFoVkJlRnl3TmdYdXQ5Sk9ab2pLMjl1Zm43MVlpVGlVZ2ItWThVSUh3Mm0xazlUUzAyNnNQVkY5RnA2RmxlUFctOVNlYWl4MG9jaEF2SHEwRGxIMFhUNmhyTnNqMmE2Qm13bWZBMEJ5Qk4zN0hJemNyZHREV1NGRVhSWWd0QdIB-AFBVV95cUxOU0k3b2NVN2FTdzAtTzVJYXRhOTg2ZEh1aVQ1WXowaFJhMENRQlA4ZS1ZZ0cwOXN0dFI4VXNrU2M5dHF6WXRXTmV5Q002cDQ5eHlaelk0MlRGNDh2bnBraTBKazdrdkFyTnYxc2QteEpqNWZrcFFGYS16RVFoVkJlRnl3TmdYdXQ5Sk9ab2pLMjl1Zm43MVlpVGlVZ2ItWThVSUh3Mm0xazlUUzAyNnNQVkY5RnA2RmxlUFctOVNlYWl4MG9jaEF2SHEwRGxIMFhUNmhyTnNqMmE2Qm13bWZBMEJ5Qk4zN0hJemNyZHREV1NGRVhSWWd0QQ?oc=5",
+      "aliasUrls": [
+        "https://algecirasalminuto.com/articulo/destacadasi/tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-portacontenedores",
+        "https://cadenaser.com/andalucia/2026/10/07/tres-detenidos-en-algeciras-al-intentar-extraer-50-kilos-de-coca-de-un-portacontenedores-radio-algeciras",
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQV2JpbWZ5SVljdlRQYmV6dmdiRUJjVHRhVnotS01SWFNmQTNkWWd0eER3U0lBbmVrTmFCcU1ZZ2tIRmhnYlJxU3ZnVWFvWEc1SzJoS1dIUGliNUhEYkd6M29sMGN5VDJDUVdoczh1SWRYYWwwenJmTnQ0elJpcnJFRlJaYnpFUTFXaXNVZUNZLW81T2xheVdGclo4bnF0RDJQQXhFVXBDcmRMNExjd25ROS1uVFRkcWRZdl8xSXV6cDhyZ2FJelJ5am5sZjlneXdaeXBaSXcxMUlzZw",
+        "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRGRvWDNhVDFsUXBIVG40RURjUmhlWWtBRkRiVmRlUm55bzh5QVVMS1VwM0FnemgzWmNOb3Q3VjFzb0Z3S0oyRWtxSmZXTmhydFhSaGlpZ0FoSFYzVUlaY2p4X0ljeGhDczJfOFoxOEd0c3ZxSWYwLXNyUUh1bWJaZEZxbVhDblRGSHRESHNYR29nMGhSNFZGTi05MTYxX0dRdDgwd3R6b1Vwa0xicHlIcHVlMnpDRVZpcEFFS0NBVG1ZRUtSWlRjSUtPbnoteGQzZE5PeEFHd1doZXVpTW00Ny1B0gH2AUFVX3lxTE1VN2xlNUc2ZG8zNmhlTmlSdERvSXpNeFhfbnZQUGxoZG9pOTZEVnZ1YkpRaWd4QXVvZTB4QldlcG9YZlpRdmtUa05jdG9sbURHdWU5ZnNwZ0JQc2JOdkFPc1VRNV80S1ctdlVZRDBUOWI1SzlSQVJEREtIOFJ0T0JSX3o5cjVEeDNvaUM0eVlHaDFpNHZOTmxJQWNiUWVEQ19yUUxma094Ynpndkk5Q3VZTFVjajEyTnVXWkluek5fVXY4YUxFQ2xWd1VjNHJUMnRjcnRwMURjekpHSGxhbDEzNWxISlgxQXVxWDJKU2RKbTU0alV6dw"
+      ],
+      "mergedIds": [
+        "tres-detenidos-en-algeciras-al-intentar-extraer-50-kilos-de-coca-de-un-portacont",
+        "tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-portaco"
+      ]
+    },
+    {
+      "id": "entran-con-una-moto-de-agua-en-un-portacontenedores-del-puerto-de-algeciras-para",
+      "datetime": "2026-10-07T08:16:01Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Entran con una moto de agua en un portacontenedores del Puerto de Algeciras para sacar 50 kilos de cocaína",
+      "summary": "Dos de los detenidos se hicieron pasar por trabajadores portuarios para acceder al buque mientras un tercero esperaba en el agua para facilitar la huida",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Contenedores",
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Europa Sur",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.europasur.es/algeciras/moto-agua-portacontenedores-puerto-cocaina_0_2008173918.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVUZ5bDZ1UHFCTGhGaVpNYzV6TjdTQ1NiYkkwOWtoTHFaV3NFOGdXZUR5alI3UlptWUJ1N3NVdnIwaXhpMEUyMVdCdGtlaUQwV1lEZTVKSzZjNTJJdldEaThWNmtsLXlYN1RvVU1XclJOTkR3aDVscGhWM3JxS19qNV9wd3lkaHBjZkQ1MVMtZ3RadU5QSHdJUWxnQdIBoAFBVV95cUxOTlRxb3FUQlV0dXNVMVdKUDJ6eTZ0NjRIS2hrTFJ5dDJKN2NueDlwMGdFN3VxYk5nb1BXSjh6SzFnMUp3ajBFbzRfTVBqT0dSOWtYc3NZR29fUFNYTHJ0anNxZ3IydF9WbktqYUd3Sm56SUpHN3ZuUlJBZXgyNDRuTEhWM3hQb2doSFpES095STN0U1FOQVloUkVyTUhtOGRB?oc=5"
+    },
+    {
+      "id": "industria-energetica-considera-rutas-alternativas-que-eviten-el-golfo-persico-y",
+      "datetime": "2026-10-07T08:00:57Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Industria energética considera rutas alternativas que eviten el golfo Pérsico y mar Rojo",
+      "summary": "La interrupción causada por la guerra en Irán está obligando a la industria energética a…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Irán"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/industria-energetica-considera-rutas-alternativas-que-eviten-el-golfo-persico-y-mar-rojo/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
+      ]
+    },
+    {
+      "id": "bruselas-negocia-con-china-aranceles-a-los-coches-hibridos-que-pasara-con-el-pre",
+      "datetime": "2026-10-07T07:58:13Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Bruselas negocia con China aranceles a los coches híbridos: qué pasará con el precio de tu próximo coche",
+      "summary": "La UE y China negocian durante dos días aranceles a los coches híbridos chinos. El resultado puede mover el precio de tu próximo coche.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "China",
+        "Asia",
+        "Europa"
+      ],
+      "countries": [
+        "China",
+        "Unión Europea"
+      ],
+      "tags": [
+        "Aranceles",
+        "China"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Qué.es",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.que.es/2026/10/07/aranceles-coches-hibridos-china/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9xdWJDY19hSGs0VEVzc2JCXzZnaXFuTHo2R3FTYmhiVk5BVjdGSGlfSENGTk9rZDlERWdDMWFKdzY4Smx3VlZEM2ZrNU9JSEdpZ1BtRFBLRzFDQ19VQnhCcjh0QUhuNDJYbnA0blZtcw?oc=5"
+    },
+    {
+      "id": "angola-dp-world-extiende-concesion-de-terminal-multiproposito-del-puerto-de-luan",
+      "datetime": "2026-10-07T07:00:16Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Angola: DP World extiende concesión de terminal multipropósito del Puerto de Luanda",
+      "summary": "DP World obtuvo una prórroga de 10 años en su concesión para operar la terminal multipropósito…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/angola-dp-world-extiende-concesion-de-terminal-multiproposito-del-puerto-de-luanda/",
+          "primary": true,
+          "author": "cmeza"
+        }
+      ]
+    },
+    {
+      "id": "reino-unido-abp-convoca-consulta-publica-sobre-proyecto-que-busca-instalar-turbi",
+      "datetime": "2026-10-07T06:00:43Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Reino Unido: ABP convoca consulta pública sobre proyecto que busca instalar turbina eólica en Puerto de Ipswich",
+      "summary": "La operadora Associated British Ports (ABP) realizó la convocatoria de consulta pública respecto al proyecto que…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Europa"
+      ],
+      "countries": [
+        "Reino Unido"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/reino-unido-abp-convoca-consulta-publica-sobre-proyecto-que-busca-instalar-turbina-eolica-en-puerto-de-ipswich/",
+          "primary": true,
+          "author": "Gabriel"
+        }
+      ]
+    },
+    {
+      "id": "armadoras-automotrices-permaneceran-en-mexico-a-pesar-del-25-en-aranceles-y-mas",
+      "datetime": "2026-10-07T05:21:43Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Armadoras automotrices permanecerán en México, a pesar del 25 % en aranceles y más en LJA.MX, edición 7/10/2026",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "México"
+      ],
+      "tags": [
+        "Autos",
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "LJA.MX",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.lja.mx/2026/10/edicion-7-10-2026/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ySndNQ1c5d1dQRzRhOURZaDk2Vk1Sa1NtdS1XZ19vR043ckNCZkhmdzdvQWg4TVFrY1BrS0Z6a1djaHE0UWY4UVdNNFRSdE5aYmVwSGtMMFg?oc=5"
+    },
+    {
+      "id": "grecia-ppa-sa-recibe-galardon-que-conmemora-10-anos-del-ingreso-cosco-shipping-a",
+      "datetime": "2026-10-07T05:00:59Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Grecia: PPA SA recibe galardón que conmemora 10 años del ingreso Cosco Shipping a su estructura accionarial",
+      "summary": "La Autoridad Portuaria de El Pireo (PPA SA) recibió el galardón Premio Especial en el desarrollo…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [],
+      "visual": "ship",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/grecia-ppa-sa-recibe-galardon-que-conmemora-10-anos-del-ingreso-cosco-shipping-a-su-estructura-accionarial/",
+          "primary": true,
+          "author": "Gabriel"
+        }
+      ]
+    },
+    {
+      "id": "la-city-recorta-a-1-5-el-crecimiento-del-pbi-y-se-redujo-el-deficit-de-la-balanz",
+      "datetime": "2026-10-07T03:00:08Z",
+      "date": "2026-10-07",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "La city recorta a 1,5% el crecimiento del PBI y se redujo el déficit de la balanza comercial con Brasil: los",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Economía internacional",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "tags": [],
+      "visual": "chart",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "BAE Negocios",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.baenegocios.com/tapasbae/la-city-recorta-a-1-5-el-crecimiento-del-pbi-y-se-redujo-el-deficit-de-la-balanza-comercial-con-brasil-los-temas-del-dia-en-bae-negocios/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPa3RkZEk4ZVBQNlF3R0JmLUM0ck54ZExXQVl3UzlvaEFDODRScDdZcHVnV0hrQmVRcHhwdDV4MTluOGd4V2xUNWtoTFZGNEswVm9XZkJHenFYWWEtWC1pYVE2ZHFkQmlldUpEWVliZlo3LS1JeGhUZUxSR0lJSk9DcWE4MG45MDlCeG9GS1FoVFNYNFJxMk45blloVXc1eFJXZGN1NGZMTDlJak5IOUZPNWhsWWZ5Q0VXZURVU3FMTGVYYmt4R1Y4Mjh3QlpNcFQ2OEtnTWh0M1BmWmt2bWVuUTZQTDNtc0xCaDBEVXc1N1FVTE5CejNEQXoyVUx0d9IB_gFBVV95cUxPa3RkZEk4ZVBQNlF3R0JmLUM0ck54ZExXQVl3UzlvaEFDODRScDdZcHVnV0hrQmVRcHhwdDV4MTluOGd4V2xUNWtoTFZGNEswVm9XZkJHenFYWWEtWC1pYVE2ZHFkQmlldUpEWVliZlo3LS1JeGhUZUxSR0lJSk9DcWE4MG45MDlCeG9GS1FoVFNYNFJxMk45blloVXc1eFJXZGN1NGZMTDlJak5IOUZPNWhsWWZ5Q0VXZURVU3FMTGVYYmt4R1Y4Mjh3QlpNcFQ2OEtnTWh0M1BmWmt2bWVuUTZQTDNtc0xCaDBEVXc1N1FVTE5CejNEQXoyVUx0dw?oc=5"
+    },
+    {
+      "id": "agl-costa-de-marfil-entrega-cinco-locomotoras-para-el-metro-de-abiyan",
+      "datetime": "2026-10-07T02:30:15Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "AGL Costa de Marfil entrega cinco locomotoras para el metro de Abiyán",
+      "summary": "Africa Global Logistics (AGL) Costa de Marfil transportó cinco locomotoras para la construcción de la Línea…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/agl-costa-de-marfil-entrega-cinco-locomotoras-para-el-metro-de-abiyan/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
     {
       "id": "espana-tribunal-autonomico-absuelve-a-11-activistas-acusados-de-bloquear-ingreso",
       "datetime": "2026-10-07T01:30:47Z",
@@ -506,6 +922,43 @@
       ]
     },
     {
+      "id": "argentina-reduce-importaciones-desde-brasil-y-achica-el-deficit-comercial",
+      "datetime": "2026-10-07T00:11:51Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Argentina reduce importaciones desde Brasil y achica el déficit comercial",
+      "summary": "Las compras argentinas a Brasil bajaron 25,2% en septiembre, mientras que las exportaciones aumentaron 5,7%.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Importaciones",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Argentina",
+        "Brasil"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "BAE Negocios",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.baenegocios.com/economia/argentina-reduce-las-importaciones-desde-brasil-y-achica-el-deficit-comercial/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWURvdGk3UmF4aUJxY2p1eF9aaGN2eHlSd0NRb3dnazV6ZzdIOFJPU01mMVRlRURIX2ZiX0h2WS1NbHhObDZpVW1ZYld2MjZORnVNVFhVZjlfMEx1YlBxNl9hQ3kxQnB2UVBsYVU3NUs0SVVza2RBUzl2ZWhaWHh0U0k3MHppaDA2dmFrU2U0cHd1NU40SHRWMlN5eXVqNWVMTHR0NmxJWUpqc2tHaHBQNG1VYngzZ9IBrwFBVV95cUxOT1lpZ094bFdWd1RyXy1ON1NSRl9GdndoNHdUdzdaZzNNUkdxYXAxQnBXUzJfM1NkTVBhYUZGSlRKVlBieWl4V3lMM3ZwZEV6dmhHR2s3T3Fud2RwcUpWSWs1Q2UtQ0dGLVl1QXYwLVFsVGpzc0ZhU2JVelU0RVZ4M1JIQlFRcm9XWGlsSXgwUFRBUmpCbkFncXJlM2FCNWNWcHg3dDRTZ2h4RVYxNUtZ?oc=5"
+    },
+    {
       "id": "hs-schiffahrt-recibe-buques-seaboard-legend-y-seaboard-liberty",
       "datetime": "2026-10-07T00:00:20Z",
       "date": "2026-10-06",
@@ -537,6 +990,40 @@
           "author": "Diego Hermosilla"
         }
       ]
+    },
+    {
+      "id": "comenzo-la-14-edicion-de-la-semana-comex-en-santa-fe",
+      "datetime": "2026-10-06T23:40:08Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Comenzó la 14° edición de la Semana Comex en Santa Fe",
+      "summary": "El encuentro reúne a empresas, empresarios y compradores vinculados al comercio exterior. Las actividades se desarrollarán hasta el jueves en el Centro de Convenciones Los Maderos, en el Puerto de…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "RTS Medios",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://rtsmedios.com.ar/comenzo-la-14-edicion-de-la-semana-comex-en-santa-fe/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQa2o0N1pac2s1dUt3dFdvakJTaTJ4TzM1aDVyeGI1ZERlNmNLRm14X21zMC1yYzJIdVN6c014TG9FWGZVdHBSUl9MUGVmclJXMHZnRndEUnBNMzJXbm9QcE9WZWdUTlowazFGUHU5YjBUVDM1ckZUMU1tVjdhUG9ZZVNMTkY?oc=5"
     },
     {
       "id": "filipinas-ictsi-consigue-prorroga-de-25-anos-en-concesion-de-terminales-en-subic",
@@ -604,6 +1091,79 @@
           "author": "Periodista 4"
         }
       ]
+    },
+    {
+      "id": "jornada-derecho-aduanero-ub-adace-ue-mercosur-el-nuevo-escenario-del-comercio-bi",
+      "datetime": "2026-10-06T23:20:31Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Jornada Derecho Aduanero (UB - ADACE) \"UE–Mercosur: el nuevo escenario del comercio birregional ...\" - 29/10",
+      "summary": "Como todos los años, nuevamente se realiza importante \"Jornada de Derecho Aduanero\", en la Universidad de Belgrano, auspiciada por ASOCIACION DE DERECHO",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aduanas",
+        "Mercosur",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Mercojuris",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://mercojuris.com/jornada-derecho-aduanero-ub-adace-ue-mercosur-el-nuevo-escenario-del-comercio-birregional-29-10/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQd2ZHMEg2VGo3UFhTMUdRS3l6TkJuTHRkeXRMSldyUWpPRDF1ZzM2SVF0WGwzeTlBaWIzYnhyMGVydXo5UkExZ1ZkZ2JVVGNiNHpoMVg5Q3h5UXRGdTJFYzlMZGxUSTdwcEdpOEdZUG9EODVTUkh2bFkwQVVkOVhITFpCZzhaSHFqSjBXT3V3SXBwR3k2d1owYWZ0cGJOVXlpdmNwRGdOOFQ0N3k1ejBGbzdtMVh5LUMtanVZ?oc=5"
+    },
+    {
+      "id": "el-auge-de-celulares-importados-en-el-mercado-argentino-incrementa-la-crisis-en",
+      "datetime": "2026-10-06T23:18:00Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "El auge de celulares importados en el mercado argentino incrementa la crisis en la producción local",
+      "summary": "La industria electrónica argentina atraviesa una fuerte reconfiguración. La producción nacional de equipos de tecnológicos profundizó su caída y quedó casi al mismo nivel que en la pandemia. Por otro lado las importaciones de smartphones registraron un crecimiento exponencial durante el 2026.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Gente de Salta",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.gentedesalta.com/economia/el-auge-celulares-importados-mercado-argentino-incrementa-crisis-produccion-local-n12658",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVjZkNndrSHI3UW9HZTlqQ19DRkYtSG1Td19PVFFTaWVIemhCb2tfbnJnemtWblNVRmxoM1o2bmJWWVpxTnRrdVUxQTNMTDBnMjdraHJ4UHJaaUkxYktqaFBtSF9fdFFLbExrajN3dko4NENQYTU4dzJPdXJNMk13cm81X29qZmZObm9CWVVZcml6Rld2WHZzRDQtTE1NX3l6YXpfYXdrNnBQNjdDelRBVTZYSUtpSEZEMFNycEtITlZGS2pf0gHKAUFVX3lxTE9YRW9DNEFGTW1PSzJPMzZ6bmd5RDlNQUpnLXdFM0RrVExIRFFrY0szVnROcVMwSkc1VmhNV0lTS0Y3U3BBX3ZlLXFjM3lwNzdKTm9EY1pDQnFISFB1M2JhT3BuRTRsZDZPT0k0YXBwTlZTRm14bXdWUEFBWWg3TnZMVWx2TERhdVI0UDk1ZnFCNUNlYWZjZXE5R0NfeGVCYlFQTllRTmVIUUdBdXlGNENqRGxQOXpseTQwUVVLYUxYdU1YNWNxeWZfblE?oc=5"
     },
     {
       "id": "gerente-general-de-svti-asegura-que-puertos-de-bio-bio-estan-listos-para-recibir",
@@ -784,6 +1344,76 @@
       ]
     },
     {
+      "id": "deficit-con-brasil-suben-exportaciones-pero-sigue-el-rojo",
+      "datetime": "2026-10-06T22:06:04Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Déficit con Brasil: suben exportaciones pero sigue el rojo",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Diario El Norte - San Nicolás",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://diarioelnorte.com.ar/deficit-con-brasil-suben-exportaciones-pero-sigue-el-rojo/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaWEzT0hnakNpTFRRenpkbGlFbUFhQVRteDJua1BhYUJpeXktV3c5dlpLRDduLWVSdmVxRHpfaGpQbU1aeklJMXJEVk4tZ1VUVVlhOWhCMnk0VkphMncxc3hmMktXRkMwTXJzNDdwSFZzSEVqRHF0TUNjeFhwc2hINkg2RUhWbXZWYjlSdXdkeWs?oc=5"
+    },
+    {
+      "id": "la-balanza-comercial-con-brasil-registro-un-deficit-de-us-51-millones-en-septiem",
+      "datetime": "2026-10-06T22:05:00Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "La balanza comercial con Brasil registró un déficit de US$ 51 millones en septiembre",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Economía internacional",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "tags": [],
+      "visual": "chart",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "LA17",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://lu17.com/contenido/151827/la-balanza-comercial-con-brasil-registro-un-deficit-de-us-51-millones-en-septiembre",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdDlwOENlWWlTSjUzWjdjaHp2MUUwTVpEMnRtdGxyNGxrM0lyYVhZWVRqSHI4QWs3Zk1CYmhNVXQ3Y1BCcF94ekVWdlh3OXhlemhaeE5wWW91VTZMa3E2T1ItbDZ4YXIzNWxXTjFWQXNfYWtCU0p6UWpKd1F6TGg0bkluRWotN1RKSm1kUzB3Vlg4VWJZS1lfak9uOEtKNEhSOFJKVHIwVGdPQVRmUlBOeXY0cnlEeHA1?oc=5"
+    },
+    {
       "id": "rusia-importa-176-mil-toneladas-de-productos-petroliferos-desde-puertos-surcorea",
       "datetime": "2026-10-06T21:59:05Z",
       "date": "2026-10-06",
@@ -960,6 +1590,54 @@
       ],
       "gnTried": "2026-10-06T21:40:51Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUjc4c2RORGtIWVA2M1lyeHl0YnE3bEpDMUp0aUYyOWhwenBRY3dTdzkyZ25md0QwMHB5dmtjR2hUamNNMWN4NlBqNWpzMmpMdXI0ZXZDMElvTVMzRWNrZURhTS1lWGNqUjhqZGJCQ185N0R1eVZqRko1amVoblJCeHlQcFhJU0lsWVNzMnBodVp5akp5U0U5amNCRVlrd1ZDdk9wTEpNbGF2ZUlmWGFubW5OU01WY3F3T3hWanZFcnFDM3F0czRUMWlxWGpxXy1vUHkwc1d5QUx5bUsxakE?oc=5"
+    },
+    {
+      "id": "las-importaciones-de-smartphones-crecieron-un-746-por-ciento",
+      "datetime": "2026-10-06T21:12:00Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Las importaciones de smartphones crecieron un 746 por ciento",
+      "summary": "La venta de celulares que provienen del exterior afecta gravemente a la industria vernácula.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Somos Pymes",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.somospymes.com.ar/informes/las-importaciones-smartphones-crecieron-un-746-ciento-n5404535",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "Los Andes",
+          "type": "También publicó esta noticia",
+          "url": "https://www.losandes.com.ar/economia/las-importaciones-smartphones-crecieron-746-mientras-la-produccion-tecnologica-argentina-se-desplomo-n6009268",
+          "alsoIn": true,
+          "title": "Las importaciones de smartphones crecieron 746%, mientras la producción tecnológica argentina se desplomó"
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQREo5X0VIbVhMNE45SUFmVldubVdEeGE3U2w0aXU1WENwSUtBNng4VFhuMm5TQ3NMeGJfODM3TjFsU3pSRlZTaGR4RVN0YTFqcVpfQkpodTJJV2tDdzJ0MVpQVE1PVEpROEJSXzVldWFBeWRCbmNsOTB4UW5ZcFh3TGtrNEUtVGtHeVN5VHJUZlhmRVk1TnVreXh2S3NXd3EycElEWUdVak_SAagBQVVfeXFMUERKOV9FSG1YTDROOUlBZlZXbm1XRHhhN1NsNGl1NVhDcElLQTZ4OFRYbjJuU0NzTHhiXzgzN04xbFN6UkZWU2hkeEVTdGExanFaX0JKaHUySVdrQ3cydDFaUFRNT1RKUThCUl81ZXVhQXlkQm5jbDkweFFuWXBYd0xrazRFLVRrR3lTeVRyVGZYZkVZNU51a3l4dktzV3dxMnBJRFlHVWpP?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUW9sX0VfZVFpWWs3MlBCMHdXN05CaU1QYXo0RjkwUHVpcDdJdFdMUTJhaVBhcDZFZ3IzLTJ5NjBkMDdLb2tmclpXS1VBQWxYWkxPel9DaXRhaUJDUmdSeGpQODBhNUlVMjBGY1BmcTQtSnhNYXRwSFVSWHNBOW1IamlPMDJvMHNkYndVaW01aWZydmFkWFUtMXJnRjZSRHpab2FNR1QtUnhmMzg0ZzlYcDZud0lPak9KY3QydVIxdXBzcGxPMzRNX2hha2tvWVFXal9CVjNqN0pKb285VnI4",
+        "https://www.losandes.com.ar/economia/las-importaciones-smartphones-crecieron-746-mientras-la-produccion-tecnologica-argentina-se-desplomo-n6009268"
+      ],
+      "mergedIds": [
+        "las-importaciones-de-smartphones-crecieron-746-mientras-la-produccion-tecnologic"
+      ]
     },
     {
       "id": "fa-rechaza-derogacion-aranceles-a-importacion-de-arroz-y-advierte-riesgos-a-prod",
@@ -1337,10 +2015,24 @@
           "url": "https://www.clarin.com/energia-y-mineria/salto-litio-argentino-puede-superar-chile-8-10-exportaciones-van-china_0_uFUoyL8rzZ.html",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "Noticias de Bariloche",
+          "type": "También publicó esta noticia",
+          "url": "https://www.noticiasdebariloche.com.ar/el-salto-del-litio-argentino-puede-superar-a-chile-y-8-de-cada-10-exportaciones-ya-van-a-china/amp/",
+          "alsoIn": true,
+          "title": "El salto del litio argentino: puede superar a Chile y 8 de cada 10 exportaciones ya van a China"
         }
       ],
       "gnTried": "2026-10-06T21:40:51Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUDRmdFJaejl1alBDZlQwRlIxRFdoMmxlRjFKckx0R2NnakhkRUxYTlhvb2JuUUR4NmdKMmllNUota2UwTUdZeU9Ld3VaQzRDeVRwNG1zM2lLd1hIelF1VjhJUEU0dzROV3lLS2NPTGFQTFk2azlQUFRxRzl2RldBbjVxZGJoMlIzRkI2SWFwejdJam0wRjZQVmxubHdyTk5RUzgzSkZKRmN6Zkd6YUhMN3pkTk00TGJmbmlGR2FacVJaYjlQcmRvZg?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUDRmdFJaejl1alBDZlQwRlIxRFdoMmxlRjFKckx0R2NnakhkRUxYTlhvb2JuUUR4NmdKMmllNUota2UwTUdZeU9Ld3VaQzRDeVRwNG1zM2lLd1hIelF1VjhJUEU0dzROV3lLS2NPTGFQTFk2azlQUFRxRzl2RldBbjVxZGJoMlIzRkI2SWFwejdJam0wRjZQVmxubHdyTk5RUzgzSkZKRmN6Zkd6YUhMN3pkTk00TGJmbmlGR2FacVJaYjlQcmRvZg?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRThCNEVLQUVQaWtWVldJS1RpcmNjV0hpellXYzZTaTJmSnkyXzcyd0FURUtBMi1QNHRyVDR0aG0tWHIwdFRja2FJVE9KQmY2YV9YRlFQS3hkUmFwTUlNQzVKNHY1OF9hZFBNQjY0dXhmNlh6VHcwREtyTjR5VllaTFdKdEFPVzV6SkVURUhtVWk5RjROeGlWdlp4ekZMS0RkTG9RZEY4TGlwZzdGWm41S0RYZmk4Nl94X1hzVWhzVmFCUkg2MG5qTnZOalAteDFxM0cySNIB1AFBVV95cUxNRThCNEVLQUVQaWtWVldJS1RpcmNjV0hpellXYzZTaTJmSnkyXzcyd0FURUtBMi1QNHRyVDR0aG0tWHIwdFRja2FJVE9KQmY2YV9YRlFQS3hkUmFwTUlNQzVKNHY1OF9hZFBNQjY0dXhmNlh6VHcwREtyTjR5VllaTFdKdEFPVzV6SkVURUhtVWk5RjROeGlWdlp4ekZMS0RkTG9RZEY4TGlwZzdGWm41S0RYZmk4Nl94X1hzVWhzVmFCUkg2MG5qTnZOalAteDFxM0cySA",
+        "https://www.noticiasdebariloche.com.ar/el-salto-del-litio-argentino-puede-superar-a-chile-y-8-de-cada-10-exportaciones-ya-van-a-china/amp"
+      ],
+      "mergedIds": [
+        "el-salto-del-litio-argentino-puede-superar-a-chile-y-8-de-cada-10-exportacio-2"
+      ]
     },
     {
       "id": "hd-hyundai-entrega-primer-portacontenedores-del-mundo-sin-amarres",
@@ -1419,6 +2111,43 @@
       ],
       "gnTried": "2026-10-06T21:40:51Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOWk9NMHlXQ2hfT2VzYm1UdVUtQVI1SHplZUsyYWg4YlY5QUlFZVBQckxXWWZvTVRPNVhBWW0tUkVqdGVUYURpbTRmLVc4d3p0b1pzOE1OVHpOb3Q5UDdBZVZKcFpyRlBndzhDTnNuM2FEWWpQemJWMjNKaG9jSUNnZmFfaDZKTlFrNEFhX0M1QTdPMEdNX0pIMFRGLXRLS3VJRmVCN1BVYlMtTEh4a2VWazRJUDY4eG5GRzdIN0pmOWtkcVpvYUlqMkVzMTFtRnk4aDlBUUUzdDBwRDhIZXhNOW9xZ2hPb2xJcXd2OHlDQlYxVkh4eDhDaE51VGtqN0tBdHEzbmJlV0Y0dw?oc=5"
+    },
+    {
+      "id": "crece-la-preocupacion-entre-artesanos-por-reembolsos-pendientes-de-expomarket-me",
+      "datetime": "2026-10-06T19:14:00Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Crece la preocupación entre artesanos por reembolsos pendientes de ExpoMarket Mercosur Panamá 2026",
+      "summary": "La falta de una fecha definida para los reembolsos mantiene en incertidumbre a participantes de ExpoMarket Mercosur Panamá 2026.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Latinoamérica",
+        "Mercosur"
+      ],
+      "countries": [
+        "Panamá"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "La Estrella de Panamá",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.laestrella.com.pa/panama/nacional/crece-la-preocupacion-entre-artesanos-por-reembolsos-pendientes-de-expomarket-mercosur-panama-2026-BB26274599",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQT2ZkRWc4TnNJMzBZZnJGV1l2a3NPMmN1X19XamNqQUE0MjFlcm15dkNGZ2pwZEdqS3dBNjlKM2t2aFM5SUZPS2tqbkl3ZFVJQ3gwN04ySjJuc2dkV3pUblhWMlM3THVXa1Bsc1o2RTdRT0pfeURvamdpckdMeTBLZEJ5MmV2X3hPT2VGN0hib1hadEVJVEdPakpoLU02dXMxVlhvT3NNNHVhaGFoQzRvY21LOVkxcXkxNDRmZk8zdHhsWmpNdTZEQmt6SzJYanEyMXZDblMtb1NIazF6VmUwVnRYWW1JdXY2Q2ow0gHwAUFVX3lxTE9jZm84SmNkNUstSVdMdnFwM0g1S0VYZ1RwYnJUei1Bd1dOY1lBSVdxZFFkV2duWF8taUFYekZ4R1dpNjFGeHMwVDc4TmVlakFnd3ZoU0dNU3hIU0t0VEN1SmlEYUp1bmFWeFl5RzRITWU0MlhaV1YwamRGRjdpWUh4Y3c5ZnhtRHpGcll6ZGNjSFNNcWNwc2E1M2JTaUVzQXI4d05BYm1kZVB5Z2ozb3l2QllydHlyTDF5VkU5XzRfQS1IRXRRQWpxdUN2dVc4SWFIS1JkY2diNmdvUmdmV2ZPVDhTWHQ4VEp3aXktZkNObg?oc=5"
     },
     {
       "id": "exportadores-de-la-paz-afirman-que-es-exagerado-que-el-transporte-pesado-increme",
@@ -1846,6 +2575,40 @@
           "author": "Luis Alonso"
         }
       ]
+    },
+    {
+      "id": "septiembre-record-para-las-exportaciones-de-trigo",
+      "datetime": "2026-10-06T16:21:47Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T09:43:45Z",
+      "title": "Septiembre récord para las exportaciones de trigo",
+      "summary": "Las exportaciones de trigo alcanzaron un récord para esta altura del año, la demanda externa de soja argentina toca máximos de siete años y el maíz cae a mínimos de un mes en Chicago, mientras el mercado digiere la cumbre entre Trump y Xi Jinping.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "agro",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Primicias Rurales",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.ruralprimicias.com.ar/septiembre-record-para-las-exportaciones-de-trigo/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-07T09:43:45Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaWdGS0VUMHJqN2tEVU83U05jSXFxbTVscTBHaU1XTm5HbGluYmFCR2YydVVHbWJ0V0hfMjh1THNqWGQzMXByREo5X290Um5BeFg4WVZIVkpxcHJPc0pzOU1SQXR3X19aaWE2UU1CdkVzRV8tVnFIeUpVV09nVE9CLWwyLVhqbjNGTU9BdA?oc=5"
     },
     {
       "id": "por-que-las-certificaciones-organicas-y-de-origen-valorizan-las-exportaciones",
@@ -2689,10 +3452,24 @@
           "url": "https://www.noticiasagropecuarias.com/2026/10/06/acuerdo-mercosur-union-europea-una-gran-oportunidad-para-el-agro-con-letra-chica/",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "Agroempresario",
+          "type": "También publicó esta noticia",
+          "url": "https://agroempresario.com/publicacion/122169/acuerdo-mercosur-union-europea-y-su-impacto-en-el-sector-agro/",
+          "alsoIn": true,
+          "title": "Acuerdo Mercosur Unión Europea y su impacto en el sector agro"
         }
       ],
       "gnTried": "2026-10-06T21:40:51Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOV1o3Nm1CTF83Qi1OYjVTMWJsQkxqa0RXZ1MyWjlHNEFTb2xLZXUybGxsMy1vbU84aUJmYlNJZ3gxN3pNZFprV19rWC14aGlqT1JWbThWUDUwNFNSWGU1cFB5SzhDeGRXLWdSYkh2bW4yS3N5UG40cDJvUFFKMFhJY3hHWFpYYzBCYzVwZ2k5V1NyRUdaZWdoX1VBWEE5Y0RscmRCV05PY2p5RVp6bjdMOVUwWTFfVE5UbXNHMUhzWURNTm9EYWllRVBB?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOV1o3Nm1CTF83Qi1OYjVTMWJsQkxqa0RXZ1MyWjlHNEFTb2xLZXUybGxsMy1vbU84aUJmYlNJZ3gxN3pNZFprV19rWC14aGlqT1JWbThWUDUwNFNSWGU1cFB5SzhDeGRXLWdSYkh2bW4yS3N5UG40cDJvUFFKMFhJY3hHWFpYYzBCYzVwZ2k5V1NyRUdaZWdoX1VBWEE5Y0RscmRCV05PY2p5RVp6bjdMOVUwWTFfVE5UbXNHMUhzWURNTm9EYWllRVBB?oc=5",
+      "aliasUrls": [
+        "https://agroempresario.com/publicacion/122169/acuerdo-mercosur-union-europea-y-su-impacto-en-el-sector-agro",
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNTRTNUk1QjNoVGpvblBJekhjOFIyeXhtZ3RMaDAwQTdIRXdNTjFvZ1FCRFlOUmplWEJYUzZ2NUVXT1AwNWVxYUduVVVrellCZW9Hb1hqaHdKdWIwLTBsRlNDOE54cHFCeHBHdVkyclBvRmY4bmgwVlZGaG1kRmxwT3NQTERfQmdEaVdmdWdXSlUzWVFjZmNUeTlMVTdaU2FYaC1HYmZWSm0tMHRV"
+      ],
+      "mergedIds": [
+        "acuerdo-mercosur-union-europea-y-su-impacto-en-el-sector-agro"
+      ]
     },
     {
       "id": "el-cambio-climatico-pasa-una-factura-de-374-millones-al-campo-espanol-mientras-l",
@@ -7256,43 +8033,6 @@
       "gnUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNbHRuXzA1Ump0MllIVU1BV2NvT0FoUWEydEZiVXI2SHdla2MxMm5YdF9RZkxaUFFrOGpRRTJaeUNhSDc5U285WXlWQ0luQzNGN004UzZLY3k1Q0JrZk1SYW9pRkJZS2tDWlhreWVtalRSRG9tRkN3cGR3SlBJV2FJZHpOVm41dEI0NGdPT0syT1dkVTV6aU94U2Q5SXVWUExvRXRGR2E5TG9PTkE4angyNC1aQnhzNG5kcmhVVjRCSEgzTWJSVHJTRU9Bcw?oc=5"
     },
     {
-      "id": "el-gas-de-vaca-muerta-busca-ganar-la-region-que-necesita-argentina-para-multipli",
-      "datetime": "2026-10-05T09:13:38Z",
-      "date": "2026-10-05",
-      "firstSeen": "2026-10-05T09:44:23Z",
-      "title": "El gas de Vaca Muerta busca ganar la región: qué necesita Argentina para multiplicar las exportaciones",
-      "summary": "",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina",
-        "Exportaciones"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [
-        "Energía"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
-      "sources": [
-        {
-          "name": "cedarnews.net",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://cedarnews.net/ultima-hora/1031089/gas-vaca-muerta-busca-ganar-region-necesita/",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-06T09:42:32Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOb0U4cTU5ZDJkZjN6N2VXSmZGTXR0Vkl4ZmVvczRWbTJLamJlQmQycnhDeTlKR0hMWUdkdEs3NExQUTd6bUF2LTFGdUJ6VXVvR01MQjd4anZQOHhXTEFmYkpwV0F4a3RkYXhib0dpVnJqSDJwNFJRd3JDb1VTeFdjTjRnRnFxeVdNLUNUT19GNA?oc=5"
-    },
-    {
       "id": "el-embajador-de-argentina-analiza-en-cadiz-las-relaciones-entre-mercosur-y-europ",
       "datetime": "2026-10-05T09:03:17Z",
       "date": "2026-10-05",
@@ -7499,10 +8239,34 @@
           "url": "https://zapalaya.com.ar/vaca-muerta/argentina-se-prepara-para-aumentar-las-exportaciones-de-gas-desde-vaca-muerta",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "cedarnews.net",
+          "type": "También publicó esta noticia",
+          "url": "https://cedarnews.net/ultima-hora/1031089/gas-vaca-muerta-busca-ganar-region-necesita/",
+          "alsoIn": true,
+          "title": "El gas de Vaca Muerta busca ganar la región: qué necesita Argentina para multiplicar las exportaciones"
+        },
+        {
+          "name": "Prensa Mercosur",
+          "type": "También publicó esta noticia",
+          "url": "https://prensamercosur.org/2026/10/06/vaca-muerta-prepara-el-salto-exportador/",
+          "alsoIn": true,
+          "title": "Vaca Muerta prepara el salto exportador"
         }
       ],
       "gnTried": "2026-10-06T13:04:33Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGc4c0t6SGNiYi1Qckk4ZzBROFZKcmFtVVp2SnhsaXBYa2pYRUNRNFBZQWR0cWJuVG9ING9zOFo3NkVZUEpwcFRPRkRHamZ2WHFJNFFLRDFZc2tNSWU3VzBuQUdUWXItem44aXlLQTF4eFBnbDRBeXJmUExMNVI4cklMUTRqWVJaeUtkNG5HTGhEbkVoSDJoc0V5MVBIT3hIaWoycklVN3NKbklXWnRaZVNmUQ?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGc4c0t6SGNiYi1Qckk4ZzBROFZKcmFtVVp2SnhsaXBYa2pYRUNRNFBZQWR0cWJuVG9ING9zOFo3NkVZUEpwcFRPRkRHamZ2WHFJNFFLRDFZc2tNSWU3VzBuQUdUWXItem44aXlLQTF4eFBnbDRBeXJmUExMNVI4cklMUTRqWVJaeUtkNG5HTGhEbkVoSDJoc0V5MVBIT3hIaWoycklVN3NKbklXWnRaZVNmUQ?oc=5",
+      "aliasUrls": [
+        "https://cedarnews.net/ultima-hora/1031089/gas-vaca-muerta-busca-ganar-region-necesita",
+        "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWUF2X21KTmx0azdMMm8wYVFSRmdCa05fT1h2QTNLV1gyUG9LTWw5c0NkN1hFQzNZOWw4RmdTUVhlRjc5cmZzZjAxamNaQmtzNW40MlhqaUNjazA3VVN3TWpTMWkxOFNOZVB2d3dQN19zSU84MXpZNGhsOF9rTGtfSFpEblM",
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxOb0U4cTU5ZDJkZjN6N2VXSmZGTXR0Vkl4ZmVvczRWbTJLamJlQmQycnhDeTlKR0hMWUdkdEs3NExQUTd6bUF2LTFGdUJ6VXVvR01MQjd4anZQOHhXTEFmYkpwV0F4a3RkYXhib0dpVnJqSDJwNFJRd3JDb1VTeFdjTjRnRnFxeVdNLUNUT19GNA",
+        "https://prensamercosur.org/2026/10/06/vaca-muerta-prepara-el-salto-exportador"
+      ],
+      "mergedIds": [
+        "el-gas-de-vaca-muerta-busca-ganar-la-region-que-necesita-argentina-para-multipli",
+        "vaca-muerta-prepara-el-salto-exportador"
+      ]
     },
     {
       "id": "la-argentina-busca-ampliar-sus-exportaciones-a-asia",
@@ -7577,10 +8341,24 @@
           "url": "https://informat.ro/es/internacional/reino-unido-analiza-aranceles-para-los-vehiculos-electricos-de-china-141920",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "Fleet People",
+          "type": "También publicó esta noticia",
+          "url": "https://fleetpeople.es/gran-bretana-se-prepara-para-imponer-aranceles-a-los-coches-electricos-chinos/",
+          "alsoIn": true,
+          "title": "Gran Bretaña se prepara para imponer aranceles a los coches eléctricos chinos"
         }
       ],
       "gnTried": "2026-10-06T13:04:33Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNc2NVZFFsUl9NSkIxcXB4SmhuVThKX1o4bUxPckFBa0ROOTJtTTVCSXVEaXdUbFpjLWdQZG1od2RkT2tjTzcwVmpFRmZvaDJMeFkzZkttWFppN2VXX1lnb3ZfVnJ1Ykw2NTdKSU4wdlp6eEIzQjZJVU9kVmN5NWtrU0xhMnhzWmhya0tleGpvQ0drSUpicU4wdXNlLXY5ZC1UMmRZUEJLQVJacVFJSFJHNWVB?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNc2NVZFFsUl9NSkIxcXB4SmhuVThKX1o4bUxPckFBa0ROOTJtTTVCSXVEaXdUbFpjLWdQZG1od2RkT2tjTzcwVmpFRmZvaDJMeFkzZkttWFppN2VXX1lnb3ZfVnJ1Ykw2NTdKSU4wdlp6eEIzQjZJVU9kVmN5NWtrU0xhMnhzWmhya0tleGpvQ0drSUpicU4wdXNlLXY5ZC1UMmRZUEJLQVJacVFJSFJHNWVB?oc=5",
+      "aliasUrls": [
+        "https://fleetpeople.es/gran-bretana-se-prepara-para-imponer-aranceles-a-los-coches-electricos-chinos",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxPLW5pblp4TEJva2U3ZlJ2X3BNZ1NoRTFWaE5UQUlvdW1nWmNnQ3A4TUZTVW54V19LN29pbEJEZE5uaVAtTlBRblNHVUlyWFlUSHhXNHFsaV9CUE1URkNnNGtlN1lTU3lnNUVnY0ExbkhpS2ZiRzhncXo0VDhIeWZmVlQwMy0wTzlIVzF5bi02eldjMUtQYTBNTHRBXzNtNTdnUGlv"
+      ],
+      "mergedIds": [
+        "gran-bretana-se-prepara-para-imponer-aranceles-a-los-coches-electricos-chinos"
+      ]
     },
     {
       "id": "caen-los-volumenes-semanales-de-carga-aerea-pero-siguen-al-alza-los-fletes",
@@ -8257,7 +9035,7 @@
           "author": ""
         }
       ],
-      "gnTried": "2026-10-06T13:04:33Z"
+      "gnTried": "2026-10-07T09:43:45Z"
     },
     {
       "id": "portcastello-presenta-estrategia-para-albergar-hub-industrial-de-energia-eolica",
@@ -17955,7 +18733,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-07T01:42:33Z",
+    "ranAt": "2026-10-07T09:43:45Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -17971,7 +18749,7 @@
         "url": "https://www.aduananews.com/feed/",
         "ok": true,
         "items": 12,
-        "added": 1,
+        "added": 0,
         "updated": 0,
         "skipped": 3
       },
@@ -17980,45 +18758,63 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 10,
+        "added": 5,
         "updated": 0,
-        "skipped": 5
+        "skipped": 6
       },
       {
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": false,
-        "error": "HTTP Error 503: Service Unavailable"
+        "ok": true,
+        "items": 54,
+        "added": 3,
+        "updated": 0,
+        "skipped": 29
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": false,
-        "error": "HTTP Error 503: Service Unavailable"
+        "ok": true,
+        "items": 49,
+        "added": 4,
+        "updated": 0,
+        "skipped": 30
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": false,
-        "error": "HTTP Error 503: Service Unavailable"
+        "ok": true,
+        "items": 70,
+        "added": 4,
+        "updated": 0,
+        "skipped": 31
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": false,
-        "error": "HTTP Error 503: Service Unavailable"
+        "ok": true,
+        "items": 35,
+        "added": 3,
+        "updated": 0,
+        "skipped": 17
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": false,
-        "error": "HTTP Error 503: Service Unavailable"
+        "ok": true,
+        "items": 96,
+        "added": 4,
+        "updated": 0,
+        "skipped": 77
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": false,
-        "error": "HTTP Error 503: Service Unavailable"
+        "ok": true,
+        "items": 100,
+        "added": 4,
+        "updated": 0,
+        "skipped": 63
       }
     ],
     "curatedDuplicates": [
@@ -18031,16 +18827,60 @@
         "title": "Autos híbridos y eléctricos: desde el 1° de octubre amplían los topes para importar con arancel 0 %",
         "url": "https://aduananews.com/autos-hibridos-y-electricos-desde-el-1-de-octubre-amplian-los-topes-para-importar-con-arancel-0/?utm_source=rss&utm_medium=rss&utm_campaign=autos-hibridos-y-electricos-desde-el-1-de-octubre-amplian-los-topes-para-importar-con-arancel-0",
         "curated": "decreto-1128-tope-fob-autos-electricos-hibridos"
+      },
+      {
+        "title": "Las exportaciones mineras marcaron un récord histórico y superaron los US$6.000 millones",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUnFDd0k4SkdHNW5xTWpsSGtSZks2WEQ3WTR1SzlMTDRUM0txUTlEci0yajVDVXJkbnVQRmFzbVpCcldqejhyWHM5UUZ1Tm44dzZWRlo3V1dWcjlUb0MwS2txOTZBdWpSUVNvY0xCYndNdERsMXpXN0xnN3RKbmp2a29FaDFtTm1vcWI1cVdfQTZXbDE4eWh1THNuQU9CZ1dQSDRWZVVkcTc1VVZTbmU1TFRUZGZMN0NUNzR5OFUwU2RSWlMtVTBHMXBqdXV2RGxYUDdPdEQ5aGJxY1RPamZBctIB4AFBVV95cUxOUnFDd0k4SkdHNW5xTWpsSGtSZks2WEQ3WTR1SzlMTDRUM0txUTlEci0yajVDVXJkbnVQRmFzbVpCcldqejhyWHM5UUZ1Tm44dzZWRlo3V1dWcjlUb0MwS2txOTZBdWpSUVNvY0xCYndNdERsMXpXN0xnN3RKbmp2a29FaDFtTm1vcWI1cVdfQTZXbDE4eWh1THNuQU9CZ1dQSDRWZVVkcTc1VVZTbmU1TFRUZGZMN0NUNzR5OFUwU2RSWlMtVTBHMXBqdXV2RGxYUDdPdEQ5aGJxY1RPamZBcg?oc=5",
+        "curated": "exportaciones-mineras-6059-millones-enero-agosto-2026"
       }
     ],
     "excluded": 0,
-    "grouped": [],
+    "grouped": [
+      {
+        "main": "gran-bretana-analiza-aranceles-para-los-coches-electricos-importados-de-china-an",
+        "merged": [
+          "gran-bretana-se-prepara-para-imponer-aranceles-a-los-coches-electricos-chinos"
+        ]
+      },
+      {
+        "main": "argentina-se-prepara-para-aumentar-las-exportaciones-de-gas-desde-vaca-muerta",
+        "merged": [
+          "el-gas-de-vaca-muerta-busca-ganar-la-region-que-necesita-argentina-para-multipli",
+          "vaca-muerta-prepara-el-salto-exportador"
+        ]
+      },
+      {
+        "main": "acuerdo-mercosur-union-europea-una-gran-oportunidad-para-el-agro-con-letra-chica",
+        "merged": [
+          "acuerdo-mercosur-union-europea-y-su-impacto-en-el-sector-agro"
+        ]
+      },
+      {
+        "main": "el-salto-del-litio-argentino-puede-superar-a-chile-y-8-de-cada-10-exportaciones",
+        "merged": [
+          "el-salto-del-litio-argentino-puede-superar-a-chile-y-8-de-cada-10-exportacio-2"
+        ]
+      },
+      {
+        "main": "las-importaciones-de-smartphones-crecieron-un-746-por-ciento",
+        "merged": [
+          "las-importaciones-de-smartphones-crecieron-746-mientras-la-produccion-tecnologic"
+        ]
+      },
+      {
+        "main": "tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-por-2",
+        "merged": [
+          "tres-detenidos-en-algeciras-al-intentar-extraer-50-kilos-de-coca-de-un-portacont",
+          "tres-detenidos-cuando-intentaban-extraer-50-kilos-de-cocaina-de-un-buque-portaco"
+        ]
+      }
+    ],
     "googleNews": {
-      "pending": 0,
-      "resolved": 0,
-      "withSummary": 0,
+      "pending": 23,
+      "resolved": 22,
+      "withSummary": 15,
       "withPhoto": 0,
-      "failed": 0,
+      "failed": 1,
       "duplicates": 0
     }
   },

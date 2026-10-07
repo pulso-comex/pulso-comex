@@ -1,8 +1,8 @@
 {
   "OMC · Organización Mundial del Comercio": {
     "ok": true,
-    "lastRun": "2026-10-07T01:42:33Z",
-    "lastOk": "2026-10-07T01:42:33Z",
+    "lastRun": "2026-10-07T09:43:45Z",
+    "lastOk": "2026-10-07T09:43:45Z",
     "failures": 0,
     "items": 7,
     "added": 0
@@ -17,11 +17,11 @@
   },
   "Aduana News": {
     "ok": true,
-    "lastRun": "2026-10-07T01:42:33Z",
-    "lastOk": "2026-10-07T01:42:33Z",
+    "lastRun": "2026-10-07T09:43:45Z",
+    "lastOk": "2026-10-07T09:43:45Z",
     "failures": 0,
     "items": 12,
-    "added": 1
+    "added": 0
   },
   "Trade News": {
     "ok": false,
@@ -31,64 +31,58 @@
   },
   "PortalPortuario": {
     "ok": true,
-    "lastRun": "2026-10-07T01:42:33Z",
-    "lastOk": "2026-10-07T01:42:33Z",
+    "lastRun": "2026-10-07T09:43:45Z",
+    "lastOk": "2026-10-07T09:43:45Z",
     "failures": 0,
     "items": 15,
-    "added": 10
+    "added": 5
   },
   "Google Noticias · Comercio exterior Argentina": {
-    "ok": false,
-    "lastRun": "2026-10-07T01:42:33Z",
-    "lastOk": "2026-10-06T21:40:51Z",
-    "failures": 1,
-    "items": 52,
-    "added": 4,
-    "lastError": "HTTP Error 503: Service Unavailable"
+    "ok": true,
+    "lastRun": "2026-10-07T09:43:45Z",
+    "lastOk": "2026-10-07T09:43:45Z",
+    "failures": 0,
+    "items": 54,
+    "added": 3
   },
   "Google Noticias · Aduana e importaciones Argentina": {
-    "ok": false,
-    "lastRun": "2026-10-07T01:42:33Z",
-    "lastOk": "2026-10-06T21:40:51Z",
-    "failures": 1,
-    "items": 53,
-    "added": 4,
-    "lastError": "HTTP Error 503: Service Unavailable"
+    "ok": true,
+    "lastRun": "2026-10-07T09:43:45Z",
+    "lastOk": "2026-10-07T09:43:45Z",
+    "failures": 0,
+    "items": 49,
+    "added": 4
   },
   "Google Noticias · Exportaciones Argentina": {
-    "ok": false,
-    "lastRun": "2026-10-07T01:42:33Z",
-    "lastOk": "2026-10-06T21:40:51Z",
-    "failures": 1,
-    "items": 68,
-    "added": 4,
-    "lastError": "HTTP Error 503: Service Unavailable"
+    "ok": true,
+    "lastRun": "2026-10-07T09:43:45Z",
+    "lastOk": "2026-10-07T09:43:45Z",
+    "failures": 0,
+    "items": 70,
+    "added": 4
   },
   "Google Noticias · Mercosur": {
-    "ok": false,
-    "lastRun": "2026-10-07T01:42:33Z",
-    "lastOk": "2026-10-06T21:40:51Z",
-    "failures": 1,
-    "items": 36,
-    "added": 1,
-    "lastError": "HTTP Error 503: Service Unavailable"
+    "ok": true,
+    "lastRun": "2026-10-07T09:43:45Z",
+    "lastOk": "2026-10-07T09:43:45Z",
+    "failures": 0,
+    "items": 35,
+    "added": 3
   },
   "Google Noticias · Aranceles y comercio internacional": {
-    "ok": false,
-    "lastRun": "2026-10-07T01:42:33Z",
-    "lastOk": "2026-10-06T21:40:51Z",
-    "failures": 1,
-    "items": 61,
-    "added": 4,
-    "lastError": "HTTP Error 503: Service Unavailable"
+    "ok": true,
+    "lastRun": "2026-10-07T09:43:45Z",
+    "lastOk": "2026-10-07T09:43:45Z",
+    "failures": 0,
+    "items": 96,
+    "added": 4
   },
   "Google Noticias · Logística y fletes": {
-    "ok": false,
-    "lastRun": "2026-10-07T01:42:33Z",
-    "lastOk": "2026-10-06T21:40:51Z",
-    "failures": 1,
-    "items": 89,
-    "added": 4,
-    "lastError": "HTTP Error 503: Service Unavailable"
+    "ok": true,
+    "lastRun": "2026-10-07T09:43:45Z",
+    "lastOk": "2026-10-07T09:43:45Z",
+    "failures": 0,
+    "items": 100,
+    "added": 4
   }
 }
