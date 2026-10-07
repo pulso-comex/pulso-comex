@@ -5,6 +5,8 @@ Indicadores (por id en "indicators"):
 - tc-mayorista: tipo de cambio mayorista de referencia (Com. A 3500), API de estadísticas del BCRA.
 - soja, maiz, trigo: precio pizarra en Rosario, Cámara Arbitral de Cereales de la Bolsa de Comercio de Rosario.
 - brent: petróleo Brent spot (serie de la EIA de EE.UU.), publicada por FRED (Reserva Federal de St. Louis).
+  La EIA la actualiza una vez por semana (miércoles); por eso el último dato puede tener hasta ~9 días.
+  No hay fuente diaria gratuita y que permita lectura automática (Yahoo y Stooq la prohíben en su robots.txt).
 
 Si una fuente no responde o cambia su formato, el indicador conserva el último valor válido
 (o queda como "Sin datos" si nunca tuvo uno): nunca se inventa un número.
@@ -137,7 +139,8 @@ def fred_brent() -> dict:
     (d, v), (_, pv) = obs[-1], obs[-2]
     if not 5 < v < 500:
         raise ValueError(f'valor fuera de rango: {v}')
-    return {'value': f'USD {num_es(v, 2)}', 'period': f'Barril, spot · {day_es(d)}', 'obsDate': d.isoformat(),
+    # La EIA publica la serie diaria una vez por semana (los miércoles), con unos días de demora: se aclara en el período.
+    return {'value': f'USD {num_es(v, 2)}', 'period': f'Barril, spot · {day_es(d)} · la EIA publica los miércoles', 'obsDate': d.isoformat(),
             **change_fields(v, pv, 'vs. día anterior'), 'source': 'EIA (vía FRED)', 'url': FRED_PAGE,
             'num': v, 'series': [(x.isoformat(), y) for x, y in obs[-HISTORY_MAX:]]}
 

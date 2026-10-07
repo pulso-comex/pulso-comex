@@ -55,6 +55,8 @@ CURATED_MIN_SHARED = 4     # sin cifra en común, hacen falta al menos 4 palabra
 GROUP_WINDOW_HOURS = 60    # solo se agrupan notas publicadas con menos de 60 h de diferencia
 GROUP_MIN_SIM = 0.55       # parecido mínimo de títulos (palabras raras pesan más; sobre el título más corto)
 GROUP_MIN_SHARED = 3       # palabras significativas compartidas como mínimo
+GROUP_RARE_IDF = 3.0       # una palabra es "rara" si aparece en pocas notas del archivo (idf ≥ esto)
+GROUP_MIN_SIM_RARE = 0.40  # parecido de títulos alcanza con 0.40 si comparten dos palabras raras
 
 # Google Noticias: resolver el enlace original para leer descripción e imagen del medio.
 MAX_GN_RESOLVE = 60        # enlaces resueltos por corrida (las nuevas primero; después, las viejas sin resumen)
@@ -74,25 +76,43 @@ RELEVANCE = ['comercio exterior', 'comercio internacional', 'comex', 'trade', 'e
 
 # País -> patrones (texto ya normalizado: minúsculas y sin acentos)
 COUNTRIES = {
-    'Argentina': [r'argentin', r'\barca\b', r'\bafip\b', r'\bindec\b', r'buenos aires', r'rosario', r'casa rosada', r'milei', r'caputo'],
+    'Argentina': [r'argentin', r'\barca\b', r'\bafip\b', r'\bindec\b', r'buenos aires', r'rosario', r'casa rosada', r'milei', r'caputo',
+                  r'\bsanta fe\b(?! de bogota)', r'mendoza', r'neuquen', r'vaca muerta', r'tucuman', r'chubut', r'jujuy', r'entre rios',
+                  r'bahia blanca', r'\bsenasa\b', r'\bbcra\b', r'ciara-cec', r'\babeceb\b'],
     'Brasil': [r'brasil', r'brazil', r'brasilen', r'brazilian', r'lula\b', r'itamaraty'],
-    'Uruguay': [r'uruguay'], 'Paraguay': [r'paraguay'], 'Chile': [r'\bchile'], 'Bolivia': [r'bolivia'],
-    'Perú': [r'\bperu'], 'Colombia': [r'colombia'], 'México': [r'mexic'], 'Panamá': [r'panama'],
+    'Uruguay': [r'uruguay', r'montevideo', r'nueva palmira'], 'Paraguay': [r'paraguay', r'asuncion del paraguay'],
+    'Chile': [r'\bchile', r'bio ?bio', r'valparaiso', r'iquique', r'antofagasta', r'talcahuano', r'mejillones', r'\barica\b',
+              r'punta arenas', r'puerto montt', r'puerto (de )?san antonio', r'puerto (de )?coronel', r'gran concepcion', r'\bsubtel\b'],
+    'Bolivia': [r'bolivia', r'santa cruz de la sierra'],
+    'Perú': [r'\bperu', r'chancay', r'\bcallao'], 'Colombia': [r'colombia', r'ecopetrol'], 'México': [r'mexic'], 'Panamá': [r'panama'],
+    'Ecuador': [r'ecuador', r'guayaquil'], 'Venezuela': [r'venezuel'], 'Guatemala': [r'guatemal'], 'Costa Rica': [r'costa rica'],
+    'República Dominicana': [r'dominican', r'santo domingo', r'dr-cafta'],
     'Estados Unidos': [r'estados unidos', r'eeuu', r'ee\.uu', r'united states', r'\bu\.s\.', r'washington', r'trump', r'\bustr\b', r'casa blanca', r'white house'],
     'Canadá': [r'canad'], 'China': [r'\bchina\b', r'chinese', r'chino', r'beijing', r'pekin', r'shanghai'],
     'Japón': [r'japon', r'japan'], 'India': [r'\bindia\b', r'indian'], 'Corea del Sur': [r'corea del sur', r'south korea', r'surcorean'],
-    'Vietnam': [r'vietnam'], 'Indonesia': [r'indonesia'], 'Singapur': [r'singap'],
+    'Vietnam': [r'vietnam'], 'Indonesia': [r'indonesia'], 'Singapur': [r'singap'], 'Malasia': [r'malasia', r'malaysia'],
+    'Filipinas': [r'filipinas', r'philippin'], 'Tailandia': [r'tailandia', r'thailand'], 'Taiwán': [r'taiwan'],
+    'Bangladés': [r'banglad'], 'Pakistán': [r'pakistan'], 'Sri Lanka': [r'sri lanka'],
     'Unión Europea': [r'union europea', r'european union', r'\bue\b', r'\beu\b', r'comision europea', r'european commission', r'bruselas', r'brussels'],
     'Alemania': [r'alemania', r'german'], 'España': [r'espana', r'\bspain'], 'Francia': [r'francia', r'\bfrance', r'french'],
-    'Italia': [r'italia', r'\bital'], 'Reino Unido': [r'reino unido', r'united kingdom', r'\buk\b', r'britan'],
+    'Italia': [r'italia', r'\bital', r'trieste', r'genova'], 'Reino Unido': [r'reino unido', r'united kingdom', r'\buk\b', r'britan'],
+    'Países Bajos': [r'paises bajos', r'holand', r'netherlands', r'rotterdam', r'amsterdam'], 'Bélgica': [r'belgica', r'belgium', r'amberes', r'antwerp'],
+    'Grecia': [r'grecia', r'greece', r'\bel pireo\b', r'piraeus', r'heraklion'], 'Noruega': [r'noruega', r'norway'], 'Polonia': [r'polonia', r'poland'],
+    'Portugal': [r'portugal', r'lisboa'],
     'Rusia': [r'rusia', r'russia'], 'Ucrania': [r'ucrania', r'ukrain'], 'Turquía': [r'turquia', r'turkey', r'turkiye'],
     'Arabia Saudita': [r'arabia saudita', r'saudi'], 'Emiratos Árabes Unidos': [r'emiratos', r'\buae\b', r'dubai'],
-    'Irán': [r'\biran'], 'Sudáfrica': [r'sudafrica', r'south africa'], 'Australia': [r'australia'],
+    'Irán': [r'\biran'], 'Irak': [r'\birak', r'\biraq'], 'Israel': [r'israel'], 'Catar': [r'\bcatar\b', r'\bqatar'], 'Omán': [r'\boman\b'],
+    'Egipto': [r'egipto', r'egypt', r'canal de suez', r'suez canal'], 'Marruecos': [r'marruec', r'morocc', r'tanger'],
+    'Sudáfrica': [r'sudafrica', r'south africa'], 'Angola': [r'angola', r'luanda'], 'Nigeria': [r'nigeria'], 'Kenia': [r'kenia', r'kenya'],
+    'Costa de Marfil': [r'costa de marfil', r'ivory coast', r'abiyan', r'abidjan'], 'Australia': [r'australia'],
     'Nueva Zelanda': [r'nueva zelanda', r'new zealand'],
 }
-LATAM = {'Argentina', 'Brasil', 'Uruguay', 'Paraguay', 'Chile', 'Bolivia', 'Perú', 'Colombia', 'México', 'Panamá'}
-EUROPE = {'Unión Europea', 'Alemania', 'España', 'Francia', 'Italia', 'Reino Unido', 'Rusia', 'Ucrania', 'Turquía'}
-ASIA = {'China', 'Japón', 'India', 'Corea del Sur', 'Vietnam', 'Indonesia', 'Singapur'}
+LATAM = {'Argentina', 'Brasil', 'Uruguay', 'Paraguay', 'Chile', 'Bolivia', 'Perú', 'Colombia', 'México', 'Panamá',
+         'Ecuador', 'Venezuela', 'Guatemala', 'Costa Rica', 'República Dominicana'}
+EUROPE = {'Unión Europea', 'Alemania', 'España', 'Francia', 'Italia', 'Reino Unido', 'Rusia', 'Ucrania', 'Turquía',
+          'Países Bajos', 'Bélgica', 'Grecia', 'Noruega', 'Polonia', 'Portugal'}
+ASIA = {'China', 'Japón', 'India', 'Corea del Sur', 'Vietnam', 'Indonesia', 'Singapur', 'Malasia', 'Filipinas', 'Tailandia',
+        'Taiwán', 'Bangladés', 'Pakistán', 'Sri Lanka'}
 OCEANIA = {'Australia', 'Nueva Zelanda'}
 
 TOPIC_RULES = [
@@ -149,6 +169,12 @@ EXCLUDE = [
     r'\baccidente (de transito|vial|con un)\b', r'empotrad', r'\batropell',
     r'\b(fallec\w*|muere|murio|cadaver|homicid\w*|asesina\w*)\b', r'(hallan|encuentran) muert[oa]', r'(hallan|localizado|rescatan) (el )?cuerpo', r'en memoria de', r'hasta siempre',
     r'\bfutbol', r'\bhoroscopo', r'\bquiniela', r'\bloteria',
+    # Policiales de narcotráfico en puertos: no cambian reglas ni costos del comercio.
+    r'cocain', r'narcotrafic', r'estupefacient', r'marihuana', r'\bkilos? de (droga|coca)\b',
+    # Premios, aniversarios y notas institucionales.
+    r'galardon', r'recibe (un |el )?(premio|reconocimiento)',
+    # Obras y servicios sin efecto en el comercio de mercaderías.
+    r'locomotoras? para (el|la) (metro|linea)', r'turbina eolica', r'\bferr(y|ies) electric', r'redes [56]g\b', r'\b[56]g y [56]g\b', r'artesan',
 ]
 
 # Etiquetas propias detectadas en el texto (las categorías de los feeds traían ruido: "inter", "ig", "Titulares"…)
@@ -605,6 +631,45 @@ def item_score(it: dict) -> tuple:
             -(parse_date(it.get('datetime') or it.get('date')) or NOW).timestamp())
 
 
+SYNONYMS = {'smartphones': 'celulares', 'smartphone': 'celular', 'telefonos': 'celulares', 'moviles': 'celulares',
+            'derogacion': 'elimina', 'deroga': 'elimina', 'supresion': 'elimina', 'quitado': 'elimina', 'quita': 'elimina',
+            'eliminacion': 'elimina', 'disparan': 'dispara', 'dispararon': 'dispara', 'fabricacion': 'produccion'}
+
+
+# Nombres de países, gentilicios y meses: no cuentan como palabras en común (los países se comparan aparte).
+PLACE_WORDS = set('''argentina argentino argentina argentinos argentinas estados unidos estadounidense estadounidenses
+brasil brasileno brasilena brasilenos chile chileno chilena china chino china chinos chinas europa europeo europea europeos
+union europea mexico mexicano mexicana espana espanol espanola canada canadiense japon japones india paraguay uruguay
+reino unido britanico peru bolivia colombia panama rusia ucrania turquia vietnam corea mundo mundial global latinoamerica
+enero febrero marzo abril mayo junio julio agosto septiembre setiembre octubre noviembre diciembre'''.split())
+
+
+def stems(text: str) -> set:
+    """Palabras significativas reducidas a su raíz (6 letras), con sinónimos: «importaciones», «importación» e
+    «importados» cuentan como la misma palabra; «smartphones» como «celulares»."""
+    out = set()
+    for w in re.findall(r'[a-z]+', norm(text)):
+        w = SYNONYMS.get(w, w)
+        if len(w) > 3 and w not in STOPWORDS and w not in PLACE_WORDS:
+            out.add(w[:6])
+    return out
+
+
+def key_numbers(text: str) -> set:
+    """Cifras distintivas (746, 746,6, 693-24…): no años, ni números chicos que se repiten en cualquier nota."""
+    t = norm(text)
+    nums = set()
+    for n in re.findall(r'\d+(?:[.,]\d+)?', t):
+        base = re.split(r'[.,]', n)[0]
+        if re.fullmatch(r'(19|20)\d\d', n) or len(base) < 3 or n in ('100', '000'):
+            continue
+        nums.add(base)
+    return nums
+
+
+MONTHS_RE = r'\b(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|setiembre|octubre|noviembre|diciembre)\b'
+
+
 def group_auto(items: list) -> list:
     """Une las notas automáticas que cuentan el mismo hecho con distinto título.
 
@@ -612,45 +677,68 @@ def group_auto(items: list) -> list:
     se guardan en mergedIds para redirigir sus páginas viejas. Devuelve la lista de grupos formados."""
     import math
     auto = [it for it in items if it.get('label') == 'Automática']
-    docs = {id(it): tokens(it.get('title', '')) for it in auto}
+    docs = {id(it): stems(it.get('title', '')) for it in auto}
+    nums = {id(it): key_numbers(it.get('title', '') + ' ' + it.get('summary', '')) for it in auto}
+    ctx = {id(it): stems(it.get('title', '') + ' ' + it.get('summary', '')) for it in auto}
     df = {}
-    for d in docs.values():
+    for d in ctx.values():
         for w in d:
             df[w] = df.get(w, 0) + 1
     n = len(auto) or 1
-    idf = lambda w: math.log((n + 1) / (df.get(w, 0) + 1)) + (1.0 if w.startswith('#') else 0)
+    idf = lambda w: math.log((n + 1) / (df.get(w, 0) + 1))
     when = {id(it): parse_date(it.get('datetime') or it.get('date')) or NOW for it in auto}
     auto.sort(key=lambda it: when[id(it)])
-    parent = {id(it): id(it) for it in auto}
+    num_df = {}
+    for ns in nums.values():
+        for x in ns:
+            num_df[x] = num_df.get(x, 0) + 1
+    countries = {id(it): detect_countries(it.get('title', '')) for it in auto}
+    months = {id(it): set(re.findall(MONTHS_RE, norm(it.get('title', '')))) for it in auto}
 
-    def root(x):
-        while parent[x] != x:
-            parent[x] = parent[parent[x]]
-            x = parent[x]
-        return x
+    def sim_title(ta, tb) -> float:
+        shared = ta & tb
+        return sum(idf(w) for w in shared) / (min(sum(idf(w) for w in ta), sum(idf(w) for w in tb)) or 1)
 
-    for i, a in enumerate(auto):
-        ta = docs[id(a)]
-        if len(ta) < 3:
-            continue
-        ca = detect_countries(a.get('title', ''))
-        for b in auto[i + 1:]:
-            if (when[id(b)] - when[id(a)]).total_seconds() > GROUP_WINDOW_HOURS * 3600:
-                break
-            tb = docs[id(b)]
-            shared = ta & tb
-            if len(shared) < GROUP_MIN_SHARED or len(tb) < 3:
+    def same_event(a, b) -> str:
+        """Regla que une a y b ('' si no son el mismo hecho)."""
+        ta, tb = docs[id(a)], docs[id(b)]
+        if len(ta) < 3 or len(tb) < 3:
+            return ''
+        ca, cb = countries[id(a)], countries[id(b)]
+        if ca and cb and not (ca & cb):
+            return ''  # mismos términos, distintos países: no es el mismo hecho
+        if months[id(a)] and months[id(b)] and not (months[id(a)] & months[id(b)]):
+            return ''  # el dato de julio y el de agosto no son la misma noticia
+        shared = ta & tb
+        if len(shared) >= GROUP_MIN_SHARED and sim_title(ta, tb) >= GROUP_MIN_SIM:
+            return 'titulo'
+        # Misma cifra distintiva (746%, decreto 693-24…) más palabras raras en común en título y resumen.
+        rare = {w for w in (ctx[id(a)] & ctx[id(b)]) if idf(w) >= GROUP_RARE_IDF}
+        rare_title = {w for w in shared if idf(w) >= GROUP_RARE_IDF}
+        num = {x for x in nums[id(a)] & nums[id(b)] if num_df[x] <= 6}
+        if num and rare_title and (len(rare) >= 3 or any(num_df[x] <= 3 for x in num)):
+            return 'cifra'
+        # Títulos parecidos con al menos dos palabras raras en común (p. ej. «arroz» y «elimina»).
+        if len(rare_title) >= 2 and len(rare) >= 4 and sim_title(ta, tb) >= GROUP_MIN_SIM_RARE:
+            return 'raras'
+        return ''
+
+    # Grupos sin encadenar: una nota entra a un grupo solo si coincide con un tercio o más de sus miembros
+    # (evita que A≈B y B≈C terminen uniendo A con C cuando hablan de cosas distintas).
+    groups_tmp = []
+    for i, b in enumerate(auto):
+        best, best_hits = None, 0
+        for g in groups_tmp:
+            if (when[id(b)] - when[id(g[0])]).total_seconds() > GROUP_WINDOW_HOURS * 3600:
                 continue
-            cb = detect_countries(b.get('title', ''))
-            if ca and cb and not (ca & cb):
-                continue  # mismos términos, distintos países: no es el mismo hecho
-            sim = sum(idf(w) for w in shared) / min(sum(idf(w) for w in ta), sum(idf(w) for w in tb))
-            if sim >= GROUP_MIN_SIM:
-                parent[root(id(b))] = root(id(a))
-
-    clusters = {}
-    for it in auto:
-        clusters.setdefault(root(id(it)), []).append(it)
+            hits = sum(1 for a in g if same_event(a, b))
+            if hits and hits * 3 >= len(g) and hits > best_hits:
+                best, best_hits = g, hits
+        if best is not None:
+            best.append(b)
+        else:
+            groups_tmp.append([b])
+    clusters = {id(g[0]): g for g in groups_tmp}
     drop, groups = set(), []
     for members in clusters.values():
         if len(members) < 2:
@@ -924,6 +1012,11 @@ def main():
         src_cfg = next((s for s in sources if s.get('name') == feed), {})
         if ph.get('src') and (BAD_IMAGE.search(ph['src']) or not src_cfg.get('use_source_images', USE_SOURCE_IMAGES_DEFAULT)):
             it.pop('photo', None)
+        # Reclasifica con las reglas actuales (países, temas, impacto): corrige lo que entró con reglas viejas.
+        text = ' '.join([it.get('title', ''), it.get('summary', ''), ' '.join(it.get('body') or [])])
+        topics, countries, _, affects, impact = classify(text, src_cfg)
+        it.update({'topics': topics, 'countries': countries, 'impact': impact,
+                   'affectsArgentina': affects or bool(it.get('mergedIds') and it.get('affectsArgentina'))})
         it['tags'] = make_tags(' '.join([it.get('title', ''), it.get('summary', '')]), {})
         it['visual'] = next((v for v, pats in VISUAL_RULES if any_match(norm(it.get('title', '') + ' ' + it.get('summary', '')), pats)), 'globe')
 

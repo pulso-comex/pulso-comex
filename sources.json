@@ -71,12 +71,9 @@
     "min_relevance": 1,
     "fetch_og": true,
     "topics": [
-      "Puertos",
-      "Latinoamérica"
+      "Puertos"
     ],
-    "countries": [
-      "Chile"
-    ],
+    "countries": [],
     "tags": []
   },
   {

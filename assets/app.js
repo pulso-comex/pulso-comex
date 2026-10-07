@@ -77,7 +77,7 @@ function sectionOf(it){
   return leaf.find(s => s.topics.includes(category(it))) || leaf.find(s => inSection(it, s)) || SECTIONS.find(s => inSection(it, s));
 }
 
-const REGIONS = ['Argentina','Mercosur','Latinoamérica','Norteamérica','Europa','Asia','Oceanía','Medio Oriente','Global'];
+const REGIONS = ['Argentina','Mercosur','Latinoamérica','Norteamérica','Europa','Asia','Oceanía','Medio Oriente','África','Global'];
 const COUNTRY_REGIONS = {
   'Argentina':['Argentina','Mercosur','Latinoamérica'], 'Brasil':['Mercosur','Latinoamérica'], 'Paraguay':['Mercosur','Latinoamérica'],
   'Uruguay':['Mercosur','Latinoamérica'], 'Chile':['Latinoamérica'], 'México':['Norteamérica','Latinoamérica'],
@@ -86,6 +86,14 @@ const COUNTRY_REGIONS = {
   'China':['Asia'], 'Vietnam':['Asia'], 'Singapur':['Asia'], 'Japón':['Asia'], 'India':['Asia'],
   'Australia':['Oceanía'], 'Nueva Zelanda':['Oceanía'],
   'Irán':['Medio Oriente'], 'Arabia Saudita':['Medio Oriente'], 'Irak':['Medio Oriente'], 'Emiratos Árabes Unidos':['Medio Oriente'],
+  'Bolivia':['Latinoamérica'], 'Perú':['Latinoamérica'], 'Colombia':['Latinoamérica'], 'Panamá':['Latinoamérica'], 'Ecuador':['Latinoamérica'],
+  'Venezuela':['Latinoamérica'], 'Guatemala':['Latinoamérica'], 'Costa Rica':['Latinoamérica'], 'República Dominicana':['Latinoamérica'],
+  'Reino Unido':['Europa'], 'Francia':['Europa'], 'Italia':['Europa'], 'Países Bajos':['Europa'], 'Bélgica':['Europa'], 'Grecia':['Europa'],
+  'Noruega':['Europa'], 'Portugal':['Europa'], 'Rusia':['Europa'], 'Ucrania':['Europa'], 'Turquía':['Europa','Medio Oriente'],
+  'Corea del Sur':['Asia'], 'Indonesia':['Asia'], 'Malasia':['Asia'], 'Filipinas':['Asia'], 'Tailandia':['Asia'], 'Taiwán':['Asia'],
+  'Bangladés':['Asia'], 'Pakistán':['Asia'], 'Sri Lanka':['Asia'],
+  'Israel':['Medio Oriente'], 'Catar':['Medio Oriente'], 'Omán':['Medio Oriente'], 'Egipto':['Medio Oriente','África'],
+  'Marruecos':['África'], 'Sudáfrica':['África'], 'Angola':['África'], 'Nigeria':['África'], 'Kenia':['África'], 'Costa de Marfil':['África'],
   'Global':['Global']
 };
 const TOPIC_REGIONS = { 'Latinoamérica':'Latinoamérica', 'Mercosur':'Mercosur', 'Europa':'Europa', 'Asia':'Asia', 'China':'Asia', 'Oceanía':'Oceanía', 'Estados Unidos':'Norteamérica', 'Argentina':'Argentina' };
@@ -95,7 +103,13 @@ const COORDS = {
   'Estados Unidos':[-98,39],'Canadá':[-100,57],'Unión Europea':[9,50],'Polonia':[19,52],'España':[-4,40],'Alemania':[10,51],
   'China':[104,35],'Vietnam':[106,15],'Singapur':[104,1.3],'Japón':[138,36],'India':[78,22],
   'Australia':[134,-25],'Nueva Zelanda':[174,-41],
-  'Irán':[53,32],'Arabia Saudita':[45,24],'Irak':[44,33],'Emiratos Árabes Unidos':[54,24]
+  'Irán':[53,32],'Arabia Saudita':[45,24],'Irak':[44,33],'Emiratos Árabes Unidos':[54,24],
+  'Bolivia':[-64,-17],'Perú':[-75,-10],'Colombia':[-73,4],'Panamá':[-80,9],'Ecuador':[-78,-1.5],'Venezuela':[-66,7],'Guatemala':[-90,15],
+  'Costa Rica':[-84,10],'República Dominicana':[-70,19],'Reino Unido':[-2,54],'Francia':[2,46],'Italia':[12,42],'Países Bajos':[5,52],
+  'Bélgica':[4.5,50.6],'Grecia':[22,39],'Noruega':[9,61],'Portugal':[-8,39.5],'Rusia':[60,57],'Ucrania':[31,49],'Turquía':[35,39],
+  'Corea del Sur':[128,36],'Indonesia':[118,-2],'Malasia':[102,4],'Filipinas':[122,12],'Tailandia':[101,15],'Taiwán':[121,24],
+  'Bangladés':[90,24],'Pakistán':[70,30],'Sri Lanka':[81,7.8],'Israel':[35,31],'Catar':[51,25],'Omán':[57,21],'Egipto':[30,27],'Marruecos':[-6,32],
+  'Sudáfrica':[25,-29],'Angola':[18,-12],'Nigeria':[8,9],'Kenia':[38,0],'Costa de Marfil':[-5.5,7.5]
 };
 
 const KINDS = { noticia:'Noticia', analisis:'Análisis', datos:'Datos', opinion:'Opinión de terceros' };
