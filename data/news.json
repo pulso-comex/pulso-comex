@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-06T21:40:51Z",
+  "updatedAt": "2026-10-07T01:42:33Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -115,7 +115,7 @@
       "obsDate": "2026-10-06",
       "change": "+0,1% vs. día hábil anterior",
       "trend": "up",
-      "checkedAt": "2026-10-06T21:42:03Z",
+      "checkedAt": "2026-10-07T01:43:23Z",
       "history": [
         [
           "2026-08-26",
@@ -254,7 +254,7 @@
         "date": "2026-10-05",
         "ars": 552500.0
       },
-      "checkedAt": "2026-10-06T21:42:05Z",
+      "checkedAt": "2026-10-07T01:43:25Z",
       "_prev": {
         "date": "2026-10-02",
         "ars": 554000.0
@@ -281,7 +281,7 @@
       "obsDate": "2026-09-29",
       "change": "-5,0% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-06T21:42:06Z",
+      "checkedAt": "2026-10-07T01:43:26Z",
       "history": [
         [
           "2026-08-18",
@@ -420,7 +420,7 @@
         "date": "2026-10-05",
         "ars": 287090.0
       },
-      "checkedAt": "2026-10-06T21:42:05Z",
+      "checkedAt": "2026-10-07T01:43:25Z",
       "_prev": {
         "date": "2026-10-02",
         "ars": 287090.0
@@ -451,7 +451,7 @@
         "date": "2026-10-05",
         "ars": 339975.0
       },
-      "checkedAt": "2026-10-06T21:42:05Z",
+      "checkedAt": "2026-10-07T01:43:25Z",
       "_prev": {
         "date": "2026-10-02",
         "ars": 339975.0
@@ -469,6 +469,394 @@
     }
   ],
   "items": [
+    {
+      "id": "espana-tribunal-autonomico-absuelve-a-11-activistas-acusados-de-bloquear-ingreso",
+      "datetime": "2026-10-07T01:30:47Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "España: Tribunal autonómico absuelve a 11 activistas acusados de bloquear ingreso de un buque al Puerto de Sagunto",
+      "summary": "El Tribunal Superior de Justicia de la Comunitat Valenciana (Tsjcv) decidió absolver a…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos",
+        "Europa"
+      ],
+      "countries": [
+        "España"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "court",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/espana-tribunal-autonomico-absuelve-a-11-activistas-acusados-de-bloquear-ingreso-de-un-buque-al-puerto-de-sagunto/",
+          "primary": true,
+          "author": "Gabriel"
+        }
+      ]
+    },
+    {
+      "id": "hs-schiffahrt-recibe-buques-seaboard-legend-y-seaboard-liberty",
+      "datetime": "2026-10-07T00:00:20Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "HS Schiffahrt recibe buques Seaboard Legend y Seaboard Liberty",
+      "summary": "HS Schiffahrt recibió sus dos primeros nuevos buques contenedores, el Seaboard Legend (ex Johanna Schepers) y…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [],
+      "visual": "container",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/hs-schiffahrt-recibe-buques-seaboard-legend-y-seaboard-liberty/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "filipinas-ictsi-consigue-prorroga-de-25-anos-en-concesion-de-terminales-en-subic",
+      "datetime": "2026-10-06T23:30:28Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "Filipinas: Ictsi consigue prórroga de 25 años en concesión de terminales en Subic",
+      "summary": "Subic Bay International Terminals Corp. (SBICT) e Ictsi Subic Inc. (ISI), subsidiarias de International Container Terminal…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/filipinas-ictsi-consigue-prorroga-de-25-anos-en-concesion-de-terminales-en-subic/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "oferta-ferroviaria-en-bio-bio-podria-ver-impulso-con-nuevo-contrato-para-portead",
+      "datetime": "2026-10-06T23:23:52Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "Oferta ferroviaria en Bio Bio podría ver impulso con nuevo contrato para porteadores de carga",
+      "summary": "El nuevo contrato que comenzará a regir, a partir de 2028, para los porteadores ferroviarios de…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/oferta-ferroviaria-en-bio-bio-podria-ver-impulso-con-nuevo-contrato-para-porteadores-de-carga/",
+          "primary": true,
+          "author": "Periodista 4"
+        }
+      ]
+    },
+    {
+      "id": "gerente-general-de-svti-asegura-que-puertos-de-bio-bio-estan-listos-para-recibir",
+      "datetime": "2026-10-06T23:12:29Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "Gerente general de SVTI asegura que puertos de Bio Bio están listos para recibir nuevas cargas desde Chile y el exterior",
+      "summary": "El gerente general de San Vicente Terminal Internacional (SVTI), Juan Pablo Santibáñez, aseguró que los puertos…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Argentina",
+        "Chile"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/gerente-general-de-svti-asegura-que-puertos-de-bio-bio-estan-listos-para-recibir-nuevas-cargas-desde-chile-y-el-exterior/",
+          "primary": true,
+          "author": "Periodista 4"
+        }
+      ]
+    },
+    {
+      "id": "autoridad-paraguaya-plantea-idea-de-establecer-estrategia-comun-con-brasil-y-arg",
+      "datetime": "2026-10-06T23:00:13Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "Autoridad paraguaya plantea idea de establecer estrategia común con Brasil y Argentina para administrar Hidrovía",
+      "summary": "La ministra de Obras Públicas y Comunicaciones de Paraguay (Mopc), Claudia Centurión, impulsó la idea de…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Logística",
+        "Transporte marítimo",
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Argentina",
+        "Brasil",
+        "Paraguay"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/autoridad-paraguaya-plantea-idea-de-establecer-estrategia-comun-con-brasil-y-argentina-para-administrar-hidrovia/",
+          "primary": true,
+          "author": "Gabriel"
+        }
+      ]
+    },
+    {
+      "id": "patricio-roman-en-puerto-coronel-hemos-invertido-mucho-para-tener-estandares-de",
+      "datetime": "2026-10-06T22:57:47Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "Patricio Román: “En Puerto Coronel hemos invertido mucho para tener estándares de primer nivel”",
+      "summary": "Puerto Coronel es, actualmente, el complejo portuario más eficiente de Chile. Así quedó plasmado en el…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/patricio-roman-en-puerto-coronel-hemos-invertido-mucho-para-tener-estandares-de-primer-nivel/",
+          "primary": true,
+          "author": "admin"
+        }
+      ]
+    },
+    {
+      "id": "encuentro-bio-bio-hub-logistico-congrega-a-mas-de-1-300-personas-en-gran-concepc",
+      "datetime": "2026-10-06T22:56:45Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "Encuentro Bio Bio Hub Logístico congrega a más de 1.300 personas en Gran Concepción",
+      "summary": "El Encuentro Bio Bio Hub Logístico, organizado por la Mesa Comex Bio Bio y el Gobierno…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/encuentro-bio-bio-hub-logistico-congrega-a-mas-de-1-300-personas-en-gran-concepcion/",
+          "primary": true,
+          "author": "Periodista 4"
+        }
+      ]
+    },
+    {
+      "id": "ceo-de-vitol-afirma-que-12-millones-de-barriles-diarios-de-petroleo-crudo-salen",
+      "datetime": "2026-10-06T22:14:29Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "CEO de Vitol afirma que 12 millones de barriles diarios de petróleo crudo salen de Medio Oriente",
+      "summary": "Alrededor de 12 millones de barriles diarios de petróleo crudo y 2 millones de bpd…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Energía"
+      ],
+      "visual": "tanker",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/ceo-de-vitol-afirma-que-12-millones-de-barriles-diarios-de-petroleo-crudo-salen-de-medio-oriente/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
+      ]
+    },
+    {
+      "id": "rusia-importa-176-mil-toneladas-de-productos-petroliferos-desde-puertos-surcorea",
+      "datetime": "2026-10-06T21:59:05Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "Rusia importa 176 mil toneladas de productos petrolíferos desde puertos surcoreanos",
+      "summary": "Rusia importó más de 176.000 toneladas de productos petrolíferos desde puertos surcoreanos en julio y…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones",
+        "Puertos",
+        "Asia",
+        "Europa"
+      ],
+      "countries": [
+        "Corea del Sur",
+        "Rusia"
+      ],
+      "tags": [
+        "Energía",
+        "Puertos"
+      ],
+      "visual": "tanker",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/rusia-importa-176-mil-toneladas-de-productos-petroliferos-desde-puertos-surcoreanos/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
+      ]
+    },
+    {
+      "id": "banco-mundial-argentina-crecera-2-1-en-2026-en-un-proceso-de-reformas-y-apertura",
+      "datetime": "2026-10-06T21:55:14Z",
+      "date": "2026-10-06",
+      "firstSeen": "2026-10-07T01:42:33Z",
+      "title": "Banco Mundial: Argentina crecerá 2,1% en 2026 en un proceso de reformas y apertura",
+      "summary": "El Banco Mundial proyecta que el PIB real de Argentina crecerá 2,1% en 2026, por debajo del 4,5% registrado en 2025. Para 2027 y 2028, el organismo prevé una expansión del 3,0% y 3,5%, respectivamente. De cumplirse estas previsiones, Argentina acumularía tres años consecutivos de crecimiento entre 2025 y 2027, algo…",
+      "body": [
+        "El Banco Mundial proyecta que el PIB real de Argentina crecerá 2,1% en 2026, por debajo del 4,5% registrado en 2025. Para 2027 y 2028, el organismo prevé una expansión del 3,0% y 3,5%, respectivamente. De cumplirse estas previsiones, Argentina acumularía tres años consecutivos de crecimiento entre 2025 y 2027, algo que no ocurre desde […] The post Banco Mundial: Argentina crecerá 2,1% en 2026 en un proceso de reformas y apertura appeared first on Aduana News ."
+      ],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Aduanas"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "chart",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Aduana News",
+      "sources": [
+        {
+          "name": "Aduana News",
+          "type": "Medio especializado · Argentina",
+          "url": "https://aduananews.com/banco-mundial-argentina-crecera-21-en-2026-en-un-proceso-de-reformas-y-apertura/?utm_source=rss&utm_medium=rss&utm_campaign=banco-mundial-argentina-crecera-21-en-2026-en-un-proceso-de-reformas-y-apertura",
+          "primary": true,
+          "author": "Aduana News"
+        }
+      ]
+    },
     {
       "id": "empresas-logisticas-europeas-obtendrian-resultados-financieros-positivos-en-terc",
       "datetime": "2026-10-06T21:30:13Z",
@@ -518,8 +906,10 @@
       "countries": [
         "Argentina"
       ],
-      "tags": [],
-      "visual": "customs",
+      "tags": [
+        "Soja"
+      ],
+      "visual": "agro",
       "impact": 1,
       "affectsArgentina": true,
       "kind": "noticia",
@@ -1152,7 +1542,7 @@
         "Argentina"
       ],
       "tags": [],
-      "visual": "globe",
+      "visual": "customs",
       "impact": 1,
       "affectsArgentina": true,
       "kind": "noticia",
@@ -2281,7 +2671,10 @@
       ],
       "tags": [
         "Mercosur",
-        "Agro"
+        "Soja",
+        "Carne",
+        "Agro",
+        "Aranceles"
       ],
       "visual": "agro",
       "impact": 1,
@@ -13772,7 +14165,9 @@
       "countries": [
         "Global"
       ],
-      "tags": [],
+      "tags": [
+        "China"
+      ],
       "visual": "plane",
       "impact": 1,
       "affectsArgentina": false,
@@ -14095,9 +14490,10 @@
         "Brasil"
       ],
       "tags": [
-        "Mercosur"
+        "Mercosur",
+        "Aranceles"
       ],
-      "visual": "treaty",
+      "visual": "customs",
       "impact": 1,
       "affectsArgentina": true,
       "kind": "noticia",
@@ -14253,8 +14649,10 @@
       "countries": [
         "Estados Unidos"
       ],
-      "tags": [],
-      "visual": "customs",
+      "tags": [
+        "Fletes"
+      ],
+      "visual": "ship",
       "impact": 1,
       "affectsArgentina": false,
       "kind": "noticia",
@@ -17557,7 +17955,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-06T21:40:51Z",
+    "ranAt": "2026-10-07T01:42:33Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -17573,7 +17971,7 @@
         "url": "https://www.aduananews.com/feed/",
         "ok": true,
         "items": 12,
-        "added": 0,
+        "added": 1,
         "updated": 0,
         "skipped": 3
       },
@@ -17582,63 +17980,45 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 6,
-        "updated": 1,
-        "skipped": 6
+        "added": 10,
+        "updated": 0,
+        "skipped": 5
       },
       {
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": true,
-        "items": 52,
-        "added": 4,
-        "updated": 0,
-        "skipped": 28
+        "ok": false,
+        "error": "HTTP Error 503: Service Unavailable"
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": true,
-        "items": 53,
-        "added": 4,
-        "updated": 0,
-        "skipped": 35
+        "ok": false,
+        "error": "HTTP Error 503: Service Unavailable"
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": true,
-        "items": 68,
-        "added": 4,
-        "updated": 0,
-        "skipped": 31
+        "ok": false,
+        "error": "HTTP Error 503: Service Unavailable"
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": true,
-        "items": 36,
-        "added": 1,
-        "updated": 0,
-        "skipped": 16
+        "ok": false,
+        "error": "HTTP Error 503: Service Unavailable"
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": true,
-        "items": 61,
-        "added": 4,
-        "updated": 0,
-        "skipped": 35
+        "ok": false,
+        "error": "HTTP Error 503: Service Unavailable"
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
-        "ok": true,
-        "items": 89,
-        "added": 4,
-        "updated": 0,
-        "skipped": 51
+        "ok": false,
+        "error": "HTTP Error 503: Service Unavailable"
       }
     ],
     "curatedDuplicates": [
@@ -17651,35 +18031,17 @@
         "title": "Autos híbridos y eléctricos: desde el 1° de octubre amplían los topes para importar con arancel 0 %",
         "url": "https://aduananews.com/autos-hibridos-y-electricos-desde-el-1-de-octubre-amplian-los-topes-para-importar-con-arancel-0/?utm_source=rss&utm_medium=rss&utm_campaign=autos-hibridos-y-electricos-desde-el-1-de-octubre-amplian-los-topes-para-importar-con-arancel-0",
         "curated": "decreto-1128-tope-fob-autos-electricos-hibridos"
-      },
-      {
-        "title": "La producción automotriz cayó 15,6% en septiembre, pero las exportaciones alcanzaron un récord en 2026",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPRUdSdFJULXdJSW1LMjdKczlZOGZFQ084X1NyRUhxTkpIbTZkRHlLN0tQNWVKVzVYSkNIaGlBMlRrM0w4Ynppbk5MUmJ6V3BTYUQ5ZkRtZ3ZoczFBNjJnUmpNYnNmT0EzTTFnYU4wclkyZ1F1WU9SbWV1dUEya0d5dTNTMklpTEdKRFVCbzc3NS1iRWZnZEpqTmQ1Q3prSGVrTEgtbVpJNHpZS2FTbTRSdTlPX3oxMC1oZVQyQ01NN3h1RVNjSGNPSzAySkk0dS1ac1hFU0JB?oc=5",
-        "curated": "adefa-septiembre-2026-exportaciones-suben-produccion-cae"
       }
     ],
     "excluded": 0,
-    "grouped": [
-      {
-        "main": "la-declaracion-jurada-de-destino-minero-se-incorpora-a-la-vucea",
-        "merged": [
-          "arca-incorporo-la-declaracion-jurada-de-destino-minero-a-la-ventanilla-unica-de"
-        ]
-      },
-      {
-        "main": "el-superavit-comercial-de-canada-se-amplia-ante-los-aranceles-de-ee-uu",
-        "merged": [
-          "superavit-comercial-de-canada-se-amplia-ante-aranceles-de-ee-uu"
-        ]
-      }
-    ],
+    "grouped": [],
     "googleNews": {
-      "pending": 41,
-      "resolved": 41,
-      "withSummary": 28,
+      "pending": 0,
+      "resolved": 0,
+      "withSummary": 0,
       "withPhoto": 0,
       "failed": 0,
-      "duplicates": 1
+      "duplicates": 0
     }
   },
   "stories": [
