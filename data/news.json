@@ -95,13 +95,13 @@
     },
     {
       "id": "bra-expo",
-      "label": "Exportaciones Brasil (sep., 4 semanas)",
-      "value": "USD 30.490 M",
-      "change": "+22,2% i.a.",
+      "label": "Exportaciones Brasil (septiembre)",
+      "value": "USD 34.420 M",
+      "change": "+12,9% i.a.",
       "trend": "up",
-      "period": "Septiembre 2026, hasta la 4ª semana (dato parcial del MDIC del 28/9)",
-      "source": "MDIC (vía TrendsCE)",
-      "url": "https://www.trendsce.com.br/2026/10/02/balanca-comercial-brasileira-superavit-setembro-2026/",
+      "period": "Septiembre 2026",
+      "source": "MDIC (vía Agência Brasil)",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/balanca-comercial-tem-superavit-de-us-774-bilhoes-em-setembro",
       "group": "Mundo"
     },
     {
@@ -469,6 +469,308 @@
     }
   ],
   "items": [
+    {
+      "id": "deficit-argentina-brasil-septiembre-2026-51-millones",
+      "date": "2026-10-07",
+      "kind": "datos",
+      "title": "El déficit comercial con Brasil se achicó a USD 51 millones en septiembre por la caída de las compras de autos",
+      "summary": "Las exportaciones argentinas a Brasil subieron 5,5% y las importaciones cayeron 25,2%, según datos difundidos por la consultora Abeceb. El rojo bilateral pasó de USD 578 millones a USD 51 millones en un año.",
+      "topics": [
+        "Argentina",
+        "Latinoamérica",
+        "Mercosur",
+        "Exportaciones",
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina",
+        "Brasil"
+      ],
+      "tags": [
+        "Balanza comercial",
+        "Abeceb",
+        "Sector automotriz",
+        "Brasil"
+      ],
+      "visual": "chart",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Brasil es uno de los principales socios comerciales del país: la mejora del saldo responde sobre todo a menores compras argentinas, más que a un salto de las ventas, según el análisis citado.",
+      "argentinaImpact": {
+        "change": "En septiembre el déficit con Brasil bajó a USD 51 millones (USD 578 millones un año antes): importaciones -25,2% y exportaciones +5,5%.",
+        "who": "Importadores y concesionarias del sector automotor, exportadores de camiones y vehículos especiales, energía, aluminio y lácteos con destino a Brasil.",
+        "sectors": [
+          "Automotriz",
+          "Energía",
+          "Aluminio",
+          "Lácteos"
+        ],
+        "flows": {
+          "importaciones": true,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "El intercambio entre la Argentina y Brasil cerró septiembre con un déficit de USD 51 millones para el país, contra USD 578 millones del mismo mes de 2025, según el informe de la consultora Abeceb que difundieron Infobae y Ámbito el 7 de octubre. Las exportaciones argentinas al vecino sumaron USD 1.305 millones, 5,5% más que un año antes, mientras que las importaciones desde Brasil bajaron 25,2%, a USD 1.357 millones.",
+        "La mayor parte de la mejora vino por el lado de las compras. Las cuatro principales categorías del sector automotor pasaron de USD 795 millones a USD 433 millones en un año, y las importaciones de autos de pasajeros cayeron 51,5%, a USD 201 millones, en un contexto de patentamientos de 0 km 11,4% más bajos que en septiembre de 2025. Las compras de energía eléctrica retrocedieron 63,7%, a USD 43,1 millones, con el fin del invierno.",
+        "Del lado exportador se destacaron el petróleo crudo (+42,2%, USD 61,8 millones), el aluminio (+121,1%, USD 53 millones), los camiones y vehículos especiales (+4%, USD 350,6 millones) y los quesos y lácteos (+80%, USD 31,8 millones). Ámbito, que también difundió los datos, señala que las ventas de trigo a Brasil retrocedieron porque ese país diversifica proveedores.",
+        "En los primeros nueve meses del año el déficit bilateral acumuló USD 1.686 millones, frente a USD 4.696 millones en igual período de 2025. Abeceb proyecta que el saldo negativo del año cierre cerca de USD 2.200 millones, menos de la mitad de los USD 5.201 millones de 2025, y atribuye la mejora a las menores compras argentinas antes que a un aumento de las exportaciones."
+      ],
+      "keyData": [
+        [
+          "Exportaciones a Brasil, septiembre",
+          "USD 1.305 M (+5,5%)"
+        ],
+        [
+          "Importaciones desde Brasil, septiembre",
+          "USD 1.357 M (-25,2%)"
+        ],
+        [
+          "Saldo bilateral, septiembre",
+          "-USD 51 M (vs. -USD 578 M en sep. 2025)"
+        ],
+        [
+          "Principales rubros automotores importados",
+          "USD 433 M (vs. USD 795 M)"
+        ],
+        [
+          "Saldo enero–septiembre",
+          "-USD 1.686 M (vs. -USD 4.696 M)"
+        ],
+        [
+          "Proyección Abeceb para 2026",
+          "≈ -USD 2.200 M"
+        ]
+      ],
+      "explainer": {
+        "what": "En septiembre la Argentina tuvo con Brasil un déficit comercial de USD 51 millones, contra USD 578 millones un año antes.",
+        "why": "Brasil es un socio clave y el saldo mejoró sobre todo porque las importaciones cayeron 25,2%, con un derrumbe de las compras de autos, mientras las exportaciones subieron 5,5%.",
+        "who": "Importadores del sector automotor, concesionarias y exportadores argentinos de energía, aluminio, camiones y vehículos especiales, y lácteos que venden a Brasil.",
+        "products": [
+          "Autos de pasajeros",
+          "Camiones y vehículos especiales",
+          "Petróleo crudo",
+          "Aluminio",
+          "Quesos y lácteos",
+          "Energía eléctrica",
+          "Trigo"
+        ],
+        "next": "Abeceb proyecta que el déficit bilateral de 2026 cierre cerca de USD 2.200 millones, menos de la mitad de los USD 5.201 millones de 2025.",
+        "nextSource": {
+          "name": "Infobae (informe de Abeceb)",
+          "url": "https://www.infobae.com/economia/2026/10/07/el-deficit-comercial-con-brasil-se-redujo-casi-90-en-un-ano-que-esconde-la-fuerte-mejora/"
+        }
+      },
+      "sources": [
+        {
+          "name": "Infobae (informe de Abeceb)",
+          "type": "Medio de comunicación",
+          "url": "https://www.infobae.com/economia/2026/10/07/el-deficit-comercial-con-brasil-se-redujo-casi-90-en-un-ano-que-esconde-la-fuerte-mejora/",
+          "primary": true
+        },
+        {
+          "name": "Ámbito",
+          "type": "Medio de comunicación",
+          "url": "https://www.ambito.com/economia/el-deficit-brasil-se-redujo-91-anual-septiembre-derrumbe-las-importaciones-que-factores-influyeron-n6330894"
+        }
+      ],
+      "absorbs": [
+        "argentina-reduce-importaciones-desde-brasil-y-achica-el-deficit-comercial",
+        "deficit-con-brasil-suben-exportaciones-pero-sigue-el-rojo",
+        "la-balanza-comercial-con-brasil-registro-un-deficit-de-us-51-millones-en-septiem",
+        "intercambio-con-brasil-notable-baja-de-las-importaciones-y-nuevo-crecimiento-de"
+      ]
+    },
+    {
+      "id": "brasil-superavit-septiembre-2026-7740-millones-mdic",
+      "date": "2026-10-06",
+      "kind": "datos",
+      "title": "Brasil tuvo un superávit comercial de USD 7.740 millones en septiembre y recortó su proyección anual",
+      "summary": "Las exportaciones brasileñas crecieron 12,9% y las importaciones bajaron 2,4%, según el MDIC. El gobierno redujo a USD 84.400 millones el saldo positivo esperado para 2026.",
+      "topics": [
+        "Latinoamérica",
+        "Exportaciones",
+        "Importaciones",
+        "Economía internacional"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "tags": [
+        "MDIC",
+        "Balanza comercial",
+        "Brasil",
+        "Petróleo"
+      ],
+      "visual": "chart",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Brasil es uno de los principales destinos de las exportaciones argentinas; su balanza muestra hacia dónde se mueve la demanda y la oferta del principal socio del Mercosur.",
+      "argentinaImpact": {
+        "change": "Brasil exportó USD 34.420 millones en septiembre (+12,9%) e importó USD 26.680 millones (-2,4%); las compras de manufacturas cayeron 3,2%.",
+        "who": "Exportadores argentinos que venden a Brasil y empresas que compiten con productos brasileños en terceros mercados.",
+        "sectors": [
+          "Petróleo",
+          "Mineral de cobre",
+          "Soja y derivados",
+          "Combustibles"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "El Ministerio de Desarrollo, Industria, Comercio y Servicios de Brasil (MDIC) informó el 6 de octubre que la balanza comercial del país cerró septiembre con un superávit de USD 7.740 millones, contra USD 3.140 millones del mismo mes de 2025. Las exportaciones llegaron a USD 34.420 millones, 12,9% más que un año antes, y las importaciones a USD 26.680 millones, con una baja de 2,4%. Según Agência Brasil, fue el segundo mejor septiembre de la serie, detrás de 2023.",
+        "La industria extractiva explicó buena parte del salto exportador: vendió USD 9.440 millones (+39,8%), con fuertes subas del petróleo crudo y del mineral de cobre. La industria de transformación exportó USD 17.670 millones (+5,3%), con avances de la harina de soja y los combustibles, y el agro USD 7.000 millones (+4,8%), con subas de la soja y del café en grano. Por destino, crecieron las ventas a Europa (+51,9%) y a América del Norte (+30,6%), mientras que las dirigidas a Asia bajaron 2,5%.",
+        "Del lado de las compras, las importaciones de la industria de transformación cayeron 3,2%, a USD 24.786 millones, mientras subieron las del agro y la industria extractiva. En los primeros nueve meses del año, el superávit acumulado fue de USD 62.400 millones, 34,8% más que en igual período de 2025.",
+        "El MDIC revisó a la baja su proyección para todo 2026: ahora espera un superávit de USD 84.400 millones, frente a los USD 90.000 millones estimados antes, con exportaciones por USD 382.500 millones e importaciones por USD 298.100 millones."
+      ],
+      "keyData": [
+        [
+          "Exportaciones septiembre",
+          "USD 34.420 M (+12,9%)"
+        ],
+        [
+          "Importaciones septiembre",
+          "USD 26.680 M (-2,4%)"
+        ],
+        [
+          "Saldo septiembre",
+          "USD 7.740 M (vs. USD 3.140 M en sep. 2025)"
+        ],
+        [
+          "Saldo enero–septiembre",
+          "USD 62.400 M (+34,8%)"
+        ],
+        [
+          "Proyección de saldo 2026 (MDIC)",
+          "USD 84.400 M (antes USD 90.000 M)"
+        ]
+      ],
+      "explainer": {
+        "what": "Brasil cerró septiembre con un superávit comercial de USD 7.740 millones, con exportaciones en alza de 12,9% e importaciones en baja de 2,4%.",
+        "why": "Es el balance del principal socio del Mercosur: muestra exportaciones impulsadas por petróleo y cobre y menores compras de manufacturas, y el gobierno bajó a USD 84.400 millones el superávit esperado para el año.",
+        "who": "Exportadores argentinos que venden a Brasil y empresas que compiten con productos brasileños en terceros mercados.",
+        "products": [
+          "Petróleo crudo",
+          "Mineral de cobre",
+          "Harina de soja",
+          "Combustibles",
+          "Soja",
+          "Café"
+        ],
+        "next": "El MDIC proyecta para 2026 un superávit de USD 84.400 millones, con exportaciones por USD 382.500 millones e importaciones por USD 298.100 millones.",
+        "nextSource": {
+          "name": "Jornal de Brasília",
+          "url": "https://jornaldebrasilia.com.br/noticias/economia/balanca-comercial-tem-superavit-em-setembro-de-us-7741-bilhoes/"
+        }
+      },
+      "sources": [
+        {
+          "name": "Agência Brasil (datos del MDIC)",
+          "type": "Agencia pública de noticias",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/balanca-comercial-tem-superavit-de-us-774-bilhoes-em-setembro",
+          "primary": true
+        },
+        {
+          "name": "Jornal de Brasília",
+          "type": "Medio de comunicación",
+          "url": "https://jornaldebrasilia.com.br/noticias/economia/balanca-comercial-tem-superavit-em-setembro-de-us-7741-bilhoes/"
+        },
+        {
+          "name": "O Povo",
+          "type": "Medio de comunicación",
+          "url": "https://www.opovo.com.br/noticias/economia/2026/10/06/balanca-comercial-tem-superavit-de-uss-774-bilhoes-em-setembro.html"
+        }
+      ]
+    },
+    {
+      "id": "eeuu-deficit-comercial-agosto-2026-105600-millones",
+      "date": "2026-10-06",
+      "kind": "datos",
+      "title": "El déficit comercial de EE.UU. subió 13,7% en agosto, a USD 105.600 millones, por importaciones récord",
+      "summary": "Las importaciones estadounidenses crecieron 4,3% y las exportaciones 1,4%, según el Departamento de Comercio. En lo que va del año, el déficit es 19,9% menor que en 2025.",
+      "topics": [
+        "Estados Unidos",
+        "Importaciones",
+        "Exportaciones",
+        "Economía internacional",
+        "Aranceles"
+      ],
+      "countries": [
+        "Estados Unidos",
+        "México",
+        "China",
+        "Canadá"
+      ],
+      "tags": [
+        "Balanza comercial",
+        "Census Bureau",
+        "BEA"
+      ],
+      "visual": "chart",
+      "impact": 1,
+      "affectsArgentina": false,
+      "body": [
+        "El déficit comercial de bienes y servicios de Estados Unidos aumentó 13,7% en agosto y llegó a USD 105.600 millones, según los datos de la Oficina del Censo y la Oficina de Análisis Económico (BEA) difundidos el 6 de octubre. En julio, con cifras revisadas, había sido de USD 92.800 millones. Es el nivel más alto desde marzo de 2025, de acuerdo con EFE.",
+        "Las importaciones crecieron 4,3%, a USD 420.800 millones, un récord según Bloomberg Línea, mientras que las exportaciones subieron 1,4%, a USD 315.200 millones. El déficit de bienes fue de USD 136.600 millones y el superávit de servicios se mantuvo en torno a USD 31.000 millones. La suba de las compras se explicó por suministros y materiales industriales —entre ellos petróleo y derivados— y por bienes de capital.",
+        "Por país, los mayores déficits de bienes fueron con México (USD 27.700 millones), China (USD 16.400 millones), la Unión Europea (USD 11.000 millones) y Canadá (USD 7.100 millones). Pese al salto mensual, en los primeros ocho meses del año el déficit acumulado es 19,9% menor que en igual período de 2025, con exportaciones 11,8% más altas e importaciones 4,4% mayores."
+      ],
+      "keyData": [
+        [
+          "Déficit agosto",
+          "USD 105.600 M (+13,7% mensual)"
+        ],
+        [
+          "Importaciones agosto",
+          "USD 420.800 M (+4,3%)"
+        ],
+        [
+          "Exportaciones agosto",
+          "USD 315.200 M (+1,4%)"
+        ],
+        [
+          "Déficit de bienes",
+          "USD 136.600 M"
+        ],
+        [
+          "Déficit acumulado enero–agosto",
+          "-19,9% vs. 2025"
+        ]
+      ],
+      "explainer": {
+        "what": "El déficit comercial de Estados Unidos aumentó 13,7% en agosto y llegó a USD 105.600 millones, el nivel más alto desde marzo de 2025.",
+        "why": "Muestra que, pese a los aranceles, las importaciones estadounidenses subieron 4,3% en el mes, impulsadas por bienes de capital y suministros industriales, aunque en el acumulado del año el déficit sigue 19,9% por debajo de 2025.",
+        "who": "Exportadores que venden a Estados Unidos y empresas atentas a la política arancelaria estadounidense, en especial de México, China, la Unión Europea y Canadá.",
+        "products": [
+          "Bienes de capital",
+          "Petróleo y derivados",
+          "Suministros y materiales industriales"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Infobae (EFE)",
+          "type": "Agencia de noticias",
+          "url": "https://www.infobae.com/america/agencias/2026/10/06/el-deficit-comercial-de-eeuu-aumento-un-137-en-agosto-hasta-105600-millones-de-dolares/",
+          "primary": true
+        },
+        {
+          "name": "Bloomberg Línea",
+          "type": "Medio especializado",
+          "url": "https://www.bloomberglinea.com/mundo/estados-unidos/deficit-comercial-de-eeuu-se-amplia-a-us105600-millones-mientras-importaciones-alcanzan-record/"
+        }
+      ],
+      "story": "aranceles-eeuu",
+      "absorbs": [
+        "deficit-comercial-de-eeuu-se-expandio-en-agosto-a-pesar-de-aranceles-de-trump"
+      ]
+    },
     {
       "id": "un-organismo-britanico-propone-aranceles-de-hasta-el-82-9-sobre-las-plataformas",
       "datetime": "2026-10-07T09:02:16Z",
