@@ -482,6 +482,212 @@
   ],
   "items": [
     {
+      "id": "hidrovia-resolucion-59-2026-consejo-control-via-navegable-troncal",
+      "date": "2026-10-07",
+      "datetime": "2026-10-07T11:52:23-03:00",
+      "kind": "noticia",
+      "title": "Hidrovía: la ANPYN definió quiénes integran el Consejo de Control de la Vía Navegable Troncal",
+      "summary": "La Resolución 59/2026 de la Agencia Nacional de Puertos y Navegación, publicada en el Boletín Oficial, sumó seis provincias, cámaras de usuarios, áreas técnicas y la propia agencia al órgano que seguirá el funcionamiento de la vía por la que sale cerca del 80% de las exportaciones argentinas.",
+      "topics": [
+        "Argentina",
+        "Logística",
+        "Puertos",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Hidrovía",
+        "Vía Navegable Troncal",
+        "ANPYN",
+        "Río Paraná",
+        "Dragado"
+      ],
+      "visual": "port",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Exportadores y operadores logísticos que usan la vía troncal tendrán, a través de sus cámaras, un ámbito formal para seguir cómo se opera y mantiene la hidrovía.",
+      "argentinaImpact": {
+        "change": "Quedó definida la integración del Consejo de Control de la Vía Navegable Troncal, con representantes de provincias, usuarios, áreas técnicas y la ANPYN.",
+        "who": "Exportadores agroindustriales, terminales portuarias privadas, armadores y operadores fluviales, prácticos y provincias ribereñas.",
+        "sectors": [
+          "Agroindustria",
+          "Puertos",
+          "Transporte fluvial"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": true,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "La Agencia Nacional de Puertos y Navegación (ANPYN) publicó el 7 de octubre en el Boletín Oficial la Resolución 59/2026, que fija la integración del Consejo de Control de la Vía Navegable Troncal, el órgano creado por la Resolución 47/2026 de la misma agencia. Su función es seguir, analizar e intercambiar información sobre la operación y el desarrollo de la hidrovía, en el marco de la concesión de modernización, operación y mantenimiento de su señalización, dragado y redragado.",
+        "El Consejo se organiza en cuatro sectores. Por las provincias participan Santa Fe, Entre Ríos, Misiones, Corrientes, Formosa y Buenos Aires; según ArgenPorts y BAE Negocios, Chaco también fue invitada pero no figura entre las integrantes. Por los usuarios, la Bolsa de Comercio de Rosario, la Cámara de la Industria Aceitera (CIARA), la Unión Industrial Argentina, Confederaciones Rurales Argentinas, la Cámara de Puertos Privados Comerciales y la Comisión Permanente de Transporte de la Cuenca del Plata.",
+        "El sector técnico y social reúne a la Prefectura Naval Argentina, el Servicio de Hidrografía Naval, la Cámara de Actividades de Practicaje y Pilotaje y el Sindicato del Personal de Dragado y Balizamiento, mientras que la autoridad de aplicación y control queda a cargo de la Gerencia de Coordinación Técnica de la ANPYN. Falta definir quién representará a los armadores y operadores del tramo sur: adhirieron la Cámara Naviera Argentina, el Centro de Navegación, APM Terminals y MSC, que tienen diez días corridos para indicar qué entidad ocupará ese lugar.",
+        "La resolución también da diez días corridos a todos los integrantes para designar a sus representantes y apoderados. Según la ANPYN, citada por Infobae y ArgenPorts, la vía navegable troncal, que va desde el kilómetro 1238 del río Paraná (Confluencia) hasta las aguas profundas naturales del Río de la Plata exterior, reúne unas 60 terminales portuarias y por ella sale alrededor del 80% de las exportaciones del país."
+      ],
+      "keyData": [
+        [
+          "Norma",
+          "Resolución 59/2026 de la ANPYN (Boletín Oficial, 7 de octubre de 2026)"
+        ],
+        [
+          "Provincias integrantes",
+          "6: Santa Fe, Entre Ríos, Misiones, Corrientes, Formosa y Buenos Aires"
+        ],
+        [
+          "Entidades de usuarios",
+          "6"
+        ],
+        [
+          "Plazo para designar representantes",
+          "10 días corridos"
+        ],
+        [
+          "Terminales portuarias sobre la vía",
+          "≈ 60"
+        ],
+        [
+          "Peso en las exportaciones argentinas",
+          "≈ 80%"
+        ]
+      ],
+      "explainer": {
+        "what": "La ANPYN oficializó con la Resolución 59/2026 quiénes integran el Consejo de Control de la Vía Navegable Troncal (hidrovía).",
+        "why": "Es el ámbito donde provincias, usuarios y áreas técnicas seguirán la operación de la vía por la que sale alrededor del 80% de las exportaciones argentinas.",
+        "who": "Exportadores agroindustriales, terminales portuarias privadas, armadores y operadores fluviales, prácticos, el gremio del dragado y las provincias ribereñas.",
+        "next": "Los integrantes tienen diez días corridos para designar a sus representantes y los armadores del tramo sur, el mismo plazo para elegir qué entidad los representará.",
+        "nextSource": {
+          "name": "ArgenPorts",
+          "url": "https://argenports.com/nota/hidrovia-oficializan-la-integracion-del-consejo-de-control-de-la-via-navegable-troncal/"
+        }
+      },
+      "sources": [
+        {
+          "name": "Infobae",
+          "type": "Medio de comunicación",
+          "url": "https://www.infobae.com/movant/2026/10/07/la-principal-via-fluvial-del-comercio-exterior-argentino-tendra-un-nuevo-esquema-de-control/",
+          "primary": true
+        },
+        {
+          "name": "ArgenPorts",
+          "type": "Medio especializado",
+          "url": "https://argenports.com/nota/hidrovia-oficializan-la-integracion-del-consejo-de-control-de-la-via-navegable-troncal/"
+        },
+        {
+          "name": "BAE Negocios",
+          "type": "Medio de comunicación",
+          "url": "https://www.baenegocios.com/economia/conforman-el-consejo-de-control-de-la-hidrovia-con-representacion-de-gobierno-provincias-y-usuarios/"
+        }
+      ],
+      "absorbs": [
+        "la-principal-via-fluvial-del-comercio-exterior-argentino-tendra-un-nuevo-esquema",
+        "logistica-se-creo-el-consejo-de-control-de-la-hidrovia-quienes-seran-los-represe"
+      ]
+    },
+    {
+      "id": "exportaciones-vino-septiembre-2026-inv-24-mosto-34",
+      "date": "2026-10-07",
+      "datetime": "2026-10-07T10:33:00-03:00",
+      "kind": "datos",
+      "title": "Las exportaciones de vino subieron 24,2% en septiembre, pero el valor acumulado del año cae 4,7%",
+      "summary": "Según el INV, en septiembre se exportaron 230.744 hectolitros de vino y el mosto concentrado creció 34,5%. En nueve meses el volumen de vino sube 3,2%, mientras que su valor FOB retrocede a USD 474,4 millones.",
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Vino",
+        "Mosto concentrado",
+        "INV",
+        "Economías regionales",
+        "Vitivinicultura"
+      ],
+      "visual": "agro",
+      "impact": 1,
+      "affectsArgentina": true,
+      "argentinaNote": "El sector vende más volumen que en 2025, pero con menos ingresos por las ventas de vino en lo que va del año, según los datos oficiales del INV.",
+      "argentinaImpact": {
+        "change": "Septiembre cerró con 230.744 hl de vino exportado (+24,2%) y suba de 34,5% del mosto; en enero–septiembre el valor FOB del vino cae 4,7% y el del mosto sube 9,3%.",
+        "who": "Bodegas exportadoras, productores de mosto concentrado y economías regionales de Cuyo.",
+        "sectors": [
+          "Vitivinicultura"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "Las exportaciones argentinas de vino sumaron 230.744 hectolitros en septiembre de 2026, un 24,2% más que en el mismo mes de 2025, informó el 7 de octubre el Instituto Nacional de Vitivinicultura (INV). El vino fraccionado creció 26% y el vino a granel, 18%; dentro del granel, los vinos color bajaron 4,6% y los blancos subieron 329,4%. Las ventas externas de mosto concentrado aumentaron 34,5% en el mes.",
+        "En el acumulado de enero a septiembre se exportaron 1.480.437 hectolitros de vino, 3,2% más que un año antes. Por tipo, los vinos sin mención varietal crecieron 42,2% y los espumosos 17,4%, mientras que los varietales retrocedieron 2,5%.",
+        "El dato de valor muestra otra cara: en los nueve meses, el vino exportado generó USD 474.428.000 FOB, un 4,7% menos que en el mismo período de 2025, pese a que el volumen creció 3,2%. El INV no atribuyó en su comunicado una causa a esa diferencia.",
+        "El mosto, en cambio, mejoró en volumen y en valor: acumuló 72.385 toneladas (+20,1%) y USD 105.466.000 FOB (+9,3%). El INV no detalló en su comunicado el valor ni los destinos de las exportaciones de septiembre."
+      ],
+      "keyData": [
+        [
+          "Vino exportado, septiembre 2026",
+          "230.744 hl (+24,2% i.a.)"
+        ],
+        [
+          "Fraccionado / granel, septiembre",
+          "+26% / +18%"
+        ],
+        [
+          "Mosto concentrado, septiembre",
+          "+34,5% i.a."
+        ],
+        [
+          "Vino, enero–septiembre",
+          "1.480.437 hl (+3,2%)"
+        ],
+        [
+          "Valor FOB vino, enero–septiembre",
+          "USD 474.428.000 (-4,7%)"
+        ],
+        [
+          "Mosto, enero–septiembre",
+          "72.385 t (+20,1%) · USD 105.466.000 FOB (+9,3%)"
+        ]
+      ],
+      "explainer": {
+        "what": "Argentina exportó 230.744 hectolitros de vino en septiembre, 24,2% más que un año antes, y el mosto concentrado creció 34,5%, según el INV.",
+        "why": "El volumen exportado en el año sube 3,2%, pero el valor FOB del vino cae 4,7%: el sector vende más, aunque ingresa menos dólares por esas ventas.",
+        "who": "Bodegas exportadoras, elaboradores de mosto concentrado y las economías regionales vitivinícolas.",
+        "products": [
+          "Vino fraccionado",
+          "Vino a granel",
+          "Espumosos",
+          "Mosto concentrado"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Instituto Nacional de Vitivinicultura (Argentina.gob.ar)",
+          "type": "Organismo oficial",
+          "url": "https://www.argentina.gob.ar/noticias/crecieron-las-exportaciones-vitivinicolas-en-septiembre-242-en-vinos-y-345-en-mosto",
+          "primary": true
+        },
+        {
+          "name": "Enolife",
+          "type": "Medio especializado",
+          "url": "https://enolife.com.ar/es/crecio-242-la-exportacion-de-vino-y-345-la-de-mosto-en-setiembre-2026-vs-setiembre-2025/"
+        }
+      ],
+      "absorbs": [
+        "mas-vino-argentino-al-mundo-las-exportaciones-crecieron-24-2-en-septiembre",
+        "crecieron-las-exportaciones-vitivinicolas-en-septiembre-24-2-en-vinos-y-34-5-en"
+      ]
+    },
+    {
       "id": "espana-euroports-concreta-operacion-de-carga-de-proyecto-en-puerto-de-tarragona",
       "datetime": "2026-10-08T09:00:26Z",
       "date": "2026-10-08",
