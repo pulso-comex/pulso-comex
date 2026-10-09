@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-09T01:44:00Z",
+  "updatedAt": "2026-10-09T09:43:57Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -115,7 +115,7 @@
       "obsDate": "2026-10-08",
       "change": "-0,1% vs. día hábil anterior",
       "trend": "down",
-      "checkedAt": "2026-10-09T01:44:36Z",
+      "checkedAt": "2026-10-09T09:44:24Z",
       "history": [
         [
           "2026-08-28",
@@ -254,7 +254,7 @@
         "date": "2026-10-07",
         "ars": 560000.0
       },
-      "checkedAt": "2026-10-09T01:44:39Z",
+      "checkedAt": "2026-10-09T09:44:27Z",
       "_prev": {
         "date": "2026-10-06",
         "ars": 560000.0
@@ -289,7 +289,7 @@
       "obsDate": "2026-10-06",
       "change": "-0,1% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-09T01:44:39Z",
+      "checkedAt": "2026-10-09T09:44:27Z",
       "history": [
         [
           "2026-08-25",
@@ -428,7 +428,7 @@
         "date": "2026-10-07",
         "ars": 294800.0
       },
-      "checkedAt": "2026-10-09T01:44:39Z",
+      "checkedAt": "2026-10-09T09:44:27Z",
       "_prev": {
         "date": "2026-10-06",
         "ars": 294000.0
@@ -467,7 +467,7 @@
         "date": "2026-10-07",
         "ars": 342300.0
       },
-      "checkedAt": "2026-10-09T01:44:39Z",
+      "checkedAt": "2026-10-09T09:44:27Z",
       "_prev": {
         "date": "2026-10-06",
         "ars": 343000.0
@@ -493,6 +493,703 @@
     }
   ],
   "items": [
+    {
+      "id": "los-fletes-se-mantienen",
+      "datetime": "2026-10-09T09:14:46Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Los fletes se mantienen",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Fletes"
+      ],
+      "visual": "ship",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Asociación de Cargadores de España",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.ace-cargadores.com/2026/10/09/los-fletes-se-mantienen/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tMldEdG1Cc2RNMG45d18xTXZhTWtvc2VnXzExOElEdWhLN3lIa0lFTnFPYmMyV0pXMzUzOGF3UUZESDN2d0h2SDlXOWxjRzU0NjFET2RJOFJMdGEzOEk1UXRhMTc0X0ZEancwZWdzYk9hMDR5?oc=5"
+    },
+    {
+      "id": "buque-de-msc-arriba-por-primera-vez-al-puerto-de-coronel-tras-navegar-por-el-est",
+      "datetime": "2026-10-09T09:00:49Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Buque de MSC arriba por primera vez al Puerto de Coronel tras navegar por el estrecho de Magallanes",
+      "summary": "Un buque de nueva construcción de Mediterranean Shipping Company (MSC) arribó por primera vez al Puerto…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/buque-de-msc-arriba-por-primera-vez-al-puerto-de-coronel-tras-navegar-por-el-estrecho-de-magallanes/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
+      ]
+    },
+    {
+      "id": "se-espera-que-la-tasa-de-desempleo-de-canada-aumente-al-6-5-mientras-los-arancel",
+      "datetime": "2026-10-09T08:30:24Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Se espera que la tasa de desempleo de Canadá aumente al 6.5% mientras los aranceles estadounidenses ponen a prueba el mercado laboral",
+      "summary": "Statistics Canada publicará el viernes su Encuesta de Población Activa de septiembre, mientras los mercados anticipan una modesta recuperación del empleo tras la fuerte caída de agosto.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles"
+      ],
+      "countries": [
+        "Canadá"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "FXStreet",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.fxstreet.es/news/se-espera-que-la-tasa-de-desempleo-de-canada-aumente-al-65-mientras-los-aranceles-estadounidenses-ponen-a-prueba-el-mercado-laboral-202610090830",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQOENtMWxHVTJOZzFCVUdYRlpXNHRpSS04ZFhXbU5VVl9hdlRWT1ZxXy1uRWhqSDdEazhBSG5HTjE2S250dVFaSklVd0pVb3dndnYzM0xPamUxeldIVjcwSTFwaU9vNTR4cUVTeFNNQzRyTTBvbkl5LWhvbF9LdG9XQVViRFdvU2FDenRXbDZ4dU9pWFJaSkNCbG1FVDZxNXRCb0NMUjh0SGdIaGlSSmVhcDMxNkx4blFFTjlNcEJJaWpfVnlnVVRsYlp1dUFxRS1QdFh0VWdfaUR2Qkw0RXpMQXkxVHBJQnZVWnR6WXpGckFhWnZWRTFNRHlwQTd2Z2NSTWZj?oc=5"
+    },
+    {
+      "id": "que-son-los-aranceles-y-como-afectan-a-la-economia",
+      "datetime": "2026-10-09T08:22:33Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Qué son los aranceles y cómo afectan a la economía",
+      "summary": "Los aranceles protegen a las empresas nacionales, pero también pueden encarecer los productos, perjudicar al consumidor y desencadenar guerras comerciales en...",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Negocios.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.negocios.com/articulo/geopolitica/que-son-aranceles-como-afectan-economia/20261009102233495356.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMGpoZlZNNmdiZW8wSDFhN2tpTXU4N2lUbXR2UHVrTERHNzB6cGtiRHVfVVZHLWJybWNUblc2VjRGQUpsT1pZc3Zrd3lKd0VQYkZxOUVQVnZWb1pIbVpBQ3pfZ21rY3JwRTNQd3EyZEFZa25rTDRaTWxzMjgzVGFqV25IWm1famJLRDhwUy15b2JscGpSLUVkZTFEMEw5c1VxNnZDNldVYnp5N1JfX2VvctIBtgFBVV95cUxQY2dmRFZyWmcwTzJnZExfb1FrRmJMTUwxQTlxWXd1cmlwblA3WGdXeGZ5bWNud3Btd3hwQTNFamQ3ekV6a0owSHJ2NW5sMXlzV2xlZjRPUXV6N1M5Y0ZjUkZod0t3QzJURzQwU0NTaEdqSmF2ZEVIRFp0OVdydzJrMFp1Q2NpaXVkOUg1dlhFdFJlcEtjMlBzYm5tMF9VZHdQbGN6WktpV2JsZkNBek5IX05MV0poZw?oc=5"
+    },
+    {
+      "id": "aladi-abordo-los-desafios-de-la-seguridad-portuaria-para-fortalecer-las-cadenas",
+      "datetime": "2026-10-09T08:17:33Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "ALADI abordó los desafíos de la seguridad portuaria para fortalecer las cadenas logísticas de la región",
+      "summary": "La ALADI realizó el 6 de octubre, en formato virtual, el Seminario Regional sobre Seguridad Portuaria, una instancia orientada a abordar los principales desafíos vinculados con la seguridad de la cadena logística portuaria y su… | Noticias del MERCOSUR: política, economía y actualidad regional del Prensa Mercosur.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Prensa Mercosur",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://prensamercosur.org/2026/10/09/aladi-abordo-los-desafios-de-la-seguridad-portuaria-para-fortalecer-las-cadenas-logisticas-de-la-region/",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "Radio UdeC",
+          "type": "También publicó esta noticia",
+          "url": "https://www.radioudec.cl/mesa-de-comercio-exterior-abordo-oportunidades-de-la-region-ante-desafios-actuales/",
+          "alsoIn": true,
+          "title": "Mesa de Comercio Exterior abordó oportunidades de la región ante desafíos actuales"
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZHU4Ui1fMGJnUUl3dG5YUzJRckR1VGxLN0YzdGVEYWRQa21DY0F3dUJFcy1JTzE3a2NlckNocDMxRW43Z00zbThVUGJUeXc4bWs3LVB1eDVfVl9TOThmajk1SmUtLUJPVFJsc09PYjVVRXljbWdieVdMd1pGZXRvcThCS2l3NDN0ek85djJlTHF4M1ZJOWNNWGNRaFhldEwyZWw2UXF3Mlh1NGJqa3VBbGE3aE1ORFliTVVaZWJYaGZ2T215aHZfdFM5Y21IdmtfVk9Ba21uamMyQQ?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQWFNQkxTclNJUEpMTmJQQ2t0cGxBa0JZNEpiVHVIaHFlalU5cVhJVW81YWJqcFpjNXhXNnZEMFJHMGJmVmplVk1ST3JTcHFDRWFoVEVxbF8tU2Qza1hDX0Z3YVV2d1lLWmVGaDBHLXRyS1o5c240VFVBdm92cW5SSDJwNFNTUXVQS1RWd1ZOdzdSa3VqY3lIN0dnSFMyWURTQUgxRVlPNjFOdUZj",
+        "https://www.radioudec.cl/mesa-de-comercio-exterior-abordo-oportunidades-de-la-region-ante-desafios-actuales"
+      ],
+      "mergedIds": [
+        "mesa-de-comercio-exterior-abordo-oportunidades-de-la-region-ante-desafios-actual"
+      ]
+    },
+    {
+      "id": "la-razonabilidad-de-las-tasas-de-interes-aduaneras-en-argentina-la-dicotomia-ent",
+      "datetime": "2026-10-09T08:00:00Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-08T21:43:00Z",
+      "title": "La razonabilidad de las tasas de interés aduaneras en Argentina: la dicotomía entre el fallo Colecction S.R.L. y la regresión normativa en las repeticiones de tributos aduaneros",
+      "summary": "I. Introducción El reciente pronunciamiento de la Corte Suprema de Justicia de la Nación en la causa Colecction S.R.L. (1), dictado el 23 de septiembre de 2026, consolida un límite ineludible al ejercicio de la potestad recaudatoria del Estado. En dicho precedente, el Máximo Tribunal declaró la inaplicabilidad de la…",
+      "body": [
+        "I. Introducción El reciente pronunciamiento de la Corte Suprema de Justicia de la Nación en la causa Colecction S.R.L. (1), dictado el 23 de septiembre de 2026, consolida un límite ineludible al ejercicio de la potestad recaudatoria del Estado. En dicho precedente, el Máximo Tribunal declaró la inaplicabilidad de la tasa de interés resarcitorio del […] The post La razonabilidad de las tasas de interés aduaneras en Argentina: la dicotomía entre el fallo Colecction S.R.L. y la regresión normativa en las repeticiones de tributos aduaneros appeared first on Aduana News ."
+      ],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Aduanas",
+        "Impuestos",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "court",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Aduana News",
+      "sources": [
+        {
+          "name": "Aduana News",
+          "type": "Medio especializado · Argentina",
+          "url": "https://aduananews.com/la-razonabilidad-de-las-tasas-de-interes-aduaneras-en-argentina-la-dicotomia-entre-el-fallo-colecction-s-r-l-y-la-regresion-normativa-en-las-repeticiones-de-tributos-aduaneros/?utm_source=rss&utm_medium=rss&utm_campaign=la-razonabilidad-de-las-tasas-de-interes-aduaneras-en-argentina-la-dicotomia-entre-el-fallo-colecction-s-r-l-y-la-regresion-normativa-en-las-repeticiones-de-tributos-aduaneros",
+          "primary": true,
+          "author": "Noel Lascano"
+        }
+      ]
+    },
+    {
+      "id": "nissan-entre-los-aranceles-de-eu-y-china",
+      "datetime": "2026-10-09T07:39:00Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Nissan, entre los aranceles de EU y China",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "China",
+        "Asia",
+        "Europa"
+      ],
+      "countries": [
+        "China",
+        "Unión Europea"
+      ],
+      "tags": [
+        "Aranceles",
+        "China"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "elindependiente.mx",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://elindependiente.mx/opinion/2026/10/09/nissan-entre-los-aranceles-de-eu-y-china/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOckJQLXV6THpZbm1UUzJ1WHpMUVB5RGVBbjNxRnRLT3UySGpuYUZyVzUtdGxiZmg3Qi1lQmdEY1FRbG5HSk5qUnRndTkxY29DTkNsamF1LUZzdlVHdVlzRHg1ZnRpa3h0WUdLSzA4M0N2N3MxRDA5TE5OVHdOc0dzY2hyU2NSVVA3WVB5bnlyZTY?oc=5"
+    },
+    {
+      "id": "modifican-chimenea-del-carnival-freedom-para-acceder-a-mas-puertos",
+      "datetime": "2026-10-09T07:00:21Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Modifican chimenea del Carnival Freedom para acceder a más puertos",
+      "summary": "El Carnival Freedom se prepara para regresar al servicio luego de 35 días en dique seco…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/modifican-chimenea-del-carnival-freedom-para-acceder-a-mas-puertos/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "europa-intenta-en-pekin-lo-que-sus-aranceles-no-lograron-frenar-la-avalancha-de",
+      "datetime": "2026-10-09T06:30:00Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Europa intenta en Pekín lo que sus aranceles no lograron: frenar la avalancha de híbridos enchufables chinos",
+      "summary": "El comisario europeo Maroš Šefčovič encabeza dos días de conversaciones cruciales en Pekín. Bruselas busca un pacto para contener la llegada masiva de híbridos enchufables chinos, una tecnología que hasta ahora esquivaba los recargos aduaneros aplicados a los coches 100% eléctricos.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "China",
+        "Asia"
+      ],
+      "countries": [
+        "China"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Motor.es",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.motor.es/noticias/europa-intenta-hoy-en-pekin-lo-que-aranceles-no-lograron-frenar-avalancha-hibridos-enchufables-chinos-2026116883.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSVBCeEpndEN4cVZkbm5wVXpLSTlvcjdveldacFp1SlU3blYxQmR3b2dUSy04c2stTjRENVVYZ0tHSjBTaEV4cHlEb2pfN05LZzc4a1JBdHRrYmd4Ry1GOEpjazd2bjg4VGtGeklvb3doYng3ZWJodU5EYzd3RnZZZjZXYWhmbDNuYXZ0X081dGlfTXJCbUVMM3NmQ3M0QXAxWG9TVnRhWG9XWmZWVGI5dWVKNThOOFpNd1JmOHF1RFBDcGxDSXJjenE5UVRWZzZOSkY3MHhGZDNScFdBWEVheA?oc=5"
+    },
+    {
+      "id": "definen-port-everglades-como-puerto-base-del-disney-believe",
+      "datetime": "2026-10-09T06:00:46Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Definen Port Everglades como puerto base del Disney Believe",
+      "summary": "El nuevo barco de la flota Disney Cruise Line, Disney Believe, zarpará el 18 de diciembre…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/definen-port-everglades-como-puerto-base-del-disney-believe/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "los-productos-vietnamitas-aceleran-su-busqueda-de-oportunidades-en-argentina-y-m",
+      "datetime": "2026-10-09T06:00:15Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Los productos vietnamitas aceleran su búsqueda de oportunidades en Argentina y Mercosur.",
+      "summary": "El mercado argentino aún ofrece muchas oportunidades para los productos vietnamitas, especialmente en electrónica, calzado, textiles, anacardos, alimentos procesados, maquinaria y equipos. Sin embargo, las empresas deben abordar el mercado de forma selectiva, monitoreando de cerca las necesidades reales y los…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Mercosur",
+        "Asia"
+      ],
+      "countries": [
+        "Argentina",
+        "Vietnam"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Vietnam.vn",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.vietnam.vn/es/hang-viet-tang-toc-tim-co-hoi-tai-argentina-va-mercosur",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTFNNSWFkTkZYUHBQOUtOdzFOX19RbmdhcFdTcGFDbU9TWU1OMlFpOTFDQ2hmamVtZTNXd3RDTXFxU0VLT2l6WlJfNkt3emxSdWFEVTJnUVNzV284MjJaX0RlQWJkTmFvak9PUWZlRU9jb0N5Z25vSFVodTVPaDRwU253Z0NpdnRJ?oc=5"
+    },
+    {
+      "id": "el-desorbitado-coste-de-los-fletes-amenaza-el-apetito-de-asia-por-el-crudo-estad",
+      "datetime": "2026-10-09T05:21:33Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "El desorbitado coste de los fletes amenaza el apetito de Asia por el crudo estadounidense",
+      "summary": "El encarecimiento del transporte marítimo en petroleros, que ha alcanzado niveles récord, está dejando el crudo estadounidense fuera del alcance de los refinadores asiáticos y los empuja a buscar...",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Fletes"
+      ],
+      "visual": "tanker",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "MarketScreener España",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://es.marketscreener.com/noticias/el-desorbitado-coste-de-los-fletes-amenaza-el-apetito-de-asia-por-el-crudo-estadounidense-ce785ddfdf81f423",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNc2VmZkp3WjJkeWpHS3lzamwxMlk3V3dOTkRFQmZZdlZlVmRZQ3ZlYkNTSkt2UC1FcGtSNV95YUUtd08tdW93N2RIcy1nZEUzclRiUVg5eTU5YV9hWWdGSDlxUGJodENOR3laMkZNd2I4RXRKZVllWVBZNFZwLXpoWU1idDlYS1JjTS1GTVYtMXlXSkZJQWdTS1Mzc29KTm50NDB5ZWdRVnZfaWk0YXlLZ0VmMElEeWhKS2FsUjlTWEJNM2xuZ0RobzdqdkY4c3YyUEw2d1NZYmVXdkEzUmc?oc=5"
+    },
+    {
+      "id": "espana-puerto-de-cartagena-logra-incremento-de-66-5-en-movimiento-de-frutas-hort",
+      "datetime": "2026-10-09T05:00:32Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "España: Puerto de Cartagena logra incremento de 66,5% en movimiento de frutas, hortalizas y legumbres",
+      "summary": "El Puerto de Cartagena movilizó 71.386 toneladas de frutas, hortalizas y legumbres entre enero y agosto…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Europa"
+      ],
+      "countries": [
+        "España"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/espana-puerto-de-cartagena-logra-incremento-de-665-en-movimiento-de-frutas-hortalizas-y-legumbres/",
+          "primary": true,
+          "author": "Periodista 4"
+        }
+      ]
+    },
+    {
+      "id": "riadas-de-superpetroleros-acuden-en-masa-a-oriente-medio-atraidos-por-los-fletes",
+      "datetime": "2026-10-09T04:45:33Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Riadas de superpetroleros acuden en masa a Oriente Medio atraídos por los fletes millonarios y provocan un 'efecto cascada': ya no falta crudo, sino buques para sacarlo de Ormuz",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Transporte marítimo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Fletes",
+        "Energía"
+      ],
+      "visual": "tanker",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "El Economista",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.eleconomista.es/mercados-cotizaciones/amp/14019611/riadas-de-superpetroleros-acuden-en-masa-a-oriente-medio-atraidos-por-los-fletes-millonarios-y-provocan-un-efecto-cascada-ya-no-falta-crudo-sino-buques-para-sacarlo-de-ormuz",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxNRVNIb241dDlmRXlybDIzSUpjQVZiUWVKRlVXSEJqLTl3V0ZSei1jd2VOaHdHVDZzVnZuQWRhZTM5cERhWXdCT25EUE93MVdxSXB3UXZtVXNDYnJvdC1LZ3BJSEJCQWRmZkhYUlUtdkYwOURmWnplYTM1cTc4NFNoVURTUjFzdlNaZWZSMXdpcmtyODZTXzE3S25QSjFPS2JsNDlPMlAyRGhYVzkyVlA0QlFYZHVvTmczbm1FODIxUlUyRDEwNnpDZkhGekF2bWlFaFZkeHRtS01oQ2k3MkhjZ2VVZUVoaWJWeFdGTkxFSUNMUVQ2bWJYcG80dHhBMVpQX1IyU252SWRpdmJMTUtEUWN5bTJ5bmJUclVkNjEyOEZIWnRYTXhGVTJwX1g5X00yX2FzaXVHSTB3ZVZidjl5YXBXVW9XMENYY2hHa1ZSRGdhQmNxRXcw0gHXAkFVX3lxTE1FU0hvbjV0OWZFeXJsMjNJSmNBVmJRZUpGVVdIQmotOXdXRlJ6LWN3ZU5od0dUNnNWdm5BZGFlMzlwRGFZd0JPbkRQT3cxV3FJcHdRdm1Vc0Nicm90LUtncElIQkJBZGZmSFhSVS12RjA5RGZaemVhMzVxNzg0U2hVRFNSMXN2U1plZlIxd2lya3I4NlNfMTdLblBKMU9LYmw0OU8yUDJEaFhXOTJWUDRCUVhkdW9OZzNubUU4MjFSVTJEMTA2ekNmSEZ6QXZtaUVoVmR4dG1LTWhDaTcySGNnZVVlRWhpYlZ4V0ZOTEVJQ0xRVDZtYlhwbzR0eEExWlBfUjJTbnZJZGl2YkxNS0RRY3ltMnluYlRyVWQ2MTI4RkhadFhNeEZVMnBfWDlfTTJfYXNpdUdJMHdlVmJ2OXlhcFdVb1cwQ1hjaEdrVlJEZ2FCY3FFdzA?oc=5"
+    },
+    {
+      "id": "port-tarragona-analiza-como-necesidades-de-defensa-pueden-impulsar-nuevas-infrae",
+      "datetime": "2026-10-09T04:00:05Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Port Tarragona analiza cómo necesidades de Defensa pueden impulsar nuevas infraestructuras portuarias",
+      "summary": "Puerto Tarragona y el Centro Tecnológico Leitat organizaron una jornada para dar a conocer las oportunidades…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/port-tarragona-analiza-como-necesidades-de-defensa-pueden-impulsar-nuevas-infraestructuras-portuarias/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "la-uia-lleva-a-aduana-un-mapa-del-contrabando-que-medidas-reclama",
+      "datetime": "2026-10-09T03:57:30Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "La UIA lleva a Aduana un mapa del contrabando: qué medidas reclama",
+      "summary": "En una de sus primeras apariciones junto a empresarios luego de presentar una renuncia que no fue aceptada como director general de Aduanas, Andrés Velis se reunió con la Mesa Ejecutiva de la Unión Industrial… | Noticias del MERCOSUR: política, economía y actualidad regional del Prensa Mercosur.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aduanas"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Prensa Mercosur",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://prensamercosur.org/2026/10/09/la-uia-lleva-a-aduana-un-mapa-del-contrabando-que-medidas-reclama/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRk1KMFpnOEJidkh1RWRWalhIME9EU011dDNSR3BYT3RQSVZ4TGxwVG50dzlqcVBlYjc5d2w3bFR6aGpPNjdRWG9FczN2NXg5YjNVNnBQUXhqVXlJVWJjTmd6TXBxRVdHRGZuc0tXMXJURHNHT040dkQxYkVCWEZPOFJxTl9nUUV3bTg1UlNKSTYyZzlvT1FhaG13OWdiem5KanZXZzlqTQ?oc=5"
+    },
+    {
+      "id": "puerto-de-santa-cruz-de-la-palma-recibe-primera-recalada-del-nieuw-statendam",
+      "datetime": "2026-10-09T02:33:38Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Puerto de Santa Cruz de La Palma recibe primera recalada del Nieuw Statendam",
+      "summary": "El Puerto de Santa Cruz de La Palma recibió por primera vez al Nieuw Statendam, de…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/puerto-de-santa-cruz-de-la-palma-recibe-primera-recalada-del-nieuw-statendam/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante",
+      "datetime": "2026-10-09T02:32:50Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Tarifas de transporte marítimo de contenedores caen 2% por menor demanda durante festividad china",
+      "summary": "El índice mundial de contenedores de Drewry (WCI) registró una caída de 2% durante la semana…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "China",
+        "Asia"
+      ],
+      "countries": [
+        "China"
+      ],
+      "tags": [
+        "China"
+      ],
+      "visual": "container",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante-festividad-china/",
+          "primary": true,
+          "author": "admin"
+        }
+      ]
+    },
+    {
+      "id": "puerto-de-esbjerg-celebra-inauguracion-de-proyecto-greensand-de-captura-y-almace",
+      "datetime": "2026-10-09T02:30:05Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Puerto de Esbjerg celebra inauguración de Proyecto Greensand de captura y almacenamiento de CO2",
+      "summary": "El Rey Frederik de Dinamarca y el fundador de Ineos, Sir Jim Ratcliffe, inauguraron el Proyecto…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/puerto-de-esbjerg-celebra-inauguracion-de-proyecto-greensand-de-captura-y-almacenamiento-de-co2/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
     {
       "id": "explora-iii-visita-puerto-de-nueva-york-en-su-viaje-inaugural",
       "datetime": "2026-10-09T01:30:24Z",
@@ -721,10 +1418,24 @@
           "url": "https://www.perfil.com/noticias/masperfil/pymes-y-exportaciones-que-tan-facil-es-para-las-empresas-argentinas-vender-al-exterior.phtml",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "Radio Fan",
+          "type": "También publicó esta noticia",
+          "url": "https://www.lafanradio.com/articulo/rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desregulacion-del-gobierno.php",
+          "alsoIn": true,
+          "title": "RDEco: qué necesita una PyME argentina para exportar y cómo impacta la desregulación del Gobierno"
         }
       ],
       "gnTried": "2026-10-09T01:44:00Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNjlWM2h0ajQtcFpqR2lsa3ZNam9KbWlKdVVvNUtZVl9uWlNna0prcnU2dTE4dW5uSlMyUzNnZ0p4ZEFDYm43STdBWG9PdFVNNUZnQ2JON0tPLVdtLUh6LTM0N1hjNGR2MGRqanBZN0ZSSThNT1Rfc2lVQmNHQi1HbTRGcG9YSWVrMlFNVEhacTY5TmQ2bHpjSVpMNVhra0VpeHdUUkc0ODByeWI3eXZiNjRDS0lhamtPNlpSbXdZT1FzU3VxbFRCSEhXT2l6Z0HSAdQBQVVfeXFMTXNaRlBxa0ZYZUl3UVlpYUZMakw1MmRsQWVIdjVtNzBIVm0wWUczcnpvbHVxaUtUY1hzTndQZWRTeTNwajlWUncyN041ZFFfS1dsMzBJRF96UEtMSUZwT2d0UWN5VjF6NkpISmc2bkVJWUFVQjZIS3cwSjVraS1XVXllaGZxWTZ6MEw5a1BmMHRRMFQ4RHk4T1NoWUwzTTR4OG00ZHR5VS1XZjRhbUxJbGFPYXBIOVN5TENnOHJ5X3hYZmpUdnpDbW9hQnFSOVUyeUdSTlo?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNjlWM2h0ajQtcFpqR2lsa3ZNam9KbWlKdVVvNUtZVl9uWlNna0prcnU2dTE4dW5uSlMyUzNnZ0p4ZEFDYm43STdBWG9PdFVNNUZnQ2JON0tPLVdtLUh6LTM0N1hjNGR2MGRqanBZN0ZSSThNT1Rfc2lVQmNHQi1HbTRGcG9YSWVrMlFNVEhacTY5TmQ2bHpjSVpMNVhra0VpeHdUUkc0ODByeWI3eXZiNjRDS0lhamtPNlpSbXdZT1FzU3VxbFRCSEhXT2l6Z0HSAdQBQVVfeXFMTXNaRlBxa0ZYZUl3UVlpYUZMakw1MmRsQWVIdjVtNzBIVm0wWUczcnpvbHVxaUtUY1hzTndQZWRTeTNwajlWUncyN041ZFFfS1dsMzBJRF96UEtMSUZwT2d0UWN5VjF6NkpISmc2bkVJWUFVQjZIS3cwSjVraS1XVXllaGZxWTZ6MEw5a1BmMHRRMFQ4RHk4T1NoWUwzTTR4OG00ZHR5VS1XZjRhbUxJbGFPYXBIOVN5TENnOHJ5X3hYZmpUdnpDbW9hQnFSOVUyeUdSTlo?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeVphRFJPZVFuY2gwY1IyLUpDZnJvOHdzaUlWckxxNkpNLVo0aWRlTG5MWExoY0VVM0ZhdmJlc1FuekliUmhyQnFBNW0welU3WHNEb1pnb0NHQVd0WHZhNml3ekNzSGdXMVhUem9OV09ZNTU1S2x5djdYbFNxdkJrSmMyVjUxTVpybVBxQUJ2M2xiNzctMHg3Vm1uR1RfVW5VX0pPWWdhbGxNU0hHVDQxa0tvLVdXa3JjYkdNeW5rTU5zbng1REx0eVBTcDJtWVA3ZWc",
+        "https://www.lafanradio.com/articulo/rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desregulacion-del-gobierno.php"
+      ],
+      "mergedIds": [
+        "rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desreg-2"
+      ]
     },
     {
       "id": "exportaciones-de-automoviles-de-mexico-caen-en-septiembre-ante-impacto-de-arance",
@@ -766,6 +1477,41 @@
       "aliasUrls": [
         "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTGZhY0VtMFJiVjBHLUFEcWdLZ0FzUFozOVBGZkdkd21MclJkVVRxaTZ6bmFwOWN0RmJiX0RGR1RzczF4YmJiaHdjenB6NF80cEx0U1EyMklUUVF4TkdQWnNlenF0ZVpNbnljQmdSTXpkWi0yeTliTmFZZ04ydDMyRHFtV0ZJdFVIV3c5U2JYWGdpRWpmN2Z2elFpekNIWUNGZl9LYkE4UExoaDhTSGcyNkFycXh2cFNuQVk2RA"
       ]
+    },
+    {
+      "id": "fuerte-crecimiento-de-las-exportaciones-vitivinicolas-argentinas",
+      "datetime": "2026-10-08T22:43:37Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Fuerte crecimiento de las exportaciones vitivinícolas argentinas",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Radionacional.com.ar",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.radionacional.com.ar/fuerte-crecimiento-de-las-exportaciones-vitivinicolas-argentinas/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY1RDeU9MZDA4TmNBdHhDMml3LXFvaUlzYzZTdFpCbXh2TVFtUWNzbGI3WFBZQW4xSVdPZG9McF9TLTBZeVlZcnZEQnZBT291Zk03RUFZamFiVDctd3RPWkc3WFBVVXVEaW4xV1BYMENRSUJRUmtyY2xrajEtUnZsR1JDcmZLdExqUUtDMnpJSVp0RGgwWmt3RkhTZkstc1U?oc=5"
     },
     {
       "id": "espana-peninsula-completa-su-primera-operacion-de-suministro-de-gnl-en-puerto-de",
@@ -1196,6 +1942,40 @@
       ]
     },
     {
+      "id": "que-pasaria-con-los-alquileres-y-el-comercio-exterior-si-el-congreso-deroga-el-m",
+      "datetime": "2026-10-08T18:08:37Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "Qué pasaría con los alquileres y el comercio exterior si el Congreso deroga el mega DNU 70/2023",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Noticias de Bariloche",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.noticiasdebariloche.com.ar/que-pasaria-con-los-alquileres-y-el-comercio-exterior-si-el-congreso-deroga-el-mega-dnu-70-2023/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPWlhpUVd3SVVPdUlZZU50TERYbVF6ejlyN21yeW9iRDZYSy1aNFE0QktiaWtIblpvRzJxY190OWlfMzB1TWJTRzdVa0UtNjJJX0RZbHJxRU9uVEc0djVxYTRUUVRGa2ZPVWJZSFE5NnZ5bmFBems0UXI3d1F3R2hXRDRUY2Izb281LXJxRkxjeEpBNEFwZVFObWNjbnllSjlCc1dxaWJvRzFTSWZEczZkbWZoNGp2ZU5uYk1NRENpcmJNVnVmcGxLZ25oZVlJMDJT0gHWAUFVX3lxTE9PLXE3N2dpTTBxYmJnN3Z1SEhMdURteDdaZjdCTUJjWlJjMENpSGIzTWtrbkFRdzlCaWc5TjYyaklWQXM3V3RSekM0QUU5ODZTSlM1TjBlamxDVF91MFVhY1F2Z2R5RUV0ZERuQjRab2lBNEFQTnRNNjNkTFVQdGlYblM4cUtaU1VoTVpScEI5VllZdzRhSEUyczFHaG5DSHRRQ0FDNWJoYm5NcXQwMUxKVUNjcG92VVBnckFIWWE1bnhKQXF4aUExeHRPR0tfenJ6YkdSN3c?oc=5"
+    },
+    {
       "id": "la-omc-eleva-del-1-9-al-3-9-su-prevision-de-crecimiento-del-comercio-mundial",
       "datetime": "2026-10-08T18:00:45Z",
       "date": "2026-10-08",
@@ -1231,6 +2011,41 @@
           "author": "Aduana News"
         }
       ]
+    },
+    {
+      "id": "el-costo-del-transporte-frena-el-potencial-exportador-de-la-madera-argentina",
+      "datetime": "2026-10-08T17:29:57Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T09:43:57Z",
+      "title": "El costo del transporte frena el potencial exportador de la madera argentina",
+      "summary": "Los envíos de pino aserrado crecieron 22,89% entre enero y agosto, pero los costos internos limitan su expansión. FAIMA plantea integrar rutas, trenes y vías navegables para ganar competitividad",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Revista Chacra",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.revistachacra.com.ar/actualidad/el-costo-del-transporte-frena-el-potencial-exportador-de-la-madera-argentina/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T09:43:57Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUjJQcEI4SU5QcDRFX3ZEYWg1T0tVMWFwQUlTWFIyME1uNzlaS2tMMll3WWc5VzJtLVRLZDc0STJydlprY0JaMlEzQmhMTUNuRHpHWjRaS1A3RDAtTVp3OGZuaDU4dmNGcjM1T3U3b0pqblBXZms3dnl2RzJFdTZqbEhGUG5TVHFBdzRUMUtQM1ZQbUthU0dtUFYwYWl2R1RsOWVLY0ZzNUJIbFVBVnpoWTVCS1Zid1NCX0lTZdIBvAFBVV95cUxNUjJQcEI4SU5QcDRFX3ZEYWg1T0tVMWFwQUlTWFIyME1uNzlaS2tMMll3WWc5VzJtLVRLZDc0STJydlprY0JaMlEzQmhMTUNuRHpHWjRaS1A3RDAtTVp3OGZuaDU4dmNGcjM1T3U3b0pqblBXZms3dnl2RzJFdTZqbEhGUG5TVHFBdzRUMUtQM1ZQbUthU0dtUFYwYWl2R1RsOWVLY0ZzNUJIbFVBVnpoWTVCS1Zid1NCX0lTZQ?oc=5"
     },
     {
       "id": "crudo-de-africa-occidental-el-petroleo-angoleno-se-hunde-por-el-encarecimiento-d",
@@ -1370,10 +2185,24 @@
           "url": "https://www.clarin.com/rural/cayo-norma-ue-argentina-cuadriplico-exportaciones-biodiesel-esperan-envios-superen-300000-toneladas-2026_0_7ySwLNsDM3.html",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "Rosario Finanzas",
+          "type": "También publicó esta noticia",
+          "url": "https://rosariofinanzas.ar/noticias/exportaciones-de-biodiesel-argentino-a-la-ue-se-cuadruplicaron-tras-caida-de-norma-de-la-ue-esperan-superar-300-000-tone",
+          "alsoIn": true,
+          "title": "Exportaciones de biodiésel argentino a la UE se cuadruplicaron tras caída de norma de la UE; esperan superar 300.000 toneladas en 2026"
         }
       ],
       "gnTried": "2026-10-08T17:42:57Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUkU2eGNINHlBUmNWaUtES2pyYnpyU1l5eGw5VXdyT0hfOHZ2SDgxNC1VY3E3clMxQWUyaWUyNURnTDljZUpVV2FyZElwdVFPVUZ0MUY1VFFCMm05bGxmbWhBTGpWUy1Ib1BHNW5JRVZ0bE5PR2N1VXRDV2p3NkxBZ2tFdlcwOXBCQ3hwUDZDUHVMNzY3Yk1jVmJGRTk5ODAwdFNaRW5JQkMyakdJODE3U3RNZlEzYUNucFI5dXhVNlV1OVRwbG9abGRKYTJLMjR6Y3dSWXZuYVBUZFd4UWdmR0R4ajRndw?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUkU2eGNINHlBUmNWaUtES2pyYnpyU1l5eGw5VXdyT0hfOHZ2SDgxNC1VY3E3clMxQWUyaWUyNURnTDljZUpVV2FyZElwdVFPVUZ0MUY1VFFCMm05bGxmbWhBTGpWUy1Ib1BHNW5JRVZ0bE5PR2N1VXRDV2p3NkxBZ2tFdlcwOXBCQ3hwUDZDUHVMNzY3Yk1jVmJGRTk5ODAwdFNaRW5JQkMyakdJODE3U3RNZlEzYUNucFI5dXhVNlV1OVRwbG9abGRKYTJLMjR6Y3dSWXZuYVBUZFd4UWdmR0R4ajRndw?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPUURPemt1aGVnMlk4NlpPV3BNQXdKcHZVbjNxSFJwUnFEQmpOaGFoTmJsdjdMQmdnT0V1WkpBYmZBMVJWTHVvTVhiTUhEVDFZbDJSSXYzZTFMeEE0ZWpyZHRVZEVqYnZjUmRtNHE4QWlFb2xxbC1ZLXVmN0p1RFlTR0t5LUkzTHpZc2JqSm4zSHg5SFp5MW9rUkRreURQQzR0ZGEwd011UFIzaXdkcVlXV1o1cUxiaHJDT1plRkZFM0xjVFRjWjVIMDY0TXViMlBwVWhza2lOZmtCUGN2ZmFUa3paTktwVVVGMjBIbg",
+        "https://rosariofinanzas.ar/noticias/exportaciones-de-biodiesel-argentino-a-la-ue-se-cuadruplicaron-tras-caida-de-norma-de-la-ue-esperan-superar-300-000-tone"
+      ],
+      "mergedIds": [
+        "exportaciones-de-biodiesel-argentino-a-la-ue-se-cuadruplicaron-tras-caida-de-nor"
+      ]
     },
     {
       "id": "alerta-mundial-en-ormuz-eeuu-denuncia-ataques-iranies-y-moviliza-a-las-navieras",
@@ -1605,10 +2434,24 @@
           "url": "https://www.diarioelcanal.com/las-navieras-asumen-el-riesgo-de-volver-al-canal-de-suez-para-ser-mas-competitivas/",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "Asociación de Cargadores de España",
+          "type": "También publicó esta noticia",
+          "url": "https://www.ace-cargadores.com/2026/10/09/las-navieras-asumen-el-riesgo-de-volver-al-canal-de-suez-para-ser-mas-competitivas/",
+          "alsoIn": true,
+          "title": "Las navieras asumen el riesgo de volver al Canal de Suez para ser más competitivas"
         }
       ],
       "gnTried": "2026-10-08T17:42:57Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ0ZzUDhPcnJ2a0hqRjBRa2xQUzRfTFlGeWJ4aWp3LTBnbTBGTXducEdybzhPUks0ZHZQZlk2VDZyMGRobDFFcVFDRlZtZEhLajJYbzUxX2UzRVF4eU1lNWFhTFhxWXdENkVLTld1eUxnV3YxNU5LbUZRMElVTHJHam5iV0gxYnBrdVlwbDJTQ1h2RlNhSVo1YmpybGcwMkRvMW9BOVdWeGlHdzJraDB4NjlwZw?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ0ZzUDhPcnJ2a0hqRjBRa2xQUzRfTFlGeWJ4aWp3LTBnbTBGTXducEdybzhPUks0ZHZQZlk2VDZyMGRobDFFcVFDRlZtZEhLajJYbzUxX2UzRVF4eU1lNWFhTFhxWXdENkVLTld1eUxnV3YxNU5LbUZRMElVTHJHam5iV0gxYnBrdVlwbDJTQ1h2RlNhSVo1YmpybGcwMkRvMW9BOVdWeGlHdzJraDB4NjlwZw?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRVNValZDYkk2c0RULU45Y2F3ZTl1QnBhV2JrUjZsNENyeUt5RWp0LVFNZ1N3QVZ1a0JUOG80N2tBWVRxSmo2UHZucGREZVY3Ml96UUsyUVlXUFl5enpPS0g4cXp0NkotSWtzdkhSekVXeEZBbXhaSnE1Y21qZ0NQUjJEWVhDbmNWN1ZvVjQ2ZmoxcUdIWW1TZVU5bS1kZERFcWVMTC1GR3l4X01HSEZ2YzIzZVc5OWVLUkNmNmoxS1pkUzQ",
+        "https://www.ace-cargadores.com/2026/10/09/las-navieras-asumen-el-riesgo-de-volver-al-canal-de-suez-para-ser-mas-competitivas"
+      ],
+      "mergedIds": [
+        "las-navieras-asumen-el-riesgo-de-volver-al-canal-de-suez-para-ser-mas-compet-2"
+      ]
     },
     {
       "id": "swan-hellenic-entre-las-cinco-mejores-navieras-de-expedicion",
@@ -2235,14 +3078,14 @@
       "body": [],
       "keyData": [],
       "topics": [
-        "Argentina"
+        "Regulaciones"
       ],
       "countries": [
         "Argentina"
       ],
       "tags": [],
       "visual": "globe",
-      "impact": 1,
+      "impact": 2,
       "affectsArgentina": true,
       "kind": "noticia",
       "label": "Automática",
@@ -3722,43 +4565,6 @@
       ],
       "gnTried": "2026-10-08T09:43:42Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM1ZtWHM5ODBCRktIZUc4aFpFNWxscjMyVW8zOFlkYXZ2allwLWpCLTRlbnpxSUE4QnhTQXB4TmRhbE5SR1dOQUhpU1lUUkZUNzZmWXJIZWV4MXhMTkhwWF9zRTVweGhuTGRlTWhyUnEwbldGdmZ4QWg5bHZBTGlGQ0w3V2xXMHJPdm45TXZsVFdPeF92TXBfMVJuT0lKTm1JXzZNb3RERTRVbzJmVFhr?oc=5"
-    },
-    {
-      "id": "la-razonabilidad-de-las-tasas-de-interes-aduaneras-en-argentina-la-dicotomia-ent",
-      "datetime": "2026-10-07T22:39:00Z",
-      "date": "2026-10-07",
-      "firstSeen": "2026-10-08T21:43:00Z",
-      "title": "La razonabilidad de las tasas de interés aduaneras en Argentina: la dicotomía entre el fallo Colecction S.R.L. y la regresión normativa en las repeticiones de tributos aduaneros",
-      "summary": "I. Introducción El reciente pronunciamiento de la Corte Suprema de Justicia de la Nación en la causa Colecction S.R.L. (1), dictado el 23 de septiembre de 2026, consolida un límite ineludible al ejercicio de la potestad recaudatoria del Estado. En dicho precedente, el Máximo Tribunal declaró la inaplicabilidad de la…",
-      "body": [
-        "I. Introducción El reciente pronunciamiento de la Corte Suprema de Justicia de la Nación en la causa Colecction S.R.L. (1), dictado el 23 de septiembre de 2026, consolida un límite ineludible al ejercicio de la potestad recaudatoria del Estado. En dicho precedente, el Máximo Tribunal declaró la inaplicabilidad de la tasa de interés resarcitorio del […] The post La razonabilidad de las tasas de interés aduaneras en Argentina: la dicotomía entre el fallo Colecction S.R.L. y la regresión normativa en las repeticiones de tributos aduaneros appeared first on Aduana News ."
-      ],
-      "keyData": [],
-      "topics": [
-        "Argentina",
-        "Aduanas",
-        "Impuestos",
-        "Regulaciones"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [],
-      "visual": "court",
-      "impact": 2,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Aduana News",
-      "sources": [
-        {
-          "name": "Aduana News",
-          "type": "Medio especializado · Argentina",
-          "url": "https://aduananews.com/la-razonabilidad-de-las-tasas-de-interes-aduaneras-en-argentina-la-dicotomia-entre-el-fallo-colecction-s-r-l-y-la-regresion-normativa-en-las-repeticiones-de-tributos-aduaneros/?utm_source=rss&utm_medium=rss&utm_campaign=la-razonabilidad-de-las-tasas-de-interes-aduaneras-en-argentina-la-dicotomia-entre-el-fallo-colecction-s-r-l-y-la-regresion-normativa-en-las-repeticiones-de-tributos-aduaneros",
-          "primary": true,
-          "author": "Noel Lascano"
-        }
-      ]
     },
     {
       "id": "argentina-adjudican-explotacion-de-terminal-i-de-puerto-de-villa-constitucion-tr",
@@ -5294,40 +6100,6 @@
       ],
       "gnTried": "2026-10-07T17:43:55Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWVpnSmtQZ0hPbEtGd2JnaEJNM0JYM29DNVBxQWxOZDJBdUU3NGhYR2U5eWM4QUlEQTZsUkdsWW9hUEZNSXEzbFlzZHplTDNZMld3aXd2RUtxaV8zRDVudzd2R0dTeFJzV3pjN3ZUdmpTN3U3eXdkV1B1VGFabkVpOVdHNUc0MTF6Nl9tNXFEVWJaRmdNVHQ2OVUyeWl5Um5ZMkNjZkN2Qlh1WGFwaGlqSUJORjNYTnJCMHpr0gG7AUFVX3lxTE9ZWmdKa1BnSE9sS0Z3YmdoQk0zQlgzb0M1UHFBbE5kMkF1RTc0aFhHZTl5YzhBSURBNmxSR2xZb2FQRk1JcTNsWXNkemVMM1kyV3dpd3ZFS3FpXzNENW53N3ZHR1N4UnNXemM3dlR2alM3dTd5d2RXUHVUYVpuRWk5V0c1RzQxMXo2X201cURVYlpGZ01UdDY5VTJ5aXlSblkyQ2NmQ3ZCWHVYYXBoaWpJQk5GM1hOckIwems?oc=5"
-    },
-    {
-      "id": "mesa-de-comercio-exterior-abordo-oportunidades-de-la-region-ante-desafios-actual",
-      "datetime": "2026-10-07T14:34:13Z",
-      "date": "2026-10-07",
-      "firstSeen": "2026-10-07T21:42:45Z",
-      "title": "Mesa de Comercio Exterior abordó oportunidades de la región ante desafíos actuales",
-      "summary": "",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [],
-      "visual": "globe",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Comercio exterior Argentina",
-      "sources": [
-        {
-          "name": "Radio UdeC",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://www.radioudec.cl/mesa-de-comercio-exterior-abordo-oportunidades-de-la-region-ante-desafios-actuales/",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-07T21:42:45Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQWFNQkxTclNJUEpMTmJQQ2t0cGxBa0JZNEpiVHVIaHFlalU5cVhJVW81YWJqcFpjNXhXNnZEMFJHMGJmVmplVk1ST3JTcHFDRWFoVEVxbF8tU2Qza1hDX0Z3YVV2d1lLWmVGaDBHLXRyS1o5c240VFVBdm92cW5SSDJwNFNTUXVQS1RWd1ZOdzdSa3VqY3lIN0dnSFMyWURTQUgxRVlPNjFOdUZj?oc=5"
     },
     {
       "id": "buscan-que-mas-empresas-consideren-al-puerto-de-coquimbo-como-una-alternativa-pa",
@@ -14866,7 +15638,7 @@
           "author": ""
         }
       ],
-      "gnTried": "2026-10-08T09:43:42Z"
+      "gnTried": "2026-10-09T09:43:57Z"
     },
     {
       "id": "portcastello-presenta-estrategia-para-albergar-hub-industrial-de-energia-eolica",
@@ -24460,7 +25232,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-09T01:44:00Z",
+    "ranAt": "2026-10-09T09:43:57Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -24477,7 +25249,7 @@
         "ok": true,
         "items": 12,
         "added": 0,
-        "updated": 0,
+        "updated": 1,
         "skipped": 2
       },
       {
@@ -24485,16 +25257,16 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 5,
+        "added": 8,
         "updated": 0,
-        "skipped": 9
+        "skipped": 5
       },
       {
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 43,
-        "added": 2,
+        "items": 42,
+        "added": 1,
         "updated": 0,
         "skipped": 27
       },
@@ -24503,45 +25275,45 @@
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
         "items": 49,
-        "added": 0,
+        "added": 1,
         "updated": 0,
-        "skipped": 34
+        "skipped": 35
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 64,
+        "items": 63,
         "added": 4,
         "updated": 0,
-        "skipped": 37
+        "skipped": 38
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 49,
+        "items": 51,
         "added": 2,
         "updated": 0,
-        "skipped": 26
+        "skipped": 27
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 57,
+        "items": 56,
         "added": 4,
         "updated": 0,
-        "skipped": 40
+        "skipped": 37
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 90,
+        "items": 83,
         "added": 4,
         "updated": 0,
-        "skipped": 57
+        "skipped": 47
       }
     ],
     "curatedDuplicates": [
@@ -24552,18 +25324,13 @@
       },
       {
         "title": "La principal vía fluvial del comercio exterior argentino tendrá un nuevo esquema de control",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMFgtRUp6dFRCQUtIRG8zdzVPRXA1MGtXTFF0RU5FUy1HZ2lPMlBXQ2tmX1kyVUNEWnV4TFR1bmdUQnZUWll1NjR4a3NHX2xXMTFPRzZfUDhCR19Gb0x4NmJKRWdNVGxXMG82SmZ5QU13VHZfV2kyd0lUZFpqTldzd1NCN0RjcVBzRDJsSy1Ib0htVW84a3NiM2cxZkFrLWZvZ0hCa3pBSjhzWFVROXpYLXBfYzVsM2h0QS1UX0NaVnU4eHF4S2Q0dnRoM2dXeUnSAeoBQVVfeXFMT0o4MV9KeDZObTJsY05fQ0FlR01lTS1VS3VHUDBkSllZQkF5SEREcU45d3VYdkV6bk5vLWxWcGVpaUZnQkFJYVVPaDQwSUxJVjJCNFVDc1pGek1ieTU0ay1TSVZ6dDg5a0F1UVZGVzRxZ2wxamVXNGdVNzRUU3RLd0gwQ19DTENTaVRaU0szNWhqbGhQUzZ3MmtESmZOdzVNSnd6VmgyT2l3Sk16YnZPM0ZZWGRNSVZJNDFUM2w4U2FaOHBaZEs4OTRyNzNaUUQ2SUg1YnZTRFFUcEhUVXV5QnJLT0ljTUxlX09R?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNVNNbU5DRWp1UFZCejdLSFNMR25Hc0p5bmEwOUxsX0FMQ3hrazRqU1UzeFlvZnRVUnFxckQ0b04xaUNuSk95Z2libXJVUWF2REh1NGdWZzFlT1BJZGhZUlpTcmRHV21hMUhmamRGM3YtTHRuVUVKQzE5ZEZMSWhDd3ppM0NhMlFUQUxTUVIwQTJsbGRxR3RQODJtbndVbHhtQ1IyN0YxZjdzUEt6N0l6VnJ1clJHS0Z2WVJEVmd1NkJxdGdLdHZwdGdyVFk2TFRLLW5wNjBOYng2b1ZULXc?oc=5",
         "curated": "hidrovia-resolucion-59-2026-consejo-control-via-navegable-troncal"
       },
       {
         "title": "Logística. Se creó el Consejo de Control de la Hidrovía: ¿quiénes serán los representantes del agro?",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaU01aU5zOUR3MHllOEtyODJUdG9icUF1R3U2WDIxOGhiTGZfcDRRbmx2cmFBbl9KSWQzRnJhLXlpemxQTjlSSXpsQThGQXlwWW1wejl3ejFxdDVRTWJLLXlKeUZTRGd3RE5kbGlXTlpvOUhRYlNrejEyMFdpRGlzcmhCYnA2cHJFeTVvd182RGdYbWRBRVhKNjlGN05jUQ?oc=5",
         "curated": "hidrovia-resolucion-59-2026-consejo-control-via-navegable-troncal"
-      },
-      {
-        "title": "Crecieron las exportaciones vitivinícolas en septiembre: 24,2% en vinos y 34,5% en mosto concentrado",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZG5SWmRtN0w1d3JJazhFdFBqMHF3ZDhOUTVHS1ZneG11WjFnck8yeGUyYlBwMGJmdDFoalA4TU5PS3pUMGt2OFU0ZzMzUXpkaVM2Y0hhQU0xU1huajZ6VVd1TFhtbmlmVVRUMXJUOUVubGdkWG8tVE05ck9hUl9ZWDJzdGJCZUNEelNMNU81cmtQWk9TQUlydGZNTWdDci1ydjVNM1hTZkFlbnFjQ0hKYzFzcnJGUHo1M2c2MHl3?oc=5",
-        "curated": "exportaciones-vino-septiembre-2026-inv-24-mosto-34"
       },
       {
         "title": "Argentina redujo el déficit con Brasil por la caída de las importaciones",
@@ -24587,7 +25354,7 @@
       },
       {
         "title": "Por la caída en la venta de autos, las importaciones desde Brasil se derrumbaron un 25,2% interanual",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcEg4TG9MSkpBLTR5QklvUmo4MW9zNnoxVndmN3RtdWMzcHh3aDlLZ1pPdmhFaDA2bkdpanp4cGs0RDVRX2k5eVZNUExLUjlyMG9mUEpfdWVaWWtOMUM4Mi1hZ2poSFZ4VklGRDlwazl4WDFoMHN5ZUpJSzEwNmh0c3BSWWhQNkVmeUtJdXpXZHZpd1VveUdubDVKMUY4bzJvR2JzcHdKYTVxZEpzcmFqTUZtNDlCY3JxdGtQejluUG1qbnpz0gHEAUFVX3lxTE1wSDhMb0xKSkEtNHlCSW9Sajgxb3M2ejFWd2Y3dG11YzNweHdoOUtnWk92aEVoMDZuR2lqenhwazRENVFfaTl5Vk1QTEtSOXIwb2ZQSl91ZVpZa04xQzgyLWFnamhIVnhWSUZEOXBrOXhYMWgwc3llSklLMTA2aHRzcFJZaFA2RWZ5S0l1eldkdml3VW95R25sNUoxRjhvMm9HYnNwd0phNXFkSnNyYWpNRm00OUJjcnF0a1B6OW5QbWpuenM?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLXYzTzRUUTd4X3pqZThPdjJDLU9MWEJ5bHlVOFRtUFpqMERIdmpoVG1Pd1Bvajh0UTNfXzN6eFRtR3kxcmFkZHp2MXh4RWQ0bzd3WHcyYm1jMWNMQVQzMG82cVdVMjVXSjNtRzl1UXZlczVVZURVX1RDeWRBMFRVWU8wNm9mazNuUXdPdlpUUHBfRGtCbDNIOFF4aEtSM19uc0pDTjBlbTVOdVRxMkwyTlpHelRmZWJjQ0N2eTlDa9IBxAFBVV95cUxNcEg4TG9MSkpBLTR5QklvUmo4MW9zNnoxVndmN3RtdWMzcHh3aDlLZ1pPdmhFaDA2bkdpanp4cGs0RDVRX2k5eVZNUExLUjlyMG9mUEpfdWVaWWtOMUM4Mi1hZ2poSFZ4VklGRDlwazl4WDFoMHN5ZUpJSzEwNmh0c3BSWWhQNkVmeUtJdXpXZHZpd1VveUdubDVKMUY4bzJvR2JzcHdKYTVxZEpzcmFqTUZtNDlCY3JxdGtQejluUG1qbnpz?oc=5",
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
@@ -24601,6 +25368,11 @@
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
+        "title": "La principal vía fluvial del comercio exterior argentino tendrá un nuevo esquema de control",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNVNNbU5DRWp1UFZCejdLSFNMR25Hc0p5bmEwOUxsX0FMQ3hrazRqU1UzeFlvZnRVUnFxckQ0b04xaUNuSk95Z2libXJVUWF2REh1NGdWZzFlT1BJZGhZUlpTcmRHV21hMUhmamRGM3YtTHRuVUVKQzE5ZEZMSWhDd3ppM0NhMlFUQUxTUVIwQTJsbGRxR3RQODJtbndVbHhtQ1IyN0YxZjdzUEt6N0l6VnJ1clJHS0Z2WVJEVmd1NkJxdGdLdHZwdGdyVFk2TFRLLW5wNjBOYng2b1ZULXc?oc=5",
+        "curated": "hidrovia-resolucion-59-2026-consejo-control-via-navegable-troncal"
+      },
+      {
         "title": "Argentina exporta un 3,2% más de vino hasta septiembre, pero factura un 4,7% menos",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNThBOVdmMHdJQ3FKRW1tbzdPcFQ3bkN4RXZIM0gxWWNSbmRVSi1rVU9hbXplQjNwd0xOMC11RkFjdUljVzlKSFN0Mmh5TjdmRW1NVkx6VVJJZ1FQeGtKWnNXNjBQVUowS1JFN1VfRGpab2VHQkNTY1pjWVlDclFLQV9jdnlfbFd5Nk1uVXN3MHAyWTFZN0J5TEZHSVV6SXZ5c2NTOHFNVGFSeU93VlotOUx3TUlmNGhYV29CUlR30gHDAUFVX3lxTE03ODJFYkhOcXEzV1pScDhZWnlOWG5yM19XSGtSWk9jdlpHQ29lV2RyVC1ZbVJ4VzlQRW1GWDhXak1zbGRJY000V3hWbzN4cW11bnZGRkVndzNXWk9EdGtOVlpOYnFTVGhsWUotNHRHaHFHeU1MY0ZuYnZmSXNJVkNPVzZKN1ZIdlBuS2phdmVRbmJDY1lraXJBNmRESkEyLTFDbll6VFpRU2x3alg3d0hpa3BnX1R3MUphR2tVa21WZ21YUQ?oc=5",
         "curated": "exportaciones-vino-septiembre-2026-inv-24-mosto-34"
@@ -24609,43 +25381,37 @@
     "excluded": 0,
     "grouped": [
       {
-        "main": "vaca-muerta-pone-a-neuquen-en-camino-de-ser-la-principal-provincia-exportadora-d",
+        "main": "aladi-abordo-los-desafios-de-la-seguridad-portuaria-para-fortalecer-las-cadenas",
         "merged": [
-          "paris-puso-a-neuquen-de-cara-a-ser-la-principal-provincia-exportadora-de-argenti"
+          "mesa-de-comercio-exterior-abordo-oportunidades-de-la-region-ante-desafios-actual"
         ]
       },
       {
-        "main": "eliminacion-de-aranceles-a-la-importacion-de-arroz-genera-posiciones-encontradas",
+        "main": "las-navieras-asumen-el-riesgo-de-volver-al-canal-de-suez-para-ser-mas-competitiv",
         "merged": [
-          "economistas-califican-de-desacertado-decreto-que-deroga-aranceles-al-arroz"
+          "las-navieras-asumen-el-riesgo-de-volver-al-canal-de-suez-para-ser-mas-compet-2"
         ]
       },
       {
-        "main": "derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquiler-2",
+        "main": "cayo-una-norma-de-la-ue-y-argentina-casi-cuadriplico-sus-exportaciones-de-biodie",
         "merged": [
-          "derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquileres-s"
+          "exportaciones-de-biodiesel-argentino-a-la-ue-se-cuadruplicaron-tras-caida-de-nor"
         ]
       },
       {
-        "main": "exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-argentina-hacia",
+        "main": "rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desregulac",
         "merged": [
-          "bbva-research-exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-a"
-        ]
-      },
-      {
-        "main": "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petrole-2",
-        "merged": [
-          "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y"
+          "rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desreg-2"
         ]
       }
     ],
     "googleNews": {
-      "pending": 16,
+      "pending": 17,
       "resolved": 16,
-      "withSummary": 11,
+      "withSummary": 9,
       "withPhoto": 0,
-      "failed": 0,
-      "duplicates": 3
+      "failed": 1,
+      "duplicates": 0
     }
   },
   "stories": [
