@@ -8,12 +8,12 @@
     {
       "id": "wci",
       "label": "Flete contenedor 40' (Drewry WCI)",
-      "value": "USD 4.434",
-      "change": "-1%",
+      "value": "USD 4.351",
+      "change": "-2%",
       "trend": "down",
-      "period": "Semana al 1 oct 2026",
-      "source": "Drewry",
-      "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry",
+      "period": "Semana al 8 oct 2026",
+      "source": "Drewry (vía PortalPortuario)",
+      "url": "https://portalportuario.cl/tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante-festividad-china/",
       "group": "Fletes y transporte"
     },
     {
@@ -493,6 +493,392 @@
     }
   ],
   "items": [
+    {
+      "id": "omc-eleva-prevision-comercio-mercancias-2026-3-9",
+      "date": "2026-10-08",
+      "kind": "datos",
+      "title": "La OMC duplicó su previsión para el comercio mundial de mercancías en 2026: ahora espera 3,9%",
+      "summary": "El organismo subió la proyección de volumen desde el 1,9% que había estimado en marzo, empujada por el comercio de bienes ligados a la inteligencia artificial. Recortó la de servicios a 3,3% y señaló al conflicto en Oriente Medio como el principal riesgo.",
+      "topics": [
+        "Economía internacional",
+        "Geopolítica y comercio",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "OMC",
+        "Perspectivas del comercio",
+        "Inteligencia artificial",
+        "Oriente Medio",
+        "Semiconductores"
+      ],
+      "visual": "globe",
+      "impact": 2,
+      "affectsArgentina": false,
+      "body": [
+        "La Organización Mundial del Comercio (OMC) publicó el 8 de octubre la actualización de sus perspectivas y elevó al 3,9% el crecimiento previsto del volumen del comercio mundial de mercancías para 2026, más del doble del 1,9% que había proyectado en marzo. Para 2027 estima una suba de 4,1%. En el primer semestre, el volumen creció 3,5% interanual y el valor en dólares, 15%: según el organismo, la brecha se explica en parte por los mayores precios de los combustibles y de los componentes electrónicos para centros de datos.",
+        "El impulso vino de los bienes vinculados a la inteligencia artificial, como semiconductores y servidores, cuyo comercio aumentó 67% interanual en el primer semestre y explicó el 47% del crecimiento del intercambio mundial de mercancías. En cambio, la OMC recortó la previsión para el comercio de servicios comerciales en 2026 de 4,8% a 3,3%, porque el conflicto golpeó al transporte y a los viajes, y proyecta 6,4% para 2027. El PIB mundial crecería 2,6% este año y 2,9% el próximo.",
+        "Por regiones, el organismo espera que en 2026 las exportaciones de mercancías crezcan 9,9% en Asia, 5,7% en América del Norte y 5,6% en África, mientras que las de Europa caerían 0,1% y las de Oriente Medio, 17,2%. Para América del Sur y Central y el Caribe proyecta una suba de 3,4% en las exportaciones. El impacto del conflicto ya se vio en la energía: en el primer semestre, las exportaciones de crudo de Oriente Medio bajaron cerca de 24% y las de gas natural licuado, alrededor de 47%, aunque otros proveedores limitaron la caída mundial a cerca de 6% y 1%, respectivamente.",
+        "La OMC identifica al conflicto en Oriente Medio como el principal riesgo para el pronóstico, por su efecto sobre los precios de la energía y las rutas de transporte. La directora general, Ngozi Okonjo-Iweala, advirtió además que los beneficios de la expansión ligada a la inteligencia artificial no son igual de accesibles para todos los países."
+      ],
+      "keyData": [
+        [
+          "Comercio de mercancías 2026",
+          "+3,9% en volumen (antes 1,9%)"
+        ],
+        [
+          "Comercio de mercancías 2027",
+          "+4,1%"
+        ],
+        [
+          "Servicios comerciales 2026",
+          "+3,3% (antes 4,8%)"
+        ],
+        [
+          "Bienes ligados a la IA",
+          "+67% en el primer semestre; 47% del crecimiento"
+        ],
+        [
+          "Exportaciones de América del Sur y Central y el Caribe 2026",
+          "+3,4%"
+        ],
+        [
+          "PIB mundial",
+          "2,6% en 2026 y 2,9% en 2027"
+        ]
+      ],
+      "explainer": {
+        "what": "La OMC elevó del 1,9% al 3,9% su previsión de crecimiento del volumen del comercio mundial de mercancías para 2026.",
+        "why": "Los bienes ligados a la inteligencia artificial explicaron el 47% del crecimiento del primer semestre, mientras el conflicto en Oriente Medio golpea la energía, el transporte y los viajes. Para América del Sur y Central y el Caribe, la OMC prevé que las exportaciones suban 3,4%.",
+        "who": "Exportadores e importadores de todo el mundo, en especial de electrónica y energía, y las empresas de transporte y servicios.",
+        "products": [
+          "Semiconductores",
+          "Servidores",
+          "Petróleo crudo",
+          "Gas natural licuado"
+        ],
+        "next": "Para 2027, la OMC proyecta un crecimiento de 4,1% en el comercio de mercancías y de 6,4% en el de servicios comerciales.",
+        "nextSource": {
+          "name": "OMC",
+          "url": "https://www.wto.org/spanish/news_s/news26_s/stat_08oct26_510_s.htm"
+        }
+      },
+      "sources": [
+        {
+          "name": "OMC",
+          "type": "Organización internacional",
+          "url": "https://www.wto.org/spanish/news_s/news26_s/stat_08oct26_510_s.htm",
+          "primary": true
+        },
+        {
+          "name": "Comunicado de la OMC (EIN Presswire)",
+          "type": "Comunicado oficial",
+          "url": "https://www.einnews.com/pr_news/948255934/ai-boom-and-trade-resilience-to-middle-east-crisis-lift-outlook-but-gains-to-be-uneven"
+        },
+        {
+          "name": "Expansión",
+          "type": "Medio de comunicación",
+          "url": "https://expansion.mx/economia/2026/10/08/omc-eleva-prevision-crecimiento-comercio-mundial-ia-2026"
+        },
+        {
+          "name": "Aduana News",
+          "type": "Medio especializado",
+          "url": "https://aduananews.com/la-omc-eleva-del-19-al-39-su-prevision-de-crecimiento-del-comercio-mundial-para-2026/"
+        }
+      ],
+      "absorbs": [
+        "la-omc-eleva-del-1-9-al-3-9-su-prevision-de-crecimiento-del-comercio-mundial",
+        "el-auge-de-la-ia-y-la-resiliencia-del-comercio-ante-la-crisis-en-oriente-medio-m"
+      ]
+    },
+    {
+      "id": "ethiopian-airlines-autorizada-carga-aerea-argentina-disposicion-26-2026",
+      "date": "2026-10-08",
+      "datetime": "2026-10-08T08:27:00-03:00",
+      "kind": "noticia",
+      "title": "Ethiopian Airlines recibió autorización para operar vuelos regulares de carga en la Argentina",
+      "summary": "La Disposición 26/2026 de la Subsecretaría de Transporte Aéreo habilita a la compañía etíope a prestar servicios internacionales exclusivamente de carga, con derechos de tráfico de la tercera a la novena libertad del aire.",
+      "topics": [
+        "Argentina",
+        "Transporte aéreo",
+        "Logística",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina",
+        "Etiopía"
+      ],
+      "tags": [
+        "Carga aérea",
+        "Ethiopian Airlines",
+        "ANAC",
+        "Libertades del aire",
+        "Boletín Oficial"
+      ],
+      "visual": "plane",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Importadores, exportadores y agentes de carga suman un operador habilitado para ofrecer vuelos regulares exclusivamente de carga hacia, desde y dentro del país.",
+      "argentinaImpact": {
+        "change": "Ethiopian Airlines quedó autorizada a operar servicios regulares internacionales de carga, con derechos de la tercera a la novena libertad del aire.",
+        "who": "Importadores y exportadores que usan carga aérea, agentes de carga, aeropuertos y aerolíneas que compiten en el segmento.",
+        "sectors": [
+          "Transporte aéreo",
+          "Logística",
+          "Comercio exterior"
+        ],
+        "flows": {
+          "importaciones": true,
+          "exportaciones": true,
+          "logistica": true,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "El Gobierno publicó el 8 de octubre en el Boletín Oficial la Disposición 26/2026 de la Subsecretaría de Transporte Aéreo, dependiente de la Secretaría de Transporte del Ministerio de Economía, que autoriza a Ethiopian Airlines Group a operar servicios regulares internacionales de transporte aéreo de cargas. La habilitación es solo para mercadería y no incluye vuelos regulares de pasajeros. La firmó el subsecretario Hernán Adrián Gómez.",
+        "La norma le otorga derechos de tráfico desde la tercera hasta la novena libertad del aire. La tercera y la cuarta cubren la carga entre Etiopía y la Argentina; la quinta, la sexta y la séptima, tráficos que involucran a terceros países; y la octava y la novena permiten llevar carga entre puntos del territorio argentino, por lo que la compañía también podría competir en el mercado doméstico de carga aérea.",
+        "La autorización se enmarca en el acuerdo bilateral entre ambos países y en el memorando de entendimiento que firmaron sus autoridades aeronáuticas en enero de 2025, que dejó sin tope las frecuencias semanales. La empresa fue designada por la autoridad aeronáutica etíope para operar hacia la Argentina y la Dirección Nacional de Transporte Aéreo de la ANAC emitió un dictamen favorable.",
+        "La disposición no fija rutas, frecuencias ni fecha de inicio de las operaciones. Esos detalles dependerán de la programación de la compañía y de la coordinación con la ANAC y los aeropuertos."
+      ],
+      "keyData": [
+        [
+          "Norma",
+          "Disposición 26/2026 de la Subsecretaría de Transporte Aéreo (Boletín Oficial, 8 de octubre de 2026)"
+        ],
+        [
+          "Servicio autorizado",
+          "Regular internacional, exclusivamente de carga"
+        ],
+        [
+          "Derechos de tráfico",
+          "De la tercera a la novena libertad del aire"
+        ],
+        [
+          "Marco",
+          "Acuerdo bilateral y memorando de entendimiento de enero de 2025"
+        ],
+        [
+          "Rutas, frecuencias e inicio",
+          "No los fija la norma"
+        ]
+      ],
+      "explainer": {
+        "what": "El Gobierno autorizó a Ethiopian Airlines a operar vuelos regulares internacionales exclusivamente de carga en la Argentina, mediante la Disposición 26/2026.",
+        "why": "Suma un operador de carga aérea con derechos de la tercera a la novena libertad del aire, incluidas las que permiten transportar carga entre puntos del país.",
+        "who": "Importadores y exportadores que usan carga aérea, agentes de carga, aeropuertos y aerolíneas que compiten en el segmento."
+      },
+      "sources": [
+        {
+          "name": "iProfesional",
+          "type": "Medio de comunicación",
+          "url": "https://www.iprofesional.com/negocios/466180-ethiopian-airlines-podra-operar-vuelos-regulares-de-carga-en-argentina",
+          "primary": true
+        },
+        {
+          "name": "Aviacionline",
+          "type": "Medio especializado",
+          "url": "https://www.aviacionline.com/espanol/aviacion-comercial/latinoamerica-y-el-caribe/argentina/ethiopian-airlines-podra-operar-carga-exclusiva-en-la-argentina-hasta-la-novena-libertad_a6ac7ba0a4f6837e79638b694"
+        },
+        {
+          "name": "El Destape",
+          "type": "Medio de comunicación",
+          "url": "https://www.eldestapeweb.com/economia/autorizan-aerolinea-africana-competir-aerolineas-argentinas-transporte-carga-interno-202610892158"
+        }
+      ],
+      "absorbs": [
+        "el-gobierno-dio-luz-verde-a-una-aerolinea-internacional-para-entrar-al-negocio-d"
+      ]
+    },
+    {
+      "id": "irlanda-ifa-pide-restringir-carne-vacuna-argentina-antimicrobianos",
+      "date": "2026-10-07",
+      "kind": "noticia",
+      "title": "Productores irlandeses piden a la UE restringir la carne vacuna argentina por un estudio sobre antibióticos en feedlots",
+      "summary": "La Irish Farmers' Association reclamó a la Comisión Europea extender a la Argentina las restricciones que el bloque aplicó a Brasil. El estudio que invoca midió residuos en suelos de 27 feedlots, no en carne, y el sector argentino rechazó el planteo.",
+      "topics": [
+        "Argentina",
+        "Europa",
+        "Exportaciones",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina",
+        "Irlanda",
+        "Unión Europea"
+      ],
+      "tags": [
+        "Carne vacuna",
+        "Antimicrobianos",
+        "SENASA",
+        "Feedlot",
+        "IFA"
+      ],
+      "visual": "agro",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Es un pedido de una entidad de productores, no una medida de la UE, pero apunta a uno de los principales mercados de la carne vacuna argentina.",
+      "argentinaImpact": {
+        "change": "Una entidad de productores irlandeses pidió a la Comisión Europea restringir la carne vacuna argentina por el uso de antimicrobianos; no hay una decisión del bloque.",
+        "who": "Frigoríficos exportadores, feedlots y productores ganaderos que venden a la Unión Europea, y el SENASA como autoridad sanitaria.",
+        "sectors": [
+          "Carne vacuna",
+          "Ganadería",
+          "Frigoríficos"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "La Irish Farmers' Association (IFA), que agrupa a productores agropecuarios de Irlanda, pidió a la Comisión Europea que restrinja el ingreso de carne vacuna argentina. Su presidente, Francie Gorman, propuso aplicar a la Argentina el mismo criterio que la Unión Europea usó con Brasil, que quedó fuera de la lista de países habilitados bajo las nuevas exigencias europeas sobre antimicrobianos vigentes desde septiembre de 2026. Gorman también le reclamó una intervención al ministro de Agricultura irlandés, Martin Heydon.",
+        "El planteo se apoya en un estudio de investigadores del Conicet y de la Universidad de Liverpool que analizó residuos de antimicrobianos en suelos de 27 feedlots comerciales de la Argentina. La monensina, prohibida en la UE como promotora de crecimiento desde 2006, apareció en todos los establecimientos, y en más del 40% se detectaron compuestos que no figuraban en sus registros de tratamiento, entre ellos la cefquinoma, un antibiótico de importancia crítica para la salud humana. Según ComexLatam, los autores no concluyen que haya habido uso ilegal: atribuyen las diferencias a causas posibles como registros incompletos, tratamientos anteriores que persisten en el suelo o movimiento de estiércol, y piden mejorar la trazabilidad y el monitoreo.",
+        "En la Argentina, el presidente de la Cámara Argentina de Feedlot, Fernando Storni, rechazó el planteo ante La Nación: remarcó que el estudio midió suelos y no carne, que no evaluó la inocuidad del producto y que el caso de Brasil no es comparable. Según el mismo medio, el SENASA controla los residuos en carne con el plan CREHA, que según el organismo cuenta con la aprobación de los servicios sanitarios de la UE y de Estados Unidos, y en 2024 prohibió los antimicrobianos promotores del crecimiento, con excepciones como la monensina.",
+        "Según datos citados por medios irlandeses, la Argentina aportó cerca del 18% de las importaciones de carne vacuna de la UE en los últimos cinco años, y las compras del bloque crecieron en los primeros meses de 2026. Las fuentes consultadas no informan una respuesta de la Comisión Europea al pedido de la IFA."
+      ],
+      "keyData": [
+        [
+          "Quién lo pide",
+          "Irish Farmers' Association (IFA), a la Comisión Europea"
+        ],
+        [
+          "Feedlots analizados",
+          "27 (residuos en suelos, no en carne)"
+        ],
+        [
+          "Feedlots con monensina",
+          "Los 27"
+        ],
+        [
+          "Con compuestos no registrados",
+          "Más del 40%"
+        ],
+        [
+          "Peso de la Argentina en las importaciones de carne vacuna de la UE",
+          "≈ 18% en los últimos cinco años (según medios irlandeses)"
+        ]
+      ],
+      "explainer": {
+        "what": "La asociación de productores irlandeses IFA pidió a la Comisión Europea restringir la carne vacuna argentina, a partir de un estudio sobre residuos de antibióticos en suelos de 27 feedlots.",
+        "why": "La UE ya dejó afuera a Brasil por las nuevas exigencias sobre antimicrobianos, y la Argentina aportó cerca del 18% de la carne vacuna que importó el bloque en los últimos cinco años, según medios irlandeses.",
+        "who": "Frigoríficos exportadores, feedlots y productores ganaderos argentinos que venden a la Unión Europea, y el SENASA.",
+        "products": [
+          "Carne vacuna"
+        ]
+      },
+      "sources": [
+        {
+          "name": "La Nación",
+          "type": "Medio de comunicación",
+          "url": "https://lanacion.com.ar/economia/campo/antibioticos-fuerte-rechazo-a-un-planteo-de-productores-de-irlanda-que-pidieron-prohibir-la-carne-nid07102026",
+          "primary": true
+        },
+        {
+          "name": "Rosario3 (Ecos365)",
+          "type": "Medio de comunicación",
+          "url": "https://www.rosario3.com/ecos365/agro/tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importaciones-20261007-0007.html"
+        },
+        {
+          "name": "Irish Farmers Journal",
+          "type": "Medio especializado",
+          "url": "https://www.farmersjournal.ie/amp/news/news/antibiotic-probe-moves-to-argentina-934903"
+        },
+        {
+          "name": "ComexLatam",
+          "type": "Medio especializado",
+          "url": "https://comexlatam.com/irlanda-pide-revisar-el-ingreso-de-carne-argentina-a-la-ue"
+        }
+      ],
+      "absorbs": [
+        "tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importacione"
+      ]
+    },
+    {
+      "id": "drewry-wci-baja-2-8-octubre",
+      "date": "2026-10-08",
+      "datetime": "2026-10-08T23:32:00-03:00",
+      "kind": "datos",
+      "title": "El índice mundial de fletes de contenedores cae 2% en la Semana Dorada y queda en USD 4.351 por FEU",
+      "summary": "Según Drewry, bajaron las rutas transpacíficas y Shanghái–Róterdam, mientras Shanghái–Génova quedó estable. La consultora espera tarifas estables la semana próxima.",
+      "topics": [
+        "Transporte marítimo",
+        "Logística",
+        "Asia",
+        "China"
+      ],
+      "countries": [
+        "China",
+        "Global"
+      ],
+      "tags": [
+        "Fletes",
+        "Contenedores",
+        "Semana Dorada",
+        "WCI",
+        "Drewry"
+      ],
+      "visual": "ship",
+      "impact": 2,
+      "affectsArgentina": false,
+      "story": "fletes-contenedores",
+      "body": [
+        "El World Container Index (WCI) de Drewry bajó 2% en la semana al 8 de octubre y se ubicó en USD 4.351 por contenedor de 40 pies, en un contexto de menor demanda por la Semana Dorada china, según informó PortalPortuario con datos de la consultora. Una semana antes, el indicador había cedido 1%.",
+        "Por ruta, Shanghái–Los Ángeles retrocedió 3%, a USD 7.624; Shanghái–Nueva York, 2%, a USD 10.220; y Shanghái–Róterdam, 2%, a USD 3.337. Shanghái–Génova quedó sin cambios, en USD 3.696. Según PortalPortuario, las tarifas Asia–Europa acumulan 13 semanas consecutivas de bajas. El Daily Cargo News informó las mismas variaciones por ruta y agregó que el índice intra-Asia de Drewry (IACI) cayó 1%, después de seis semanas seguidas de subas.",
+        "Para la semana próxima hay programadas 4 cancelaciones de viajes en el transpacífico, frente a 11 en la actual, y 6 en Asia–Europa, frente a 5. Drewry espera que las tarifas se mantengan estables en ambas rutas, mientras las navieras intentan revertir la baja con aumentos de las tarifas FAK en la segunda quincena de octubre; la consultora advierte que no está claro si lograrán aplicarlos."
+      ],
+      "keyData": [
+        [
+          "WCI compuesto",
+          "USD 4.351 / FEU (-2%)"
+        ],
+        [
+          "Shanghái → Nueva York",
+          "USD 10.220 (-2%)"
+        ],
+        [
+          "Shanghái → Los Ángeles",
+          "USD 7.624 (-3%)"
+        ],
+        [
+          "Shanghái → Génova",
+          "USD 3.696 (sin cambios)"
+        ],
+        [
+          "Shanghái → Róterdam",
+          "USD 3.337 (-2%)"
+        ]
+      ],
+      "explainer": {
+        "what": "El World Container Index de Drewry bajó 2% en la semana al 8 de octubre y quedó en USD 4.351 por contenedor de 40 pies.",
+        "why": "Es una referencia habitual para los fletes spot. Durante la Semana Dorada china cayeron las rutas transpacíficas y Shanghái–Róterdam, y Asia–Europa suma 13 semanas de bajas.",
+        "who": "Importadores y exportadores que contratan flete marítimo en contenedor, forwarders y navieras.",
+        "next": "Drewry espera tarifas estables la semana próxima en el transpacífico y en Asia–Europa, aunque las navieras buscan subir las tarifas FAK en la segunda quincena de octubre.",
+        "nextSource": {
+          "name": "PortalPortuario",
+          "url": "https://portalportuario.cl/tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante-festividad-china/"
+        }
+      },
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado",
+          "url": "https://portalportuario.cl/tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante-festividad-china/",
+          "primary": true
+        },
+        {
+          "name": "Daily Cargo News",
+          "type": "Medio especializado",
+          "url": "https://www.thedcn.com.au/news/container-rates-ease-as-asian-port-congestion-persists"
+        }
+      ],
+      "absorbs": [
+        "tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante"
+      ]
+    },
     {
       "id": "los-fletes-se-mantienen",
       "datetime": "2026-10-09T09:14:46Z",
