@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-08T21:43:00Z",
+  "updatedAt": "2026-10-09T01:44:00Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -115,7 +115,7 @@
       "obsDate": "2026-10-08",
       "change": "-0,1% vs. día hábil anterior",
       "trend": "down",
-      "checkedAt": "2026-10-08T21:43:35Z",
+      "checkedAt": "2026-10-09T01:44:36Z",
       "history": [
         [
           "2026-08-28",
@@ -254,7 +254,7 @@
         "date": "2026-10-07",
         "ars": 560000.0
       },
-      "checkedAt": "2026-10-08T21:43:37Z",
+      "checkedAt": "2026-10-09T01:44:39Z",
       "_prev": {
         "date": "2026-10-06",
         "ars": 560000.0
@@ -289,7 +289,7 @@
       "obsDate": "2026-10-06",
       "change": "-0,1% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-08T21:43:37Z",
+      "checkedAt": "2026-10-09T01:44:39Z",
       "history": [
         [
           "2026-08-25",
@@ -428,7 +428,7 @@
         "date": "2026-10-07",
         "ars": 294800.0
       },
-      "checkedAt": "2026-10-08T21:43:37Z",
+      "checkedAt": "2026-10-09T01:44:39Z",
       "_prev": {
         "date": "2026-10-06",
         "ars": 294000.0
@@ -467,7 +467,7 @@
         "date": "2026-10-07",
         "ars": 342300.0
       },
-      "checkedAt": "2026-10-08T21:43:37Z",
+      "checkedAt": "2026-10-09T01:44:39Z",
       "_prev": {
         "date": "2026-10-06",
         "ars": 343000.0
@@ -493,6 +493,464 @@
     }
   ],
   "items": [
+    {
+      "id": "explora-iii-visita-puerto-de-nueva-york-en-su-viaje-inaugural",
+      "datetime": "2026-10-09T01:30:24Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Explora III visita Puerto de Nueva York en su viaje inaugural",
+      "summary": "El Explora III, el barco más nuevo de la flota de Explora Journeys, realizó su primera…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/explora-iii-visita-puerto-de-nueva-york-en-su-viaje-inaugural/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petrole-2",
+      "datetime": "2026-10-09T01:06:16Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Estados Unidos sancionó a 17 buques y a las navieras que transportan petróleo y petroquímicos de Irán",
+      "summary": "Washington busca cerrar con sanciones lo que el bloqueo naval no alcanza. El Tesoro calcula que a Teherán le quedan unos 20 millones de barriles flotando fuera del cerco…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Geopolítica y comercio",
+        "Estados Unidos"
+      ],
+      "countries": [
+        "Estados Unidos",
+        "Irán"
+      ],
+      "tags": [
+        "Energía",
+        "Estados Unidos"
+      ],
+      "visual": "tanker",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Flipr.news",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://flipr.com.ar/nacionales/ultimo-momento/infobae/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran/",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "Infobae",
+          "type": "También publicó esta noticia",
+          "url": "https://www.infobae.com/america/mundo/2026/10/09/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran/",
+          "alsoIn": true,
+          "title": "Estados Unidos sancionó a 17 buques y a las navieras que transportan petróleo y petroquímicos de Irán"
+        }
+      ],
+      "gnTried": "2026-10-09T01:44:00Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPM2hDODdZb2JuWVg0T29QQW1jbmloQVJfZ3Z2ZWhXYnlxQjdqT3ROTzFXZUFqb29yd24yRWwwZk1sSF82N05sbFluZ1hVNXdERUpLNVFITVM4ekwyVjhJeHNBdXBvT1hwQmVvT1FxYmJBVlJ1cThHSGMzNnhDRXBIb2ZWYlo4SFpLZVpwdFRSejR5U1VDM0Iyd0QzTm5XU3I0VzY5elpMdERvZXFoMlNJYWMzdUZoRUNVejNmQjcyckF5SU5tckdHMEk4Mnh1RjJEbGliTEJoVkxaMnkzSDA3aHIzMjZnSURUdU1iMWpn?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQXFJSTl0bjJWVW54QkhiYzQ5aWs0Rmx2azFpVlFOc1Y0eWFhSDZwVFROSEgxbGJTXzY5WXFndXMxTEJhTk5RVUVfbVJNU2wwUG9TNFphSnNNS1RNSU9lSlZhMkpDNDMwTHZjcjZiZ213STFZcEg5dVNvdFhKX2VFbno2SzlydzI5ZTZSbHhOTWxjLVlzY2ZEMTVXQjJtM1N0QUV5OFpKUjYzcTBtZzlQaFViUVQtZmpoN1BsNDVGMjJtejFjVndLS2hMbzloUU45R0lzV3B1SEFUZWRuWmZLd1VtNUJPd9IBgAJBVV95cUxQS3o2eURIM1FzWUZCVEFfekNORDhPZ2ZMaTR3dThXc00yYzZzRC03QXk4bncxVy1Nc09palcycHREbWJOOXAxY29PMVQzV21TdGhuSWoxWmlNbUhVeHpyUDctSTVqWWJWbVZEYUQxSTBpT1YwTFFSNk4tQjVkNHNJa01McDhVQ3A3emxVUmV1M29udHVmbUM0S1hlZFYxT0xtWWxab080OHBpamZjTzg5aGpsekxzRzJBSXIxT2c1bzZtbV80RS1raThQZjAtTEc0VnYwU3lsSktkYnU0SXBJTllvWm50LVU5VkJFV0d5cWo3aXVvaGV4QWtWTFVCa2lv",
+        "https://www.infobae.com/america/mundo/2026/10/09/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran"
+      ],
+      "mergedIds": [
+        "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y"
+      ]
+    },
+    {
+      "id": "bangladesh-dp-world-y-autoridad-portuaria-de-chittagong-acuerdan-concesion-de-te",
+      "datetime": "2026-10-09T01:00:46Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Bangladesh: DP World y Autoridad Portuaria de Chittagong acuerdan concesión de terminal de contenedores",
+      "summary": "La Autoridad Portuaria de Chittagong (CPA) y DP World firmaron un acuerdo de concesión de 15…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "Transporte marítimo",
+        "Puertos",
+        "Asia"
+      ],
+      "countries": [
+        "Bangladés"
+      ],
+      "tags": [],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/bangladesh-dp-world-y-autoridad-portuaria-de-chittagong-acuerdan-concesion-de-terminal-de-contenedores/",
+          "primary": true,
+          "author": "cmeza"
+        }
+      ]
+    },
+    {
+      "id": "puerto-de-qingdao-amplia-su-red-de-transporte-maritimo",
+      "datetime": "2026-10-09T00:49:53Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Puerto de Qingdao amplía su red de transporte marítimo",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Xinhua Español",
+          "type": "Medio · vía Google Noticias",
+          "url": "http://spanish.xinhuanet.com/20261009/e1177227ec4c424db8ac55656d33adfd/c.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T01:44:00Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeHhZb0xCcnhIbFFBQV9tbk1XYWFMRllDZFVRVGM1NkJWSDZQRzZUcDZWVTktTGJaMEJpOFRrV3NaSHdhMnFsQldBeTg2U2NfZGRKMy1SU2dYWXJwcmo4TzU0dEg4V1BOd1hIVlozNlFPdDhnSVNCRGtRRnRXb1FLQXpIQQ?oc=5"
+    },
+    {
+      "id": "ia-o-aranceles-quien-protagoniza-el-comercio-mundial-segun-dhl",
+      "datetime": "2026-10-09T00:49:16Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "¿IA o aranceles? Quién protagoniza el comercio mundial según DHL",
+      "summary": "Un informe de la compañía deja ver que la tecnología es un impulsor de la globalización, la cual ha alcanzado un nivel récord del 25.8 por ciento.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "Economía internacional",
+        "Tecnología COMEX"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Revista TyT",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.tyt.com.mx/nota/ia-o-aranceles-quien-protagoniza-el-comercio-mundial-segun-dhl",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T01:44:00Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeWRwcXZGYncxSWx1QmIyTWxGQVhscXdwTm1aaURlVHdGRGFBUjk2Q21jQklNOGxVUEoyZTVrNEVMaG55UTNrclREamp0R19CS21qa1dITDQyV1BzUkhlR0g2aGZRTWttazNVYnZCeUdHOWxwYVNVV1hkdHZORHJxMW96cVBzWEtGRVFQVjc5SF9Ud01S?oc=5"
+    },
+    {
+      "id": "rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desregulac",
+      "datetime": "2026-10-08T23:32:43Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "RDEco: qué necesita una PyME argentina para exportar y cómo impacta la desregulación del Gobierno",
+      "summary": "Pablo Furnari, especialista en Comercio Internacional, explicó en Ronda de Economistas (RDEco), los desafíos que todavía enfrentan las pequeñas y medianas empresas para vender sus productos fuera del país y destacó la importancia de la desregulación y de contar con buenos prestadores de servicios.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Perfil",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.perfil.com/noticias/masperfil/pymes-y-exportaciones-que-tan-facil-es-para-las-empresas-argentinas-vender-al-exterior.phtml",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T01:44:00Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNjlWM2h0ajQtcFpqR2lsa3ZNam9KbWlKdVVvNUtZVl9uWlNna0prcnU2dTE4dW5uSlMyUzNnZ0p4ZEFDYm43STdBWG9PdFVNNUZnQ2JON0tPLVdtLUh6LTM0N1hjNGR2MGRqanBZN0ZSSThNT1Rfc2lVQmNHQi1HbTRGcG9YSWVrMlFNVEhacTY5TmQ2bHpjSVpMNVhra0VpeHdUUkc0ODByeWI3eXZiNjRDS0lhamtPNlpSbXdZT1FzU3VxbFRCSEhXT2l6Z0HSAdQBQVVfeXFMTXNaRlBxa0ZYZUl3UVlpYUZMakw1MmRsQWVIdjVtNzBIVm0wWUczcnpvbHVxaUtUY1hzTndQZWRTeTNwajlWUncyN041ZFFfS1dsMzBJRF96UEtMSUZwT2d0UWN5VjF6NkpISmc2bkVJWUFVQjZIS3cwSjVraS1XVXllaGZxWTZ6MEw5a1BmMHRRMFQ4RHk4T1NoWUwzTTR4OG00ZHR5VS1XZjRhbUxJbGFPYXBIOVN5TENnOHJ5X3hYZmpUdnpDbW9hQnFSOVUyeUdSTlo?oc=5"
+    },
+    {
+      "id": "exportaciones-de-automoviles-de-mexico-caen-en-septiembre-ante-impacto-de-arance",
+      "datetime": "2026-10-08T23:00:44Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Exportaciones de automóviles de México caen en septiembre ante impacto de aranceles de EE.UU.",
+      "summary": "Las exportaciones de automóviles de México registraron su mayor caída en lo que va del…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Aranceles",
+        "Latinoamérica",
+        "Estados Unidos"
+      ],
+      "countries": [
+        "México",
+        "Estados Unidos"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/exportaciones-de-automoviles-de-mexico-caen-en-septiembre-ante-impacto-de-aranceles-de-ee-uu/",
+          "primary": true,
+          "author": "Luis Alonso"
+        }
+      ],
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTGZhY0VtMFJiVjBHLUFEcWdLZ0FzUFozOVBGZkdkd21MclJkVVRxaTZ6bmFwOWN0RmJiX0RGR1RzczF4YmJiaHdjenB6NF80cEx0U1EyMklUUVF4TkdQWnNlenF0ZVpNbnljQmdSTXpkWi0yeTliTmFZZ04ydDMyRHFtV0ZJdFVIV3c5U2JYWGdpRWpmN2Z2elFpekNIWUNGZl9LYkE4UExoaDhTSGcyNkFycXh2cFNuQVk2RA"
+      ]
+    },
+    {
+      "id": "espana-peninsula-completa-su-primera-operacion-de-suministro-de-gnl-en-puerto-de",
+      "datetime": "2026-10-08T22:30:13Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "España: Peninsula completa su primera operación de suministro de GNL en Puerto de Sagunto",
+      "summary": "Peninsula completó la primera operación de suministro de gas natural licuado (GNL) en el Puerto de…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Europa"
+      ],
+      "countries": [
+        "España"
+      ],
+      "tags": [
+        "Energía",
+        "Puertos"
+      ],
+      "visual": "tanker",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/espana-peninsula-completa-su-primera-operacion-de-suministro-de-gnl-en-puerto-de-sagunto/",
+          "primary": true,
+          "author": "cmeza"
+        }
+      ]
+    },
+    {
+      "id": "aranceles-de-estados-unidos-impactan-actividad-industrial-de-baja-california",
+      "datetime": "2026-10-08T22:03:39Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Aranceles de Estados Unidos Impactan Actividad Industrial de Baja California",
+      "summary": "Canacintra plantea fortalecer sectores productivos ante un escenario económico internacional",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles",
+        "Estados Unidos"
+      ],
+      "countries": [
+        "Estados Unidos"
+      ],
+      "tags": [
+        "Aranceles",
+        "Estados Unidos"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "N+",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.nmas.com.mx/baja-california/sociedad/aranceles-de-estados-unidos-impactan-actividad-industrial-de-baja-california/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T01:44:00Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdk92NVV0cGd1MjJ0TmltNkZYUW1DT2h2ai1uOFZ1QTZPdGVZa0VEdnRfRy15ZWpYY1VPSlcxQVd3bFlJZU9PVU10SWt1SmpubWhSSnZ0WU56VC1SejNORlRERjYwNDZ2Mi15VlFRLW5sMnZ3ZHVib1BtN2U4elBPYTFGVUw4aktwRmpTbHhQaHd5b3ZUZHJhbXNMbThBbzJuOXFObV9hSXZZRFZqSkhaMEExMHNIQUJSSU5ybktSSEtXVW1f?oc=5"
+    },
+    {
+      "id": "cientos-de-agricultores-protestan-en-paris-contra-el-pacto-ue-mercosur-y-por-las",
+      "datetime": "2026-10-08T21:58:58Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Cientos de agricultores protestan en París contra el pacto UE-Mercosur y por las importaciones",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones",
+        "Mercosur",
+        "Europa"
+      ],
+      "countries": [
+        "Unión Europea"
+      ],
+      "tags": [
+        "Mercosur",
+        "UE-Mercosur"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Yahoo",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://es-us.noticias.yahoo.com/cientos-agricultores-protestan-par%C3%ADs-pacto-215858126.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T01:44:00Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWHBKRUcyUDNDYjkwN0NLTDlKRmhxY2YwYXdoczlmbk5JcW1UTmdIZGNmclhjMFJsSFBYMTJEUUJrVUJGakRZaVI5REM5WUZ5RUlPaWQ5YU9JSEhNSUpSbUNiMnpGTkVSa3MwVVJXbVVNUlZuOTBYUVA2T25INFdDM2lZdms1Q0gzVUZJRW9XOGpya3I0NzhjR3dORQ?oc=5"
+    },
+    {
+      "id": "presidente-de-camport-sostiene-que-estrategicamente-no-se-entiende-construccion",
+      "datetime": "2026-10-08T21:47:18Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Presidente de Camport sostiene que estratégicamente “no se entiende” construcción del Puerto Exterior de San Antonio",
+      "summary": "Daniel Fernández, presidente de la Cámara Marítima y Portuaria de Chile (Camport), aseguró que “no…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/presidente-de-camport-sostiene-que-estrategicamente-no-se-entiende-construccion-del-puerto-exterior-de-san-antonio/",
+          "primary": true,
+          "author": "Gabriel"
+        }
+      ]
+    },
+    {
+      "id": "la-industria-salmonera-de-magallanes-suma-una-nueva-via-de-exportacion-a-traves",
+      "datetime": "2026-10-08T21:41:33Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "La industria salmonera de Magallanes suma una nueva vía de exportación a través de Argentina",
+      "summary": "Un cargamento de 18 toneladas de salmón fue trasladado hasta Trelew para continuar por vía aérea hacia Ezeiza",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "https://zonazero.cl/",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://zonazero.cl/2026/10/la-industria-salmonera-de-magallanes-suma-una-nueva-via-de-exportacion-a-traves-de-argentina/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T01:44:00Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcnBCMVZxM3lFcFo5RVhDMWhLSlJZWjNoZWpzYTdmeFNjdkx6R0dpdVZ2LVJRX0ZQSWM4MnRHc1VOSXJOVlZaQTA0cWcxZjY4dlJWZUEyRXhXbjNWN1RTQTJHOUtwU25zV1RkUFFUVnJIdjRjRWpZTmRMOVNVRm1WNHE3UlkzaHhIOHBndDFuaEc4ZnJubEd3c0M5YVdFbXNObzAwbGVVam1LZER1MXBCZkVzQmdYUjFxOXF4NzBR?oc=5"
+    },
     {
       "id": "mexico-resiente-aranceles-de-eu-con-caida-en-exportaciones-y-produccion-automotr",
       "datetime": "2026-10-08T21:33:53Z",
@@ -602,42 +1060,10 @@
         }
       ],
       "gnTried": "2026-10-08T21:43:00Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbXRLcnRzWS1rY0VIYWNMYkZWa2ZmRVJvQzFXeEh6VVRzaGNXaXREenZRYk5mUzFYb2wxLTB2VUlLR0llVVRxZS1waVh0NHYxZ3YwdlUxWlVuZlBTOW9QTG9RazV4ZXVlbEdtY0NUc2dCVDIzaXVCTHBMVGt3aGhkbl9kMldqME1nTjBsWDBKM0lkd1lOUmZIby1B0gGfAUFVX3lxTE5aZjFCRXNEcnBSSEFvUWpkZmdxYVFXWmtZQmdxVFUwa09sRjBISk9jTkh1OXZhX0drQ0JzYktDVDBhaDczS0pWSVFOV2Q4SWFMOFMyX3RHUHl3ZllOak1mblNjRmhjZVo1bnloa0h0ZUx2QnVnRlhleGpQWTc3WEJNZXdmaWxZcUgxNWZoemtPXzZVRi1hbzJjTkZaZzVEYw?oc=5"
-    },
-    {
-      "id": "bbva-research-exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-a",
-      "datetime": "2026-10-08T19:44:46Z",
-      "date": "2026-10-08",
-      "firstSeen": "2026-10-08T21:43:00Z",
-      "title": "BBVA Research: exportaciones, inversión y desinflación, las claves de la economía argentina hacia 2027",
-      "summary": "El último informe Situación Argentina, elaborado por BBVA Research, señala que este año Argentina se encamina a lograr un récord histórico de exportaciones de 102 mil millones de dólares. El principal impulso proviene del sector de hidrocarburos, la minería y el agro, en donde se concentra hoy el mayor dinamismo de la…",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina",
-        "Exportaciones"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
-      "sources": [
-        {
-          "name": "100% seguro",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://100seguro.com.ar/bbva-research-exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-argentina-hacia-2027/",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-08T21:43:00Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNb3lPeTlEMGptYV9taXAxeDhRM2dvcVdIV0RaNjVEYks0VERNR3lFbWtpSHhyc0dUbmFVQUpKZHltOTU1MDkxUTl2dnpnRVNXajg5RUUwdmR2TVpwN0Q5Wmk4Snk4RlNKRW44ZzdQTUdraWFaZVJGck1zQWlsQ0pBejNiemp4WDhHaTlSTHN4YldpTzJ0TFg2SmVoRVB3MG1tQ0lNQ09EenhYejg4ZTQ0dUtEZExoanAxTFBlM0R5VUoxUkU?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbXRLcnRzWS1rY0VIYWNMYkZWa2ZmRVJvQzFXeEh6VVRzaGNXaXREenZRYk5mUzFYb2wxLTB2VUlLR0llVVRxZS1waVh0NHYxZ3YwdlUxWlVuZlBTOW9QTG9RazV4ZXVlbEdtY0NUc2dCVDIzaXVCTHBMVGt3aGhkbl9kMldqME1nTjBsWDBKM0lkd1lOUmZIby1B0gGfAUFVX3lxTE5aZjFCRXNEcnBSSEFvUWpkZmdxYVFXWmtZQmdxVFUwa09sRjBISk9jTkh1OXZhX0drQ0JzYktDVDBhaDczS0pWSVFOV2Q4SWFMOFMyX3RHUHl3ZllOak1mblNjRmhjZVo1bnloa0h0ZUx2QnVnRlhleGpQWTc3WEJNZXdmaWxZcUgxNWZoemtPXzZVRi1hbzJjTkZaZzVEYw?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWmYxQkVzRHJwUkhBb1FqZGZncWFRV1prWUJncVRVMGtPbEYwSEpPY05IdTl2YV9Ha0NCc2JLQ1QwYWg3M0tKVklRTldkOElhTDhTMl90R1B5d2ZZTmpNZm5TY0ZoY2VaNW55aGtIdGVMdkJ1Z0ZYZXhqUFk3N1hCTWV3ZmlsWXFIMTVmaHprT182VUYtYW8yY05GWmc1RGPSAZ8BQVVfeXFMTlpmMUJFc0RycFJIQW9RamRmZ3FhUVdaa1lCZ3FUVTBrT2xGMEhKT2NOSHU5dmFfR2tDQnNiS0NUMGFoNzNLSlZJUU5XZDhJYUw4UzJfdEdQeXdmWU5qTWZuU2NGaGNlWjVueWhrSHRlTHZCdWdGWGV4alBZNzdYQk1ld2ZpbFlxSDE1Zmh6a09fNlVGLWFvMmNORlpnNURj"
+      ]
     },
     {
       "id": "entre-salta-catamarca-y-jujuy-proyectan-una-exportacion-de-170-000-toneladas-par",
@@ -655,8 +1081,10 @@
       "countries": [
         "Argentina"
       ],
-      "tags": [],
-      "visual": "customs",
+      "tags": [
+        "Minería"
+      ],
+      "visual": "mining",
       "impact": 1,
       "affectsArgentina": true,
       "kind": "noticia",
@@ -684,11 +1112,13 @@
       "body": [],
       "keyData": [],
       "topics": [
+        "Argentina",
         "Latinoamérica",
         "Mercosur",
         "Europa"
       ],
       "countries": [
+        "Argentina",
         "Paraguay",
         "Unión Europea"
       ],
@@ -711,7 +1141,59 @@
         }
       ],
       "gnTried": "2026-10-08T21:43:00Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOamRCN0lpMEppRElaZUxQS3BKaXZwV1ZEeWI0eGZFbHlhcGduNjQySjhpYXowY3N0UFFaSXcxYU5GaEU4LWlYeHM4VDU4a3VUZWJ4dkRmMkY0UGdkc3lwcnp3VUllTm5lc0dUbVlqMzlwWHdmT253STdQLU95YmRkWEtCci1nQkR0clVScFc2dGxVcXVZd28xb205OGtVZUxPMWRuVk0zS1otM0NwendYTHdfeHhjdGM0TVhMT0JpNy3SAcABQVVfeXFMTmpkQjdJaTBKaURJWmVMUEtwSml2cFdWRHliNHhmRWx5YXBnbjY0Mko4aWF6MGNzdFBRWkl3MWFORmhFOC1pWHhzOFQ1OGt1VGVieHZEZjJGNFBnZHN5cHJ6d1VJZU5uZXNHVG1ZajM5cFh3Zk9ud0k3UC1PeWJkZFhLQnItZ0JEdHJVUnBXNnRsVXF1WXdvMW9tOThrVWVMTzFkblZNM0taLTNDcHp3WEx3X3h4Y3RjNE1YTE9CaTct?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOamRCN0lpMEppRElaZUxQS3BKaXZwV1ZEeWI0eGZFbHlhcGduNjQySjhpYXowY3N0UFFaSXcxYU5GaEU4LWlYeHM4VDU4a3VUZWJ4dkRmMkY0UGdkc3lwcnp3VUllTm5lc0dUbVlqMzlwWHdmT253STdQLU95YmRkWEtCci1nQkR0clVScFc2dGxVcXVZd28xb205OGtVZUxPMWRuVk0zS1otM0NwendYTHdfeHhjdGM0TVhMT0JpNy3SAcABQVVfeXFMTmpkQjdJaTBKaURJWmVMUEtwSml2cFdWRHliNHhmRWx5YXBnbjY0Mko4aWF6MGNzdFBRWkl3MWFORmhFOC1pWHhzOFQ1OGt1VGVieHZEZjJGNFBnZHN5cHJ6d1VJZU5uZXNHVG1ZajM5cFh3Zk9ud0k3UC1PeWJkZFhLQnItZ0JEdHJVUnBXNnRsVXF1WXdvMW9tOThrVWVMTzFkblZNM0taLTNDcHp3WEx3X3h4Y3RjNE1YTE9CaTct?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVjVZOGswX082R0g5RmxxV1ZmWTlQcU10dWJ2QjhLSjhsd3A1N0lzQ2pGZFRpd2VuY3FWWV94V1hjVTRzdWFscERZZ0hRZlhqd1MzTXRvQ2pUcVloVnJ4UmFUM1ZQUHhZLTRBWUNpRmFQQkhRaldFamhLWWlQQXQ0NVhxOFluREZzSVRaTnQ4RUpBbEV6bThHN0MtcjFkSFBWdjdMWjhXaVlDcFZPYklMNVdRYmNMZ3c1WTBr0gHAAUFVX3lxTE5qZEI3SWkwSmlESVplTFBLcEppdnBXVkR5YjR4ZkVseWFwZ242NDJKOGlhejBjc3RQUVpJdzFhTkZoRTgtaVh4czhUNThrdVRlYnh2RGYyRjRQZ2RzeXByendVSWVObmVzR1RtWWozOXBYd2ZPbndJN1AtT3liZGRYS0JyLWdCRHRyVVJwVzZ0bFVxdVl3bzFvbTk4a1VlTE8xZG5WTTNLWi0zQ3B6d1hMd194eGN0YzRNWExPQmk3LQ"
+      ]
+    },
+    {
+      "id": "exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-argentina-hacia",
+      "datetime": "2026-10-08T18:59:34Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Exportaciones, inversión y desinflación, las claves de la economía argentina hacia 2027",
+      "summary": "BBVA Research señala que este año Argentina se encamina a lograr un récord histórico de exportaciones de USD 102.000 millones.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "BBVA",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.bbva.com/es/ar/economia-y-finanzas/exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-argentina-hacia-2027/",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "100% seguro",
+          "type": "También publicó esta noticia",
+          "url": "https://100seguro.com.ar/bbva-research-exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-argentina-hacia-2027/",
+          "alsoIn": true,
+          "title": "BBVA Research: exportaciones, inversión y desinflación, las claves de la economía argentina hacia 2027"
+        }
+      ],
+      "gnTried": "2026-10-09T01:44:00Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxON2g4WEE4NWFjUDFCbEUweVdpS0p4TnYwU3ZWTWVrZVd4S3pqTWNaZjg0MXF6b2E4OVpuMEIzd3F4VE50c2RqT3AySmg2LVZ6WWdxT0hBLTloMkNwMlhDUEJ1OG5WazZiSlZHT01PbUpNdTRnOEszZlYxdU42SHMwVThmaVNhSHNCTjJFT2xuMnV2YWUyYkc3S1hwMVVBQV9PU3FkU2N1X2V0M2hYeDBxVG5RVjNBMHo3NWhkOWl4Tmh0MzBkVzBMeVRpVjBxQQ?oc=5",
+      "aliasUrls": [
+        "https://100seguro.com.ar/bbva-research-exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-argentina-hacia-2027",
+        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNb3lPeTlEMGptYV9taXAxeDhRM2dvcVdIV0RaNjVEYks0VERNR3lFbWtpSHhyc0dUbmFVQUpKZHltOTU1MDkxUTl2dnpnRVNXajg5RUUwdmR2TVpwN0Q5Wmk4Snk4RlNKRW44ZzdQTUdraWFaZVJGck1zQWlsQ0pBejNiemp4WDhHaTlSTHN4YldpTzJ0TFg2SmVoRVB3MG1tQ0lNQ09EenhYejg4ZTQ0dUtEZExoanAxTFBlM0R5VUoxUkU"
+      ],
+      "mergedIds": [
+        "bbva-research-exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-a"
+      ]
     },
     {
       "id": "la-omc-eleva-del-1-9-al-3-9-su-prevision-de-crecimiento-del-comercio-mundial",
@@ -892,54 +1374,6 @@
       ],
       "gnTried": "2026-10-08T17:42:57Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUkU2eGNINHlBUmNWaUtES2pyYnpyU1l5eGw5VXdyT0hfOHZ2SDgxNC1VY3E3clMxQWUyaWUyNURnTDljZUpVV2FyZElwdVFPVUZ0MUY1VFFCMm05bGxmbWhBTGpWUy1Ib1BHNW5JRVZ0bE5PR2N1VXRDV2p3NkxBZ2tFdlcwOXBCQ3hwUDZDUHVMNzY3Yk1jVmJGRTk5ODAwdFNaRW5JQkMyakdJODE3U3RNZlEzYUNucFI5dXhVNlV1OVRwbG9abGRKYTJLMjR6Y3dSWXZuYVBUZFd4UWdmR0R4ajRndw?oc=5"
-    },
-    {
-      "id": "derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquileres-s",
-      "datetime": "2026-10-08T16:04:03Z",
-      "date": "2026-10-08",
-      "firstSeen": "2026-10-08T17:42:57Z",
-      "title": "Derogar el DNU 70 no restituye las leyes anteriores: qué pasaría con alquileres, salud y comercio exterior",
-      "summary": "",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [],
-      "visual": "globe",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Comercio exterior Argentina",
-      "sources": [
-        {
-          "name": "La Licuadora",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://www.lalicuadoratdf.com.ar/2026/10/derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquileres-salud-y-comercio-exterior/",
-          "primary": true,
-          "author": ""
-        },
-        {
-          "name": "NoticiasNet",
-          "type": "También publicó esta noticia",
-          "url": "https://www.noticiasnet.com.ar/noticias/2026/10/08/228051-que-pasara-con-los-alquileres-y-el-comercio-exterior-si-derogan-el-mega-dnu-702023",
-          "alsoIn": true,
-          "title": "Qué pasará con los alquileres y el comercio exterior si derogan el mega DNU 70/2023"
-        }
-      ],
-      "gnTried": "2026-10-08T17:42:57Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQdTVxYW9nOGVMZ3VDanBoVnQwRU9kUGNRdGNCV0V6Q2ppLW1sTWtlaXlfdGthaTNHa213cmtYS1Bfdk5kUWtwdF9YTm1VZ0JkbnF6UHBKeHcxTUhqZWpqTmJydF9ORDd1X0ZjWmhUdEpZdE1hSm9veGlLcUVyZFVZY0VkdXVLa1BmY291U0daamMtTlZXV1ZGVmhkWWQ4aEZBSHVvYXFFT1BtRHpSZEhMSDBuUHZmaTA5MnQwN05pajczVm5sMk5VWVd6Tm1Eam01cE5fR291cGYtUHJ5dW5yVg?oc=5",
-      "aliasUrls": [
-        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMTVrOTl5Rm02U1N1TEdja3ZoaE5lRnFtY3I4SXFRSmRib2NaMXd1b01QTk5CWm9FZjhmXzBhZV9oeDkwSlVSdXVMVFZMZVl1aGs0R0RBVjUzQ0JqbFhHTEpiUkZMZGF4elUtSnFRY0lzV01Fa1ZHUGZ2SXNfZUNBRU9wLWJidXFIbndsS3FOTEZaZEUwWHMtVW5TaTlUc3RCdWNZOGpvbzVXbkZ0V0NQQzNxNmUxRldYdmRtaXV6N3JQSk44cTVubXdfMEY0VWNqTVB4ZTRScFg2S2hn0gHcAUFVX3lxTE8xNWs5OXlGbTZTU3VMR2NrdmhoTmVGcW1jcjhJcVFKZGJvY1oxd3VvTVBOTkJab0VmOGZfMGFlX2h4OTBKVVJ1dUxUVkxlWXVoazRHREFWNTNDQmpsWEdMSmJSRkxkYXh6VS1KcVFjSXNXTUVrVkdQZnZJc19lQ0FFT3AtYmJ1cUhud2xLcU5MRlpkRTBYcy1VblNpOVRzdEJ1Y1k4am9vNVduRnRXQ1BDM3E2ZTFGV1h2ZG1pdXo3clBKTjhxNW5td18wRjRVY2pNUHhlNFJwWDZLaGc",
-        "https://www.noticiasnet.com.ar/noticias/2026/10/08/228051-que-pasara-con-los-alquileres-y-el-comercio-exterior-si-derogan-el-mega-dnu-702023"
-      ],
-      "mergedIds": [
-        "que-pasara-con-los-alquileres-y-el-comercio-exterior-si-derogan-el-mega-dnu-70-2"
-      ]
     },
     {
       "id": "alerta-mundial-en-ormuz-eeuu-denuncia-ataques-iranies-y-moviliza-a-las-navieras",
@@ -1364,6 +1798,7 @@
       "body": [],
       "keyData": [],
       "topics": [
+        "Argentina",
         "Importaciones"
       ],
       "countries": [
@@ -1469,7 +1904,8 @@
       "body": [],
       "keyData": [],
       "topics": [
-        "Transporte aéreo"
+        "Transporte aéreo",
+        "Puertos"
       ],
       "countries": [
         "Global"
@@ -1787,6 +2223,64 @@
       "mergedIds": [
         "fed-de-nueva-york-aranceles-de-trump-anadieron-2-9-puntos-a-la-inflacion-de-bien",
         "reserva-federal-de-nueva-york-los-aranceles-de-trump-anadieron-2-9-puntos-a-la-i"
+      ]
+    },
+    {
+      "id": "derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquiler-2",
+      "datetime": "2026-10-08T13:00:02Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Derogar el DNU 70 no restituye las leyes anteriores: qué pasaría con alquileres, salud y comercio exterior",
+      "summary": "El análisis de Zentrix Consultora sobre el DNU 70/2023 advierte que, si la Cámara de Diputados confirma el rechazo que el Senado votó en marzo de 2024, el impacto se concentraría en tres mercados que todavía dependen del decreto: los alquileres, la salud privada y el comercio exterior. La derogación no restituye de…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Sin Filtro",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://sinfiltro.ar/derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquileres-salud-y-comercio-exterior/",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "La Licuadora",
+          "type": "También publicó esta noticia",
+          "url": "https://www.lalicuadoratdf.com.ar/2026/10/derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquileres-salud-y-comercio-exterior/",
+          "alsoIn": true,
+          "title": "Derogar el DNU 70 no restituye las leyes anteriores: qué pasaría con alquileres, salud y comercio exterior"
+        },
+        {
+          "name": "NoticiasNet",
+          "type": "También publicó esta noticia",
+          "url": "https://www.noticiasnet.com.ar/noticias/2026/10/08/228051-que-pasara-con-los-alquileres-y-el-comercio-exterior-si-derogan-el-mega-dnu-702023",
+          "alsoIn": true,
+          "title": "Derogar el DNU 70 no restituye las leyes anteriores: qué pasaría con alquileres, salud y comercio exterior"
+        }
+      ],
+      "gnTried": "2026-10-09T01:44:00Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQ29sMUxLa0gtVmt6WnJuZjNFUWtUcjdjOFc5TFlPMEFnaE1HY19jaXB3X0lHZUxSeXFpU1VvQXRHSDZFaHBFU0d3ajBOazdaUXJZZkVMT2k5NEx2Wk5GTW9MRldlRnpwVGNTcjc5TjRvR3dtdS11UDZHMFhmT0RjUEpmVVVSTzFFRGV6TUxSSW83ZnBpN0Exbk1nMzZNQ3J6STZjTEpYeHBoZlRmQ3lSVnN3UFpwYTdBQTJqOHdEQWh5TmNY?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMTVrOTl5Rm02U1N1TEdja3ZoaE5lRnFtY3I4SXFRSmRib2NaMXd1b01QTk5CWm9FZjhmXzBhZV9oeDkwSlVSdXVMVFZMZVl1aGs0R0RBVjUzQ0JqbFhHTEpiUkZMZGF4elUtSnFRY0lzV01Fa1ZHUGZ2SXNfZUNBRU9wLWJidXFIbndsS3FOTEZaZEUwWHMtVW5TaTlUc3RCdWNZOGpvbzVXbkZ0V0NQQzNxNmUxRldYdmRtaXV6N3JQSk44cTVubXdfMEY0VWNqTVB4ZTRScFg2S2hn0gHcAUFVX3lxTE8xNWs5OXlGbTZTU3VMR2NrdmhoTmVGcW1jcjhJcVFKZGJvY1oxd3VvTVBOTkJab0VmOGZfMGFlX2h4OTBKVVJ1dUxUVkxlWXVoazRHREFWNTNDQmpsWEdMSmJSRkxkYXh6VS1KcVFjSXNXTUVrVkdQZnZJc19lQ0FFT3AtYmJ1cUhud2xLcU5MRlpkRTBYcy1VblNpOVRzdEJ1Y1k4am9vNVduRnRXQ1BDM3E2ZTFGV1h2ZG1pdXo3clBKTjhxNW5td18wRjRVY2pNUHhlNFJwWDZLaGc",
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQdTVxYW9nOGVMZ3VDanBoVnQwRU9kUGNRdGNCV0V6Q2ppLW1sTWtlaXlfdGthaTNHa213cmtYS1Bfdk5kUWtwdF9YTm1VZ0JkbnF6UHBKeHcxTUhqZWpqTmJydF9ORDd1X0ZjWmhUdEpZdE1hSm9veGlLcUVyZFVZY0VkdXVLa1BmY291U0daamMtTlZXV1ZGVmhkWWQ4aEZBSHVvYXFFT1BtRHpSZEhMSDBuUHZmaTA5MnQwN05pajczVm5sMk5VWVd6Tm1Eam01cE5fR291cGYtUHJ5dW5yVg",
+        "https://www.lalicuadoratdf.com.ar/2026/10/derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquileres-salud-y-comercio-exterior",
+        "https://www.noticiasnet.com.ar/noticias/2026/10/08/228051-que-pasara-con-los-alquileres-y-el-comercio-exterior-si-derogan-el-mega-dnu-702023"
+      ],
+      "mergedIds": [
+        "derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquileres-s",
+        "que-pasara-con-los-alquileres-y-el-comercio-exterior-si-derogan-el-mega-dnu-70-2"
       ]
     },
     {
@@ -2501,6 +2995,42 @@
       ],
       "gnTried": "2026-10-08T09:43:42Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1qckVNeTFhaTBNcVZZSmdSX0FjeDREQUhZMkZ0NjNOdGlJT2IxR0FuZW1fMHFfMGMtdlQ0aG12cHZpQndSaWlieXNjRUNlTXcxTENYSEJCLW1xV0xTZk5Pa3g4bjNUM2dsQkxEVWdnRnk0UWhSM1dZ?oc=5"
+    },
+    {
+      "id": "transporte-pesado-se-acomoda-al-nuevo-precio-del-diesel-y-ajusta-sus-fletes",
+      "datetime": "2026-10-08T06:39:00Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T01:44:00Z",
+      "title": "Transporte pesado se acomoda al nuevo precio del diésel y ajusta sus fletes",
+      "summary": "«Sí, no nos queda más, a estas alturas, hay que operar, analizar y seguir trabajando, no queda otra», admitió el dirigente, Juan Carlos Borda, al destacar la aprobación de la ley antibloqueos. Fern…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Fletes"
+      ],
+      "visual": "ship",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Noticias El Periódico Tarija",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://elperiodico.com.bo/transporte-pesado-se-acomoda-al-nuevo-precio-del-diesel-y-ajusta-sus-fletes/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T01:44:00Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOVdrUldnY3E2S2pwMnlhS0hmeHdTTDUxOU1Ya0s5QkJZYThHUnpwRkZNTFhrbnl0V2o1dVJ0aVN2aTdlTW92XzlXUmtpdk55cG1ocXBTYTM2NEw0d1c2Y1BDRG9PRW5kSHlHOGVTQ3dZYnR6YlpuTEt0cDFxRHZzR1h5Q29sczl5V3VqWmE1MTJucXZvNFBHN2FacXR2NjAyT3h5aTdR?oc=5"
     },
     {
       "id": "mientras-trump-pone-aranceles-europa-esta-construyendo-lentamente-un-ecosistema",
@@ -3450,10 +3980,24 @@
           "url": "https://robertocavada.com/eliminacion-de-aranceles-a-la-importacion-de-arroz-genera-posiciones-encontradas-entre-diputados/",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "N Digital",
+          "type": "También publicó esta noticia",
+          "url": "https://n.com.do/2026/10/08/economistas-califican-de-desacertado-decreto-que-deroga-aranceles-al-arroz/",
+          "alsoIn": true,
+          "title": "Economistas califican de desacertado decreto que deroga aranceles al arroz"
         }
       ],
       "gnTried": "2026-10-07T21:42:45Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPczRwMVNrUmZyWHlmaG9GS05tTFJzVEl5eVJrT0pkQVBMMXhpNEhMVEk1NTVwVjdvbmNUOV8tWERXT1M4Tml4d0FNTFRMUEI1V2FMLVdkdW5jb3VnT0NfX3dLZWJQMEdPOVAyRkpFakVFMnI3WlZjd2lJa19tQU1RMnJkZjVCLTc5aERJVGZKYzhsMTdLOFdNdTdMamNZTTVxa3hIUGpGRG1sSnF3aTVBNWo4TFVvRDl6UGNsMlNsRlU?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPczRwMVNrUmZyWHlmaG9GS05tTFJzVEl5eVJrT0pkQVBMMXhpNEhMVEk1NTVwVjdvbmNUOV8tWERXT1M4Tml4d0FNTFRMUEI1V2FMLVdkdW5jb3VnT0NfX3dLZWJQMEdPOVAyRkpFakVFMnI3WlZjd2lJa19tQU1RMnJkZjVCLTc5aERJVGZKYzhsMTdLOFdNdTdMamNZTTVxa3hIUGpGRG1sSnF3aTVBNWo4TFVvRDl6UGNsMlNsRlU?oc=5",
+      "aliasUrls": [
+        "https://n.com.do/2026/10/08/economistas-califican-de-desacertado-decreto-que-deroga-aranceles-al-arroz",
+        "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRnFYbnUzRTRxeG55ZnotR19Gb1FadmZrUmYydE84T2YzS3pER2hHREtjMno4My1POWI0RzEyc1dXelRoTkt6dWlQdEVRUG5RUGxpcUFIb1BRZkZyZUlYbHZyN2N1Mi1ScnV5Ri1lVHRjc290ZGR3TUYtb2JybjVqb0NBQk13YWh5NUtlZUttRGU2ZF8tT2ZiV3Z5VVdXaF8wWGhSNjBR"
+      ],
+      "mergedIds": [
+        "economistas-califican-de-desacertado-decreto-que-deroga-aranceles-al-arroz"
+      ]
     },
     {
       "id": "uruguay-avanzan-obras-para-mejorar-terminal-de-pasajeros-en-puerto-de-colonia",
@@ -8634,6 +9178,13 @@
           "url": "https://www.lanacion.com.ar/economia/por-el-impulso-de-vaca-muerta-neuquen-podria-convertirse-en-la-provincia-con-mas-exportaciones-del-nid08102026/",
           "alsoIn": true,
           "title": "Por el impulso de Vaca Muerta, Neuquén podría convertirse en la provincia con más exportaciones del país en cinco años"
+        },
+        {
+          "name": "Diario 7 lagos",
+          "type": "También publicó esta noticia",
+          "url": "https://www.diario7lagos.com.ar/noticias/2026/10/08/80565-paris-puso-a-neuquen-de-cara-a-ser-la-principal-provincia-exportadora-de-argentina-se-estima-que-para-el-2033-superara-a-buenos-aires",
+          "alsoIn": true,
+          "title": "París puso a Neuquén de cara a ser la principal provincia exportadora de Argentina: se estima que para el 2033 superará a Buenos Aires"
         }
       ],
       "gnTried": "2026-10-06T13:04:33Z",
@@ -8642,8 +9193,10 @@
         "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMkNESUVMTFBHMTNlZVdXSGVSX0k2cXdRRndTaEVmTTJ4c05mOXUta3hzdm5fYjF2UEw1MVNtSXg4STdvRWowSzlxRVJHWlNXZU0wZmdvdXh4TVRIN2RzOFp6Z3ozMXc3ODV4TENPUlBTWkRvdThncVdBSzByWWxsT3RWVnN1aUlONWJ6UUhZQUhGc3RPVVBOOHBRdUxpX29XRzRZdmwzQkEzaVUwcGQ2Zi1xQVZ3NndvbEVYX1NQRW9sdmZvTXVNUDBFa2k1NkVsc01EdUhQM01yTHp5ejdzbQ",
         "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeGR6M0NUWXEyaEEtQV9GQm1IQUI2M2lSUS1CaFlZWkpDUEVEY3BFT2ZXckpURWt0VjA3dTNQUV9zR2I4VWRocURITVIycnZUeU4xXzNNa1RwaTg4bVJfdTdWN0RFdFpSZ01acmY4c1g2RHhPVjkxLS0xWkk4RnNwY0VjZlhjcHBaanVoMVdTMEFoR0Z4RDR0RGhxNEIyUUxENmxhMndENHBOeWstOU5rWlo0NGRkRmk5eC1ha0hfNmRwQjE5aHhTRDJvTDY2dWdualNxTlRiRTItSTgzNEI3d0NB",
         "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPVDB1YVdJMWxKQUF6YWUwTzdVZzJVRUJNamtGM2Z1UU1vcjZ5STVTSlBJd093enRWdU5EaGRKTzJqRlVWSmdHWVQtdG1xRnVIM1oxU0pWdjdnQndSWGZJVVRuaGNSOFA1d1gwVUxqdDg5cmNId2duTjZHSVNJelg5ZHpBVmV2UV9wTTN2SGtWMFJaRlJ5YlVQTGpyVzNUd3NRSHNoeG9naTZWM1MzVGEzb0w4ZUxmTmhJUXpiY2IzVVIwVENGeDhXUXF0eTVzR1J4NEZoWnVCZzJrV1p1LTd6T0ZXbGJ6X0dNbFZadlBuT0JCckM5YUZSbW05djJrVW83ejVzai1tWG_SAaMCQVVfeXFMTm9JWWs1REEtTDdVcG92Q2pHTFkzdVVDeGZKWmp4bkxFLUNpWEpGeHR2anFvelJLM01TbGlkaGZESEZTZzd5UWFXbVZ1MWxtRHYtTmplNDQ5NVN3M19Cbm1sby1ZQmJ0RXRiVUVzU3hNNDRKZVAtaGdWS0ZNQmFkak14bU5pT3RTS2lFTzdfNHlpMWp2SUlMclh0bjNUWVZNUFRZYklOaWxRbzZEUjFZYTVDdVdVMEREVEJWd3hjT0ZWb0FfdjlGbks5Zkp3cGJhNTVDSF8wUURpOS1Fci1tNWM3ZURKaWNMNXd2SlNuWGltNlQ3YjJZUmdVYVBlYml5aTh0T013ano4cllYZ2FmLTlPSDEtQ1JuT1o5ZjZyT1hLRlBr",
+        "https://news.google.com/rss/articles/CBMimwJBVV95cUxNRVFZZ3BpaDRERVdubFNZVEduVGh4MTctYklnSUFfVmdtcHhGOUdhdkF4RVN2dzF1MU9qLXdhY3F6cUFfVzcwYmNaakpQWnVQNThQc1VWYTdJZ3NzZXVMYmZ2R1RMWGJfbmVtd19QbDRUNG9VeFJpeTluWnQycjBTUE5VcVJwWFB3YzU4ci1EVVVleUVsOWVoWlJ6d2JSUDBQZmdqcjM1QWdPRFdrelpTdGVFbkxMYXFrMjMtN21WeURlVzlINUNzRk42SmpXMHAwRnBabmVNOXhMeUNCNzB1YUFYaEszTGg5VVVmU2xnZzRWSmRadzFUNEhHeFhzQmx3VUJpZFFPcjV5YTdHM1B6cGxPYXlGXzhDVWpF0gGgAkFVX3lxTE54bXNLSHBZMmFDQ2pDbU1TUE9FQmZJQ1VaNmg3SktlLWpJcDZ2Rk9OR0NLRHotTVE0Y1FHRW8zaVVIb3RlYjE5Z1AwUVBVbUhRRGJVckhlWjhkejE2NkIwQzB3OHU1SExIMUU5ZmZlOTBNWjZqR2lpZmZXdXhVUWx4bUREYTh3OVZXUlpyOUthNjVfQ2NMelJtMW5mbkp6YTRzTUVRN1BaVnkyYXgycTJwbWFxRzFyTS0wdTh0YXIzdE95M0ctX1BCSU5KdjlobWZSNzlhVkloSTZISDJncE1uelJoMFczbURyY1QySEg4R2xjRlp5eng0blFLekM1S3ZUOHZkZWZ4SVA4MHlFYncwYXZxT0xPQURjR3V3SnJBTA",
         "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWE5LSXFnM0NTQkZVRHBOOWZvNE9SNkZMRFk4N3BJZFNwdlhfZVUtampHcHU5NFVpcmRRZzBQdkRXMjJxSVc2QUlyaWNZY1ZLSXFUQVRZanpRUUh1enM4b2NNbllBV0xFTHJ6SjdrUUlZQTh3LVJTMGxHbnRUOVcyS3hickVXOXl6UVlQdEZiSTdnRE1vWU9RamV1dU1SblI0eU5CaDZGVDlaQXA4TlpkUWwtdjZ3c2VvRFYyU0dVNDUyUdIBwgFBVV95cUxOWE5LSXFnM0NTQkZVRHBOOWZvNE9SNkZMRFk4N3BJZFNwdlhfZVUtampHcHU5NFVpcmRRZzBQdkRXMjJxSVc2QUlyaWNZY1ZLSXFUQVRZanpRUUh1enM4b2NNbllBV0xFTHJ6SjdrUUlZQTh3LVJTMGxHbnRUOVcyS3hickVXOXl6UVlQdEZiSTdnRE1vWU9RamV1dU1SblI0eU5CaDZGVDlaQXA4TlpkUWwtdjZ3c2VvRFYyU0dVNDUyUQ",
         "https://news.google.com/rss/articles/CBMixwFBVV95cUxNM0xFam9ILWR2cVptOWE1eGZhUmhEOEpJcWlGbVJMTmNiM2UwdEQyMFFieTR0a3JRRE9JQ2FkUG1ZY2FibDFRZXRKY1c0MEVRNUd0dmtLMVU3UW13VFN0dHFEWktiMXdIUDlVNE1yS0MxTzNSNWpmWkZfU2FCaDh3RlNrZjZ1elViNDRvSHFQb0xNU2FEZmZsRFpCbDVEbEVNTUhtc2h2SDlpVWZTUEswN25LLUFFN1d4c2dxQlctNmtJU1hyVm1Z0gHMAUFVX3lxTE03YWx4SHZzZ3F5cHgzNFlsNDNYbTVuZXU2REdTb1ZCZmphbzlFMm5feEtENGY5UE5YWVFoc09LWFNGa2YyRW1fbnpUV0NlUmlJX19XRXlybzFTc3FHUzhULVBYOTk5aGxEdlZYUk9EbTVTSmdNckw4MkFZLVlYamZEV3ZPc2d5c2I5QUJkeW4tOTdWcEZBWG8wWW5oenZmQXR6a1dHTHVRUmYxMVhSMldZY3hMZk5IbEJPOFM5NGd6azVSMnNlTjBVaTkxQg",
+        "https://www.diario7lagos.com.ar/noticias/2026/10/08/80565-paris-puso-a-neuquen-de-cara-a-ser-la-principal-provincia-exportadora-de-argentina-se-estima-que-para-el-2033-superara-a-buenos-aires",
         "https://www.lanacion.com.ar/economia/por-el-impulso-de-vaca-muerta-neuquen-podria-convertirse-en-la-provincia-con-mas-exportaciones-del-nid08102026",
         "https://www.mejorinformado.com/energia/vaca-muerta-cambia-mapa-exportador-argentina-proyecta-neuquen-primer-lugar_1791473997"
       ],
@@ -8651,7 +9204,8 @@
         "gracias-a-vaca-muerta-entre-2031-y-2032-neuquen-superaria-a-buenos-aires-para-se",
         "con-el-impulso-de-vaca-muerta-neuquen-seria-la-principal-provincia-exportadora-d",
         "vaca-muerta-cambia-el-mapa-exportador-de-argentina-y-proyecta-a-neuquen-al-prime",
-        "por-el-impulso-de-vaca-muerta-neuquen-podria-convertirse-en-la-provincia-con-mas"
+        "por-el-impulso-de-vaca-muerta-neuquen-podria-convertirse-en-la-provincia-con-mas",
+        "paris-puso-a-neuquen-de-cara-a-ser-la-principal-provincia-exportadora-de-argenti"
       ]
     },
     {
@@ -23906,7 +24460,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-08T21:43:00Z",
+    "ranAt": "2026-10-09T01:44:00Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -23922,7 +24476,7 @@
         "url": "https://www.aduananews.com/feed/",
         "ok": true,
         "items": 12,
-        "added": 2,
+        "added": 0,
         "updated": 0,
         "skipped": 2
       },
@@ -23931,43 +24485,43 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 1,
+        "added": 5,
         "updated": 0,
-        "skipped": 13
+        "skipped": 9
       },
       {
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 45,
-        "added": 1,
+        "items": 43,
+        "added": 2,
         "updated": 0,
-        "skipped": 29
+        "skipped": 27
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
         "items": 49,
-        "added": 3,
+        "added": 0,
         "updated": 0,
-        "skipped": 35
+        "skipped": 34
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 63,
+        "items": 64,
         "added": 4,
         "updated": 0,
-        "skipped": 40
+        "skipped": 37
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 50,
-        "added": 1,
+        "items": 49,
+        "added": 2,
         "updated": 0,
         "skipped": 26
       },
@@ -23978,16 +24532,16 @@
         "items": 57,
         "added": 4,
         "updated": 0,
-        "skipped": 39
+        "skipped": 40
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 91,
+        "items": 90,
         "added": 4,
         "updated": 0,
-        "skipped": 60
+        "skipped": 57
       }
     ],
     "curatedDuplicates": [
@@ -23995,11 +24549,6 @@
         "title": "Argentina-Brasil: septiembre cerró con un menor déficit de US$ 51 millones",
         "url": "https://aduananews.com/bras-septiembre-cerro-con-un-menor-deficit-de-us-51-millones/?utm_source=rss&utm_medium=rss&utm_campaign=bras-septiembre-cerro-con-un-menor-deficit-de-us-51-millones",
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
-      },
-      {
-        "title": "Hapag-Lloyd se retira de servicio conjunto con MSC y ONE en ruta Asia – Sudamérica",
-        "url": "https://portalportuario.cl/hapag-lloyd-se-retira-de-servicio-conjunto-con-msc-y-one-en-ruta-asia-sudamerica/",
-        "curated": "gri-asia-latinoamerica-hapag-cma-cgm-15-octubre"
       },
       {
         "title": "La principal vía fluvial del comercio exterior argentino tendrá un nuevo esquema de control",
@@ -24012,28 +24561,13 @@
         "curated": "hidrovia-resolucion-59-2026-consejo-control-via-navegable-troncal"
       },
       {
+        "title": "Crecieron las exportaciones vitivinícolas en septiembre: 24,2% en vinos y 34,5% en mosto concentrado",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZG5SWmRtN0w1d3JJazhFdFBqMHF3ZDhOUTVHS1ZneG11WjFnck8yeGUyYlBwMGJmdDFoalA4TU5PS3pUMGt2OFU0ZzMzUXpkaVM2Y0hhQU0xU1huajZ6VVd1TFhtbmlmVVRUMXJUOUVubGdkWG8tVE05ck9hUl9ZWDJzdGJCZUNEelNMNU81cmtQWk9TQUlydGZNTWdDci1ydjVNM1hTZkFlbnFjQ0hKYzFzcnJGUHo1M2c2MHl3?oc=5",
+        "curated": "exportaciones-vino-septiembre-2026-inv-24-mosto-34"
+      },
+      {
         "title": "Argentina redujo el déficit con Brasil por la caída de las importaciones",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQS1BPTVZaLTlZZ182TktQYUZRcFdyX3lKWG9JV0VJaGNUdEswT3RZYW91dEU5TFM3X0M2UjVIdlBhWVRrTUF4VjZoWHRORFptQW9VQzNBdXlsYlZpNGlZY19sZEJqd01HMWw5SG1lNldsc2pldklCWkJVMlotZzI3bWpsbGdvd1h2amNfeklxQ3M0UmhkQ1oxc3MzbmNrTy1mUG1hQzhPU1R4NVHSAasBQVVfeXFMUEtQT01WWi05WWdfNk5LUGFGUXBXcl95SlhvSVdFSWhjVHRLME90WWFvdXRFOUxTN19DNlI1SHZQYVlUa01BeFY2aFh0TkRabUFvVUMzQXV5bGJWaTRpWWNfbGRCandNRzFsOUhtZTZXbHNqZXZJQlpCVTJaLWcyN21qbGxnb3dYdmpjX3pJcUNzNFJoZENaMXNzM25ja08tZlBtYUM4T1NUeDVR?oc=5",
-        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
-      },
-      {
-        "title": "Las importaciones de smartphones crecieron 746%, mientras la producción tecnológica argentina se desplomó",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUW9sX0VfZVFpWWs3MlBCMHdXN05CaU1QYXo0RjkwUHVpcDdJdFdMUTJhaVBhcDZFZ3IzLTJ5NjBkMDdLb2tmclpXS1VBQWxYWkxPel9DaXRhaUJDUmdSeGpQODBhNUlVMjBGY1BmcTQtSnhNYXRwSFVSWHNBOW1IamlPMDJvMHNkYndVaW01aWZydmFkWFUtMXJnRjZSRHpab2FNR1QtUnhmMzg0ZzlYcDZud0lPak9KY3QydVIxdXBzcGxPMzRNX2hha2tvWVFXal9CVjNqN0pKb285VnI4?oc=5",
-        "curated": "importaciones-celulares-746-analytica-produccion-electronica"
-      },
-      {
-        "title": "Argentina reduce importaciones desde Brasil y achica el déficit comercial",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWURvdGk3UmF4aUJxY2p1eF9aaGN2eHlSd0NRb3dnazV6ZzdIOFJPU01mMVRlRURIX2ZiX0h2WS1NbHhObDZpVW1ZYld2MjZORnVNVFhVZjlfMEx1YlBxNl9hQ3kxQnB2UVBsYVU3NUs0SVVza2RBUzl2ZWhaWHh0U0k3MHppaDA2dmFrU2U0cHd1NU40SHRWMlN5eXVqNWVMTHR0NmxJWUpqc2tHaHBQNG1VYngzZ9IBrwFBVV95cUxOT1lpZ094bFdWd1RyXy1ON1NSRl9GdndoNHdUdzdaZzNNUkdxYXAxQnBXUzJfM1NkTVBhYUZGSlRKVlBieWl4V3lMM3ZwZEV6dmhHR2s3T3Fud2RwcUpWSWs1Q2UtQ0dGLVl1QXYwLVFsVGpzc0ZhU2JVelU0RVZ4M1JIQlFRcm9XWGlsSXgwUFRBUmpCbkFncXJlM2FCNWNWcHg3dDRTZ2h4RVYxNUtZ?oc=5",
-        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
-      },
-      {
-        "title": "Déficit con Brasil: suben exportaciones pero sigue el rojo",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaWEzT0hnakNpTFRRenpkbGlFbUFhQVRteDJua1BhYUJpeXktV3c5dlpLRDduLWVSdmVxRHpfaGpQbU1aeklJMXJEVk4tZ1VUVVlhOWhCMnk0VkphMncxc3hmMktXRkMwTXJzNDdwSFZzSEVqRHF0TUNjeFhwc2hINkg2RUhWbXZWYjlSdXdkeWs?oc=5",
-        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
-      },
-      {
-        "title": "La balanza comercial con Brasil registró un déficit de US$ 51 millones en septiembre",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdDlwOENlWWlTSjUzWjdjaHp2MUUwTVpEMnRtdGxyNGxrM0lyYVhZWVRqSHI4QWs3Zk1CYmhNVXQ3Y1BCcF94ekVWdlh3OXhlemhaeE5wWW91VTZMa3E2T1ItbDZ4YXIzNWxXTjFWQXNfYWtCU0p6UWpKd1F6TGg0bkluRWotN1RKSm1kUzB3Vlg4VWJZS1lfak9uOEtKNEhSOFJKVHIwVGdPQVRmUlBOeXY0cnlEeHA1?oc=5",
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
@@ -24053,7 +24587,7 @@
       },
       {
         "title": "Por la caída en la venta de autos, las importaciones desde Brasil se derrumbaron un 25,2% interanual",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLXYzTzRUUTd4X3pqZThPdjJDLU9MWEJ5bHlVOFRtUFpqMERIdmpoVG1Pd1Bvajh0UTNfXzN6eFRtR3kxcmFkZHp2MXh4RWQ0bzd3WHcyYm1jMWNMQVQzMG82cVdVMjVXSjNtRzl1UXZlczVVZURVX1RDeWRBMFRVWU8wNm9mazNuUXdPdlpUUHBfRGtCbDNIOFF4aEtSM19uc0pDTjBlbTVOdVRxMkwyTlpHelRmZWJjQ0N2eTlDa9IBxAFBVV95cUxNcEg4TG9MSkpBLTR5QklvUmo4MW9zNnoxVndmN3RtdWMzcHh3aDlLZ1pPdmhFaDA2bkdpanp4cGs0RDVRX2k5eVZNUExLUjlyMG9mUEpfdWVaWWtOMUM4Mi1hZ2poSFZ4VklGRDlwazl4WDFoMHN5ZUpJSzEwNmh0c3BSWWhQNkVmeUtJdXpXZHZpd1VveUdubDVKMUY4bzJvR2JzcHdKYTVxZEpzcmFqTUZtNDlCY3JxdGtQejluUG1qbnpz?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcEg4TG9MSkpBLTR5QklvUmo4MW9zNnoxVndmN3RtdWMzcHh3aDlLZ1pPdmhFaDA2bkdpanp4cGs0RDVRX2k5eVZNUExLUjlyMG9mUEpfdWVaWWtOMUM4Mi1hZ2poSFZ4VklGRDlwazl4WDFoMHN5ZUpJSzEwNmh0c3BSWWhQNkVmeUtJdXpXZHZpd1VveUdubDVKMUY4bzJvR2JzcHdKYTVxZEpzcmFqTUZtNDlCY3JxdGtQejluUG1qbnpz0gHEAUFVX3lxTE1wSDhMb0xKSkEtNHlCSW9Sajgxb3M2ejFWd2Y3dG11YzNweHdoOUtnWk92aEVoMDZuR2lqenhwazRENVFfaTl5Vk1QTEtSOXIwb2ZQSl91ZVpZa04xQzgyLWFnamhIVnhWSUZEOXBrOXhYMWgwc3llSklLMTA2aHRzcFJZaFA2RWZ5S0l1eldkdml3VW95R25sNUoxRjhvMm9HYnNwd0phNXFkSnNyYWpNRm00OUJjcnF0a1B6OW5QbWpuenM?oc=5",
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
@@ -24062,18 +24596,13 @@
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
-        "title": "Las importaciones de smartphones crecieron 746%, mientras la producción tecnológica argentina se desplomó",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUW9sX0VfZVFpWWs3MlBCMHdXN05CaU1QYXo0RjkwUHVpcDdJdFdMUTJhaVBhcDZFZ3IzLTJ5NjBkMDdLb2tmclpXS1VBQWxYWkxPel9DaXRhaUJDUmdSeGpQODBhNUlVMjBGY1BmcTQtSnhNYXRwSFVSWHNBOW1IamlPMDJvMHNkYndVaW01aWZydmFkWFUtMXJnRjZSRHpab2FNR1QtUnhmMzg0ZzlYcDZud0lPak9KY3QydVIxdXBzcGxPMzRNX2hha2tvWVFXal9CVjNqN0pKb285VnI4?oc=5",
-        "curated": "importaciones-celulares-746-analytica-produccion-electronica"
-      },
-      {
         "title": "Argentina reduce importaciones desde Brasil y achica el déficit comercial",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWURvdGk3UmF4aUJxY2p1eF9aaGN2eHlSd0NRb3dnazV6ZzdIOFJPU01mMVRlRURIX2ZiX0h2WS1NbHhObDZpVW1ZYld2MjZORnVNVFhVZjlfMEx1YlBxNl9hQ3kxQnB2UVBsYVU3NUs0SVVza2RBUzl2ZWhaWHh0U0k3MHppaDA2dmFrU2U0cHd1NU40SHRWMlN5eXVqNWVMTHR0NmxJWUpqc2tHaHBQNG1VYngzZ9IBrwFBVV95cUxOT1lpZ094bFdWd1RyXy1ON1NSRl9GdndoNHdUdzdaZzNNUkdxYXAxQnBXUzJfM1NkTVBhYUZGSlRKVlBieWl4V3lMM3ZwZEV6dmhHR2s3T3Fud2RwcUpWSWs1Q2UtQ0dGLVl1QXYwLVFsVGpzc0ZhU2JVelU0RVZ4M1JIQlFRcm9XWGlsSXgwUFRBUmpCbkFncXJlM2FCNWNWcHg3dDRTZ2h4RVYxNUtZ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMFJMd1dVb2ZORkp1LXhFTFc5Z1BURmVFaVQtOW12ZzBrcGxPakFBaU9nVWFpTUdZbEhHNlJrZkRtdUNEWG45WU5xNDE3NDZ4dVRpTG1rb2gtQVlyT3VPVGxweHVuR3BqdTFDZkVtRXpSRWxhYjFrRjZ0Rl9JREg0ZURadGpMYWg0c20wWkJYQ21vdjdJVXlDQUlRcl9aWHlXUHQ0RmlsQUw0TlFublpvSkhhU2lPUdIBrwFBVV95cUxQdWdiVk15Smh3b2U0VGJzMENkbmUyWWY0UGRjb2pBWUktbXV6VWRPVkN0VWd2RVZlSnhBMkpSRE03dmxpMmxfclduSHB4bG5LcVFfRDRFWHZ1Rlc5Y1lFSGxBNEhzMmp6SGRvMnp0VE56bE9FRVdGTEFqci1QbEQ3QzRvWG1jWHRjUmE0cGpLaDNPWERCd2hFelVFNlJtOFhlSGZpVmZ6OVh3MjdnUEI4?oc=5",
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
         "title": "Argentina exporta un 3,2% más de vino hasta septiembre, pero factura un 4,7% menos",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNzgyRWJITnFxM1daUnA4WVp5TlhucjNfV0hrUlpPY3ZaR0NvZVdkclQtWW1SeFc5UEVtRlg4V2pNc2xkSWNNNFd4Vm8zeHFtdW52RkZFZ3czV1pPRHRrTlZaTmJxU1RobFlKLTR0R2hxR3lNTGNGbmJ2ZklzSVZDT1c2SjdWSHZQbktqYXZlUW5iQ2NZa2lyQTZkREpBMi0xQ25ZelRaUVNsd2pYN3dIaWtwZ19UdzFKYUdrVWttVmdtWFHSAcMBQVVfeXFMTTc4MkViSE5xcTNXWlJwOFlaeU5YbnIzX1dIa1JaT2N2WkdDb2VXZHJULVltUnhXOVBFbUZYOFdqTXNsZEljTTRXeFZvM3hxbXVudkZGRWd3M1daT0R0a05WWk5icVNUaGxZSi00dEdocUd5TUxjRm5idmZJc0lWQ09XNko3Vkh2UG5LamF2ZVFuYkNjWWtpckE2ZERKQTItMUNuWXpUWlFTbHdqWDd3SGlrcGdfVHcxSmFHa1VrbVZnbVhR?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNThBOVdmMHdJQ3FKRW1tbzdPcFQ3bkN4RXZIM0gxWWNSbmRVSi1rVU9hbXplQjNwd0xOMC11RkFjdUljVzlKSFN0Mmh5TjdmRW1NVkx6VVJJZ1FQeGtKWnNXNjBQVUowS1JFN1VfRGpab2VHQkNTY1pjWVlDclFLQV9jdnlfbFd5Nk1uVXN3MHAyWTFZN0J5TEZHSVV6SXZ5c2NTOHFNVGFSeU93VlotOUx3TUlmNGhYV29CUlR30gHDAUFVX3lxTE03ODJFYkhOcXEzV1pScDhZWnlOWG5yM19XSGtSWk9jdlpHQ29lV2RyVC1ZbVJ4VzlQRW1GWDhXak1zbGRJY000V3hWbzN4cW11bnZGRkVndzNXWk9EdGtOVlpOYnFTVGhsWUotNHRHaHFHeU1MY0ZuYnZmSXNJVkNPVzZKN1ZIdlBuS2phdmVRbmJDY1lraXJBNmRESkEyLTFDbll6VFpRU2x3alg3d0hpa3BnX1R3MUphR2tVa21WZ21YUQ?oc=5",
         "curated": "exportaciones-vino-septiembre-2026-inv-24-mosto-34"
       }
     ],
@@ -24082,53 +24611,41 @@
       {
         "main": "vaca-muerta-pone-a-neuquen-en-camino-de-ser-la-principal-provincia-exportadora-d",
         "merged": [
-          "por-el-impulso-de-vaca-muerta-neuquen-podria-convertirse-en-la-provincia-con-mas"
+          "paris-puso-a-neuquen-de-cara-a-ser-la-principal-provincia-exportadora-de-argenti"
         ]
       },
       {
-        "main": "tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importacione",
+        "main": "eliminacion-de-aranceles-a-la-importacion-de-arroz-genera-posiciones-encontradas",
         "merged": [
-          "tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importac-2"
+          "economistas-califican-de-desacertado-decreto-que-deroga-aranceles-al-arroz"
         ]
       },
       {
-        "main": "exportaciones-de-autos-mexicanos-se-desploman-en-septiembre-por-impacto-de-aranc",
+        "main": "derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquiler-2",
         "merged": [
-          "exportaciones-de-autos-de-mexico-caen-en-septiembre-por-impacto-de-aranceles-est"
+          "derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquileres-s"
         ]
       },
       {
-        "main": "la-fed-de-nueva-york-avisa-los-aranceles-de-trump-siguen-presionando-la-infl-2",
+        "main": "exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-argentina-hacia",
         "merged": [
-          "la-fed-de-nueva-york-avisa-los-aranceles-de-trump-siguen-presionando-la-inflacio"
+          "bbva-research-exportaciones-inversion-y-desinflacion-las-claves-de-la-economia-a"
         ]
       },
       {
-        "main": "aifa-es-primer-lugar-nacional-en-transporte-de-carga-aerea",
+        "main": "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petrole-2",
         "merged": [
-          "aifa-se-mantiene-en-primer-lugar-nacional-en-carga-aerea"
-        ]
-      },
-      {
-        "main": "argentina-realmente-libero-las-importaciones",
-        "merged": [
-          "argentina-realmente-libero-las-importaciones-2"
-        ]
-      },
-      {
-        "main": "derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquileres-s",
-        "merged": [
-          "que-pasara-con-los-alquileres-y-el-comercio-exterior-si-derogan-el-mega-dnu-70-2"
+          "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y"
         ]
       }
     ],
     "googleNews": {
-      "pending": 17,
-      "resolved": 17,
-      "withSummary": 13,
+      "pending": 16,
+      "resolved": 16,
+      "withSummary": 11,
       "withPhoto": 0,
       "failed": 0,
-      "duplicates": 0
+      "duplicates": 3
     }
   },
   "stories": [
