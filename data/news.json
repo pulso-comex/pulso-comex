@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-09T09:43:57Z",
+  "updatedAt": "2026-10-09T13:44:37Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -115,7 +115,7 @@
       "obsDate": "2026-10-08",
       "change": "-0,1% vs. día hábil anterior",
       "trend": "down",
-      "checkedAt": "2026-10-09T09:44:24Z",
+      "checkedAt": "2026-10-09T13:45:05Z",
       "history": [
         [
           "2026-08-28",
@@ -243,20 +243,20 @@
       "id": "soja",
       "label": "Soja · precio pizarra Rosario",
       "value": "$ 560.000/t",
-      "period": "Rosario · 7 oct 2026 · US$ 371,35/t",
+      "period": "Rosario · 8 oct 2026 · US$ 371,72/t",
       "source": "Bolsa de Comercio de Rosario",
       "url": "https://www.cac.bcr.com.ar/es/precios-de-pizarra",
       "group": "Mercados",
-      "obsDate": "2026-10-07",
+      "obsDate": "2026-10-08",
       "change": "0,0% vs. pizarra anterior",
       "trend": "flat",
       "_last": {
-        "date": "2026-10-07",
+        "date": "2026-10-08",
         "ars": 560000.0
       },
-      "checkedAt": "2026-10-09T09:44:27Z",
+      "checkedAt": "2026-10-09T13:45:08Z",
       "_prev": {
-        "date": "2026-10-06",
+        "date": "2026-10-07",
         "ars": 560000.0
       },
       "history": [
@@ -275,6 +275,10 @@
         [
           "2026-10-07",
           560000.0
+        ],
+        [
+          "2026-10-08",
+          560000.0
         ]
       ]
     },
@@ -289,7 +293,7 @@
       "obsDate": "2026-10-06",
       "change": "-0,1% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-09T09:44:27Z",
+      "checkedAt": "2026-10-09T13:45:08Z",
       "history": [
         [
           "2026-08-25",
@@ -416,22 +420,22 @@
     {
       "id": "maiz",
       "label": "Maíz · precio pizarra Rosario",
-      "value": "$ 294.800/t",
+      "value": "$ 293.500/t",
       "group": "Mercados",
-      "period": "Rosario · 7 oct 2026 · US$ 195,49/t",
-      "obsDate": "2026-10-07",
-      "change": "+0,3% vs. pizarra anterior",
-      "trend": "up",
+      "period": "Rosario · 8 oct 2026 · US$ 194,82/t",
+      "obsDate": "2026-10-08",
+      "change": "-0,4% vs. pizarra anterior",
+      "trend": "down",
       "source": "Bolsa de Comercio de Rosario",
       "url": "https://www.cac.bcr.com.ar/es/precios-de-pizarra",
       "_last": {
+        "date": "2026-10-08",
+        "ars": 293500.0
+      },
+      "checkedAt": "2026-10-09T13:45:08Z",
+      "_prev": {
         "date": "2026-10-07",
         "ars": 294800.0
-      },
-      "checkedAt": "2026-10-09T09:44:27Z",
-      "_prev": {
-        "date": "2026-10-06",
-        "ars": 294000.0
       },
       "history": [
         [
@@ -449,28 +453,32 @@
         [
           "2026-10-07",
           294800.0
+        ],
+        [
+          "2026-10-08",
+          293500.0
         ]
       ]
     },
     {
       "id": "trigo",
       "label": "Trigo · precio pizarra Rosario",
-      "value": "$ 342.300/t",
+      "value": "$ 342.700/t",
       "group": "Mercados",
-      "period": "Rosario · 7 oct 2026 · US$ 226,99/t",
-      "obsDate": "2026-10-07",
-      "change": "-0,2% vs. pizarra anterior",
-      "trend": "down",
+      "period": "Rosario · 8 oct 2026 · US$ 227,48/t",
+      "obsDate": "2026-10-08",
+      "change": "+0,1% vs. pizarra anterior",
+      "trend": "up",
       "source": "Bolsa de Comercio de Rosario",
       "url": "https://www.cac.bcr.com.ar/es/precios-de-pizarra",
       "_last": {
+        "date": "2026-10-08",
+        "ars": 342700.0
+      },
+      "checkedAt": "2026-10-09T13:45:08Z",
+      "_prev": {
         "date": "2026-10-07",
         "ars": 342300.0
-      },
-      "checkedAt": "2026-10-09T09:44:27Z",
-      "_prev": {
-        "date": "2026-10-06",
-        "ars": 343000.0
       },
       "history": [
         [
@@ -488,396 +496,439 @@
         [
           "2026-10-07",
           342300.0
+        ],
+        [
+          "2026-10-08",
+          342700.0
         ]
       ]
     }
   ],
   "items": [
     {
-      "id": "omc-eleva-prevision-comercio-mercancias-2026-3-9",
-      "date": "2026-10-08",
-      "kind": "datos",
-      "title": "La OMC duplicó su previsión para el comercio mundial de mercancías en 2026: ahora espera 3,9%",
-      "summary": "El organismo subió la proyección de volumen desde el 1,9% que había estimado en marzo, empujada por el comercio de bienes ligados a la inteligencia artificial. Recortó la de servicios a 3,3% y señaló al conflicto en Oriente Medio como el principal riesgo.",
+      "id": "argentina-y-uruguay-avanzan-en-la-digitalizacion-y-el-control-de-sus-pasos-front",
+      "datetime": "2026-10-09T13:36:35Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "Argentina y Uruguay avanzan en la digitalización y el control de sus pasos fronterizos",
+      "summary": "Un importante tema sobre seguridad y gestión integrada de fronteras entre Argentina y Uruguay en el MERCOSUR fue comunicado por la Dirección Nacional de Aduanas de Uruguay, tras una reunión bilateral del Subcomité Técnico de Controles y Operatoria de Frontera, realizada los días 29 y 30 de septiembre en Salto Grande…",
+      "body": [
+        "Un importante tema sobre seguridad y gestión integrada de fronteras entre Argentina y Uruguay en el MERCOSUR fue comunicado por la Dirección Nacional de Aduanas de Uruguay, tras una reunión bilateral del Subcomité Técnico de Controles y Operatoria de Frontera, realizada los días 29 y 30 de septiembre en Salto Grande. Durante el encuentro, representantes […] The post Argentina y Uruguay avanzan en la digitalización y el control de sus pasos fronterizos appeared first on Aduana News ."
+      ],
+      "keyData": [],
       "topics": [
-        "Economía internacional",
+        "Argentina",
+        "Aduanas",
+        "Tecnología COMEX",
+        "Latinoamérica",
+        "Mercosur"
+      ],
+      "countries": [
+        "Argentina",
+        "Uruguay"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Aduana News",
+      "sources": [
+        {
+          "name": "Aduana News",
+          "type": "Medio especializado · Argentina",
+          "url": "https://aduananews.com/argentina-y-uruguay-avanzan-en-la-digitalizacion-y-el-control-de-sus-pasos-fronterizos/?utm_source=rss&utm_medium=rss&utm_campaign=argentina-y-uruguay-avanzan-en-la-digitalizacion-y-el-control-de-sus-pasos-fronterizos",
+          "primary": true,
+          "author": "Aduana News"
+        }
+      ]
+    },
+    {
+      "id": "terminales-de-hanseatic-global-terminals-latin-america-obtienen-certificacion-de",
+      "datetime": "2026-10-09T13:16:33Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "Terminales de Hanseatic Global Terminals Latin America obtienen certificación de HuellaChile",
+      "summary": "En una nueva edición del programa HuellaChile, perteneciente al Ministerio del Medio Ambiente, San Antonio Terminal…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/terminales-de-hanseatic-global-terminals-latin-america-obtienen-certificacion-de-huellachile/",
+          "primary": true,
+          "author": "admin"
+        }
+      ]
+    },
+    {
+      "id": "de-presentar-papeles-a-coordinar-la-cadena-el-nuevo-rol-del-despachante-de-aduan",
+      "datetime": "2026-10-09T13:13:39Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "De presentar papeles a coordinar la cadena: el nuevo rol del despachante de aduana",
+      "summary": "Juan José Matticoli, titular de una firma de comercio exterior, repasa tres décadas y media de vaivenes normativos, la apertura importadora actual y el impacto del courier en indumentaria y calzado",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aduanas"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Infobae",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.infobae.com/movant/2026/10/09/de-presentar-papeles-a-coordinar-la-cadena-el-nuevo-rol-del-despachante-de-aduana/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNM0w5em0tcUNmUWY5WGVybDdoMjFyNkNqLTFrZGtyUkdycFR5TFEzd1gtOGRBcm5zTno2eFlvVWRVdXJQX1hISFhZTVhxZkQxWnRlOE1wdWJOQ3lhQnhlTVFKNGd1UmdPdUp4b05DM3E4emZTVXg2dkZaS1RYMlZ4NjNoNVRxdi0tOUhMbzRjVnM5emg0aTlwQXN3UExqWWRBZnd3VW5tRzJTM0VqbnZoUjZvb2hUZ3hXVnh4U0k4Z2w2UdIB3AFBVV95cUxNQnd0aGRUSV9kRVFPekpQX1FQZDNxY0phd3JTV1FkbFBuQTI0UzFrbWRTdUVvelhXQVd4NlJsd195alR3eU5mZV92R2dHYmkzQTFKWkZSS0FxajVWYUpNSTN3RkN1b0Z1Q0FVeWZ4cUZFZEdxaUltZ2d6REtHV3o4TWRLVkpaeW9CT2x4aE0tU2ZRSmpTREJnVFJ2dHhvVnVGOWxuNEs2XzlQZ0lwek1OUlRIOFdFQTVSS0RoRFdCTmdLNXpDQ29SVjlmLVdtaGdTLVFTaThxTGg2MGdZ?oc=5"
+    },
+    {
+      "id": "investchile-y-puertos-de-talcahuano-ratifican-convenio-de-colaboracion-clave-par",
+      "datetime": "2026-10-09T13:00:08Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "InvestChile y Puertos de Talcahuano ratifican convenio de colaboración clave para nuevas concesiones",
+      "summary": "Mediante la firma de una declaración complementaria en Concepción, el director (s) de InvestChile, Juan Pablo…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/investchile-y-puertos-de-talcahuano-ratifican-convenio-de-colaboracion-clave-para-nuevas-concesiones/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "debate-ossoff-collins-gasolina-salud-y-aranceles",
+      "datetime": "2026-10-09T12:47:56Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "Debate Ossoff Collins: gasolina, salud y aranceles",
+      "summary": "Ossoff y Collins chocaron por la gasolina, los seguros médicos y los aranceles en Georgia. Te mostramos los precios reales y cómo votar el 3 de noviembre.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "MundoNOW",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.mundonow.com/debate-ossoff-collins-georgia-precios/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1FM0FlRFZUb0xHY1A3MWRWTmppb2tGckNQT0Qycl9ZVVpDd3Bzdk9YS18zcDVQQkE2bHZVNFFIb0tQWm1MM3RMbUlDWWJxbldBb2JMZ3BCZmNaMHczLWdUMXQwOHYyRE01RUo5Y0lnSUY?oc=5"
+    },
+    {
+      "id": "termino-el-conflicto-en-tcp-pero-el-puerto-de-montevideo-paga-un-alto-costo-perd",
+      "datetime": "2026-10-09T12:39:39Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "Terminó el conflicto en TCP, pero el puerto de Montevideo paga un alto costo: pérdida de navieras, caída del trasbordo y dudas sobre su futuro competitivo",
+      "summary": "Después de meses de enfrentamientos, negociaciones fallidas, medidas sindicales y crecientes preocupaciones entre operadores marítimos y exportadores, el conflicto laboral en Terminal Cuenca del Plata (TCP) llegó finalmente a su fin. La empresa y el Sindicato Único Portuario y Ramas Afines (SUPRA) firmaron un nuevo…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos",
         "Geopolítica y comercio",
         "Latinoamérica"
       ],
       "countries": [
-        "Global"
+        "Uruguay"
       ],
       "tags": [
-        "OMC",
-        "Perspectivas del comercio",
-        "Inteligencia artificial",
-        "Oriente Medio",
-        "Semiconductores"
+        "Puertos"
       ],
-      "visual": "globe",
-      "impact": 2,
+      "visual": "port",
+      "impact": 1,
       "affectsArgentina": false,
-      "body": [
-        "La Organización Mundial del Comercio (OMC) publicó el 8 de octubre la actualización de sus perspectivas y elevó al 3,9% el crecimiento previsto del volumen del comercio mundial de mercancías para 2026, más del doble del 1,9% que había proyectado en marzo. Para 2027 estima una suba de 4,1%. En el primer semestre, el volumen creció 3,5% interanual y el valor en dólares, 15%: según el organismo, la brecha se explica en parte por los mayores precios de los combustibles y de los componentes electrónicos para centros de datos.",
-        "El impulso vino de los bienes vinculados a la inteligencia artificial, como semiconductores y servidores, cuyo comercio aumentó 67% interanual en el primer semestre y explicó el 47% del crecimiento del intercambio mundial de mercancías. En cambio, la OMC recortó la previsión para el comercio de servicios comerciales en 2026 de 4,8% a 3,3%, porque el conflicto golpeó al transporte y a los viajes, y proyecta 6,4% para 2027. El PIB mundial crecería 2,6% este año y 2,9% el próximo.",
-        "Por regiones, el organismo espera que en 2026 las exportaciones de mercancías crezcan 9,9% en Asia, 5,7% en América del Norte y 5,6% en África, mientras que las de Europa caerían 0,1% y las de Oriente Medio, 17,2%. Para América del Sur y Central y el Caribe proyecta una suba de 3,4% en las exportaciones. El impacto del conflicto ya se vio en la energía: en el primer semestre, las exportaciones de crudo de Oriente Medio bajaron cerca de 24% y las de gas natural licuado, alrededor de 47%, aunque otros proveedores limitaron la caída mundial a cerca de 6% y 1%, respectivamente.",
-        "La OMC identifica al conflicto en Oriente Medio como el principal riesgo para el pronóstico, por su efecto sobre los precios de la energía y las rutas de transporte. La directora general, Ngozi Okonjo-Iweala, advirtió además que los beneficios de la expansión ligada a la inteligencia artificial no son igual de accesibles para todos los países."
-      ],
-      "keyData": [
-        [
-          "Comercio de mercancías 2026",
-          "+3,9% en volumen (antes 1,9%)"
-        ],
-        [
-          "Comercio de mercancías 2027",
-          "+4,1%"
-        ],
-        [
-          "Servicios comerciales 2026",
-          "+3,3% (antes 4,8%)"
-        ],
-        [
-          "Bienes ligados a la IA",
-          "+67% en el primer semestre; 47% del crecimiento"
-        ],
-        [
-          "Exportaciones de América del Sur y Central y el Caribe 2026",
-          "+3,4%"
-        ],
-        [
-          "PIB mundial",
-          "2,6% en 2026 y 2,9% en 2027"
-        ]
-      ],
-      "explainer": {
-        "what": "La OMC elevó del 1,9% al 3,9% su previsión de crecimiento del volumen del comercio mundial de mercancías para 2026.",
-        "why": "Los bienes ligados a la inteligencia artificial explicaron el 47% del crecimiento del primer semestre, mientras el conflicto en Oriente Medio golpea la energía, el transporte y los viajes. Para América del Sur y Central y el Caribe, la OMC prevé que las exportaciones suban 3,4%.",
-        "who": "Exportadores e importadores de todo el mundo, en especial de electrónica y energía, y las empresas de transporte y servicios.",
-        "products": [
-          "Semiconductores",
-          "Servidores",
-          "Petróleo crudo",
-          "Gas natural licuado"
-        ],
-        "next": "Para 2027, la OMC proyecta un crecimiento de 4,1% en el comercio de mercancías y de 6,4% en el de servicios comerciales.",
-        "nextSource": {
-          "name": "OMC",
-          "url": "https://www.wto.org/spanish/news_s/news26_s/stat_08oct26_510_s.htm"
-        }
-      },
-      "sources": [
-        {
-          "name": "OMC",
-          "type": "Organización internacional",
-          "url": "https://www.wto.org/spanish/news_s/news26_s/stat_08oct26_510_s.htm",
-          "primary": true
-        },
-        {
-          "name": "Comunicado de la OMC (EIN Presswire)",
-          "type": "Comunicado oficial",
-          "url": "https://www.einnews.com/pr_news/948255934/ai-boom-and-trade-resilience-to-middle-east-crisis-lift-outlook-but-gains-to-be-uneven"
-        },
-        {
-          "name": "Expansión",
-          "type": "Medio de comunicación",
-          "url": "https://expansion.mx/economia/2026/10/08/omc-eleva-prevision-crecimiento-comercio-mundial-ia-2026"
-        },
-        {
-          "name": "Aduana News",
-          "type": "Medio especializado",
-          "url": "https://aduananews.com/la-omc-eleva-del-19-al-39-su-prevision-de-crecimiento-del-comercio-mundial-para-2026/"
-        }
-      ],
-      "absorbs": [
-        "la-omc-eleva-del-1-9-al-3-9-su-prevision-de-crecimiento-del-comercio-mundial",
-        "el-auge-de-la-ia-y-la-resiliencia-del-comercio-ante-la-crisis-en-oriente-medio-m"
-      ]
-    },
-    {
-      "id": "ethiopian-airlines-autorizada-carga-aerea-argentina-disposicion-26-2026",
-      "date": "2026-10-08",
-      "datetime": "2026-10-08T08:27:00-03:00",
       "kind": "noticia",
-      "title": "Ethiopian Airlines recibió autorización para operar vuelos regulares de carga en la Argentina",
-      "summary": "La Disposición 26/2026 de la Subsecretaría de Transporte Aéreo habilita a la compañía etíope a prestar servicios internacionales exclusivamente de carga, con derechos de tráfico de la tercera a la novena libertad del aire.",
-      "topics": [
-        "Argentina",
-        "Transporte aéreo",
-        "Logística",
-        "Regulaciones"
-      ],
-      "countries": [
-        "Argentina",
-        "Etiopía"
-      ],
-      "tags": [
-        "Carga aérea",
-        "Ethiopian Airlines",
-        "ANAC",
-        "Libertades del aire",
-        "Boletín Oficial"
-      ],
-      "visual": "plane",
-      "impact": 2,
-      "affectsArgentina": true,
-      "argentinaNote": "Importadores, exportadores y agentes de carga suman un operador habilitado para ofrecer vuelos regulares exclusivamente de carga hacia, desde y dentro del país.",
-      "argentinaImpact": {
-        "change": "Ethiopian Airlines quedó autorizada a operar servicios regulares internacionales de carga, con derechos de la tercera a la novena libertad del aire.",
-        "who": "Importadores y exportadores que usan carga aérea, agentes de carga, aeropuertos y aerolíneas que compiten en el segmento.",
-        "sectors": [
-          "Transporte aéreo",
-          "Logística",
-          "Comercio exterior"
-        ],
-        "flows": {
-          "importaciones": true,
-          "exportaciones": true,
-          "logistica": true,
-          "aranceles": false
-        }
-      },
-      "body": [
-        "El Gobierno publicó el 8 de octubre en el Boletín Oficial la Disposición 26/2026 de la Subsecretaría de Transporte Aéreo, dependiente de la Secretaría de Transporte del Ministerio de Economía, que autoriza a Ethiopian Airlines Group a operar servicios regulares internacionales de transporte aéreo de cargas. La habilitación es solo para mercadería y no incluye vuelos regulares de pasajeros. La firmó el subsecretario Hernán Adrián Gómez.",
-        "La norma le otorga derechos de tráfico desde la tercera hasta la novena libertad del aire. La tercera y la cuarta cubren la carga entre Etiopía y la Argentina; la quinta, la sexta y la séptima, tráficos que involucran a terceros países; y la octava y la novena permiten llevar carga entre puntos del territorio argentino, por lo que la compañía también podría competir en el mercado doméstico de carga aérea.",
-        "La autorización se enmarca en el acuerdo bilateral entre ambos países y en el memorando de entendimiento que firmaron sus autoridades aeronáuticas en enero de 2025, que dejó sin tope las frecuencias semanales. La empresa fue designada por la autoridad aeronáutica etíope para operar hacia la Argentina y la Dirección Nacional de Transporte Aéreo de la ANAC emitió un dictamen favorable.",
-        "La disposición no fija rutas, frecuencias ni fecha de inicio de las operaciones. Esos detalles dependerán de la programación de la compañía y de la coordinación con la ANAC y los aeropuertos."
-      ],
-      "keyData": [
-        [
-          "Norma",
-          "Disposición 26/2026 de la Subsecretaría de Transporte Aéreo (Boletín Oficial, 8 de octubre de 2026)"
-        ],
-        [
-          "Servicio autorizado",
-          "Regular internacional, exclusivamente de carga"
-        ],
-        [
-          "Derechos de tráfico",
-          "De la tercera a la novena libertad del aire"
-        ],
-        [
-          "Marco",
-          "Acuerdo bilateral y memorando de entendimiento de enero de 2025"
-        ],
-        [
-          "Rutas, frecuencias e inicio",
-          "No los fija la norma"
-        ]
-      ],
-      "explainer": {
-        "what": "El Gobierno autorizó a Ethiopian Airlines a operar vuelos regulares internacionales exclusivamente de carga en la Argentina, mediante la Disposición 26/2026.",
-        "why": "Suma un operador de carga aérea con derechos de la tercera a la novena libertad del aire, incluidas las que permiten transportar carga entre puntos del país.",
-        "who": "Importadores y exportadores que usan carga aérea, agentes de carga, aeropuertos y aerolíneas que compiten en el segmento."
-      },
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
       "sources": [
         {
-          "name": "iProfesional",
-          "type": "Medio de comunicación",
-          "url": "https://www.iprofesional.com/negocios/466180-ethiopian-airlines-podra-operar-vuelos-regulares-de-carga-en-argentina",
-          "primary": true
-        },
-        {
-          "name": "Aviacionline",
-          "type": "Medio especializado",
-          "url": "https://www.aviacionline.com/espanol/aviacion-comercial/latinoamerica-y-el-caribe/argentina/ethiopian-airlines-podra-operar-carga-exclusiva-en-la-argentina-hasta-la-novena-libertad_a6ac7ba0a4f6837e79638b694"
-        },
-        {
-          "name": "El Destape",
-          "type": "Medio de comunicación",
-          "url": "https://www.eldestapeweb.com/economia/autorizan-aerolinea-africana-competir-aerolineas-argentinas-transporte-carga-interno-202610892158"
+          "name": "Dinamicarg",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://dinamicarg.com/termino-conflicto-tcp-puerto-montevideo-paga-alto-costo-perdida-navieras-caida-del-trasbordo-dudas-su-futuro-competitivo/",
+          "primary": true,
+          "author": ""
         }
       ],
-      "absorbs": [
-        "el-gobierno-dio-luz-verde-a-una-aerolinea-internacional-para-entrar-al-negocio-d"
-      ]
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOR25rZ05sWHZoTXphZGxNVk55YU5HUDdoOXlib0g1S1hCR3BIRURmRVN4T29Pc2E2OGU3NHFIa1lpdlEtTGRnR3lfWUttc0xneXk2QmlHaDdLaDhjSmpBbUFUMEpQNWs0VzMwRVFmQ1VSWjlEaUtOQ1NsSjlzVHQ5UDlGcG00RnkxRHlRc3Yycmx6aXFYUEs0RGlUcFh2NFJ4TFFSMGctdzdsNjVrenhjVUQ3ektCc0I1cHVOLUJqTjJkYzhTelNxeUlSZzRCR3FlLWFlRWJrXzRZRjM3?oc=5"
     },
     {
-      "id": "irlanda-ifa-pide-restringir-carne-vacuna-argentina-antimicrobianos",
-      "date": "2026-10-07",
-      "kind": "noticia",
-      "title": "Productores irlandeses piden a la UE restringir la carne vacuna argentina por un estudio sobre antibióticos en feedlots",
-      "summary": "La Irish Farmers' Association reclamó a la Comisión Europea extender a la Argentina las restricciones que el bloque aplicó a Brasil. El estudio que invoca midió residuos en suelos de 27 feedlots, no en carne, y el sector argentino rechazó el planteo.",
+      "id": "portcastello-crece-7-2-en-transito-de-mercancias-en-periodo-enero-septiembre",
+      "datetime": "2026-10-09T12:30:09Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "PortCastelló crece 7,2% en tránsito de mercancías en período enero-septiembre",
+      "summary": "El Puerto de Castellón mantiene una senda de crecimiento en el acumulado del año, registrando un…",
+      "body": [],
+      "keyData": [],
       "topics": [
-        "Argentina",
-        "Europa",
-        "Exportaciones",
-        "Regulaciones"
+        "Puertos"
       ],
       "countries": [
-        "Argentina",
-        "Irlanda",
-        "Unión Europea"
-      ],
-      "tags": [
-        "Carne vacuna",
-        "Antimicrobianos",
-        "SENASA",
-        "Feedlot",
-        "IFA"
-      ],
-      "visual": "agro",
-      "impact": 2,
-      "affectsArgentina": true,
-      "argentinaNote": "Es un pedido de una entidad de productores, no una medida de la UE, pero apunta a uno de los principales mercados de la carne vacuna argentina.",
-      "argentinaImpact": {
-        "change": "Una entidad de productores irlandeses pidió a la Comisión Europea restringir la carne vacuna argentina por el uso de antimicrobianos; no hay una decisión del bloque.",
-        "who": "Frigoríficos exportadores, feedlots y productores ganaderos que venden a la Unión Europea, y el SENASA como autoridad sanitaria.",
-        "sectors": [
-          "Carne vacuna",
-          "Ganadería",
-          "Frigoríficos"
-        ],
-        "flows": {
-          "importaciones": false,
-          "exportaciones": true,
-          "logistica": false,
-          "aranceles": false
-        }
-      },
-      "body": [
-        "La Irish Farmers' Association (IFA), que agrupa a productores agropecuarios de Irlanda, pidió a la Comisión Europea que restrinja el ingreso de carne vacuna argentina. Su presidente, Francie Gorman, propuso aplicar a la Argentina el mismo criterio que la Unión Europea usó con Brasil, que quedó fuera de la lista de países habilitados bajo las nuevas exigencias europeas sobre antimicrobianos vigentes desde septiembre de 2026. Gorman también le reclamó una intervención al ministro de Agricultura irlandés, Martin Heydon.",
-        "El planteo se apoya en un estudio de investigadores del Conicet y de la Universidad de Liverpool que analizó residuos de antimicrobianos en suelos de 27 feedlots comerciales de la Argentina. La monensina, prohibida en la UE como promotora de crecimiento desde 2006, apareció en todos los establecimientos, y en más del 40% se detectaron compuestos que no figuraban en sus registros de tratamiento, entre ellos la cefquinoma, un antibiótico de importancia crítica para la salud humana. Según ComexLatam, los autores no concluyen que haya habido uso ilegal: atribuyen las diferencias a causas posibles como registros incompletos, tratamientos anteriores que persisten en el suelo o movimiento de estiércol, y piden mejorar la trazabilidad y el monitoreo.",
-        "En la Argentina, el presidente de la Cámara Argentina de Feedlot, Fernando Storni, rechazó el planteo ante La Nación: remarcó que el estudio midió suelos y no carne, que no evaluó la inocuidad del producto y que el caso de Brasil no es comparable. Según el mismo medio, el SENASA controla los residuos en carne con el plan CREHA, que según el organismo cuenta con la aprobación de los servicios sanitarios de la UE y de Estados Unidos, y en 2024 prohibió los antimicrobianos promotores del crecimiento, con excepciones como la monensina.",
-        "Según datos citados por medios irlandeses, la Argentina aportó cerca del 18% de las importaciones de carne vacuna de la UE en los últimos cinco años, y las compras del bloque crecieron en los primeros meses de 2026. Las fuentes consultadas no informan una respuesta de la Comisión Europea al pedido de la IFA."
-      ],
-      "keyData": [
-        [
-          "Quién lo pide",
-          "Irish Farmers' Association (IFA), a la Comisión Europea"
-        ],
-        [
-          "Feedlots analizados",
-          "27 (residuos en suelos, no en carne)"
-        ],
-        [
-          "Feedlots con monensina",
-          "Los 27"
-        ],
-        [
-          "Con compuestos no registrados",
-          "Más del 40%"
-        ],
-        [
-          "Peso de la Argentina en las importaciones de carne vacuna de la UE",
-          "≈ 18% en los últimos cinco años (según medios irlandeses)"
-        ]
-      ],
-      "explainer": {
-        "what": "La asociación de productores irlandeses IFA pidió a la Comisión Europea restringir la carne vacuna argentina, a partir de un estudio sobre residuos de antibióticos en suelos de 27 feedlots.",
-        "why": "La UE ya dejó afuera a Brasil por las nuevas exigencias sobre antimicrobianos, y la Argentina aportó cerca del 18% de la carne vacuna que importó el bloque en los últimos cinco años, según medios irlandeses.",
-        "who": "Frigoríficos exportadores, feedlots y productores ganaderos argentinos que venden a la Unión Europea, y el SENASA.",
-        "products": [
-          "Carne vacuna"
-        ]
-      },
-      "sources": [
-        {
-          "name": "La Nación",
-          "type": "Medio de comunicación",
-          "url": "https://lanacion.com.ar/economia/campo/antibioticos-fuerte-rechazo-a-un-planteo-de-productores-de-irlanda-que-pidieron-prohibir-la-carne-nid07102026",
-          "primary": true
-        },
-        {
-          "name": "Rosario3 (Ecos365)",
-          "type": "Medio de comunicación",
-          "url": "https://www.rosario3.com/ecos365/agro/tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importaciones-20261007-0007.html"
-        },
-        {
-          "name": "Irish Farmers Journal",
-          "type": "Medio especializado",
-          "url": "https://www.farmersjournal.ie/amp/news/news/antibiotic-probe-moves-to-argentina-934903"
-        },
-        {
-          "name": "ComexLatam",
-          "type": "Medio especializado",
-          "url": "https://comexlatam.com/irlanda-pide-revisar-el-ingreso-de-carne-argentina-a-la-ue"
-        }
-      ],
-      "absorbs": [
-        "tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importacione"
-      ]
-    },
-    {
-      "id": "drewry-wci-baja-2-8-octubre",
-      "date": "2026-10-08",
-      "datetime": "2026-10-08T23:32:00-03:00",
-      "kind": "datos",
-      "title": "El índice mundial de fletes de contenedores cae 2% en la Semana Dorada y queda en USD 4.351 por FEU",
-      "summary": "Según Drewry, bajaron las rutas transpacíficas y Shanghái–Róterdam, mientras Shanghái–Génova quedó estable. La consultora espera tarifas estables la semana próxima.",
-      "topics": [
-        "Transporte marítimo",
-        "Logística",
-        "Asia",
-        "China"
-      ],
-      "countries": [
-        "China",
         "Global"
       ],
       "tags": [
-        "Fletes",
-        "Contenedores",
-        "Semana Dorada",
-        "WCI",
-        "Drewry"
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/portcastello-crece-72-en-transito-de-mercancias-en-periodo-enero-septiembre/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "las-navieras-cierran-la-temporada-de-limitacion-de-vehiculos-de-ibiza-con-una-se",
+      "datetime": "2026-10-09T12:12:27Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "Las navieras cierran la temporada de limitación de vehículos de Ibiza con una \"sensación agridulce'",
+      "summary": "Las compañías espera debatir en la mesa de transporte medidas de regulación en las zonas más congestionadas | Cadena SER",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Autos"
       ],
       "visual": "ship",
-      "impact": 2,
+      "impact": 1,
       "affectsArgentina": false,
-      "story": "fletes-contenedores",
-      "body": [
-        "El World Container Index (WCI) de Drewry bajó 2% en la semana al 8 de octubre y se ubicó en USD 4.351 por contenedor de 40 pies, en un contexto de menor demanda por la Semana Dorada china, según informó PortalPortuario con datos de la consultora. Una semana antes, el indicador había cedido 1%.",
-        "Por ruta, Shanghái–Los Ángeles retrocedió 3%, a USD 7.624; Shanghái–Nueva York, 2%, a USD 10.220; y Shanghái–Róterdam, 2%, a USD 3.337. Shanghái–Génova quedó sin cambios, en USD 3.696. Según PortalPortuario, las tarifas Asia–Europa acumulan 13 semanas consecutivas de bajas. El Daily Cargo News informó las mismas variaciones por ruta y agregó que el índice intra-Asia de Drewry (IACI) cayó 1%, después de seis semanas seguidas de subas.",
-        "Para la semana próxima hay programadas 4 cancelaciones de viajes en el transpacífico, frente a 11 en la actual, y 6 en Asia–Europa, frente a 5. Drewry espera que las tarifas se mantengan estables en ambas rutas, mientras las navieras intentan revertir la baja con aumentos de las tarifas FAK en la segunda quincena de octubre; la consultora advierte que no está claro si lograrán aplicarlos."
-      ],
-      "keyData": [
-        [
-          "WCI compuesto",
-          "USD 4.351 / FEU (-2%)"
-        ],
-        [
-          "Shanghái → Nueva York",
-          "USD 10.220 (-2%)"
-        ],
-        [
-          "Shanghái → Los Ángeles",
-          "USD 7.624 (-3%)"
-        ],
-        [
-          "Shanghái → Génova",
-          "USD 3.696 (sin cambios)"
-        ],
-        [
-          "Shanghái → Róterdam",
-          "USD 3.337 (-2%)"
-        ]
-      ],
-      "explainer": {
-        "what": "El World Container Index de Drewry bajó 2% en la semana al 8 de octubre y quedó en USD 4.351 por contenedor de 40 pies.",
-        "why": "Es una referencia habitual para los fletes spot. Durante la Semana Dorada china cayeron las rutas transpacíficas y Shanghái–Róterdam, y Asia–Europa suma 13 semanas de bajas.",
-        "who": "Importadores y exportadores que contratan flete marítimo en contenedor, forwarders y navieras.",
-        "next": "Drewry espera tarifas estables la semana próxima en el transpacífico y en Asia–Europa, aunque las navieras buscan subir las tarifas FAK en la segunda quincena de octubre.",
-        "nextSource": {
-          "name": "PortalPortuario",
-          "url": "https://portalportuario.cl/tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante-festividad-china/"
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Cadena SER",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://cadenaser.com/baleares/2026/10/09/las-navieras-cierran-la-temporada-de-limitacion-de-vehiculos-de-ibiza-con-una-sensacion-agridulce-radio-ibiza/",
+          "primary": true,
+          "author": ""
         }
-      },
+      ],
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQRWZMejBYazFoSjc0QV9KN1htZzB5eUVJOTRGb01tWTQ4a016VEtnR1phZGFsVUUyN0RXQ0Z0N3dBNnU3aG1ndnY4UWY3Z2I4NDczZ0hVVURtSnZNMHJZbFRKMDdzcGs5amZxNmctcWhBZ09SbWg4ZmFlNVVBdUh4anZkbmFEYjRxN3FSSmZwV0lDTVBBOTFxOUFmaEwzc1pGMEt6WUNxSlZpblZnbE1Uc1FDeU0teU5ydW5HNUM5ak00M01wNDBKTko3WU1IQkpOaDlEV1puQzVWc1l2eWt0eDlTNjZUYXPSAfsBQVVfeXFMTy1SOEZIVmhMT1FsSzdUd01oUTRZWmlwN0I1V3JMa0hWM0VPZVJxVUJIeXA1UUFjTmFRNF9OYlczODJPSm1Da3NxRVFNWVFOU1lYSmxFVzRKOWI4ZzkxRjQ3U2tmOHlhSDlDajJuYlhyRVN5NUpEZjZaSjZubktJNUNQQzY0TnBoWkthWlJRRE16amN6TlF4WlRma2tHUDNfbUJfSGxraEhYS0VIeDBSd3BKbmVUcnJmZ1NiYjJLRmcwYVREVWJBenBlSmpFMHpoME5DaW9aZkhYX2ZKQXFUX20xZjFSbWVIazlFbzd0eklqYUR3Y2NQR0tPbzA?oc=5"
+    },
+    {
+      "id": "se-ganan-su-dinero-pero-obstaculizan-el-trafico-camionetas-que-ofrecen-fletes-ge",
+      "datetime": "2026-10-09T11:42:13Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "‘Se ganan su dinero, pero obstaculizan el tráfico’: camionetas que ofrecen fletes generan malestar por estacionarse en doble fila en la 9 de Octubre",
+      "summary": "La avenida 9 de Octubre mantiene un importante movimiento comercial y vehicular en el centro de Guayaquil.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Fletes"
+      ],
+      "visual": "ship",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "El Universo",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.eluniverso.com/guayaquil/comunidad/se-ganan-su-dinero-pero-obstaculizan-el-trafico-camionetas-que-ofrecen-fletes-generan-malestar-por-estacionarse-en-doble-fila-en-la-9-de-octubre-nota/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOYkxqeS04bmV4VVpwcFdPUDVWSjZXMEdDRUFtdXhhUk9hUmp1ZS1UcVN5RkVQdkE0VjdWNkVzUVh6alU3U1JkMzg4ZjNMaEEwNGFsd1phVDctLUpjTlRxZUJzc2JFSjJDdDRtdjlCc19TMnZkREcwMlVRQWlUejR0MVo1NGduMzRUcXo3SFlfYlBtd1dZQmg0WExHZ1lfYXlkdkR4dDJuOUtPSVpTMWxaQ0FWeUNHTlNWSHdaVTgxSEpaZFFwWTRKbjJOZU5DYTRRWFkzSHhHS3dyNDhzWXBnWndjVjBGVnFHeUNTZ0NrTjhKQ2V4UlZDY3hQdS1oN2ZraUJlQllTYjBQWmhzeGJrdm9NSHB2c0p6bThYMWlrMWVYd0nSAbcCQVVfeXFMTzlFVEtpeEVmZFNVZlZiMmRwN0hNWmk4TllqNG14Z1ljWWQxN1d4RmMwN29wR1RXRG0xckFYNlkxbFh0dHlTMklPenpPMWlFRDJqazA1RU1OREFGUXB2eHlENUEtQWNMWXVXQkkyVk4zc2FxS1F2YVlFbFFmQk5tU0JENzFhZm9Tck93NFMtWHB5cmZrdWVzeXY0MnFRZHFGN1hQcXR0c2JRWGZaTmx1Mnc1QlNVcDZZYjFFZjZfR0VpWnRlT0hSTTBXVk9TY1h1NHJRbll6RXZ0c09Sakw1eW9yTENpamRkOHBld0syNEY5LTlQWThYRkgtWUFiREVJeUFaYkhhWG1BZnd6ZU43d25nM2V1Sk5ycmhKV3ZNLUlEaG5fZHhUNzh6ellHNlhOTkx1SFVYZFU?oc=5"
+    },
+    {
+      "id": "el-embajador-de-ee-uu-en-canada-ottawa-ha-rechazado-dos-veces-el-mejor-acuerdo-c",
+      "datetime": "2026-10-09T10:32:52Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "El embajador de EE. UU. en Canadá: Ottawa ha rechazado dos veces 'el mejor acuerdo comercial'",
+      "summary": "Pete Hoekstra asegura que Ottawa rechazó dos veces el mejor acuerdo comercial ofrecido y que Washington esperará. Carney busca refugio en Bruselas.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos"
+      ],
+      "countries": [
+        "Canadá"
+      ],
+      "tags": [],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "www.moncloa.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.moncloa.com/2026/10/09/acuerdo-comercial-eeuu-canada-hoekstra-3445114/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNb0gxbVNJdjJucWotcDlFMnVUMTdHVnJOUXpVWS1xZHdTaVlsS0hqbExXQjdCQzZwcWtFNlhjMzkyOEpkdlk4azVyRS1EMnlEV2lMaXpGTXQ4WHRMVUlWQjREQ09KLThGQzNLV01oTFB1dzZ6d0xINFdzemV5dnAyVU1FdFp0Mjh1cmc?oc=5"
+    },
+    {
+      "id": "rusia-fesco-establece-record-para-trenes-de-contenedores-entre-vladivostok-y-san",
+      "datetime": "2026-10-09T10:00:43Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "Rusia: Fesco establece récord para trenes de contenedores entre Vladivostok y San Petersburgo",
+      "summary": "El Grupo de Transporte Fesco envió un número récord de 20 trenes de contenedores con carga…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Europa"
+      ],
+      "countries": [
+        "Rusia"
+      ],
+      "tags": [],
+      "visual": "container",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
       "sources": [
         {
           "name": "PortalPortuario",
-          "type": "Medio especializado",
-          "url": "https://portalportuario.cl/tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante-festividad-china/",
-          "primary": true
-        },
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/rusia-fesco-establece-record-para-trenes-de-contenedores-entre-vladivostok-y-san-petersburgo/",
+          "primary": true,
+          "author": "cmeza"
+        }
+      ]
+    },
+    {
+      "id": "desafios-y-politicas-para-pymes-industriales-argentinas-a-la-hora-de-exportar",
+      "datetime": "2026-10-09T09:22:49Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "Desafíos y políticas para PyMEs industriales argentinas a la hora de exportar",
+      "summary": "El diputado nacional Pablo Farías calificó a ARCA como \"cobrador de extrema dureza\" y reclamó por la falta de estadísticas confiables del gobierno para diagnosticar la producción. El economista Martín Kalos señaló que en 20 años el país perdió 6 mil pequeñas y medianas empresas que vendían al exterior.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
         {
-          "name": "Daily Cargo News",
-          "type": "Medio especializado",
-          "url": "https://www.thedcn.com.au/news/container-rates-ease-as-asian-port-congestion-persists"
+          "name": "El Litoral",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.ellitoral.com/economia/pymes-martinkalos-pablofarias-cuentaunicatributaria-exportaciones-financiamiento-tipodecambio_0_4Mlzgs5acg.html",
+          "primary": true,
+          "author": ""
         }
       ],
-      "absorbs": [
-        "tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante"
-      ]
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUTMxUUtjT0drZENuZzhQQTdDYVRUWmhrc1B3aTFqcUlhS0Q1OFA1Nmk1RDIzV0VHZTlockFpbUF4NC1femlfbTJhekRTRGtMUGhsbWhScldsbnM0OXhfbzhHMXRSUEVBNTFKTFpsRTRvZ19tWE42cE1DTUpJQVBhMzlWY240NUhNT0ttMkdoMVIxZGhIWUwyeFFUWC02MjBtLXdrX0g2Vlc3RlUtT2tlY1ZZY0dDYkdBcW5EWFhOSVlqS1B6cnJRSlZpSGF2WjdFdGhSSWp1ZGVuX0dqVU5j?oc=5"
     },
     {
       "id": "los-fletes-se-mantienen",
@@ -1034,13 +1085,16 @@
       "keyData": [],
       "topics": [
         "Logística",
-        "Puertos"
+        "Puertos",
+        "Mercosur"
       ],
       "countries": [
         "Global"
       ],
-      "tags": [],
-      "visual": "globe",
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
       "impact": 1,
       "affectsArgentina": true,
       "kind": "noticia",
@@ -1194,12 +1248,15 @@
       "body": [],
       "keyData": [],
       "topics": [
+        "Aduanas",
         "Aranceles",
         "China",
-        "Asia"
+        "Asia",
+        "Europa"
       ],
       "countries": [
-        "China"
+        "China",
+        "Unión Europea"
       ],
       "tags": [
         "Aranceles"
@@ -1305,13 +1362,15 @@
       "body": [],
       "keyData": [],
       "topics": [
-        "Logística"
+        "Logística",
+        "Transporte marítimo"
       ],
       "countries": [
         "Global"
       ],
       "tags": [
-        "Fletes"
+        "Fletes",
+        "Energía"
       ],
       "visual": "tanker",
       "impact": 1,
@@ -1448,12 +1507,15 @@
       "body": [],
       "keyData": [],
       "topics": [
-        "Aduanas"
+        "Aduanas",
+        "Mercosur"
       ],
       "countries": [
         "Argentina"
       ],
-      "tags": [],
+      "tags": [
+        "Mercosur"
+      ],
       "visual": "customs",
       "impact": 2,
       "affectsArgentina": true,
@@ -1467,10 +1529,24 @@
           "url": "https://prensamercosur.org/2026/10/09/la-uia-lleva-a-aduana-un-mapa-del-contrabando-que-medidas-reclama/",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "El Comercial",
+          "type": "También publicó esta noticia",
+          "url": "https://www.elcomercial.com.ar/57548-la-uia-lleva-a-aduana-un-mapa-del-contrabando-que-medidas-reclama",
+          "alsoIn": true,
+          "title": "La UIA lleva a Aduana un mapa del contrabando: qué medidas reclama"
         }
       ],
       "gnTried": "2026-10-09T09:43:57Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRk1KMFpnOEJidkh1RWRWalhIME9EU011dDNSR3BYT3RQSVZ4TGxwVG50dzlqcVBlYjc5d2w3bFR6aGpPNjdRWG9FczN2NXg5YjNVNnBQUXhqVXlJVWJjTmd6TXBxRVdHRGZuc0tXMXJURHNHT040dkQxYkVCWEZPOFJxTl9nUUV3bTg1UlNKSTYyZzlvT1FhaG13OWdiem5KanZXZzlqTQ?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRk1KMFpnOEJidkh1RWRWalhIME9EU011dDNSR3BYT3RQSVZ4TGxwVG50dzlqcVBlYjc5d2w3bFR6aGpPNjdRWG9FczN2NXg5YjNVNnBQUXhqVXlJVWJjTmd6TXBxRVdHRGZuc0tXMXJURHNHT040dkQxYkVCWEZPOFJxTl9nUUV3bTg1UlNKSTYyZzlvT1FhaG13OWdiem5KanZXZzlqTQ?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcEdVZXZmT1FPLWlaeldncnFVMGNuaktpNzRmZk9QeVk1MzVYR2p1UV9hZ3NFRl9LcXNlUHIzQ2E5NWN4WHpCcHVpYzBPdEdqazIwRVdXbVZiUGdPMVJXSVhqNWcydkpPeGpaek9YaHhpMnZhSnZFRVItaEVKaUFEWGVycGVONXBmQktXaHRrbUYtZExFNEZUaUJZTkk4d21pU3M1NA",
+        "https://www.elcomercial.com.ar/57548-la-uia-lleva-a-aduana-un-mapa-del-contrabando-que-medidas-reclama"
+      ],
+      "mergedIds": [
+        "la-uia-lleva-a-aduana-un-mapa-del-contrabando-que-medidas-reclama-2"
+      ]
     },
     {
       "id": "puerto-de-santa-cruz-de-la-palma-recibe-primera-recalada-del-nieuw-statendam",
@@ -1507,39 +1583,85 @@
       ]
     },
     {
-      "id": "tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante",
-      "datetime": "2026-10-09T02:32:50Z",
+      "id": "drewry-wci-baja-2-8-octubre",
       "date": "2026-10-08",
-      "firstSeen": "2026-10-09T09:43:57Z",
-      "title": "Tarifas de transporte marítimo de contenedores caen 2% por menor demanda durante festividad china",
-      "summary": "El índice mundial de contenedores de Drewry (WCI) registró una caída de 2% durante la semana…",
-      "body": [],
-      "keyData": [],
+      "datetime": "2026-10-08T23:32:00-03:00",
+      "kind": "datos",
+      "title": "El índice mundial de fletes de contenedores cae 2% en la Semana Dorada y queda en USD 4.351 por FEU",
+      "summary": "Según Drewry, bajaron las rutas transpacíficas y Shanghái–Róterdam, mientras Shanghái–Génova quedó estable. La consultora espera tarifas estables la semana próxima.",
       "topics": [
         "Transporte marítimo",
-        "China",
-        "Asia"
+        "Logística",
+        "Asia",
+        "China"
       ],
       "countries": [
-        "China"
+        "China",
+        "Global"
       ],
       "tags": [
-        "China"
+        "Fletes",
+        "Contenedores",
+        "Semana Dorada",
+        "WCI",
+        "Drewry"
       ],
-      "visual": "container",
-      "impact": 1,
+      "visual": "ship",
+      "impact": 2,
       "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "PortalPortuario",
+      "story": "fletes-contenedores",
+      "body": [
+        "El World Container Index (WCI) de Drewry bajó 2% en la semana al 8 de octubre y se ubicó en USD 4.351 por contenedor de 40 pies, en un contexto de menor demanda por la Semana Dorada china, según informó PortalPortuario con datos de la consultora. Una semana antes, el indicador había cedido 1%.",
+        "Por ruta, Shanghái–Los Ángeles retrocedió 3%, a USD 7.624; Shanghái–Nueva York, 2%, a USD 10.220; y Shanghái–Róterdam, 2%, a USD 3.337. Shanghái–Génova quedó sin cambios, en USD 3.696. Según PortalPortuario, las tarifas Asia–Europa acumulan 13 semanas consecutivas de bajas. El Daily Cargo News informó las mismas variaciones por ruta y agregó que el índice intra-Asia de Drewry (IACI) cayó 1%, después de seis semanas seguidas de subas.",
+        "Para la semana próxima hay programadas 4 cancelaciones de viajes en el transpacífico, frente a 11 en la actual, y 6 en Asia–Europa, frente a 5. Drewry espera que las tarifas se mantengan estables en ambas rutas, mientras las navieras intentan revertir la baja con aumentos de las tarifas FAK en la segunda quincena de octubre; la consultora advierte que no está claro si lograrán aplicarlos."
+      ],
+      "keyData": [
+        [
+          "WCI compuesto",
+          "USD 4.351 / FEU (-2%)"
+        ],
+        [
+          "Shanghái → Nueva York",
+          "USD 10.220 (-2%)"
+        ],
+        [
+          "Shanghái → Los Ángeles",
+          "USD 7.624 (-3%)"
+        ],
+        [
+          "Shanghái → Génova",
+          "USD 3.696 (sin cambios)"
+        ],
+        [
+          "Shanghái → Róterdam",
+          "USD 3.337 (-2%)"
+        ]
+      ],
+      "explainer": {
+        "what": "El World Container Index de Drewry bajó 2% en la semana al 8 de octubre y quedó en USD 4.351 por contenedor de 40 pies.",
+        "why": "Es una referencia habitual para los fletes spot. Durante la Semana Dorada china cayeron las rutas transpacíficas y Shanghái–Róterdam, y Asia–Europa suma 13 semanas de bajas.",
+        "who": "Importadores y exportadores que contratan flete marítimo en contenedor, forwarders y navieras.",
+        "next": "Drewry espera tarifas estables la semana próxima en el transpacífico y en Asia–Europa, aunque las navieras buscan subir las tarifas FAK en la segunda quincena de octubre.",
+        "nextSource": {
+          "name": "PortalPortuario",
+          "url": "https://portalportuario.cl/tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante-festividad-china/"
+        }
+      },
       "sources": [
         {
           "name": "PortalPortuario",
-          "type": "Medio especializado · Chile",
+          "type": "Medio especializado",
           "url": "https://portalportuario.cl/tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante-festividad-china/",
-          "primary": true,
-          "author": "admin"
+          "primary": true
+        },
+        {
+          "name": "Daily Cargo News",
+          "type": "Medio especializado",
+          "url": "https://www.thedcn.com.au/news/container-rates-ease-as-asian-port-congestion-persists"
         }
+      ],
+      "absorbs": [
+        "tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante"
       ]
     },
     {
@@ -1775,6 +1897,41 @@
       "gnUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeWRwcXZGYncxSWx1QmIyTWxGQVhscXdwTm1aaURlVHdGRGFBUjk2Q21jQklNOGxVUEoyZTVrNEVMaG55UTNrclREamp0R19CS21qa1dITDQyV1BzUkhlR0g2aGZRTWttazNVYnZCeUdHOWxwYVNVV1hkdHZORHJxMW96cVBzWEtGRVFQVjc5SF9Ud01S?oc=5"
     },
     {
+      "id": "maracaibo-business-hub-camara-de-exportadores-e-importadores-de-falcon-presentes",
+      "datetime": "2026-10-08T23:44:33Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "Maracaibo Business Hub | Cámara de exportadores e importadores de Falcón presentes",
+      "summary": "Con el propósito de consolidar nuevas alianzas empresariales y expandir los mercados internacionales de la nación, se llevó a cabo un encuentro clave en el marco del Maracaibo Business Hub. Evento centrado en la oferta… | Noticias del MERCOSUR: política, economía y actualidad regional del Prensa Mercosur.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "Prensa Mercosur",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://prensamercosur.org/2026/10/08/maracaibo-business-hub-camara-de-exportadores-e-importadores-de-falcon-presentes/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUl9PR0RLWC1fV3RLaC1ZS3pYWlFhTzVRMnRnODlvbmtwMnE0WmxKNm92dDJlTmdMcEk4a28tSVEtU29rWU9sUWU3T0hPS2FuUmxLYnRCaUpkWHJ1Wng1MXRnSmVMRHZoYkZEUEpOU2RITThtT1RmLTNLV3BRWmFNVHpqY24xbnJVZUVHM251M0xTNWNnUVFZTTExZVFiRWk3QV93NEpGNmYxR2JIVm0yQk9OZDVIa3NtQnhV?oc=5"
+    },
+    {
       "id": "rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desregulac",
       "datetime": "2026-10-08T23:32:43Z",
       "date": "2026-10-08",
@@ -1811,12 +1968,21 @@
           "url": "https://www.lafanradio.com/articulo/rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desregulacion-del-gobierno.php",
           "alsoIn": true,
           "title": "RDEco: qué necesita una PyME argentina para exportar y cómo impacta la desregulación del Gobierno"
+        },
+        {
+          "name": "Flipr.news",
+          "type": "También publicó esta noticia",
+          "url": "https://flipr.com.ar/nacionales/economia/perfil/rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desregulacion-del-gobierno/",
+          "alsoIn": true,
+          "title": "RDEco: qué necesita una PyME argentina para exportar y cómo impacta la desregulación del Gobierno"
         }
       ],
       "gnTried": "2026-10-09T01:44:00Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNjlWM2h0ajQtcFpqR2lsa3ZNam9KbWlKdVVvNUtZVl9uWlNna0prcnU2dTE4dW5uSlMyUzNnZ0p4ZEFDYm43STdBWG9PdFVNNUZnQ2JON0tPLVdtLUh6LTM0N1hjNGR2MGRqanBZN0ZSSThNT1Rfc2lVQmNHQi1HbTRGcG9YSWVrMlFNVEhacTY5TmQ2bHpjSVpMNVhra0VpeHdUUkc0ODByeWI3eXZiNjRDS0lhamtPNlpSbXdZT1FzU3VxbFRCSEhXT2l6Z0HSAdQBQVVfeXFMTXNaRlBxa0ZYZUl3UVlpYUZMakw1MmRsQWVIdjVtNzBIVm0wWUczcnpvbHVxaUtUY1hzTndQZWRTeTNwajlWUncyN041ZFFfS1dsMzBJRF96UEtMSUZwT2d0UWN5VjF6NkpISmc2bkVJWUFVQjZIS3cwSjVraS1XVXllaGZxWTZ6MEw5a1BmMHRRMFQ4RHk4T1NoWUwzTTR4OG00ZHR5VS1XZjRhbUxJbGFPYXBIOVN5TENnOHJ5X3hYZmpUdnpDbW9hQnFSOVUyeUdSTlo?oc=5",
       "aliasUrls": [
+        "https://flipr.com.ar/nacionales/economia/perfil/rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desregulacion-del-gobierno",
         "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeVphRFJPZVFuY2gwY1IyLUpDZnJvOHdzaUlWckxxNkpNLVo0aWRlTG5MWExoY0VVM0ZhdmJlc1FuekliUmhyQnFBNW0welU3WHNEb1pnb0NHQVd0WHZhNml3ekNzSGdXMVhUem9OV09ZNTU1S2x5djdYbFNxdkJrSmMyVjUxTVpybVBxQUJ2M2xiNzctMHg3Vm1uR1RfVW5VX0pPWWdhbGxNU0hHVDQxa0tvLVdXa3JjYkdNeW5rTU5zbng1REx0eVBTcDJtWVA3ZWc",
+        "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVnpDYTFOcVpFWVhMN0VNZEREVENhYmNneWNLZWF1cVNac3JScEZDcGsyWHNnaXhYd0RGT0g0TFNOTUM3NGdqLVZzc1lrLUs2eHFDT1ZGWEpmY1JqR2RaN1QxZEVyck5VTUw0T2dqRE5INXc1OTZZMkhaQ3RPNHBQM19XdkZINWZTcWxVRW92cnE0ZG9GUU1ySmNFaFZ1V2NnV1IwNndYZ3hPdkU4cDVPQVh5T3hxa2FrQ2hJd3FsTDg0anBNUElLazRjYVE4WkJRZHBoYzE0bk82S2tuQVE",
         "https://www.lafanradio.com/articulo/rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desregulacion-del-gobierno.php"
       ],
       "mergedIds": [
@@ -2198,6 +2364,45 @@
       ]
     },
     {
+      "id": "brasil-busca-solucionar-suspension-de-exportaciones-de-carne-a-la-union-europea",
+      "datetime": "2026-10-08T19:15:14Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "Brasil busca solucionar suspensión de exportaciones de carne a la Unión Europea",
+      "summary": "El ministro Márcio Rosa destacó el progreso en las negociaciones para levantar la suspensión de exportaciones de carne brasileña a Europa, vigente desde septiembre.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Latinoamérica",
+        "Europa"
+      ],
+      "countries": [
+        "Brasil",
+        "Unión Europea"
+      ],
+      "tags": [
+        "Carne"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Cadena 3 Argentina",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.cadena3.com/noticia/mundo/brasil-busca-solucionar-suspension-de-exportaciones-de-carne-a-la-union-europea_601779",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPakR1c3BnWGlWbWdmenFUXy1NWXYybzlfZkZxYVk1UHBoS2dPQjU3Y0NyNXVjVHQtVmxNc204cy1OVmc4Z1d6SVZHWS1zZ2Rockd2TENmQTdzR1lHNWI3TjNiTHFIWmM1U1BtUVFTOFlBNVZPTTREYThJTVloN1NTaDlfWmd4QlBpOU1rUkZrYWRXY3d2UkhWRGFEblZ4d1RsYWZFajBqd25LMkRoT090amdvY1RsRnBMNHplZ1Y3Z2RnUlcxYVgw0gHHAUFVX3lxTE9qRHVzcGdYaVZtZ2Z6cVRfLU1ZdjJvOV9mRnFhWTVQcGhLZ09CNTdjQ3I1dWNUdC1WbE1zbThzLU5WZzhnV3pJVkdZLXNnZGhyR3ZMQ2ZBN3NHWUc1YjdOM2JMcUhaYzVTUG1RUVM4WUE1Vk9NNERhOElNWWg3U1NoOV9aZ3hCUGk5TWtSRmthZFdjd3ZSSFZEYURuVnh3VGxhZkVqMGp3bksyRGhPT3RqZ29jVGxGcEw0emVnVjdnZGdSVzFhWDA?oc=5"
+    },
+    {
       "id": "entre-salta-catamarca-y-jujuy-proyectan-una-exportacion-de-170-000-toneladas-par",
       "datetime": "2026-10-08T19:02:50Z",
       "date": "2026-10-08",
@@ -2328,6 +2533,40 @@
       ]
     },
     {
+      "id": "el-vino-exporta-mas-pero-recibe-menos-dolares",
+      "datetime": "2026-10-08T18:28:25Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "El vino exporta más, pero recibe menos dólares",
+      "summary": "Las exportaciones argentinas de los vinos crecieron 24,2% en volumen durante septiembre, según datos del sector.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Diario la Ventana",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://diariolaventana.com.ar/el-vino-exporta-mas-pero-recibe-menos-dolares/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMDhoT3RQS0VzVnZvQVhEVi1Ea1lNLWhUck55NjhlSV9uam16Tks4VjI2ak5VZzJwaWtfOUFiWXM5ZWxrYW45TXFZN0xYZ3NjdjNZZGVmMVBKeWlvc21aSmVUVjZBanI2cGFMeHY3TG1TcXAxQ1EtYWRPd2RPeUxvMkxNdw?oc=5"
+    },
+    {
       "id": "que-pasaria-con-los-alquileres-y-el-comercio-exterior-si-el-congreso-deroga-el-m",
       "datetime": "2026-10-08T18:08:37Z",
       "date": "2026-10-08",
@@ -2360,43 +2599,6 @@
       ],
       "gnTried": "2026-10-09T09:43:57Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPWlhpUVd3SVVPdUlZZU50TERYbVF6ejlyN21yeW9iRDZYSy1aNFE0QktiaWtIblpvRzJxY190OWlfMzB1TWJTRzdVa0UtNjJJX0RZbHJxRU9uVEc0djVxYTRUUVRGa2ZPVWJZSFE5NnZ5bmFBems0UXI3d1F3R2hXRDRUY2Izb281LXJxRkxjeEpBNEFwZVFObWNjbnllSjlCc1dxaWJvRzFTSWZEczZkbWZoNGp2ZU5uYk1NRENpcmJNVnVmcGxLZ25oZVlJMDJT0gHWAUFVX3lxTE9PLXE3N2dpTTBxYmJnN3Z1SEhMdURteDdaZjdCTUJjWlJjMENpSGIzTWtrbkFRdzlCaWc5TjYyaklWQXM3V3RSekM0QUU5ODZTSlM1TjBlamxDVF91MFVhY1F2Z2R5RUV0ZERuQjRab2lBNEFQTnRNNjNkTFVQdGlYblM4cUtaU1VoTVpScEI5VllZdzRhSEUyczFHaG5DSHRRQ0FDNWJoYm5NcXQwMUxKVUNjcG92VVBnckFIWWE1bnhKQXF4aUExeHRPR0tfenJ6YkdSN3c?oc=5"
-    },
-    {
-      "id": "la-omc-eleva-del-1-9-al-3-9-su-prevision-de-crecimiento-del-comercio-mundial",
-      "datetime": "2026-10-08T18:00:45Z",
-      "date": "2026-10-08",
-      "firstSeen": "2026-10-08T21:43:00Z",
-      "title": "La OMC eleva del 1,9% al 3,9% su previsión de crecimiento del comercio mundial",
-      "summary": "La Organización Mundial del Comercio (OMC) elevó del 1,9% al 3,9% su previsión de crecimiento del volumen del comercio mundial de mercancías para 2026, según su actualización de octubre. Para 2027, proyecta un incremento del 4,1%. La revisión al alza refleja la capacidad de adaptación de las cadenas de suministro…",
-      "body": [
-        "La Organización Mundial del Comercio (OMC) elevó del 1,9% al 3,9% su previsión de crecimiento del volumen del comercio mundial de mercancías para 2026, según su actualización de octubre. Para 2027, proyecta un incremento del 4,1%. La revisión al alza refleja la capacidad de adaptación de las cadenas de suministro frente a las interrupciones registradas […] The post La OMC eleva del 1,9% al 3,9% su previsión de crecimiento del comercio mundial appeared first on Aduana News ."
-      ],
-      "keyData": [],
-      "topics": [
-        "Aduanas",
-        "Economía internacional"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [
-        "OMC"
-      ],
-      "visual": "treaty",
-      "impact": 2,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Aduana News",
-      "sources": [
-        {
-          "name": "Aduana News",
-          "type": "Medio especializado · Argentina",
-          "url": "https://aduananews.com/la-omc-eleva-del-19-al-39-su-prevision-de-crecimiento-del-comercio-mundial-para-2026/?utm_source=rss&utm_medium=rss&utm_campaign=la-omc-eleva-del-19-al-39-su-prevision-de-crecimiento-del-comercio-mundial-para-2026",
-          "primary": true,
-          "author": "Aduana News"
-        }
-      ]
     },
     {
       "id": "el-costo-del-transporte-frena-el-potencial-exportador-de-la-madera-argentina",
@@ -2501,40 +2703,6 @@
           "author": "Luis Alonso"
         }
       ]
-    },
-    {
-      "id": "el-gobierno-dio-luz-verde-a-una-aerolinea-internacional-para-entrar-al-negocio-d",
-      "datetime": "2026-10-08T16:34:59Z",
-      "date": "2026-10-08",
-      "firstSeen": "2026-10-08T17:42:57Z",
-      "title": "El Gobierno dio luz verde a una aerolínea internacional para entrar al negocio de la carga aérea: cuál es y qué implica",
-      "summary": "Una compañía extranjera recibió la autorización para prestar servicios internacionales de carga y tendrá derechos de tráfico aéreo bajo el entendimiento bilateral vigente.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Transporte aéreo"
-      ],
-      "countries": [
-        "Global"
-      ],
-      "tags": [],
-      "visual": "plane",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Logística y fletes",
-      "sources": [
-        {
-          "name": "El Cronista",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://www.cronista.com/economia-politica/el-gobierno-dio-luz-verde-a-una-aerolinea-internacional-para-entrar-al-negocio-de-la-carga-aerea-cual-es-y-que-implica/",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-08T17:42:57Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPc1dmZEY5N1l0NENMeGFiV29PQXJoNkNaTGJGajNQcUxRZXBSUnAtOXB2blZqemFLalhNS0lWbDZYQnE5Tk4xU2hOc2FGVUluQVF4TDJMc28tNDg3N2ZaRFE0WDFyY2gyY1lILTFKWUlrTG1Ddl9GTkx4cTF3UXJwNHIyMnpuUDdNWUhzRHlUajVjb0FnLWlxeG15cGVJTlVMaDFnS2cwWW42aV9aSDMyUDZURkF5Qk41UUgyb2FOaEx4UFdyazZodDc3M0xpZ3dtOE9sZ1lwRUs2LXVDRzBCczVjS1FSd3M4TGttYnowcUhCSFc00gGPAkFVX3lxTFA0dkVqRmtPUThPVFhFVW1DQVBNc19WeGN4UkJ6RjYyQWt3NkEwMElHai1XZ3FRRVRXN01mc2FaemhiYWNUNldzTUFCVjVFQW0wQjBBQ2xhWFhDNTVDM1ZYY19LOENnZEM0bTFKLUNNOGRJSjhkM1FfdER5UnVaOXdHYl9KVkpFVzZDckR1V3o4YUhLYUxmWFJOSHRUSl9FLU5zakZmUjBqcE5XSmNXY0ZodG5DS19CSFVxb2I0R3NpZElsMmUyLUk5YWx1cHRiNlVSMjR5V0ZQYTdRSV9ocUhzX1doaXZDcVRPWGlMTk5scnlqeTdKZjlCc3NFVXRScUV4RG5QckpxMGVCck95ZUU?oc=5"
     },
     {
       "id": "cayo-una-norma-de-la-ue-y-argentina-casi-cuadriplico-sus-exportaciones-de-biodie",
@@ -2788,7 +2956,21 @@
           "url": "https://portalportuario.cl/subrei-transparenta-que-es-imposible-que-todos-los-productos-chilenos-retomen-su-arancel-cero-al-ingresar-a-estados-unidos/",
           "primary": true,
           "author": "Gabriel"
+        },
+        {
+          "name": "Universidad de Chile",
+          "type": "También publicó esta noticia",
+          "url": "https://radio.uchile.cl/2026/10/09/subrei-por-negociaciones-con-ee-uu-chile-no-recuperara-arancel-cero-para-todos-sus-productos/",
+          "alsoIn": true,
+          "title": "Subrei por negociaciones con EE.UU: Chile no recuperará arancel cero para todos sus productos"
         }
+      ],
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVTIzR1ZPcTRaZFVyd0lyY2h4MG9yRU5HSmhrNGxEUnJEMGJ5Sm1CM2czXzIzNTlqZDg5MGUyNUpEX0JQbEZzTW4xOExTVXNfaGE3VDNnalpxYmhPWE1Sb3FsYUF2VnpxODJiZlU1ZE5nclYwVXdUdWxEdG53cFE1WmF4OWRUcUZfMXRobW05dlFUVFNPQmFBYktlU2w2UkNUbjJuT1E4WkZmX1lTMmZOSHd2WTNueFdzS25fSnRkSFZSakdacWZR",
+        "https://radio.uchile.cl/2026/10/09/subrei-por-negociaciones-con-ee-uu-chile-no-recuperara-arancel-cero-para-todos-sus-productos"
+      ],
+      "mergedIds": [
+        "subrei-por-negociaciones-con-ee-uu-chile-no-recuperara-arancel-cero-para-todos-s"
       ]
     },
     {
@@ -3087,6 +3269,40 @@
       ]
     },
     {
+      "id": "la-aduana-concordia-notifico-a-29-personas-y-una-empresa-por-presuntas-infraccio",
+      "datetime": "2026-10-08T14:23:17Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "La Aduana Concordia notificó a 29 personas y una empresa por presuntas infracciones: las multas llegan a $41,5 millones",
+      "summary": "La medida alcanza a 27 personas y una empresa y se vincula con distintos sumarios por presuntas infracciones al Código Aduanero. Las multas mínimas van desde $92.202 hasta $41,5 millones y en la mayoría de los casos también se prevé el comiso de la mercadería. Los involucrados tendrán diez días…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aduanas"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "Diario Junio",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.diariojunio.com.ar/161519_la-aduana-concordia-notifico-a-29-personas-y-una-empresa-por-presuntas-infracciones-las-multas-llegan-a-415-millones/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQc0pYdnNnajVKd0paMDVrMzFSVmh3Rk1mTWgtcF9uS1lXNVNBbmlxOE9JN0Rwb3c0eHBjODV3MzlPa2ZTSXJwVDBqWHhvdEF0TG10OVFSREZxMko0bEx2enJseFlPWGhGTFBWNDhvVElYTUpFdlc1N1plOHRNTWEzdFZwOW1fUXdCUndEX185N2x0LUVkZGhmdTl3LTIxNDlrWmFwUE1Ia3VHM3JLQUl3TU1PLVlNc21HeS1lMGNSS2dvTVlFWFE3X1BnZXVLai1FMUZ6NmRQM0RjOGVpUlBZMGFLcHpsb0tHbWFV?oc=5"
+    },
+    {
       "id": "producir-invertir-y-exportar-en-un-mundo-sin-arbitro-el-debate-central-de-faro-e",
       "datetime": "2026-10-08T14:16:52Z",
       "date": "2026-10-08",
@@ -3352,6 +3568,54 @@
           "primary": true,
           "author": "Aduana News"
         }
+      ]
+    },
+    {
+      "id": "la-molienda-de-mani-crecio-30-7-y-las-exportaciones-ya-superan-los-us-750-millon",
+      "datetime": "2026-10-08T13:30:00Z",
+      "date": "2026-10-08",
+      "firstSeen": "2026-10-09T13:44:37Z",
+      "title": "La molienda de maní creció 30,7% y las exportaciones ya superan los US$ 750 millones",
+      "summary": "Entre enero y agosto de 2026, la industria manisera procesó 213.942 toneladas, mientras que las ventas externas de maní y derivados alcanzaron 661.784 toneladas.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Revista Chacra",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.revistachacra.com.ar/actualidad/la-molienda-de-mani-crecio-30-7-y-las-exportaciones-ya-superan-los-us-750-millones-8000/",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "El Litoral",
+          "type": "También publicó esta noticia",
+          "url": "https://www.ellitoral.com/campolitoral/exportaciones-china-industriamanisera-moliendademani-unioneuropea-aceitedemani-secretariadeagriculturaganaderiaypesca-mani-reinounido-pellets-cadenamanisera-ministeriodeeconomia_0_GEWRkqWK2V.html",
+          "alsoIn": true,
+          "title": "Más molienda y exportaciones: el maní argentino superó los US$ 750 millones en ventas externas"
+        }
+      ],
+      "gnTried": "2026-10-09T13:44:37Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWHM2VU5fRzRBek1VOEs3NFdhOHZTRk5SQW41TWI4SEdyNk5XZnNyX3hxMk00dFRvODRfQk8zTVBnSXdYTm9Tdk1pZnR5djNxVWxfamd4am10b1BnNzVFYW1lVXZzSzc3Y1FKV21PLXFGNmFoUWxTTktHb3ctcE54WDRIWUhPX3dQbmUxTlFId25UM1FuOXY3MHBKVmpwcWpSVVB2eGhNU3JNNURaUFlCbGVSYWY5NGFiWVhLSFpNVHBzMmt10gHEAUFVX3lxTE9YczZVTl9HNEF6TVU4Szc0V2E4dlNGTlJBbjVNYjhIR3I2Tldmc3JfeHEyTTR0VG84NF9CTzNNUGdJd1hOb1N2TWlmdHl2M3FVbF9qZ3hqbXRvUGc3NUVhbWVVdnNLNzdjUUpXbU8tcUY2YWhRbFNOS0dvdy1wTnhYNEhZSE9fd1BuZTFOUUh3blQzUW45djcwcEpWanBxalJVUHZ4aE1Tck01RFpQWUJsZVJhZjk0YWJZWEtIWk1UcHMya3U?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi1AJBVV95cUxPa1o1c1kyTWtGbzhnM0VsRTRIMUR6cUJTZ0Vtc1ZtdUcyRjh3ci15c3BCWmNKeDRmVHExWWQwdGdjUzlLcG5TbHFRbmNwbjlqZHl5THhlanZSTlQzb2w4RUNNM0tJSnVrRXFrcDJUMnZQb0dxaEJydlpBWF9LZl9tZzI1amtxVFl1YWtHcEZRazc2UkN6WU1qR2JFS081R2tZLU1zeVNrSkw3US11SWEwcmhmX05QN0R5R3dES3VBWXI0U2JmWWhWdUlLUWR3RVl0TldDcXZrVFlQQXk1WkdVTW5nNzBmNGxYREpUdnZ1WkxfcXMwdFB1bHNxZnVMZ0UtWGc0QzM2R0UwMm1oLVZ5cnpJNUtVV2RRRFNrVWxUVVZVQU9SVEE1MTc1R2NJWTljYkFkUWJ6Tk50cWJqWjdDUWJjN1NkejZYSXhPcGZWYXZJaTFQ",
+        "https://www.ellitoral.com/campolitoral/exportaciones-china-industriamanisera-moliendademani-unioneuropea-aceitedemani-secretariadeagriculturaganaderiaypesca-mani-reinounido-pellets-cadenamanisera-ministeriodeeconomia_0_GEWRkqWK2V.html"
+      ],
+      "mergedIds": [
+        "mas-molienda-y-exportaciones-el-mani-argentino-supero-los-us-750-millones-en-ven"
       ]
     },
     {
@@ -3747,6 +4011,104 @@
       ],
       "gnTried": "2026-10-08T13:43:55Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNb0lrRV95djBnNGhCMjZvMXlaMVpaUmF1ekRlMkFEVE1RUW1ScUVTdDJBNmczcjJWTF9tdWpDX0ZMSkpRM0pBWDZDWjRHdDAtYnA3VmNjTHJESnJuSldxd0NOZm1lMG9DSGhtd29QckRURkRuRE9DeWpkSDdZeXB3ZUp1emtoeE13Qk9LYWM1Y2l0MDZuX0loYjdOc2hSNXc?oc=5"
+    },
+    {
+      "id": "ethiopian-airlines-autorizada-carga-aerea-argentina-disposicion-26-2026",
+      "date": "2026-10-08",
+      "datetime": "2026-10-08T08:27:00-03:00",
+      "kind": "noticia",
+      "title": "Ethiopian Airlines recibió autorización para operar vuelos regulares de carga en la Argentina",
+      "summary": "La Disposición 26/2026 de la Subsecretaría de Transporte Aéreo habilita a la compañía etíope a prestar servicios internacionales exclusivamente de carga, con derechos de tráfico de la tercera a la novena libertad del aire.",
+      "topics": [
+        "Argentina",
+        "Transporte aéreo",
+        "Logística",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina",
+        "Etiopía"
+      ],
+      "tags": [
+        "Carga aérea",
+        "Ethiopian Airlines",
+        "ANAC",
+        "Libertades del aire",
+        "Boletín Oficial"
+      ],
+      "visual": "plane",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Importadores, exportadores y agentes de carga suman un operador habilitado para ofrecer vuelos regulares exclusivamente de carga hacia, desde y dentro del país.",
+      "argentinaImpact": {
+        "change": "Ethiopian Airlines quedó autorizada a operar servicios regulares internacionales de carga, con derechos de la tercera a la novena libertad del aire.",
+        "who": "Importadores y exportadores que usan carga aérea, agentes de carga, aeropuertos y aerolíneas que compiten en el segmento.",
+        "sectors": [
+          "Transporte aéreo",
+          "Logística",
+          "Comercio exterior"
+        ],
+        "flows": {
+          "importaciones": true,
+          "exportaciones": true,
+          "logistica": true,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "El Gobierno publicó el 8 de octubre en el Boletín Oficial la Disposición 26/2026 de la Subsecretaría de Transporte Aéreo, dependiente de la Secretaría de Transporte del Ministerio de Economía, que autoriza a Ethiopian Airlines Group a operar servicios regulares internacionales de transporte aéreo de cargas. La habilitación es solo para mercadería y no incluye vuelos regulares de pasajeros. La firmó el subsecretario Hernán Adrián Gómez.",
+        "La norma le otorga derechos de tráfico desde la tercera hasta la novena libertad del aire. La tercera y la cuarta cubren la carga entre Etiopía y la Argentina; la quinta, la sexta y la séptima, tráficos que involucran a terceros países; y la octava y la novena permiten llevar carga entre puntos del territorio argentino, por lo que la compañía también podría competir en el mercado doméstico de carga aérea.",
+        "La autorización se enmarca en el acuerdo bilateral entre ambos países y en el memorando de entendimiento que firmaron sus autoridades aeronáuticas en enero de 2025, que dejó sin tope las frecuencias semanales. La empresa fue designada por la autoridad aeronáutica etíope para operar hacia la Argentina y la Dirección Nacional de Transporte Aéreo de la ANAC emitió un dictamen favorable.",
+        "La disposición no fija rutas, frecuencias ni fecha de inicio de las operaciones. Esos detalles dependerán de la programación de la compañía y de la coordinación con la ANAC y los aeropuertos."
+      ],
+      "keyData": [
+        [
+          "Norma",
+          "Disposición 26/2026 de la Subsecretaría de Transporte Aéreo (Boletín Oficial, 8 de octubre de 2026)"
+        ],
+        [
+          "Servicio autorizado",
+          "Regular internacional, exclusivamente de carga"
+        ],
+        [
+          "Derechos de tráfico",
+          "De la tercera a la novena libertad del aire"
+        ],
+        [
+          "Marco",
+          "Acuerdo bilateral y memorando de entendimiento de enero de 2025"
+        ],
+        [
+          "Rutas, frecuencias e inicio",
+          "No los fija la norma"
+        ]
+      ],
+      "explainer": {
+        "what": "El Gobierno autorizó a Ethiopian Airlines a operar vuelos regulares internacionales exclusivamente de carga en la Argentina, mediante la Disposición 26/2026.",
+        "why": "Suma un operador de carga aérea con derechos de la tercera a la novena libertad del aire, incluidas las que permiten transportar carga entre puntos del país.",
+        "who": "Importadores y exportadores que usan carga aérea, agentes de carga, aeropuertos y aerolíneas que compiten en el segmento."
+      },
+      "sources": [
+        {
+          "name": "iProfesional",
+          "type": "Medio de comunicación",
+          "url": "https://www.iprofesional.com/negocios/466180-ethiopian-airlines-podra-operar-vuelos-regulares-de-carga-en-argentina",
+          "primary": true
+        },
+        {
+          "name": "Aviacionline",
+          "type": "Medio especializado",
+          "url": "https://www.aviacionline.com/espanol/aviacion-comercial/latinoamerica-y-el-caribe/argentina/ethiopian-airlines-podra-operar-carga-exclusiva-en-la-argentina-hasta-la-novena-libertad_a6ac7ba0a4f6837e79638b694"
+        },
+        {
+          "name": "El Destape",
+          "type": "Medio de comunicación",
+          "url": "https://www.eldestapeweb.com/economia/autorizan-aerolinea-africana-competir-aerolineas-argentinas-transporte-carga-interno-202610892158"
+        }
+      ],
+      "absorbs": [
+        "el-gobierno-dio-luz-verde-a-una-aerolinea-internacional-para-entrar-al-negocio-d"
+      ]
     },
     {
       "id": "dp-world-obtiene-la-certificacion-de-la-iata-para-sus-operaciones-de-carga-aerea",
@@ -4150,10 +4512,24 @@
           "url": "https://www.cadenadesuministro.es/transporte-maritimo/fletes-retroceden-durante-golden-week-asiatica_1518859_102.html",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "MasContainer",
+          "type": "También publicó esta noticia",
+          "url": "https://mascontainer.com/shanghai-cierra-la-golden-week-con-mas-de-tres-dias-de-espera-para-los-buques/",
+          "alsoIn": true,
+          "title": "Shanghái cierra Golden Week con 3,5 días de espera y fletes intraasiáticos en máximo"
         }
       ],
       "gnTried": "2026-10-08T09:43:42Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPN1FxY0FhMS1hWGVTUUFPamxNWV9Nb1JET1lXMDE2XzFtdy1TY3puSWZxVVRrcmh0S043cllkWk1vMlZBUjVYeTJmSjJmdEF0UXFyZXFJREFNUThjekdQemhRczZrQ0xVQ3VUb2VKVjBuMEptTmFVbS1VaXlCYWNmY056SVA4N1RUcGtRWmlOeWVpRDVPV2pIUDFHc2ItQ2l1T0RkZHNWaHdXdXBmVlZMQ0UtQ0dtYndf?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPN1FxY0FhMS1hWGVTUUFPamxNWV9Nb1JET1lXMDE2XzFtdy1TY3puSWZxVVRrcmh0S043cllkWk1vMlZBUjVYeTJmSjJmdEF0UXFyZXFJREFNUThjekdQemhRczZrQ0xVQ3VUb2VKVjBuMEptTmFVbS1VaXlCYWNmY056SVA4N1RUcGtRWmlOeWVpRDVPV2pIUDFHc2ItQ2l1T0RkZHNWaHdXdXBmVlZMQ0UtQ0dtYndf?oc=5",
+      "aliasUrls": [
+        "https://mascontainer.com/shanghai-cierra-la-golden-week-con-mas-de-tres-dias-de-espera-para-los-buques",
+        "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcXE1TS15aFFLdGMxVUlHTmVHMmVpMkFkR0ROcXFqV016SjV6NGRkSmhrSkRWZ3BvZFRKa2xMZG1Iek53cTRsMjVSZFk1dHkwQXVwRGpFSTZ5YnNQTWVuNDRhanY2ellTZ1M3Qkh2bHdjWndpY0MzdF9WTjAwUTNMdmFOcmw0dV9kWm0yWkNWNHNxaG9nSm9HOXFqUFp1RDdkT2NVT3lB"
+      ],
+      "mergedIds": [
+        "shanghai-cierra-golden-week-con-3-5-dias-de-espera-y-fletes-intraasiaticos-en-ma"
+      ]
     },
     {
       "id": "informe-de-dhl-y-nyu-indica-que-africa-subsahariana-registra-fuerte-crecimiento",
@@ -4332,6 +4708,106 @@
           "primary": true,
           "author": "Diego Hermosilla"
         }
+      ]
+    },
+    {
+      "id": "omc-eleva-prevision-comercio-mercancias-2026-3-9",
+      "date": "2026-10-08",
+      "kind": "datos",
+      "title": "La OMC duplicó su previsión para el comercio mundial de mercancías en 2026: ahora espera 3,9%",
+      "summary": "El organismo subió la proyección de volumen desde el 1,9% que había estimado en marzo, empujada por el comercio de bienes ligados a la inteligencia artificial. Recortó la de servicios a 3,3% y señaló al conflicto en Oriente Medio como el principal riesgo.",
+      "topics": [
+        "Economía internacional",
+        "Geopolítica y comercio",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "OMC",
+        "Perspectivas del comercio",
+        "Inteligencia artificial",
+        "Oriente Medio",
+        "Semiconductores"
+      ],
+      "visual": "globe",
+      "impact": 2,
+      "affectsArgentina": false,
+      "body": [
+        "La Organización Mundial del Comercio (OMC) publicó el 8 de octubre la actualización de sus perspectivas y elevó al 3,9% el crecimiento previsto del volumen del comercio mundial de mercancías para 2026, más del doble del 1,9% que había proyectado en marzo. Para 2027 estima una suba de 4,1%. En el primer semestre, el volumen creció 3,5% interanual y el valor en dólares, 15%: según el organismo, la brecha se explica en parte por los mayores precios de los combustibles y de los componentes electrónicos para centros de datos.",
+        "El impulso vino de los bienes vinculados a la inteligencia artificial, como semiconductores y servidores, cuyo comercio aumentó 67% interanual en el primer semestre y explicó el 47% del crecimiento del intercambio mundial de mercancías. En cambio, la OMC recortó la previsión para el comercio de servicios comerciales en 2026 de 4,8% a 3,3%, porque el conflicto golpeó al transporte y a los viajes, y proyecta 6,4% para 2027. El PIB mundial crecería 2,6% este año y 2,9% el próximo.",
+        "Por regiones, el organismo espera que en 2026 las exportaciones de mercancías crezcan 9,9% en Asia, 5,7% en América del Norte y 5,6% en África, mientras que las de Europa caerían 0,1% y las de Oriente Medio, 17,2%. Para América del Sur y Central y el Caribe proyecta una suba de 3,4% en las exportaciones. El impacto del conflicto ya se vio en la energía: en el primer semestre, las exportaciones de crudo de Oriente Medio bajaron cerca de 24% y las de gas natural licuado, alrededor de 47%, aunque otros proveedores limitaron la caída mundial a cerca de 6% y 1%, respectivamente.",
+        "La OMC identifica al conflicto en Oriente Medio como el principal riesgo para el pronóstico, por su efecto sobre los precios de la energía y las rutas de transporte. La directora general, Ngozi Okonjo-Iweala, advirtió además que los beneficios de la expansión ligada a la inteligencia artificial no son igual de accesibles para todos los países."
+      ],
+      "keyData": [
+        [
+          "Comercio de mercancías 2026",
+          "+3,9% en volumen (antes 1,9%)"
+        ],
+        [
+          "Comercio de mercancías 2027",
+          "+4,1%"
+        ],
+        [
+          "Servicios comerciales 2026",
+          "+3,3% (antes 4,8%)"
+        ],
+        [
+          "Bienes ligados a la IA",
+          "+67% en el primer semestre; 47% del crecimiento"
+        ],
+        [
+          "Exportaciones de América del Sur y Central y el Caribe 2026",
+          "+3,4%"
+        ],
+        [
+          "PIB mundial",
+          "2,6% en 2026 y 2,9% en 2027"
+        ]
+      ],
+      "explainer": {
+        "what": "La OMC elevó del 1,9% al 3,9% su previsión de crecimiento del volumen del comercio mundial de mercancías para 2026.",
+        "why": "Los bienes ligados a la inteligencia artificial explicaron el 47% del crecimiento del primer semestre, mientras el conflicto en Oriente Medio golpea la energía, el transporte y los viajes. Para América del Sur y Central y el Caribe, la OMC prevé que las exportaciones suban 3,4%.",
+        "who": "Exportadores e importadores de todo el mundo, en especial de electrónica y energía, y las empresas de transporte y servicios.",
+        "products": [
+          "Semiconductores",
+          "Servidores",
+          "Petróleo crudo",
+          "Gas natural licuado"
+        ],
+        "next": "Para 2027, la OMC proyecta un crecimiento de 4,1% en el comercio de mercancías y de 6,4% en el de servicios comerciales.",
+        "nextSource": {
+          "name": "OMC",
+          "url": "https://www.wto.org/spanish/news_s/news26_s/stat_08oct26_510_s.htm"
+        }
+      },
+      "sources": [
+        {
+          "name": "OMC",
+          "type": "Organización internacional",
+          "url": "https://www.wto.org/spanish/news_s/news26_s/stat_08oct26_510_s.htm",
+          "primary": true
+        },
+        {
+          "name": "Comunicado de la OMC (EIN Presswire)",
+          "type": "Comunicado oficial",
+          "url": "https://www.einnews.com/pr_news/948255934/ai-boom-and-trade-resilience-to-middle-east-crisis-lift-outlook-but-gains-to-be-uneven"
+        },
+        {
+          "name": "Expansión",
+          "type": "Medio de comunicación",
+          "url": "https://expansion.mx/economia/2026/10/08/omc-eleva-prevision-crecimiento-comercio-mundial-ia-2026"
+        },
+        {
+          "name": "Aduana News",
+          "type": "Medio especializado",
+          "url": "https://aduananews.com/la-omc-eleva-del-19-al-39-su-prevision-de-crecimiento-del-comercio-mundial-para-2026/"
+        }
+      ],
+      "absorbs": [
+        "la-omc-eleva-del-1-9-al-3-9-su-prevision-de-crecimiento-del-comercio-mundial",
+        "el-auge-de-la-ia-y-la-resiliencia-del-comercio-ante-la-crisis-en-oriente-medio-m"
       ]
     },
     {
@@ -4712,42 +5188,6 @@
       ],
       "aliasUrls": [
         "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYWxMV0lNTFRPQ2FGVmgycVcxZzhfNy0wQVF2QVQ4c25ySjYxajRYTUhQenVZODB0Z3doaTVRMFhWdUlvTFhGM1dXX2o0WUNjVHFldC1DQWhmUm8wQkZVdm5mbThLTFFJYUJha3BMZDJCRHdFc2E1OXEyWm9QVkszUDY0dzJlRjcwNDhfNlZhdExRSFR5dnJfMkZmb1hhRXVXV0NDMjJZN1dRcF9u"
-      ]
-    },
-    {
-      "id": "el-auge-de-la-ia-y-la-resiliencia-del-comercio-ante-la-crisis-en-oriente-medio-m",
-      "datetime": "2026-10-08T00:00:00Z",
-      "date": "2026-10-07",
-      "firstSeen": "2026-10-08T13:43:55Z",
-      "title": "El auge de la IA y la resiliencia del comercio ante la crisis en Oriente Medio mejoran las perspectivas, pero los beneficios serán desiguales",
-      "summary": "El comercio mundial se ha mostrado más resiliente de lo previsto durante el primer semestre de 2026, a pesar de las perturbaciones provocadas por el conflicto en Oriente Medio. Las cadenas de suministro se han adaptado y las importantes inversiones en inteligencia artificial han dado un fuerte impulso al comercio de…",
-      "body": [
-        "El comercio mundial se ha mostrado más resiliente de lo previsto durante el primer semestre de 2026, a pesar de las perturbaciones provocadas por el conflicto en Oriente Medio. Las cadenas de suministro se han adaptado y las importantes inversiones en inteligencia artificial han dado un fuerte impulso al comercio de mercancías. Sin embargo, esta resiliencia no ha sido uniforme, ya que el comercio de servicios y algunas regiones se han visto más expuestas a los efectos del conflicto. Por ello, los economistas de la OMC han revisado al alza sus previsiones de crecimiento del comercio de mercancías para 2026, pero a la baja las del comercio de servicios."
-      ],
-      "keyData": [],
-      "topics": [
-        "Geopolítica y comercio",
-        "Economía internacional",
-        "Tecnología COMEX"
-      ],
-      "countries": [
-        "Global"
-      ],
-      "tags": [],
-      "visual": "globe",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "OMC · Organización Mundial del Comercio",
-      "sources": [
-        {
-          "name": "OMC · Organización Mundial del Comercio",
-          "type": "Organismo internacional",
-          "url": "https://www.wto.org/spanish/news_s/news26_s/stat_08oct26_510_s.htm",
-          "primary": true,
-          "author": ""
-        }
       ]
     },
     {
@@ -5678,59 +6118,6 @@
           "primary": true,
           "author": "cmeza"
         }
-      ]
-    },
-    {
-      "id": "tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importacione",
-      "datetime": "2026-10-07T18:26:44Z",
-      "date": "2026-10-07",
-      "firstSeen": "2026-10-07T21:42:45Z",
-      "title": "Tensión por la carne argentina: ¿por qué Irlanda quiere suspender las importaciones?",
-      "summary": "La Asociación de Agricultores Irlandeses reclamó a la Comisión Europea que limite las importaciones de carne vacuna argentina. El motivo de la discordia",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina",
-        "Importaciones",
-        "Europa"
-      ],
-      "countries": [
-        "Argentina",
-        "Unión Europea"
-      ],
-      "tags": [
-        "Carne"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aduana e importaciones Argentina",
-      "sources": [
-        {
-          "name": "Rosario3",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://www.rosario3.com/ecos365/agro/tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importaciones-20261007-0007.html",
-          "primary": true,
-          "author": ""
-        },
-        {
-          "name": "Campo en acción",
-          "type": "También publicó esta noticia",
-          "url": "https://campoenaccion.com/actualidad/tensin-por-la-carne-argentina-por-qu-irlanda-quiere-suspender-las-importaciones.htm",
-          "alsoIn": true,
-          "title": "Tensión por la carne argentina: ¿por qué Irlanda quiere suspender las importaciones?"
-        }
-      ],
-      "gnTried": "2026-10-07T21:42:45Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOY2RvU2FJQmtNb0o0Y1F5LUthcHlPanExZ1NkejZGTjhvMUh5YW0xeEpON08wdzN0SjRuUXc1MHc1eG9GMXNLbGVIUnA2Z2U5TXNVaHdrVFI0dDlQWVRMRnRsN0JLM0Zwa2JnT293UDFhb29wSTgtOHhtakdXLW5Sc0k4dFJISFhzbm5RaWFUQ3d6QVJZbHhBTWZxMzRvUFkycXRnbFYzOFZ5UlJ3enV6cElCZTVydG90ZGNyOGFoY3VnYnFVVXRSMHpEcUhBdThOcUltUw?oc=5",
-      "aliasUrls": [
-        "https://campoenaccion.com/actualidad/tensin-por-la-carne-argentina-por-qu-irlanda-quiere-suspender-las-importaciones.htm",
-        "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaFZyd21LTmJiVjEzN0hNQ1cwSGVSY1RlS0I1ODhtalBQUkpKMEpyRWFJbWp5bmNnT1dVZ2FvbHhYYXNsNkl5RWxmQ2NjYVQ0ZEFaQzZqTU93Z3B6YTRuYnlMM0tOSEo0ZHVSa0VfZFFQMUdXdVBoMjk4cnlrMGozbDdjZE5Yd20zVmdDeXBfLUtBNnAzWGtYTzRDTW5TTlFkalNmV3dqaXJuajF5aDNlbWVnRdIBswFBVV95cUxQaFZyd21LTmJiVjEzN0hNQ1cwSGVSY1RlS0I1ODhtalBQUkpKMEpyRWFJbWp5bmNnT1dVZ2FvbHhYYXNsNkl5RWxmQ2NjYVQ0ZEFaQzZqTU93Z3B6YTRuYnlMM0tOSEo0ZHVSa0VfZFFQMUdXdVBoMjk4cnlrMGozbDdjZE5Yd20zVmdDeXBfLUtBNnAzWGtYTzRDTW5TTlFkalNmV3dqaXJuajF5aDNlbWVnRQ"
-      ],
-      "mergedIds": [
-        "tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importac-2"
       ]
     },
     {
@@ -6809,6 +7196,13 @@
           "url": "https://es.marketscreener.com/noticias/vietnam-da-por-pr-cticamente-concluidas-las-negociaciones-de-su-acuerdo-comercial-con-estados-unidos-ce785ddedf8ffe21",
           "alsoIn": true,
           "title": "Vietnam da por prácticamente concluidas las negociaciones de su acuerdo comercial con Estados Unidos"
+        },
+        {
+          "name": "Vietnam.vn",
+          "type": "También publicó esta noticia",
+          "url": "https://www.vietnam.vn/es/viet-nam-hoa-ky-co-ban-hoan-tat-dam-phan-hiep-dinh-thuong-mai-doi-ung",
+          "alsoIn": true,
+          "title": "Vietnam - Estados Unidos: Las negociaciones sobre el acuerdo comercial recíproco están prácticamente concluidas."
         }
       ],
       "gnTried": "2026-10-07T13:42:43Z",
@@ -6817,11 +7211,14 @@
         "https://es.marketscreener.com/noticias/vietnam-da-por-pr-cticamente-concluidas-las-negociaciones-de-su-acuerdo-comercial-con-estados-unidos-ce785ddedf8ffe21",
         "https://news.google.com/rss/articles/CBMi7AFBVV95cUxONXpnQmpEOEh6UkVsam5KSFhmcXFtWGhxd0N2cFhodlZaMFVGRzFnRFhuRGtEVko5eGRLVVBTQnVGTjduQVhrRXRUV0NfaHFfM21UQzhXd2tLNGZpcXhkYnc0SXRCOE1pNHk3aFZVZ2I0TnRiOTRremZ5WmV3dmtMbDIzdjJmNWJDSG0zQmpVRGlHanRaUHFVU2tEc3k5aXQ0WC1HcWQxVVk2RFlDLXl5YVNQS0o3MVpsblhaR1Awem5IRHpySm9tRE5GZ1Y5ZFcxajVjRXcxMmdzVmpCMWIwSUVsMmZPWE5GOXRXbA",
         "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSHJOTVgzZDlzUmRHNkhwNTJWa0NNTi1kYTVTdEs3X2pKMnFnYVRHRllac0RLWE50NE5GNENjSjdsYm1PV3dubWRuQmRFa0xrQUs0ajBLMHRlUk41YklZTGh5WmNzM1NCNTR6Slc4bTg0cE1NNWhGQjJaMEtTbDJrLUh1S0ZxY1Vnclg5NGUwaW8",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbGE2SXNubVY3ZDBFLXJ3MzRDSnlHVmpKMG43ZVdUbmhuNzd0Mi1PS0JicDVnTkZwM3VmMG1QalFZaTNHMnpQOXpaNDRJTkpwLXdOYUcyTGhJTUhSYWZrS2RFOGZPNUVUV2tFbW9PbzFHTlRWSFRJRi1wdEFmaGxqMHdoenJUeVJEbWFGVTlsRlJtd253TDFqWmpEMA",
+        "https://www.vietnam.vn/es/viet-nam-hoa-ky-co-ban-hoan-tat-dam-phan-hiep-dinh-thuong-mai-doi-ung",
         "https://xpectrofm.com/india-y-estados-unidos-frenan-negociaciones-de-acuerdo-comercial"
       ],
       "mergedIds": [
         "india-y-estados-unidos-frenan-negociaciones-de-acuerdo-comercial",
-        "vietnam-da-por-practicamente-concluidas-las-negociaciones-de-su-acuerdo-comercia"
+        "vietnam-da-por-practicamente-concluidas-las-negociaciones-de-su-acuerdo-comercia",
+        "vietnam-estados-unidos-las-negociaciones-sobre-el-acuerdo-comercial-reciproco-es"
       ]
     },
     {
@@ -7650,6 +8047,112 @@
       ],
       "gnTried": "2026-10-07T09:43:45Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPa3RkZEk4ZVBQNlF3R0JmLUM0ck54ZExXQVl3UzlvaEFDODRScDdZcHVnV0hrQmVRcHhwdDV4MTluOGd4V2xUNWtoTFZGNEswVm9XZkJHenFYWWEtWC1pYVE2ZHFkQmlldUpEWVliZlo3LS1JeGhUZUxSR0lJSk9DcWE4MG45MDlCeG9GS1FoVFNYNFJxMk45blloVXc1eFJXZGN1NGZMTDlJak5IOUZPNWhsWWZ5Q0VXZURVU3FMTGVYYmt4R1Y4Mjh3QlpNcFQ2OEtnTWh0M1BmWmt2bWVuUTZQTDNtc0xCaDBEVXc1N1FVTE5CejNEQXoyVUx0d9IB_gFBVV95cUxPa3RkZEk4ZVBQNlF3R0JmLUM0ck54ZExXQVl3UzlvaEFDODRScDdZcHVnV0hrQmVRcHhwdDV4MTluOGd4V2xUNWtoTFZGNEswVm9XZkJHenFYWWEtWC1pYVE2ZHFkQmlldUpEWVliZlo3LS1JeGhUZUxSR0lJSk9DcWE4MG45MDlCeG9GS1FoVFNYNFJxMk45blloVXc1eFJXZGN1NGZMTDlJak5IOUZPNWhsWWZ5Q0VXZURVU3FMTGVYYmt4R1Y4Mjh3QlpNcFQ2OEtnTWh0M1BmWmt2bWVuUTZQTDNtc0xCaDBEVXc1N1FVTE5CejNEQXoyVUx0dw?oc=5"
+    },
+    {
+      "id": "irlanda-ifa-pide-restringir-carne-vacuna-argentina-antimicrobianos",
+      "date": "2026-10-07",
+      "kind": "noticia",
+      "title": "Productores irlandeses piden a la UE restringir la carne vacuna argentina por un estudio sobre antibióticos en feedlots",
+      "summary": "La Irish Farmers' Association reclamó a la Comisión Europea extender a la Argentina las restricciones que el bloque aplicó a Brasil. El estudio que invoca midió residuos en suelos de 27 feedlots, no en carne, y el sector argentino rechazó el planteo.",
+      "topics": [
+        "Argentina",
+        "Europa",
+        "Exportaciones",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina",
+        "Irlanda",
+        "Unión Europea"
+      ],
+      "tags": [
+        "Carne vacuna",
+        "Antimicrobianos",
+        "SENASA",
+        "Feedlot",
+        "IFA"
+      ],
+      "visual": "agro",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Es un pedido de una entidad de productores, no una medida de la UE, pero apunta a uno de los principales mercados de la carne vacuna argentina.",
+      "argentinaImpact": {
+        "change": "Una entidad de productores irlandeses pidió a la Comisión Europea restringir la carne vacuna argentina por el uso de antimicrobianos; no hay una decisión del bloque.",
+        "who": "Frigoríficos exportadores, feedlots y productores ganaderos que venden a la Unión Europea, y el SENASA como autoridad sanitaria.",
+        "sectors": [
+          "Carne vacuna",
+          "Ganadería",
+          "Frigoríficos"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "La Irish Farmers' Association (IFA), que agrupa a productores agropecuarios de Irlanda, pidió a la Comisión Europea que restrinja el ingreso de carne vacuna argentina. Su presidente, Francie Gorman, propuso aplicar a la Argentina el mismo criterio que la Unión Europea usó con Brasil, que quedó fuera de la lista de países habilitados bajo las nuevas exigencias europeas sobre antimicrobianos vigentes desde septiembre de 2026. Gorman también le reclamó una intervención al ministro de Agricultura irlandés, Martin Heydon.",
+        "El planteo se apoya en un estudio de investigadores del Conicet y de la Universidad de Liverpool que analizó residuos de antimicrobianos en suelos de 27 feedlots comerciales de la Argentina. La monensina, prohibida en la UE como promotora de crecimiento desde 2006, apareció en todos los establecimientos, y en más del 40% se detectaron compuestos que no figuraban en sus registros de tratamiento, entre ellos la cefquinoma, un antibiótico de importancia crítica para la salud humana. Según ComexLatam, los autores no concluyen que haya habido uso ilegal: atribuyen las diferencias a causas posibles como registros incompletos, tratamientos anteriores que persisten en el suelo o movimiento de estiércol, y piden mejorar la trazabilidad y el monitoreo.",
+        "En la Argentina, el presidente de la Cámara Argentina de Feedlot, Fernando Storni, rechazó el planteo ante La Nación: remarcó que el estudio midió suelos y no carne, que no evaluó la inocuidad del producto y que el caso de Brasil no es comparable. Según el mismo medio, el SENASA controla los residuos en carne con el plan CREHA, que según el organismo cuenta con la aprobación de los servicios sanitarios de la UE y de Estados Unidos, y en 2024 prohibió los antimicrobianos promotores del crecimiento, con excepciones como la monensina.",
+        "Según datos citados por medios irlandeses, la Argentina aportó cerca del 18% de las importaciones de carne vacuna de la UE en los últimos cinco años, y las compras del bloque crecieron en los primeros meses de 2026. Las fuentes consultadas no informan una respuesta de la Comisión Europea al pedido de la IFA."
+      ],
+      "keyData": [
+        [
+          "Quién lo pide",
+          "Irish Farmers' Association (IFA), a la Comisión Europea"
+        ],
+        [
+          "Feedlots analizados",
+          "27 (residuos en suelos, no en carne)"
+        ],
+        [
+          "Feedlots con monensina",
+          "Los 27"
+        ],
+        [
+          "Con compuestos no registrados",
+          "Más del 40%"
+        ],
+        [
+          "Peso de la Argentina en las importaciones de carne vacuna de la UE",
+          "≈ 18% en los últimos cinco años (según medios irlandeses)"
+        ]
+      ],
+      "explainer": {
+        "what": "La asociación de productores irlandeses IFA pidió a la Comisión Europea restringir la carne vacuna argentina, a partir de un estudio sobre residuos de antibióticos en suelos de 27 feedlots.",
+        "why": "La UE ya dejó afuera a Brasil por las nuevas exigencias sobre antimicrobianos, y la Argentina aportó cerca del 18% de la carne vacuna que importó el bloque en los últimos cinco años, según medios irlandeses.",
+        "who": "Frigoríficos exportadores, feedlots y productores ganaderos argentinos que venden a la Unión Europea, y el SENASA.",
+        "products": [
+          "Carne vacuna"
+        ]
+      },
+      "sources": [
+        {
+          "name": "La Nación",
+          "type": "Medio de comunicación",
+          "url": "https://lanacion.com.ar/economia/campo/antibioticos-fuerte-rechazo-a-un-planteo-de-productores-de-irlanda-que-pidieron-prohibir-la-carne-nid07102026",
+          "primary": true
+        },
+        {
+          "name": "Rosario3 (Ecos365)",
+          "type": "Medio de comunicación",
+          "url": "https://www.rosario3.com/ecos365/agro/tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importaciones-20261007-0007.html"
+        },
+        {
+          "name": "Irish Farmers Journal",
+          "type": "Medio especializado",
+          "url": "https://www.farmersjournal.ie/amp/news/news/antibiotic-probe-moves-to-argentina-934903"
+        },
+        {
+          "name": "ComexLatam",
+          "type": "Medio especializado",
+          "url": "https://comexlatam.com/irlanda-pide-revisar-el-ingreso-de-carne-argentina-a-la-ue"
+        }
+      ],
+      "absorbs": [
+        "tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importacione"
+      ]
     },
     {
       "id": "deficit-argentina-brasil-septiembre-2026-51-millones",
@@ -25618,7 +26121,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-09T09:43:57Z",
+    "ranAt": "2026-10-09T13:44:37Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -25634,8 +26137,8 @@
         "url": "https://www.aduananews.com/feed/",
         "ok": true,
         "items": 12,
-        "added": 0,
-        "updated": 1,
+        "added": 1,
+        "updated": 0,
         "skipped": 2
       },
       {
@@ -25643,7 +26146,7 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 8,
+        "added": 4,
         "updated": 0,
         "skipped": 5
       },
@@ -25651,55 +26154,55 @@
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 42,
-        "added": 1,
+        "items": 45,
+        "added": 3,
         "updated": 0,
-        "skipped": 27
+        "skipped": 30
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 49,
-        "added": 1,
+        "items": 50,
+        "added": 2,
         "updated": 0,
-        "skipped": 35
+        "skipped": 36
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 63,
+        "items": 57,
         "added": 4,
         "updated": 0,
-        "skipped": 38
+        "skipped": 31
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
         "items": 51,
-        "added": 2,
+        "added": 1,
         "updated": 0,
-        "skipped": 27
+        "skipped": 31
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 56,
+        "items": 54,
         "added": 4,
         "updated": 0,
-        "skipped": 37
+        "skipped": 34
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 83,
+        "items": 81,
         "added": 4,
         "updated": 0,
-        "skipped": 47
+        "skipped": 49
       }
     ],
     "curatedDuplicates": [
@@ -25714,14 +26217,14 @@
         "curated": "hidrovia-resolucion-59-2026-consejo-control-via-navegable-troncal"
       },
       {
+        "title": "Industria automotriz argentina: septiembre registró récord de exportac",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdm5objZCeU5HN3M4SmdIWThOcUVUVU9QZ1IyMkRjMmRJU01CSEw2N2NoMEY0cWxleEgzajM1ZjkwSjJqOTRZMWRjcWhjYXB3bkpCcFRxdXJxVnJZVlpfODdYWkgzR2ptejVYR1BsWk50Tk56X2NtZDI0cFRTLU8yY1c5ak96eFZuUEh6TG84dFhFaVM0TFoyZWxmTGRFNDlud01vQnlZUUZDX1J0WVU5WmlFYlJTZGJIRjNGbEhaMWJHQQ?oc=5",
+        "curated": "adefa-septiembre-2026-exportaciones-suben-produccion-cae"
+      },
+      {
         "title": "Logística. Se creó el Consejo de Control de la Hidrovía: ¿quiénes serán los representantes del agro?",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaU01aU5zOUR3MHllOEtyODJUdG9icUF1R3U2WDIxOGhiTGZfcDRRbmx2cmFBbl9KSWQzRnJhLXlpemxQTjlSSXpsQThGQXlwWW1wejl3ejFxdDVRTWJLLXlKeUZTRGd3RE5kbGlXTlpvOUhRYlNrejEyMFdpRGlzcmhCYnA2cHJFeTVvd182RGdYbWRBRVhKNjlGN05jUQ?oc=5",
         "curated": "hidrovia-resolucion-59-2026-consejo-control-via-navegable-troncal"
-      },
-      {
-        "title": "Argentina redujo el déficit con Brasil por la caída de las importaciones",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQS1BPTVZaLTlZZ182TktQYUZRcFdyX3lKWG9JV0VJaGNUdEswT3RZYW91dEU5TFM3X0M2UjVIdlBhWVRrTUF4VjZoWHRORFptQW9VQzNBdXlsYlZpNGlZY19sZEJqd01HMWw5SG1lNldsc2pldklCWkJVMlotZzI3bWpsbGdvd1h2amNfeklxQ3M0UmhkQ1oxc3MzbmNrTy1mUG1hQzhPU1R4NVHSAasBQVVfeXFMUEtQT01WWi05WWdfNk5LUGFGUXBXcl95SlhvSVdFSWhjVHRLME90WWFvdXRFOUxTN19DNlI1SHZQYVlUa01BeFY2aFh0TkRabUFvVUMzQXV5bGJWaTRpWWNfbGRCandNRzFsOUhtZTZXbHNqZXZJQlpCVTJaLWcyN21qbGxnb3dYdmpjX3pJcUNzNFJoZENaMXNzM25ja08tZlBtYUM4T1NUeDVR?oc=5",
-        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
         "title": "El déficit comercial con Brasil cayó 91% en septiembre por el fuerte retroceso de las importaciones",
@@ -25734,26 +26237,6 @@
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
-        "title": "Déficit comercial con Brasil cae 91% en septiembre por fuerte caída en importaciones",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcFY0SlVGbG9OVXdPb2Y5UW8zZ2EwV2FIRGNINGNBWGpaSTlvU01fWGVCLTFITjlrTWhXMDR1UTRDVGZ4V1RfNEVQcUJMcEJ6dkdLZzlBb2I4THRiYTg2T3RYOGdjY1hQQ01xcEdkSjhjM09raW12TnZ1Vi1ydEt6NllrZkFmSE1TemdGYUxPUjloaFVYc1psdkZuNDVDNndyRXRwUUlocDBNa2RwbVBWWDFlWDhtLWxhMDlrSWRvUVJjV2FpM3c?oc=5",
-        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
-      },
-      {
-        "title": "Por la caída en la venta de autos, las importaciones desde Brasil se derrumbaron un 25,2% interanual",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLXYzTzRUUTd4X3pqZThPdjJDLU9MWEJ5bHlVOFRtUFpqMERIdmpoVG1Pd1Bvajh0UTNfXzN6eFRtR3kxcmFkZHp2MXh4RWQ0bzd3WHcyYm1jMWNMQVQzMG82cVdVMjVXSjNtRzl1UXZlczVVZURVX1RDeWRBMFRVWU8wNm9mazNuUXdPdlpUUHBfRGtCbDNIOFF4aEtSM19uc0pDTjBlbTVOdVRxMkwyTlpHelRmZWJjQ0N2eTlDa9IBxAFBVV95cUxNcEg4TG9MSkpBLTR5QklvUmo4MW9zNnoxVndmN3RtdWMzcHh3aDlLZ1pPdmhFaDA2bkdpanp4cGs0RDVRX2k5eVZNUExLUjlyMG9mUEpfdWVaWWtOMUM4Mi1hZ2poSFZ4VklGRDlwazl4WDFoMHN5ZUpJSzEwNmh0c3BSWWhQNkVmeUtJdXpXZHZpd1VveUdubDVKMUY4bzJvR2JzcHdKYTVxZEpzcmFqTUZtNDlCY3JxdGtQejluUG1qbnpz?oc=5",
-        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
-      },
-      {
-        "title": "Argentina redujo el déficit con Brasil por la caída de las importaciones",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcUlfa1pUVkxFQi1oTXV2cDVjaVRRT0tqcTdKdTlXcEFKSUtvZEtqU3F3SXU0bW9Ddl9hR0tPZzFsT0ZkSUY0WV9tM2xaRzBwblNGelpPeTVzQkhqTEI0MzhIZFpmbUwyMUQzRkN3Tk9FdUtmUU1yNmhUdFltQVhwU1lNamtIeFRFSF9tT2tlN1NEX3JUSlhTMTVkM3ZMVjDSAasBQVVfeXFMUEtQT01WWi05WWdfNk5LUGFGUXBXcl95SlhvSVdFSWhjVHRLME90WWFvdXRFOUxTN19DNlI1SHZQYVlUa01BeFY2aFh0TkRabUFvVUMzQXV5bGJWaTRpWWNfbGRCandNRzFsOUhtZTZXbHNqZXZJQlpCVTJaLWcyN21qbGxnb3dYdmpjX3pJcUNzNFJoZENaMXNzM25ja08tZlBtYUM4T1NUeDVR?oc=5",
-        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
-      },
-      {
-        "title": "Argentina reduce importaciones desde Brasil y achica el déficit comercial",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMFJMd1dVb2ZORkp1LXhFTFc5Z1BURmVFaVQtOW12ZzBrcGxPakFBaU9nVWFpTUdZbEhHNlJrZkRtdUNEWG45WU5xNDE3NDZ4dVRpTG1rb2gtQVlyT3VPVGxweHVuR3BqdTFDZkVtRXpSRWxhYjFrRjZ0Rl9JREg0ZURadGpMYWg0c20wWkJYQ21vdjdJVXlDQUlRcl9aWHlXUHQ0RmlsQUw0TlFublpvSkhhU2lPUdIBrwFBVV95cUxQdWdiVk15Smh3b2U0VGJzMENkbmUyWWY0UGRjb2pBWUktbXV6VWRPVkN0VWd2RVZlSnhBMkpSRE03dmxpMmxfclduSHB4bG5LcVFfRDRFWHZ1Rlc5Y1lFSGxBNEhzMmp6SGRvMnp0VE56bE9FRVdGTEFqci1QbEQ3QzRvWG1jWHRjUmE0cGpLaDNPWERCd2hFelVFNlJtOFhlSGZpVmZ6OVh3MjdnUEI4?oc=5",
-        "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
-      },
-      {
         "title": "La principal vía fluvial del comercio exterior argentino tendrá un nuevo esquema de control",
         "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNVNNbU5DRWp1UFZCejdLSFNMR25Hc0p5bmEwOUxsX0FMQ3hrazRqU1UzeFlvZnRVUnFxckQ0b04xaUNuSk95Z2libXJVUWF2REh1NGdWZzFlT1BJZGhZUlpTcmRHV21hMUhmamRGM3YtTHRuVUVKQzE5ZEZMSWhDd3ppM0NhMlFUQUxTUVIwQTJsbGRxR3RQODJtbndVbHhtQ1IyN0YxZjdzUEt6N0l6VnJ1clJHS0Z2WVJEVmd1NkJxdGdLdHZwdGdyVFk2TFRLLW5wNjBOYng2b1ZULXc?oc=5",
         "curated": "hidrovia-resolucion-59-2026-consejo-control-via-navegable-troncal"
@@ -25762,26 +26245,47 @@
         "title": "Argentina exporta un 3,2% más de vino hasta septiembre, pero factura un 4,7% menos",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNThBOVdmMHdJQ3FKRW1tbzdPcFQ3bkN4RXZIM0gxWWNSbmRVSi1rVU9hbXplQjNwd0xOMC11RkFjdUljVzlKSFN0Mmh5TjdmRW1NVkx6VVJJZ1FQeGtKWnNXNjBQVUowS1JFN1VfRGpab2VHQkNTY1pjWVlDclFLQV9jdnlfbFd5Nk1uVXN3MHAyWTFZN0J5TEZHSVV6SXZ5c2NTOHFNVGFSeU93VlotOUx3TUlmNGhYV29CUlR30gHDAUFVX3lxTE03ODJFYkhOcXEzV1pScDhZWnlOWG5yM19XSGtSWk9jdlpHQ29lV2RyVC1ZbVJ4VzlQRW1GWDhXak1zbGRJY000V3hWbzN4cW11bnZGRkVndzNXWk9EdGtOVlpOYnFTVGhsWUotNHRHaHFHeU1MY0ZuYnZmSXNJVkNPVzZKN1ZIdlBuS2phdmVRbmJDY1lraXJBNmRESkEyLTFDbll6VFpRU2x3alg3d0hpa3BnX1R3MUphR2tVa21WZ21YUQ?oc=5",
         "curated": "exportaciones-vino-septiembre-2026-inv-24-mosto-34"
+      },
+      {
+        "title": "La OMC eleva del 1,9% al 3,9% su previsión de crecimiento del comercio mundial",
+        "url": "https://aduananews.com/la-omc-eleva-del-19-al-39-su-prevision-de-crecimiento-del-comercio-mundial-para-2026/?utm_source=rss&utm_medium=rss&utm_campaign=la-omc-eleva-del-19-al-39-su-prevision-de-crecimiento-del-comercio-mundial-para-2026",
+        "curated": "omc-eleva-prevision-comercio-mercancias-2026-3-9"
+      },
+      {
+        "title": "El Gobierno dio luz verde a una aerolínea internacional para entrar al negocio de la carga aérea: cuál es y qué implica",
+        "url": "https://www.cronista.com/economia-politica/el-gobierno-dio-luz-verde-a-una-aerolinea-internacional-para-entrar-al-negocio-de-la-carga-aerea-cual-es-y-que-implica/",
+        "curated": "ethiopian-airlines-autorizada-carga-aerea-argentina-disposicion-26-2026"
+      },
+      {
+        "title": "Tensión por la carne argentina: ¿por qué Irlanda quiere suspender las importaciones?",
+        "url": "https://www.rosario3.com/ecos365/agro/tension-por-la-carne-argentina-por-que-irlanda-quiere-suspender-las-importaciones-20261007-0007.html",
+        "curated": "irlanda-ifa-pide-restringir-carne-vacuna-argentina-antimicrobianos"
       }
     ],
     "excluded": 0,
     "grouped": [
       {
-        "main": "aladi-abordo-los-desafios-de-la-seguridad-portuaria-para-fortalecer-las-cadenas",
+        "main": "el-contenido-de-las-negociaciones-para-un-acuerdo-comercial-reciproco-con-estado",
         "merged": [
-          "mesa-de-comercio-exterior-abordo-oportunidades-de-la-region-ante-desafios-actual"
+          "vietnam-estados-unidos-las-negociaciones-sobre-el-acuerdo-comercial-reciproco-es"
         ]
       },
       {
-        "main": "las-navieras-asumen-el-riesgo-de-volver-al-canal-de-suez-para-ser-mas-competitiv",
+        "main": "los-fletes-retroceden-durante-la-golden-week-asiatica",
         "merged": [
-          "las-navieras-asumen-el-riesgo-de-volver-al-canal-de-suez-para-ser-mas-compet-2"
+          "shanghai-cierra-golden-week-con-3-5-dias-de-espera-y-fletes-intraasiaticos-en-ma"
         ]
       },
       {
-        "main": "cayo-una-norma-de-la-ue-y-argentina-casi-cuadriplico-sus-exportaciones-de-biodie",
+        "main": "la-molienda-de-mani-crecio-30-7-y-las-exportaciones-ya-superan-los-us-750-millon",
         "merged": [
-          "exportaciones-de-biodiesel-argentino-a-la-ue-se-cuadruplicaron-tras-caida-de-nor"
+          "mas-molienda-y-exportaciones-el-mani-argentino-supero-los-us-750-millones-en-ven"
+        ]
+      },
+      {
+        "main": "subrei-transparenta-que-es-imposible-que-todos-los-productos-chilenos-retomen-su",
+        "merged": [
+          "subrei-por-negociaciones-con-ee-uu-chile-no-recuperara-arancel-cero-para-todos-s"
         ]
       },
       {
@@ -25789,14 +26293,20 @@
         "merged": [
           "rdeco-que-necesita-una-pyme-argentina-para-exportar-y-como-impacta-la-desreg-2"
         ]
+      },
+      {
+        "main": "la-uia-lleva-a-aduana-un-mapa-del-contrabando-que-medidas-reclama",
+        "merged": [
+          "la-uia-lleva-a-aduana-un-mapa-del-contrabando-que-medidas-reclama-2"
+        ]
       }
     ],
     "googleNews": {
-      "pending": 17,
-      "resolved": 16,
-      "withSummary": 9,
+      "pending": 18,
+      "resolved": 18,
+      "withSummary": 16,
       "withPhoto": 0,
-      "failed": 1,
+      "failed": 0,
       "duplicates": 0
     }
   },
