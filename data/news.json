@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-09T21:42:30Z",
+  "updatedAt": "2026-10-10T01:42:55Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -115,7 +115,7 @@
       "obsDate": "2026-10-09",
       "change": "-0,2% vs. día hábil anterior",
       "trend": "down",
-      "checkedAt": "2026-10-09T21:43:07Z",
+      "checkedAt": "2026-10-10T01:43:18Z",
       "history": [
         [
           "2026-08-31",
@@ -254,7 +254,7 @@
         "date": "2026-10-08",
         "ars": 560000.0
       },
-      "checkedAt": "2026-10-09T21:43:10Z",
+      "checkedAt": "2026-10-10T01:43:21Z",
       "_prev": {
         "date": "2026-10-07",
         "ars": 560000.0
@@ -293,7 +293,7 @@
       "obsDate": "2026-10-06",
       "change": "-0,1% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-09T21:43:10Z",
+      "checkedAt": "2026-10-10T01:43:21Z",
       "history": [
         [
           "2026-08-25",
@@ -432,7 +432,7 @@
         "date": "2026-10-08",
         "ars": 293500.0
       },
-      "checkedAt": "2026-10-09T21:43:10Z",
+      "checkedAt": "2026-10-10T01:43:21Z",
       "_prev": {
         "date": "2026-10-07",
         "ars": 294800.0
@@ -475,7 +475,7 @@
         "date": "2026-10-08",
         "ars": 342700.0
       },
-      "checkedAt": "2026-10-09T21:43:10Z",
+      "checkedAt": "2026-10-10T01:43:21Z",
       "_prev": {
         "date": "2026-10-07",
         "ars": 342300.0
@@ -505,6 +505,307 @@
     }
   ],
   "items": [
+    {
+      "id": "dinamarca-one-inicia-operaciones-con-base-en-puerto-de-kalundborg",
+      "datetime": "2026-10-10T00:30:36Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T01:42:55Z",
+      "title": "Dinamarca: ONE inicia operaciones con base en Puerto de Kalundborg",
+      "summary": "Ocean Network Express comenzó oficialmente sus operaciones con base en la Terminal de Contenedores de Kalundborg…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/dinamarca-one-inicia-operaciones-con-base-en-puerto-de-kalundborg/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "oocl-aumenta-45-1-sus-ingresos-por-lineas-regulares-en-tercer-trimestre",
+      "datetime": "2026-10-09T23:30:58Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T01:42:55Z",
+      "title": "OOCL aumenta 45,1% sus ingresos por líneas regulares en tercer trimestre",
+      "summary": "Orient Overseas Container Line (OOCL) informó que sus ingresos por líneas regulares (liner revenue) aumentaron 45,1%…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "container",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/oocl-aumenta-451-sus-ingresos-por-lineas-regulares-en-tercer-trimestre/",
+          "primary": true,
+          "author": "Periodista 4"
+        }
+      ]
+    },
+    {
+      "id": "el-gobierno-organizara-la-semana-de-la-carne-argentina-en-tel-aviv-para-impulsar",
+      "datetime": "2026-10-09T23:22:00Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T01:42:55Z",
+      "title": "El Gobierno organizará la Semana de la Carne Argentina en Tel Aviv para impulsar las exportaciones a Israel",
+      "summary": "La secretaria general de la Presidencia, Karina Milei, realizó el anunció junto a la embajadora israelí, Ahuva Spieler Reshef. Los acompañó el presidente de PromArgentina, Diego Sucalesca. Representantes de frigoríficos locales viajarán a Tel Aviv para la misión comercial.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina",
+        "Israel"
+      ],
+      "tags": [
+        "Carne"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Ambito",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.ambito.com/economia/el-gobierno-organizara-la-semana-la-carne-argentina-tel-aviv-impulsar-las-exportaciones-israel-n6332246",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "TN",
+          "type": "También publicó esta noticia",
+          "url": "https://tn.com.ar/politica/2026/10/09/el-gobierno-busca-ampliar-las-exportaciones-de-carne-a-israel-y-avanzar-en-la-cooperacion-militar/",
+          "alsoIn": true,
+          "title": "El Gobierno busca ampliar las exportaciones de carne a Israel y avanzar en la cooperación militar"
+        },
+        {
+          "name": "Infobae",
+          "type": "También publicó esta noticia",
+          "url": "https://www.infobae.com/america/agencias/2026/10/10/gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exportaciones/",
+          "alsoIn": true,
+          "title": "Gobierno de Milei anuncia 'Semana de Carne Argentina' en Israel para sumar exportaciones"
+        }
+      ],
+      "gnTried": "2026-10-10T01:42:55Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeGJnV183eFdvWDdPODNQeE43LUFad1ZxVmZFa2g2N3kwTWF4QWtJLXRUa0ZUWHZGNjE1QWREcm5JSlRKRGZMSWI3YTZmSkJmR3hVa1BqWFhaOXdLSnc3bmtoc0RWVzY2cmN5NTkyQ21La2ozRjN5NGVzTm5rZzFmblhBX2hHc3l6VjNwbmVHV3dlRnEzMkxfVVlkMUYzX05OM243ZU9lTlE2VmdSQXo2cFNJR2NGdVdBNy03Rjd6cm5mWkVHdW5OVl9JN3BZdVZo?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSXR1WTBmUThkWmJwR3g0ZmtOc0M4cEZkYXhjSWx6YWxKUlFoeFI2UFZzNTNVSHg4R1ZQR0JRS3hVeXlxV2V1V3VmTFRRejVKTVN1MThHUjJfUnpsOTR5Zm5tQ2VmcEFGZFVoNzI1WjdIbjMwa1RfVWo3NFJNMnZ0ZkFySGhHRWpBQ2dCMW9heUd0TXBQMEEwanIyOTI1bTBkN1VsZTRNTU9jdWVabTVKeHBDMHF4ZFdaZFAzM3JUd29ZMFZhdmtFLTFPYzZnQllIenfSAeYBQVVfeXFMUEc4LVZVOW5CYmdGbU4zZEdoZmxXOUVLMkI4LTZQazdHdjFNS3l3emZtVi1aSUJhV1dPbmxfa19BSWctY2p0Vk10NFZnanRjbURsc2pSOTF1NURBX1NFYW1sTmR5MFcxSW9LSmhRN0FOY3drTlhqWUt5YU5iMWI0NllHZDFENTlEcmdkY1JQaXdrZUZjTHY0cnRvN3ZKaHU2aUUtcHBGRlBPWjBlTkJhY0V0MHU3YndDbGkyblJpbWVDRnZ4Wm1LMW5VYnltd2dodGwyeUhIUUZXOTd0cm5CdVhSOWtxVlE",
+        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPalZta1pZTklsLUd2ZzRaNHAyZWdQdm5MeDZZbm9xOTU0RDZEUDRnY3I2cFJ3MTJiVUZndVFKWGFWdmZsYU04Y0RUYmdKOHN4TTlIVFpNcGRuNW5oNkFneTRhRmNIRFJMYmQxY016alJPTXNMREYyV0JXbktncDdYR1MxdVFTUnhBOWFkdzRxWFdpaGNBVm9JeFhWQUE0V2ltRTdaRDNXUWxVMGNHdTlicjlRTVltcThONXdreWdMTm51THYyWlQ4Z0xtZkJRV1ZfLUNxWVN30gHwAUFVX3lxTE1GREVUM0FPcHpScl95Z3lqVXJQNzhraWNRWWV0c28zMWxTZGtVZWFlbXFzaHc1eENRSGpHZ1FRV0ZiU09OcmVqakUwVDJyRXdLakVtM2FXRkhWOEpLZmNqUFRYTXMwWERURTBLcXNlTXJ5MXVOMmtFdS1zRF96Z25oQzNvZEZOckZVREpPWEFWbkZDbmNNaXg2QXFDMjZxSXpsOFEtUkxvQ1luMjlnMFA0ZHpXYk52aVJTU21vNTJfdmNXeHR0eWgxTXBTMFhHYVpNZUs2YU5aQmNqeC1xam5RS0V1bzRHM3hoYWd4a2N4MA",
+        "https://tn.com.ar/politica/2026/10/09/el-gobierno-busca-ampliar-las-exportaciones-de-carne-a-israel-y-avanzar-en-la-cooperacion-militar",
+        "https://www.infobae.com/america/agencias/2026/10/10/gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exportaciones"
+      ],
+      "mergedIds": [
+        "el-gobierno-busca-ampliar-las-exportaciones-de-carne-a-israel-y-avanzar-en-la-co",
+        "gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exporta"
+      ]
+    },
+    {
+      "id": "ziliotto-recibio-al-embajador-de-portugal-para-promover-inversiones-y-sumar-expo",
+      "datetime": "2026-10-09T22:47:49Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T01:42:55Z",
+      "title": "Ziliotto recibió al embajador de Portugal para promover inversiones y sumar exportaciones",
+      "summary": "El gobernador Sergio Ziliotto recibió este viernes, en Casa de Gobierno, al embajador de Portugal en la República Argentina, Gonçalo Teles ...",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Europa"
+      ],
+      "countries": [
+        "Portugal"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "La Arena",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.laarena.com.ar/la-pampa/ziliotto-recibio-al-embajador-de-portugal-para-promover-inversiones-y-sumar-exportaciones-202610919420",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T01:42:55Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPRDJLWlpNVmJkcXU3NURpWTQ3bnFZb0xTamg5X0lNZzQyT19iUnRhNUtLUzh1ZHVaemhQM01BTDgtNzBNS2puX3lTOU9QdUpORDJnbGdQd0tlZXdGLXdXYXUwTWY1MTQxRGt5blpzQ3dYbmd3aHVRLUdPaVBOc2FlZlY3Y1F1Zm1SWWh3MWxhclNXLTZKTDIyVXlvQ25vS0FuVnpZajBzRkxhUGdnVXh4MktkN01ELVk4MlE2NEo1WFg4Ny1OanlVZTg1QmJLVDNfRF9iag?oc=5"
+    },
+    {
+      "id": "la-fed-cuestiona-el-impacto-de-los-aranceles-pues-estos-ya-llegaron-a-afectar-a",
+      "datetime": "2026-10-09T22:40:00Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T01:42:55Z",
+      "title": "La FED cuestiona el impacto de los aranceles, pues estos ya llegaron a afectar a los consumidores: ¿Habrá más empleos?",
+      "summary": "Un nuevo informe del Banco de la Reserva Federal de Nueva York revela que los precios de artículos de uso diario habrían disminuido de no ser por los aranceles del presidente Donald Trump. La economista María Lorca analiza este impacto en la inflación, el costo de vida en Estados Unidos y la situación de las finanzas…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aranceles"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Aranceles"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Univision",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.univision.com/noticias/linea-de-fuego/la-fed-cuestiona-el-impacto-de-los-aranceles-pues-estos-ya-llegaron-a-afectar-a-los-consumidores-habra-mas-empleos-video",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T01:42:55Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQMmMxc1B6dEpWV1lYbDNmMVQtekptbHpoZy10NlNadHZxakdfd0phdXVYc2lKU0wyM0dzMUhQRDJWTENaVVRFWFRmWWRxNVRGLThKT0l0dlVmcU5neEpqUnFwX19GZHFwSVgzeHFpYXJhOEpZM21XTWVyN24xcWZial9SUy1wYUVqT0V1a2hHTXk5SURscXA3TkJKNU0yLU5LSzJhZGJGT0tmQU5wUDBOYjAxUllfSW92a3N5THRsa1lGVmtFSzhIRU5EQ2hQQ0k3UF9rSlAtcm1mQmFXWm1DcjAwRVdQRXF5ZjBvSkI4b0RsM2E1cnFJNDU4Rm9zTXM?oc=5"
+    },
+    {
+      "id": "estados-unidos-sanciona-a-17-buques-vinculados-a-flota-en-la-sombra-de-iran",
+      "datetime": "2026-10-09T22:30:49Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T01:42:55Z",
+      "title": "Estados Unidos sanciona a 17 buques vinculados a “flota en la sombra” de Irán",
+      "summary": "El Departamento del Tesoro de Estados Unidos impuso sanciones a 17 buques vinculados a la…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo",
+        "Geopolítica y comercio",
+        "Estados Unidos"
+      ],
+      "countries": [
+        "Estados Unidos",
+        "Irán"
+      ],
+      "tags": [
+        "Estados Unidos"
+      ],
+      "visual": "ship",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/estados-unidos-sanciona-a-17-buques-vinculados-a-flota-en-la-sombra-de-iran/",
+          "primary": true,
+          "author": "Luis Alonso"
+        },
+        {
+          "name": "Flipr.news",
+          "type": "También publicó esta noticia",
+          "url": "https://flipr.com.ar/nacionales/ultimo-momento/infobae/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran/",
+          "alsoIn": true,
+          "title": "Estados Unidos sancionó a 17 buques y a las navieras que transportan petróleo y petroquímicos de Irán"
+        },
+        {
+          "name": "Infobae",
+          "type": "También publicó esta noticia",
+          "url": "https://www.infobae.com/america/mundo/2026/10/09/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran/",
+          "alsoIn": true,
+          "title": "Estados Unidos sancionó a 17 buques y a las navieras que transportan petróleo y petroquímicos de Irán"
+        }
+      ],
+      "aliasUrls": [
+        "https://flipr.com.ar/nacionales/ultimo-momento/infobae/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran",
+        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQXFJSTl0bjJWVW54QkhiYzQ5aWs0Rmx2azFpVlFOc1Y0eWFhSDZwVFROSEgxbGJTXzY5WXFndXMxTEJhTk5RVUVfbVJNU2wwUG9TNFphSnNNS1RNSU9lSlZhMkpDNDMwTHZjcjZiZ213STFZcEg5dVNvdFhKX2VFbno2SzlydzI5ZTZSbHhOTWxjLVlzY2ZEMTVXQjJtM1N0QUV5OFpKUjYzcTBtZzlQaFViUVQtZmpoN1BsNDVGMjJtejFjVndLS2hMbzloUU45R0lzV3B1SEFUZWRuWmZLd1VtNUJPd9IBgAJBVV95cUxQS3o2eURIM1FzWUZCVEFfekNORDhPZ2ZMaTR3dThXc00yYzZzRC03QXk4bncxVy1Nc09palcycHREbWJOOXAxY29PMVQzV21TdGhuSWoxWmlNbUhVeHpyUDctSTVqWWJWbVZEYUQxSTBpT1YwTFFSNk4tQjVkNHNJa01McDhVQ3A3emxVUmV1M29udHVmbUM0S1hlZFYxT0xtWWxab080OHBpamZjTzg5aGpsekxzRzJBSXIxT2c1bzZtbV80RS1raThQZjAtTEc0VnYwU3lsSktkYnU0SXBJTllvWm50LVU5VkJFV0d5cWo3aXVvaGV4QWtWTFVCa2lv",
+        "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPM2hDODdZb2JuWVg0T29QQW1jbmloQVJfZ3Z2ZWhXYnlxQjdqT3ROTzFXZUFqb29yd24yRWwwZk1sSF82N05sbFluZ1hVNXdERUpLNVFITVM4ekwyVjhJeHNBdXBvT1hwQmVvT1FxYmJBVlJ1cThHSGMzNnhDRXBIb2ZWYlo4SFpLZVpwdFRSejR5U1VDM0Iyd0QzTm5XU3I0VzY5elpMdERvZXFoMlNJYWMzdUZoRUNVejNmQjcyckF5SU5tckdHMEk4Mnh1RjJEbGliTEJoVkxaMnkzSDA3aHIzMjZnSURUdU1iMWpn",
+        "https://www.infobae.com/america/mundo/2026/10/09/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran"
+      ],
+      "mergedIds": [
+        "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petrole-2",
+        "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y"
+      ]
+    },
+    {
+      "id": "ue-y-china-alivian-tension-con-acuerdo-comercial-provisional",
+      "datetime": "2026-10-09T22:00:33Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T01:42:55Z",
+      "title": "UE y China alivian tensión con acuerdo comercial provisional",
+      "summary": "El pacto entre ambas potencias contempla la reducción de aranceles para determinados productos europeos.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "China",
+        "Asia",
+        "Europa"
+      ],
+      "countries": [
+        "China",
+        "Unión Europea"
+      ],
+      "tags": [
+        "China"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "sipse.com",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://sipse.com/mundo/ue-y-china-alivian-tension-con-acuerdo-comercial-provisional-516094.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T01:42:55Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMlNkWmVxcF9ZQVU0SVhrYmhUSmpqaDJ4QTlrV1FGQy16blhhUjh4ODJvTHprUjdnNVNPLUp4S0NCVDE3cUJKSjFTd21vSnhxcWV1R0l4ZUltM1lxUng2OE41cWR1VDQtSWp4aVNCZmxkRjdWVm5wWFZLNnhiMDlkM0xUVzF3Z0JWa0oxcXFicEdWYngxYjQ0NGltLXHSAaIBQVVfeXFMT0ljdGZHVDRvZFEySGYtRmpVTmZGYnNCM1VPYjZndTlJeTlDbGZQRnlFMFdJeUpfQ3MzZ0I4RXNuNjVJQ1pGVWNxWFN4LXNnTWJiVTFrRzFsVEdfOV8xcE1oc2d6VXlOTXNjQVdpcThKRWhOVGxiWE1aeFBPLWZxSU1zelBRYWM2Z2p0cGJfYzNUMW9USHZieGJlcVltLWVQUk93?oc=5"
+    },
     {
       "id": "trump-afirma-que-rusia-suministrara-300-000-toneladas-de-diesel-a-mercados-inter",
       "datetime": "2026-10-09T21:30:43Z",
@@ -551,6 +852,7 @@
       "body": [],
       "keyData": [],
       "topics": [
+        "Aranceles",
         "Tratados y acuerdos",
         "China",
         "Asia",
@@ -561,9 +863,10 @@
         "Unión Europea"
       ],
       "tags": [
+        "Aranceles",
         "China"
       ],
-      "visual": "treaty",
+      "visual": "customs",
       "impact": 1,
       "affectsArgentina": false,
       "kind": "noticia",
@@ -623,6 +926,7 @@
       "body": [],
       "keyData": [],
       "topics": [
+        "Argentina",
         "Exportaciones"
       ],
       "countries": [
@@ -746,15 +1050,18 @@
       "body": [],
       "keyData": [],
       "topics": [
-        "Exportaciones"
+        "Exportaciones",
+        "Asia"
       ],
       "countries": [
-        "Argentina"
+        "India"
       ],
-      "tags": [],
-      "visual": "customs",
+      "tags": [
+        "Soja"
+      ],
+      "visual": "agro",
       "impact": 1,
-      "affectsArgentina": true,
+      "affectsArgentina": false,
       "kind": "noticia",
       "label": "Automática",
       "feed": "Google Noticias · Exportaciones Argentina",
@@ -768,7 +1075,10 @@
         }
       ],
       "gnTried": "2026-10-09T21:42:30Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeXM3SWZJeHJselB4LTJXLWw4WkNScEk0cDRrc0dTWHBlYnJaREpMTjRWQnRjMDlpc2Y3OUloU1lITm1mNXd0czdUQlJQRVJ0aWlUY3VuMnBEX0V1LTE5eGxBaER3SWQ1XzVGeVppYWRfRzEtalFXb0VRUHRsQTQ5UVVwTmpCdzgxaElYcnA5aTZoSUY5SVVEUTJudk5xdjMtVV9KTmgzN1YtZ3FZQnI4eHFtUlZZbS1DaWkxZS05cklybWNSMmVsbklpeWV3cUtHZ0tSLVMydFdTaXI0RXI0?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeXM3SWZJeHJselB4LTJXLWw4WkNScEk0cDRrc0dTWHBlYnJaREpMTjRWQnRjMDlpc2Y3OUloU1lITm1mNXd0czdUQlJQRVJ0aWlUY3VuMnBEX0V1LTE5eGxBaER3SWQ1XzVGeVppYWRfRzEtalFXb0VRUHRsQTQ5UVVwTmpCdzgxaElYcnA5aTZoSUY5SVVEUTJudk5xdjMtVV9KTmgzN1YtZ3FZQnI4eHFtUlZZbS1DaWkxZS05cklybWNSMmVsbklpeWV3cUtHZ0tSLVMydFdTaXI0RXI0?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNajRsdHp5NmpaYllVQk5RVEc5WlhnVW4xcjJjN0FwVUVDUkpGd0JTT3VpdHRpZFBxbW5kSkV4bUl6Vmt3cnFHbV9MOFQ5emV1eGFvTE8zbHpVQVBBOXdDRFJzZEIzRXlHZmx5bnh4bHlQenBKOE40MlJhR0xRTTBhYmNZMXNRXzZDakczemlmM2wtelk2UTFjY2E0V19MdlNyWDh1dXFIWHRnQ3N1cFlPNFphNjhIZUl4REx4N3VNMGp3ZE1YUWtma2lLMEZFNzdFeDcxWERUVFJtWnFVYkF2MA"
+      ]
     },
     {
       "id": "record-exportador-y-brecha-sectorial-el-mapa-macroeconomico-que-proyecta-bbva-re",
@@ -786,8 +1096,11 @@
       "countries": [
         "Argentina"
       ],
-      "tags": [],
-      "visual": "customs",
+      "tags": [
+        "Minería",
+        "Agro"
+      ],
+      "visual": "mining",
       "impact": 1,
       "affectsArgentina": true,
       "kind": "noticia",
@@ -841,60 +1154,46 @@
       ]
     },
     {
-      "id": "paraguay-podria-atraer-us-420-millones-en-industrias-por-el-acuerdo-ue-mercosur",
-      "datetime": "2026-10-09T19:49:46Z",
+      "id": "china-y-la-ue-pactan-moderar-las-exportaciones-de-hibridos-y-rebajar-aranceles-a",
+      "datetime": "2026-10-09T19:50:12Z",
       "date": "2026-10-09",
-      "firstSeen": "2026-10-09T21:42:30Z",
-      "title": "Paraguay podría atraer US$420 millones en industrias por el acuerdo UE-Mercosur",
-      "summary": "Un estudio industrial proyecta inversiones, nuevas exportaciones y casi 15.000 empleos si las empresas trasladan parte de su produccin a Paraguay.",
+      "firstSeen": "2026-10-10T01:42:55Z",
+      "title": "China y la UE pactan moderar las exportaciones de híbridos y rebajar aranceles al aceite de oliva",
+      "summary": "China y la Unión Europea (UE) han alcanzado un entendimiento para moderar las exportaciones chinas de vehículos híbridos e híbridos enchufables al mercado",
       "body": [],
       "keyData": [],
       "topics": [
-        "Tratados y acuerdos",
-        "Latinoamérica",
-        "Mercosur",
+        "Exportaciones",
+        "Aranceles",
+        "China",
+        "Asia",
         "Europa"
       ],
       "countries": [
-        "Paraguay",
+        "China",
         "Unión Europea"
       ],
       "tags": [
-        "Mercosur",
-        "UE-Mercosur"
+        "Aranceles",
+        "China"
       ],
-      "visual": "treaty",
+      "visual": "customs",
       "impact": 1,
-      "affectsArgentina": true,
+      "affectsArgentina": false,
       "kind": "noticia",
       "label": "Automática",
-      "feed": "Google Noticias · Mercosur",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "AgroLatam",
+          "name": "El Independiente",
           "type": "Medio · vía Google Noticias",
-          "url": "https://www.agrolatam.com/actualidad-latam/paraguay-podria-atraer-us420-millones-en-industrias-por-el-acuerdo-ue-mercosur/",
+          "url": "https://www.elindependiente.com/economia/2026/10/09/china-y-la-ue-pactan-moderar-las-exportaciones-de-hibridos-y-rebajar-aranceles-al-aceite-de-oliva/",
           "primary": true,
           "author": ""
-        },
-        {
-          "name": "Paralelo 28",
-          "type": "También publicó esta noticia",
-          "url": "https://www.paralelo28.com.ar/2026/10/07/pullaro-busca-abrir-mas-mercados-y-atraer-inversiones-en-el-marco-del-acuerdo-mercosur-ue/",
-          "alsoIn": true,
-          "title": "Pullaro busca abrir más mercados y atraer inversiones en el marco del acuerdo Mercosur-UE"
         }
       ],
-      "gnTried": "2026-10-09T21:42:30Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMEZFWDRWcHUwWmxjUV9YVDRNd3NoZ3JLRU90cXBOYndFZzFMZXdXMHFBTE0wRE94OUFJNjB0dzZXRy1fS0l6Y2dhSXJtb3hXVnprTGFLdi02WTdjTUJqUHZfUUs2bUhFRDY3WllPRjNUSTlxc0V5RFFqaUZNY25TRlI5eUNBTHdUUWlzMHltVEhnd2haRGFqQ1pDa1hRZDF5V0ZRVUxpb1JqanRVVlRwRDlBU20yVzhENlh3bkRidw?oc=5",
-      "aliasUrls": [
-        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWU5hNHZwTUk2LWN1NGZPMERGY3pOdjRlWG9qeDF3UFRzak9QM2tGY2p0dXZ1WnF1bW5jNnhrUkthZHVaSnJWLXVwSFFPWXFfU09EbU1lTVM2SWxWRkJUbGoxYlY2U3luV0ozWDkwd3lDVGg0S1YtekgxRzFGcUVpVnlMT0Myekk1TC1oYmlaOXhhYmRlTzdlTDdxekNlRUtlYnFGY1ljZnpkV05laHRaTUZVdWZRcEVCeEdPY1M4NEhIeEpNS0tOZDVLbTYwVG84ZEdJ0gHTAUFVX3lxTE1ZTmE0dnBNSTYtY3U0Zk8wREZjek52NGVYb2p4MXdQVHNqT1Aza0ZjanR1dnVacXVtbmM2eGtSS2FkdVpKclYtdXBIUU9ZcV9TT0RtTWVNUzZJbFZGQlRsajFiVjZTeW5XSjNYOTB3eUNUaDRLVi16SDFHMUZxRWlWeUxPQzJ6STVMLWhiaVo5eGFiZGVPN2VMN3F6Q2VFS2VicUZjWWNmemRXTmVodFpNRlV1ZlFwRUJ4R09jUzg0SEh4Sk1LS05kNUttNjBUbzhkR0k",
-        "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdmpwc2hMTGhHSy0zel9OamtOZU43bHBxa25WWmhLVTBVWE8yMVBuQWppdTZJVmVya01zLVp0LWd2YlNvaGxzSExhUEZBSkFrR0FtU0xBd0NlMEVWZnMwYU1zSTctNU0wS1FXd3VXSjNEMlFaUnBFcE5sZzZBVnBZWi10ZU5FOUtBN0MxTF80V2R2QXhFQ012Y1phTUp1ODFnb0dUbGk5UlJPcEtlbTBldTJnczljZi1xQWstdkpUeEZTYV9BV1NtNmZTSdIBywFBVV95cUxQdmpwc2hMTGhHSy0zel9OamtOZU43bHBxa25WWmhLVTBVWE8yMVBuQWppdTZJVmVya01zLVp0LWd2YlNvaGxzSExhUEZBSkFrR0FtU0xBd0NlMEVWZnMwYU1zSTctNU0wS1FXd3VXSjNEMlFaUnBFcE5sZzZBVnBZWi10ZU5FOUtBN0MxTF80V2R2QXhFQ012Y1phTUp1ODFnb0dUbGk5UlJPcEtlbTBldTJnczljZi1xQWstdkpUeEZTYV9BV1NtNmZTSQ",
-        "https://www.paralelo28.com.ar/2026/10/07/pullaro-busca-abrir-mas-mercados-y-atraer-inversiones-en-el-marco-del-acuerdo-mercosur-ue"
-      ],
-      "mergedIds": [
-        "pullaro-busca-abrir-mas-mercados-y-atraer-inversiones-en-el-marco-del-acuerdo-me"
-      ]
+      "gnTried": "2026-10-10T01:42:55Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQcW92Q3lEc3dXbEtVdFkxM2tnbnlTXzNtLXQyd014OVgyMzE2aF9PUjRzZUFsQTVCcVNBNWNWYmQwYVlWSDk3d3I4RWxSVUdXVHA0TFJIQ2tHLW02d2NDcG5JZlZIRVhuS3J5clBPaGRfbzA2ZklIWnNzLVM0cXZUMXF6d0NsY254VVJVOXNYbjhmcDV2SGJ2eVl5RkVBdkxzZ25Cd0wtVTNMT01NbTZUcWZJc0VCLVcxVW5aYVpUSHR1MmNmOExVYnhpdHJ2QnF1a25tbWVGdFhWLVhZcVQ1REVacXnSAeoBQVVfeXFMTndfcl9fTHpVNkh2RV9KaTVRckRrbXhiakdMREtnS3llUUItLWVtZnQzR0pSX3ZvQzg5RFV5Skd5bzJWSG5oQzB4RnJuU0FMS2RndDdTa2ZEa216UEs3NV9OTmpZNlNqNkZvdDJyTG9jUW9MMVJGSjZnYkI0T2NCdFFRQmxzX2FoRHBUVG1yaFVmQldvOGwzY0dyQXpULThXc0FHTHZ6aDRGSld4amN5QVJ2NGNtMlZfN1JQZVY1M0ZhV1JBaDRGTU50ekZHUF9vcGZaYWI2T0d5NjNKdFhUVVE5NUxtQmJ1MHBR?oc=5"
     },
     {
       "id": "tdlc-revisara-condiciones-de-competencia-para-operacion-conjunta-de-frentes-de-a",
@@ -942,6 +1241,7 @@
       "keyData": [],
       "topics": [
         "Argentina",
+        "Tratados y acuerdos",
         "Mercosur",
         "Europa"
       ],
@@ -981,17 +1281,18 @@
       "body": [],
       "keyData": [],
       "topics": [
+        "Argentina",
         "Logística"
       ],
       "countries": [
-        "Global"
+        "Argentina"
       ],
       "tags": [
         "Fletes"
       ],
       "visual": "ship",
       "impact": 1,
-      "affectsArgentina": false,
+      "affectsArgentina": true,
       "kind": "noticia",
       "label": "Automática",
       "feed": "Google Noticias · Logística y fletes",
@@ -1093,12 +1394,15 @@
       "keyData": [],
       "topics": [
         "Argentina",
-        "Aduanas"
+        "Aduanas",
+        "Regulaciones"
       ],
       "countries": [
         "Argentina"
       ],
-      "tags": [],
+      "tags": [
+        "ARCA"
+      ],
       "visual": "customs",
       "impact": 2,
       "affectsArgentina": true,
@@ -1112,10 +1416,24 @@
           "url": "http://www.cda.org.ar/detalle_noticia.php?id=42817",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "Centro Despachantes de Aduana (CDA)",
+          "type": "También publicó esta noticia",
+          "url": "http://www.cda.org.ar/detalle_noticia.php?id=42818",
+          "alsoIn": true,
+          "title": "Centro Despachantes de Aduana de la Republica Argentina - Invitación - Reunión de Comisión Directiva"
         }
       ],
       "gnTried": "2026-10-09T21:42:30Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBXa2FKdmpMZmlxVmIyS3NZLUxFZEtEMlNtYjU4c202WHBTOF9CREdYdGM2cG14UmtWOW5YUk42eW1SZ2F5dTJDa3FQaG1GRkxpQno0UngwZnZfN2xIa0FB?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBXa2FKdmpMZmlxVmIyS3NZLUxFZEtEMlNtYjU4c202WHBTOF9CREdYdGM2cG14UmtWOW5YUk42eW1SZ2F5dTJDa3FQaG1GRkxpQno0UngwZnZfN2xIa0FB?oc=5",
+      "aliasUrls": [
+        "http://www.cda.org.ar/detalle_noticia.php?id=42818",
+        "https://news.google.com/rss/articles/CBMiX0FVX3lxTE81R3JYRFZybmpLMFdaNjhuNmlRQnd4NjlFdlY0RXctaE5qdEhMYmY3bV9tWmtFbW0xYmNmWmZKRnJnbjVmR3g4eFptV1diTW5zU1NoSF9OWnJjZFYtSGNV"
+      ],
+      "mergedIds": [
+        "centro-despachantes-de-aduana-de-la-republica-argentina-invitacion-reunion-de-co"
+      ]
     },
     {
       "id": "demanda-global-del-sector-portacontenedores-crece-un-3-8-y-el-trafico-transpacif",
@@ -1373,7 +1691,9 @@
       "countries": [
         "Argentina"
       ],
-      "tags": [],
+      "tags": [
+        "Autos"
+      ],
       "visual": "customs",
       "impact": 1,
       "affectsArgentina": true,
@@ -1418,9 +1738,11 @@
       "topics": [
         "Logística",
         "Transporte marítimo",
-        "Puertos"
+        "Puertos",
+        "Europa"
       ],
       "countries": [
+        "España",
         "Marruecos"
       ],
       "tags": [],
@@ -1596,17 +1918,38 @@
           "url": "https://5dias.com.py/article/acuerdo-ue-mercosur-paraguay-podra-captar-us-420-millones-en-inversin-industrial",
           "alsoIn": true,
           "title": "Acuerdo UE-Mercosur: Paraguay podría captar US$ 420 millones en inversión industrial"
+        },
+        {
+          "name": "AgroLatam",
+          "type": "También publicó esta noticia",
+          "url": "https://www.agrolatam.com/actualidad-latam/paraguay-podria-atraer-us420-millones-en-industrias-por-el-acuerdo-ue-mercosur/",
+          "alsoIn": true,
+          "title": "Paraguay podría atraer US$420 millones en industrias por el acuerdo UE-Mercosur"
+        },
+        {
+          "name": "Paralelo 28",
+          "type": "También publicó esta noticia",
+          "url": "https://www.paralelo28.com.ar/2026/10/07/pullaro-busca-abrir-mas-mercados-y-atraer-inversiones-en-el-marco-del-acuerdo-mercosur-ue/",
+          "alsoIn": true,
+          "title": "Paraguay podría atraer US$420 millones en industrias por el acuerdo UE-Mercosur"
         }
       ],
       "gnTried": "2026-10-09T17:42:06Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOS1RyTzJHNllGNFFnWUpTMzBMZnFtNDgydVRZN2JjNkNDVkJ3clE4a1JuVkFyanNkdWtXbWxmUjBkTjljcllRT0g4RnhvaU1BUVV0Ul9TYmwwS001WF9LSGdIYjZxRXZvRi1NU1FGeDNZZ2VSd3BzS3ZZclAzd3BYa1AxWFVranQ0YmZwTF9PY3RUUGZpX0M2UTdWZnc2NUJ6elZDZGVJYW1qZHFLY1Y0a1dxLUQ5a3BGWE1IcGpCR1BxQkphMXpOdjFFM0lNeWZaSkhz?oc=5",
       "aliasUrls": [
         "https://5dias.com.py/article/acuerdo-ue-mercosur-paraguay-podra-captar-us-420-millones-en-inversin-industrial",
+        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWU5hNHZwTUk2LWN1NGZPMERGY3pOdjRlWG9qeDF3UFRzak9QM2tGY2p0dXZ1WnF1bW5jNnhrUkthZHVaSnJWLXVwSFFPWXFfU09EbU1lTVM2SWxWRkJUbGoxYlY2U3luV0ozWDkwd3lDVGg0S1YtekgxRzFGcUVpVnlMT0Myekk1TC1oYmlaOXhhYmRlTzdlTDdxekNlRUtlYnFGY1ljZnpkV05laHRaTUZVdWZRcEVCeEdPY1M4NEhIeEpNS0tOZDVLbTYwVG84ZEdJ0gHTAUFVX3lxTE1ZTmE0dnBNSTYtY3U0Zk8wREZjek52NGVYb2p4MXdQVHNqT1Aza0ZjanR1dnVacXVtbmM2eGtSS2FkdVpKclYtdXBIUU9ZcV9TT0RtTWVNUzZJbFZGQlRsajFiVjZTeW5XSjNYOTB3eUNUaDRLVi16SDFHMUZxRWlWeUxPQzJ6STVMLWhiaVo5eGFiZGVPN2VMN3F6Q2VFS2VicUZjWWNmemRXTmVodFpNRlV1ZlFwRUJ4R09jUzg0SEh4Sk1LS05kNUttNjBUbzhkR0k",
         "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQSF9YMTRzU2hqTG9RdFJyVnVUQnB6VnN6Y0VjZ1RmZ0w0dk1zOEtuLUhobDUtNENGeUt4VnpDYWhSaDdhUUxMMm9QTi1TWjNoS1NDTTRfSjU2UWRvU0NCdVdkMExWc2xUWHdMR0kzd1JvNm1sbGRjbFJIRy1WMExSeXRfWEhhVmZNN3hSbmlKUmo4ODd0ZW52NjZQVDJSNDNxZy02Z3ZtZ0ctc1VsdmZvZC1STzBmdWtkV1dwZjRKNnQxdl8yQ092eVBnX05GTG1Ca0lVLU90SmpGUDN1UDU0YUg3VnlsQjA",
-        "https://news.google.com/rss/articles/CBMirgFBVV95cUxNS1Z3QWhlZjZSX3BnOHpBWjZVOWZXRk0wbXlBSkc5UTRPaHdkUml3TTFqSlNCR3loaWViR0dEczFKTHBvb09SUlJxb0w1bDBDaF9UbmNmeXBuRlJXQ2ctb1dBc1U5RGtMYWZvNGZlV281RU03Q2w1N1QyZHJZTEhUU2VRc0hZVm5lbU42LTJNXzl3YWtFSE9YZmtZellrSVNfVHQ2NWZObGtZbEFfbHc"
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxNS1Z3QWhlZjZSX3BnOHpBWjZVOWZXRk0wbXlBSkc5UTRPaHdkUml3TTFqSlNCR3loaWViR0dEczFKTHBvb09SUlJxb0w1bDBDaF9UbmNmeXBuRlJXQ2ctb1dBc1U5RGtMYWZvNGZlV281RU03Q2w1N1QyZHJZTEhUU2VRc0hZVm5lbU42LTJNXzl3YWtFSE9YZmtZellrSVNfVHQ2NWZObGtZbEFfbHc",
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMEZFWDRWcHUwWmxjUV9YVDRNd3NoZ3JLRU90cXBOYndFZzFMZXdXMHFBTE0wRE94OUFJNjB0dzZXRy1fS0l6Y2dhSXJtb3hXVnprTGFLdi02WTdjTUJqUHZfUUs2bUhFRDY3WllPRjNUSTlxc0V5RFFqaUZNY25TRlI5eUNBTHdUUWlzMHltVEhnd2haRGFqQ1pDa1hRZDF5V0ZRVUxpb1JqanRVVlRwRDlBU20yVzhENlh3bkRidw",
+        "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdmpwc2hMTGhHSy0zel9OamtOZU43bHBxa25WWmhLVTBVWE8yMVBuQWppdTZJVmVya01zLVp0LWd2YlNvaGxzSExhUEZBSkFrR0FtU0xBd0NlMEVWZnMwYU1zSTctNU0wS1FXd3VXSjNEMlFaUnBFcE5sZzZBVnBZWi10ZU5FOUtBN0MxTF80V2R2QXhFQ012Y1phTUp1ODFnb0dUbGk5UlJPcEtlbTBldTJnczljZi1xQWstdkpUeEZTYV9BV1NtNmZTSdIBywFBVV95cUxQdmpwc2hMTGhHSy0zel9OamtOZU43bHBxa25WWmhLVTBVWE8yMVBuQWppdTZJVmVya01zLVp0LWd2YlNvaGxzSExhUEZBSkFrR0FtU0xBd0NlMEVWZnMwYU1zSTctNU0wS1FXd3VXSjNEMlFaUnBFcE5sZzZBVnBZWi10ZU5FOUtBN0MxTF80V2R2QXhFQ012Y1phTUp1ODFnb0dUbGk5UlJPcEtlbTBldTJnczljZi1xQWstdkpUeEZTYV9BV1NtNmZTSQ",
+        "https://www.agrolatam.com/actualidad-latam/paraguay-podria-atraer-us420-millones-en-industrias-por-el-acuerdo-ue-mercosur",
+        "https://www.paralelo28.com.ar/2026/10/07/pullaro-busca-abrir-mas-mercados-y-atraer-inversiones-en-el-marco-del-acuerdo-mercosur-ue"
       ],
       "mergedIds": [
-        "acuerdo-ue-mercosur-paraguay-podria-captar-us-420-millones-en-inversion-industri"
+        "acuerdo-ue-mercosur-paraguay-podria-captar-us-420-millones-en-inversion-industri",
+        "paraguay-podria-atraer-us-420-millones-en-industrias-por-el-acuerdo-ue-mercosur",
+        "pullaro-busca-abrir-mas-mercados-y-atraer-inversiones-en-el-marco-del-acuerdo-me"
       ]
     },
     {
@@ -2007,10 +2350,11 @@
       "keyData": [],
       "topics": [
         "Transporte aéreo",
-        "Tecnología COMEX"
+        "Tecnología COMEX",
+        "Latinoamérica"
       ],
       "countries": [
-        "Global"
+        "México"
       ],
       "tags": [],
       "visual": "plane",
@@ -2175,7 +2519,10 @@
         }
       ],
       "gnTried": "2026-10-09T13:44:37Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQRWZMejBYazFoSjc0QV9KN1htZzB5eUVJOTRGb01tWTQ4a016VEtnR1phZGFsVUUyN0RXQ0Z0N3dBNnU3aG1ndnY4UWY3Z2I4NDczZ0hVVURtSnZNMHJZbFRKMDdzcGs5amZxNmctcWhBZ09SbWg4ZmFlNVVBdUh4anZkbmFEYjRxN3FSSmZwV0lDTVBBOTFxOUFmaEwzc1pGMEt6WUNxSlZpblZnbE1Uc1FDeU0teU5ydW5HNUM5ak00M01wNDBKTko3WU1IQkpOaDlEV1puQzVWc1l2eWt0eDlTNjZUYXPSAfsBQVVfeXFMTy1SOEZIVmhMT1FsSzdUd01oUTRZWmlwN0I1V3JMa0hWM0VPZVJxVUJIeXA1UUFjTmFRNF9OYlczODJPSm1Da3NxRVFNWVFOU1lYSmxFVzRKOWI4ZzkxRjQ3U2tmOHlhSDlDajJuYlhyRVN5NUpEZjZaSjZubktJNUNQQzY0TnBoWkthWlJRRE16amN6TlF4WlRma2tHUDNfbUJfSGxraEhYS0VIeDBSd3BKbmVUcnJmZ1NiYjJLRmcwYVREVWJBenBlSmpFMHpoME5DaW9aZkhYX2ZKQXFUX20xZjFSbWVIazlFbzd0eklqYUR3Y2NQR0tPbzA?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQRWZMejBYazFoSjc0QV9KN1htZzB5eUVJOTRGb01tWTQ4a016VEtnR1phZGFsVUUyN0RXQ0Z0N3dBNnU3aG1ndnY4UWY3Z2I4NDczZ0hVVURtSnZNMHJZbFRKMDdzcGs5amZxNmctcWhBZ09SbWg4ZmFlNVVBdUh4anZkbmFEYjRxN3FSSmZwV0lDTVBBOTFxOUFmaEwzc1pGMEt6WUNxSlZpblZnbE1Uc1FDeU0teU5ydW5HNUM5ak00M01wNDBKTko3WU1IQkpOaDlEV1puQzVWc1l2eWt0eDlTNjZUYXPSAfsBQVVfeXFMTy1SOEZIVmhMT1FsSzdUd01oUTRZWmlwN0I1V3JMa0hWM0VPZVJxVUJIeXA1UUFjTmFRNF9OYlczODJPSm1Da3NxRVFNWVFOU1lYSmxFVzRKOWI4ZzkxRjQ3U2tmOHlhSDlDajJuYlhyRVN5NUpEZjZaSjZubktJNUNQQzY0TnBoWkthWlJRRE16amN6TlF4WlRma2tHUDNfbUJfSGxraEhYS0VIeDBSd3BKbmVUcnJmZ1NiYjJLRmcwYVREVWJBenBlSmpFMHpoME5DaW9aZkhYX2ZKQXFUX20xZjFSbWVIazlFbzd0eklqYUR3Y2NQR0tPbzA?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPLVI4RkhWaExPUWxLN1R3TWhRNFlaaXA3QjVXckxrSFYzRU9lUnFVQkh5cDVRQWNOYVE0X05iVzM4Mk9KbUNrc3FFUU1ZUU5TWVhKbEVXNEo5YjhnOTFGNDdTa2Y4eWFIOUNqMm5iWHJFU3k1SkRmNlpKNm5uS0k1Q1BDNjROcGhaS2FaUlFETXpqY3pOUXhaVGZra0dQM19tQl9IbGtoSFhLRUh4MFJ3cEpuZVRycmZnU2JiMktGZzBhVERVYkF6cGVKakUwemgwTkNpb1pmSFhfZkpBcVRfbTFmMVJtZUhrOUVvN3R6SWphRHdjY1BHS09vMNIB-wFBVV95cUxPLVI4RkhWaExPUWxLN1R3TWhRNFlaaXA3QjVXckxrSFYzRU9lUnFVQkh5cDVRQWNOYVE0X05iVzM4Mk9KbUNrc3FFUU1ZUU5TWVhKbEVXNEo5YjhnOTFGNDdTa2Y4eWFIOUNqMm5iWHJFU3k1SkRmNlpKNm5uS0k1Q1BDNjROcGhaS2FaUlFETXpqY3pOUXhaVGZra0dQM19tQl9IbGtoSFhLRUh4MFJ3cEpuZVRycmZnU2JiMktGZzBhVERVYkF6cGVKakUwemgwTkNpb1pmSFhfZkpBcVRfbTFmMVJtZUhrOUVvN3R6SWphRHdjY1BHS09vMA"
+      ]
     },
     {
       "id": "se-ganan-su-dinero-pero-obstaculizan-el-trafico-camionetas-que-ofrecen-fletes-ge",
@@ -2293,6 +2640,43 @@
       "gnUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNb0gxbVNJdjJucWotcDlFMnVUMTdHVnJOUXpVWS1xZHdTaVlsS0hqbExXQjdCQzZwcWtFNlhjMzkyOEpkdlk4azVyRS1EMnlEV2lMaXpGTXQ4WHRMVUlWQjREQ09KLThGQzNLV01oTFB1dzZ6d0xINFdzemV5dnAyVU1FdFp0Mjh1cmc?oc=5"
     },
     {
+      "id": "el-flete-de-los-petroleros-vlcc-se-va-mas-alla-de-las-nubes",
+      "datetime": "2026-10-09T10:03:47Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T01:42:55Z",
+      "title": "El flete de los petroleros VLCC se va mas allá de las nubes",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Fletes",
+        "Energía"
+      ],
+      "visual": "tanker",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Naucher",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.naucher.com/el-flete-de-los-petroleros-vlcc-se-va-mas-alla-de-las-nubes/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T01:42:55Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcmZIcDd5dW5JTWZrbDJYNlQtaDEtWHB2NUt1Z0puZ1plZEd6NGlRVGVmTTVrNGZQZ1BBT0VwX1NNRno5WnVPbDJVRDFFMzIxaDZ6bjlaTjVqbnNrNzJTYnc3anpwVGtZTkNPa29WZWU1dERnTlliazAwN3dVVWQwaF94S1UxdlVHbmRaVQ?oc=5"
+    },
+    {
       "id": "rusia-fesco-establece-record-para-trenes-de-contenedores-entre-vladivostok-y-san",
       "datetime": "2026-10-09T10:00:43Z",
       "date": "2026-10-09",
@@ -2398,6 +2782,42 @@
       ],
       "gnTried": "2026-10-09T09:43:57Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tMldEdG1Cc2RNMG45d18xTXZhTWtvc2VnXzExOElEdWhLN3lIa0lFTnFPYmMyV0pXMzUzOGF3UUZESDN2d0h2SDlXOWxjRzU0NjFET2RJOFJMdGEzOEk1UXRhMTc0X0ZEancwZWdzYk9hMDR5?oc=5"
+    },
+    {
+      "id": "como-los-vuelos-charter-de-carga-aerea-ayudan-a-la-industria-automotriz-de-europ",
+      "datetime": "2026-10-09T09:13:36Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T01:42:55Z",
+      "title": "Cómo los vuelos chárter de carga aérea ayudan a la industria automotriz de Europa",
+      "summary": "Tres paletas de piezas de automóviles deben ser transportadas urgentemente de Bulgaria a Alemania para evitar una parada en la producción en la fábrica de automóviles.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte aéreo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Autos"
+      ],
+      "visual": "plane",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Loginfo24",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://loginfo24.com/es/2026/10/09/como-los-vuelos-charter-de-carga-aerea-ayudan-a-la-industria-automotriz-de-europa/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T01:42:55Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcXUyTkVoWkoxbUVpdnJKdkRpM1l4WnA2NFBLQ0VTdUNOaGpkdzhwWTlpRFVGQUNDT1lReHo2ZTNlUWhrNzJxTTFic1piSlVfS21vVkVVMy1sam9VOEp6LTlZaWZqRWUwSHZlTUstUE5jRnJyWTNibEV4M0psQjVlblVOcmtUcTZiRzlaTUZ1Z0hWdmFtTTgySi0zOXRXOXo4WjB0YU1odC1XbUd6T1VCMUJ0bmZIanByQmc?oc=5"
     },
     {
       "id": "buque-de-msc-arriba-por-primera-vez-al-puerto-de-coronel-tras-navegar-por-el-est",
@@ -3166,60 +3586,6 @@
       ]
     },
     {
-      "id": "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petrole-2",
-      "datetime": "2026-10-09T01:06:16Z",
-      "date": "2026-10-08",
-      "firstSeen": "2026-10-09T01:44:00Z",
-      "title": "Estados Unidos sancionó a 17 buques y a las navieras que transportan petróleo y petroquímicos de Irán",
-      "summary": "Washington busca cerrar con sanciones lo que el bloqueo naval no alcanza. El Tesoro calcula que a Teherán le quedan unos 20 millones de barriles flotando fuera del cerco…",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Transporte marítimo",
-        "Geopolítica y comercio",
-        "Estados Unidos"
-      ],
-      "countries": [
-        "Estados Unidos",
-        "Irán"
-      ],
-      "tags": [
-        "Energía",
-        "Estados Unidos"
-      ],
-      "visual": "tanker",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Logística y fletes",
-      "sources": [
-        {
-          "name": "Flipr.news",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://flipr.com.ar/nacionales/ultimo-momento/infobae/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran/",
-          "primary": true,
-          "author": ""
-        },
-        {
-          "name": "Infobae",
-          "type": "También publicó esta noticia",
-          "url": "https://www.infobae.com/america/mundo/2026/10/09/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran/",
-          "alsoIn": true,
-          "title": "Estados Unidos sancionó a 17 buques y a las navieras que transportan petróleo y petroquímicos de Irán"
-        }
-      ],
-      "gnTried": "2026-10-09T01:44:00Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPM2hDODdZb2JuWVg0T29QQW1jbmloQVJfZ3Z2ZWhXYnlxQjdqT3ROTzFXZUFqb29yd24yRWwwZk1sSF82N05sbFluZ1hVNXdERUpLNVFITVM4ekwyVjhJeHNBdXBvT1hwQmVvT1FxYmJBVlJ1cThHSGMzNnhDRXBIb2ZWYlo4SFpLZVpwdFRSejR5U1VDM0Iyd0QzTm5XU3I0VzY5elpMdERvZXFoMlNJYWMzdUZoRUNVejNmQjcyckF5SU5tckdHMEk4Mnh1RjJEbGliTEJoVkxaMnkzSDA3aHIzMjZnSURUdU1iMWpn?oc=5",
-      "aliasUrls": [
-        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQXFJSTl0bjJWVW54QkhiYzQ5aWs0Rmx2azFpVlFOc1Y0eWFhSDZwVFROSEgxbGJTXzY5WXFndXMxTEJhTk5RVUVfbVJNU2wwUG9TNFphSnNNS1RNSU9lSlZhMkpDNDMwTHZjcjZiZ213STFZcEg5dVNvdFhKX2VFbno2SzlydzI5ZTZSbHhOTWxjLVlzY2ZEMTVXQjJtM1N0QUV5OFpKUjYzcTBtZzlQaFViUVQtZmpoN1BsNDVGMjJtejFjVndLS2hMbzloUU45R0lzV3B1SEFUZWRuWmZLd1VtNUJPd9IBgAJBVV95cUxQS3o2eURIM1FzWUZCVEFfekNORDhPZ2ZMaTR3dThXc00yYzZzRC03QXk4bncxVy1Nc09palcycHREbWJOOXAxY29PMVQzV21TdGhuSWoxWmlNbUhVeHpyUDctSTVqWWJWbVZEYUQxSTBpT1YwTFFSNk4tQjVkNHNJa01McDhVQ3A3emxVUmV1M29udHVmbUM0S1hlZFYxT0xtWWxab080OHBpamZjTzg5aGpsekxzRzJBSXIxT2c1bzZtbV80RS1raThQZjAtTEc0VnYwU3lsSktkYnU0SXBJTllvWm50LVU5VkJFV0d5cWo3aXVvaGV4QWtWTFVCa2lv",
-        "https://www.infobae.com/america/mundo/2026/10/09/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran"
-      ],
-      "mergedIds": [
-        "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y"
-      ]
-    },
-    {
       "id": "bangladesh-dp-world-y-autoridad-portuaria-de-chittagong-acuerdan-concesion-de-te",
       "datetime": "2026-10-09T01:00:46Z",
       "date": "2026-10-08",
@@ -3286,10 +3652,24 @@
           "url": "http://spanish.xinhuanet.com/20261009/e1177227ec4c424db8ac55656d33adfd/c.html",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "AZƏRTAC – Azərbaycan Dövlət İnformasiya Agentliyi",
+          "type": "También publicó esta noticia",
+          "url": "https://azertag.az/es/xeber/azcon_holding_y_dp_world_amplan_su_cooperacion_en_los_mbitos_portuario_logstico_y_del_transporte_martimo-4454031",
+          "alsoIn": true,
+          "title": "AZCON Holding y DP World amplían su cooperación en los ámbitos portuario, logístico y del transporte marítimo"
         }
       ],
       "gnTried": "2026-10-09T01:44:00Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeHhZb0xCcnhIbFFBQV9tbk1XYWFMRllDZFVRVGM1NkJWSDZQRzZUcDZWVTktTGJaMEJpOFRrV3NaSHdhMnFsQldBeTg2U2NfZGRKMy1SU2dYWXJwcmo4TzU0dEg4V1BOd1hIVlozNlFPdDhnSVNCRGtRRnRXb1FLQXpIQQ?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeHhZb0xCcnhIbFFBQV9tbk1XYWFMRllDZFVRVGM1NkJWSDZQRzZUcDZWVTktTGJaMEJpOFRrV3NaSHdhMnFsQldBeTg2U2NfZGRKMy1SU2dYWXJwcmo4TzU0dEg4V1BOd1hIVlozNlFPdDhnSVNCRGtRRnRXb1FLQXpIQQ?oc=5",
+      "aliasUrls": [
+        "https://azertag.az/es/xeber/azcon_holding_y_dp_world_amplan_su_cooperacion_en_los_mbitos_portuario_logstico_y_del_transporte_martimo-4454031",
+        "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQNlZIa2k4c2FyS2laTHlCWllydklvMHNlSEYtMzNWZ0ZqeUFqVTRHV014eHRWYnJocm4yR0tlY25xOXk1S0Fra0pkQXIxNm53NHZvdmplQ3l2RVlvSHU5V19MUllwbktnUl9QVGZtZG1WcnZaZmlXc3d2NU9HbkZjQTBIdFZSM2hDSkFjNEtmQUlHMnU1a2VCalBwcHF2RE1aS3djN2xGMXpuZ0dobVphdFp1XzdIZDBDMVAtbUdpLTBGZ3E1RXV1U0xTa3ZUd3VJZ3ZQQWZZdw"
+      ],
+      "mergedIds": [
+        "azcon-holding-y-dp-world-amplian-su-cooperacion-en-los-ambitos-portuario-logisti"
+      ]
     },
     {
       "id": "ia-o-aranceles-quien-protagoniza-el-comercio-mundial-segun-dhl",
@@ -5203,6 +5583,13 @@
           "url": "https://es.qz.com/ny-fed-aranceles-de-trump-bienes-de-consumo-inflacin-100826",
           "alsoIn": true,
           "title": "Reserva Federal de Nueva York: los aranceles de Trump añadieron 2.9 puntos a la inflación de bienes de consumo"
+        },
+        {
+          "name": "IndexBox",
+          "type": "También publicó esta noticia",
+          "url": "https://www.indexbox.io/es/blog/tariffs-lifted-consumer-goods-prices-new-york-fed-researchers-find/",
+          "alsoIn": true,
+          "title": "La Fed de Nueva York: los aranceles de Trump elevaron un 2,9 % los precios de los bienes de consumo - Noticias y Estadísticas"
         }
       ],
       "gnTried": "2026-10-08T13:43:55Z",
@@ -5211,11 +5598,14 @@
         "https://es.qz.com/fed-de-nueva-york-aranceles-de-trump-bienes-de-consumo-inflacin-100826",
         "https://es.qz.com/ny-fed-aranceles-de-trump-bienes-de-consumo-inflacin-100826",
         "https://news.google.com/rss/articles/CBMigwFBVV95cUxNLUF3cFFUaXpvRmJWM1ZsZUpoS2tUR0RIRmhIWExiYkV5NDl3NDFPRllZbTU5aTJaZGRCc25TV3VxZGpYYVk1QkN3VUUwb2lSZWZZZTdYcWpWcWNzV1NZWmhEQjBtQ0ZiTHMzRnhvcm5NSUEyeENiUWN2WTJnUVVXOGFhRQ",
-        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3ZObmZKeDdUV2xqYURTMFV0azhINC1YX3diVS1qYktDX2RpcjNCbjUzWEpYcjBod0MzemxqYnRTY3piaG1vTmpZVFNQZkRWMXdzcV9SR0hVUWNKUGFiNXJ3akhhaVZKZnMwU2prUExRdjduSXVOZmMxQ2Y5S3kyUUlnRXZYNjlKYmtlbXdlNHhTQQ"
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3ZObmZKeDdUV2xqYURTMFV0azhINC1YX3diVS1qYktDX2RpcjNCbjUzWEpYcjBod0MzemxqYnRTY3piaG1vTmpZVFNQZkRWMXdzcV9SR0hVUWNKUGFiNXJ3akhhaVZKZnMwU2prUExRdjduSXVOZmMxQ2Y5S3kyUUlnRXZYNjlKYmtlbXdlNHhTQQ",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVVh6WmthWGMxckRrMkExUnRmbmdnMDVNOWpma0k5WFEtWGx1UlYzRU9wV2pKaE9HcFVTMmJCWExmOUpMVC1PenlKRlNGLXFJbC1ELW9jT3ZOTWgyQ1dtd2hDbVRKMmVYSW5tZFB5TGJWbTR4UzdidzF6cUN2TjlMX1FIbHFLQm81SEx2MGY5TFpPSkJRUHI3NTJibUFOdkdV",
+        "https://www.indexbox.io/es/blog/tariffs-lifted-consumer-goods-prices-new-york-fed-researchers-find"
       ],
       "mergedIds": [
         "fed-de-nueva-york-aranceles-de-trump-anadieron-2-9-puntos-a-la-inflacion-de-bien",
-        "reserva-federal-de-nueva-york-los-aranceles-de-trump-anadieron-2-9-puntos-a-la-i"
+        "reserva-federal-de-nueva-york-los-aranceles-de-trump-anadieron-2-9-puntos-a-la-i",
+        "la-fed-de-nueva-york-los-aranceles-de-trump-elevaron-un-2-9-los-precios-de-los-b"
       ]
     },
     {
@@ -27542,7 +27932,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-09T21:42:30Z",
+    "ranAt": "2026-10-10T01:42:55Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -27567,7 +27957,7 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 6,
+        "added": 3,
         "updated": 0,
         "skipped": 7
       },
@@ -27575,55 +27965,55 @@
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 43,
-        "added": 4,
+        "items": 40,
+        "added": 1,
         "updated": 0,
-        "skipped": 25
+        "skipped": 24
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 49,
-        "added": 3,
+        "items": 47,
+        "added": 1,
         "updated": 0,
-        "skipped": 34
+        "skipped": 33
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 58,
+        "items": 56,
         "added": 4,
         "updated": 0,
-        "skipped": 29
+        "skipped": 27
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 49,
-        "added": 2,
+        "items": 48,
+        "added": 0,
         "updated": 0,
-        "skipped": 26
+        "skipped": 27
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 50,
+        "items": 54,
         "added": 4,
         "updated": 0,
-        "skipped": 32
+        "skipped": 35
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 77,
+        "items": 75,
         "added": 4,
         "updated": 0,
-        "skipped": 49
+        "skipped": 45
       }
     ],
     "curatedDuplicates": [
@@ -27638,8 +28028,8 @@
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
-        "title": "Argentina: Oficializan conformación de Consejo de Control de la Vía Navegable Troncal",
-        "url": "https://portalportuario.cl/argentina-oficializan-conformacion-de-consejo-de-control-de-la-via-navegable-troncal/",
+        "title": "La principal vía fluvial del comercio exterior argentino tendrá un nuevo esquema de control",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNVNNbU5DRWp1UFZCejdLSFNMR25Hc0p5bmEwOUxsX0FMQ3hrazRqU1UzeFlvZnRVUnFxckQ0b04xaUNuSk95Z2libXJVUWF2REh1NGdWZzFlT1BJZGhZUlpTcmRHV21hMUhmamRGM3YtTHRuVUVKQzE5ZEZMSWhDd3ppM0NhMlFUQUxTUVIwQTJsbGRxR3RQODJtbndVbHhtQ1IyN0YxZjdzUEt6N0l6VnJ1clJHS0Z2WVJEVmd1NkJxdGdLdHZwdGdyVFk2TFRLLW5wNjBOYng2b1ZULXc?oc=5",
         "curated": "hidrovia-resolucion-59-2026-consejo-control-via-navegable-troncal"
       },
       {
@@ -27656,47 +28046,47 @@
     "excluded": 0,
     "grouped": [
       {
-        "main": "paraguay-podria-atraer-us-420-millones-en-industrias-por-el-acuerdo-ue-mercosur",
+        "main": "ny-fed-aranceles-de-trump-agregaron-2-9-puntos-a-la-inflacion-de-bienes-de-consu",
         "merged": [
-          "pullaro-busca-abrir-mas-mercados-y-atraer-inversiones-en-el-marco-del-acuerdo-me"
+          "la-fed-de-nueva-york-los-aranceles-de-trump-elevaron-un-2-9-los-precios-de-los-b"
         ]
       },
       {
-        "main": "crudo-de-africa-occidental-el-petroleo-angoleno-se-hunde-por-el-encarecimiento-d",
+        "main": "puerto-de-qingdao-amplia-su-red-de-transporte-maritimo",
         "merged": [
-          "fletes-de-buques-petroleros-encarecen-el-crudo-de-ee-uu-en-asia"
+          "azcon-holding-y-dp-world-amplian-su-cooperacion-en-los-ambitos-portuario-logisti"
         ]
       },
       {
-        "main": "ovoproductos-las-exportaciones-alcanzaron-en-los-primeros-ocho-meses-del-ano-el",
+        "main": "estados-unidos-sanciona-a-17-buques-vinculados-a-flota-en-la-sombra-de-iran",
         "merged": [
-          "record-para-los-ovoproductos-argentinos-las-exportaciones-superaron-los-us-2-2",
-          "las-exportaciones-de-ovoproductos-alcanzaron-el-mayor-valor-de-la-decada"
+          "estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petrole-2"
         ]
       },
       {
-        "main": "apertura-de-importaciones-el-nuevo-mapa-automotor-y-el-debate-por-la-competitivi",
+        "main": "acuerdo-ue-mercosur-la-uip-estima-cuanto-podria-captar-paraguay-con-el-traslado",
         "merged": [
-          "el-nuevo-mapa-del-mercado-automotor-que-marcas-ganaron-y-cuales-perdieron-con-la"
+          "paraguay-podria-atraer-us-420-millones-en-industrias-por-el-acuerdo-ue-mercosur"
         ]
       },
       {
-        "main": "sheinbaum-insiste-en-reducir-aranceles-de-eu-a-autos-y-acero-tras-reunion-con-em",
+        "main": "centro-despachantes-de-aduana-de-la-republica-argentina-modificaciones-al-regime",
         "merged": [
-          "sheinbaum-insiste-en-bajar-aranceles-de-autos-y-acero-en-reunion-con-empresarios"
+          "centro-despachantes-de-aduana-de-la-republica-argentina-invitacion-reunion-de-co"
         ]
       },
       {
-        "main": "las-exportaciones-de-lacteos-sumaron-us-1130-millones-se-encaminan-a-un-record-y",
+        "main": "el-gobierno-organizara-la-semana-de-la-carne-argentina-en-tel-aviv-para-impulsar",
         "merged": [
-          "exportaciones-de-lacteos-record-en-vista-con-advertencia-sobre-rentabilidad"
+          "el-gobierno-busca-ampliar-las-exportaciones-de-carne-a-israel-y-avanzar-en-la-co",
+          "gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exporta"
         ]
       }
     ],
     "googleNews": {
-      "pending": 21,
-      "resolved": 21,
-      "withSummary": 17,
+      "pending": 14,
+      "resolved": 14,
+      "withSummary": 9,
       "withPhoto": 0,
       "failed": 0,
       "duplicates": 2
