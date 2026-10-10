@@ -506,6 +506,325 @@
   ],
   "items": [
     {
+      "id": "arca-rg-5910-trafico-vecinal-fronterizo-tope-150-dolares",
+      "date": "2026-10-09",
+      "datetime": "2026-10-09T11:48:00-03:00",
+      "kind": "noticia",
+      "title": "ARCA fija un tope de USD 150 por día y por poblador en el tráfico vecinal fronterizo y prohíbe sacar granos",
+      "summary": "La Resolución General 5910/2026 precisa que el límite del régimen de exportación para pobladores de frontera se computa por día y por persona, y suma prohibiciones: trigo, soja y maíz en todas sus formas y mercaderías en envases de 10 kg o más. Rige desde el 10 de octubre.",
+      "topics": [
+        "Argentina",
+        "Aduanas",
+        "Exportaciones",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina",
+        "Bolivia",
+        "Brasil",
+        "Paraguay"
+      ],
+      "tags": [
+        "ARCA",
+        "Tráfico vecinal fronterizo",
+        "Frontera",
+        "Granos",
+        "Boletín Oficial"
+      ],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "story": "arca-normativa",
+      "argentinaNote": "Afecta la salida de mercadería argentina por los pasos fronterizos bajo el régimen para pobladores de países limítrofes; no cambia las franquicias para compras que los argentinos hacen en Brasil o Paraguay.",
+      "argentinaImpact": {
+        "change": "Desde el 10 de octubre, el tope de USD 150 del tráfico vecinal fronterizo de exportación se computa por día y por poblador, y se prohíbe sacar trigo, soja y maíz y mercadería en envases de 10 kg o más.",
+        "who": "Comercios de localidades de frontera que venden a pobladores de países limítrofes, compradores de esos países y la Aduana en los pasos fronterizos.",
+        "sectors": [
+          "Comercio minorista de frontera",
+          "Granos",
+          "Alimentos"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "La Agencia de Recaudación y Control Aduanero (ARCA) publicó el viernes 9 de octubre en el Boletín Oficial la Resolución General 5910/2026, que modifica el régimen de tráfico vecinal fronterizo de exportación. Es el esquema que permite a residentes de localidades de frontera de países limítrofes llevarse mercadería argentina para consumo personal, familiar o del hogar. La norma cambia el Anexo IV «A» de la Resolución 2604/1986 de la ex Administración Nacional de Aduanas y entró en vigencia el sábado 10.",
+        "El principal cambio es que el tope de USD 150 pasa a computarse en forma expresa por día y por poblador, sin importar la cantidad, la calidad o la variedad de los artículos. Según Primera Edición, ese monto ya existía desde la Resolución General 1336/2002 de la ex AFIP, y la nueva redacción lo precisa como un límite diario por persona.",
+        "La resolución también amplía la lista de mercaderías excluidas del régimen: se suman el trigo, la soja y el maíz en todas sus formas y los productos en envases de 10 kg o más, o su equivalente en volumen. Se mantienen las prohibiciones para combustibles en bidones o tanques suplementarios; armas, municiones, explosivos, estupefacientes y psicotrópicos no autorizados en el mercado interno, y cualquier bien cuya exportación esté prohibida o suspendida. La Voz de Cataratas aclaró que el límite de 10 kg se refiere al tamaño de cada envase y no a un total por persona.",
+        "ARCA fundamentó la medida en la necesidad de reducir el fraccionamiento de operaciones, su repetición sistemática y el desvío de mercadería hacia circuitos comerciales no autorizados, ya que el Código Aduanero excluye el uso comercial o industrial de este régimen. Para usarlo, el poblador debe acreditar identidad y residencia en una localidad fronteriza y presentar la factura de compra de mercadería de origen nacional."
+      ],
+      "keyData": [
+        [
+          "Norma",
+          "Resolución General ARCA 5910/2026 (BO 9 oct 2026)"
+        ],
+        [
+          "Vigencia",
+          "Desde el 10 de octubre de 2026"
+        ],
+        [
+          "Tope",
+          "USD 150 por día y por poblador"
+        ],
+        [
+          "Nuevas prohibiciones",
+          "Trigo, soja y maíz en todas sus formas; envases de 10 kg o más"
+        ],
+        [
+          "Norma modificada",
+          "Resolución ANA 2604/1986, Anexo IV «A»"
+        ]
+      ],
+      "explainer": {
+        "what": "ARCA estableció que el tope de USD 150 del tráfico vecinal fronterizo de exportación se aplica por día y por poblador, y prohibió sacar por ese régimen trigo, soja, maíz y mercadería en envases de 10 kg o más.",
+        "why": "Busca frenar el fraccionamiento y la repetición de operaciones que desvían mercadería a circuitos comerciales no autorizados, un uso que el Código Aduanero excluye para este régimen.",
+        "who": "Comercios de localidades de frontera, pobladores de países limítrofes que compran en la Argentina y el control aduanero en los pasos fronterizos.",
+        "products": [
+          "Trigo",
+          "Soja",
+          "Maíz",
+          "Mercadería en envases de 10 kg o más",
+          "Combustibles"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Primera Edición",
+          "type": "Medio de comunicación",
+          "url": "https://www.primeraedicion.com.ar/nota/101149770/arca-nuevas-restricciones-trafico-vecinal-fronterizo-misiones/",
+          "primary": true
+        },
+        {
+          "name": "ACONPY (texto de la RG 5910/2026)",
+          "type": "Texto normativo",
+          "url": "https://blog.aconpy.com/2026/10/09/arca-fija-tope-diario-y-suma-prohibiciones-al-trafico-fronterizo/"
+        },
+        {
+          "name": "La Voz de Cataratas",
+          "type": "Medio de comunicación",
+          "url": "https://lavozdecataratas.com/2026/10/10/frontera-desde-hoy-rigen-nuevas-restricciones-para-sacar-mercaderias-de-argentina"
+        }
+      ],
+      "absorbs": [
+        "centro-despachantes-de-aduana-de-la-republica-argentina-modificaciones-al-regime"
+      ]
+    },
+    {
+      "id": "ue-china-entendimiento-hibridos-aranceles-tierras-raras-octubre-2026",
+      "date": "2026-10-09",
+      "datetime": "2026-10-09T10:51:00-03:00",
+      "kind": "noticia",
+      "title": "La UE y China acuerdan moderar las exportaciones chinas de híbridos y bajar aranceles a productos europeos",
+      "summary": "Tras dos días de negociación en Pekín, el comisario Maroš Šefčovič dijo que el entendimiento abre la posibilidad de recortar en más de la mitad las ventas chinas de híbridos a la UE. China facilitará el acceso de bienes europeos por unos € 4.000 millones y las licencias de tierras raras. Los líderes europeos lo evaluarán el 15 y 16 de octubre.",
+      "topics": [
+        "Europa",
+        "China",
+        "Asia",
+        "Aranceles",
+        "Geopolítica y comercio"
+      ],
+      "countries": [
+        "Unión Europea",
+        "China"
+      ],
+      "tags": [
+        "Autos híbridos",
+        "Tierras raras",
+        "Aceite de oliva",
+        "Šefčovič",
+        "Wang Wentao"
+      ],
+      "visual": "treaty",
+      "impact": 2,
+      "affectsArgentina": false,
+      "body": [
+        "La Unión Europea y China cerraron el 9 de octubre en Pekín la segunda reunión de su mecanismo de consultas sobre comercio e inversión, encabezada por el comisario de Comercio europeo, Maroš Šefčovič, y el ministro de Comercio chino, Wang Wentao. Al cabo de dos días de conversaciones, ambas partes firmaron una declaración conjunta con tres puntos.",
+        "El primero es un entendimiento para moderar las exportaciones chinas de autos híbridos e híbridos enchufables a la UE. Según Šefčovič, abre la perspectiva de recortarlas en más de la mitad, aunque no se informaron el plazo, la base de comparación ni el mecanismo. El Financial Times, citado por CnEVPost, registró que las importaciones europeas de híbridos chinos pasaron de 3.800 unidades en octubre de 2024 a 50.000 en julio de 2026. Para los autos eléctricos a batería, ambas partes seguirán con los compromisos de precios y las revisiones dentro del caso antisubvenciones de la UE.",
+        "El segundo punto es un mejor acceso al mercado chino para productos europeos —desde autopartes hasta aceite de oliva y calzado— con exportaciones que hoy suman casi € 4.000 millones. Según Euronews y Eunews, la Comisión estima un ahorro en aranceles de al menos € 225 millones. Eunews precisó que se trata de rebajas de aranceles de nación más favorecida; CnEVPost, en cambio, indicó que la parte china solo habló de explorar reducciones en el marco de la OMC, sin detallar productos. El tercer punto es que China seguirá facilitando las licencias de exportación de tierras raras e imanes permanentes hacia la UE.",
+        "Šefčovič calificó el resultado como un primer paso y advirtió que la UE usará sus propios instrumentos si el diálogo no da resultados; según Eunews, describió como insostenible un déficit comercial con China de más de € 1.000 millones por día. Los líderes europeos analizarán las soluciones negociadas en el Consejo Europeo del 15 y 16 de octubre, donde se tomará la decisión final, de acuerdo con Eunews."
+      ],
+      "keyData": [
+        [
+          "Híbridos chinos a la UE",
+          "Recorte de más de la mitad, según Šefčovič (sin plazo informado)"
+        ],
+        [
+          "Exportaciones europeas alcanzadas",
+          "Casi € 4.000 millones"
+        ],
+        [
+          "Ahorro arancelario estimado",
+          "Al menos € 225 millones"
+        ],
+        [
+          "Importaciones de híbridos chinos",
+          "3.800 unidades (oct 2024) → 50.000 (jul 2026), según el FT"
+        ],
+        [
+          "Próximo paso",
+          "Consejo Europeo, 15 y 16 de octubre"
+        ]
+      ],
+      "explainer": {
+        "what": "La UE y China firmaron en Pekín una declaración conjunta para moderar las exportaciones chinas de híbridos, mejorar el acceso de productos europeos por casi € 4.000 millones y facilitar las licencias de tierras raras.",
+        "why": "Es el primer resultado concreto del intento europeo de reequilibrar un comercio con China que Šefčovič describió como insostenible, y evita por ahora una escalada de medidas sobre los híbridos.",
+        "who": "Automotrices chinas y europeas, exportadores europeos de autopartes, aceite de oliva y calzado, e industrias que dependen de tierras raras e imanes.",
+        "products": [
+          "Autos híbridos e híbridos enchufables",
+          "Autopartes",
+          "Aceite de oliva",
+          "Calzado",
+          "Tierras raras",
+          "Imanes permanentes"
+        ],
+        "next": "Los líderes de la UE evaluarán las soluciones negociadas en el Consejo Europeo del 15 y 16 de octubre, donde se tomará la decisión final; Šefčovič y Wang Wentao volverán a reunirse a más tardar en enero y hay una tercera ronda prevista para marzo.",
+        "nextSource": {
+          "name": "Eunews",
+          "url": "https://www.eunews.it/en/2026/10/09/eu-and-china-reach-agreement-on-hybrid-cars-sefcovic-exports-from-beijing-will-be-halved/"
+        }
+      },
+      "deadlines": [
+        {
+          "date": "2026-10-15",
+          "label": "Consejo Europeo evalúa el entendimiento UE–China sobre híbridos y aranceles (15 y 16 de octubre)",
+          "url": "https://www.eunews.it/en/2026/10/09/eu-and-china-reach-agreement-on-hybrid-cars-sefcovic-exports-from-beijing-will-be-halved/"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Euronews",
+          "type": "Medio de comunicación",
+          "url": "https://www.euronews.com/2026/10/09/eu-and-china-clinch-deal-over-cars-after-heated-trade-talks-as-brussels-pushes-to-rebalanc",
+          "primary": true
+        },
+        {
+          "name": "Eunews",
+          "type": "Medio especializado",
+          "url": "https://www.eunews.it/en/2026/10/09/eu-and-china-reach-agreement-on-hybrid-cars-sefcovic-exports-from-beijing-will-be-halved/"
+        },
+        {
+          "name": "CnEVPost",
+          "type": "Medio especializado",
+          "url": "https://cnevpost.com/2026/10/09/china-eu-make-progress-hybrid-trade/"
+        }
+      ],
+      "absorbs": [
+        "bruselas-y-pekin-pactan-recortar-un-50-los-aranceles-a-los-coches-hibridos-chino",
+        "ue-y-china-alivian-tension-con-acuerdo-comercial-provisional",
+        "china-y-la-ue-alcanzan-acuerdo-comercial-preliminar",
+        "china-y-la-ue-pactan-moderar-las-exportaciones-de-hibridos-y-rebajar-aranceles-a",
+        "china-y-la-ue-pactan-los-hibridos-y-dejan-abiertos-los-aranceles-a-los-coches-el"
+      ]
+    },
+    {
+      "id": "rigi-los-toldos-ii-este-tecpetrol-gyp-peelp-6432-millones",
+      "date": "2026-10-09",
+      "datetime": "2026-10-09T13:11:00-03:00",
+      "kind": "noticia",
+      "title": "El Gobierno aprueba el RIGI para Los Toldos II Este como proyecto de exportación estratégica, con USD 6.432 millones",
+      "summary": "La Resolución 1771/2026 de Economía aprobó la adhesión de la UTE de Tecpetrol y Gas y Petróleo del Neuquén como Proyecto de Exportación Estratégica de Largo Plazo. Prevé 380 pozos horizontales y una planta para 70.000 barriles de petróleo por día.",
+      "topics": [
+        "Argentina",
+        "Exportaciones",
+        "Empresas",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "RIGI",
+        "Petróleo",
+        "Tecpetrol",
+        "Neuquén",
+        "PEELP"
+      ],
+      "visual": "tanker",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Es una nueva inversión petrolera de gran escala en Neuquén encuadrada en el RIGI como proyecto orientado a la exportación de largo plazo.",
+      "argentinaImpact": {
+        "change": "El proyecto UT RIGI Los Toldos, en el área Los Toldos II Este (Neuquén), quedó adherido al RIGI como Proyecto de Exportación Estratégica de Largo Plazo, con una inversión prevista de USD 6.432 millones hasta 2054.",
+        "who": "Tecpetrol, Gas y Petróleo del Neuquén, proveedores de la industria petrolera y la cadena de exportación de crudo de la cuenca neuquina.",
+        "sectors": [
+          "Petróleo y gas",
+          "Energía"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "El Ministerio de Economía publicó el 9 de octubre en el Boletín Oficial la Resolución 1771/2026, que aprueba la adhesión al Régimen de Incentivo para Grandes Inversiones (RIGI) del proyecto «UT RIGI Los Toldos», presentado por la unión transitoria de Tecpetrol y Gas y Petróleo del Neuquén (GyP). El proyecto fue encuadrado como Proyecto de Exportación Estratégica de Largo Plazo (PEELP), una categoría pensada para desarrollos de gran escala orientados a exportar en forma sostenida.",
+        "La inversión total prevista es de USD 6.432 millones en tres etapas: USD 1.635 millones hasta febrero de 2027, USD 1.268 millones entre marzo de 2027 y junio de 2029, y USD 3.529 millones hasta 2054. El área Los Toldos II Este está en el departamento Pehuenches, en Neuquén, y abarca 78 km². La resolución fija el 9 de septiembre de 2026 como fecha de adhesión y el 31 de agosto de 2027 como plazo para completar la inversión mínima exigida.",
+        "El plan contempla 380 pozos horizontales nuevos —16 en la primera etapa, 91 en la segunda y 273 en la tercera— y una planta central de tratamiento con capacidad para 70.000 barriles de petróleo y 3,6 millones de metros cúbicos de gas natural por día, además de oleoducto, gasoducto, obras de agua y energía, caminos y campamentos.",
+        "Según Ámbito, el encuadre como PEELP exige que el proyecto apunte a un mercado mundial en el que la participación argentina sea inferior al 10%; las empresas informaron que la del país en el mercado de crudo ronda el 1%. Ninguna de las fuentes consultadas detalla volúmenes de exportación previstos."
+      ],
+      "keyData": [
+        [
+          "Norma",
+          "Resolución 1771/2026, Ministerio de Economía (BO 9 oct 2026)"
+        ],
+        [
+          "Inversión total",
+          "USD 6.432 millones hasta 2054"
+        ],
+        [
+          "Pozos horizontales",
+          "380 (16 + 91 + 273)"
+        ],
+        [
+          "Planta central",
+          "70.000 barriles de petróleo y 3,6 millones de m³ de gas por día"
+        ],
+        [
+          "Plazo de inversión mínima",
+          "31 de agosto de 2027"
+        ]
+      ],
+      "explainer": {
+        "what": "Economía aprobó por la Resolución 1771/2026 el ingreso al RIGI del proyecto petrolero Los Toldos II Este, de Tecpetrol y GyP, como Proyecto de Exportación Estratégica de Largo Plazo, con USD 6.432 millones de inversión.",
+        "why": "Suma una inversión de gran escala en la cuenca neuquina orientada a exportar crudo en el largo plazo, con una planta para 70.000 barriles diarios.",
+        "who": "Tecpetrol, Gas y Petróleo del Neuquén, proveedores petroleros y la cadena de exportación de crudo de la cuenca neuquina.",
+        "products": [
+          "Petróleo crudo",
+          "Gas natural"
+        ],
+        "next": "La resolución fija el 31 de agosto de 2027 como plazo para completar la inversión mínima exigida por el régimen.",
+        "nextSource": {
+          "name": "Ámbito",
+          "url": "https://www.ambito.com/energia/el-gobierno-aprobo-el-ingreso-al-rigi-del-proyecto-tecpetrol-y-gyp-us6400-millones-n6331891"
+        }
+      },
+      "deadlines": [
+        {
+          "date": "2027-08-31",
+          "label": "Vence el plazo para completar la inversión mínima del RIGI en Los Toldos II Este",
+          "url": "https://www.ambito.com/energia/el-gobierno-aprobo-el-ingreso-al-rigi-del-proyecto-tecpetrol-y-gyp-us6400-millones-n6331891"
+        }
+      ],
+      "sources": [
+        {
+          "name": "MDZ Online",
+          "type": "Medio de comunicación",
+          "url": "https://www.mdzol.com/economia/2026/10/9/aprueban-el-rigi-para-el-proyecto-petrolero-los-toldos-con-inversiones-por-us-6432-millones-1986974.html",
+          "primary": true
+        },
+        {
+          "name": "Ámbito",
+          "type": "Medio de comunicación",
+          "url": "https://www.ambito.com/energia/el-gobierno-aprobo-el-ingreso-al-rigi-del-proyecto-tecpetrol-y-gyp-us6400-millones-n6331891"
+        }
+      ]
+    },
+    {
       "id": "cra-se-suma-al-control-de-la-hidrovia-y-gana-peso-en-la-logistica-exportadora",
       "datetime": "2026-10-10T09:06:02Z",
       "date": "2026-10-10",
