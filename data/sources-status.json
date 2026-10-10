@@ -1,8 +1,8 @@
 {
   "OMC · Organización Mundial del Comercio": {
     "ok": true,
-    "lastRun": "2026-10-10T13:41:05Z",
-    "lastOk": "2026-10-10T13:41:05Z",
+    "lastRun": "2026-10-10T17:39:53Z",
+    "lastOk": "2026-10-10T17:39:53Z",
     "failures": 0,
     "items": 8,
     "added": 0
@@ -17,8 +17,8 @@
   },
   "Aduana News": {
     "ok": true,
-    "lastRun": "2026-10-10T13:41:05Z",
-    "lastOk": "2026-10-10T13:41:05Z",
+    "lastRun": "2026-10-10T17:39:53Z",
+    "lastOk": "2026-10-10T17:39:53Z",
     "failures": 0,
     "items": 12,
     "added": 0
@@ -31,58 +31,58 @@
   },
   "PortalPortuario": {
     "ok": true,
-    "lastRun": "2026-10-10T13:41:05Z",
-    "lastOk": "2026-10-10T13:41:05Z",
+    "lastRun": "2026-10-10T17:39:53Z",
+    "lastOk": "2026-10-10T17:39:53Z",
     "failures": 0,
     "items": 15,
-    "added": 2
+    "added": 4
   },
   "Google Noticias · Comercio exterior Argentina": {
     "ok": true,
-    "lastRun": "2026-10-10T13:41:05Z",
-    "lastOk": "2026-10-10T13:41:05Z",
+    "lastRun": "2026-10-10T17:39:53Z",
+    "lastOk": "2026-10-10T17:39:53Z",
     "failures": 0,
-    "items": 47,
-    "added": 4
+    "items": 42,
+    "added": 3
   },
   "Google Noticias · Aduana e importaciones Argentina": {
     "ok": true,
-    "lastRun": "2026-10-10T13:41:05Z",
-    "lastOk": "2026-10-10T13:41:05Z",
+    "lastRun": "2026-10-10T17:39:53Z",
+    "lastOk": "2026-10-10T17:39:53Z",
     "failures": 0,
-    "items": 45,
-    "added": 0
+    "items": 50,
+    "added": 4
   },
   "Google Noticias · Exportaciones Argentina": {
     "ok": true,
-    "lastRun": "2026-10-10T13:41:05Z",
-    "lastOk": "2026-10-10T13:41:05Z",
+    "lastRun": "2026-10-10T17:39:53Z",
+    "lastOk": "2026-10-10T17:39:53Z",
     "failures": 0,
     "items": 56,
     "added": 4
   },
   "Google Noticias · Mercosur": {
     "ok": true,
-    "lastRun": "2026-10-10T13:41:05Z",
-    "lastOk": "2026-10-10T13:41:05Z",
+    "lastRun": "2026-10-10T17:39:53Z",
+    "lastOk": "2026-10-10T17:39:53Z",
     "failures": 0,
-    "items": 42,
-    "added": 2
+    "items": 41,
+    "added": 1
   },
   "Google Noticias · Aranceles y comercio internacional": {
     "ok": true,
-    "lastRun": "2026-10-10T13:41:05Z",
-    "lastOk": "2026-10-10T13:41:05Z",
+    "lastRun": "2026-10-10T17:39:53Z",
+    "lastOk": "2026-10-10T17:39:53Z",
     "failures": 0,
-    "items": 43,
+    "items": 54,
     "added": 4
   },
   "Google Noticias · Logística y fletes": {
     "ok": true,
-    "lastRun": "2026-10-10T13:41:05Z",
-    "lastOk": "2026-10-10T13:41:05Z",
+    "lastRun": "2026-10-10T17:39:53Z",
+    "lastOk": "2026-10-10T17:39:53Z",
     "failures": 0,
-    "items": 63,
-    "added": 4
+    "items": 56,
+    "added": 3
   }
 }
