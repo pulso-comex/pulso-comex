@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-10T09:42:31Z",
+  "updatedAt": "2026-10-10T13:41:05Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -115,7 +115,7 @@
       "obsDate": "2026-10-09",
       "change": "-0,2% vs. día hábil anterior",
       "trend": "down",
-      "checkedAt": "2026-10-10T09:42:59Z",
+      "checkedAt": "2026-10-10T13:42:01Z",
       "history": [
         [
           "2026-08-31",
@@ -254,7 +254,7 @@
         "date": "2026-10-08",
         "ars": 560000.0
       },
-      "checkedAt": "2026-10-10T09:43:01Z",
+      "checkedAt": "2026-10-10T13:42:03Z",
       "_prev": {
         "date": "2026-10-07",
         "ars": 560000.0
@@ -293,7 +293,7 @@
       "obsDate": "2026-10-06",
       "change": "-0,1% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-10T09:43:02Z",
+      "checkedAt": "2026-10-10T13:42:04Z",
       "history": [
         [
           "2026-08-25",
@@ -432,7 +432,7 @@
         "date": "2026-10-08",
         "ars": 293500.0
       },
-      "checkedAt": "2026-10-10T09:43:01Z",
+      "checkedAt": "2026-10-10T13:42:03Z",
       "_prev": {
         "date": "2026-10-07",
         "ars": 294800.0
@@ -475,7 +475,7 @@
         "date": "2026-10-08",
         "ars": 342700.0
       },
-      "checkedAt": "2026-10-10T09:43:01Z",
+      "checkedAt": "2026-10-10T13:42:03Z",
       "_prev": {
         "date": "2026-10-07",
         "ars": 342300.0
@@ -506,323 +506,254 @@
   ],
   "items": [
     {
-      "id": "arca-rg-5910-trafico-vecinal-fronterizo-tope-150-dolares",
-      "date": "2026-10-09",
-      "datetime": "2026-10-09T11:48:00-03:00",
-      "kind": "noticia",
-      "title": "ARCA fija un tope de USD 150 por día y por poblador en el tráfico vecinal fronterizo y prohíbe sacar granos",
-      "summary": "La Resolución General 5910/2026 precisa que el límite del régimen de exportación para pobladores de frontera se computa por día y por persona, y suma prohibiciones: trigo, soja y maíz en todas sus formas y mercaderías en envases de 10 kg o más. Rige desde el 10 de octubre.",
+      "id": "espana-movimiento-de-carga-agricola-en-puerto-de-las-palmas-aumenta-mas-de-8-en",
+      "datetime": "2026-10-10T13:00:49Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "España: Movimiento de carga agrícola en Puerto de Las Palmas aumenta más de 8% en primer semestre",
+      "summary": "El Puerto de Las Palmas movió 519.866 toneladas de frutas, hortalizas y legumbres en el primer…",
+      "body": [],
+      "keyData": [],
       "topics": [
-        "Argentina",
-        "Aduanas",
-        "Exportaciones",
-        "Regulaciones"
+        "Puertos",
+        "Europa"
       ],
       "countries": [
-        "Argentina",
-        "Bolivia",
-        "Brasil",
-        "Paraguay"
+        "España"
       ],
       "tags": [
-        "ARCA",
-        "Tráfico vecinal fronterizo",
-        "Frontera",
-        "Granos",
-        "Boletín Oficial"
+        "Puertos"
       ],
-      "visual": "customs",
-      "impact": 2,
-      "affectsArgentina": true,
-      "story": "arca-normativa",
-      "argentinaNote": "Afecta la salida de mercadería argentina por los pasos fronterizos bajo el régimen para pobladores de países limítrofes; no cambia las franquicias para compras que los argentinos hacen en Brasil o Paraguay.",
-      "argentinaImpact": {
-        "change": "Desde el 10 de octubre, el tope de USD 150 del tráfico vecinal fronterizo de exportación se computa por día y por poblador, y se prohíbe sacar trigo, soja y maíz y mercadería en envases de 10 kg o más.",
-        "who": "Comercios de localidades de frontera que venden a pobladores de países limítrofes, compradores de esos países y la Aduana en los pasos fronterizos.",
-        "sectors": [
-          "Comercio minorista de frontera",
-          "Granos",
-          "Alimentos"
-        ],
-        "flows": {
-          "importaciones": false,
-          "exportaciones": true,
-          "logistica": false,
-          "aranceles": false
-        }
-      },
-      "body": [
-        "La Agencia de Recaudación y Control Aduanero (ARCA) publicó el viernes 9 de octubre en el Boletín Oficial la Resolución General 5910/2026, que modifica el régimen de tráfico vecinal fronterizo de exportación. Es el esquema que permite a residentes de localidades de frontera de países limítrofes llevarse mercadería argentina para consumo personal, familiar o del hogar. La norma cambia el Anexo IV «A» de la Resolución 2604/1986 de la ex Administración Nacional de Aduanas y entró en vigencia el sábado 10.",
-        "El principal cambio es que el tope de USD 150 pasa a computarse en forma expresa por día y por poblador, sin importar la cantidad, la calidad o la variedad de los artículos. Según Primera Edición, ese monto ya existía desde la Resolución General 1336/2002 de la ex AFIP, y la nueva redacción lo precisa como un límite diario por persona.",
-        "La resolución también amplía la lista de mercaderías excluidas del régimen: se suman el trigo, la soja y el maíz en todas sus formas y los productos en envases de 10 kg o más, o su equivalente en volumen. Se mantienen las prohibiciones para combustibles en bidones o tanques suplementarios; armas, municiones, explosivos, estupefacientes y psicotrópicos no autorizados en el mercado interno, y cualquier bien cuya exportación esté prohibida o suspendida. La Voz de Cataratas aclaró que el límite de 10 kg se refiere al tamaño de cada envase y no a un total por persona.",
-        "ARCA fundamentó la medida en la necesidad de reducir el fraccionamiento de operaciones, su repetición sistemática y el desvío de mercadería hacia circuitos comerciales no autorizados, ya que el Código Aduanero excluye el uso comercial o industrial de este régimen. Para usarlo, el poblador debe acreditar identidad y residencia en una localidad fronteriza y presentar la factura de compra de mercadería de origen nacional."
-      ],
-      "keyData": [
-        [
-          "Norma",
-          "Resolución General ARCA 5910/2026 (BO 9 oct 2026)"
-        ],
-        [
-          "Vigencia",
-          "Desde el 10 de octubre de 2026"
-        ],
-        [
-          "Tope",
-          "USD 150 por día y por poblador"
-        ],
-        [
-          "Nuevas prohibiciones",
-          "Trigo, soja y maíz en todas sus formas; envases de 10 kg o más"
-        ],
-        [
-          "Norma modificada",
-          "Resolución ANA 2604/1986, Anexo IV «A»"
-        ]
-      ],
-      "explainer": {
-        "what": "ARCA estableció que el tope de USD 150 del tráfico vecinal fronterizo de exportación se aplica por día y por poblador, y prohibió sacar por ese régimen trigo, soja, maíz y mercadería en envases de 10 kg o más.",
-        "why": "Busca frenar el fraccionamiento y la repetición de operaciones que desvían mercadería a circuitos comerciales no autorizados, un uso que el Código Aduanero excluye para este régimen.",
-        "who": "Comercios de localidades de frontera, pobladores de países limítrofes que compran en la Argentina y el control aduanero en los pasos fronterizos.",
-        "products": [
-          "Trigo",
-          "Soja",
-          "Maíz",
-          "Mercadería en envases de 10 kg o más",
-          "Combustibles"
-        ]
-      },
-      "sources": [
-        {
-          "name": "Primera Edición",
-          "type": "Medio de comunicación",
-          "url": "https://www.primeraedicion.com.ar/nota/101149770/arca-nuevas-restricciones-trafico-vecinal-fronterizo-misiones/",
-          "primary": true
-        },
-        {
-          "name": "ACONPY (texto de la RG 5910/2026)",
-          "type": "Texto normativo",
-          "url": "https://blog.aconpy.com/2026/10/09/arca-fija-tope-diario-y-suma-prohibiciones-al-trafico-fronterizo/"
-        },
-        {
-          "name": "La Voz de Cataratas",
-          "type": "Medio de comunicación",
-          "url": "https://lavozdecataratas.com/2026/10/10/frontera-desde-hoy-rigen-nuevas-restricciones-para-sacar-mercaderias-de-argentina"
-        }
-      ],
-      "absorbs": [
-        "centro-despachantes-de-aduana-de-la-republica-argentina-modificaciones-al-regime"
-      ]
-    },
-    {
-      "id": "ue-china-entendimiento-hibridos-aranceles-tierras-raras-octubre-2026",
-      "date": "2026-10-09",
-      "datetime": "2026-10-09T10:51:00-03:00",
-      "kind": "noticia",
-      "title": "La UE y China acuerdan moderar las exportaciones chinas de híbridos y bajar aranceles a productos europeos",
-      "summary": "Tras dos días de negociación en Pekín, el comisario Maroš Šefčovič dijo que el entendimiento abre la posibilidad de recortar en más de la mitad las ventas chinas de híbridos a la UE. China facilitará el acceso de bienes europeos por unos € 4.000 millones y las licencias de tierras raras. Los líderes europeos lo evaluarán el 15 y 16 de octubre.",
-      "topics": [
-        "Europa",
-        "China",
-        "Asia",
-        "Aranceles",
-        "Geopolítica y comercio"
-      ],
-      "countries": [
-        "Unión Europea",
-        "China"
-      ],
-      "tags": [
-        "Autos híbridos",
-        "Tierras raras",
-        "Aceite de oliva",
-        "Šefčovič",
-        "Wang Wentao"
-      ],
-      "visual": "treaty",
-      "impact": 2,
+      "visual": "port",
+      "impact": 1,
       "affectsArgentina": false,
-      "body": [
-        "La Unión Europea y China cerraron el 9 de octubre en Pekín la segunda reunión de su mecanismo de consultas sobre comercio e inversión, encabezada por el comisario de Comercio europeo, Maroš Šefčovič, y el ministro de Comercio chino, Wang Wentao. Al cabo de dos días de conversaciones, ambas partes firmaron una declaración conjunta con tres puntos.",
-        "El primero es un entendimiento para moderar las exportaciones chinas de autos híbridos e híbridos enchufables a la UE. Según Šefčovič, abre la perspectiva de recortarlas en más de la mitad, aunque no se informaron el plazo, la base de comparación ni el mecanismo. El Financial Times, citado por CnEVPost, registró que las importaciones europeas de híbridos chinos pasaron de 3.800 unidades en octubre de 2024 a 50.000 en julio de 2026. Para los autos eléctricos a batería, ambas partes seguirán con los compromisos de precios y las revisiones dentro del caso antisubvenciones de la UE.",
-        "El segundo punto es un mejor acceso al mercado chino para productos europeos —desde autopartes hasta aceite de oliva y calzado— con exportaciones que hoy suman casi € 4.000 millones. Según Euronews y Eunews, la Comisión estima un ahorro en aranceles de al menos € 225 millones. Eunews precisó que se trata de rebajas de aranceles de nación más favorecida; CnEVPost, en cambio, indicó que la parte china solo habló de explorar reducciones en el marco de la OMC, sin detallar productos. El tercer punto es que China seguirá facilitando las licencias de exportación de tierras raras e imanes permanentes hacia la UE.",
-        "Šefčovič calificó el resultado como un primer paso y advirtió que la UE usará sus propios instrumentos si el diálogo no da resultados; según Eunews, describió como insostenible un déficit comercial con China de más de € 1.000 millones por día. Los líderes europeos analizarán las soluciones negociadas en el Consejo Europeo del 15 y 16 de octubre, donde se tomará la decisión final, de acuerdo con Eunews."
-      ],
-      "keyData": [
-        [
-          "Híbridos chinos a la UE",
-          "Recorte de más de la mitad, según Šefčovič (sin plazo informado)"
-        ],
-        [
-          "Exportaciones europeas alcanzadas",
-          "Casi € 4.000 millones"
-        ],
-        [
-          "Ahorro arancelario estimado",
-          "Al menos € 225 millones"
-        ],
-        [
-          "Importaciones de híbridos chinos",
-          "3.800 unidades (oct 2024) → 50.000 (jul 2026), según el FT"
-        ],
-        [
-          "Próximo paso",
-          "Consejo Europeo, 15 y 16 de octubre"
-        ]
-      ],
-      "explainer": {
-        "what": "La UE y China firmaron en Pekín una declaración conjunta para moderar las exportaciones chinas de híbridos, mejorar el acceso de productos europeos por casi € 4.000 millones y facilitar las licencias de tierras raras.",
-        "why": "Es el primer resultado concreto del intento europeo de reequilibrar un comercio con China que Šefčovič describió como insostenible, y evita por ahora una escalada de medidas sobre los híbridos.",
-        "who": "Automotrices chinas y europeas, exportadores europeos de autopartes, aceite de oliva y calzado, e industrias que dependen de tierras raras e imanes.",
-        "products": [
-          "Autos híbridos e híbridos enchufables",
-          "Autopartes",
-          "Aceite de oliva",
-          "Calzado",
-          "Tierras raras",
-          "Imanes permanentes"
-        ],
-        "next": "Los líderes de la UE evaluarán las soluciones negociadas en el Consejo Europeo del 15 y 16 de octubre, donde se tomará la decisión final; Šefčovič y Wang Wentao volverán a reunirse a más tardar en enero y hay una tercera ronda prevista para marzo.",
-        "nextSource": {
-          "name": "Eunews",
-          "url": "https://www.eunews.it/en/2026/10/09/eu-and-china-reach-agreement-on-hybrid-cars-sefcovic-exports-from-beijing-will-be-halved/"
-        }
-      },
-      "deadlines": [
-        {
-          "date": "2026-10-15",
-          "label": "Consejo Europeo evalúa el entendimiento UE–China sobre híbridos y aranceles (15 y 16 de octubre)",
-          "url": "https://www.eunews.it/en/2026/10/09/eu-and-china-reach-agreement-on-hybrid-cars-sefcovic-exports-from-beijing-will-be-halved/"
-        }
-      ],
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
       "sources": [
         {
-          "name": "Euronews",
-          "type": "Medio de comunicación",
-          "url": "https://www.euronews.com/2026/10/09/eu-and-china-clinch-deal-over-cars-after-heated-trade-talks-as-brussels-pushes-to-rebalanc",
-          "primary": true
-        },
-        {
-          "name": "Eunews",
-          "type": "Medio especializado",
-          "url": "https://www.eunews.it/en/2026/10/09/eu-and-china-reach-agreement-on-hybrid-cars-sefcovic-exports-from-beijing-will-be-halved/"
-        },
-        {
-          "name": "CnEVPost",
-          "type": "Medio especializado",
-          "url": "https://cnevpost.com/2026/10/09/china-eu-make-progress-hybrid-trade/"
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/espana-movimiento-de-carga-agricola-en-puerto-de-las-palmas-aumenta-mas-de-8-en-primer-semestre/",
+          "primary": true,
+          "author": "Periodista 4"
         }
-      ],
-      "absorbs": [
-        "bruselas-y-pekin-pactan-recortar-un-50-los-aranceles-a-los-coches-hibridos-chino",
-        "ue-y-china-alivian-tension-con-acuerdo-comercial-provisional",
-        "china-y-la-ue-alcanzan-acuerdo-comercial-preliminar",
-        "china-y-la-ue-pactan-moderar-las-exportaciones-de-hibridos-y-rebajar-aranceles-a",
-        "china-y-la-ue-pactan-los-hibridos-y-dejan-abiertos-los-aranceles-a-los-coches-el"
       ]
     },
     {
-      "id": "rigi-los-toldos-ii-este-tecpetrol-gyp-peelp-6432-millones",
-      "date": "2026-10-09",
-      "datetime": "2026-10-09T13:11:00-03:00",
+      "id": "ormuz-petroleros-cruzan-a-ciegas-con-fletes-de-us-1m-dia",
+      "datetime": "2026-10-10T12:54:52Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "Ormuz: petroleros cruzan a ciegas con fletes de US$1M/día",
+      "summary": "Ormuz: cruzar a ciegas, sin luces y con drones sobrevolando Las tarifas de flete para atravesar el estrecho de Ormuz llegaron a un millón de dólares al día,…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística",
+        "Transporte marítimo"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Fletes",
+        "Energía"
+      ],
+      "visual": "tanker",
+      "impact": 1,
+      "affectsArgentina": false,
       "kind": "noticia",
-      "title": "El Gobierno aprueba el RIGI para Los Toldos II Este como proyecto de exportación estratégica, con USD 6.432 millones",
-      "summary": "La Resolución 1771/2026 de Economía aprobó la adhesión de la UTE de Tecpetrol y Gas y Petróleo del Neuquén como Proyecto de Exportación Estratégica de Largo Plazo. Prevé 380 pozos horizontales y una planta para 70.000 barriles de petróleo por día.",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "El Ecosistema Startup",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://ecosistemastartup.com/ormuz-petroleros-cruzan-a-ciegas-con-fletes-de-us1m-dia/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTXMtdGVsUVZsTEI0SmRlMVI3QTYwcTFuVFFLOEpvaG85LTZGVWI5Wlc2enZQdzFuTjd4bVlfOEFkUmFoUWtuVnBIWUp0ZlZLYjNTLWloSTNubW5vYmU3WFNxWnNfX0txN0NkU2o0Y1B6UkZ4TGZ4anJLbTZldHQ2cDRGeDVNZURQdXprcEFvUQ?oc=5"
+    },
+    {
+      "id": "la-agroindustria-argentina-alcanzo-un-record-de-exportaciones-en-los-primeros-nu",
+      "datetime": "2026-10-10T12:16:15Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "La agroindustria argentina alcanzó un récord de exportaciones en los primeros nueve meses de 2026",
+      "summary": "Entre enero y septiembre de 2026, la Argentina exportó cerca de 88,9 millones de toneladas de granos y subproductos, casi un 10% más que en igual período del año pasado. Según un informe de la Bolsa de Comercio de Rosario, el maíz alcanzó niveles récord de embarques, mientras que las harinas de soja y girasol ganaron…",
+      "body": [],
+      "keyData": [],
       "topics": [
         "Argentina",
-        "Exportaciones",
-        "Empresas",
-        "Regulaciones"
+        "Exportaciones"
       ],
       "countries": [
         "Argentina"
       ],
       "tags": [
-        "RIGI",
-        "Petróleo",
-        "Tecpetrol",
-        "Neuquén",
-        "PEELP"
+        "Agro"
       ],
-      "visual": "tanker",
-      "impact": 2,
+      "visual": "customs",
+      "impact": 1,
       "affectsArgentina": true,
-      "argentinaNote": "Es una nueva inversión petrolera de gran escala en Neuquén encuadrada en el RIGI como proyecto orientado a la exportación de largo plazo.",
-      "argentinaImpact": {
-        "change": "El proyecto UT RIGI Los Toldos, en el área Los Toldos II Este (Neuquén), quedó adherido al RIGI como Proyecto de Exportación Estratégica de Largo Plazo, con una inversión prevista de USD 6.432 millones hasta 2054.",
-        "who": "Tecpetrol, Gas y Petróleo del Neuquén, proveedores de la industria petrolera y la cadena de exportación de crudo de la cuenca neuquina.",
-        "sectors": [
-          "Petróleo y gas",
-          "Energía"
-        ],
-        "flows": {
-          "importaciones": false,
-          "exportaciones": true,
-          "logistica": false,
-          "aranceles": false
-        }
-      },
-      "body": [
-        "El Ministerio de Economía publicó el 9 de octubre en el Boletín Oficial la Resolución 1771/2026, que aprueba la adhesión al Régimen de Incentivo para Grandes Inversiones (RIGI) del proyecto «UT RIGI Los Toldos», presentado por la unión transitoria de Tecpetrol y Gas y Petróleo del Neuquén (GyP). El proyecto fue encuadrado como Proyecto de Exportación Estratégica de Largo Plazo (PEELP), una categoría pensada para desarrollos de gran escala orientados a exportar en forma sostenida.",
-        "La inversión total prevista es de USD 6.432 millones en tres etapas: USD 1.635 millones hasta febrero de 2027, USD 1.268 millones entre marzo de 2027 y junio de 2029, y USD 3.529 millones hasta 2054. El área Los Toldos II Este está en el departamento Pehuenches, en Neuquén, y abarca 78 km². La resolución fija el 9 de septiembre de 2026 como fecha de adhesión y el 31 de agosto de 2027 como plazo para completar la inversión mínima exigida.",
-        "El plan contempla 380 pozos horizontales nuevos —16 en la primera etapa, 91 en la segunda y 273 en la tercera— y una planta central de tratamiento con capacidad para 70.000 barriles de petróleo y 3,6 millones de metros cúbicos de gas natural por día, además de oleoducto, gasoducto, obras de agua y energía, caminos y campamentos.",
-        "Según Ámbito, el encuadre como PEELP exige que el proyecto apunte a un mercado mundial en el que la participación argentina sea inferior al 10%; las empresas informaron que la del país en el mercado de crudo ronda el 1%. Ninguna de las fuentes consultadas detalla volúmenes de exportación previstos."
-      ],
-      "keyData": [
-        [
-          "Norma",
-          "Resolución 1771/2026, Ministerio de Economía (BO 9 oct 2026)"
-        ],
-        [
-          "Inversión total",
-          "USD 6.432 millones hasta 2054"
-        ],
-        [
-          "Pozos horizontales",
-          "380 (16 + 91 + 273)"
-        ],
-        [
-          "Planta central",
-          "70.000 barriles de petróleo y 3,6 millones de m³ de gas por día"
-        ],
-        [
-          "Plazo de inversión mínima",
-          "31 de agosto de 2027"
-        ]
-      ],
-      "explainer": {
-        "what": "Economía aprobó por la Resolución 1771/2026 el ingreso al RIGI del proyecto petrolero Los Toldos II Este, de Tecpetrol y GyP, como Proyecto de Exportación Estratégica de Largo Plazo, con USD 6.432 millones de inversión.",
-        "why": "Suma una inversión de gran escala en la cuenca neuquina orientada a exportar crudo en el largo plazo, con una planta para 70.000 barriles diarios.",
-        "who": "Tecpetrol, Gas y Petróleo del Neuquén, proveedores petroleros y la cadena de exportación de crudo de la cuenca neuquina.",
-        "products": [
-          "Petróleo crudo",
-          "Gas natural"
-        ],
-        "next": "La resolución fija el 31 de agosto de 2027 como plazo para completar la inversión mínima exigida por el régimen.",
-        "nextSource": {
-          "name": "Ámbito",
-          "url": "https://www.ambito.com/energia/el-gobierno-aprobo-el-ingreso-al-rigi-del-proyecto-tecpetrol-y-gyp-us6400-millones-n6331891"
-        }
-      },
-      "deadlines": [
-        {
-          "date": "2027-08-31",
-          "label": "Vence el plazo para completar la inversión mínima del RIGI en Los Toldos II Este",
-          "url": "https://www.ambito.com/energia/el-gobierno-aprobo-el-ingreso-al-rigi-del-proyecto-tecpetrol-y-gyp-us6400-millones-n6331891"
-        }
-      ],
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
       "sources": [
         {
-          "name": "MDZ Online",
-          "type": "Medio de comunicación",
-          "url": "https://www.mdzol.com/economia/2026/10/9/aprueban-el-rigi-para-el-proyecto-petrolero-los-toldos-con-inversiones-por-us-6432-millones-1986974.html",
-          "primary": true
-        },
+          "name": "El Litoral",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.ellitoral.com/campolitoral/agroindustria-granos-bolsadecomercioderosario-trigo-exportaciones-girasol-maiz-harinadesoja-marnegro-europa-biocombustibles-harinadegirasol-soja_0_fpyItaI4tt.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQM3ZWTm5iNWY1VFR0aWw4M2cwT05wdjhYNlVFX0JlSGpTOVQ4NGpjNlNGV0VvVVF5MjgtaXhIaTBXdllYdlRzMlJMeTE3NHlSbU9tSTRhY1lPd2lBYUt5aWxocnFqbUViY29odmdfclZPSXJkWm91T1U2NnRyOHJuYjFLYlBadF9UMmVKbmJFMHJjTTBBWGFzLW5SODlPQUF6NGZBMU1BSElpY09zV21KeU1DWkdEM014NWhoal9jZWNtZ05hZVI1dVBoRU1uYVFNQ2xGRlVtY3dobC1DTnYtN19MZzR5THdHQkE5RXZaa2FqQVBYWnBFZmZ1QmRiQThUT0FqMWozUm5SVTJtTUV1REUxN294TkZDUm9lYS1NamYtSzNMQ2Z2MQ?oc=5"
+    },
+    {
+      "id": "el-costo-oculto-de-la-madera-argentina-y-el-desafio-de-recorrer-mas-de-1-000-kil",
+      "datetime": "2026-10-10T12:10:26Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "El costo oculto de la madera argentina y el desafío de recorrer más de 1.000 kilómetros para exportar",
+      "summary": "Argentina tiene materia prima, industria y compradores, pero parte de su competitividad se pierde antes de cruzar la frontera",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
         {
-          "name": "Ámbito",
-          "type": "Medio de comunicación",
-          "url": "https://www.ambito.com/energia/el-gobierno-aprobo-el-ingreso-al-rigi-del-proyecto-tecpetrol-y-gyp-us6400-millones-n6331891"
+          "name": "Infobae",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.infobae.com/revista-chacra/2026/10/10/el-costo-oculto-de-la-madera-argentina-y-el-desafio-de-recorrer-mas-de-1000-kilometros-para-exportar/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQeEVXNC1JWXdjR085OERHZ3ZCNHBObzB4Y2dlcm0xOFZ4RGJpOTZlWFIxUFpkeVFvcWVZalFWbTlZeTAyWmIzQXlIalBEQWpXTERGLXR1QWVNcDljSUFrRjNIWXV2eWlyU2FvWS1JZFJ3cXkweWlqQUlIV0JDNWtnek5xcFZWeERpMEZjbWN0c24yX3NDdDljTy1NTXVOMTAxMk1iMl9lNGplRUVGYUoxY1o3UHVGTm1iZ2x3QUt1V2l1NE4xWmEyYVByTTFEOTIwQjc1S3paMktUNXdiLUtaa0RKYy1PUl9Qd0JtSVVlRnRHbWlHNWNZVzVPcUxEcm8t0gGAAkFVX3lxTFB4RVc0LUlZd2NHTzk4REdndkI0cE5vMHhjZ2VybTE4VnhEYmk5NmVYUjFQWmR5UW9xZVlqUVZtOVl5MDJaYjNBeUhqUERBaldMREYtdHVBZU1wOWNJQWtGM0hZdXZ5aXJTYW9ZLUlkUndxeTB5aWpBSUhXQkM1a2d6TnFwVlZ4RGkwRmNtY3RzbjJfc0N0OWNPLU1NdU4xMDEyTWIyX2U0amVFRUZhSjFjWjdQdUZObWJnbHdBS3VXaXU0TjFaYTJhUHJNMUQ5MjBCNzVLeloyS1Q1d2ItS1prREpjLU9SX1B3Qm1JVWVGdEdtaUc1Y1lXNU9xTERyby0?oc=5"
+    },
+    {
+      "id": "ee-uu-puerto-de-galveston-acuerda-instalacion-modular-de-gnl-en-pelican-island",
+      "datetime": "2026-10-10T12:00:42Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "EE.UU.: Puerto de Galveston acuerda instalación modular de GNL en Pelican Island",
+      "summary": "La Junta Directiva de los Muelles de Galveston aprobó un contrato de arrendamiento y desarrollo con…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos",
+        "Estados Unidos"
+      ],
+      "countries": [
+        "Estados Unidos"
+      ],
+      "tags": [
+        "Energía",
+        "Puertos"
+      ],
+      "visual": "tanker",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/ee-uu-puerto-de-galveston-acuerda-instalacion-modular-de-gnl-en-pelican-island/",
+          "primary": true,
+          "author": "cmeza"
         }
       ]
+    },
+    {
+      "id": "ovoproductos-las-exportaciones-argentinas-superaron-los-us-20-millones-y-marcaro",
+      "datetime": "2026-10-10T11:52:46Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "Ovoproductos: las exportaciones argentinas superaron los US$ 20 millones y marcaron un récord en diez años",
+      "summary": "Las ventas externas de ovoproductos sumaron 2.580 toneladas por US$ 20,23 millones entre enero y agosto de 2026, con un incremento interanual del 18% en valor. La mejora de los precios de exportación impulsó el resultado, que representa el mayor monto para ese período en los últimos diez años.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "El Litoral",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.ellitoral.com/puerto-negocios/ovoproductos-exportaciones-indec-argentina-mercosur-albuminaenpolvo-yema-huevoentero-unioneuropea-influenzaaviar-comercioexterior-preciosinternacionales_0_rcvDWA1JNS.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMitwJBVV95cUxOWGtaLS1IMVlzcVNLM3hUdGpENy1CUmI2R1RmZW1DOUU3dFp0YnRWXzNHS0dRQ1pOX1R4a3B4WXdmVTZRcVN6cFpQRzZaMUlmOXhtWWNCQ1JwT3VEd2hSc2tpa1dGTGJXS18tSm42a3h0NVFMRGlLLWlVcDEwTGZqd3BEVUFaNU01RE5pellITEZhZWl6LVI3R0M5d3RlRndCbHBybVFiNnY4eVFyb25KdkJtSVlrbFZ6V1NDbVBJTWswYm9ncGVsX3RMMHJlRV9vOTVFZlY4eHVXdDNnbnZtUWVVSGhUa0dacnFncTZTcnh6YkpDNWNZRHpLcTItdVBBWnB0SE9Hbno0eGhlZ3hLZVg3VlRQaWVodlpqV3BKV0JFNHpEZUQ1a3dSem1xM2FnT3ptYkQ5TQ?oc=5"
+    },
+    {
+      "id": "cuba-flexibiliza-el-comercio-de-importacion-en-busca-de-dolares",
+      "datetime": "2026-10-10T09:36:58Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "Cuba flexibiliza el comercio de importación en busca de dólares",
+      "summary": "Cuba implementará nuevas normativas para importaciones personales a partir del 12 de octubre, permitiendo formalizar mercancías con carácter comercial…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Uruguay Al Día",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://uruguayaldia.com.uy/cuba-flexibiliza-el-comercio-de-importacion-en-busca-de-dolares/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQYWVwcHZQZ1Z6RTg1THhYWWxiSzZxMDlEMlQxclVxMUlVNlVqTzUwMndZblRRVnh6SUVFTzJlanJyaHBYQWZydjhIMGZnb2JQLXdYUG1YMlhTNzQ3bmgxR2F1YXVWdGxNUWlHa3lRVjBobFNTU3pTWFRrY251UW9kVGZUdVZPMnU2Rm9jSHBCVnViSG9nZ0hJ?oc=5"
     },
     {
       "id": "cra-se-suma-al-control-de-la-hidrovia-y-gana-peso-en-la-logistica-exportadora",
@@ -836,13 +767,16 @@
       "topics": [
         "Exportaciones",
         "Logística",
-        "Transporte marítimo"
+        "Transporte marítimo",
+        "Puertos"
       ],
       "countries": [
         "Argentina"
       ],
-      "tags": [],
-      "visual": "customs",
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
       "impact": 1,
       "affectsArgentina": true,
       "kind": "noticia",
@@ -895,46 +829,6 @@
       ]
     },
     {
-      "id": "bruselas-y-pekin-pactan-recortar-un-50-los-aranceles-a-los-coches-hibridos-chino",
-      "datetime": "2026-10-10T05:20:51Z",
-      "date": "2026-10-10",
-      "firstSeen": "2026-10-10T09:42:31Z",
-      "title": "Bruselas y Pekín pactan recortar un 50% los aranceles a los coches híbridos chinos: golpe a BYD, MG y Omoda",
-      "summary": "El pacto UE-China rebaja la tensión arancelaria y recorta a la mitad las exportaciones de híbridos chinos. BYD, MG y Omoda, las más expuestas.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Aranceles",
-        "China",
-        "Asia",
-        "Europa"
-      ],
-      "countries": [
-        "China",
-        "Unión Europea"
-      ],
-      "tags": [
-        "Aranceles"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
-      "sources": [
-        {
-          "name": "Merca2.es",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://www.merca2.es/2026/10/10/aranceles-coches-hibridos-chinos-ue-china-2470861/",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-10T09:42:31Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYlRUaUZvNV9uRGJWUUszOGRxVTNpRlRNVFR2UER1STlSZGxweFo5NDYzTlVTT2M5amdENjZBSUlodGEzTFBJcFZuaUhDa3kzSGNpaWxIY1dZOEIySXRGVnBfMzJCbTBCRnl1UW5hVHZjWmRya1J2cGFFWnprZHpkeTZ4Y1JBLWIxTmJz?oc=5"
-    },
-    {
       "id": "mercosur-union-europea-el-comercio-ya-reacciona-la-politica-todavia-no",
       "datetime": "2026-10-10T04:19:31Z",
       "date": "2026-10-10",
@@ -944,6 +838,7 @@
       "body": [],
       "keyData": [],
       "topics": [
+        "Geopolítica y comercio",
         "Mercosur",
         "Europa"
       ],
@@ -982,10 +877,13 @@
       "keyData": [],
       "topics": [
         "Aranceles",
-        "Latinoamérica"
+        "Tratados y acuerdos",
+        "Latinoamérica",
+        "Estados Unidos"
       ],
       "countries": [
-        "Colombia"
+        "Colombia",
+        "Estados Unidos"
       ],
       "tags": [
         "Aranceles"
@@ -1051,13 +949,14 @@
       "keyData": [],
       "topics": [
         "Tratados y acuerdos",
-        "Logística"
+        "Logística",
+        "Transporte marítimo"
       ],
       "countries": [
         "Global"
       ],
       "tags": [],
-      "visual": "treaty",
+      "visual": "ship",
       "impact": 1,
       "affectsArgentina": false,
       "kind": "noticia",
@@ -1159,6 +1058,7 @@
       "keyData": [],
       "topics": [
         "Importaciones",
+        "Geopolítica y comercio",
         "Latinoamérica"
       ],
       "countries": [
@@ -1228,6 +1128,7 @@
       "keyData": [],
       "topics": [
         "Aranceles",
+        "Tratados y acuerdos",
         "Latinoamérica",
         "Estados Unidos"
       ],
@@ -1252,10 +1153,24 @@
           "url": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/09/chile-negocia-rebaja-de-aranceles-con-eeuu-en-medio-de-nueva-polemica-por-dichos-de-embajador-judd.shtml",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "Canal 9 Bío Bío Televisión",
+          "type": "También publicó esta noticia",
+          "url": "https://www.canal9.cl/episodios/2026/10/10/chile-negocia-rebaja-de-aranceles-con-eeuu-en-medio-de-nueva-polemica-por-dichos-de-embajador-judd",
+          "alsoIn": true,
+          "title": "Chile busca reducir aranceles con EE. UU. en medio de controversia por declaraciones del embajador Judd"
         }
       ],
       "gnTried": "2026-10-10T09:42:31Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQNFA5cmdXQzY1dk1FSWlRZGhmTGoxWGxXRk1VV01LZHNtUlE5WkJ6SjlSWThtZU9POE1DaUlXUmVRWlhQLXU3RmRmcG5qa01HcnpfYlJ0WmxEYWdGSnd6V2FnY0JPc3hwNzZna3puUldQcFN1OGt6Tl9KMjY0c1o0Tm9SbEswT191NHF2LVdNUEpwdnIyLWVURFp6b1RxM1NhX0tqVjZaSjVZdjZMcjBFWDczTnpTMHlTT3hmQURuSDlHT1F3UUhVaEhjTUs4QUxwQ2hGNEktT05nWjVxajg2a3hsY1BERGctVFE0ZXViaUhtMlFjYzV2NFVR?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQNFA5cmdXQzY1dk1FSWlRZGhmTGoxWGxXRk1VV01LZHNtUlE5WkJ6SjlSWThtZU9POE1DaUlXUmVRWlhQLXU3RmRmcG5qa01HcnpfYlJ0WmxEYWdGSnd6V2FnY0JPc3hwNzZna3puUldQcFN1OGt6Tl9KMjY0c1o0Tm9SbEswT191NHF2LVdNUEpwdnIyLWVURFp6b1RxM1NhX0tqVjZaSjVZdjZMcjBFWDczTnpTMHlTT3hmQURuSDlHT1F3UUhVaEhjTUs4QUxwQ2hGNEktT05nWjVxajg2a3hsY1BERGctVFE0ZXViaUhtMlFjYzV2NFVR?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTWloS21EcWRIdHdzTm9mSWltNGdHaTdCQThTTHJTdThJSVdlRzRMRGxjVEpHYU5HZS0xd21hX3FGWGVoWFlpUjh6dkU0WHZibGRldmh6dkxwREMtcm5KYnZyZGVFU01wU25WRXJ0ZmlOTFFrZEFDZzVXUW9DbUY2dTN2LVdPdWx3STBpbXJfMWFlRGxEMVhaRzRpRXRsdEd2X0VRMDNZdVdRcHFjVi01TjdUQVU5RFZaQW4ySm1GQ2gxbmJTa1NVUmhLcnFmUXltczJfSm1OazU",
+        "https://www.canal9.cl/episodios/2026/10/10/chile-negocia-rebaja-de-aranceles-con-eeuu-en-medio-de-nueva-polemica-por-dichos-de-embajador-judd"
+      ],
+      "mergedIds": [
+        "chile-busca-reducir-aranceles-con-ee-uu-en-medio-de-controversia-por-declaracion"
+      ]
     },
     {
       "id": "dinamarca-one-inicia-operaciones-con-base-en-puerto-de-kalundborg",
@@ -1371,20 +1286,39 @@
           "url": "https://www.infobae.com/america/agencias/2026/10/10/gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exportaciones/",
           "alsoIn": true,
           "title": "Gobierno de Milei anuncia 'Semana de Carne Argentina' en Israel para sumar exportaciones"
+        },
+        {
+          "name": "www.abc.com.py",
+          "type": "También publicó esta noticia",
+          "url": "https://www.abc.com.py/internacionales/2026/10/09/gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exportaciones/",
+          "alsoIn": true,
+          "title": "Gobierno de Milei anuncia 'Semana de Carne Argentina' en Israel para sumar exportaciones"
+        },
+        {
+          "name": "Neuquen Post",
+          "type": "También publicó esta noticia",
+          "url": "https://neuquenpost.com/karina-milei-se-reunio-con-la-embajadora-israeli-para-impulsar-las-exportaciones-y-anuncio-la-semana-de-la-carne-argentina-en-israel/",
+          "alsoIn": true,
+          "title": "Karina Milei se reunió con la embajadora israelí para impulsar las exportaciones y anunció la “Semana de la Carne Argentina en Israel”"
         }
       ],
       "gnTried": "2026-10-10T01:42:55Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeGJnV183eFdvWDdPODNQeE43LUFad1ZxVmZFa2g2N3kwTWF4QWtJLXRUa0ZUWHZGNjE1QWREcm5JSlRKRGZMSWI3YTZmSkJmR3hVa1BqWFhaOXdLSnc3bmtoc0RWVzY2cmN5NTkyQ21La2ozRjN5NGVzTm5rZzFmblhBX2hHc3l6VjNwbmVHV3dlRnEzMkxfVVlkMUYzX05OM243ZU9lTlE2VmdSQXo2cFNJR2NGdVdBNy03Rjd6cm5mWkVHdW5OVl9JN3BZdVZo?oc=5",
       "aliasUrls": [
+        "https://neuquenpost.com/karina-milei-se-reunio-con-la-embajadora-israeli-para-impulsar-las-exportaciones-y-anuncio-la-semana-de-la-carne-argentina-en-israel",
         "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeGJnV183eFdvWDdPODNQeE43LUFad1ZxVmZFa2g2N3kwTWF4QWtJLXRUa0ZUWHZGNjE1QWREcm5JSlRKRGZMSWI3YTZmSkJmR3hVa1BqWFhaOXdLSnc3bmtoc0RWVzY2cmN5NTkyQ21La2ozRjN5NGVzTm5rZzFmblhBX2hHc3l6VjNwbmVHV3dlRnEzMkxfVVlkMUYzX05OM243ZU9lTlE2VmdSQXo2cFNJR2NGdVdBNy03Rjd6cm5mWkVHdW5OVl9JN3BZdVZo0gHWAUFVX3lxTE5iWEFkX3hTOGJnblpuWkFZSGhERzlUSEhxWHozVjZFSGRsMlotTE5DUF9QSHdObnhxVUx0N0J3SjJpeV9YQ3VVRmd6NDU5TllpS1ZsZjlYRG14M3VjZ0xsT3BYRVNwVjk0ekN3RlRvdlRJdF80UG5wU0RfbXJFTlNtZFhTZ2U4TF9odG90SlpkMHRfMS1ONTRxNzZVQ2owNkxYdEtsRDZSblR1N1ZjTllCdXhlVXpiWE1ZN2lTbmNkM2xpbWE5NTBCLVhWMXBmcTFQNTVfbXc",
         "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSXR1WTBmUThkWmJwR3g0ZmtOc0M4cEZkYXhjSWx6YWxKUlFoeFI2UFZzNTNVSHg4R1ZQR0JRS3hVeXlxV2V1V3VmTFRRejVKTVN1MThHUjJfUnpsOTR5Zm5tQ2VmcEFGZFVoNzI1WjdIbjMwa1RfVWo3NFJNMnZ0ZkFySGhHRWpBQ2dCMW9heUd0TXBQMEEwanIyOTI1bTBkN1VsZTRNTU9jdWVabTVKeHBDMHF4ZFdaZFAzM3JUd29ZMFZhdmtFLTFPYzZnQllIenfSAeYBQVVfeXFMUEc4LVZVOW5CYmdGbU4zZEdoZmxXOUVLMkI4LTZQazdHdjFNS3l3emZtVi1aSUJhV1dPbmxfa19BSWctY2p0Vk10NFZnanRjbURsc2pSOTF1NURBX1NFYW1sTmR5MFcxSW9LSmhRN0FOY3drTlhqWUt5YU5iMWI0NllHZDFENTlEcmdkY1JQaXdrZUZjTHY0cnRvN3ZKaHU2aUUtcHBGRlBPWjBlTkJhY0V0MHU3YndDbGkyblJpbWVDRnZ4Wm1LMW5VYnltd2dodGwyeUhIUUZXOTd0cm5CdVhSOWtxVlE",
         "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPalZta1pZTklsLUd2ZzRaNHAyZWdQdm5MeDZZbm9xOTU0RDZEUDRnY3I2cFJ3MTJiVUZndVFKWGFWdmZsYU04Y0RUYmdKOHN4TTlIVFpNcGRuNW5oNkFneTRhRmNIRFJMYmQxY016alJPTXNMREYyV0JXbktncDdYR1MxdVFTUnhBOWFkdzRxWFdpaGNBVm9JeFhWQUE0V2ltRTdaRDNXUWxVMGNHdTlicjlRTVltcThONXdreWdMTm51THYyWlQ4Z0xtZkJRV1ZfLUNxWVN30gHwAUFVX3lxTE1GREVUM0FPcHpScl95Z3lqVXJQNzhraWNRWWV0c28zMWxTZGtVZWFlbXFzaHc1eENRSGpHZ1FRV0ZiU09OcmVqakUwVDJyRXdLakVtM2FXRkhWOEpLZmNqUFRYTXMwWERURTBLcXNlTXJ5MXVOMmtFdS1zRF96Z25oQzNvZEZOckZVREpPWEFWbkZDbmNNaXg2QXFDMjZxSXpsOFEtUkxvQ1luMjlnMFA0ZHpXYk52aVJTU21vNTJfdmNXeHR0eWgxTXBTMFhHYVpNZUs2YU5aQmNqeC1xam5RS0V1bzRHM3hoYWd4a2N4MA",
+        "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQRTNNTWo0T05MX0Y3RWMwY2c4aFdMZXNHb29heGZwdDEyUEVLbDJwNXYwRDdhRkk3bENsUFhHRW0tSWVsZkFjQlFpaUZ1WXY1bWdoRHdYV19MNkI0aG56RDZvRkQ1UkxheXQ5eC1CYlFNZW1JT0hJa3JDS1hKeVkyOC05SEFYZ0tZTWtKVFFfMzZUbnZFUGgtQm9wR0Q4bUZwQ2FVamg0dDJZcThaMGtUMi1POVJXX2VoWk9OcU1fSUtDNWlEVy1fcjlHeXpzNjJfVEd5MG00bWtCXzFfWkFiaFItWkF5VW8",
+        "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQaDA2THhxZjBOVHcwRzlTd0YybTJkSDZlTmZFTVFpN3cwNlExaTBKSzJkRklyRWM1b3hlOGZiVEdFdzBBYVZoYWRKM2gyZXdXRkJDbGJXc1ZaX2YteHAzd2plTnBzMGszZkVUVGhmeHhqZTR4S19nQnNlZVg4ZHUtTnpRODZ1Q0pTcEVvMVpERENTQ0pVNWZlTTJTeTBZYkIybEFxLW9rZkZZZkVzWmpZT09ZSTRDRXVWNUgxYTdGWmkwLS1sVTlUVHZPZHdSQ1JDaEQxbkxvWWE0TE5PZjlYdEFNcWh3Ml9sRUotT0l3",
         "https://tn.com.ar/politica/2026/10/09/el-gobierno-busca-ampliar-las-exportaciones-de-carne-a-israel-y-avanzar-en-la-cooperacion-militar",
+        "https://www.abc.com.py/internacionales/2026/10/09/gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exportaciones",
         "https://www.infobae.com/america/agencias/2026/10/10/gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exportaciones"
       ],
       "mergedIds": [
         "el-gobierno-busca-ampliar-las-exportaciones-de-carne-a-israel-y-avanzar-en-la-co",
-        "gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exporta"
+        "gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exporta",
+        "karina-milei-se-reunio-con-la-embajadora-israeli-para-impulsar-las-exportaciones"
       ]
     },
     {
@@ -1404,7 +1338,9 @@
         "Argentina",
         "Israel"
       ],
-      "tags": [],
+      "tags": [
+        "Carne"
+      ],
       "visual": "customs",
       "impact": 1,
       "affectsArgentina": true,
@@ -1577,6 +1513,13 @@
           "url": "https://www.vietnam.vn/es/my-ap-dat-trung-phat-moi-nham-vao-mang-luoi-van-chuyen-dau-cua-iran",
           "alsoIn": true,
           "title": "Estados Unidos impone nuevas sanciones contra la red de transporte marítimo de petróleo de Irán."
+        },
+        {
+          "name": "شبكة تواصل الإخبارية",
+          "type": "También publicó esta noticia",
+          "url": "https://twaslnews1.twaslnews.com/5763767/",
+          "alsoIn": true,
+          "title": "Estados Unidos impone nuevas sanciones contra la red de transporte marítimo de petróleo de Irán."
         }
       ],
       "mergedIds": [
@@ -1588,52 +1531,12 @@
         "https://flipr.com.ar/nacionales/ultimo-momento/infobae/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran",
         "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQXFJSTl0bjJWVW54QkhiYzQ5aWs0Rmx2azFpVlFOc1Y0eWFhSDZwVFROSEgxbGJTXzY5WXFndXMxTEJhTk5RVUVfbVJNU2wwUG9TNFphSnNNS1RNSU9lSlZhMkpDNDMwTHZjcjZiZ213STFZcEg5dVNvdFhKX2VFbno2SzlydzI5ZTZSbHhOTWxjLVlzY2ZEMTVXQjJtM1N0QUV5OFpKUjYzcTBtZzlQaFViUVQtZmpoN1BsNDVGMjJtejFjVndLS2hMbzloUU45R0lzV3B1SEFUZWRuWmZLd1VtNUJPd9IBgAJBVV95cUxQS3o2eURIM1FzWUZCVEFfekNORDhPZ2ZMaTR3dThXc00yYzZzRC03QXk4bncxVy1Nc09palcycHREbWJOOXAxY29PMVQzV21TdGhuSWoxWmlNbUhVeHpyUDctSTVqWWJWbVZEYUQxSTBpT1YwTFFSNk4tQjVkNHNJa01McDhVQ3A3emxVUmV1M29udHVmbUM0S1hlZFYxT0xtWWxab080OHBpamZjTzg5aGpsekxzRzJBSXIxT2c1bzZtbV80RS1raThQZjAtTEc0VnYwU3lsSktkYnU0SXBJTllvWm50LVU5VkJFV0d5cWo3aXVvaGV4QWtWTFVCa2lv",
         "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPM2hDODdZb2JuWVg0T29QQW1jbmloQVJfZ3Z2ZWhXYnlxQjdqT3ROTzFXZUFqb29yd24yRWwwZk1sSF82N05sbFluZ1hVNXdERUpLNVFITVM4ekwyVjhJeHNBdXBvT1hwQmVvT1FxYmJBVlJ1cThHSGMzNnhDRXBIb2ZWYlo4SFpLZVpwdFRSejR5U1VDM0Iyd0QzTm5XU3I0VzY5elpMdERvZXFoMlNJYWMzdUZoRUNVejNmQjcyckF5SU5tckdHMEk4Mnh1RjJEbGliTEJoVkxaMnkzSDA3aHIzMjZnSURUdU1iMWpn",
+        "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1nZWptTmNCWi1WTU5UcEhJS1oyWm9Tb1pXdWRDOWtqTEJkSjZnZEVmWVF4UHNLdnZUMjdvVHhONE4zWGt4N0xILV9nVGZzS1lNSVE4",
         "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeTE4UDM5UEYwbWg2UzkxdWdrTUdRNWF2RmpxUVdSS0t0YWZiLVhVODJaRDBsbkJvdERZM1ExNkpndGxvQk0tTUI5WkplbWZiVkc0YUNQb1R3V3A0dnJDUHJVQ0NKR0dLSUQzM2FMX2ZNaHFEbUFiejZ3QmRKOE1LZk5vNGJwdkR1T2dpcVFsSnpqZFVxX1V6MA",
+        "https://twaslnews1.twaslnews.com/5763767",
         "https://www.infobae.com/america/mundo/2026/10/09/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran",
         "https://www.vietnam.vn/es/my-ap-dat-trung-phat-moi-nham-vao-mang-luoi-van-chuyen-dau-cua-iran"
       ]
-    },
-    {
-      "id": "ue-y-china-alivian-tension-con-acuerdo-comercial-provisional",
-      "datetime": "2026-10-09T22:00:33Z",
-      "date": "2026-10-09",
-      "firstSeen": "2026-10-10T01:42:55Z",
-      "title": "UE y China alivian tensión con acuerdo comercial provisional",
-      "summary": "El pacto entre ambas potencias contempla la reducción de aranceles para determinados productos europeos.",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Aranceles",
-        "Tratados y acuerdos",
-        "China",
-        "Asia",
-        "Europa"
-      ],
-      "countries": [
-        "China",
-        "Unión Europea"
-      ],
-      "tags": [
-        "Aranceles",
-        "China"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
-      "sources": [
-        {
-          "name": "sipse.com",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://sipse.com/mundo/ue-y-china-alivian-tension-con-acuerdo-comercial-provisional-516094.html",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-10T01:42:55Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMlNkWmVxcF9ZQVU0SVhrYmhUSmpqaDJ4QTlrV1FGQy16blhhUjh4ODJvTHprUjdnNVNPLUp4S0NCVDE3cUJKSjFTd21vSnhxcWV1R0l4ZUltM1lxUng2OE41cWR1VDQtSWp4aVNCZmxkRjdWVm5wWFZLNnhiMDlkM0xUVzF3Z0JWa0oxcXFicEdWYngxYjQ0NGltLXHSAaIBQVVfeXFMT0ljdGZHVDRvZFEySGYtRmpVTmZGYnNCM1VPYjZndTlJeTlDbGZQRnlFMFdJeUpfQ3MzZ0I4RXNuNjVJQ1pGVWNxWFN4LXNnTWJiVTFrRzFsVEdfOV8xcE1oc2d6VXlOTXNjQVdpcThKRWhOVGxiWE1aeFBPLWZxSU1zelBRYWM2Z2p0cGJfYzNUMW9USHZieGJlcVltLWVQUk93?oc=5"
     },
     {
       "id": "trump-afirma-que-rusia-suministrara-300-000-toneladas-de-diesel-a-mercados-inter",
@@ -1670,48 +1573,6 @@
           "author": "Luis Alonso"
         }
       ]
-    },
-    {
-      "id": "china-y-la-ue-alcanzan-acuerdo-comercial-preliminar",
-      "datetime": "2026-10-09T21:25:37Z",
-      "date": "2026-10-09",
-      "firstSeen": "2026-10-09T21:42:30Z",
-      "title": "China y la UE alcanzan acuerdo comercial preliminar",
-      "summary": "El entendimiento contempla posibles reducciones arancelarias para productos europeos y medidas para estabilizar el suministro de tierras raras",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Aranceles",
-        "Tratados y acuerdos",
-        "China",
-        "Asia",
-        "Europa"
-      ],
-      "countries": [
-        "China",
-        "Unión Europea"
-      ],
-      "tags": [
-        "Aranceles",
-        "China"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
-      "sources": [
-        {
-          "name": "El Horizonte",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://www.elhorizonte.mx/finanzas/china-y-la-ue-alcanzan-acuerdo-comercial-preliminar/5460996518",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-09T21:42:30Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNN0pKREhYZFpvcFltamxlbXJSNjNFaDBJRE1CbjVWMVVDZmRiRnBVWnZITHdXaFUyOFpFSVJ2NTRpYV9vLWNCSllaZzItZUU1cGZqSFlNSTUwUjBpXzNJNVNiRkhGLUxleW9iS2xGY29ZRUNJaERRQU5zWXFacDRMQXNXaFRqS0FvU2FOVTl2OEh6VXRHSURoUHNYNFZGYnc?oc=5"
     },
     {
       "id": "municipalidad-de-mejillones-llama-a-evacuar-sectores-bonanza-y-barrio-industrial",
@@ -1984,49 +1845,6 @@
       ]
     },
     {
-      "id": "china-y-la-ue-pactan-moderar-las-exportaciones-de-hibridos-y-rebajar-aranceles-a",
-      "datetime": "2026-10-09T19:50:12Z",
-      "date": "2026-10-09",
-      "firstSeen": "2026-10-10T01:42:55Z",
-      "title": "China y la UE pactan moderar las exportaciones de híbridos y rebajar aranceles al aceite de oliva",
-      "summary": "China y la Unión Europea (UE) han alcanzado un entendimiento para moderar las exportaciones chinas de vehículos híbridos e híbridos enchufables al mercado",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Exportaciones",
-        "Aranceles",
-        "China",
-        "Asia",
-        "Europa"
-      ],
-      "countries": [
-        "China",
-        "Unión Europea"
-      ],
-      "tags": [
-        "Autos",
-        "Aranceles",
-        "China"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aranceles y comercio internacional",
-      "sources": [
-        {
-          "name": "El Independiente",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://www.elindependiente.com/economia/2026/10/09/china-y-la-ue-pactan-moderar-las-exportaciones-de-hibridos-y-rebajar-aranceles-al-aceite-de-oliva/",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-10T01:42:55Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQcW92Q3lEc3dXbEtVdFkxM2tnbnlTXzNtLXQyd014OVgyMzE2aF9PUjRzZUFsQTVCcVNBNWNWYmQwYVlWSDk3d3I4RWxSVUdXVHA0TFJIQ2tHLW02d2NDcG5JZlZIRVhuS3J5clBPaGRfbzA2ZklIWnNzLVM0cXZUMXF6d0NsY254VVJVOXNYbjhmcDV2SGJ2eVl5RkVBdkxzZ25Cd0wtVTNMT01NbTZUcWZJc0VCLVcxVW5aYVpUSHR1MmNmOExVYnhpdHJ2QnF1a25tbWVGdFhWLVhZcVQ1REVacXnSAeoBQVVfeXFMTndfcl9fTHpVNkh2RV9KaTVRckRrbXhiakdMREtnS3llUUItLWVtZnQzR0pSX3ZvQzg5RFV5Skd5bzJWSG5oQzB4RnJuU0FMS2RndDdTa2ZEa216UEs3NV9OTmpZNlNqNkZvdDJyTG9jUW9MMVJGSjZnYkI0T2NCdFFRQmxzX2FoRHBUVG1yaFVmQldvOGwzY0dyQXpULThXc0FHTHZ6aDRGSld4amN5QVJ2NGNtMlZfN1JQZVY1M0ZhV1JBaDRGTU50ekZHUF9vcGZaYWI2T0d5NjNKdFhUVVE5NUxtQmJ1MHBR?oc=5"
-    },
-    {
       "id": "tdlc-revisara-condiciones-de-competencia-para-operacion-conjunta-de-frentes-de-a",
       "datetime": "2026-10-09T19:30:00Z",
       "date": "2026-10-09",
@@ -2173,27 +1991,26 @@
       ]
     },
     {
-      "id": "china-y-la-ue-pactan-los-hibridos-y-dejan-abiertos-los-aranceles-a-los-coches-el",
-      "datetime": "2026-10-09T17:58:26Z",
+      "id": "acuerdo-comercial-la-ue-pacta-con-china-reducir-su-exportacion-de-coches-hibrido",
+      "datetime": "2026-10-09T17:56:00Z",
       "date": "2026-10-09",
-      "firstSeen": "2026-10-09T21:42:30Z",
-      "title": "China y la UE pactan los híbridos y dejan abiertos los aranceles a los coches eléctricos que amenazan a España",
-      "summary": "China y la UE pactan sobre los híbridos pero dejan abiertos los aranceles a los coches eléctricos que amenazan a la industria española.",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "acuerdo comercial: La UE pacta con China reducir su exportación de coches híbridos",
+      "summary": "Pekín reducirá aranceles al aceite de oliva y el calzado europeo y aumentará la venta de productos sanitarios en Europa",
       "body": [],
       "keyData": [],
       "topics": [
-        "Aranceles",
+        "Exportaciones",
+        "Tratados y acuerdos",
         "China",
         "Asia",
         "Europa"
       ],
       "countries": [
         "China",
-        "Unión Europea",
-        "España"
+        "Unión Europea"
       ],
       "tags": [
-        "Aranceles",
         "China"
       ],
       "visual": "customs",
@@ -2204,67 +2021,15 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "MONCLOA.COM",
+          "name": "La Región",
           "type": "Medio · vía Google Noticias",
-          "url": "https://www.moncloa.com/2026/10/09/coches-electricos-china-ue-aranceles-3445315/",
+          "url": "https://www.laregion.es/lri/empresas/ue-pacta-china-reducir-exportacion-hibridos_1_20261009-4446230.html",
           "primary": true,
           "author": ""
         }
       ],
-      "gnTried": "2026-10-09T21:42:30Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQblphdEpsVXlIWkJ3YkkyN3l0RldkTFp5cGdFOE10U2ZoREtWNzBKZG9QREhkQ1ZjaHNwVEtKdjNxS1lydXMzWGw2TDNncVd4clBaZTFKNENPc2NxNGpHN0pvVEJYNkJSR1hMQUJiZWNFVndtdlRHOXlHbGVHSDNDcnBEaFJ4Sm8?oc=5"
-    },
-    {
-      "id": "centro-despachantes-de-aduana-de-la-republica-argentina-modificaciones-al-regime",
-      "datetime": "2026-10-09T17:12:45Z",
-      "date": "2026-10-09",
-      "firstSeen": "2026-10-09T21:42:30Z",
-      "title": "Centro Despachantes de Aduana de la Republica Argentina - Modificaciones al Régimen de Tráfico Vecinal Fronterizo",
-      "summary": "Este viernes 09 de octubre del 2026, la Agencia de Recaudación y Control Aduanero (ARCA) publicó la Resolución General N° 5910, con el fin de intensificar los límites del Régimen de Tráfico Vecinal Fronterizo, dotando al servicio aduanero de herramientas más claras de fiscalización. A tal efecto, se fija un tope de…",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina",
-        "Aduanas",
-        "Regulaciones"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [
-        "ARCA"
-      ],
-      "visual": "customs",
-      "impact": 2,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Aduana e importaciones Argentina",
-      "sources": [
-        {
-          "name": "Centro Despachantes de Aduana (CDA)",
-          "type": "Medio · vía Google Noticias",
-          "url": "http://www.cda.org.ar/detalle_noticia.php?id=42817",
-          "primary": true,
-          "author": ""
-        },
-        {
-          "name": "Centro Despachantes de Aduana (CDA)",
-          "type": "También publicó esta noticia",
-          "url": "http://www.cda.org.ar/detalle_noticia.php?id=42818",
-          "alsoIn": true,
-          "title": "Centro Despachantes de Aduana de la Republica Argentina - Invitación - Reunión de Comisión Directiva"
-        }
-      ],
-      "gnTried": "2026-10-09T21:42:30Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBXa2FKdmpMZmlxVmIyS3NZLUxFZEtEMlNtYjU4c202WHBTOF9CREdYdGM2cG14UmtWOW5YUk42eW1SZ2F5dTJDa3FQaG1GRkxpQno0UngwZnZfN2xIa0FB?oc=5",
-      "aliasUrls": [
-        "http://www.cda.org.ar/detalle_noticia.php?id=42818",
-        "https://news.google.com/rss/articles/CBMiX0FVX3lxTE81R3JYRFZybmpLMFdaNjhuNmlRQnd4NjlFdlY0RXctaE5qdEhMYmY3bV9tWmtFbW0xYmNmWmZKRnJnbjVmR3g4eFptV1diTW5zU1NoSF9OWnJjZFYtSGNV"
-      ],
-      "mergedIds": [
-        "centro-despachantes-de-aduana-de-la-republica-argentina-invitacion-reunion-de-co"
-      ]
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeVNMaXByQzVteExCMWt3TnNURjFLVXN6SldjeFRhd2tMSTNwNmhadXcxVFd4Um9ZQXhvcEZDNEJDQ1V6RlVsd2hTLUJac2Z3SUpfVXctYmc4QTZDeWEyUlhVNXBzMVpGWk1FME9SS1FiT2xkLUpNZnJCQVF4RHdxZEFEY0ZZY2JFZ2NRMzE4ejAwX1VzX1o3WmNUM2JFSzZpMERFYU5aTQ?oc=5"
     },
     {
       "id": "demanda-global-del-sector-portacontenedores-crece-un-3-8-y-el-trafico-transpacif",
@@ -2356,11 +2121,11 @@
       ]
     },
     {
-      "id": "futuros-de-aceite-de-palma-de-malasia-caen-tras-no-eximir-aranceles",
-      "datetime": "2026-10-09T16:49:27Z",
+      "id": "los-futuros-del-aceite-de-palma-de-malasia-caen-tras-no-eximir-aranceles",
+      "datetime": "2026-10-09T16:48:00Z",
       "date": "2026-10-09",
-      "firstSeen": "2026-10-09T17:42:06Z",
-      "title": "Futuros de aceite de palma de Malasia caen tras no eximir aranceles",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "Los futuros del aceite de palma de Malasia caen tras no eximir aranceles",
       "summary": "",
       "body": [],
       "keyData": [],
@@ -2382,15 +2147,69 @@
       "feed": "Google Noticias · Aranceles y comercio internacional",
       "sources": [
         {
-          "name": "Investing.com México - Finanzas, Bolsa y Forex",
+          "name": "Investing.com España",
           "type": "Medio · vía Google Noticias",
+          "url": "https://es.investing.com/news/commodities-news/los-futuros-del-aceite-de-palma-de-malasia-caen-tras-no-eximir-aranceles-93CH-3868475",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "Investing.com México - Finanzas, Bolsa y Forex",
+          "type": "También publicó esta noticia",
           "url": "https://mx.investing.com/news/commodities-news/futuros-de-aceite-de-palma-de-malasia-caen-tras-no-eximir-aranceles-93CH-3793552",
+          "alsoIn": true,
+          "title": "Futuros de aceite de palma de Malasia caen tras no eximir aranceles"
+        }
+      ],
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNOTBUcTItMDVDaXBfNVBMRzlPeHBGa1BjVFFsNFNtQldqa3hQdENyeTlqVkRnVkVMWUpjNXozaTh3Z0VpRFdMbU5wcFVYbjNFRU1nWkdyLXRJMHBROUJZWnI1cUhGNDROVl9fVXlScDBVcXdJOHk1QnlEYmgxTms3RzFOMUZNVkxGaXRHb2FPOHhSYmFITk5CNWNPV2JqTkF6a0ZOVnQzbnFGbmNvbV9BUlhZRnh2N2Z1ZFJUTjNoajZyMW5pa3p1OHhIc1M?oc=5",
+      "aliasUrls": [
+        "https://mx.investing.com/news/commodities-news/futuros-de-aceite-de-palma-de-malasia-caen-tras-no-eximir-aranceles-93CH-3793552",
+        "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSmVrUWVJTVZ2ZzFYalVtSWYxdGc1N0xya19IdnZtbGtiamUzLWlSekItNDR2TTBqMW5QZGtCbHBRb054WkVoUDV0YzczVXFCSTBudTlyY1BKajdJTTNkUjVKSTF1STNjanAxd2k3eUNaTkdvbDZFVWMxeW1jRFBIc3pDWl9XT054Wkk5NnVMTkg2VE1tVW1XN3lHbGQ2elJRZVl6SEMwT08zenVacFc5dlgxbUF6SS1LX0JYZV9qSUl0bVNCMEE"
+      ],
+      "mergedIds": [
+        "futuros-de-aceite-de-palma-de-malasia-caen-tras-no-eximir-aranceles"
+      ]
+    },
+    {
+      "id": "la-ue-y-china-logran-acuerdo-comercial-provisional-dice-enviado-europeo",
+      "datetime": "2026-10-09T16:43:05Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "La UE y China logran acuerdo comercial provisional, dice enviado europeo",
+      "summary": "HONG KONG (AP) — Los principales enviados comerciales de China y la Unión Europea acordaron el viernes un amplio acuerdo inicial tras dos días de conversaciones destinadas a calmar las crecientes tensiones por los desequilibrios comerciales, manifestó el comisario de Comercio de la UE el viernes.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "China",
+        "Asia",
+        "Europa"
+      ],
+      "countries": [
+        "China",
+        "Unión Europea"
+      ],
+      "tags": [
+        "China"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "América TeVé",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.americateve.com/la-ue-y-china-logran-acuerdo-comercial-provisional-dice-enviado-europeo-n5464071",
           "primary": true,
           "author": ""
         }
       ],
-      "gnTried": "2026-10-09T17:42:06Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSmVrUWVJTVZ2ZzFYalVtSWYxdGc1N0xya19IdnZtbGtiamUzLWlSekItNDR2TTBqMW5QZGtCbHBRb054WkVoUDV0YzczVXFCSTBudTlyY1BKajdJTTNkUjVKSTF1STNjanAxd2k3eUNaTkdvbDZFVWMxeW1jRFBIc3pDWl9XT054Wkk5NnVMTkg2VE1tVW1XN3lHbGQ2elJRZVl6SEMwT08zenVacFc5dlgxbUF6SS1LX0JYZV9qSUl0bVNCMEE?oc=5"
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObzNxZEhlYzM0bVpYRnJUVUZCZXl2T1hvVnptbndYdVRHVTVoVmpNVm5DcEF5Ty0zU09vY0ZyYWE1b2R0Z3FBc0t4RmVxbTl4NF93ZzVKaE1na2w1ejd1bnRiSzFGcEhOcm9vX19KdzhwZnJlVThnc1VKNDIteXprUjEwajNWcmwtejlmV181YjFkRnRWZWtvRDRuSUtESElwcC1LVG5IQTQyVjdmclJFUHdR0gGyAUFVX3lxTE5vM3FkSGVjMzRtWlhGclRVRkJleXZPWG9Wem1ud1h1VEdVNWhWak1WbkNwQXlPLTNTT29jRnJhYTVvZHRncUFzS3hGZXFtOXg0X3dnNUpoTWdrbDV6N3VudGJLMUZwSE5yb29fX0p3OHBmcmVVOGdzVUo0Mi15emtSMTBqM1ZybC16OWZXXzViMWRGdFZla29ENG5JS0RISXBwLUtUbkhBNDJWN2ZyUkVQd1E?oc=5"
     },
     {
       "id": "los-precios-de-inditex-se-mantienen-estables-pese-a-la-inflacion-y-los-aranceles",
@@ -2555,6 +2374,110 @@
       ],
       "mergedIds": [
         "el-nuevo-mapa-del-mercado-automotor-que-marcas-ganaron-y-cuales-perdieron-con-la"
+      ]
+    },
+    {
+      "id": "rigi-los-toldos-ii-este-tecpetrol-gyp-peelp-6432-millones",
+      "date": "2026-10-09",
+      "datetime": "2026-10-09T13:11:00-03:00",
+      "kind": "noticia",
+      "title": "El Gobierno aprueba el RIGI para Los Toldos II Este como proyecto de exportación estratégica, con USD 6.432 millones",
+      "summary": "La Resolución 1771/2026 de Economía aprobó la adhesión de la UTE de Tecpetrol y Gas y Petróleo del Neuquén como Proyecto de Exportación Estratégica de Largo Plazo. Prevé 380 pozos horizontales y una planta para 70.000 barriles de petróleo por día.",
+      "topics": [
+        "Argentina",
+        "Exportaciones",
+        "Empresas",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "RIGI",
+        "Petróleo",
+        "Tecpetrol",
+        "Neuquén",
+        "PEELP"
+      ],
+      "visual": "tanker",
+      "impact": 2,
+      "affectsArgentina": true,
+      "argentinaNote": "Es una nueva inversión petrolera de gran escala en Neuquén encuadrada en el RIGI como proyecto orientado a la exportación de largo plazo.",
+      "argentinaImpact": {
+        "change": "El proyecto UT RIGI Los Toldos, en el área Los Toldos II Este (Neuquén), quedó adherido al RIGI como Proyecto de Exportación Estratégica de Largo Plazo, con una inversión prevista de USD 6.432 millones hasta 2054.",
+        "who": "Tecpetrol, Gas y Petróleo del Neuquén, proveedores de la industria petrolera y la cadena de exportación de crudo de la cuenca neuquina.",
+        "sectors": [
+          "Petróleo y gas",
+          "Energía"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "El Ministerio de Economía publicó el 9 de octubre en el Boletín Oficial la Resolución 1771/2026, que aprueba la adhesión al Régimen de Incentivo para Grandes Inversiones (RIGI) del proyecto «UT RIGI Los Toldos», presentado por la unión transitoria de Tecpetrol y Gas y Petróleo del Neuquén (GyP). El proyecto fue encuadrado como Proyecto de Exportación Estratégica de Largo Plazo (PEELP), una categoría pensada para desarrollos de gran escala orientados a exportar en forma sostenida.",
+        "La inversión total prevista es de USD 6.432 millones en tres etapas: USD 1.635 millones hasta febrero de 2027, USD 1.268 millones entre marzo de 2027 y junio de 2029, y USD 3.529 millones hasta 2054. El área Los Toldos II Este está en el departamento Pehuenches, en Neuquén, y abarca 78 km². La resolución fija el 9 de septiembre de 2026 como fecha de adhesión y el 31 de agosto de 2027 como plazo para completar la inversión mínima exigida.",
+        "El plan contempla 380 pozos horizontales nuevos —16 en la primera etapa, 91 en la segunda y 273 en la tercera— y una planta central de tratamiento con capacidad para 70.000 barriles de petróleo y 3,6 millones de metros cúbicos de gas natural por día, además de oleoducto, gasoducto, obras de agua y energía, caminos y campamentos.",
+        "Según Ámbito, el encuadre como PEELP exige que el proyecto apunte a un mercado mundial en el que la participación argentina sea inferior al 10%; las empresas informaron que la del país en el mercado de crudo ronda el 1%. Ninguna de las fuentes consultadas detalla volúmenes de exportación previstos."
+      ],
+      "keyData": [
+        [
+          "Norma",
+          "Resolución 1771/2026, Ministerio de Economía (BO 9 oct 2026)"
+        ],
+        [
+          "Inversión total",
+          "USD 6.432 millones hasta 2054"
+        ],
+        [
+          "Pozos horizontales",
+          "380 (16 + 91 + 273)"
+        ],
+        [
+          "Planta central",
+          "70.000 barriles de petróleo y 3,6 millones de m³ de gas por día"
+        ],
+        [
+          "Plazo de inversión mínima",
+          "31 de agosto de 2027"
+        ]
+      ],
+      "explainer": {
+        "what": "Economía aprobó por la Resolución 1771/2026 el ingreso al RIGI del proyecto petrolero Los Toldos II Este, de Tecpetrol y GyP, como Proyecto de Exportación Estratégica de Largo Plazo, con USD 6.432 millones de inversión.",
+        "why": "Suma una inversión de gran escala en la cuenca neuquina orientada a exportar crudo en el largo plazo, con una planta para 70.000 barriles diarios.",
+        "who": "Tecpetrol, Gas y Petróleo del Neuquén, proveedores petroleros y la cadena de exportación de crudo de la cuenca neuquina.",
+        "products": [
+          "Petróleo crudo",
+          "Gas natural"
+        ],
+        "next": "La resolución fija el 31 de agosto de 2027 como plazo para completar la inversión mínima exigida por el régimen.",
+        "nextSource": {
+          "name": "Ámbito",
+          "url": "https://www.ambito.com/energia/el-gobierno-aprobo-el-ingreso-al-rigi-del-proyecto-tecpetrol-y-gyp-us6400-millones-n6331891"
+        }
+      },
+      "deadlines": [
+        {
+          "date": "2027-08-31",
+          "label": "Vence el plazo para completar la inversión mínima del RIGI en Los Toldos II Este",
+          "url": "https://www.ambito.com/energia/el-gobierno-aprobo-el-ingreso-al-rigi-del-proyecto-tecpetrol-y-gyp-us6400-millones-n6331891"
+        }
+      ],
+      "sources": [
+        {
+          "name": "MDZ Online",
+          "type": "Medio de comunicación",
+          "url": "https://www.mdzol.com/economia/2026/10/9/aprueban-el-rigi-para-el-proyecto-petrolero-los-toldos-con-inversiones-por-us-6432-millones-1986974.html",
+          "primary": true
+        },
+        {
+          "name": "Ámbito",
+          "type": "Medio de comunicación",
+          "url": "https://www.ambito.com/energia/el-gobierno-aprobo-el-ingreso-al-rigi-del-proyecto-tecpetrol-y-gyp-us6400-millones-n6331891"
+        }
       ]
     },
     {
@@ -2852,6 +2775,114 @@
       ]
     },
     {
+      "id": "arca-rg-5910-trafico-vecinal-fronterizo-tope-150-dolares",
+      "date": "2026-10-09",
+      "datetime": "2026-10-09T11:48:00-03:00",
+      "kind": "noticia",
+      "title": "ARCA fija un tope de USD 150 por día y por poblador en el tráfico vecinal fronterizo y prohíbe sacar granos",
+      "summary": "La Resolución General 5910/2026 precisa que el límite del régimen de exportación para pobladores de frontera se computa por día y por persona, y suma prohibiciones: trigo, soja y maíz en todas sus formas y mercaderías en envases de 10 kg o más. Rige desde el 10 de octubre.",
+      "topics": [
+        "Argentina",
+        "Aduanas",
+        "Exportaciones",
+        "Regulaciones"
+      ],
+      "countries": [
+        "Argentina",
+        "Bolivia",
+        "Brasil",
+        "Paraguay"
+      ],
+      "tags": [
+        "ARCA",
+        "Tráfico vecinal fronterizo",
+        "Frontera",
+        "Granos",
+        "Boletín Oficial"
+      ],
+      "visual": "customs",
+      "impact": 2,
+      "affectsArgentina": true,
+      "story": "arca-normativa",
+      "argentinaNote": "Afecta la salida de mercadería argentina por los pasos fronterizos bajo el régimen para pobladores de países limítrofes; no cambia las franquicias para compras que los argentinos hacen en Brasil o Paraguay.",
+      "argentinaImpact": {
+        "change": "Desde el 10 de octubre, el tope de USD 150 del tráfico vecinal fronterizo de exportación se computa por día y por poblador, y se prohíbe sacar trigo, soja y maíz y mercadería en envases de 10 kg o más.",
+        "who": "Comercios de localidades de frontera que venden a pobladores de países limítrofes, compradores de esos países y la Aduana en los pasos fronterizos.",
+        "sectors": [
+          "Comercio minorista de frontera",
+          "Granos",
+          "Alimentos"
+        ],
+        "flows": {
+          "importaciones": false,
+          "exportaciones": true,
+          "logistica": false,
+          "aranceles": false
+        }
+      },
+      "body": [
+        "La Agencia de Recaudación y Control Aduanero (ARCA) publicó el viernes 9 de octubre en el Boletín Oficial la Resolución General 5910/2026, que modifica el régimen de tráfico vecinal fronterizo de exportación. Es el esquema que permite a residentes de localidades de frontera de países limítrofes llevarse mercadería argentina para consumo personal, familiar o del hogar. La norma cambia el Anexo IV «A» de la Resolución 2604/1986 de la ex Administración Nacional de Aduanas y entró en vigencia el sábado 10.",
+        "El principal cambio es que el tope de USD 150 pasa a computarse en forma expresa por día y por poblador, sin importar la cantidad, la calidad o la variedad de los artículos. Según Primera Edición, ese monto ya existía desde la Resolución General 1336/2002 de la ex AFIP, y la nueva redacción lo precisa como un límite diario por persona.",
+        "La resolución también amplía la lista de mercaderías excluidas del régimen: se suman el trigo, la soja y el maíz en todas sus formas y los productos en envases de 10 kg o más, o su equivalente en volumen. Se mantienen las prohibiciones para combustibles en bidones o tanques suplementarios; armas, municiones, explosivos, estupefacientes y psicotrópicos no autorizados en el mercado interno, y cualquier bien cuya exportación esté prohibida o suspendida. La Voz de Cataratas aclaró que el límite de 10 kg se refiere al tamaño de cada envase y no a un total por persona.",
+        "ARCA fundamentó la medida en la necesidad de reducir el fraccionamiento de operaciones, su repetición sistemática y el desvío de mercadería hacia circuitos comerciales no autorizados, ya que el Código Aduanero excluye el uso comercial o industrial de este régimen. Para usarlo, el poblador debe acreditar identidad y residencia en una localidad fronteriza y presentar la factura de compra de mercadería de origen nacional."
+      ],
+      "keyData": [
+        [
+          "Norma",
+          "Resolución General ARCA 5910/2026 (BO 9 oct 2026)"
+        ],
+        [
+          "Vigencia",
+          "Desde el 10 de octubre de 2026"
+        ],
+        [
+          "Tope",
+          "USD 150 por día y por poblador"
+        ],
+        [
+          "Nuevas prohibiciones",
+          "Trigo, soja y maíz en todas sus formas; envases de 10 kg o más"
+        ],
+        [
+          "Norma modificada",
+          "Resolución ANA 2604/1986, Anexo IV «A»"
+        ]
+      ],
+      "explainer": {
+        "what": "ARCA estableció que el tope de USD 150 del tráfico vecinal fronterizo de exportación se aplica por día y por poblador, y prohibió sacar por ese régimen trigo, soja, maíz y mercadería en envases de 10 kg o más.",
+        "why": "Busca frenar el fraccionamiento y la repetición de operaciones que desvían mercadería a circuitos comerciales no autorizados, un uso que el Código Aduanero excluye para este régimen.",
+        "who": "Comercios de localidades de frontera, pobladores de países limítrofes que compran en la Argentina y el control aduanero en los pasos fronterizos.",
+        "products": [
+          "Trigo",
+          "Soja",
+          "Maíz",
+          "Mercadería en envases de 10 kg o más",
+          "Combustibles"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Primera Edición",
+          "type": "Medio de comunicación",
+          "url": "https://www.primeraedicion.com.ar/nota/101149770/arca-nuevas-restricciones-trafico-vecinal-fronterizo-misiones/",
+          "primary": true
+        },
+        {
+          "name": "ACONPY (texto de la RG 5910/2026)",
+          "type": "Texto normativo",
+          "url": "https://blog.aconpy.com/2026/10/09/arca-fija-tope-diario-y-suma-prohibiciones-al-trafico-fronterizo/"
+        },
+        {
+          "name": "La Voz de Cataratas",
+          "type": "Medio de comunicación",
+          "url": "https://lavozdecataratas.com/2026/10/10/frontera-desde-hoy-rigen-nuevas-restricciones-para-sacar-mercaderias-de-argentina"
+        }
+      ],
+      "absorbs": [
+        "centro-despachantes-de-aduana-de-la-republica-argentina-modificaciones-al-regime"
+      ]
+    },
+    {
       "id": "ejecutan-simulacro-tactico-de-toma-de-nave-en-instalaciones-de-terminal-puerto-c",
       "datetime": "2026-10-09T14:30:23Z",
       "date": "2026-10-09",
@@ -2958,6 +2989,149 @@
           "author": "Luis Alonso"
         }
       ]
+    },
+    {
+      "id": "ue-china-entendimiento-hibridos-aranceles-tierras-raras-octubre-2026",
+      "date": "2026-10-09",
+      "datetime": "2026-10-09T10:51:00-03:00",
+      "kind": "noticia",
+      "title": "La UE y China acuerdan moderar las exportaciones chinas de híbridos y bajar aranceles a productos europeos",
+      "summary": "Tras dos días de negociación en Pekín, el comisario Maroš Šefčovič dijo que el entendimiento abre la posibilidad de recortar en más de la mitad las ventas chinas de híbridos a la UE. China facilitará el acceso de bienes europeos por unos € 4.000 millones y las licencias de tierras raras. Los líderes europeos lo evaluarán el 15 y 16 de octubre.",
+      "topics": [
+        "Europa",
+        "China",
+        "Asia",
+        "Aranceles",
+        "Geopolítica y comercio"
+      ],
+      "countries": [
+        "Unión Europea",
+        "China"
+      ],
+      "tags": [
+        "Autos híbridos",
+        "Tierras raras",
+        "Aceite de oliva",
+        "Šefčovič",
+        "Wang Wentao"
+      ],
+      "visual": "treaty",
+      "impact": 2,
+      "affectsArgentina": false,
+      "body": [
+        "La Unión Europea y China cerraron el 9 de octubre en Pekín la segunda reunión de su mecanismo de consultas sobre comercio e inversión, encabezada por el comisario de Comercio europeo, Maroš Šefčovič, y el ministro de Comercio chino, Wang Wentao. Al cabo de dos días de conversaciones, ambas partes firmaron una declaración conjunta con tres puntos.",
+        "El primero es un entendimiento para moderar las exportaciones chinas de autos híbridos e híbridos enchufables a la UE. Según Šefčovič, abre la perspectiva de recortarlas en más de la mitad, aunque no se informaron el plazo, la base de comparación ni el mecanismo. El Financial Times, citado por CnEVPost, registró que las importaciones europeas de híbridos chinos pasaron de 3.800 unidades en octubre de 2024 a 50.000 en julio de 2026. Para los autos eléctricos a batería, ambas partes seguirán con los compromisos de precios y las revisiones dentro del caso antisubvenciones de la UE.",
+        "El segundo punto es un mejor acceso al mercado chino para productos europeos —desde autopartes hasta aceite de oliva y calzado— con exportaciones que hoy suman casi € 4.000 millones. Según Euronews y Eunews, la Comisión estima un ahorro en aranceles de al menos € 225 millones. Eunews precisó que se trata de rebajas de aranceles de nación más favorecida; CnEVPost, en cambio, indicó que la parte china solo habló de explorar reducciones en el marco de la OMC, sin detallar productos. El tercer punto es que China seguirá facilitando las licencias de exportación de tierras raras e imanes permanentes hacia la UE.",
+        "Šefčovič calificó el resultado como un primer paso y advirtió que la UE usará sus propios instrumentos si el diálogo no da resultados; según Eunews, describió como insostenible un déficit comercial con China de más de € 1.000 millones por día. Los líderes europeos analizarán las soluciones negociadas en el Consejo Europeo del 15 y 16 de octubre, donde se tomará la decisión final, de acuerdo con Eunews."
+      ],
+      "keyData": [
+        [
+          "Híbridos chinos a la UE",
+          "Recorte de más de la mitad, según Šefčovič (sin plazo informado)"
+        ],
+        [
+          "Exportaciones europeas alcanzadas",
+          "Casi € 4.000 millones"
+        ],
+        [
+          "Ahorro arancelario estimado",
+          "Al menos € 225 millones"
+        ],
+        [
+          "Importaciones de híbridos chinos",
+          "3.800 unidades (oct 2024) → 50.000 (jul 2026), según el FT"
+        ],
+        [
+          "Próximo paso",
+          "Consejo Europeo, 15 y 16 de octubre"
+        ]
+      ],
+      "explainer": {
+        "what": "La UE y China firmaron en Pekín una declaración conjunta para moderar las exportaciones chinas de híbridos, mejorar el acceso de productos europeos por casi € 4.000 millones y facilitar las licencias de tierras raras.",
+        "why": "Es el primer resultado concreto del intento europeo de reequilibrar un comercio con China que Šefčovič describió como insostenible, y evita por ahora una escalada de medidas sobre los híbridos.",
+        "who": "Automotrices chinas y europeas, exportadores europeos de autopartes, aceite de oliva y calzado, e industrias que dependen de tierras raras e imanes.",
+        "products": [
+          "Autos híbridos e híbridos enchufables",
+          "Autopartes",
+          "Aceite de oliva",
+          "Calzado",
+          "Tierras raras",
+          "Imanes permanentes"
+        ],
+        "next": "Los líderes de la UE evaluarán las soluciones negociadas en el Consejo Europeo del 15 y 16 de octubre, donde se tomará la decisión final; Šefčovič y Wang Wentao volverán a reunirse a más tardar en enero y hay una tercera ronda prevista para marzo.",
+        "nextSource": {
+          "name": "Eunews",
+          "url": "https://www.eunews.it/en/2026/10/09/eu-and-china-reach-agreement-on-hybrid-cars-sefcovic-exports-from-beijing-will-be-halved/"
+        }
+      },
+      "deadlines": [
+        {
+          "date": "2026-10-15",
+          "label": "Consejo Europeo evalúa el entendimiento UE–China sobre híbridos y aranceles (15 y 16 de octubre)",
+          "url": "https://www.eunews.it/en/2026/10/09/eu-and-china-reach-agreement-on-hybrid-cars-sefcovic-exports-from-beijing-will-be-halved/"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Euronews",
+          "type": "Medio de comunicación",
+          "url": "https://www.euronews.com/2026/10/09/eu-and-china-clinch-deal-over-cars-after-heated-trade-talks-as-brussels-pushes-to-rebalanc",
+          "primary": true
+        },
+        {
+          "name": "Eunews",
+          "type": "Medio especializado",
+          "url": "https://www.eunews.it/en/2026/10/09/eu-and-china-reach-agreement-on-hybrid-cars-sefcovic-exports-from-beijing-will-be-halved/"
+        },
+        {
+          "name": "CnEVPost",
+          "type": "Medio especializado",
+          "url": "https://cnevpost.com/2026/10/09/china-eu-make-progress-hybrid-trade/"
+        }
+      ],
+      "absorbs": [
+        "bruselas-y-pekin-pactan-recortar-un-50-los-aranceles-a-los-coches-hibridos-chino",
+        "ue-y-china-alivian-tension-con-acuerdo-comercial-provisional",
+        "china-y-la-ue-alcanzan-acuerdo-comercial-preliminar",
+        "china-y-la-ue-pactan-moderar-las-exportaciones-de-hibridos-y-rebajar-aranceles-a",
+        "china-y-la-ue-pactan-los-hibridos-y-dejan-abiertos-los-aranceles-a-los-coches-el"
+      ]
+    },
+    {
+      "id": "san-juan-reunio-al-transporte-y-la-mineria-para-debatir-competitividad-e-infraes",
+      "datetime": "2026-10-09T13:40:40Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "San Juan reunió al transporte y la minería para debatir competitividad e infraestructura logística",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Logística"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Minería"
+      ],
+      "visual": "mining",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Comex Online",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://comexonline.com.ar/noticias/val/63732/san-juan-reunio-al-transporte-y-la-mineria-para-debatir-competitividad-e-infraestructura-logistica.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOYjl2a0hNaGlhVDhiZkgtclBNZ09PaDM2RFd6UEdnOGtWbmRXZldUOWtiZjl6R3hvTUVGOGV6eW9TSzJZQmhCaktHRkpaM2hoNGxaUU83SlItaDN1dXZzeWVNaG9EUDVaVDlGVmJnYVBERC1URFlNTHN2VlpMQ19QR3FqcVlnbHN4ejhoSnhwajlyLUFTSWdVTjVfTmpFSUhfNC1fb25QTV9fLVM4SmRWVXVyVjd5WC1IMW13WmYyYjdrZWVNa3lqblVvMGppakZwbWRKWUFBMVVRT2JHb0RmWlduRQ?oc=5"
     },
     {
       "id": "argentina-y-uruguay-avanzan-en-la-digitalizacion-y-el-control-de-sus-pasos-front",
@@ -3933,13 +4107,17 @@
       "body": [],
       "keyData": [],
       "topics": [
-        "Exportaciones"
+        "Exportaciones",
+        "Logística",
+        "Transporte marítimo"
       ],
       "countries": [
         "Global"
       ],
-      "tags": [],
-      "visual": "customs",
+      "tags": [
+        "Fletes"
+      ],
+      "visual": "ship",
       "impact": 1,
       "affectsArgentina": false,
       "kind": "noticia",
@@ -4033,45 +4211,6 @@
       ]
     },
     {
-      "id": "los-productos-vietnamitas-aceleran-su-busqueda-de-oportunidades-en-argentina-y-m",
-      "datetime": "2026-10-09T06:00:15Z",
-      "date": "2026-10-09",
-      "firstSeen": "2026-10-09T09:43:57Z",
-      "title": "Los productos vietnamitas aceleran su búsqueda de oportunidades en Argentina y Mercosur.",
-      "summary": "El mercado argentino aún ofrece muchas oportunidades para los productos vietnamitas, especialmente en electrónica, calzado, textiles, anacardos, alimentos procesados, maquinaria y equipos. Sin embargo, las empresas deben abordar el mercado de forma selectiva, monitoreando de cerca las necesidades reales y los…",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina",
-        "Mercosur",
-        "Asia"
-      ],
-      "countries": [
-        "Argentina",
-        "Vietnam"
-      ],
-      "tags": [
-        "Mercosur"
-      ],
-      "visual": "treaty",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Mercosur",
-      "sources": [
-        {
-          "name": "Vietnam.vn",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://www.vietnam.vn/es/hang-viet-tang-toc-tim-co-hoi-tai-argentina-va-mercosur",
-          "primary": true,
-          "author": ""
-        }
-      ],
-      "gnTried": "2026-10-09T09:43:57Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTFNNSWFkTkZYUHBQOUtOdzFOX19RbmdhcFdTcGFDbU9TWU1OMlFpOTFDQ2hmamVtZTNXd3RDTXFxU0VLT2l6WlJfNkt3emxSdWFEVTJnUVNzV284MjJaX0RlQWJkTmFvak9PUWZlRU9jb0N5Z25vSFVodTVPaDRwU253Z0NpdnRJ?oc=5"
-    },
-    {
       "id": "el-desorbitado-coste-de-los-fletes-amenaza-el-apetito-de-asia-por-el-crudo-estad",
       "datetime": "2026-10-09T05:21:33Z",
       "date": "2026-10-09",
@@ -4145,6 +4284,59 @@
       ]
     },
     {
+      "id": "los-productos-vietnamitas-aceleran-su-busqueda-de-oportunidades-en-argentina-2",
+      "datetime": "2026-10-09T04:55:47Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "Los productos vietnamitas aceleran su búsqueda de oportunidades en Argentina y Mercosur.",
+      "summary": "Según el análisis de mercado realizado por la Oficina Comercial de Vietnam en Argentina, el sector de la electrónica y los equipos completos es un área",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Mercosur",
+        "Asia"
+      ],
+      "countries": [
+        "Argentina",
+        "Vietnam"
+      ],
+      "tags": [
+        "Mercosur"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Mercosur",
+      "sources": [
+        {
+          "name": "شبكة تواصل الإخبارية",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://twaslnews1.twaslnews.com/5765606/",
+          "primary": true,
+          "author": ""
+        },
+        {
+          "name": "Vietnam.vn",
+          "type": "También publicó esta noticia",
+          "url": "https://www.vietnam.vn/es/hang-viet-tang-toc-tim-co-hoi-tai-argentina-va-mercosur",
+          "alsoIn": true,
+          "title": "Los productos vietnamitas aceleran su búsqueda de oportunidades en Argentina y Mercosur."
+        }
+      ],
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5IZ3lBWkxWeDc2VmprVTUzalF4cmwtclc2Qk45bDZ4Q2xFWDFPY3d0TFVvdUZXQ3Y4aXhfZkp0U2h5Qk1WamVBUXc1Mm5kWnBzdWdj?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTFNNSWFkTkZYUHBQOUtOdzFOX19RbmdhcFdTcGFDbU9TWU1OMlFpOTFDQ2hmamVtZTNXd3RDTXFxU0VLT2l6WlJfNkt3emxSdWFEVTJnUVNzV284MjJaX0RlQWJkTmFvak9PUWZlRU9jb0N5Z25vSFVodTVPaDRwU253Z0NpdnRJ",
+        "https://www.vietnam.vn/es/hang-viet-tang-toc-tim-co-hoi-tai-argentina-va-mercosur"
+      ],
+      "mergedIds": [
+        "los-productos-vietnamitas-aceleran-su-busqueda-de-oportunidades-en-argentina-y-m"
+      ]
+    },
+    {
       "id": "riadas-de-superpetroleros-acuden-en-masa-a-oriente-medio-atraidos-por-los-fletes",
       "datetime": "2026-10-09T04:45:33Z",
       "date": "2026-10-09",
@@ -4177,10 +4369,60 @@
           "url": "https://www.eleconomista.es/mercados-cotizaciones/amp/14019611/riadas-de-superpetroleros-acuden-en-masa-a-oriente-medio-atraidos-por-los-fletes-millonarios-y-provocan-un-efecto-cascada-ya-no-falta-crudo-sino-buques-para-sacarlo-de-ormuz",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "El Economista",
+          "type": "También publicó esta noticia",
+          "url": "https://www.eleconomista.es/mercados-cotizaciones/noticias/14019611/10/26/riadas-de-superpetroleros-acuden-en-masa-a-oriente-medio-atraidos-por-los-fletes-millonarios-y-provocan-un-efecto-cascada-ya-no-falta-crudo-sino-buques-para-sacarlo-de-ormuz.html",
+          "alsoIn": true,
+          "title": "Riadas de petroleros acuden en masa a Oriente Medio atraídos por los fletes millonarios y provocan un 'efecto cascada': ya no falta crudo, sino buques para sacarlo de Ormuz"
         }
       ],
       "gnTried": "2026-10-09T09:43:57Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxNRVNIb241dDlmRXlybDIzSUpjQVZiUWVKRlVXSEJqLTl3V0ZSei1jd2VOaHdHVDZzVnZuQWRhZTM5cERhWXdCT25EUE93MVdxSXB3UXZtVXNDYnJvdC1LZ3BJSEJCQWRmZkhYUlUtdkYwOURmWnplYTM1cTc4NFNoVURTUjFzdlNaZWZSMXdpcmtyODZTXzE3S25QSjFPS2JsNDlPMlAyRGhYVzkyVlA0QlFYZHVvTmczbm1FODIxUlUyRDEwNnpDZkhGekF2bWlFaFZkeHRtS01oQ2k3MkhjZ2VVZUVoaWJWeFdGTkxFSUNMUVQ2bWJYcG80dHhBMVpQX1IyU252SWRpdmJMTUtEUWN5bTJ5bmJUclVkNjEyOEZIWnRYTXhGVTJwX1g5X00yX2FzaXVHSTB3ZVZidjl5YXBXVW9XMENYY2hHa1ZSRGdhQmNxRXcw0gHXAkFVX3lxTE1FU0hvbjV0OWZFeXJsMjNJSmNBVmJRZUpGVVdIQmotOXdXRlJ6LWN3ZU5od0dUNnNWdm5BZGFlMzlwRGFZd0JPbkRQT3cxV3FJcHdRdm1Vc0Nicm90LUtncElIQkJBZGZmSFhSVS12RjA5RGZaemVhMzVxNzg0U2hVRFNSMXN2U1plZlIxd2lya3I4NlNfMTdLblBKMU9LYmw0OU8yUDJEaFhXOTJWUDRCUVhkdW9OZzNubUU4MjFSVTJEMTA2ekNmSEZ6QXZtaUVoVmR4dG1LTWhDaTcySGNnZVVlRWhpYlZ4V0ZOTEVJQ0xRVDZtYlhwbzR0eEExWlBfUjJTbnZJZGl2YkxNS0RRY3ltMnluYlRyVWQ2MTI4RkhadFhNeEZVMnBfWDlfTTJfYXNpdUdJMHdlVmJ2OXlhcFdVb1cwQ1hjaEdrVlJEZ2FCY3FFdzA?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxNRVNIb241dDlmRXlybDIzSUpjQVZiUWVKRlVXSEJqLTl3V0ZSei1jd2VOaHdHVDZzVnZuQWRhZTM5cERhWXdCT25EUE93MVdxSXB3UXZtVXNDYnJvdC1LZ3BJSEJCQWRmZkhYUlUtdkYwOURmWnplYTM1cTc4NFNoVURTUjFzdlNaZWZSMXdpcmtyODZTXzE3S25QSjFPS2JsNDlPMlAyRGhYVzkyVlA0QlFYZHVvTmczbm1FODIxUlUyRDEwNnpDZkhGekF2bWlFaFZkeHRtS01oQ2k3MkhjZ2VVZUVoaWJWeFdGTkxFSUNMUVQ2bWJYcG80dHhBMVpQX1IyU252SWRpdmJMTUtEUWN5bTJ5bmJUclVkNjEyOEZIWnRYTXhGVTJwX1g5X00yX2FzaXVHSTB3ZVZidjl5YXBXVW9XMENYY2hHa1ZSRGdhQmNxRXcw0gHXAkFVX3lxTE1FU0hvbjV0OWZFeXJsMjNJSmNBVmJRZUpGVVdIQmotOXdXRlJ6LWN3ZU5od0dUNnNWdm5BZGFlMzlwRGFZd0JPbkRQT3cxV3FJcHdRdm1Vc0Nicm90LUtncElIQkJBZGZmSFhSVS12RjA5RGZaemVhMzVxNzg0U2hVRFNSMXN2U1plZlIxd2lya3I4NlNfMTdLblBKMU9LYmw0OU8yUDJEaFhXOTJWUDRCUVhkdW9OZzNubUU4MjFSVTJEMTA2ekNmSEZ6QXZtaUVoVmR4dG1LTWhDaTcySGNnZVVlRWhpYlZ4V0ZOTEVJQ0xRVDZtYlhwbzR0eEExWlBfUjJTbnZJZGl2YkxNS0RRY3ltMnluYlRyVWQ2MTI4RkhadFhNeEZVMnBfWDlfTTJfYXNpdUdJMHdlVmJ2OXlhcFdVb1cwQ1hjaEdrVlJEZ2FCY3FFdzA?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi7AJBVV95cUxPZHFJTTU0Z0JoWm1tRXFPanRjWGRtYXJiaVNXMlkxUk5CamRwdlh4WXlrVVdXbWZaQ2JCUFlhZ0NTdWdQNGhpLW5kSXJjdnBGMEI2bXFpVzBsTlpCTWtPaXQzd3dQWVdvMXZzQmpjRjd1Q3FJd0FuRlR1M3IxdUpac3ZLM2ZrYU5qeThSNUNSSUw4ZFc4eXM0aE5MU0pGenB0MDV6VnFpbEMwZXpnNEN1c01IRUJNQlU1S0VOQnpNN050UVBScTRvUzdtWGJHUGRiaWpCdUtYU0QxQ0xDcEN4M0NuLUxOUHdVdW5jS1ozRXJoTmZCNl9FVnFQVmF2S04zbEZHYk9xUElnSlMwb1Vrb3NUazFDQVNBV194S00wLTFGMUxlUEk5Qjk0QU40US00WFJrTGxPYXdWSUs4ZHVTZURzRkFlQmJrck1hbDJQWmtQTzRqSFhZbWhwd1VqanBCNDVGcEVuNjloYUZE0gHXAkFVX3lxTE1FU0hvbjV0OWZFeXJsMjNJSmNBVmJRZUpGVVdIQmotOXdXRlJ6LWN3ZU5od0dUNnNWdm5BZGFlMzlwRGFZd0JPbkRQT3cxV3FJcHdRdm1Vc0Nicm90LUtncElIQkJBZGZmSFhSVS12RjA5RGZaemVhMzVxNzg0U2hVRFNSMXN2U1plZlIxd2lya3I4NlNfMTdLblBKMU9LYmw0OU8yUDJEaFhXOTJWUDRCUVhkdW9OZzNubUU4MjFSVTJEMTA2ekNmSEZ6QXZtaUVoVmR4dG1LTWhDaTcySGNnZVVlRWhpYlZ4V0ZOTEVJQ0xRVDZtYlhwbzR0eEExWlBfUjJTbnZJZGl2YkxNS0RRY3ltMnluYlRyVWQ2MTI4RkhadFhNeEZVMnBfWDlfTTJfYXNpdUdJMHdlVmJ2OXlhcFdVb1cwQ1hjaEdrVlJEZ2FCY3FFdzA",
+        "https://www.eleconomista.es/mercados-cotizaciones/noticias/14019611/10/26/riadas-de-superpetroleros-acuden-en-masa-a-oriente-medio-atraidos-por-los-fletes-millonarios-y-provocan-un-efecto-cascada-ya-no-falta-crudo-sino-buques-para-sacarlo-de-ormuz.html"
+      ],
+      "mergedIds": [
+        "riadas-de-petroleros-acuden-en-masa-a-oriente-medio-atraidos-por-los-fletes-mill"
+      ]
+    },
+    {
+      "id": "retorno-de-portacontenedores-al-canal-de-suez-ofrece-beneficios-acotados-frente",
+      "datetime": "2026-10-09T04:20:22Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-10T13:41:05Z",
+      "title": "Retorno de portacontenedores al Canal de Suez ofrece beneficios acotados frente a los riesgos de seguridad",
+      "summary": "Aún así, los tránsitos podrían alcanzar el 80% del nivel previo a los desvíos hacia el Cabo de Buena Esperanza",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Transporte marítimo"
+      ],
+      "countries": [
+        "Egipto"
+      ],
+      "tags": [
+        "Contenedores"
+      ],
+      "visual": "container",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Logística y fletes",
+      "sources": [
+        {
+          "name": "Mundo Marítimo",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://mundomaritimo.cl/noticias/retorno-de-portacontenedores-al-canal-de-suez-ofrece-beneficios-acotados-frente-a-los-riesgos-de-seguridad",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-10T13:41:05Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNN0otdFIwRm1aMW5HRHNOa1ptSEJvak01akhsdGRhc3pYa1NxTDZoTERlMFhZMlhUdzN3WUduQjMyNTJWZW5HeE9rNGZpN3NtSEZSQTlRZ3ctblMzamlFblNLMGM2VmJFTkYtUEZjZXNiZHZ0ZVlmejYySjNibDFVdFBXWVZzQ2lrRlo2aVhPV0c5VndaUzlsNXlRbU4wOFpaMnFjakZZWmVkRzV3T3REcWh0VElIUjMzVi1CaUxJbTdHX3UxbHZab2FoM29PaUhkLWVRT2Ntbw?oc=5"
     },
     {
       "id": "port-tarragona-analiza-como-necesidades-de-defensa-pueden-impulsar-nuevas-infrae",
@@ -5872,12 +6114,24 @@
           "url": "https://www.sitioandino.com.ar/las-importaciones-brasil-caen-25-puntos-la-debilidad-la-economia-argentina-n5731456",
           "primary": true,
           "author": ""
+        },
+        {
+          "name": "Sitio Andino",
+          "type": "También publicó esta noticia",
+          "url": "https://www.sitioandino.com.ar/economia/las-importaciones-brasil-caen-25-puntos-la-debilidad-la-economia-argentina-n5731456",
+          "alsoIn": true,
+          "title": "Las importaciones desde Brasil caen 25 puntos por la debilidad de la economía argentina"
         }
       ],
       "gnTried": "2026-10-08T17:42:57Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcGJnaDZlUGFSeW83RXlBSU5yUzFlY1lxWV9DNU1kM0NpY0R0b180dVBydms4WlVGNjE4XzVVLUlnNkU2anlQSVhPbExHZnVXQkN5VEEyMFVsVzhTblhRN0pmakEtNmQzbjdGVW1xb1BrRlhSdDFrOTU0OEpMbkJPQnpVUkl6WFRRU3pYZGMzQ00teTR0cEFBWjN0QmRHaG1vQ0tmcWlqaGU5NFMwOE9PbXVpWErSAboBQVVfeXFMUEtjTWY1OXpaMm1LR3hGVno5WnR1QkIzTDMtcWVxQ2FzbHRzeG9BRXFha0lldGdkNUd1bmo2MDRrVXBrT3dFU2dEb3J2b04ybXlEZWp4bEF0bzZhMjdaU1RKQXJmd2g5SDRHUDJ5OHRsMGZvUHJhMk5NVWp4WU00WUxiNklXVGQ4NEo4bi12Um51MEZsRE5iTTFfOEE5dHM1dlBRQXFBWHFfUXBKNXg3cms4d2Q0ZjhWdmVn?oc=5",
       "aliasUrls": [
-        "https://news.google.com/rss/articles/CBMiugFBVV95cUxQS2NNZjU5eloybUtHeEZWejladHVCQjNMMy1xZXFDYXNsdHN4b0FFcWFrSWV0Z2Q1R3VuajYwNGtVcGtPd0VTZ0RvcnZvTjJteURlanhsQXRvNmEyN1pTVEpBcmZ3aDlINEdQMnk4dGwwZm9QcmEyTk1VanhZTTRZTGI2SVdUZDg0SjhuLXZSbnUwRmxETmJNMV84QTl0czV2UFFBcUFYcV9RcEo1eDdyazh3ZDRmOFZ2ZWfSAboBQVVfeXFMUEtjTWY1OXpaMm1LR3hGVno5WnR1QkIzTDMtcWVxQ2FzbHRzeG9BRXFha0lldGdkNUd1bmo2MDRrVXBrT3dFU2dEb3J2b04ybXlEZWp4bEF0bzZhMjdaU1RKQXJmd2g5SDRHUDJ5OHRsMGZvUHJhMk5NVWp4WU00WUxiNklXVGQ4NEo4bi12Um51MEZsRE5iTTFfOEE5dHM1dlBRQXFBWHFfUXBKNXg3cms4d2Q0ZjhWdmVn"
+        "https://news.google.com/rss/articles/CBMiugFBVV95cUxQS2NNZjU5eloybUtHeEZWejladHVCQjNMMy1xZXFDYXNsdHN4b0FFcWFrSWV0Z2Q1R3VuajYwNGtVcGtPd0VTZ0RvcnZvTjJteURlanhsQXRvNmEyN1pTVEpBcmZ3aDlINEdQMnk4dGwwZm9QcmEyTk1VanhZTTRZTGI2SVdUZDg0SjhuLXZSbnUwRmxETmJNMV84QTl0czV2UFFBcUFYcV9RcEo1eDdyazh3ZDRmOFZ2ZWfSAboBQVVfeXFMUEtjTWY1OXpaMm1LR3hGVno5WnR1QkIzTDMtcWVxQ2FzbHRzeG9BRXFha0lldGdkNUd1bmo2MDRrVXBrT3dFU2dEb3J2b04ybXlEZWp4bEF0bzZhMjdaU1RKQXJmd2g5SDRHUDJ5OHRsMGZvUHJhMk5NVWp4WU00WUxiNklXVGQ4NEo4bi12Um51MEZsRE5iTTFfOEE5dHM1dlBRQXFBWHFfUXBKNXg3cms4d2Q0ZjhWdmVn",
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV01HOUFtMEhnU0dhcG5RM0NTZmlMRFp4bzBtM2hKVi1NVmM5V0hjZU9KR094MEg0NDZlOEFMc2ZOLW8tdzNiR0E4S0MtQzdPWjlzMWFBWGdQdXZ4SkNOU1dLb1ZMeFNIOG02TnBPN1cyZXFKeC1fbWpUMldrZmdxVnhFaGh6WFV1NEpQWFU2aERoX1FLTzAtUVpVUjBkVnZKSTBuM0pkR2FBRU0xdC1YWWZZVHI4SldyYTBoQ3hac3DSAcYBQVVfeXFMT2YtVWlYNE4tQnBqb3NwNm5EWW1xVy1pdWpSN0d3RERqQ0h2S0JnRlpZZ3VURk1yekJUM09odW1RZDRWU2Rjc2tjR3paelktMm1mZEllcEZDVE5CLVBTNC1Nb0tBemRhNngxSzdXY25PbXBPelVfcGQ0VTRzYTdRTmxDN3diRWFqVkxFak43aVBmV3NNa1ZfQVFmOEp2aC1jUDhEdkhveWdxRVk2eUI1RW1adC12QmxDMllCbGk0dXpmR3E2OEFn",
+        "https://www.sitioandino.com.ar/economia/las-importaciones-brasil-caen-25-puntos-la-debilidad-la-economia-argentina-n5731456"
+      ],
+      "mergedIds": [
+        "las-importaciones-desde-brasil-caen-25-puntos-por-la-debilidad-de-la-economi-2"
       ]
     },
     {
@@ -12984,11 +13238,20 @@
           "url": "https://www.clarin.com/rural/campo-politica-paises-mercosur-apoyan-sector-argentina-estado-capta-recursos_0_Oq3XbXWJRW.html",
           "alsoIn": true,
           "title": "Campo y política: mientras los países del Mercosur apoyan al sector, en Argentina el Estado capta sus recursos"
+        },
+        {
+          "name": "Flipr.news",
+          "type": "También publicó esta noticia",
+          "url": "https://flipr.com.ar/nacionales/economia/clarin/campo-y-politica-mientras-los-paises-del-mercosur-apoyan-al-sector-en-argentina-el-estado-capta-sus-recursos/",
+          "alsoIn": true,
+          "title": "Campo y política: mientras los países del Mercosur apoyan al sector, en Argentina el Estado capta sus recursos"
         }
       ],
       "gnTried": "2026-10-06T17:41:39Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOLVgyZk91ZXdSbXpJeF9lbGJ5YkN6Wm1JNHd6cFkxdGFkZG83ODNvS3FtS2RQTWl5S2NDU1ZhYmsxTEdudm0teFR4N01RRHBlbjBreEt2LTFjNEx4X2VENHdIejNlOC1ick9aczlMTDBERkFoYXRzMVE0QmZmX1Zsb19nckNyczFocW14eG1VNlNXMFBEa0lYMnZXeUtLY2cycVVjUnNRRno5eFR3M1c2LVBmM3JHX1BsT0hITmtQSzRhZzE3SXVNWWhJd24wSE0xYk5KemxNUy0yUXg2Ql9iUkFtSEoxcWRM0gH8AUFVX3lxTE1QNk9mclplcFRKcjNLR3l6Ty1Wb0xPX0Z0cXJTcGttX05Td3BTNkVxOFBlX0JDcmstTldWUTl3UFVQMFVTVG5vdkxUdkh5WTkyaEJBTHFzTXNqMVZibEwwSEt3VDhxWXFYd19xaEJDZF9MVzRmUWwwUXhQT0NSQ0R4MlkxQjhHd3JRaHZDTU9vbEl3ZjJrNTBjN3FEZWVqZkRkeTJTV25FVmpicVZUY2dudVpaMGl0SEZrbXlCMjRBS0wyX3F3a2lSbVFldDA0alhvSjdwc2dhaFVKM1BSMlNHb3c0MW5EMWZZV0JOMHlDQS1WNWFXWmZqa2hCTw?oc=5",
       "aliasUrls": [
+        "https://flipr.com.ar/nacionales/economia/clarin/campo-y-politica-mientras-los-paises-del-mercosur-apoyan-al-sector-en-argentina-el-estado-capta-sus-recursos",
+        "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQZDl4NnJPZm42TnRXazJIdlpRby1mQkVjMkM4emNXNzlNRWhWMjdWRWpEN2c4R1dOd01UczVUYzhLbG5KM2lQRlNndS15SG1SX3UwWTByTmZXUU9uVm5xVXdLNzRLRGgwWlJvTS1vdDFSOWFEd1kySkR3T1A4Ym0wTnJlTjhSY2ZLR2NXQlk2NTBTRlg5RFIwMjk5LWtUcmFpWkx3T0RXMmlTRHM3aUJObGcwSHZ0dzI4M2FxM3VfQ3BvVnBaSHFvcGt2SHlBcmg2X3ZUV2FrZ3JseFRXT1FhMmJQRm5DbUwzRThRbVRn",
         "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM054RUFjRVNsYkp0dG82ZXViWGUycE5HdTRjWlNmZTlUaXlldEVnUUc1aHV0Z0hQV3ZzTlBFQjI5TmtFVHZqYm5ZMmNhMFVqRl9ZOXh3Wkx0dmJoVHhfaUJPeFpCRVBfOU56TWktaHZnLTVuNDFlSGQwVmNRTC1sNlhVNjdnaTcwV0JLY252cEE0M1dHR1N0VkVNajY5M0RyaFNCdTR0ZGhsZXptLWl1ZTIxRTZER3Uwd3ZsT2I4LWo",
         "https://www.clarin.com/rural/campo-politica-paises-mercosur-apoyan-sector-argentina-estado-capta-recursos_0_Oq3XbXWJRW.html"
       ],
@@ -21139,57 +21402,6 @@
       "gnUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVEFmUVVJTUtpNThaenZ4U3cwSVdGSjU5a3hZdmZpLVJoREc1aGd4NWlMaTdnZFNzdEI4ZXpTSjdmMGQzem9wZm9udkt6ZEpfc0VLWGowc0tDV0ROUmxqY2UycVRqbXlXYjl3ZWlCTjVmWU4xMm44a3Q4U2hadVRzUEdJc0ptaGxaakVaMUJGOWQxNGdCeUdJQVZtUnhHRXRxRXY1SHBjN1htWG0wdk1Ba0o1alNLQVBVbFJacFkxVzVBbmFvM1BnOGVWaUs?oc=5"
     },
     {
-      "id": "neuquen-se-proyecta-como-lider-en-exportaciones-hacia-2032-superando-a-buenos-ai",
-      "datetime": "2026-10-04T03:00:00Z",
-      "date": "2026-10-04",
-      "firstSeen": "2026-10-04T17:24:54Z",
-      "title": "Neuquén se proyecta como líder en exportaciones hacia 2032, superando a Buenos Aires",
-      "summary": "Neuquén se proyecta como la principal provincia exportadora de Argentina entre 2031 y 2032, impulsada por el desarrollo de Vaca Muerta, con un notable crecimien",
-      "body": [],
-      "keyData": [],
-      "topics": [
-        "Argentina",
-        "Exportaciones"
-      ],
-      "countries": [
-        "Argentina"
-      ],
-      "tags": [
-        "Energía"
-      ],
-      "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": true,
-      "kind": "noticia",
-      "label": "Automática",
-      "feed": "Google Noticias · Exportaciones Argentina",
-      "sources": [
-        {
-          "name": "ZapalaYa",
-          "type": "Medio · vía Google Noticias",
-          "url": "https://zapalaya.com.ar/vaca-muerta/neuquen-se-proyecta-como-lider-en-exportaciones-hacia-2032-superando-a-buenos-aires",
-          "primary": true,
-          "author": ""
-        },
-        {
-          "name": "uruguayaldia.com.uy",
-          "type": "También publicó esta noticia",
-          "url": "https://uruguayaldia.com.uy/neuquen-liderara-las-exportaciones-argentinas-hacia-2031gracias-a-vaca-muerta/",
-          "alsoIn": true,
-          "title": "EXPORTACIONES HISTÓRICAS: Neuquén superará a Buenos Aires impulsada por el petróleo"
-        }
-      ],
-      "gnTried": "2026-10-06T13:42:42Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQY2liUXFfYWkxOGFhZm5jaVo1RDh1eGtJdmlES2hoSlZJdFQ3dTVDMkdNRnRpY1phXzlHdXBpb0F2VTRPQVgxdTJpNGhIcDAtWUZLTzJRekkzTmhjdFFITElYOS1DaFpoYXhQaktZVU9RdE5QZi1qaDctazVSV2RVdTJlT0Q5MEt1dnJSVFpTNGZtUG9YUjlCdFVONHRzbkU2R3VnSG1pUXBYRUJCUEdQWnl4cDlfQUpMSWRj?oc=5",
-      "aliasUrls": [
-        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNR1JPcElIU29BNmJod1AzUzVsWmpBVzZ3Q2hfVW5GaVZxVkZjNFBiZjdUOVJJWnUtVkF0cXdKNG9ycGx5VWkzVEppRnpINWFQLUhYdTVaeVNxUkZyUTAxVWh3N0JYbmwtUTJ5Q0c1Yi1sU2s0MG5qUzZIMlpSQS1ZdkctVVNiSDJJLXFNTUVtZjdxOXFidGE2cVNycWhSSWgwZE1mSjRaQ0ZqQQ",
-        "https://uruguayaldia.com.uy/neuquen-liderara-las-exportaciones-argentinas-hacia-2031gracias-a-vaca-muerta"
-      ],
-      "mergedIds": [
-        "exportaciones-historicas-neuquen-superara-a-buenos-aires-impulsada-por-el-petrol"
-      ]
-    },
-    {
       "id": "acuerdo-mercosur-union-europea-la-perdida-por-aranceles-se-gana-en-impuestos-y-e",
       "datetime": "2026-10-04T02:55:00Z",
       "date": "2026-10-03",
@@ -25218,18 +25430,36 @@
           "url": "https://www.damenoticias.com/nota/655656-el-crecimiento-de-vaca-muerta-podria-llevar-a-neuquen-al-primer-lugar-de-las-exportaciones",
           "alsoIn": true,
           "title": "El crecimiento de Vaca Muerta podría llevar a Neuquén al primer lugar de las exportaciones"
+        },
+        {
+          "name": "ZapalaYa",
+          "type": "También publicó esta noticia",
+          "url": "https://zapalaya.com.ar/vaca-muerta/neuquen-se-proyecta-como-lider-en-exportaciones-hacia-2032-superando-a-buenos-aires",
+          "alsoIn": true,
+          "title": "Neuquén se proyecta como líder en exportaciones hacia 2032, superando a Buenos Aires"
+        },
+        {
+          "name": "uruguayaldia.com.uy",
+          "type": "También publicó esta noticia",
+          "url": "https://uruguayaldia.com.uy/neuquen-liderara-las-exportaciones-argentinas-hacia-2031gracias-a-vaca-muerta/",
+          "alsoIn": true,
+          "title": "Neuquén se proyecta como líder en exportaciones hacia 2032, superando a Buenos Aires"
         }
       ],
       "gnTried": "2026-10-06T21:40:51Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWmVUTWVDZ1AwOWxManB0VjV3QkpvWnRwc1Nlcm1KRGlvZk44d1ZPUGotdXZaQXg4ZzFNYlBtdnJHWEV0Z1RHTDZ3Vmp1X1htLUtPSXZ5em11b0Mzb0lsbXBkV3Zfb3NEcG1zR19uYXFqenpPaXFVNkJPQlg1azFmTmo4UTJ2aGF0T2NOMWpHcjV3UWhlZlBSUWxDUXhlRmNWLVotV1llWDZyaEFLbmdCWGtFTWhmNTc5M1dDcmc4WjhkYVpwNFBnWFhCSFlTSkpr?oc=5",
       "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNR1JPcElIU29BNmJod1AzUzVsWmpBVzZ3Q2hfVW5GaVZxVkZjNFBiZjdUOVJJWnUtVkF0cXdKNG9ycGx5VWkzVEppRnpINWFQLUhYdTVaeVNxUkZyUTAxVWh3N0JYbmwtUTJ5Q0c1Yi1sU2s0MG5qUzZIMlpSQS1ZdkctVVNiSDJJLXFNTUVtZjdxOXFidGE2cVNycWhSSWgwZE1mSjRaQ0ZqQQ",
         "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNb1ZPd3FEd3g1Mkc0dTJRWnRoclBFSEhaUmRpWEhGd05jQ1YteXB5d3RWbnRNNklZTC1PNFoxM0p1UDF4NWxlZWhmRnAyOTNCNjRoVzVVTW1hdDhaQXJ1RVlqNHNLckozOXdXV203QXJiMkZLbG1LUmpFOUp4ck1rWDhJWDB3SnBzTzdIQkV0eENIaG5vWUVTdktqUmVMZll6R256ZmtodU0xMnc",
         "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcDFUZk1KRG1ldWxMSXNWWGozdUdEOTYxTDV6QkYtcFJCWlU2bmpxaWNMV1JIX2VLMlJvd1Atc0ZIclA5eDB3eDh5Q1NfWUg0MDJXZUZfX0RydnJnbnhIVkFTRWlqMmNsbWprSDcydzRQdG9acERPWUNHY2wzMWQ1ODB4dV9UYVJOSDFOSUQ2REVZbFRka2U4RUNmQkY0X2NTWDUzNTB1Q0F5NHM",
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQY2liUXFfYWkxOGFhZm5jaVo1RDh1eGtJdmlES2hoSlZJdFQ3dTVDMkdNRnRpY1phXzlHdXBpb0F2VTRPQVgxdTJpNGhIcDAtWUZLTzJRekkzTmhjdFFITElYOS1DaFpoYXhQaktZVU9RdE5QZi1qaDctazVSV2RVdTJlT0Q5MEt1dnJSVFpTNGZtUG9YUjlCdFVONHRzbkU2R3VnSG1pUXBYRUJCUEdQWnl4cDlfQUpMSWRj",
         "https://news.google.com/rss/articles/CBMivwFBVV95cUxPM3o2RHYzUVEzakZNUEJ3Q1RPR25LYmwxVTBXRDNNZkxLai15Yl9rN2Y1RFRtMnUwQW1zeWhQSXRxaVJBMEtmQ01wSzZRT2NrRXlIVWEtVkZuclQtN20tWl92VzE5UzJoVDk5cDJmTUhydTFQMG45bFF6Um9DSUhLNGpFQ3NHTUlSeUNuUlQ4T0xsS2gxYUtFWHlXZE9XS2t4S0UtNUtlZnFFcm1fMExOLWZjQWNQYVloY0dqU2dVbw",
         "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSm11VXdvYWVTRGVjY29nenJxR043WG80ZFZwUVc2NHo1dFRsN0ZPSVVkNGt5b0lCWjhwV2NoUWRVNXE5em5rX0swa1ZVVE1VTENzS0RHeWZVTDA5RkhkMGlERFhpVVRzOXdXWmVSbTU4NUxsWExSNjMyQ0t6Yk02bE81MzQ5YXVzQlQ3UFdTZG43SFhFQXFZVl8tN3dwcmVYblpHbHNpZXhXNzNLLUp6NGhBOWJzaDFEaE1IeTR3ZjhCWF9YMWExV21hcw",
         "https://news.google.com/rss/articles/CBMizAFBVV95cUxQREhZWmJlU3JpbVlURng5V2tKNWlzNDhiZ1BlaVJNb0xhSmJyR0tsODdfRFZzWmpTMm5XeVBXdncwbktnYXpCdU5kbDdxZndSSGYwZVhNdnJfZmRlRk9rLWV2NE9TRzBLeHZQbmJNbFB2aUZvYW5aeU9EVkZ6NGZHakZHME90Y3dOUXRIUFNFd2NVbGt2Q29mVTdaNEgwbmVyZHJ5c0pDUkxrUVVyc2R5RjRXZUhsQS1FUGZuSHUwWHhCOVZReHVXQ2diY3k",
+        "https://uruguayaldia.com.uy/neuquen-liderara-las-exportaciones-argentinas-hacia-2031gracias-a-vaca-muerta",
         "https://www.damenoticias.com/nota/655656-el-crecimiento-de-vaca-muerta-podria-llevar-a-neuquen-al-primer-lugar-de-las-exportaciones",
         "https://zapalaya.com.ar/vaca-muerta/exportacion-de-gas-de-vaca-muerta-beneficios-para-la-economia-argentina",
+        "https://zapalaya.com.ar/vaca-muerta/neuquen-se-proyecta-como-lider-en-exportaciones-hacia-2032-superando-a-buenos-aires",
         "https://zapalaya.com.ar/vaca-muerta/vaca-muerta-podria-posicionar-a-neuquen-como-principal-exportador-en-el-futuro-cercano"
       ],
       "mergedIds": [
@@ -25237,7 +25467,9 @@
         "neuquen-se-proyecta-como-lider-exportador-por-vaca-muerta",
         "exportacion-de-gas-de-vaca-muerta-beneficios-para-la-economia-argentina",
         "vaca-muerta-que-beneficios-puede-traer-para-los-argentinos-la-exportacion-de-gas",
-        "el-crecimiento-de-vaca-muerta-podria-llevar-a-neuquen-al-primer-lugar-de-las-exp"
+        "el-crecimiento-de-vaca-muerta-podria-llevar-a-neuquen-al-primer-lugar-de-las-exp",
+        "neuquen-se-proyecta-como-lider-en-exportaciones-hacia-2032-superando-a-buenos-ai",
+        "exportaciones-historicas-neuquen-superara-a-buenos-aires-impulsada-por-el-petrol"
       ]
     },
     {
@@ -28804,7 +29036,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-10T09:42:31Z",
+    "ranAt": "2026-10-10T13:41:05Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -28829,63 +29061,63 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 3,
+        "added": 2,
         "updated": 0,
-        "skipped": 8
+        "skipped": 7
       },
       {
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 39,
-        "added": 3,
+        "items": 47,
+        "added": 4,
         "updated": 0,
-        "skipped": 22
+        "skipped": 31
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 48,
-        "added": 1,
+        "items": 45,
+        "added": 0,
         "updated": 0,
-        "skipped": 33
+        "skipped": 31
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
         "url": "https://news.google.com/rss/search?q=exportaciones+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 51,
+        "items": 56,
         "added": 4,
         "updated": 0,
-        "skipped": 21
+        "skipped": 24
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 43,
-        "added": 1,
+        "items": 42,
+        "added": 2,
         "updated": 0,
-        "skipped": 23
+        "skipped": 24
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 45,
+        "items": 43,
         "added": 4,
         "updated": 0,
-        "skipped": 26
+        "skipped": 22
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 68,
+        "items": 63,
         "added": 4,
         "updated": 0,
-        "skipped": 37
+        "skipped": 30
       }
     ],
     "curatedDuplicates": [
@@ -28910,22 +29142,69 @@
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
-        "title": "Tensión por la carne argentina: ¿por qué Irlanda quiere suspender las importaciones?",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaFZyd21LTmJiVjEzN0hNQ1cwSGVSY1RlS0I1ODhtalBQUkpKMEpyRWFJbWp5bmNnT1dVZ2FvbHhYYXNsNkl5RWxmQ2NjYVQ0ZEFaQzZqTU93Z3B6YTRuYnlMM0tOSEo0ZHVSa0VfZFFQMUdXdVBoMjk4cnlrMGozbDdjZE5Yd20zVmdDeXBfLUtBNnAzWGtYTzRDTW5TTlFkalNmV3dqaXJuajF5aDNlbWVnRdIBswFBVV95cUxQaFZyd21LTmJiVjEzN0hNQ1cwSGVSY1RlS0I1ODhtalBQUkpKMEpyRWFJbWp5bmNnT1dVZ2FvbHhYYXNsNkl5RWxmQ2NjYVQ0ZEFaQzZqTU93Z3B6YTRuYnlMM0tOSEo0ZHVSa0VfZFFQMUdXdVBoMjk4cnlrMGozbDdjZE5Yd20zVmdDeXBfLUtBNnAzWGtYTzRDTW5TTlFkalNmV3dqaXJuajF5aDNlbWVnRQ?oc=5",
-        "curated": "irlanda-ifa-pide-restringir-carne-vacuna-argentina-antimicrobianos"
-      },
-      {
         "title": "Intercambio con Brasil: notable baja de las importaciones y nuevo crecimiento de las exportaciones",
         "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQeHJzNUlfaXZtbnUyVVpiMkxhSXQyWW5PYmFKRHhIazhDTTIwcHJ2X2NSTzVXWlJzaU9qNW5yNWNpUUZtSGFmYmJ1cHdmb1BfOE1Zc3RkY2MwamFxWWt6RXEwUWlvbmZ6ejZOTWVSVTlIdWtpMDdhcW5HZVBBeDVHOWJ4alJ0SXRFVy1ONjZQMUxzNm1QUTJiMmpXM2otSkJOUk92SkVuNjRoY3dtRTdDcm5uMVhUdFdpeXdlemxYZ0xzR3ZwWEJ1TTFHUzQyRHNid0IxRXRrandJakhSNDU1WnRR?oc=5",
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
+      },
+      {
+        "title": "China y la Unión Europea negocian acuerdo sobre autos híbridos y eléctricos: ¿bajarán los aranceles?",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbEJtN1dIS3RiNjIzdDg5MHJuV3ZDbnkxVTU0bTM5U050QzY5endDZ2NUUU9GNUtORE9HRWRJVExEbktWTmVsV1Z5VTZRckZQY1NPTjQxbjRFNlRGeVpoekdtS0Q0eVlQQ0pGNlhKa3JrZFJiYlZlRnE5WXBIazZYUEZBXy1pcWR4ZlEyZ1N5Slk4X1hjTWpYcU5iaU1QcTZZZ0pvV2sxTEJRYl9XVml4TDRMRGRpbTlDM2YyUVkwRTFtaF92c2VvQ3JQbVA?oc=5",
+        "curated": "ue-china-entendimiento-hibridos-aranceles-tierras-raras-octubre-2026"
+      },
+      {
+        "title": "Tarifas de transporte marítimo de contenedores caen 2% por menor demanda durante festividad china",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQ1FqY2xtaHozMm95TVFSNjAxcklzSEZoWFpvSHBDTmxPc3k1YVJidkpUWUZULWY2SUFxRUVLYWViUUx4WUh2WGJsR0NmaGlZZkUxUm9YNGJzUVBOVWc0amg3NnZSc2c5Tl9ER3I4NWJwYTRGOFF2RmxqaWF6ZGV4Z1pyS3M2eGd2WHhDNEpzUmFxbHlsN3FWNmhPWW5JczMzQVJuRkFkOXpxcmlRLU94SmU1aF9QWWhOMjVEc1RyWUtsdw?oc=5",
+        "curated": "drewry-wci-baja-2-8-octubre"
+      },
+      {
+        "title": "Bruselas y Pekín pactan recortar un 50% los aranceles a los coches híbridos chinos: golpe a BYD, MG y Omoda",
+        "url": "https://www.merca2.es/2026/10/10/aranceles-coches-hibridos-chinos-ue-china-2470861/",
+        "curated": "ue-china-entendimiento-hibridos-aranceles-tierras-raras-octubre-2026"
+      },
+      {
+        "title": "UE y China alivian tensión con acuerdo comercial provisional",
+        "url": "https://sipse.com/mundo/ue-y-china-alivian-tension-con-acuerdo-comercial-provisional-516094.html",
+        "curated": "ue-china-entendimiento-hibridos-aranceles-tierras-raras-octubre-2026"
+      },
+      {
+        "title": "China y la UE alcanzan acuerdo comercial preliminar",
+        "url": "https://www.elhorizonte.mx/finanzas/china-y-la-ue-alcanzan-acuerdo-comercial-preliminar/5460996518",
+        "curated": "ue-china-entendimiento-hibridos-aranceles-tierras-raras-octubre-2026"
+      },
+      {
+        "title": "China y la UE pactan moderar las exportaciones de híbridos y rebajar aranceles al aceite de oliva",
+        "url": "https://www.elindependiente.com/economia/2026/10/09/china-y-la-ue-pactan-moderar-las-exportaciones-de-hibridos-y-rebajar-aranceles-al-aceite-de-oliva/",
+        "curated": "ue-china-entendimiento-hibridos-aranceles-tierras-raras-octubre-2026"
+      },
+      {
+        "title": "China y la UE pactan los híbridos y dejan abiertos los aranceles a los coches eléctricos que amenazan a España",
+        "url": "https://www.moncloa.com/2026/10/09/coches-electricos-china-ue-aranceles-3445315/",
+        "curated": "ue-china-entendimiento-hibridos-aranceles-tierras-raras-octubre-2026"
+      },
+      {
+        "title": "Centro Despachantes de Aduana de la Republica Argentina - Modificaciones al Régimen de Tráfico Vecinal Fronterizo",
+        "url": "http://www.cda.org.ar/detalle_noticia.php?id=42817",
+        "curated": "arca-rg-5910-trafico-vecinal-fronterizo-tope-150-dolares"
       }
     ],
     "excluded": 0,
     "grouped": [
       {
-        "main": "la-uia-lleva-a-aduana-un-mapa-del-contrabando-que-medidas-reclama-2",
+        "main": "neuquen-proyecta-liderar-exportaciones-provinciales-hacia-2031-por-el-impulso-de",
         "merged": [
-          "la-uia-lleva-a-aduana-un-mapa-del-contrabando-que-medidas-reclama"
+          "neuquen-se-proyecta-como-lider-en-exportaciones-hacia-2032-superando-a-buenos-ai"
+        ]
+      },
+      {
+        "main": "a-contramano-de-la-region-argentina-le-quita-recursos-al-campo-mientras-el-resto",
+        "merged": [
+          "campo-y-politica-mientras-los-paises-del-mercosur-apoyan-al-sector-en-argentina"
+        ]
+      },
+      {
+        "main": "las-importaciones-desde-brasil-caen-25-puntos-por-la-debilidad-de-la-economia-ar",
+        "merged": [
+          "las-importaciones-desde-brasil-caen-25-puntos-por-la-debilidad-de-la-economi-2"
         ]
       },
       {
@@ -28935,20 +29214,44 @@
         ]
       },
       {
-        "main": "con-foco-en-las-exportaciones-karina-milei-se-reunio-con-la-embajadora-de-israel",
+        "main": "riadas-de-superpetroleros-acuden-en-masa-a-oriente-medio-atraidos-por-los-fletes",
         "merged": [
-          "karina-milei-busca-ampliar-las-exportaciones-de-carne-argentina-a-israel-y-avanz",
-          "argentina-impulsa-exportaciones-de-carne-bovina-a-israel"
+          "riadas-de-petroleros-acuden-en-masa-a-oriente-medio-atraidos-por-los-fletes-mill"
+        ]
+      },
+      {
+        "main": "los-productos-vietnamitas-aceleran-su-busqueda-de-oportunidades-en-argentina-2",
+        "merged": [
+          "los-productos-vietnamitas-aceleran-su-busqueda-de-oportunidades-en-argentina-y-m"
+        ]
+      },
+      {
+        "main": "los-futuros-del-aceite-de-palma-de-malasia-caen-tras-no-eximir-aranceles",
+        "merged": [
+          "futuros-de-aceite-de-palma-de-malasia-caen-tras-no-eximir-aranceles"
+        ]
+      },
+      {
+        "main": "el-gobierno-organizara-la-semana-de-la-carne-argentina-en-tel-aviv-para-impulsar",
+        "merged": [
+          "gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exporta",
+          "karina-milei-se-reunio-con-la-embajadora-israeli-para-impulsar-las-exportaciones"
+        ]
+      },
+      {
+        "main": "chile-negocia-rebaja-de-aranceles-con-eeuu-en-medio-de-nueva-polemica-por-dichos",
+        "merged": [
+          "chile-busca-reducir-aranceles-con-ee-uu-en-medio-de-controversia-por-declaracion"
         ]
       }
     ],
     "googleNews": {
       "pending": 18,
-      "resolved": 17,
-      "withSummary": 13,
+      "resolved": 18,
+      "withSummary": 14,
       "withPhoto": 0,
-      "failed": 1,
-      "duplicates": 2
+      "failed": 0,
+      "duplicates": 0
     }
   },
   "stories": [
