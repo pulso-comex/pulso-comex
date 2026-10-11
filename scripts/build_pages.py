@@ -452,6 +452,8 @@ def sources_public():
             state, text = 'new', 'Todavía no se consultó'
         elif st.get('failures', 0) >= FAILING_SOURCE_RUNS:
             state, text = 'fail', f'No responde ({st["failures"]} intentos seguidos)'
+        elif not last_ok and st.get('failures'):
+            state, text = 'fail', 'No responde'
         elif hours is None or hours > STALE_SOURCE_HOURS:
             state, text = 'stale', 'Sin lecturas correctas recientes'
         elif not st.get('ok', True):
