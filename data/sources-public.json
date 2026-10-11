@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-11T00:50:03.158371+00:00",
+ "generatedAt": "2026-10-11T00:52:25.303784+00:00",
  "sources": [
   {
    "name": "OMC · Organización Mundial del Comercio",
@@ -135,10 +135,10 @@
   },
   {
    "name": "ONU Noticias · Desarrollo económico",
-   "type": "Organismo internacional",
+   "type": "Organismo internacional (el feed no devuelve XML válido al lector automático; desactivada el 11/10/2026)",
    "aggregator": false,
-   "state": "stale",
-   "status": "Sin lecturas correctas recientes",
+   "state": "off",
+   "status": "Desactivada",
    "lastOk": null,
    "lastRun": "2026-10-11T00:49:31Z",
    "items": null,
@@ -146,10 +146,10 @@
   },
   {
    "name": "El Mercantil",
-   "type": "Medio especializado · España (logística y transporte internacional)",
+   "type": "Medio especializado · España (logística y transporte internacional) (el feed no devuelve XML válido al lector automático; desactivada el 11/10/2026)",
    "aggregator": false,
-   "state": "stale",
-   "status": "Sin lecturas correctas recientes",
+   "state": "off",
+   "status": "Desactivada",
    "lastOk": null,
    "lastRun": "2026-10-11T00:49:31Z",
    "items": null,
