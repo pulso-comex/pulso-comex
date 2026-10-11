@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1",
   "feedId": "pulso-comex",
-  "updatedAt": "2026-10-10T21:41:06Z",
+  "updatedAt": "2026-10-11T00:49:31Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "editorialNote": "Noticias relevadas y verificadas manualmente contra la fuente original. Los resúmenes y textos son redacción propia del sitio; los datos provienen de las fuentes enlazadas.",
   "indicators": [
@@ -142,7 +142,7 @@
       "obsDate": "2026-10-09",
       "change": "-0,2% vs. día hábil anterior",
       "trend": "down",
-      "checkedAt": "2026-10-10T21:41:42Z",
+      "checkedAt": "2026-10-11T00:49:55Z",
       "history": [
         [
           "2026-08-31",
@@ -266,7 +266,8 @@
         ]
       ],
       "frequency": "diaria",
-      "maxAgeDays": 6
+      "maxAgeDays": 6,
+      "lastAttempt": "2026-10-11T00:49:55Z"
     },
     {
       "id": "soja",
@@ -283,7 +284,7 @@
         "date": "2026-10-08",
         "ars": 560000.0
       },
-      "checkedAt": "2026-10-10T21:41:45Z",
+      "checkedAt": "2026-10-11T00:49:56Z",
       "_prev": {
         "date": "2026-10-07",
         "ars": 560000.0
@@ -311,7 +312,8 @@
         ]
       ],
       "frequency": "diaria",
-      "maxAgeDays": 6
+      "maxAgeDays": 6,
+      "lastAttempt": "2026-10-11T00:49:56Z"
     },
     {
       "id": "brent",
@@ -324,7 +326,7 @@
       "obsDate": "2026-10-06",
       "change": "-0,1% vs. día anterior",
       "trend": "down",
-      "checkedAt": "2026-10-10T21:41:45Z",
+      "checkedAt": "2026-10-11T00:49:58Z",
       "history": [
         [
           "2026-08-25",
@@ -448,7 +450,8 @@
         ]
       ],
       "frequency": "diaria",
-      "maxAgeDays": 14
+      "maxAgeDays": 14,
+      "lastAttempt": "2026-10-11T00:49:58Z"
     },
     {
       "id": "maiz",
@@ -465,7 +468,7 @@
         "date": "2026-10-08",
         "ars": 293500.0
       },
-      "checkedAt": "2026-10-10T21:41:45Z",
+      "checkedAt": "2026-10-11T00:49:58Z",
       "_prev": {
         "date": "2026-10-07",
         "ars": 294800.0
@@ -493,7 +496,8 @@
         ]
       ],
       "frequency": "diaria",
-      "maxAgeDays": 6
+      "maxAgeDays": 6,
+      "lastAttempt": "2026-10-11T00:49:58Z"
     },
     {
       "id": "trigo",
@@ -510,7 +514,7 @@
         "date": "2026-10-08",
         "ars": 342700.0
       },
-      "checkedAt": "2026-10-10T21:41:45Z",
+      "checkedAt": "2026-10-11T00:49:58Z",
       "_prev": {
         "date": "2026-10-07",
         "ars": 342300.0
@@ -538,10 +542,223 @@
         ]
       ],
       "frequency": "diaria",
-      "maxAgeDays": 6
+      "maxAgeDays": 6,
+      "lastAttempt": "2026-10-11T00:49:58Z"
     }
   ],
   "items": [
+    {
+      "id": "no-necesitamos-a-canada-trump-dice-que-firmara-un-nuevo-acuerdo-comercial-con-me",
+      "datetime": "2026-10-10T23:39:00Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-11T00:49:31Z",
+      "title": "\"No necesitamos a Canadá\": Trump dice que firmará un nuevo acuerdo comercial con México",
+      "summary": "Durante un mitin en Tennessee, el mandatario estadounidense adelantó que se avecina un nuevo pacto bilateral, el cual calificó de genial",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Tratados y acuerdos",
+        "Latinoamérica",
+        "Estados Unidos"
+      ],
+      "countries": [
+        "México",
+        "Estados Unidos",
+        "Canadá"
+      ],
+      "tags": [
+        "Estados Unidos"
+      ],
+      "visual": "treaty",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "LatinUS",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://latinus.us/economia/2026/10/10/no-necesitamos-canada-trump-dice-que-firmara-un-nuevo-acuerdo-comercial-con-mexico-186662.html",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-11T00:49:31Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQUN6cjNxc1Q0LW1JZEdNRW9nQ1cxM1JCd2p3Um5HSUhaY1dZcWNrbk5jYm5URGxSeUxEb1N0VWVWV3dDazFQQW5hN050RFBVLUkxdW1sajlsTmJURnJyMTBLQ19VcU1fUVdxdnBaLTBkRWVjandlWFhmUTROYXlWbFZraFYtNHF4U3BDRzBxS1o0MUpMdnJnc1dLWnpreDlmckhoOEZOSmZNRlFjTGo2a29RNnlKZ2ptQWtMSFpSemIyZXAzdWVqM1QzRDNqUdIBzgFBVV95cUxOQUN6cjNxc1Q0LW1JZEdNRW9nQ1cxM1JCd2p3Um5HSUhaY1dZcWNrbk5jYm5URGxSeUxEb1N0VWVWV3dDazFQQW5hN050RFBVLUkxdW1sajlsTmJURnJyMTBLQ19VcU1fUVdxdnBaLTBkRWVjandlWFhmUTROYXlWbFZraFYtNHF4U3BDRzBxS1o0MUpMdnJnc1dLWnpreDlmckhoOEZOSmZNRlFjTGo2a29RNnlKZ2ptQWtMSFpSemIyZXAzdWVqM1QzRDNqUQ?oc=5"
+    },
+    {
+      "id": "envio-gratis-y-sin-aduanas-el-forerunner-265-de-garmin-llega-en-menos-de-6-dias",
+      "datetime": "2026-10-10T23:10:00Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-11T00:49:31Z",
+      "title": "Envío gratis y sin aduanas: el Forerunner 265 de Garmin llega en menos de 6 días por 216 euros",
+      "summary": "El Garmin Forerunner 265 tiene pantalla AMOLED de 1,3 pulgadas y GPS multibanda, con envío gratis en menos de 6 días por 216 euros en AliExpress.",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Aduanas"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Hardware Premium",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.hardwarepremium.com/noticias/67452/garmin-forerunner-265-aliexpress-216-euros-gps-multibanda/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-11T00:49:31Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVXM5S2NkSXBMSGFONU1YNklZcXRsalhRWndVZHRON1N1Rk1xTFJNOWg3VFRPMFBXNVpQOUZnZjZFeWtZY1VyaHdzaG0xRktzeTRMX0FtVkp3UHV1U0hWQ3A0aWpKaVV6LVRWWEZucnpZSHFhQ01Zbzc0SUp1bFo1ZktMeUlZRGQxZjhWZHNQeHpqdDJoU2h5OEx2TWxhMHExSHQzQWVQeU0?oc=5"
+    },
+    {
+      "id": "importar-en-guatemala-los-costos-logisticos-que-pueden-elevar-el-precio-de-una-o",
+      "datetime": "2026-10-10T22:23:14Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-11T00:49:31Z",
+      "title": "Importar en Guatemala: los costos logísticos que pueden elevar el precio de una operación",
+      "summary": "Guatemala. Importar mercancías a Guatemala implica costos que van más allá del flete, el seguro y los aranceles. Las demoras portuarias, errores",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones",
+        "Logística",
+        "Latinoamérica"
+      ],
+      "countries": [
+        "Guatemala"
+      ],
+      "tags": [],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aranceles y comercio internacional",
+      "sources": [
+        {
+          "name": "Periódico Digital Centroamericano y del Caribe",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://newsinamerica.com/pdcc/noticias/economia/2026/importar-en-guatemala-los-costos-logisticos-que-pueden-elevar-el-precio-de-una-operacion/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-11T00:49:31Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZHdKbmVqUVd4T3hIelJwS2RGcndudFRrZU94R2lURXJPVFlyWnkxcTZQY2steER2R2FSa1JnMTlCRU12bXc3RzVmODZzM2JHelhMeUdlT3A4OVNfcVZTMl9hRzZLQkZ4OVlWRXdtd3pEQ3g4eHhYdVVmSUpRMHVTcU9IdU9tOXlFYXZENGg5TGdCNXp5Rm1XMkk0REtKYzZaWEU2Vjl2U0JnTlZVVWlXWGhGbU1PYjBMVlN1LVNjdm5fd29FcGtwT2dJRi1xRlc0MndWczZJRXhIQWc?oc=5"
+    },
+    {
+      "id": "transferencia-de-carga-en-puerto-de-tallin-cae-3-3-en-tercer-trimestre",
+      "datetime": "2026-10-10T22:00:25Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-11T00:49:31Z",
+      "title": "Transferencia de carga en Puerto de Tallin cae 3,3% en tercer trimestre",
+      "summary": "El volumen de carga manipulado por las terminales de Tallinna Sadam (Puerto de Tallin) disminuyó 3,3%…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Puertos"
+      ],
+      "countries": [
+        "Global"
+      ],
+      "tags": [
+        "Puertos"
+      ],
+      "visual": "port",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "PortalPortuario",
+      "sources": [
+        {
+          "name": "PortalPortuario",
+          "type": "Medio especializado · Chile",
+          "url": "https://portalportuario.cl/transferencia-de-carga-en-puerto-de-tallin-cae-33-en-tercer-trimestre/",
+          "primary": true,
+          "author": "Diego Hermosilla"
+        }
+      ]
+    },
+    {
+      "id": "como-es-el-plan-de-santa-fe-para-convertirse-en-un-nodo-estrategico-del-comercio",
+      "datetime": "2026-10-10T21:35:47Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-11T00:49:31Z",
+      "title": "Cómo es el plan de Santa Fe para convertirse en un nodo estratégico del comercio internacional argentino",
+      "summary": "La Provincia presentó en Buenos Aires su plataforma de Hub Logístico Santafesino, una estrategia que busca integrar puertos, aeropuertos y depósitos fiscales para reducir costos y mejorar la…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "RedBoing",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.redboing.com/como-es-el-plan-de-santa-fe-para-convertirse-en-un-nodo-estrategico-del-comercio-internacional-argentino/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-11T00:49:31Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPakpuTWxaZms3UUtlYnlmQkhYRzkzRTBhY0tSVl9lLWZ6U2l0VkRkY3NrVjRHQ2h2RmliLUFYX0ZYUkV2Wl9BUnJNYUxpUV9lbkZKcmE2NmxiZE1iY0hIM2ZEWlR3Yk5vWmMtSG5fbW1TVm5kRkpxSVJtTnRVVW56Z1pxWDlKVnVBT2NFcVd5cDJzQjZ3V3JGWWxHSzRBa0tHc2ZOWkNtaVh2SzlLNUprRllBSlhSZmI4NDZrTFBDclphYTAzZmNBZkVB?oc=5"
+    },
+    {
+      "id": "es-asesor-en-comercio-exterior-y-creo-una-taza-de-cafe-comestible",
+      "datetime": "2026-10-10T21:35:00Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-11T00:49:31Z",
+      "title": "Es asesor en comercio exterior y creó una taza de café comestible",
+      "summary": "Las tazas comestibles de Ecotaza buscan llegar a cafeterías de todo el país. Enterate cómo funcionan, cuánto cuestan y cómo planean escalar",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "iProfesional",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.iprofesional.com/negocios/465984-es-argentino-y-la-pego-con-tazas-comestibles-para-servir-cafe",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-11T00:49:31Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaU1mZHhYWUxkSV9uOU1pWU9GMnV1M25FcFJ4Q2tybU5LTUR3dHFOWWd1Qi1mZlJFN0phdUg4ZmpsMllvUUUzc0hPWXl1a1J6RHdBV2lnM0pFWG1ra0REVGt2VjF3dVB2SU15S1FmRElNVlRGWkNDa3o4WkZ2Z2IyRG1vNm9CZDNwZDJkQjdEcHREbVVDb1RmSlplcDAzTGVyUi1uNGRHNUNDUVJycjVz0gGvAUFVX3lxTFBpTWZkeFhZTGRJX245TWlZT0YydXUzbkVwUnhDa3JtTktNRHd0cU5ZZ3VCLWZmUkU3SmF1SDhmamwyWW9RRTNzSE9ZeXVrUnpEd0FXaWczSkVYbWtrRERUa3ZWMXd1UHZJTXlLUWZESU1WVEZaQ0NrejhaRnZnYjJEbW82b0JkM3BkMmRCN0RwdERtVUNvVGZKWmVwMDNMZXJSLW40ZEc1Q0NRUnJyNXM?oc=5"
+    },
     {
       "id": "mexico-busca-acuerdo-con-eu-para-reducir-aranceles-a-vehiculos-antonio-garza",
       "datetime": "2026-10-10T21:03:00Z",
@@ -593,17 +810,24 @@
       "body": [],
       "keyData": [],
       "topics": [
-        "Aranceles"
+        "Argentina",
+        "Aranceles",
+        "Tratados y acuerdos",
+        "Mercosur",
+        "Europa"
       ],
       "countries": [
-        "Global"
+        "Argentina",
+        "Unión Europea"
       ],
       "tags": [
+        "Mercosur",
+        "UE-Mercosur",
         "Aranceles"
       ],
       "visual": "customs",
-      "impact": 1,
-      "affectsArgentina": false,
+      "impact": 2,
+      "affectsArgentina": true,
       "kind": "noticia",
       "label": "Automática",
       "feed": "Google Noticias · Aranceles y comercio internacional",
@@ -664,10 +888,12 @@
       "keyData": [],
       "topics": [
         "Argentina",
-        "Exportaciones"
+        "Exportaciones",
+        "Latinoamérica"
       ],
       "countries": [
-        "Argentina"
+        "Argentina",
+        "Chile"
       ],
       "tags": [],
       "visual": "customs",
@@ -699,13 +925,17 @@
       "keyData": [],
       "topics": [
         "Exportaciones",
+        "Aranceles",
         "China",
-        "Asia"
+        "Asia",
+        "Europa"
       ],
       "countries": [
-        "China"
+        "China",
+        "Unión Europea"
       ],
       "tags": [
+        "Aranceles",
         "China"
       ],
       "visual": "customs",
@@ -736,6 +966,7 @@
       "body": [],
       "keyData": [],
       "topics": [
+        "Argentina",
         "Exportaciones"
       ],
       "countries": [
@@ -798,6 +1029,43 @@
       ]
     },
     {
+      "id": "las-exportaciones-de-combustible-de-estados-unidos-a-cuba-alcanzan-cifra-record",
+      "datetime": "2026-10-10T18:48:13Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-11T00:49:31Z",
+      "title": "Las exportaciones de combustible de Estados Unidos a Cuba alcanzan cifra récord en agosto",
+      "summary": "En agosto de 2026, las exportaciones de combustibles de Estados Unidos a Cuba alcanzaron un récord de 74.86 millones de dólares, un aumento del 22.5%…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Exportaciones",
+        "Estados Unidos"
+      ],
+      "countries": [
+        "Estados Unidos"
+      ],
+      "tags": [
+        "Estados Unidos"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Uruguay Al Día",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://uruguayaldia.com.uy/las-exportaciones-de-combustible-de-estados-unidos-a-cuba-alcanzan-cifra-record-en-agosto/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-11T00:49:31Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTlpUQi1tai1XUWtaRlh2ZENhamR6MHpYV2NROExsa2pORWh2SzJBOXVyZDVzcHU3Smx4dUVOc3VtVUZKNjRuR1Jva1lJQnZXZjZRTWQya3NZTWhzQzdkcGZNRGxaT0RHSW1qZjBBNW9mUFF3TG80RFA1S2RvQUZ1WmFKQnNMdmlmenFCWDA5dnp5ckphTDJOTjdOUjkyZGJrcUFZaWpOUHRaOXVPYWluNVkyWGdxSXF5Rmc?oc=5"
+    },
+    {
       "id": "israel-ya-compra-el-10-de-la-carne-argentina-exportada-y-el-gobierno-busca-ampli",
       "datetime": "2026-10-10T18:02:12Z",
       "date": "2026-10-10",
@@ -833,7 +1101,10 @@
         }
       ],
       "gnTried": "2026-10-10T21:41:06Z",
-      "gnUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQQzJFaDhfVEw3dWlUY05rSWs0c1NNQk00VzNmVVVyd1VMNnJVS3BHVHREZ2FxVk9YclFKbWx0bkh3a1UxSloycFd0MEFtUVl2SENUQ2NLUHVZcUxQd2FEczdNSlVUeC15SXl3VVlXTl9vVHd4ZE5JMGxZQUVveWlQczR6ZVJUVlZLOWhJMzdCdHBESk44T09YLThEeWxuejV5WFJUbGpGY00wNzNGYThfUVlVT3loSDNla2g2NmVqZFl2VEFoaUp5d1N30gHKAUFVX3lxTFBDMkVoOF9UTDd1aVRjTmtJazRzU01CTTRXM2ZVVXJ3VUw2clVLcEdUdERnYXFWT1hyUUptbHRuSHdrVTFKWjJwV3QwQW1RWXZIQ1RDY0tQdVlxTFB3YURzN01KVVR4LXlJeXdVWVdOX29Ud3hkTkkwbFlBRW95aVBzNHplUlRWVks5aEkzN0J0cERKTjhPT1gtOER5bG56NXlYUlRsakZjTTA3M0ZhOF9RWVVPeWhIM2VraDY2ZWpkWXZUQWhpSnl3U3c?oc=5"
+      "gnUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQQzJFaDhfVEw3dWlUY05rSWs0c1NNQk00VzNmVVVyd1VMNnJVS3BHVHREZ2FxVk9YclFKbWx0bkh3a1UxSloycFd0MEFtUVl2SENUQ2NLUHVZcUxQd2FEczdNSlVUeC15SXl3VVlXTl9vVHd4ZE5JMGxZQUVveWlQczR6ZVJUVlZLOWhJMzdCdHBESk44T09YLThEeWxuejV5WFJUbGpGY00wNzNGYThfUVlVT3loSDNla2g2NmVqZFl2VEFoaUp5d1N30gHKAUFVX3lxTFBDMkVoOF9UTDd1aVRjTmtJazRzU01CTTRXM2ZVVXJ3VUw2clVLcEdUdERnYXFWT1hyUUptbHRuSHdrVTFKWjJwV3QwQW1RWXZIQ1RDY0tQdVlxTFB3YURzN01KVVR4LXlJeXdVWVdOX29Ud3hkTkkwbFlBRW95aVBzNHplUlRWVks5aEkzN0J0cERKTjhPT1gtOER5bG56NXlYUlRsakZjTTA3M0ZhOF9RWVVPeWhIM2VraDY2ZWpkWXZUQWhpSnl3U3c?oc=5",
+      "aliasUrls": [
+        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdVhjNlNya2tlNUd5d3lfYmVYWlhPQnVZRmdtbk9hdGRwRVdHV1UtNU9GSWJqMS1Ed3ZzalRrTDNZN2VmdmctWjhRdF95SThiQjdMbnRiMTZtX1k0S1FVcERDMHQtVllSYmN3MU8zY2c0bC13Z1kwc1BrZ0NKN2hRdHVJOHpQUTl6UG1wXy1KTERyczgzeGlwOTktSXFwNTRsWFBGU0R1Q0huR3ZfdWRZclhlY01UckRtRHV3MTZSLUE5ZDlrN0hnNFJsTC1SbzBjal9R0gHKAUFVX3lxTFBDMkVoOF9UTDd1aVRjTmtJazRzU01CTTRXM2ZVVXJ3VUw2clVLcEdUdERnYXFWT1hyUUptbHRuSHdrVTFKWjJwV3QwQW1RWXZIQ1RDY0tQdVlxTFB3YURzN01KVVR4LXlJeXdVWVdOX29Ud3hkTkkwbFlBRW95aVBzNHplUlRWVks5aEkzN0J0cERKTjhPT1gtOER5bG56NXlYUlRsakZjTTA3M0ZhOF9RWVVPeWhIM2VraDY2ZWpkWXZUQWhpSnl3U3c"
+      ]
     },
     {
       "id": "comision-europea-aprueba-fondo-para-apoyar-a-empresas-francesas-del-transporte",
@@ -869,6 +1140,43 @@
       ]
     },
     {
+      "id": "exportaciones-agroindustriales-record-el-maiz-y-las-harinas-argentinas-ganan-ter",
+      "datetime": "2026-10-10T17:49:12Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-11T00:49:31Z",
+      "title": "Exportaciones agroindustriales récord: el maíz y las harinas argentinas ganan terreno en el mercado global",
+      "summary": "",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Argentina",
+        "Exportaciones"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "tags": [
+        "Agro"
+      ],
+      "visual": "agro",
+      "impact": 1,
+      "affectsArgentina": true,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Exportaciones Argentina",
+      "sources": [
+        {
+          "name": "Economis",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://economis.com.ar/exportaciones-agroindustriales-record/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-11T00:49:31Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNYnhtaXZCeVgzQmF3Ui1aNk50dGl3WGR5MFhvRmFXb01YampUcnFlZG5CWEloaVZGNndXLVNzSFNucU5Ka0dXaXZBTThOQ3RPUHJyQ0Q3SERfVDl2a1hZVFFHZlFmS25FLVdrbmk0UQ?oc=5"
+    },
+    {
       "id": "en-una-jornada-sobre-el-acuerdo-mercosur-ue-lopez-sartori-llamo-a-defender-las-e",
       "datetime": "2026-10-10T17:10:22Z",
       "date": "2026-10-10",
@@ -886,9 +1194,10 @@
         "Unión Europea"
       ],
       "tags": [
-        "Mercosur"
+        "Mercosur",
+        "Agro"
       ],
-      "visual": "treaty",
+      "visual": "agro",
       "impact": 1,
       "affectsArgentina": true,
       "kind": "noticia",
@@ -974,6 +1283,40 @@
           "author": "Gabriel"
         }
       ]
+    },
+    {
+      "id": "presentan-produccion-chaquena-ante-una-entidad-de-comercio-exterior-de-italia",
+      "datetime": "2026-10-10T15:45:37Z",
+      "date": "2026-10-10",
+      "firstSeen": "2026-10-11T00:49:31Z",
+      "title": "Presentan producción chaqueña ante una entidad de comercio exterior de Italia",
+      "summary": "El gobernador del Chaco, Leandro Zdero, mantuvo una reunión institucional en Milán con representantes de la Associazione Italiana Commercio Estero (AICE), entidad dedicada al comercio internacional y a la vinculación entre empresas. El encuentro formó parte de la misión comercial e institucional que la delegación…",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Europa"
+      ],
+      "countries": [
+        "Italia"
+      ],
+      "tags": [],
+      "visual": "globe",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Comercio exterior Argentina",
+      "sources": [
+        {
+          "name": "Infoqom",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://infoqom.com.ar/presentan-produccion-chaquena-ante-una-entidad-de-comercio-exterior-de-italia/",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-11T00:49:31Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVHB6eTdsbEFHNVJjUVNXRmJDZHRGU21fMVpPSFhaQjctZTBNdl8tOHhvZ0VuM013UDF4Tm83akZlTEozZ0dubTdtWmlqYXdRcEdQVVdwaml5T1JjQ0tHQm5yNk1Tdm9lanE5TmdGV1pEUWpBYkQzN05IY1R2VUdOdF9jMmVENUJtVnh1ZnlmYXZsN0Q3Tkp4cEdZVU9JeUJSaVgw?oc=5"
     },
     {
       "id": "santa-fe-despliega-en-buenos-aires-su-potencial-logistico-para-multiplicar-expor",
@@ -1255,7 +1598,9 @@
       "body": [],
       "keyData": [],
       "topics": [
-        "Importaciones"
+        "Argentina",
+        "Importaciones",
+        "Aduanas"
       ],
       "countries": [
         "Argentina"
@@ -1264,7 +1609,7 @@
         "Minería"
       ],
       "visual": "mining",
-      "impact": 1,
+      "impact": 2,
       "affectsArgentina": true,
       "kind": "noticia",
       "label": "Automática",
@@ -2151,16 +2496,26 @@
           "url": "https://www.canal9.cl/episodios/2026/10/10/chile-negocia-rebaja-de-aranceles-con-eeuu-en-medio-de-nueva-polemica-por-dichos-de-embajador-judd",
           "alsoIn": true,
           "title": "Chile busca reducir aranceles con EE. UU. en medio de controversia por declaraciones del embajador Judd"
+        },
+        {
+          "name": "UCV radio",
+          "type": "También publicó esta noticia",
+          "url": "https://ucvradio.cl/news/chile-busca-ampliar-exenciones-arancelarias-de-ee-uu-mientras-polemica-por-dichos-de-embajador-judd-tensiona-relacion-bilateral/",
+          "alsoIn": true,
+          "title": "Chile busca ampliar exenciones arancelarias de EE.UU. mientras polémica por dichos de embajador Judd tensiona relación bilateral"
         }
       ],
       "gnTried": "2026-10-10T09:42:31Z",
       "gnUrl": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQNFA5cmdXQzY1dk1FSWlRZGhmTGoxWGxXRk1VV01LZHNtUlE5WkJ6SjlSWThtZU9POE1DaUlXUmVRWlhQLXU3RmRmcG5qa01HcnpfYlJ0WmxEYWdGSnd6V2FnY0JPc3hwNzZna3puUldQcFN1OGt6Tl9KMjY0c1o0Tm9SbEswT191NHF2LVdNUEpwdnIyLWVURFp6b1RxM1NhX0tqVjZaSjVZdjZMcjBFWDczTnpTMHlTT3hmQURuSDlHT1F3UUhVaEhjTUs4QUxwQ2hGNEktT05nWjVxajg2a3hsY1BERGctVFE0ZXViaUhtMlFjYzV2NFVR?oc=5",
       "aliasUrls": [
         "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTWloS21EcWRIdHdzTm9mSWltNGdHaTdCQThTTHJTdThJSVdlRzRMRGxjVEpHYU5HZS0xd21hX3FGWGVoWFlpUjh6dkU0WHZibGRldmh6dkxwREMtcm5KYnZyZGVFU01wU25WRXJ0ZmlOTFFrZEFDZzVXUW9DbUY2dTN2LVdPdWx3STBpbXJfMWFlRGxEMVhaRzRpRXRsdEd2X0VRMDNZdVdRcHFjVi01TjdUQVU5RFZaQW4ySm1GQ2gxbmJTa1NVUmhLcnFmUXltczJfSm1OazU",
+        "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQUlNZHFkX0p1Y3VnSkNLYnJQZjEta3VJWENXckJja3ZNbDRpc3hSaWZJODMzYXczZ1U2Z3FEZGtpX2EybkxlVFpYTzY2Nnp5cmxxVVA5TE5kbHZQRGI0UlZhSFpXaXBqTEtKZGxnaDM1UHJVMHZnWUNIbGFQM1hlU1EzUTNJRy14VlM3cDByX2tocGlJeTJtYVdPeXdESk9QeS1PeEVzN0lpY0U2bWNpYjdrSVM3dEhFNXhpWjZaUDZNV1gtbWQ2enRYc09rSXNTbUFmby1qS0RkNjdfMTZIaWFUeE0zMjB3",
+        "https://ucvradio.cl/news/chile-busca-ampliar-exenciones-arancelarias-de-ee-uu-mientras-polemica-por-dichos-de-embajador-judd-tensiona-relacion-bilateral",
         "https://www.canal9.cl/episodios/2026/10/10/chile-negocia-rebaja-de-aranceles-con-eeuu-en-medio-de-nueva-polemica-por-dichos-de-embajador-judd"
       ],
       "mergedIds": [
-        "chile-busca-reducir-aranceles-con-ee-uu-en-medio-de-controversia-por-declaracion"
+        "chile-busca-reducir-aranceles-con-ee-uu-en-medio-de-controversia-por-declaracion",
+        "chile-busca-ampliar-exenciones-arancelarias-de-ee-uu-mientras-polemica-por-dicho"
       ]
     },
     {
@@ -2291,6 +2646,13 @@
           "url": "https://neuquenpost.com/karina-milei-se-reunio-con-la-embajadora-israeli-para-impulsar-las-exportaciones-y-anuncio-la-semana-de-la-carne-argentina-en-israel/",
           "alsoIn": true,
           "title": "Karina Milei se reunió con la embajadora israelí para impulsar las exportaciones y anunció la “Semana de la Carne Argentina en Israel”"
+        },
+        {
+          "name": "NewsDigitales",
+          "type": "También publicó esta noticia",
+          "url": "https://www.newsdigitales.com/nota/347140/carne-argentina-el-gobierno-busca-ampliar-los-negocios-exportadores-con-israel/",
+          "alsoIn": true,
+          "title": "Carne argentina: el Gobierno busca ampliar los negocios exportadores con Israel"
         }
       ],
       "gnTried": "2026-10-10T01:42:55Z",
@@ -2302,14 +2664,17 @@
         "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPalZta1pZTklsLUd2ZzRaNHAyZWdQdm5MeDZZbm9xOTU0RDZEUDRnY3I2cFJ3MTJiVUZndVFKWGFWdmZsYU04Y0RUYmdKOHN4TTlIVFpNcGRuNW5oNkFneTRhRmNIRFJMYmQxY016alJPTXNMREYyV0JXbktncDdYR1MxdVFTUnhBOWFkdzRxWFdpaGNBVm9JeFhWQUE0V2ltRTdaRDNXUWxVMGNHdTlicjlRTVltcThONXdreWdMTm51THYyWlQ4Z0xtZkJRV1ZfLUNxWVN30gHwAUFVX3lxTE1GREVUM0FPcHpScl95Z3lqVXJQNzhraWNRWWV0c28zMWxTZGtVZWFlbXFzaHc1eENRSGpHZ1FRV0ZiU09OcmVqakUwVDJyRXdLakVtM2FXRkhWOEpLZmNqUFRYTXMwWERURTBLcXNlTXJ5MXVOMmtFdS1zRF96Z25oQzNvZEZOckZVREpPWEFWbkZDbmNNaXg2QXFDMjZxSXpsOFEtUkxvQ1luMjlnMFA0ZHpXYk52aVJTU21vNTJfdmNXeHR0eWgxTXBTMFhHYVpNZUs2YU5aQmNqeC1xam5RS0V1bzRHM3hoYWd4a2N4MA",
         "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQRTNNTWo0T05MX0Y3RWMwY2c4aFdMZXNHb29heGZwdDEyUEVLbDJwNXYwRDdhRkk3bENsUFhHRW0tSWVsZkFjQlFpaUZ1WXY1bWdoRHdYV19MNkI0aG56RDZvRkQ1UkxheXQ5eC1CYlFNZW1JT0hJa3JDS1hKeVkyOC05SEFYZ0tZTWtKVFFfMzZUbnZFUGgtQm9wR0Q4bUZwQ2FVamg0dDJZcThaMGtUMi1POVJXX2VoWk9OcU1fSUtDNWlEVy1fcjlHeXpzNjJfVEd5MG00bWtCXzFfWkFiaFItWkF5VW8",
         "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQaDA2THhxZjBOVHcwRzlTd0YybTJkSDZlTmZFTVFpN3cwNlExaTBKSzJkRklyRWM1b3hlOGZiVEdFdzBBYVZoYWRKM2gyZXdXRkJDbGJXc1ZaX2YteHAzd2plTnBzMGszZkVUVGhmeHhqZTR4S19nQnNlZVg4ZHUtTnpRODZ1Q0pTcEVvMVpERENTQ0pVNWZlTTJTeTBZYkIybEFxLW9rZkZZZkVzWmpZT09ZSTRDRXVWNUgxYTdGWmkwLS1sVTlUVHZPZHdSQ1JDaEQxbkxvWWE0TE5PZjlYdEFNcWh3Ml9sRUotT0l3",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc0R4dkc1MF96QnJqLVBPcVA4TTNRdzVlc2VxRDlsRFZCVEo1Zjh6S2dsRFBCMWktaWdjSDY3ckVlZjdTbTZ6U1Vycl85WGg0bmowcWZjOVBfTENQMlJQM0lwbDFpSGFsXzhkS3FUS3dDZHFYWE5qZGlDaHRnMW42WVEzUGdqSnBfWG9ocERTYndwTmVHMWN4aTlFaS0xRG45WE1NdC1YZGxjelQ3VGU2QzVjUDlGc0FuaDRiNEJ3",
         "https://tn.com.ar/politica/2026/10/09/el-gobierno-busca-ampliar-las-exportaciones-de-carne-a-israel-y-avanzar-en-la-cooperacion-militar",
         "https://www.abc.com.py/internacionales/2026/10/09/gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exportaciones",
-        "https://www.infobae.com/america/agencias/2026/10/10/gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exportaciones"
+        "https://www.infobae.com/america/agencias/2026/10/10/gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exportaciones",
+        "https://www.newsdigitales.com/nota/347140/carne-argentina-el-gobierno-busca-ampliar-los-negocios-exportadores-con-israel"
       ],
       "mergedIds": [
         "el-gobierno-busca-ampliar-las-exportaciones-de-carne-a-israel-y-avanzar-en-la-co",
         "gobierno-de-milei-anuncia-semana-de-carne-argentina-en-israel-para-sumar-exporta",
-        "karina-milei-se-reunio-con-la-embajadora-israeli-para-impulsar-las-exportaciones"
+        "karina-milei-se-reunio-con-la-embajadora-israeli-para-impulsar-las-exportaciones",
+        "carne-argentina-el-gobierno-busca-ampliar-los-negocios-exportadores-con-israel"
       ]
     },
     {
@@ -2548,6 +2913,46 @@
         "https://www.infobae.com/america/mundo/2026/10/09/estados-unidos-sanciono-a-17-buques-y-a-las-navieras-que-transportan-petroleo-y-petroquimicos-de-iran",
         "https://www.vietnam.vn/es/my-ap-dat-trung-phat-moi-nham-vao-mang-luoi-van-chuyen-dau-cua-iran"
       ]
+    },
+    {
+      "id": "la-union-europea-acordo-limitar-a-la-mitad-las-importaciones-de-autos-hibridos-c",
+      "datetime": "2026-10-09T22:13:00Z",
+      "date": "2026-10-09",
+      "firstSeen": "2026-10-11T00:49:31Z",
+      "title": "La Unión Europea acordó limitar a la mitad las importaciones de autos híbridos chinos",
+      "summary": "El bloque busca reducir el ingreso de los vehículos chinos y forma parte de una negociación más amplia para corregir el desequilibrio comercial",
+      "body": [],
+      "keyData": [],
+      "topics": [
+        "Importaciones",
+        "China",
+        "Asia",
+        "Europa"
+      ],
+      "countries": [
+        "China",
+        "Unión Europea"
+      ],
+      "tags": [
+        "Autos"
+      ],
+      "visual": "customs",
+      "impact": 1,
+      "affectsArgentina": false,
+      "kind": "noticia",
+      "label": "Automática",
+      "feed": "Google Noticias · Aduana e importaciones Argentina",
+      "sources": [
+        {
+          "name": "iProfesional",
+          "type": "Medio · vía Google Noticias",
+          "url": "https://www.iprofesional.com/autos/466332-la-union-europea-acordo-limitar-a-la-mitad-las-importaciones-de-autos-hibridos-chinos",
+          "primary": true,
+          "author": ""
+        }
+      ],
+      "gnTried": "2026-10-11T00:49:31Z",
+      "gnUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNOHRCTzM1SEYxSDF4OEtCZlFma1BZMEgzMjJFYkRyWnNnd1puMkdXbF9CZnBNVDRSWUlHT2lpdTR6cTFSTFJqTTFHVklaMlJpTU01eC1fNEo3UFZpaDRfbnJmX25JUTNIaUV5SU9IZ01kcmc1SDdpYURoOTFIakExMy1LUXhuc2pCVElfd3YzRW1IYUNmTVd4ajA3U18tWlNEMDlNdFExWnZBNWg3UTYxcDB5VXZWekYzUGRJT2JqcEhCV3p3bGJRY3IwRdIBywFBVV95cUxNOHRCTzM1SEYxSDF4OEtCZlFma1BZMEgzMjJFYkRyWnNnd1puMkdXbF9CZnBNVDRSWUlHT2lpdTR6cTFSTFJqTTFHVklaMlJpTU01eC1fNEo3UFZpaDRfbnJmX25JUTNIaUV5SU9IZ01kcmc1SDdpYURoOTFIakExMy1LUXhuc2pCVElfd3YzRW1IYUNmTVd4ajA3U18tWlNEMDlNdFExWnZBNWg3UTYxcDB5VXZWekYzUGRJT2JqcEhCV3p3bGJRY3IwRQ?oc=5"
     },
     {
       "id": "trump-afirma-que-rusia-suministrara-300-000-toneladas-de-diesel-a-mercados-inter",
@@ -30238,7 +30643,7 @@
     }
   ],
   "ingestion": {
-    "ranAt": "2026-10-10T21:41:06Z",
+    "ranAt": "2026-10-11T00:49:31Z",
     "sources": [
       {
         "source": "OMC · Organización Mundial del Comercio",
@@ -30263,27 +30668,27 @@
         "url": "https://portalportuario.cl/feed/",
         "ok": true,
         "items": 15,
-        "added": 2,
+        "added": 1,
         "updated": 0,
-        "skipped": 5
+        "skipped": 4
       },
       {
         "source": "Google Noticias · Comercio exterior Argentina",
         "url": "https://news.google.com/rss/search?q=%22comercio+exterior%22+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 47,
-        "added": 4,
+        "items": 45,
+        "added": 3,
         "updated": 0,
-        "skipped": 29
+        "skipped": 24
       },
       {
         "source": "Google Noticias · Aduana e importaciones Argentina",
         "url": "https://news.google.com/rss/search?q=(aduana+OR+importaciones+OR+ARCA)+Argentina+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 50,
-        "added": 2,
+        "items": 52,
+        "added": 1,
         "updated": 0,
-        "skipped": 36
+        "skipped": 35
       },
       {
         "source": "Google Noticias · Exportaciones Argentina",
@@ -30292,34 +30697,46 @@
         "items": 56,
         "added": 4,
         "updated": 0,
-        "skipped": 27
+        "skipped": 26
       },
       {
         "source": "Google Noticias · Mercosur",
         "url": "https://news.google.com/rss/search?q=Mercosur+(acuerdo+OR+comercio+OR+arancel)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 44,
-        "added": 1,
+        "items": 43,
+        "added": 0,
         "updated": 0,
-        "skipped": 28
+        "skipped": 30
       },
       {
         "source": "Google Noticias · Aranceles y comercio internacional",
         "url": "https://news.google.com/rss/search?q=(aranceles+OR+%22guerra+comercial%22+OR+%22acuerdo+comercial%22)+when:1d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 49,
+        "items": 47,
         "added": 4,
         "updated": 0,
-        "skipped": 36
+        "skipped": 31
       },
       {
         "source": "Google Noticias · Logística y fletes",
         "url": "https://news.google.com/rss/search?q=(fletes+OR+navieras+OR+%22transporte+mar%C3%ADtimo%22+OR+%22carga+a%C3%A9rea%22+OR+portacontenedores)+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
         "ok": true,
-        "items": 48,
-        "added": 1,
+        "items": 46,
+        "added": 0,
         "updated": 0,
-        "skipped": 20
+        "skipped": 18
+      },
+      {
+        "source": "ONU Noticias · Desarrollo económico",
+        "url": "https://news.un.org/feed/subscribe/es/news/topic/economic-development/feed/rss.xml",
+        "ok": false,
+        "error": "not well-formed (invalid token): line 1, column 0"
+      },
+      {
+        "source": "El Mercantil",
+        "url": "https://elmercantil.com/feed/",
+        "ok": false,
+        "error": "not well-formed (invalid token): line 1, column 119"
       }
     ],
     "curatedDuplicates": [
@@ -30334,6 +30751,11 @@
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
       },
       {
+        "title": "La principal vía fluvial del comercio exterior argentino tendrá un nuevo esquema de control",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNVNNbU5DRWp1UFZCejdLSFNMR25Hc0p5bmEwOUxsX0FMQ3hrazRqU1UzeFlvZnRVUnFxckQ0b04xaUNuSk95Z2libXJVUWF2REh1NGdWZzFlT1BJZGhZUlpTcmRHV21hMUhmamRGM3YtTHRuVUVKQzE5ZEZMSWhDd3ppM0NhMlFUQUxTUVIwQTJsbGRxR3RQODJtbndVbHhtQ1IyN0YxZjdzUEt6N0l6VnJ1clJHS0Z2WVJEVmd1NkJxdGdLdHZwdGdyVFk2TFRLLW5wNjBOYng2b1ZULXc?oc=5",
+        "curated": "hidrovia-resolucion-59-2026-consejo-control-via-navegable-troncal"
+      },
+      {
         "title": "Intercambio con Brasil: notable baja de las importaciones y nuevo crecimiento de las exportaciones",
         "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQeHJzNUlfaXZtbnUyVVpiMkxhSXQyWW5PYmFKRHhIazhDTTIwcHJ2X2NSTzVXWlJzaU9qNW5yNWNpUUZtSGFmYmJ1cHdmb1BfOE1Zc3RkY2MwamFxWWt6RXEwUWlvbmZ6ejZOTWVSVTlIdWtpMDdhcW5HZVBBeDVHOWJ4alJ0SXRFVy1ONjZQMUxzNm1QUTJiMmpXM2otSkJOUk92SkVuNjRoY3dtRTdDcm5uMVhUdFdpeXdlemxYZ0xzR3ZwWEJ1TTFHUzQyRHNid0IxRXRrandJakhSNDU1WnRR?oc=5",
         "curated": "deficit-argentina-brasil-septiembre-2026-51-millones"
@@ -30344,11 +30766,6 @@
         "curated": "arca-rg-5910-trafico-vecinal-fronterizo-tope-150-dolares"
       },
       {
-        "title": "El Gobierno dio luz verde a una aerolínea internacional para entrar al negocio de la carga aérea: cuál es y qué implica",
-        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPUE95SFZJTjVlTXdUdmR0ZFZzRkthV09pMmxKNHBfam82VDNjeVhseTA1aUtCcW5fejlKZU5oVWlLdEFUbjVOVWhJNVg1a2xzYWx5aklsWmNKbk1sWU1IQmJTT3hwQ3dheGg3MHBKY0ozYUxSdzFudjdCaEIzb2VDZUlBQnVpaVpta3dsSHp3M0R0VXlZRF9iMDU1eGo5blMyZUVzRlUxZ3hrcXNra29GQWlNazdDR0wxTjY1aUZCSkdFWFplZzE4Ul9VeUx0MkltOVJPNXQtb2EzM3BUaGxCLWlSMHd5R2c1XzJZWGRn?oc=5",
-        "curated": "ethiopian-airlines-autorizada-carga-aerea-argentina-disposicion-26-2026"
-      },
-      {
         "title": "Tarifas de transporte marítimo de contenedores caen 2% por menor demanda durante festividad china",
         "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQ1FqY2xtaHozMm95TVFSNjAxcklzSEZoWFpvSHBDTmxPc3k1YVJidkpUWUZULWY2SUFxRUVLYWViUUx4WUh2WGJsR0NmaGlZZkUxUm9YNGJzUVBOVWc0amg3NnZSc2c5Tl9ER3I4NWJwYTRGOFF2RmxqaWF6ZGV4Z1pyS3M2eGd2WHhDNEpzUmFxbHlsN3FWNmhPWW5JczMzQVJuRkFkOXpxcmlRLU94SmU1aF9QWWhOMjVEc1RyWUtsdw?oc=5",
         "curated": "drewry-wci-baja-2-8-octubre"
@@ -30357,39 +30774,25 @@
     "excluded": 0,
     "grouped": [
       {
-        "main": "derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquiler-2",
+        "main": "el-gobierno-organizara-la-semana-de-la-carne-argentina-en-tel-aviv-para-impulsar",
         "merged": [
-          "derogar-el-dnu-70-no-restituye-las-leyes-anteriores-que-pasaria-con-alquileres-s"
+          "carne-argentina-el-gobierno-busca-ampliar-los-negocios-exportadores-con-israel"
         ]
       },
       {
-        "main": "cma-cgm-y-ceva-logistics-refuerzan-su-capacidad-logistica-integrada-tras-acuerdo",
+        "main": "chile-negocia-rebaja-de-aranceles-con-eeuu-en-medio-de-nueva-polemica-por-dichos",
         "merged": [
-          "cma-cgm-y-ceva-logistics-refuerzan-su-capacidad-logistica-integrada-tras-acu-2"
-        ]
-      },
-      {
-        "main": "ovoproductos-las-exportaciones-argentinas-superaron-los-us-20-millones-y-marcaro",
-        "merged": [
-          "las-exportaciones-argentinas-de-ovoproductos-alcanzaron-un-record-en-diez-anos"
-        ]
-      },
-      {
-        "main": "santa-fe-despliega-en-buenos-aires-su-potencial-logistico-para-multiplicar-expor",
-        "merged": [
-          "santa-fe-despliega-en-buenos-aires-su-potencial-logistico-para-multiplicar-e-2",
-          "santa-fe-despliega-en-buenos-aires-su-potencial-logistico-para-multiplicar-e-4",
-          "santa-fe-despliega-en-buenos-aires-su-potencial-logistico-para-multiplicar-e-3"
+          "chile-busca-ampliar-exenciones-arancelarias-de-ee-uu-mientras-polemica-por-dicho"
         ]
       }
     ],
     "googleNews": {
-      "pending": 16,
-      "resolved": 16,
-      "withSummary": 12,
+      "pending": 12,
+      "resolved": 12,
+      "withSummary": 10,
       "withPhoto": 0,
       "failed": 0,
-      "duplicates": 0
+      "duplicates": 1
     }
   },
   "stories": [

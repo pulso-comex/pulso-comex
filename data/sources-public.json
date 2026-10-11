@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-11T00:48:21.276123+00:00",
+ "generatedAt": "2026-10-11T00:50:03.158371+00:00",
  "sources": [
   {
    "name": "OMC · Organización Mundial del Comercio",
@@ -7,8 +7,8 @@
    "aggregator": false,
    "state": "ok",
    "status": "Funciona",
-   "lastOk": "2026-10-10T21:41:06Z",
-   "lastRun": "2026-10-10T21:41:06Z",
+   "lastOk": "2026-10-11T00:49:31Z",
+   "lastRun": "2026-10-11T00:49:31Z",
    "items": 8,
    "added": 0
   },
@@ -29,8 +29,8 @@
    "aggregator": false,
    "state": "ok",
    "status": "Funciona",
-   "lastOk": "2026-10-10T21:41:06Z",
-   "lastRun": "2026-10-10T21:41:06Z",
+   "lastOk": "2026-10-11T00:49:31Z",
+   "lastRun": "2026-10-11T00:49:31Z",
    "items": 12,
    "added": 0
   },
@@ -51,10 +51,10 @@
    "aggregator": false,
    "state": "ok",
    "status": "Funciona",
-   "lastOk": "2026-10-10T21:41:06Z",
-   "lastRun": "2026-10-10T21:41:06Z",
+   "lastOk": "2026-10-11T00:49:31Z",
+   "lastRun": "2026-10-11T00:49:31Z",
    "items": 15,
-   "added": 2
+   "added": 1
   },
   {
    "name": "Google Noticias · Comercio exterior Argentina",
@@ -62,10 +62,10 @@
    "aggregator": true,
    "state": "ok",
    "status": "Funciona",
-   "lastOk": "2026-10-10T21:41:06Z",
-   "lastRun": "2026-10-10T21:41:06Z",
-   "items": 47,
-   "added": 4
+   "lastOk": "2026-10-11T00:49:31Z",
+   "lastRun": "2026-10-11T00:49:31Z",
+   "items": 45,
+   "added": 3
   },
   {
    "name": "Google Noticias · Aduana e importaciones Argentina",
@@ -73,10 +73,10 @@
    "aggregator": true,
    "state": "ok",
    "status": "Funciona",
-   "lastOk": "2026-10-10T21:41:06Z",
-   "lastRun": "2026-10-10T21:41:06Z",
-   "items": 50,
-   "added": 2
+   "lastOk": "2026-10-11T00:49:31Z",
+   "lastRun": "2026-10-11T00:49:31Z",
+   "items": 52,
+   "added": 1
   },
   {
    "name": "Google Noticias · Exportaciones Argentina",
@@ -84,8 +84,8 @@
    "aggregator": true,
    "state": "ok",
    "status": "Funciona",
-   "lastOk": "2026-10-10T21:41:06Z",
-   "lastRun": "2026-10-10T21:41:06Z",
+   "lastOk": "2026-10-11T00:49:31Z",
+   "lastRun": "2026-10-11T00:49:31Z",
    "items": 56,
    "added": 4
   },
@@ -95,10 +95,10 @@
    "aggregator": true,
    "state": "ok",
    "status": "Funciona",
-   "lastOk": "2026-10-10T21:41:06Z",
-   "lastRun": "2026-10-10T21:41:06Z",
-   "items": 44,
-   "added": 1
+   "lastOk": "2026-10-11T00:49:31Z",
+   "lastRun": "2026-10-11T00:49:31Z",
+   "items": 43,
+   "added": 0
   },
   {
    "name": "Google Noticias · Aranceles y comercio internacional",
@@ -106,9 +106,9 @@
    "aggregator": true,
    "state": "ok",
    "status": "Funciona",
-   "lastOk": "2026-10-10T21:41:06Z",
-   "lastRun": "2026-10-10T21:41:06Z",
-   "items": 49,
+   "lastOk": "2026-10-11T00:49:31Z",
+   "lastRun": "2026-10-11T00:49:31Z",
+   "items": 47,
    "added": 4
   },
   {
@@ -117,10 +117,10 @@
    "aggregator": true,
    "state": "ok",
    "status": "Funciona",
-   "lastOk": "2026-10-10T21:41:06Z",
-   "lastRun": "2026-10-10T21:41:06Z",
-   "items": 48,
-   "added": 1
+   "lastOk": "2026-10-11T00:49:31Z",
+   "lastRun": "2026-10-11T00:49:31Z",
+   "items": 46,
+   "added": 0
   },
   {
    "name": "OMC · World Trade Organization (inglés)",
@@ -137,10 +137,10 @@
    "name": "ONU Noticias · Desarrollo económico",
    "type": "Organismo internacional",
    "aggregator": false,
-   "state": "new",
-   "status": "Todavía no se consultó",
+   "state": "stale",
+   "status": "Sin lecturas correctas recientes",
    "lastOk": null,
-   "lastRun": null,
+   "lastRun": "2026-10-11T00:49:31Z",
    "items": null,
    "added": null
   },
@@ -148,10 +148,10 @@
    "name": "El Mercantil",
    "type": "Medio especializado · España (logística y transporte internacional)",
    "aggregator": false,
-   "state": "new",
-   "status": "Todavía no se consultó",
+   "state": "stale",
+   "status": "Sin lecturas correctas recientes",
    "lastOk": null,
-   "lastRun": null,
+   "lastRun": "2026-10-11T00:49:31Z",
    "items": null,
    "added": null
   }

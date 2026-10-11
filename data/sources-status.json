@@ -1,8 +1,8 @@
 {
   "OMC · Organización Mundial del Comercio": {
     "ok": true,
-    "lastRun": "2026-10-10T21:41:06Z",
-    "lastOk": "2026-10-10T21:41:06Z",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "lastOk": "2026-10-11T00:49:31Z",
     "failures": 0,
     "items": 8,
     "added": 0
@@ -17,8 +17,8 @@
   },
   "Aduana News": {
     "ok": true,
-    "lastRun": "2026-10-10T21:41:06Z",
-    "lastOk": "2026-10-10T21:41:06Z",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "lastOk": "2026-10-11T00:49:31Z",
     "failures": 0,
     "items": 12,
     "added": 0
@@ -31,58 +31,70 @@
   },
   "PortalPortuario": {
     "ok": true,
-    "lastRun": "2026-10-10T21:41:06Z",
-    "lastOk": "2026-10-10T21:41:06Z",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "lastOk": "2026-10-11T00:49:31Z",
     "failures": 0,
     "items": 15,
-    "added": 2
+    "added": 1
   },
   "Google Noticias · Comercio exterior Argentina": {
     "ok": true,
-    "lastRun": "2026-10-10T21:41:06Z",
-    "lastOk": "2026-10-10T21:41:06Z",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "lastOk": "2026-10-11T00:49:31Z",
     "failures": 0,
-    "items": 47,
-    "added": 4
+    "items": 45,
+    "added": 3
   },
   "Google Noticias · Aduana e importaciones Argentina": {
     "ok": true,
-    "lastRun": "2026-10-10T21:41:06Z",
-    "lastOk": "2026-10-10T21:41:06Z",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "lastOk": "2026-10-11T00:49:31Z",
     "failures": 0,
-    "items": 50,
-    "added": 2
+    "items": 52,
+    "added": 1
   },
   "Google Noticias · Exportaciones Argentina": {
     "ok": true,
-    "lastRun": "2026-10-10T21:41:06Z",
-    "lastOk": "2026-10-10T21:41:06Z",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "lastOk": "2026-10-11T00:49:31Z",
     "failures": 0,
     "items": 56,
     "added": 4
   },
   "Google Noticias · Mercosur": {
     "ok": true,
-    "lastRun": "2026-10-10T21:41:06Z",
-    "lastOk": "2026-10-10T21:41:06Z",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "lastOk": "2026-10-11T00:49:31Z",
     "failures": 0,
-    "items": 44,
-    "added": 1
+    "items": 43,
+    "added": 0
   },
   "Google Noticias · Aranceles y comercio internacional": {
     "ok": true,
-    "lastRun": "2026-10-10T21:41:06Z",
-    "lastOk": "2026-10-10T21:41:06Z",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "lastOk": "2026-10-11T00:49:31Z",
     "failures": 0,
-    "items": 49,
+    "items": 47,
     "added": 4
   },
   "Google Noticias · Logística y fletes": {
     "ok": true,
-    "lastRun": "2026-10-10T21:41:06Z",
-    "lastOk": "2026-10-10T21:41:06Z",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "lastOk": "2026-10-11T00:49:31Z",
     "failures": 0,
-    "items": 48,
-    "added": 1
+    "items": 46,
+    "added": 0
+  },
+  "ONU Noticias · Desarrollo económico": {
+    "ok": false,
+    "lastError": "not well-formed (invalid token): line 1, column 0",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "failures": 1
+  },
+  "El Mercantil": {
+    "ok": false,
+    "lastError": "not well-formed (invalid token): line 1, column 119",
+    "lastRun": "2026-10-11T00:49:31Z",
+    "failures": 1
   }
 }
