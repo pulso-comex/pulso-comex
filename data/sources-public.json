@@ -1,0 +1,159 @@
+{
+ "generatedAt": "2026-10-11T00:48:21.276123+00:00",
+ "sources": [
+  {
+   "name": "OMC · Organización Mundial del Comercio",
+   "type": "Organismo internacional",
+   "aggregator": false,
+   "state": "ok",
+   "status": "Funciona",
+   "lastOk": "2026-10-10T21:41:06Z",
+   "lastRun": "2026-10-10T21:41:06Z",
+   "items": 8,
+   "added": 0
+  },
+  {
+   "name": "Comisión Europea · Comercio",
+   "type": "Organismo internacional · publica en inglés",
+   "aggregator": false,
+   "state": "off",
+   "status": "Desactivada",
+   "lastOk": "2026-10-04T00:14:26Z",
+   "lastRun": "2026-10-04T00:14:26Z",
+   "items": 30,
+   "added": 8
+  },
+  {
+   "name": "Aduana News",
+   "type": "Medio especializado · Argentina",
+   "aggregator": false,
+   "state": "ok",
+   "status": "Funciona",
+   "lastOk": "2026-10-10T21:41:06Z",
+   "lastRun": "2026-10-10T21:41:06Z",
+   "items": 12,
+   "added": 0
+  },
+  {
+   "name": "Trade News",
+   "type": "Medio especializado · Argentina (bloquea lectores automáticos)",
+   "aggregator": false,
+   "state": "off",
+   "status": "Desactivada",
+   "lastOk": null,
+   "lastRun": "2026-10-04T00:14:26Z",
+   "items": null,
+   "added": null
+  },
+  {
+   "name": "PortalPortuario",
+   "type": "Medio especializado · Chile",
+   "aggregator": false,
+   "state": "ok",
+   "status": "Funciona",
+   "lastOk": "2026-10-10T21:41:06Z",
+   "lastRun": "2026-10-10T21:41:06Z",
+   "items": 15,
+   "added": 2
+  },
+  {
+   "name": "Google Noticias · Comercio exterior Argentina",
+   "type": "Agregador",
+   "aggregator": true,
+   "state": "ok",
+   "status": "Funciona",
+   "lastOk": "2026-10-10T21:41:06Z",
+   "lastRun": "2026-10-10T21:41:06Z",
+   "items": 47,
+   "added": 4
+  },
+  {
+   "name": "Google Noticias · Aduana e importaciones Argentina",
+   "type": "Agregador",
+   "aggregator": true,
+   "state": "ok",
+   "status": "Funciona",
+   "lastOk": "2026-10-10T21:41:06Z",
+   "lastRun": "2026-10-10T21:41:06Z",
+   "items": 50,
+   "added": 2
+  },
+  {
+   "name": "Google Noticias · Exportaciones Argentina",
+   "type": "Agregador",
+   "aggregator": true,
+   "state": "ok",
+   "status": "Funciona",
+   "lastOk": "2026-10-10T21:41:06Z",
+   "lastRun": "2026-10-10T21:41:06Z",
+   "items": 56,
+   "added": 4
+  },
+  {
+   "name": "Google Noticias · Mercosur",
+   "type": "Agregador",
+   "aggregator": true,
+   "state": "ok",
+   "status": "Funciona",
+   "lastOk": "2026-10-10T21:41:06Z",
+   "lastRun": "2026-10-10T21:41:06Z",
+   "items": 44,
+   "added": 1
+  },
+  {
+   "name": "Google Noticias · Aranceles y comercio internacional",
+   "type": "Agregador",
+   "aggregator": true,
+   "state": "ok",
+   "status": "Funciona",
+   "lastOk": "2026-10-10T21:41:06Z",
+   "lastRun": "2026-10-10T21:41:06Z",
+   "items": 49,
+   "added": 4
+  },
+  {
+   "name": "Google Noticias · Logística y fletes",
+   "type": "Agregador",
+   "aggregator": true,
+   "state": "ok",
+   "status": "Funciona",
+   "lastOk": "2026-10-10T21:41:06Z",
+   "lastRun": "2026-10-10T21:41:06Z",
+   "items": 48,
+   "added": 1
+  },
+  {
+   "name": "OMC · World Trade Organization (inglés)",
+   "type": "Organismo internacional · fuente en inglés",
+   "aggregator": false,
+   "state": "off",
+   "status": "Desactivada",
+   "lastOk": null,
+   "lastRun": null,
+   "items": null,
+   "added": null
+  },
+  {
+   "name": "ONU Noticias · Desarrollo económico",
+   "type": "Organismo internacional",
+   "aggregator": false,
+   "state": "new",
+   "status": "Todavía no se consultó",
+   "lastOk": null,
+   "lastRun": null,
+   "items": null,
+   "added": null
+  },
+  {
+   "name": "El Mercantil",
+   "type": "Medio especializado · España (logística y transporte internacional)",
+   "aggregator": false,
+   "state": "new",
+   "status": "Todavía no se consultó",
+   "lastOk": null,
+   "lastRun": null,
+   "items": null,
+   "added": null
+  }
+ ]
+}
