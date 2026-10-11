@@ -7,7 +7,8 @@
 <!--meta:end-->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"></noscript>
 <script type="application/ld+json" id="ld-site">{"@context":"https://schema.org","@graph":[{"@type":"NewsMediaOrganization","@id":"#org","name":"Pulso Comex","description":"Portal de noticias, datos y análisis sobre comercio exterior, con foco en Argentina y Latinoamérica.","inLanguage":"es-AR"},{"@type":"WebSite","@id":"#web","name":"Pulso Comex","inLanguage":"es-AR","publisher":{"@id":"#org"}}]}</script>
 <link rel="stylesheet" href="{{BASE}}assets/app.css?v={{ASSET_VERSION}}">
 </head>
@@ -92,9 +93,9 @@
             <label for="q" class="sr">Palabras clave</label>
             <input id="q" type="search" placeholder="Ej.: aranceles, Mercosur, fletes" autocomplete="off" enterkeyhint="search">
           </div>
-          <button class="btn" type="button" id="advBtn" aria-expanded="false" aria-controls="adv"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="t">Filtros</span><span class="cnt" id="advCount" hidden></span></button>
+          <button class="btn" type="button" id="advBtn" aria-expanded="false" aria-controls="adv" aria-label="Filtros avanzados"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="t">Filtros</span><span class="cnt" id="advCount" hidden></span></button>
         </form>
-        <div class="search-hints" id="searchHints"></div>
+        <div class="search-hints" id="searchHints"><span>Búsquedas frecuentes:</span><button type="button" data-q="aranceles">aranceles</button><button type="button" data-q="Mercosur">Mercosur</button><button type="button" data-q="fletes">fletes</button><button type="button" data-q="ARCA">ARCA</button><button type="button" data-q="acero">acero</button></div>
       </div>
     </div>
   </div>
@@ -257,6 +258,7 @@
 <script id="site-data" type="application/json">{{SITE_DATA}}</script>
 <script id="photo-bank" type="application/json">{{PHOTO_BANK}}</script>
 <script id="feed-data" type="application/json">{{FEED}}</script>
+<script src="{{BASE}}assets/calc-core.js?v={{ASSET_VERSION}}" defer></script>
 <script src="{{BASE}}assets/app.js?v={{ASSET_VERSION}}" defer></script>
 </body>
 </html>

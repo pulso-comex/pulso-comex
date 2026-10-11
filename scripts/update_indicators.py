@@ -152,6 +152,12 @@ SOURCES = {
     'trigo': ('Trigo · precio pizarra Rosario', bcr_grain(r'Trigo', 'el trigo')),
     'brent': ('Petróleo Brent', lambda old: fred_brent()),
 }
+# Frecuencia del dato (la página la muestra y la usa para avisar si el último dato quedó viejo).
+# maxAgeDays: días desde la fecha de referencia a partir de los cuales el dato se marca como desactualizado.
+FREQUENCY = {
+    'tc-mayorista': ('diaria', 6), 'soja': ('diaria', 6), 'maiz': ('diaria', 6), 'trigo': ('diaria', 6),
+    'brent': ('diaria', 14),   # la EIA publica una vez por semana, con demora
+}
 
 
 def merge_history(old: dict, new: dict) -> None:
@@ -177,18 +183,24 @@ def main():
             old = {'id': ind_id, 'label': label, 'value': None, 'group': 'Mercados'}
             inds.append(old)
             by_id[ind_id] = old
+        freq, max_age = FREQUENCY.get(ind_id, ('diaria', 6))
+        old.update({'frequency': freq, 'maxAgeDays': max_age})
+        now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
+        old['lastAttempt'] = now
         try:
             new = getter(old)
         except Exception as e:  # una fuente caída no frena a las demás ni borra el último dato
+            old['lastError'] = str(e)[:160]   # la página avisa que se muestra el último dato válido
             report.append((ind_id, False, str(e)[:160]))
             continue
+        old.pop('lastError', None)
         merge_history(old, new)
         old.update({k: v for k, v in new.items() if v is not None or k == '_prev'})
         if old.get('_prev') is None:
             old.pop('_prev', None)
         old['label'] = label
         old.pop('pending', None)
-        old['checkedAt'] = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
+        old['checkedAt'] = now
         report.append((ind_id, True, f"{old['value']} · {old['period']}"))
     store['indicators'] = inds
     NEWS.write_text(json.dumps(store, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

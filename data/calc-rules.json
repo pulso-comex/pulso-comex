@@ -1,0 +1,55 @@
+{
+  "_ayuda": "Reglas tributarias de las calculadoras de importación y exportación. Las usan assets/calc-core.js (cálculo en el navegador), scripts/build_pages.py (texto visible sin JavaScript) y tests/calc.test.js. Si cambia una norma: actualizá el valor, la fuente y 'reviewed', y corré 'node tests/calc.test.js'. No cargues alícuotas que no estén verificadas en una fuente oficial.",
+  "reviewed": "2026-10-10",
+  "import": {
+    "te": {
+      "rate": 3,
+      "validUntil": "2027-12-31",
+      "caps": [[10000, 180], [100000, 3000], [1000000, 30000], [null, 150000]],
+      "norm": "Decreto 1140/2024 (art. 762 del Código Aduanero)",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/319050/20241231"
+    },
+    "ivaRates": [21, 10.5, 0],
+    "percIva": {
+      "rates": { "21": 20, "10.5": 10 },
+      "norm": "RG AFIP 2937, art. 7 (texto actualizado)",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/norma-174986/actualizacion"
+    },
+    "percGan": {
+      "general": 6,
+      "particular": 11,
+      "norm": "RG AFIP 2281, art. 5 (texto actualizado, RG 4579/2019)",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/norma-130808/actualizacion"
+    },
+    "iibb": {
+      "general": 2.5,
+      "norm": "Resolución General 3/2013 de la Comisión Arbitral (SIRPEI)",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/norma-211072/texto"
+    },
+    "exclusions": {
+      "until": "2026-12-31",
+      "norm": "RG AFIP 5490/2024 y RG AFIP 5501/2024, prorrogadas por la RG ARCA 5868/2026",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/norma-427094"
+    }
+  },
+  "export": {
+    "dexBase": {
+      "norm": "Código Aduanero, arts. 735 a 737, y Decreto 1330/2004 (importación temporaria)",
+      "url": "https://biblioteca.afip.gob.ar/dcp/DEC_C_001330_2004_09_30"
+    },
+    "reintBase": {
+      "norm": "Decreto 1011/1991, art. 1 (sustituido por el Decreto 571/1996)",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/norma-37249/texto"
+    }
+  },
+  "sources": [
+    { "name": "Decreto 1140/2024: tasa de estadística del 3 % hasta el 31/12/2027, topes y exenciones", "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/319050/20241231" },
+    { "name": "Código Aduanero (Ley 22.415): art. 762 (tasa de estadística) y arts. 735 a 737 (valor imponible de exportación)", "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/16536/texact.htm" },
+    { "name": "RG AFIP 2937 (texto actualizado): percepción de IVA en la importación, alícuotas y exclusiones", "url": "https://www.argentina.gob.ar/normativa/nacional/norma-174986/actualizacion" },
+    { "name": "RG AFIP 2281 (texto actualizado): percepción de Ganancias en la importación, alícuotas y exclusiones", "url": "https://www.argentina.gob.ar/normativa/nacional/norma-130808/actualizacion" },
+    { "name": "RG ARCA 5868/2026: prórroga hasta el 31/12/2026 de la exclusión de percepciones (bienes de primera necesidad e insumos MiPyME)", "url": "https://www.argentina.gob.ar/normativa/nacional/norma-427094" },
+    { "name": "RG 3/2013 de la Comisión Arbitral: alícuota general del 2,5 % del SIRPEI (Ingresos Brutos en la Aduana)", "url": "https://www.argentina.gob.ar/normativa/nacional/norma-211072/texto" },
+    { "name": "Decreto 1330/2004: régimen de importación temporaria para perfeccionamiento industrial", "url": "https://biblioteca.afip.gob.ar/dcp/DEC_C_001330_2004_09_30" },
+    { "name": "Decreto 571/1996: base de cálculo de los reintegros (FOB menos insumos importados y comisiones)", "url": "https://www.argentina.gob.ar/normativa/nacional/norma-37249/texto" }
+  ]
+}

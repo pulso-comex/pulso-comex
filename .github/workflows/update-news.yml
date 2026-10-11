@@ -30,6 +30,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Probar las calculadoras
+        run: node tests/calc.test.js
+
       - name: Instalar Pillow (imágenes para redes)
         continue-on-error: true
         run: python -m pip install --quiet pillow
@@ -54,10 +57,21 @@ jobs:
             echo 'Sin cambios para guardar.'
           else
             git commit -m "chore(news): actualización automática"
+            # Si alguien publicó mientras corría el bot (por ejemplo, una nota curada), sus cambios ganan:
+            # ante un conflicto se descarta lo del bot, se regeneran las páginas sobre lo publicado y se reintenta.
+            pushed=false
             for i in 1 2 3; do
-              git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push && break
+              if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then pushed=true; break; fi
+              git rebase --abort 2>/dev/null || true
+              git fetch origin "${GITHUB_REF_NAME}"
+              git reset --hard "origin/${GITHUB_REF_NAME}"
+              python scripts/build_pages.py
+              git add -A .
+              git diff --cached --quiet && { pushed=true; break; }
+              git commit -m "chore(news): páginas regeneradas"
               sleep 5
             done
+            if [ "$pushed" != true ]; then echo '::error::No se pudieron guardar los cambios en el repositorio.'; exit 1; fi
           fi
 
       - name: Armar la carpeta del sitio

@@ -186,5 +186,35 @@
     "tags": [
       "WTO"
     ]
+  },
+  {
+    "name": "ONU Noticias · Desarrollo económico",
+    "url": "https://news.un.org/feed/subscribe/es/news/topic/economic-development/feed/rss.xml",
+    "type": "Organismo internacional",
+    "enabled": true,
+    "min_relevance": 2,
+    "max_new": 4,
+    "fetch_og": false,
+    "topics": [
+      "Economía internacional"
+    ],
+    "countries": [
+      "Global"
+    ],
+    "tags": []
+  },
+  {
+    "name": "El Mercantil",
+    "url": "https://elmercantil.com/feed/",
+    "type": "Medio especializado · España (logística y transporte internacional)",
+    "enabled": true,
+    "min_relevance": 1,
+    "max_new": 8,
+    "fetch_og": false,
+    "topics": [
+      "Logística"
+    ],
+    "countries": [],
+    "tags": []
   }
 ]

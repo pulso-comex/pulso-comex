@@ -6,6 +6,7 @@ Portal estático de noticias de comercio exterior, publicado en GitHub Pages y a
 
 El workflow `.github/workflows/update-news.yml` corre a las 06:30, 10:30, 14:30, 18:30 y 22:30 (hora argentina), cada vez que se suben cambios a `main` y a mano desde **Actions → Actualizar y publicar Pulso Comex → Run workflow**. En cada corrida:
 
+0. `node tests/calc.test.js` prueba las calculadoras. Si una prueba falla, no se publica nada (mejor el sitio de ayer que una cuenta tributaria equivocada).
 1. `scripts/update_news.py` lee las fuentes de `sources.json` y guarda las notas en `data/news.json`.
    - Una fuente caída no frena a las demás; el resumen de cada corrida (qué fuentes respondieron y cuántas notas nuevas hubo) aparece en la página de la ejecución en Actions y en `data/sources-status.json`.
    - Deduplica por enlace original. Las notas que cuentan el mismo hecho con otro título se agrupan (`group_auto`): queda la más completa y las demás pasan a «También publicaron esta noticia» (fuentes con `alsoIn: true`); sus direcciones viejas redirigen a la que quedó (`mergedIds`).
@@ -13,12 +14,12 @@ El workflow `.github/workflows/update-news.yml` corre a las 06:30, 10:30, 14:30,
    - Google Noticias no trae resumen: el bot resuelve el enlace del medio (hasta `MAX_GN_RESOLVE` por corrida) y toma la descripción y la imagen que la página publica para compartir. Si no puede, la nota se muestra solo con el titular y un aviso (nunca con texto de relleno).
    - Limpia firmas al inicio de los resúmenes («Por Redacción … @…»).
    - Detecta países, categorías y si la nota menciona a Argentina.
-   - Usa la imagen que publica la propia fuente (en el RSS o en la página original), con crédito.
+   - No usa las fotos de los medios (derechos de autor): cada nota lleva una foto de archivo de dominio público, CC0 o Unsplash, marcada como ilustrativa. Se reactiva por fuente solo con autorización escrita (`use_source_images`).
    - Al terminar, `scripts/update_indicators.py` actualiza los indicadores de mercado: tipo de cambio mayorista (API del BCRA), precio pizarra de soja, maíz y trigo (Bolsa de Comercio de Rosario) y petróleo Brent (serie de la EIA publicada por FRED). Si una fuente falla, se conserva el último dato.
    - Después, `scripts/update_trade.py` arma `data/trade.json` con el intercambio comercial argentino del INDEC (series de tiempo de datos.gob.ar): exportaciones e importaciones por mes, por rubro, por uso económico, por destino y por origen. Es la base del panel de `/datos/`.
 2. `scripts/fetch_photos.py` descarga una copia local de las fotos de archivo (`img/stock/`), usadas cuando la nota no trae imagen.
 3. `scripts/build_pages.py` genera `index.html`, una página liviana por nota en `/noticias/<id>/` (con su propio título, descripción e imagen para redes), una página por sección (`/seccion/<slug>/`), por tema en desarrollo (`/tema/<id>/`) y por guía (`/guias/<slug>/`), las herramientas (`/datos/`, `/agenda/`, `/glosario/`, `/calculadora-importacion/`, `/calculadora-exportacion/`, `/guias/`…), `data/latest.json`, `sitemap.xml`, `news-sitemap.xml` y `feed.xml`. Borra las páginas que ya no corresponden.
-4. Guarda los cambios en el repositorio y publica el sitio.
+4. Guarda los cambios en el repositorio y publica el sitio. Si mientras corría alguien publicó otro cambio (por ejemplo, la curaduría), gana el cambio publicado: se descarta lo del bot en esa corrida, se regeneran las páginas sobre lo publicado y las noticias nuevas entran en la corrida siguiente.
 
 La página, además, vuelve a consultar `data/latest.json` cada 10 minutos y suma las notas nuevas sin recargar.
 
@@ -96,3 +97,26 @@ python3 -m http.server 8000
 ```
 
 y abrí http://localhost:8000. En vistas previas sin acceso a Internet (por ejemplo, al abrir el zip en un chat), las fotos externas no cargan y se ve un recuadro azul con la categoría: es el respaldo previsto, no un error.
+
+
+## Calculadoras de importación y exportación
+
+- **Fórmulas**: `assets/calc-core.js` (funciones puras, sin DOM). La página (`assets/app.js`) solo dibuja el formulario y el resultado.
+- **Reglas tributarias**: `data/calc-rules.json` (tasa de estadística y sus topes, percepciones, Ingresos Brutos, vigencias, fuentes oficiales y fecha de revisión `reviewed`). Es la única fuente: la usan el cálculo, el texto visible sin JavaScript (`build_pages.py`) y las pruebas. No cargues una alícuota que no esté verificada en el Boletín Oficial o en argentina.gob.ar/normativa.
+- **Pruebas**: `node tests/calc.test.js` (63 casos con resultado esperado calculado a mano: Incoterms, topes de la tasa en los bordes de cada tramo, Mercosur, situación fiscal, bienes de uso, formatos `1.250,50`, datos inválidos y que cada campo cambie solo lo que depende de él). Corren en cada publicación.
+- **Si cambia una norma**: actualizá `data/calc-rules.json` (valor, fuente y `reviewed`), ajustá las pruebas y la guía `costo-importacion` de `data/guides.json`, y corré las pruebas.
+- Premisas: importación definitiva para consumo por despacho general; el derecho de importación y el de exportación se piden siempre (no se asume ninguna alícuota); el reintegro solo se suma si el usuario confirma que corresponde; el descuento de insumos importados de la base del derecho de exportación solo se aplica con importación temporaria (Decreto 1330/2004).
+
+## Estado de las fuentes
+
+`build_pages.py` publica `data/sources-public.json`, que la página `/fuentes/` muestra como tabla (funciona, falló la última consulta, no responde, sin lecturas recientes, desactivada). Una fuente activa con 3 fallas seguidas o sin lecturas correctas en 48 h se marca para revisar y aparece como aviso en el registro de la ejecución. El error técnico exacto queda en `data/sources-status.json` (no se publica) y en el resumen de cada ejecución de GitHub Actions.
+
+## Indicadores: fecha de referencia y frecuencia
+
+Cada indicador de `data/news.json → indicators` puede tener:
+
+- `obsDate`: fecha a la que corresponde el dato (AAAA-MM-DD; para datos mensuales, el último día del mes).
+- `frequency`: `diaria`, `semanal`, `mensual` o `acumulado`, y `maxAgeDays`: días después de `obsDate` a partir de los cuales la página avisa que el dato quedó viejo.
+- `checkedAt` (última consulta correcta), `lastAttempt` y `lastError`: los escribe `update_indicators.py`. Si la última consulta falla, se conserva el último dato válido y la página lo avisa.
+
+Los de fletes, carga aérea, INDEC en tarjetas, China y Brasil los carga la curaduría con su `obsDate`; los de mercado los actualiza el bot.

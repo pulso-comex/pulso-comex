@@ -258,6 +258,7 @@ def prerender_article(it, img, img_alt, source_img):
       <h1>{esc(it['title'])}</h1>
       {f'<p class="lede">{esc(it["summary"])}</p>' if it.get('summary') else ''}
       <p class="pre-meta">Fuente: <a href="{esc(p.get('url'))}" rel="noopener noreferrer">{esc(p.get('name'))}</a></p>
+      <p class="pre-meta">{'Nota automática: título y extracto del feed de la fuente, sin revisión de la redacción.' if is_auto(it) else 'Nota de la redacción, verificada contra las fuentes enlazadas.'}</p>
       <img src="{esc(img)}" alt="{esc(img_alt)}" width="1200" height="675"{' referrerpolicy="no-referrer"' if source_img else ''}>
       <p class="pre-meta">{credit}</p>
       {explainer_html(it)}
@@ -281,7 +282,15 @@ def site_data(news):
     tax.pop('_ayuda', None)
     glo = json.loads((ROOT / 'data' / 'glossary.json').read_text(encoding='utf-8'))
     return {'taxonomy': tax, 'glossary': glo.get('terms', []),
-            'guides': [{k: g.get(k) for k in ('slug', 'title', 'desc', 'updated')} for g in load_guides()]}
+            'guides': [{k: g.get(k) for k in ('slug', 'title', 'desc', 'updated')} for g in load_guides()],
+            'calcRules': load_calc_rules()}
+
+
+def load_calc_rules():
+    """Reglas tributarias de las calculadoras (data/calc-rules.json): una sola fuente para la página, el texto sin JS y las pruebas."""
+    rules = json.loads((ROOT / 'data' / 'calc-rules.json').read_text(encoding='utf-8'))
+    rules.pop('_ayuda', None)
+    return rules
 
 
 def load_guides():
@@ -313,10 +322,14 @@ def render(template, *, meta, prerender, feed, bank, version, base='', sitedata=
     a, b = page.index(start), page.index(end)
     page = page[:a] + prerender(page[a + len(start):b]) + page[b + len(end):]
     page = pretty_links(page, base)
+    if base:   # páginas internas: el encabezado ya sale compacto (evita que el contenido salte cuando arranca el JavaScript)
+        page = page.replace('<section class="phead" id="phead">', '<section class="phead compact" id="phead">', 1)
     if STATUS:
         page = (page.replace('<b id="updatedLong">—</b>', f'<b id="updatedLong">{esc(STATUS["updated"])}</b>')
                     .replace('<span id="footUpdated">—</span>', f'<span id="footUpdated">{esc(STATUS["updated"])}</span>')
-                    .replace('<span id="year"></span>', f'<span id="year">{STATUS["year"]}</span>'))
+                    .replace('<span id="year"></span>', f'<span id="year">{STATUS["year"]}</span>')
+                    .replace('<b id="todayLong"></b>', f'<b id="todayLong">{esc(STATUS.get("today", ""))}</b>')
+                    .replace('<span id="countLine"></span>', f'<span id="countLine">{STATUS.get("count", "")}</span>'))
     return (page.replace('{{PHOTO_BANK}}', json_script(bank))
                 .replace('{{SITE_DATA}}', json_script(sitedata or {}))
                 .replace('{{FEED}}', json_script(feed))
@@ -366,7 +379,8 @@ def tool_body(key, news, items, sitedata, base):
     """Contenido visible sin JavaScript (y para buscadores) de cada herramienta."""
     if key == 'datos':
         rows = ''.join(f'<li><b>{esc(d.get("label"))}</b>: {esc(d.get("value") or "Sin datos")}'
-                       f'{(" · " + esc(d.get("period"))) if d.get("period") else ""} <small>Fuente: {esc(d.get("source"))}</small></li>'
+                       f'{(" · " + esc(d.get("period"))) if d.get("period") else ""}'
+                       f'{(" · dato " + esc(d.get("frequency"))) if d.get("frequency") else ""} <small>Fuente: {esc(d.get("source"))}</small></li>'
                        for d in news.get('indicators', []))
         return f'<h2>Indicadores</h2><ul class="pre-list">{rows}</ul>'
     if key == 'glosario':
@@ -385,25 +399,106 @@ def tool_body(key, news, items, sitedata, base):
         return '<h2>Próximas fechas</h2><ul class="pre-list">' + ''.join(
             f'<li><b>{esc(dt)}</b> · {esc(lbl)} <small><a href="{base}noticias/{esc(it["id"])}/">{esc(it["title"])}</a></small></li>'
             for dt, lbl, it in rows[:60]) + '</ul>'
-    if key == 'calculadora':
-        return ('<h2>Cómo se calcula</h2>'
-                '<p>El valor CIF es la suma del precio FOB, el flete internacional y el seguro. Sobre el CIF se aplican el derecho de importación '
-                '(según la posición arancelaria NCM) y la tasa de estadística. La suma de esos tres conceptos es la base imponible del IVA, '
-                'de la percepción de IVA y de la percepción de Ganancias; Ingresos Brutos se percibe según la provincia.</p>'
-                '<p>Es una estimación orientativa: no contempla regímenes especiales, valores criterio, derechos antidumping ni licencias. '
-                'Antes de operar, confirmá las alícuotas con tu despachante de aduana.</p>')
-    if key == 'exportacion':
-        return ('<h2>Cómo se calcula</h2>'
-                '<p>Los derechos de exportación y los reintegros se calculan sobre el valor FOB, del que, según el régimen, se descuentan los insumos '
-                'importados incorporados. El ingreso neto estimado es el FOB menos el derecho y los gastos hasta el embarque, más el reintegro.</p>'
-                '<p>Las alícuotas dependen de la posición arancelaria y cambian con frecuencia: confirmalas con tu despachante de aduana.</p>')
+    if key in ('calculadora', 'exportacion'):
+        return calc_prerender(key, sitedata['calcRules'])
     if key == 'guias':
         return '<ul class="pre-list">' + ''.join(f'<li><a href="{base}guias/{esc(g["slug"])}/">{esc(g["title"])}</a><small>{esc(g["desc"])}</small></li>'
                                                 for g in load_guides()) + '</ul>'
     if key == 'fuentes':
         names = sorted({primary(i).get('name') for i in items if primary(i).get('name')}, key=norm)
-        return '<h2>Fuentes citadas</h2><ul class="pre-list">' + ''.join(f'<li>{esc(n)}</li>' for n in names) + '</ul>'
+        ingest = ''.join(f'<li><b>{esc(x["name"])}</b> · {esc(x["type"])} <small>{esc(x["status"])}'
+                         f'{(" · última lectura correcta: " + fmt_day(parse_date(x["lastOk"]))) if x.get("lastOk") else ""}</small></li>'
+                         for x in sources_public())
+        return ('<h2>Fuentes que se consultan automáticamente</h2><ul class="pre-list">' + ingest + '</ul>'
+                '<h2>Fuentes citadas en las noticias</h2><ul class="pre-list">' + ''.join(f'<li>{esc(n)}</li>' for n in names) + '</ul>')
+    mail = SITECFG.get('contactEmail')
+    mail_html = f'<a href="mailto:{esc(mail)}">{esc(mail)}</a>' if mail else ''
+    if key == 'acerca':
+        return ('<p>Pulso Comex es un portal de noticias, datos y herramientas sobre comercio exterior, con foco en Argentina y Latinoamérica.</p>'
+                '<h2>Criterios editoriales</h2><ul>'
+                '<li>Toda nota identifica su fuente y enlaza al original; no se publican noticias sin título, fecha y fuente.</li>'
+                '<li>Las notas de la redacción se verifican contra la fuente original. Las marcadas como «Automática» provienen del feed de la fuente y no tienen revisión editorial.</li>'
+                '<li>Las calculadoras dan estimaciones orientativas y citan las normas que usan, con su fecha de revisión.</li>'
+                '<li>Para pedir una corrección, escribinos con el enlace a la nota' + (f' a {mail_html}' if mail else '') + '.</li></ul>')
+    if key == 'contacto':
+        return f'<p>Escribinos a {mail_html} para correcciones, sugerencias de fuentes o propuestas.</p>' if mail else ''
+    if key == 'privacidad':
+        return ('<p>No hace falta registrarse para leer el sitio. Las noticias guardadas y las preferencias se guardan solo en tu navegador.</p>'
+                + ('<p>Usamos Google Analytics para contar visitas; usa cookies y recibe datos técnicos de la visita.</p>' if SITECFG.get('googleAnalyticsId') else ''))
+    if key == 'terminos':
+        return ('<p>El contenido es informativo y no constituye asesoramiento legal, aduanero, tributario ni financiero. '
+                'Las notas citan y enlazan a sus fuentes; los datos y declaraciones pertenecen a ellas.</p>')
     return ''
+
+
+STALE_SOURCE_HOURS = 48     # una fuente activa sin lecturas correctas en este plazo se marca para revisar
+FAILING_SOURCE_RUNS = 3     # o con esta cantidad de fallas seguidas
+
+
+def sources_public():
+    """Estado de las fuentes de ingesta para la página /fuentes/: comprensible para el público, sin detalles técnicos.
+    El error exacto queda en data/sources-status.json y en el resumen de cada ejecución de GitHub Actions."""
+    cfg = json.loads((ROOT / 'sources.json').read_text(encoding='utf-8')) if (ROOT / 'sources.json').exists() else []
+    f = ROOT / 'data' / 'sources-status.json'
+    status = json.loads(f.read_text(encoding='utf-8')) if f.exists() else {}
+    out = []
+    for src in cfg:
+        st = status.get(src['name'], {})
+        last_ok = parse_date(st.get('lastOk'))
+        hours = (NOW - last_ok).total_seconds() / 3600 if last_ok else None
+        if not src.get('enabled', True):
+            state, text = 'off', 'Desactivada'
+        elif not st:
+            state, text = 'new', 'Todavía no se consultó'
+        elif st.get('failures', 0) >= FAILING_SOURCE_RUNS:
+            state, text = 'fail', f'No responde ({st["failures"]} intentos seguidos)'
+        elif hours is None or hours > STALE_SOURCE_HOURS:
+            state, text = 'stale', 'Sin lecturas correctas recientes'
+        elif not st.get('ok', True):
+            state, text = 'warn', 'Falló la última consulta'
+        else:
+            state, text = 'ok', 'Funciona'
+        out.append({'name': src['name'], 'type': src.get('type', ''), 'aggregator': bool(src.get('aggregator')),
+                    'state': state, 'status': text, 'lastOk': st.get('lastOk'), 'lastRun': st.get('lastRun'),
+                    'items': st.get('items'), 'added': st.get('added')})
+    return out
+
+
+def calc_prerender(key, rules):
+    """Explicación de la calculadora visible sin JavaScript, armada con las mismas reglas que usa el cálculo."""
+    I = rules['import']
+    usd = lambda n: f'USD {n:,.0f}'.replace(',', '.')
+    rev = '/'.join(reversed(rules['reviewed'].split('-')))
+    srcs = '<h2>Normas y fuentes oficiales</h2><ul>' + ''.join(
+        f'<li><a href="{esc(x["url"])}" rel="noopener">{esc(x["name"])}</a></li>' for x in rules['sources']) + \
+        f'</ul><p>Reglas revisadas el {rev}. Es una estimación orientativa: confirmá las alícuotas y los requisitos con tu despachante de aduana.</p>'
+    if key == 'calculadora':
+        caps, low = [], 0
+        for lim, cap in I['te']['caps']:
+            tramo = f'Hasta {usd(lim)}' if low == 0 else (f'Más de {usd(low)} y hasta {usd(lim)}' if lim else f'Más de {usd(low)}')
+            caps.append(f'<tr><td>{tramo}</td><td>{usd(cap)}</td></tr>')
+            low = lim or low
+        until = '/'.join(reversed(I['te']['validUntil'].split('-')))
+        return ('<h2>Cómo se calcula</h2>'
+                '<ol><li><b>Valor CIF</b> (valor en aduana): precio de compra más lo que el Incoterm no incluye: gastos hasta el embarque (EXW, FCA), '
+                'flete (EXW, FCA, FOB) y seguro (todos salvo CIF).</li>'
+                '<li><b>Derecho de importación</b>: alícuota de la posición arancelaria sobre el CIF. Se pide siempre: no se asume ningún porcentaje. '
+                'Con origen Mercosur y certificado de origen es 0 %, salvo productos excluidos como el azúcar y el sector automotor.</li>'
+                f'<li><b>Tasa de estadística</b>: {I["te"]["rate"]} % del CIF hasta el {until} ({esc(I["te"]["norm"])}), con topes por tramo. '
+                'Exentas: mercadería originaria del Mercosur, acuerdos que lo prevean y operaciones con normas especiales.</li>'
+                '<li><b>Base imponible</b>: CIF + derecho + tasa. Sobre ella se calculan el IVA (21 %, 10,5 % o exento), la percepción de IVA '
+                f'({I["percIva"]["rates"]["21"]} % o {I["percIva"]["rates"]["10.5"]} %), la de Ganancias ({I["percGan"]["general"]} %; '
+                f'{I["percGan"]["particular"]} % para uso particular) y la de Ingresos Brutos (general {str(I["iibb"]["general"]).replace(".", ",")} %).</li>'
+                '<li><b>Situación fiscal</b>: un responsable inscripto recupera el IVA y las percepciones; para un monotributista o un particular son costo. '
+                'Los bienes de uso no tienen percepciones de IVA ni de Ganancias.</li></ol>'
+                '<h2>Topes de la tasa de estadística</h2><table><tr><th>Valor en aduana</th><th>Tope</th></tr>' + ''.join(caps) + '</table>'
+                '<p>No incluye derechos antidumping, impuestos internos, valores criterio, licencias ni regímenes especiales.</p>' + srcs)
+    return ('<h2>Cómo se calcula</h2>'
+            '<ol><li><b>Derecho de exportación</b>: alícuota de la posición sobre el valor FOB. Solo si el producto lleva insumos importados '
+            'temporariamente (Decreto 1330/2004) se descuenta su valor CIF de la base.</li>'
+            '<li><b>Reintegro</b>: no se aplica por defecto. Si la posición lo tiene y se cumplen los requisitos, se calcula sobre el FOB menos el '
+            'CIF de los insumos importados incorporados y las comisiones (Decreto 571/1996).</li>'
+            '<li><b>Ingreso neto estimado</b>: FOB − derecho − comisiones − gastos hasta el embarque (+ reintegro, si corresponde).</li></ol>' + srcs)
 
 
 TOOLS = {
@@ -532,11 +627,22 @@ def main():
     sitedata = site_data(news)
     tax = Taxonomy.load()
     items = sorted([i for i in news.get('items', []) if i.get('id') and i.get('title')], key=item_dt, reverse=True)
-    version = hashlib.sha1((ROOT / 'assets/app.js').read_bytes() + (ROOT / 'assets/app.css').read_bytes()).hexdigest()[:10]
+    version = hashlib.sha1(b''.join((ROOT / f).read_bytes() for f in ('assets/app.js', 'assets/app.css', 'assets/calc-core.js'))).hexdigest()[:10]
     up = parse_date(news.get('updatedAt')) or NOW
     up_local = up.astimezone(TZ)
     meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
-    STATUS.update(updated=f'{up_local.day} {meses[up_local.month - 1]} {up_local.year}, {up_local:%H:%M} h', year=NOW.astimezone(TZ).year)
+    STATUS.update(updated=f'{up_local.day} de {meses[up_local.month - 1]} de {up_local.year}, {up_local:%H:%M} h', year=NOW.astimezone(TZ).year)
+    # Fecha y conteo ya escritos en el HTML: la página no cambia de alto cuando el JavaScript los actualiza.
+    dias = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo']
+    meses_l = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+    hoy = NOW.astimezone(TZ)
+    STATUS['today'] = f'{dias[hoy.weekday()]}, {hoy.day} de {meses_l[hoy.month - 1]} de {hoy.year}'
+    week = sum(1 for i in items if item_dt(i) >= NOW - timedelta(days=7))
+    STATUS['count'] = (f'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>'
+                       f'<b>{min(len(items), LATEST_MAX)}</b>&nbsp;noticias · <b>{week}</b>&nbsp;en 7 días')
+    today_n = sum(1 for i in items if item_dt(i).astimezone(TZ).date() == hoy.date())
+    if today_n:
+        STATUS['count'] += f' · <b>{today_n}</b>&nbsp;hoy'
     og_map = {}
     if og_images:
         try:
@@ -566,8 +672,10 @@ def main():
     css = (ROOT / 'assets' / 'app.css').read_text(encoding='utf-8')
     js = (ROOT / 'assets' / 'app.js').read_text(encoding='utf-8').replace('</script', '<\\/script')
     home = re.sub(r'<link rel="stylesheet" href="assets/app\.css\?v=[^"]*">', lambda _: f'<style>\n{css}</style>', home, count=1)
+    core = (ROOT / 'assets' / 'calc-core.js').read_text(encoding='utf-8').replace('</script', '<\\/script')
+    home = re.sub(r'<script src="assets/calc-core\.js\?v=[^"]*" defer></script>', lambda _: f'<script>\n{core}</script>', home, count=1)
     home = re.sub(r'<script src="assets/app\.js\?v=[^"]*" defer></script>', lambda _: f'<script>\n{js}</script>', home, count=1)
-    assert '<style>' in home and 'src="assets/app.js' not in home, 'no se pudo embeber CSS/JS en la portada'
+    assert '<style>' in home and 'src="assets/app.js' not in home and 'src="assets/calc-core.js' not in home, 'no se pudo embeber CSS/JS en la portada'
     (ROOT / 'index.html').write_text(home, encoding='utf-8')
 
     # Una página por nota
@@ -619,6 +727,13 @@ def main():
         if d.is_dir() and d.name not in ids:
             shutil.rmtree(d)
             removed += 1
+
+    # Estado público de las fuentes de ingesta (página /fuentes/) y aviso en el registro si alguna necesita revisión.
+    srcs = sources_public()
+    (ROOT / 'data' / 'sources-public.json').write_text(json.dumps({'generatedAt': NOW.isoformat(), 'sources': srcs}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    for x in srcs:
+        if x['state'] in ('fail', 'stale'):
+            print(f"Aviso: revisar la fuente «{x['name']}»: {x['status']}.")
 
     # Páginas con dirección propia: secciones, temas en desarrollo y herramientas
     static_urls = build_static_pages(template, news, items, bank, version, sitedata, tax)

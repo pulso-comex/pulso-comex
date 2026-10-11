@@ -46,6 +46,12 @@
   ["USTR","USTR","Oficina del Representante Comercial de EE.UU.: negocia acuerdos y administra medidas como la Sección 301."],
   ["VLCC","VLCC","Very large crude carrier: superpetrolero que transporta alrededor de 2 millones de barriles de crudo."],
   ["VUCEA","VUCEA","Ventanilla Única de Comercio Exterior Argentino: plataforma para tramitar en un solo lugar los permisos y certificados de importación y exportación."],
-  ["WCI","WCI","World Container Index de Drewry: índice semanal del flete spot de un contenedor de 40 pies en ocho rutas principales."]
+  ["WCI","WCI","World Container Index de Drewry: índice semanal del flete spot de un contenedor de 40 pies en ocho rutas principales."],
+  ["Tasa de estadística","[Tt]asas? de estadística","Tributo del 3 % del valor en aduana que se paga al importar para consumo, con topes por tramo de valor (Decreto 1140/2024, vigente hasta el 31/12/2027). No la paga la mercadería originaria del Mercosur."],
+  ["Valor en aduana","[Vv]alor(?:es)? en aduana","Base sobre la que se calculan el derecho de importación y la tasa de estadística. En la Argentina equivale al valor CIF: mercadería más flete y seguro hasta el lugar de importación."],
+  ["Derecho de exportación","[Dd]erechos? de exportación","Tributo que se paga al exportar, como porcentaje del valor FOB. La alícuota depende de la posición arancelaria; muchas posiciones tienen 0 %."],
+  ["Reintegro a la exportación","[Rr]eintegros? (?:a la|de) exportación","Devolución de tributos internos que tienen algunas posiciones arancelarias al exportar. Se calcula sobre el FOB menos los insumos importados y las comisiones, y no corresponde a todos los productos."],
+  ["Importación temporaria","[Ii]mportaci(?:ón|ones) temporarias?","Régimen que permite ingresar insumos sin pagar tributos si se reexportan, transformados, dentro de un plazo (Decreto 1330/2004)."],
+  ["Bien de uso","[Bb]ienes de uso","Bien que la empresa usa en su actividad y amortiza durante más de un año, como una máquina. Al importarlo no se le aplican las percepciones de IVA ni de Ganancias."]
  ]
 }

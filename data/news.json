@@ -14,7 +14,10 @@
       "period": "Semana al 8 oct 2026",
       "source": "Drewry (vía PortalPortuario)",
       "url": "https://portalportuario.cl/tarifas-de-transporte-maritimo-de-contenedores-caen-2-por-menor-demanda-durante-festividad-china/",
-      "group": "Fletes y transporte"
+      "group": "Fletes y transporte",
+      "frequency": "semanal",
+      "maxAgeDays": 12,
+      "obsDate": "2026-10-08"
     },
     {
       "id": "iaci",
@@ -25,7 +28,10 @@
       "period": "Semana al 1 oct 2026",
       "source": "Drewry",
       "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/intra-asia-container-index",
-      "group": "Fletes y transporte"
+      "group": "Fletes y transporte",
+      "frequency": "semanal",
+      "maxAgeDays": 12,
+      "obsDate": "2026-10-01"
     },
     {
       "id": "iata",
@@ -36,7 +42,10 @@
       "period": "Agosto 2026",
       "source": "IATA",
       "url": "https://www.iata.org/en/pressroom/2026-releases/09-29-air-cargo-demand-grows-august/",
-      "group": "Fletes y transporte"
+      "group": "Fletes y transporte",
+      "frequency": "mensual",
+      "maxAgeDays": 75,
+      "obsDate": "2026-08-31"
     },
     {
       "id": "arg-expo",
@@ -47,7 +56,10 @@
       "period": "Agosto 2026",
       "source": "INDEC",
       "url": "https://www.indec.gob.ar/uploads/informesdeprensa/ica_09_266E5973E036.pdf",
-      "group": "Argentina"
+      "group": "Argentina",
+      "frequency": "mensual",
+      "maxAgeDays": 75,
+      "obsDate": "2026-08-31"
     },
     {
       "id": "arg-impo",
@@ -58,7 +70,10 @@
       "period": "Agosto 2026",
       "source": "INDEC",
       "url": "https://www.indec.gob.ar/uploads/informesdeprensa/ica_09_266E5973E036.pdf",
-      "group": "Argentina"
+      "group": "Argentina",
+      "frequency": "mensual",
+      "maxAgeDays": 75,
+      "obsDate": "2026-08-31"
     },
     {
       "id": "arg-saldo",
@@ -69,7 +84,10 @@
       "period": "Agosto 2026",
       "source": "INDEC",
       "url": "https://www.indec.gob.ar/uploads/informesdeprensa/ica_09_266E5973E036.pdf",
-      "group": "Argentina"
+      "group": "Argentina",
+      "frequency": "mensual",
+      "maxAgeDays": 75,
+      "obsDate": "2026-08-31"
     },
     {
       "id": "arg-expo-acum",
@@ -80,7 +98,10 @@
       "period": "Enero–agosto 2026",
       "source": "INDEC",
       "url": "https://www.indec.gob.ar/uploads/informesdeprensa/ica_09_266E5973E036.pdf",
-      "group": "Argentina"
+      "group": "Argentina",
+      "frequency": "acumulado",
+      "maxAgeDays": 75,
+      "obsDate": "2026-08-31"
     },
     {
       "id": "chn-sup",
@@ -91,7 +112,10 @@
       "period": "Agosto 2026",
       "source": "Aduanas de China (vía Euronews)",
       "url": "https://es.euronews.com/2026/09/08/las-exportaciones-de-china-se-aceleran-por-la-fuerte-demanda-de-coches-y-productos-tecnolo",
-      "group": "Mundo"
+      "group": "Mundo",
+      "frequency": "mensual",
+      "maxAgeDays": 75,
+      "obsDate": "2026-08-31"
     },
     {
       "id": "bra-expo",
@@ -102,7 +126,10 @@
       "period": "Septiembre 2026",
       "source": "MDIC (vía Agência Brasil)",
       "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/balanca-comercial-tem-superavit-de-us-774-bilhoes-em-setembro",
-      "group": "Mundo"
+      "group": "Mundo",
+      "frequency": "mensual",
+      "maxAgeDays": 75,
+      "obsDate": "2026-09-30"
     },
     {
       "id": "tc-mayorista",
@@ -237,7 +264,9 @@
           "2026-10-09",
           1515.8766
         ]
-      ]
+      ],
+      "frequency": "diaria",
+      "maxAgeDays": 6
     },
     {
       "id": "soja",
@@ -280,7 +309,9 @@
           "2026-10-08",
           560000.0
         ]
-      ]
+      ],
+      "frequency": "diaria",
+      "maxAgeDays": 6
     },
     {
       "id": "brent",
@@ -415,7 +446,9 @@
           "2026-10-06",
           125.44
         ]
-      ]
+      ],
+      "frequency": "diaria",
+      "maxAgeDays": 14
     },
     {
       "id": "maiz",
@@ -458,7 +491,9 @@
           "2026-10-08",
           293500.0
         ]
-      ]
+      ],
+      "frequency": "diaria",
+      "maxAgeDays": 6
     },
     {
       "id": "trigo",
@@ -501,7 +536,9 @@
           "2026-10-08",
           342700.0
         ]
-      ]
+      ],
+      "frequency": "diaria",
+      "maxAgeDays": 6
     }
   ],
   "items": [

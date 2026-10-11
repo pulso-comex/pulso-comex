@@ -269,7 +269,7 @@ function normalize(raw){
   const label = raw.label || '';
   const kind = KINDS[raw.kind] ? raw.kind : (norm(label) === 'analisis' ? 'analisis' : 'noticia');
   return {
-    id: raw.id || slug(raw.title).slice(0,80), date: raw.date, datetime: raw.datetime || null, updated: raw.updated || null,
+    id: raw.id || slug(raw.title).slice(0,80), date: raw.date, datetime: raw.datetime || null, updated: raw.updated || null, firstSeen: raw.firstSeen || null,
     title: raw.title, summary: raw.label === 'Automática' ? cleanSummary(raw.summary) : (raw.summary || ''), body: raw.body || [], keyData: raw.keyData || [],
     topics: (raw.topics || []).filter(t => TOPICS.includes(t)), countries: raw.countries || [], tags: raw.tags || [],
     visual: raw.visual || 'globe', impact: Math.min(3, Math.max(1, raw.impact || 1)), kind, label,
@@ -284,8 +284,23 @@ function normalizeIndicator(d){
   const has = d.value !== null && d.value !== undefined && String(d.value).trim() !== '';
   return { id: d.id || slug(d.label), label: d.label, value: has ? String(d.value) : null, change: d.change || '', trend: d.trend || 'flat',
     period: d.period || '', source: d.source || '', url: d.url || '', group: d.group || 'Otros', pending: d.pending || '',
-    history: Array.isArray(d.history) ? d.history.filter(p => Array.isArray(p) && Number.isFinite(p[1])) : [] };
+    history: Array.isArray(d.history) ? d.history.filter(p => Array.isArray(p) && Number.isFinite(p[1])) : [],
+    obsDate: /^\d{4}-\d{2}-\d{2}$/.test(d.obsDate || '') ? d.obsDate : '', frequency: d.frequency || '', maxAgeDays: +d.maxAgeDays || 0,
+    checkedAt: d.checkedAt || '', lastAttempt: d.lastAttempt || '', lastError: d.lastError || '' };
 }
+// Estado del dato: viejo para su frecuencia, o la última consulta a la fuente falló (se muestra el último dato válido).
+function indicatorStatus(d){
+  const out = [];
+  if (d.value && d.obsDate && d.maxAgeDays){
+    const age = Math.floor((Date.now() - Date.parse(d.obsDate + 'T12:00:00Z')) / 86400000);
+    if (age > d.maxAgeDays) out.push({ cls: 'stale', text: `Dato de hace ${age} días: la fuente no publicó uno más nuevo o no se pudo obtener.` });
+  }
+  if (d.lastError && (!d.checkedAt || d.lastAttempt > d.checkedAt))
+    out.push({ cls: 'fail', text: 'La última consulta a la fuente falló: se muestra el último dato válido.' });
+  return out;
+}
+const FREQ_LABEL = { diaria: 'Dato diario', semanal: 'Dato semanal', mensual: 'Dato mensual', acumulado: 'Acumulado del año' };
+const fmtChecked = iso => { const d = new Date(iso); return isNaN(d) ? '' : `${shortDate(d)} ${fmtTime.format(d)} h`; };
 
 async function loadFeeds(){
   const byKey = new Map(state.items.map(i => [i.primary.url, i]));
@@ -546,12 +561,13 @@ const metaLine = (it, { ago = false } = {}) => `<div class="meta">${srcStamp(it)
 const category = it => it.topics.find(t => t !== 'Argentina') || it.topics[0] || 'Comercio exterior';
 const eyebrow = it => `<span class="eyebrow">${esc(category(it))}</span>`;
 const kindBadge = (it, always = false) => (always || it.kind !== 'noticia') ? `<span class="kind ${esc(it.kind)}">${esc(KINDS[it.kind])}</span>` : '';
+const originBadge = it => isAuto(it) ? '<span class="kind auto" title="Título y extracto tomados del feed de la fuente, sin revisión de la redacción">Automática</span>' : '';
 const newBadge = it => state.newIds.has(it.id) ? '<span class="new">Nueva</span>' : '';
 const argFlag = it => it.affectsArgentina ? '<span class="flag-ar">Impacto en Argentina</span>' : '';
 const IMPACT_TXT = { 1:'Impacto bajo', 2:'Impacto medio', 3:'Impacto alto' };
 const impactMeter = it => `<span class="imp l${it.impact}" title="Valoración editorial del impacto comercial"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>${IMPACT_TXT[it.impact]}</span>`;
 const tagRow = (it, n = 3) => it.tags.length ? `<div class="tagrow">${it.tags.slice(0,n).map(t => `<button type="button" data-tag="${esc(t)}">#${esc(t)}</button>`).join('')}</div>` : '';
-const headRow = it => `<div class="eyebrow-row">${eyebrow(it)}${kindBadge(it)}${newBadge(it)}${argFlag(it)}</div>`;
+const headRow = it => `<div class="eyebrow-row">${eyebrow(it)}${kindBadge(it)}${originBadge(it)}${newBadge(it)}${argFlag(it)}</div>`;
 
 const sitePath = () => new URL(BASE).pathname.replace(/\/+$/, '');
 // Direcciones propias (indexables) de secciones y herramientas. scripts/build_pages.py genera una página en cada una.
@@ -605,7 +621,7 @@ function listItem(it){
   return `<li class="li">
     <a href="${esc(articleHref(it))}" class="art" tabindex="-1" aria-hidden="true">${media(it, 360, { caption:false })}</a>
     <div style="min-width:0">
-      <div class="eyebrow-row"><span class="when${d<=1?' fresh':''}" data-rel="${esc(it.id)}">${esc(relTime(it))}${it.datetime ? ' · ' + esc(timeLabel(it)) : ''}</span>${eyebrow(it)}${kindBadge(it)}${newBadge(it)}${argFlag(it)}</div>
+      <div class="eyebrow-row"><span class="when${d<=1?' fresh':''}" data-rel="${esc(it.id)}">${esc(relTime(it))}${it.datetime ? ' · ' + esc(timeLabel(it)) : ''}</span>${eyebrow(it)}${kindBadge(it)}${originBadge(it)}${newBadge(it)}${argFlag(it)}</div>
       <h3><a href="${esc(articleHref(it))}">${hl(it.title)}</a></h3>
       ${sumP(it)}
       <div class="bottom">${metaLine(it)}${tagRow(it)}</div>
@@ -645,7 +661,9 @@ function indicatorCard(d, tag = 'a'){
   const value = d.value
     ? `<span class="v">${esc(d.value)}</span>${d.change ? `<span class="c ${dir}"><span aria-hidden="true">${arrow}</span> ${esc(d.change)}<span class="sr">${dir === 'up' ? ' (sube)' : dir === 'down' ? ' (baja)' : ''}</span></span>` : ''}`
     : `<span class="v na">Sin datos disponibles</span><span class="c flat">${esc(d.pending || 'Pendiente de conexión')}</span>`;
-  const body = `<span class="l">${esc(d.label)}</span>${value}${d.value ? spark(d) : ''}<span class="p">${esc(d.period || '—')}</span><span class="s">Fuente: ${esc(d.source || 'sin fuente')}</span>`;
+  const st = indicatorStatus(d);
+  const meta = [FREQ_LABEL[d.frequency], d.checkedAt ? `consultado ${fmtChecked(d.checkedAt)}` : ''].filter(Boolean).join(' · ');
+  const body = `<span class="l">${esc(d.label)}</span>${value}${d.value ? spark(d) : ''}<span class="p">${esc(d.period || '—')}</span>${meta ? `<span class="p fq">${esc(meta)}</span>` : ''}${st.map(x => `<span class="ind-st ${x.cls}">${esc(x.text)}</span>`).join('')}<span class="s">Fuente: ${esc(d.source || 'sin fuente')}</span>`;
   return d.url && tag === 'a' ? `<a class="ind-card" href="${esc(d.url)}" target="_blank" rel="noopener noreferrer">${body}</a>` : `<div class="ind-card">${body}</div>`;
 }
 const tickerItem = d => {
@@ -1035,22 +1053,26 @@ function renderArticle(it){
   const url = shareUrl(it), t = encodeURIComponent(it.title), u = encodeURIComponent(url);
   const sec = sectionOf(it);
   $('#main').innerHTML = `<article class="article" id="art" itemscope itemtype="https://schema.org/NewsArticle">
-    <div class="article-top"><a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>${eyebrow(it)}${kindBadge(it, true)}${newBadge(it)}${argFlag(it)}
+    <div class="article-top"><a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>${eyebrow(it)}${kindBadge(it, true)}${originBadge(it)}${newBadge(it)}${argFlag(it)}
       <div class="textsize" role="group" aria-label="Tamaño del texto">${[['1','A','Texto normal'],['1.12','A','Texto grande'],['1.25','A','Texto muy grande']].map(([v,l,a]) => `<button type="button" data-size="${v}" aria-label="${a}" aria-pressed="${prefs.size===v}">${l}</button>`).join('')}</div></div>
     <h1 itemprop="headline">${esc(it.title)}</h1>
     ${it.summary ? `<p class="lede" itemprop="description">${esc(it.summary)}</p>` : ''}
     <div class="srcbar">
       <a class="src-main" href="${esc(it.primary.url)}" target="_blank" rel="noopener noreferrer"><span class="k">Fuente</span><b>${esc(it.primary.name)} ${I.ext}</b><span class="note">${esc(it.primary.type || '')}</span></a>
+      <dl class="srcbar-dl">
       ${it.primary.author ? `<div><dt>Autor</dt><dd>${esc(it.primary.author)}</dd></div>` : ''}
-      <div><dt>Fecha</dt><dd><time itemprop="datePublished" datetime="${esc(it.datetime || it.date)}">${esc(cap(fmtDay.format(itemDate(it))))}</time></dd></div>
+      <div><dt>${isAuto(it) ? 'Publicada por la fuente' : 'Fecha'}</dt><dd><time itemprop="datePublished" datetime="${esc(it.datetime || it.date)}">${esc(cap(fmtDay.format(itemDate(it))))}</time></dd></div>
       <div><dt>Hora</dt><dd>${esc(timeLabel(it))}</dd></div>
+      ${isAuto(it) && it.firstSeen ? `<div><dt>Captada por Pulso Comex</dt><dd><time datetime="${esc(it.firstSeen)}">${esc(shortDate(new Date(it.firstSeen)))} ${esc(fmtTime.format(new Date(it.firstSeen)))} h</time></dd></div>` : ''}
       ${it.updated ? `<div><dt>Actualizada</dt><dd><time itemprop="dateModified" datetime="${esc(it.updated)}">${esc(shortDate(new Date(it.updated)))} ${esc(fmtTime.format(new Date(it.updated)))} h</time></dd></div>` : ''}
       <div><dt>Países</dt><dd>${esc(it.countries.join(', '))}</dd></div>
       <div><dt>Impacto</dt><dd>${impactMeter(it)}</dd></div>
       <div><dt>Lectura</dt><dd>${mins} min</dd></div>
+      </dl>
     </div>
     <div class="art article-media">${media(it, 1200, { eager:true })}</div>
     <p class="credit" id="photoCredit">${photoCredit(photoFor(it))}</p>
+    ${isAuto(it) ? `<p class="prov auto"><b>Nota automática.</b> El título y el extracto provienen del feed de ${esc(it.primary.name)}; no pasó por la revisión de la redacción. Verificá los datos en el artículo original.</p>` : `<p class="prov"><b>Nota de la redacción.</b> Resumen propio, verificado contra las fuentes que se enlazan al pie; las cifras y declaraciones pertenecen a esas fuentes.</p>`}
     ${explainerBlock(it, gl)}
     ${impactBlock(it)}
     <div class="prose" itemprop="articleBody">${it.body.length ? it.body.map(p => `<p>${gl(p)}</p>`).join('') : it.summary ? `<p>${gl(it.summary)}</p>` : `<p class="note no-sum">Esta nota llegó por un agregador sin resumen: solo mostramos el titular. El texto completo está en ${esc(it.primary.name)}.</p>`}</div>
@@ -1074,7 +1096,7 @@ function renderArticle(it){
     </div>
     <section class="srcs" aria-labelledby="h-srcs"><h2 class="panel-h" id="h-srcs">Fuentes consultadas</h2><ol>${it.sources.filter(s => !s.alsoIn).map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>${s.author ? `, ${esc(s.author)}` : ''} <span class="t">· ${esc(s.type || 'Fuente')}${s.primary ? ' · fuente principal' : ''}</span></li>`).join('')}</ol></section>
     <div class="tags-block"><span class="note">Etiquetas</span><div class="tagrow" style="margin-top:6px">${[...it.tags.map(x => `<button type="button" data-tag="${esc(x)}">#${esc(x)}</button>`), ...it.topics.map(x => `<button type="button" data-topic="${esc(x)}">${esc(x)}</button>`), ...it.countries.filter(c=>c!=='Global').map(c => `<button type="button" data-country="${esc(c)}">${esc(c)}</button>`)].join('')}</div></div>
-    <p class="disclaimer">${it.kind === 'analisis' ? 'Este contenido resume un <b>análisis de terceros</b>: las interpretaciones pertenecen a la fuente citada, no a la redacción. ' : ''}Resumen elaborado por Pulso Comex o, cuando se indique, información normalizada desde un feed público. Para el texto completo y oficial, consultá el artículo original. Cuando la imagen proviene de la fuente se indica su origen; las fotos de archivo son ilustrativas y no corresponden al hecho.</p>
+    <p class="disclaimer">${it.kind === 'analisis' ? 'Este contenido resume un <b>análisis de terceros</b>: las interpretaciones pertenecen a la fuente citada, no a la redacción. ' : ''}${isAuto(it) ? 'Título y extracto tomados del feed público de la fuente, sin edición.' : 'Resumen elaborado por la redacción de Pulso Comex.'} Para el texto completo y oficial, consultá el artículo original. Las fotos de archivo son ilustrativas y no corresponden al hecho. ¿Encontraste un error? Escribinos desde <a href="#contacto">Contacto</a>.</p>
     ${newsletterBox('band')}
     ${related.length ? `<section class="related" aria-labelledby="h-rel"><h2 id="h-rel">También puede interesarte</h2><div class="cards ${related.length === 4 ? 'two' : ''}">${related.map(card).join('')}</div></section>` : ''}
   </article>`;
@@ -1128,8 +1150,18 @@ function renderGlosario(){
     <a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>
     <h1>Glosario de comercio exterior</h1>
     <p class="lede">Siglas y términos técnicos que aparecen en las noticias. Dentro de cada nota, la primera vez que aparecen se marcan con un subrayado de puntos: pasá el mouse o tocalos para ver la explicación.</p>
-    <dl class="gloss-list">${list.map(g => `<div id="gl-${esc(slug(g.term))}"><dt>${esc(g.term)}</dt><dd>${esc(g.def)}</dd></div>`).join('')}</dl>
+    <div class="gl-tools"><label for="glQ" class="sr">Buscar en el glosario</label><input id="glQ" type="search" placeholder="Buscar un término (por ejemplo, FOB o percepción)" autocomplete="off">
+      <nav class="gl-az" aria-label="Índice alfabético">${[...new Set(list.map(g => norm(g.term)[0].toUpperCase()))].map(l => `<a href="#gl-letra-${l}" data-gl-letter="${l}">${l}</a>`).join('')}</nav></div>
+    <p class="note" id="glCount" role="status"></p>
+    <dl class="gloss-list">${list.map((g, i) => { const l = norm(g.term)[0].toUpperCase(), first = i === 0 || norm(list[i - 1].term)[0].toUpperCase() !== l;
+      return `<div id="gl-${esc(slug(g.term))}"${first ? ` data-letter="${l}"` : ''} data-q="${esc(norm(g.term + ' ' + g.def))}"><dt>${esc(g.term)}</dt><dd>${esc(g.def)}</dd></div>`; }).join('')}</dl>
   </article>`;
+  $('#glQ').addEventListener('input', e => {
+    const q = norm(e.target.value.trim()); let n = 0;
+    $$('.gloss-list > div').forEach(d => { const show = !q || d.dataset.q.includes(q); d.hidden = !show; if (show) n++; });
+    $('#glCount').textContent = q ? (n ? `${n} ${n === 1 ? 'término' : 'términos'}` : 'Sin resultados. Probá con otra palabra.') : '';
+  });
+  $$('[data-gl-letter]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); const t = $(`.gloss-list > div[data-letter="${a.dataset.glLetter}"]`); if (t){ t.scrollIntoView({ block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); } }));
   setSEO({ title:`Glosario de comercio exterior · ${CONFIG.siteName}`, desc:'Qué significan FOB, TEU, OEA, salvaguardia, Sección 301 y otras siglas y términos del comercio exterior.', crumbs:[['Noticias','#inicio'],['Glosario']] });
 }
 /* =====================================================================
@@ -1172,7 +1204,7 @@ function tradeChartBlock(t){
 function drawTradeCharts(){
   const t = state.trade; if (!t) return;
   $$('[data-trade-chart]').forEach(el => {
-    const W = Math.max(280, el.clientWidth), H = W < 500 ? 220 : 260, padL = 46, padR = W < 500 ? 12 : 116, padT = 12, padB = 26;
+    const W = Math.max(240, el.clientWidth), H = W < 500 ? 220 : 260, padL = 46, padR = W < 500 ? 12 : 116, padT = 12, padB = 26;
     const rows = t.monthly, n = rows.length;
     const max = Math.max(...rows.flatMap(r => [r.expo, r.impo])) * 1.08;
     const step = max > 8000 ? 2000 : max > 4000 ? 1000 : 500;
@@ -1237,6 +1269,14 @@ function tradePanel({ full = true } = {}){
   </section>`;
 }
 
+// Alternativa en tabla de los minigráficos (para lectores de pantalla y para ver los valores exactos).
+function indicatorTables(){
+  const list = state.indicators.filter(d => d.history && d.history.length >= 2);
+  if (!list.length) return '';
+  return `<details class="ind-tables"><summary>Ver los últimos valores de cada indicador en tablas</summary>${list.map(d => `<div class="table-wrap" tabindex="0" role="region" aria-label="Tabla (se puede desplazar)"><table class="calc-table">
+    <caption>${esc(d.label)} · ${esc(d.source)}</caption><thead><tr><th scope="col">Fecha</th><th scope="col">Valor</th></tr></thead>
+    <tbody>${[...d.history].reverse().slice(0, 15).map(([f, v]) => `<tr><th scope="row">${esc(String(f).split('-').reverse().join('/'))}</th><td>${new Intl.NumberFormat('es-AR', { maximumFractionDigits: 2 }).format(v)}</td></tr>`).join('')}</tbody></table></div>`).join('')}</details>`;
+}
 function renderDatos(){
   const groups = {}; state.indicators.forEach(d => (groups[d.group] ||= []).push(d));
   $('#main').innerHTML = `<article class="article doc">
@@ -1246,8 +1286,10 @@ function renderDatos(){
     ${tradePanel()}
     <h2 class="ind-head">Indicadores de mercado</h2>
     ${Object.entries(groups).map(([g, list]) => `<h2 class="ind-group-h">${esc(g)}</h2><div class="ind-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">${list.map(d => indicatorCard(d)).join('')}</div>`).join('') || emptyState('Sin indicadores', 'El feed no trae indicadores en este momento.')}
+    ${indicatorTables()}
     <h2>Cómo se actualizan</h2>
-    <div class="prose"><p>Un proceso automático consulta las fuentes oficiales cinco veces por día: el INDEC (intercambio comercial, a través de las series de tiempo de datos.gob.ar), el Banco Central (tipo de cambio mayorista), la Bolsa de Comercio de Rosario (precios pizarra) y la EIA (petróleo Brent). Si una fuente no responde, se mantiene el último dato publicado con su fecha. Ningún valor se estima ni se completa a mano.</p></div>
+    <div class="prose"><p>Un proceso automático consulta cinco veces por día el INDEC (intercambio comercial, a través de las series de tiempo de datos.gob.ar), el Banco Central (tipo de cambio mayorista), la Bolsa de Comercio de Rosario (precios pizarra) y la EIA (petróleo Brent). En esos indicadores se informa cuándo se consultó la fuente; si no responde, se mantiene el último dato válido y se avisa.</p>
+    <p>Los fletes (Drewry), la carga aérea (IATA), las cifras mensuales del INDEC en tarjetas y el comercio de otros países los carga la redacción a partir del informe de cada fuente, con su período y su enlace. Cada tarjeta indica la frecuencia del dato, y si el último dato quedó viejo para esa frecuencia aparece un aviso. Ningún valor se estima.</p></div>
   </article>`;
   setSEO({ title:`Datos de comercio exterior argentino: exportaciones, importaciones e indicadores · ${CONFIG.siteName}`, desc:'Exportaciones, importaciones y saldo comercial de la Argentina por mes, rubro, uso económico, destino y origen (INDEC), con tipo de cambio, granos, petróleo y fletes.', crumbs:[['Datos']] });
 }
@@ -1258,13 +1300,34 @@ function renderFuentes(){
     <a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>
     <h1>Fuentes</h1>
     <p class="lede">Pulso Comex prioriza organismos oficiales, aduanas, organizaciones internacionales y medios especializados. Toda nota enlaza a su fuente original.</p>
+    <h2>Fuentes que se consultan automáticamente</h2>
+    <p class="note">Un proceso lee estas fuentes cinco veces por día. Sus notas se publican como «Automática», sin revisión de la redacción; los agregadores sirven para descubrir noticias y cada nota enlaza al medio que la publicó.</p>
+    <div id="ingest" aria-live="polite"><p class="note">Cargando el estado de las fuentes…</p></div>
     <h2>Fuentes citadas en el archivo</h2>
     <ul class="srcdir" style="grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));display:grid">${usedList.map(([n, o]) => `<li><button class="btn sm" type="button" data-source="${esc(n)}" style="width:100%;justify-content:space-between;white-space:normal;text-align:left;gap:10px;min-width:0"><span style="min-width:0;overflow-wrap:anywhere">${esc(n)}</span><span class="mono">${o.n}</span></button><span>${esc(o.type || '')}</span></li>`).join('')}</ul>
     <h2>Directorio de fuentes de referencia</h2>
     <div class="src-groups">${SOURCE_DIRECTORY.map(g => `<section class="src-group"><h2>${esc(g.group)}</h2><ul class="srcdir">${g.items.map(([n,u]) => `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(n)}</a></li>`).join('')}</ul></section>`).join('')}</div>
     <p class="note" style="margin-top:16px">El directorio enlaza a los sitios institucionales. Una fuente figura en una nota solo cuando la información proviene efectivamente de ella.</p>
   </article>`;
+  loadIngest();
   setSEO({ title:`Fuentes · ${CONFIG.siteName}`, desc:'Fuentes oficiales, organismos internacionales y medios especializados que usa Pulso Comex.', crumbs:[['Noticias','#inicio'],['Fuentes']] });
+}
+const fmtDateTime = iso => { const d = new Date(iso); return isNaN(d) ? '—' : `${shortDate(d)} ${fmtTime.format(d)} h`; };
+async function loadIngest(){
+  const box = $('#ingest'); if (!box) return;
+  try {
+    if (FILE_MODE) throw new Error('sin servidor');
+    const r = await fetch(at('data/sources-public.json'), { cache: 'no-cache' });
+    if (!r.ok) throw new Error(r.status);
+    const { sources = [], generatedAt } = await r.json();
+    if (!$('#ingest')) return;
+    box.innerHTML = `<div class="table-wrap" tabindex="0" role="region" aria-label="Tabla (se puede desplazar)"><table class="calc-table ingest"><caption class="sr">Estado de las fuentes de ingesta</caption>
+      <thead><tr><th scope="col">Fuente</th><th scope="col">Estado</th><th scope="col">Última lectura correcta</th><th scope="col">Notas nuevas</th></tr></thead>
+      <tbody>${sources.map(s => `<tr><th scope="row">${esc(s.name)}<small>${esc(s.type)}${s.aggregator && !/agregador/i.test(s.type) ? ' · agregador' : ''}</small></th><td><span class="src-st ${esc(s.state)}">${esc(s.status)}</span></td><td>${s.lastOk ? esc(fmtDateTime(s.lastOk)) : '—'}</td><td>${s.state === 'off' || s.added == null ? '—' : esc(s.added)}</td></tr>`).join('')}</tbody></table></div>
+      <p class="note">Estado al ${esc(fmtDateTime(generatedAt))}. «Notas nuevas» cuenta las sumadas en la última lectura. Si una fuente falla, las demás siguen funcionando.</p>`;
+  } catch (e) {
+    box.innerHTML = '<p class="note">No se pudo cargar el estado de las fuentes en este momento.</p>';
+  }
 }
 function renderGuardadas(){
   const saved = store.get('comex.saved', []).map(id => state.items.find(i => i.id === id)).filter(Boolean);
@@ -1287,7 +1350,7 @@ const PAGES = {
     <h2>Uso del contenido de Pulso Comex</h2>
     <p>Podés compartir los enlaces a las notas libremente. Para reproducir los textos, gráficos o herramientas propias del sitio, citá a Pulso Comex con un enlace a la nota.</p>`],
   acerca: ['Sobre Pulso Comex', `<p>Pulso Comex es un portal de noticias, datos y análisis sobre comercio exterior, pensado para importadores, exportadores, despachantes de aduana, operadores logísticos y portuarios, estudiantes y docentes.</p>
-    <h2>Criterios editoriales</h2><ul><li>Cada nota se verifica contra su fuente original y la enlaza.</li><li>Los resúmenes son redacción propia; las cifras y declaraciones pertenecen a las fuentes.</li><li>Se distingue entre <b>noticias</b>, <b>análisis de terceros</b>, <b>datos</b> y <b>opinión</b>.</li><li>El bloque «Impacto en Argentina» solo aparece cuando la información disponible lo sustenta.</li><li>No se publican noticias sin título, fecha y fuente con enlace.</li></ul>
+    <h2>Criterios editoriales</h2><ul><li>Cada nota de la redacción se verifica contra su fuente original y la enlaza.</li><li>Los resúmenes son redacción propia; las cifras y declaraciones pertenecen a las fuentes.</li><li>Se distingue entre <b>noticias</b>, <b>análisis de terceros</b>, <b>datos</b> y <b>opinión</b>.</li><li>El bloque «Impacto en Argentina» solo aparece cuando la información disponible lo sustenta.</li><li>No se publican noticias sin título, fecha y fuente con enlace.</li></ul>
     <h2>Cómo se actualiza</h2><p>La página lee un feed normalizado que puede alimentarse con APIs, RSS, una base de datos o webhooks, y lo vuelve a consultar cada ${CONFIG.refreshMinutes} minutos sin recargar. Un proceso automático consulta las fuentes varias veces por día; el encabezado muestra la hora de la última actualización. Las notas marcadas como «Automática» provienen directamente del feed de la fuente y no tienen revisión editorial.</p>`]
 };
 /* =====================================================================
@@ -1315,7 +1378,10 @@ PAGES.acerca = ['Quiénes somos', `
   <ul>
     <li>Toda nota identifica su fuente y enlaza al artículo original. No se publican noticias sin título, fecha y fuente.</li>
     <li>Las notas marcadas como «Automática» provienen directamente del feed de la fuente y no tienen revisión editorial; los títulos se respetan tal como los publica cada medio.</li>
+    <li>Las notas de la redacción se verifican contra la fuente original y se enlazan a ella; cuando la información sale de una norma o de un dato oficial, se enlaza el documento oficial.</li>
     <li>Se distingue entre noticias, análisis de terceros, datos y opinión.</li>
+    <li>Las calculadoras dan estimaciones orientativas: cada una cita las normas que usa y la fecha en que se revisaron.</li>
+    <li>Para pedir una corrección, escribinos con el enlace a la nota. Si corresponde, la corregimos y la nota muestra la fecha de actualización.</li>
     <li>El contenido es informativo y no reemplaza el asesoramiento de un despachante de aduana o un profesional.</li>
   </ul>
   <h2>Contacto</h2>
@@ -1325,7 +1391,7 @@ PAGES.contacto = ['Contacto', `
   ${mail ? `<p>Escribinos a <b>${mailLink}</b> <button class="btn sm" type="button" data-copy="${esc(mail)}">Copiar correo</button></p>
     <p>Respondemos consultas sobre:</p>
     <ul><li>Correcciones o aclaraciones sobre una nota (indicá el enlace).</li><li>Sugerencias de fuentes o temas.</li><li>Publicidad, patrocinios y propuestas comerciales.</li></ul>
-    <p class="note">Pulso Comex no brinda asesoramiento aduanero ni tributario personalizado. Para operar, consultá con un despachante de aduana matriculado.</p>`
+    <p class="note">Pulso Comex no brinda asesoramiento aduanero ni tributario personalizado. Para operar, consultá con un despachante de aduana.</p>`
     : '<p>Muy pronto vas a encontrar acá un correo de contacto.</p>'}
   ${SITECFG.redes?.length ? `<h2>Redes</h2><p style="display:flex;gap:14px;flex-wrap:wrap">${SITECFG.redes.map(r => `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.nombre)}</a>`).join('')}</p>` : ''}`];
 
@@ -1378,162 +1444,224 @@ document.addEventListener('submit', async e => {
 /* =====================================================================
    CALCULADORAS DE IMPORTACIÓN Y EXPORTACIÓN
    ===================================================================== */
-const CALC_DEFAULTS = { inco: 'FOB', precio: 10000, origen: 0, flete: 1200, seguro: 60, tc: '', di: 0, mercosur: false, te: 3, iva: 21, piva: 20, pgan: 6, piibb: 2.5,
-  despachante: 0, terminal: 0, fleteint: 0, otros: 0 };
-const calc = (() => {
-  const saved = store.get('comex.calc', {});
-  if (saved.fob != null && saved.precio == null) saved.precio = saved.fob;      // versión anterior de la calculadora
-  if (saved.gastos != null && saved.otros == null) saved.otros = saved.gastos;
-  delete saved.fob; delete saved.gastos;
-  return Object.assign({}, CALC_DEFAULTS, saved);
-})();
-const EXP_DEFAULTS = { fob: 20000, dex: 0, reint: 0, insumos: 0, tc: '', despachante: 0, terminal: 0, fleteint: 0, otros: 0 };
-const expo = Object.assign({}, EXP_DEFAULTS, store.get('comex.expo', {}));
-// Acepta "10000", "10.000", "10.000,50", "2,5" y "2.5".
-const num = v => {
-  let t = String(v ?? '').trim().replace(/\s|USD|\$|%/gi, '');
-  if (t.includes(',')) t = t.replace(/\./g, '').replace(',', '.');
-  else if (/^\d{1,3}(\.\d{3})+$/.test(t)) t = t.replace(/\./g, '');
-  const n = parseFloat(t); return isFinite(n) ? n : 0;
-};
+// Las fórmulas viven en assets/calc-core.js (PulsoCalc) y las alícuotas, topes y fuentes en data/calc-rules.json
+// (SITE_DATA.calcRules). Acá solo se arma la página. Pruebas: node tests/calc.test.js
+const CALC_RULES = SITE_DATA.calcRules || null;
+const CALC_DEFAULTS = { inco: 'FOB', precio: '10.000', origen: '', flete: '1.200', seguro: '60', tc: '', origin: 'extra', mercoExcluded: false, acuerdoTeExento: false,
+  teExentaEspecial: false, di: '', iva: '21', situacion: 'ri', destino: 'cambio', exclIva: false, exclGan: false, piibb: '2,5',
+  despachante: '', terminal: '', fleteint: '', otros: '' };
+const calc = Object.assign({}, CALC_DEFAULTS, store.get('comex.calc2', {}));
+const EXP_DEFAULTS = { fob: '20.000', dex: '', regimen: 'ninguno', insTemp: '', insOtros: '', comis: '', reintEleg: 'no', reint: '', tc: '',
+  despachante: '', terminal: '', fleteint: '', otros: '' };
+const expo = Object.assign({}, EXP_DEFAULTS, store.get('comex.expo2', {}));
 const fmtUSD = n => 'USD ' + new Intl.NumberFormat('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n);
 const fmtARS = n => '$ ' + new Intl.NumberFormat('es-AR', { maximumFractionDigits: 0 }).format(n);
 const fmtPct = n => new Intl.NumberFormat('es-AR', { maximumFractionDigits: 2 }).format(n) + ' %';
+const fmtYMD = s => String(s || '').split('-').reverse().join('/');
+const calcReady = () => !!(window.PulsoCalc && CALC_RULES);
 
-// Incoterms: qué incluye el precio de compra y qué hay que sumarle para llegar al valor CIF (base de los tributos de importación).
-const INCOTERMS = {
-  EXW: { label: 'EXW · en fábrica', hint: 'El precio no incluye llevar la mercadería al puerto ni cargarla: sumá esos gastos en origen, el flete y el seguro.', origen: true, flete: true, seguro: true },
-  FCA: { label: 'FCA · franco transportista', hint: 'El vendedor entrega la mercadería despachada de exportación al transportista que elegiste. Sumá el flete y el seguro.', flete: true, seguro: true },
-  FOB: { label: 'FOB · franco a bordo', hint: 'El precio incluye la mercadería cargada en el buque en el puerto de origen. Sumá el flete y el seguro.', flete: true, seguro: true },
-  CFR: { label: 'CFR · costo y flete', hint: 'El precio ya incluye el flete hasta el puerto de destino. Sumá solo el seguro.', seguro: true },
+const INCOTERM_INFO = {
+  EXW: { label: 'EXW · en fábrica', hint: 'El precio no incluye llevar la mercadería al puerto ni cargarla: sumá esos gastos en origen, el flete y el seguro.' },
+  FCA: { label: 'FCA · franco transportista', hint: 'El vendedor entrega la mercadería despachada de exportación al transportista que elegiste. Si la entrega es en su planta, sumá el traslado hasta el embarque; además, el flete y el seguro.' },
+  FOB: { label: 'FOB · franco a bordo', hint: 'El precio incluye la mercadería cargada en el buque en el puerto de origen. Sumá el flete y el seguro.' },
+  CFR: { label: 'CFR · costo y flete', hint: 'El precio ya incluye el flete hasta el puerto de destino. Sumá solo el seguro.' },
   CIF: { label: 'CIF · costo, seguro y flete', hint: 'El precio ya incluye el flete y el seguro hasta el puerto de destino: es directamente el valor CIF.' },
 };
-function calcResult(c){
-  const inc = INCOTERMS[c.inco] || INCOTERMS.FOB;
-  const precio = num(c.precio), origen = inc.origen ? num(c.origen) : 0, flete = inc.flete ? num(c.flete) : 0, seguro = inc.seguro ? num(c.seguro) : 0;
-  const cif = precio + origen + flete + seguro;
-  const fob = inc.flete ? precio + origen : null;
-  const di = c.mercosur ? 0 : cif * num(c.di) / 100;
-  const te = c.mercosur ? 0 : cif * num(c.te) / 100;
-  const base = cif + di + te;
-  const iva = base * num(c.iva) / 100, piva = base * num(c.piva) / 100, pgan = base * num(c.pgan) / 100, piibb = base * num(c.piibb) / 100;
-  const tributos = di + te + iva + piva + pgan + piibb;
-  const recuperables = iva + piva + pgan + piibb;
-  const gastosList = [['Despachante de aduana', num(c.despachante)], ['Terminal, depósito y gastos portuarios', num(c.terminal)], ['Flete interno', num(c.fleteint)], ['Otros gastos', num(c.otros)]];
-  const gastos = gastosList.reduce((s, [, v]) => s + v, 0);
-  return { inc, precio, origen, flete, seguro, fob, cif, di, te, base, iva, piva, pgan, piibb, tributos, recuperables, gastos, gastosList,
-    desembolso: cif + tributos + gastos, costoReal: cif + di + te + gastos, tc: num(c.tc) };
-}
-function expResult(c){
-  const fob = num(c.fob), insumos = Math.min(num(c.insumos), fob), base = fob - insumos;
-  const dex = base * num(c.dex) / 100, reint = base * num(c.reint) / 100;
-  const gastosList = [['Despachante de aduana', num(c.despachante)], ['Terminal, depósito y gastos portuarios', num(c.terminal)], ['Flete interno hasta el puerto', num(c.fleteint)], ['Otros gastos', num(c.otros)]];
-  const gastos = gastosList.reduce((s, [, v]) => s + v, 0);
-  return { fob, insumos, base, dex, reint, gastos, gastosList, neto: fob - dex - gastos + reint, tc: num(c.tc) };
-}
+
+// Campos del formulario: cada uno con su ayuda y un lugar para el error, enlazados para lectores de pantalla.
 const calcField = (obj, attr) => (id, label, hint, attrs = '') =>
-  `<label for="${attr}-${id}">${label}<input id="${attr}-${id}" data-${attr}="${id}" inputmode="decimal" value="${esc(obj[id])}" ${attrs}>${hint ? `<small>${hint}</small>` : ''}</label>`;
+  `<label for="${attr}-${id}">${label}<input id="${attr}-${id}" data-${attr}="${id}" inputmode="decimal" autocomplete="off" spellcheck="false" value="${esc(obj[id] ?? '')}" aria-describedby="${hint ? `${attr}-${id}-h ` : ''}${attr}-${id}-e" ${attrs}>${hint ? `<small id="${attr}-${id}-h">${hint}</small>` : ''}<small class="field-err" id="${attr}-${id}-e"></small></label>`;
+const calcSelect = (obj, attr) => (id, label, opts, hint = '', attrs = '') =>
+  `<label for="${attr}-${id}">${label}<select id="${attr}-${id}" data-${attr}="${id}"${hint ? ` aria-describedby="${attr}-${id}-h"` : ''} ${attrs}>${opts.map(([v, l]) => `<option value="${esc(v)}"${String(obj[id]) === String(v) ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select>${hint ? `<small id="${attr}-${id}-h">${hint}</small>` : ''}</label>`;
+const calcCheck = (obj, attr) => (id, label, hint = '') =>
+  `<label class="calc-check"><input type="checkbox" data-${attr}="${id}"${obj[id] ? ' checked' : ''}><span>${label}${hint ? `<small>${hint}</small>` : ''}</span></label>`;
 const calcTabs = cur => `<nav class="calc-tabs" aria-label="Herramientas">${[['calculadora','Importación'],['exportacion','Exportación'],['guias','Guías para calcular']]
   .map(([h, l]) => `<a href="#${h}"${cur === h ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav>`;
+const calcSources = () => CALC_RULES ? `<section class="calc-src" aria-labelledby="h-calc-src"><h2 id="h-calc-src">Normas y fuentes oficiales</h2>
+  <ul>${CALC_RULES.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a></li>`).join('')}</ul>
+  <p class="note">Reglas revisadas el <b>${esc(fmtYMD(CALC_RULES.reviewed))}</b>. Si encontrás una norma más reciente, escribinos desde <a href="#contacto">Contacto</a>.</p></section>` : '';
+const calcUnavailable = () => `<p class="warn" role="alert">La calculadora no pudo cargar sus reglas. Recargá la página; si el problema sigue, avisanos desde <a href="#contacto">Contacto</a>.</p>`;
+
+// Errores de validación: marca cada campo y arma una lista con enlaces a los campos.
+function showFieldErrors(attr, errors){
+  document.querySelectorAll(`[data-${attr}]`).forEach(el => {
+    const k = el.dataset[attr], msg = errors[k] || '';
+    if (el.type !== 'checkbox' && el.tagName === 'INPUT'){ if (msg) el.setAttribute('aria-invalid', 'true'); else el.removeAttribute('aria-invalid'); }
+    const e = document.getElementById(`${attr}-${k}-e`); if (e) e.textContent = msg;
+  });
+}
+const errorList = (attr, errors, labels) => `<div class="calc-errors" role="alert"><p><b>Falta completar o corregir:</b></p><ul>${Object.entries(errors)
+  .map(([k, m]) => `<li><button type="button" class="linklike" data-focus="${attr}-${k}">${esc(labels[k] || k)}</button>: ${esc(m)}</li>`).join('')}</ul></div>`;
+const msgList = (cls, title, list) => list.length ? `<div class="${cls}"><p><b>${title}</b></p><ul>${list.map(w => `<li>${esc(w)}</li>`).join('')}</ul></div>` : '';
+
+const IMP_LABELS = { precio: 'Precio de compra', origen: 'Gastos en origen', flete: 'Flete internacional', seguro: 'Seguro', tc: 'Tipo de cambio',
+  di: 'Derecho de importación', piibb: 'Percepción de Ingresos Brutos', despachante: 'Despachante', terminal: 'Terminal y depósito', fleteint: 'Flete interno', otros: 'Otros gastos' };
+const IMP_NOT_INCLUDED = [
+  'Derechos antidumping o compensatorios y medidas de salvaguardia.',
+  'Impuestos internos (por ejemplo, en algunos electrónicos o bebidas): también cambian la base de la percepción de Ganancias.',
+  'Valores criterio, ajustes de valor o diferencias que determine la Aduana.',
+  'Licencias, certificaciones e intervenciones de otros organismos (SENASA, ANMAT, INAL, Seguridad Eléctrica, entre otros).',
+  'Regímenes especiales: courier, importación temporaria, franquicias, bienes de capital con arancel reducido, RIGI u otros.',
+  'El costo financiero de adelantar el IVA y las percepciones, y el IVA de los gastos locales.',
+];
+const EXP_LABELS = { fob: 'Valor FOB', dex: 'Derecho de exportación', insTemp: 'Insumos importados temporariamente', insOtros: 'Otros insumos importados',
+  comis: 'Comisiones', reint: 'Reintegro', tc: 'Tipo de cambio', despachante: 'Despachante', terminal: 'Terminal y depósito', fleteint: 'Flete interno', otros: 'Otros gastos' };
+const EXP_NOT_INCLUDED = [
+  'Valores referenciales o ajustes de valor que fije la Aduana.',
+  'Impuesto a las Ganancias, costos de producción y financiación.',
+  'Diferencias de cambio y condiciones de ingreso y liquidación de divisas.',
+  'Beneficios o requisitos de regímenes especiales (Exporta Simple, RIGI, zonas francas, entre otros).',
+  'El factor de ponderación y la cancelación de la importación temporaria, que define tu despachante.',
+];
 
 function renderCalculadora(){
-  const f = calcField(calc, 'calc');
-  const inc = INCOTERMS[calc.inco] || INCOTERMS.FOB;
+  const f = calcField(calc, 'calc'), s = calcSelect(calc, 'calc'), c = calcCheck(calc, 'calc');
+  const R = CALC_RULES?.import;
+  const inc = INCOTERM_INFO[calc.inco] || INCOTERM_INFO.FOB, k = window.PulsoCalc?.INCOTERMS?.[calc.inco] || { flete: true, seguro: true };
+  const diLocked = calc.origin === 'mercosur' && !calc.mercoExcluded;
+  const part = calc.situacion === 'particular';
   $('#main').innerHTML = `<article class="article doc calc">
     <a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>
     ${calcTabs('calculadora')}
     <h1>Calculadora de costo de importación</h1>
-    <p class="lede">Estimá cuánto pagás en la Aduana argentina y cuál es el costo real de tu mercadería, desde el precio de compra en cualquier Incoterm hasta tu depósito. Todas las alícuotas se pueden modificar.</p>
-    <form class="calc-form" onsubmit="return false">
+    <p class="lede">Estimá cuánto pagás en la Aduana argentina y cuánto te cuesta realmente la mercadería, según el Incoterm, el origen y tu situación fiscal. Modela una importación definitiva para consumo por despacho general.</p>
+    ${calcReady() ? '' : calcUnavailable()}
+    <form class="calc-form" onsubmit="return false" novalidate>
       <h2>1. Precio y condición de compra (en USD)</h2>
+      <p class="note">Podés escribir los importes como 1250, 1.250 o 1.250,50.</p>
       <div class="calc-grid">
-        <label for="calc-inco">Incoterm<select id="calc-inco" data-calc="inco">${Object.entries(INCOTERMS).map(([k, v]) => `<option value="${k}"${calc.inco === k ? ' selected' : ''}>${esc(v.label)}</option>`).join('')}</select><small>${esc(inc.hint)} <a href="#guia-incoterms">Qué es cada Incoterm</a></small></label>
-        ${f('precio', `Precio de compra (${esc(calc.inco)})`, 'El valor de la factura comercial.')}
-        ${inc.origen ? f('origen', 'Gastos en origen', 'Transporte hasta el puerto, carga y despacho de exportación en el país de origen.') : ''}
-        ${inc.flete ? f('flete', 'Flete internacional', 'Hasta el puerto o aeropuerto de destino.') : ''}
-        ${inc.seguro ? f('seguro', 'Seguro', 'Si no lo contratás, la Aduana puede presumir un valor.') : ''}
-        ${f('tc', 'Tipo de cambio (opcional)', 'Pesos por dólar, para ver los montos en $.')}
+        ${s('inco', 'Incoterm', Object.entries(INCOTERM_INFO).map(([v, o]) => [v, o.label]), `${esc(inc.hint)} <a href="#guia-incoterms">Qué es cada Incoterm</a>`)}
+        ${f('precio', `Precio de compra (${esc(calc.inco)})`, 'El valor de la factura comercial. Obligatorio.')}
+        ${k.origen ? f('origen', 'Gastos hasta el embarque', 'Transporte hasta el puerto, carga y despacho de exportación en origen, si los pagás vos.') : ''}
+        ${k.flete ? f('flete', 'Flete internacional', 'Hasta el puerto o aeropuerto de destino.') : ''}
+        ${k.seguro ? f('seguro', 'Seguro', 'Prima del seguro internacional.') : ''}
+        ${f('tc', 'Tipo de cambio (opcional)', 'Pesos por dólar, solo para ver los montos en pesos. No es el tipo de cambio que aplica la Aduana.')}
       </div>
-      <h2>2. Tributos</h2>
-      <label class="calc-check"><input type="checkbox" data-calc="mercosur" ${calc.mercosur ? 'checked' : ''}> Origen Mercosur con certificado de origen (sin derecho de importación ni tasa de estadística)</label>
+      <h2>2. Origen y derecho de importación</h2>
       <div class="calc-grid">
-        ${f('di', 'Derecho de importación (%)', 'Depende de la posición arancelaria (NCM). Suele ir de 0 % a 35 %. <a href="#guia-posicion-arancelaria">Cómo encontrarlo</a>', calc.mercosur ? 'disabled' : '')}
-        ${f('te', 'Tasa de estadística (%)', 'General: 3 % del valor CIF. Puede tener topes o exenciones según el caso.', calc.mercosur ? 'disabled' : '')}
-        <label for="calc-iva">IVA<select id="calc-iva" data-calc="iva"><option value="21" ${num(calc.iva)===21?'selected':''}>21 % (general)</option><option value="10.5" ${num(calc.iva)===10.5?'selected':''}>10,5 % (bienes de capital y otros)</option></select><small>Según la mercadería.</small></label>
-        ${f('piva', 'Percepción de IVA (%)', 'General 20 %; 10 % si el IVA es 10,5 %. A cuenta del IVA.')}
-        <label for="calc-pgan">Percepción de Ganancias<select id="calc-pgan" data-calc="pgan"><option value="6" ${num(calc.pgan)===6?'selected':''}>6 % (inscripto en Ganancias)</option><option value="11" ${num(calc.pgan)===11?'selected':''}>11 % (no inscripto / bienes de uso propio)</option></select><small>Anticipo del impuesto.</small></label>
-        ${f('piibb', 'Percepción de Ingresos Brutos (%)', 'Varía según la provincia y el régimen de cada empresa.')}
+        ${s('origin', 'Origen de la mercadería', [['extra', 'Fuera del Mercosur, sin preferencia'], ['mercosur', 'Originaria del Mercosur, con certificado de origen'], ['acuerdo', 'Otro acuerdo preferencial (ALADI, Chile, etc.)']],
+          'El país de compra no alcanza: la preferencia exige cumplir el régimen de origen y presentar el certificado.')}
+        ${f('di', 'Derecho de importación (%)', diLocked ? 'Mercosur: 0 % con certificado de origen válido.' : `Obligatorio. Depende de tu posición arancelaria (NCM)${calc.origin === 'acuerdo' ? ', con la preferencia del acuerdo ya aplicada' : ''}. <a href="#guia-posicion-arancelaria">Cómo encontrarla</a>`, diLocked ? 'disabled' : 'placeholder="Ej.: 16"')}
       </div>
-      <h2>3. Gastos en Argentina (opcional, en USD)</h2>
+      ${calc.origin === 'mercosur' ? c('mercoExcluded', 'El producto está excluido del libre comercio del Mercosur', 'Por ejemplo, azúcar y sector automotor: pagan derecho de importación aunque sean originarios.') : ''}
+      ${calc.origin === 'acuerdo' ? c('acuerdoTeExento', 'El acuerdo prevé expresamente la exención de la tasa de estadística', 'Solo algunos acuerdos la eximen (Decreto 1140/2024, art. 2). Si no estás seguro, dejalo sin marcar.') : ''}
+      ${calc.origin !== 'mercosur' ? c('teExentaEspecial', 'La operación está exenta de la tasa de estadística por una norma especial', 'Por ejemplo, ciertos bienes de capital para hidrocarburos no convencionales. Marcalo solo si tu despachante lo confirmó.') : ''}
+      <h2>3. Tu situación fiscal</h2>
+      <div class="calc-grid">
+        ${s('situacion', 'Quién importa', [['ri', 'Empresa o persona responsable inscripta en IVA'], ['mono', 'Monotributista'], ['particular', 'Persona humana, para uso o consumo particular']],
+          'Define qué tributos se recuperan y qué percepciones corresponden.')}
+        ${s('destino', 'Destino de la mercadería', [['cambio', 'Reventa o insumo (bien de cambio)'], ['uso', 'Bien de uso propio (se amortiza)']],
+          part ? 'No aplica a una importación para uso particular.' : 'Los bienes de uso están excluidos de las percepciones de IVA y de Ganancias.', part ? 'disabled' : '')}
+        ${s('iva', 'IVA de la mercadería', [['21', '21 % (general)'], ['10.5', '10,5 % (bienes de capital y otros)'], ['0', 'Exenta de IVA']], 'Según la posición arancelaria.')}
+        ${part ? '' : f('piibb', 'Percepción de Ingresos Brutos (%)', `General del SIRPEI: ${R ? fmtPct(R.iibb.general) : '2,5 %'}. Tu provincia puede informar una alícuota propia para tu CUIT.`)}
+      </div>
+      ${part ? '' : `${c('exclIva', 'Estoy excluido de la percepción de IVA', `Con certificado de exclusión vigente o por la exclusión temporaria de la RG 5490/5501 (bienes de primera necesidad e insumos MiPyME${R ? `, hasta el ${fmtYMD(R.exclusions.until)}` : ''}).`)}
+      ${c('exclGan', 'Estoy excluido de la percepción de Ganancias', 'Mismos casos: certificado de exclusión o RG 5490/5501.')}`}
+      <h2>4. Gastos en Argentina (opcional, en USD)</h2>
       <div class="calc-grid">
         ${f('despachante', 'Despachante de aduana', 'Honorarios por el despacho.')}
         ${f('terminal', 'Terminal, depósito y puerto', 'Almacenaje, manipuleo, gastos de terminal y de la agencia marítima.')}
         ${f('fleteint', 'Flete interno', 'Del puerto o aeropuerto hasta tu depósito.')}
         ${f('otros', 'Otros gastos', 'Certificaciones, licencias, bancos u otros.')}
       </div>
+      <p class="note">Cargá los gastos sin IVA si sos responsable inscripto; con IVA si no podés computarlo.</p>
       <p><button class="btn sm" type="button" data-calc-reset>Restablecer valores</button></p>
     </form>
-    <section class="calc-out" aria-live="polite" id="calcOut"></section>
-    <div class="callout"><p><b>Importante.</b> Es una estimación orientativa. No contempla regímenes especiales, valores criterio, derechos antidumping, licencias ni otras medidas que puedan aplicar a tu producto. Las alícuotas pueden cambiar: antes de operar, confirmalas con tu despachante de aduana o en la normativa vigente.</p></div>
+    <section class="calc-out" aria-live="polite" aria-atomic="false" id="calcOut"></section>
+    <section class="calc-ni"><h2>Qué no incluye esta estimación</h2><ul>${IMP_NOT_INCLUDED.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      <p class="note">Es una estimación orientativa, no un despacho. Antes de operar, confirmá la clasificación, las alícuotas y los requisitos con tu despachante de aduana.</p></section>
+    ${calcSources()}
     ${guideLinks(['costo-importacion', 'valor-cif', 'incoterms', 'posicion-arancelaria'])}
   </article>`;
   updateCalc();
-  setSEO({ title:`Calculadora de costo de importación en Argentina · ${CONFIG.siteName}`, desc:'Calculá el valor CIF desde cualquier Incoterm, los derechos de importación, la tasa de estadística, el IVA, las percepciones y los gastos para importar en la Argentina.', crumbs:[['Herramientas'],['Calculadora de importación']] });
+  setSEO({ title:`Calculadora de costo de importación en Argentina · ${CONFIG.siteName}`, desc:'Calculá el valor CIF desde cualquier Incoterm, el derecho de importación, la tasa de estadística con sus topes, el IVA, las percepciones según tu situación fiscal y los gastos para importar en la Argentina.', crumbs:[['Herramientas'],['Calculadora de importación']] });
 }
 function updateCalc(){
-  const out = $('#calcOut'); if (!out) return;
-  const r = calcResult(calc);
+  const out = $('#calcOut'); if (!out || !calcReady()) return;
+  const r = PulsoCalc.computeImport(calc, CALC_RULES);
+  showFieldErrors('calc', r.errors);
+  if (!r.ok){ out.innerHTML = `<h2>Resultado</h2>${errorList('calc', r.errors, IMP_LABELS)}<p class="note">El resultado aparece cuando todos los datos obligatorios son válidos: no se completan con valores supuestos.</p>`; return; }
   const ars = n => r.tc ? `<td class="ars">${fmtARS(n * r.tc)}</td>` : '';
-  const row = (label, n, note = '', cls = '') => `<tr class="${cls}"><td>${label}${note ? `<small>${note}</small>` : ''}</td><td>${fmtUSD(n)}</td>${ars(n)}</tr>`;
-  const head = `<tr><th>Concepto</th><th>USD</th>${r.tc ? '<th>Pesos</th>' : ''}</tr>`;
+  const row = (label, n, note = '', cls = '', tag = '') => `<tr class="${cls}"><th scope="row">${label}${tag}${note ? `<small>${note}</small>` : ''}</th><td>${fmtUSD(n)}</td>${ars(n)}</tr>`;
+  const tag = rec => rec ? ' <span class="tag rec">Recuperable</span>' : ' <span class="tag cost">Costo</span>';
+  const grp = t => `<tr class="grp"><th scope="rowgroup" colspan="${r.tc ? 3 : 2}">${t}</th></tr>`;
+  const sitLabel = PulsoCalc.SITUACIONES[r.sit] + (r.sit === 'particular' ? '' : r.destino === 'uso' ? ' · bien de uso' : ' · reventa o insumo');
+  const teNote = r.teExemptWhy || (r.te.capped ? `3 % del CIF = ${fmtUSD(r.te.raw)}; se aplica el tope de ${fmtUSD(r.te.cap)} del tramo` : `3 % del valor CIF (tope del tramo: ${fmtUSD(r.te.cap)})`);
   out.innerHTML = `<h2>Resultado</h2>
+    <p class="note">Calculado para: <b>${esc(sitLabel)}</b>.</p>
     <div class="calc-sum">
-      <div><span>Pagás en la Aduana</span><b>${fmtUSD(r.tributos)}</b>${r.tc ? `<em>${fmtARS(r.tributos * r.tc)}</em>` : ''}</div>
-      <div><span>Desembolso total</span><b>${fmtUSD(r.desembolso)}</b>${r.tc ? `<em>${fmtARS(r.desembolso * r.tc)}</em>` : ''}</div>
-      <div class="hl"><span>Costo real de la mercadería*</span><b>${fmtUSD(r.costoReal)}</b>${r.tc ? `<em>${fmtARS(r.costoReal * r.tc)}</em>` : ''}</div>
+      <div><span>Pagás en la Aduana</span><b>${fmtUSD(r.tributos)}</b>${r.tc ? `<em>${fmtARS(r.tributos * r.tc)}</em>` : ''}<small>Derecho, tasa, IVA y percepciones</small></div>
+      <div><span>Desembolso total estimado</span><b>${fmtUSD(r.desembolso)}</b>${r.tc ? `<em>${fmtARS(r.desembolso * r.tc)}</em>` : ''}<small>CIF + tributos + gastos</small></div>
+      <div class="hl"><span>Costo económico estimado</span><b>${fmtUSD(r.costo)}</b>${r.tc ? `<em>${fmtARS(r.costo * r.tc)}</em>` : ''}<small>Desembolso menos lo que se recupera (${fmtUSD(r.recuperable)})</small></div>
     </div>
-    <table class="calc-table">${head}
-      ${row(`Precio de compra (${esc(calc.inco)})`, r.precio)}
-      ${r.inc.origen ? row('Gastos en origen', r.origen) : ''}
-      ${r.fob != null && r.inc.origen ? row('Valor FOB', r.fob, 'Precio + gastos en origen', 'sub') : ''}
-      ${r.inc.flete ? row('Flete internacional', r.flete) : ''}
-      ${r.inc.seguro ? row('Seguro', r.seguro) : ''}
-      ${row('Valor CIF', r.cif, 'Base de los tributos de importación', 'sub')}
-      ${row(`Derecho de importación (${fmtPct(calc.mercosur ? 0 : num(calc.di))})`, r.di)}
-      ${row(`Tasa de estadística (${fmtPct(calc.mercosur ? 0 : num(calc.te))})`, r.te)}
-      ${row('Base imponible', r.base, 'CIF + derecho + tasa de estadística', 'sub')}
-      ${row(`IVA (${fmtPct(num(calc.iva))})`, r.iva, 'Crédito fiscal')}
-      ${row(`Percepción de IVA (${fmtPct(num(calc.piva))})`, r.piva, 'A cuenta del IVA')}
-      ${row(`Percepción de Ganancias (${fmtPct(num(calc.pgan))})`, r.pgan, 'A cuenta de Ganancias')}
-      ${row(`Percepción de Ingresos Brutos (${fmtPct(num(calc.piibb))})`, r.piibb, 'A cuenta de Ingresos Brutos')}
-      ${row('Total de tributos en Aduana', r.tributos, '', 'total')}
-      ${r.gastosList.filter(([, v]) => v).map(([l, v]) => row(l, v)).join('')}
-      ${r.gastos ? row('Total de gastos en Argentina', r.gastos, '', 'sub') : ''}
-    </table>
-    <p class="note">* Para una empresa inscripta, el IVA y las percepciones (${fmtUSD(r.recuperables)}) se recuperan o se descuentan de otros impuestos, así que el costo real es CIF + derecho + tasa de estadística + gastos. Para un particular o un no inscripto, el costo es el desembolso total. Los gastos se muestran sin IVA.</p>
-    ${!calc.mercosur && !num(calc.di) ? '<p class="warn">El derecho de importación está en 0 %. Si tu mercadería no es de origen Mercosur, completalo según su posición arancelaria.</p>' : ''}`;
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Tabla (se puede desplazar)"><table class="calc-table">
+      <caption class="sr">Detalle del cálculo de importación en dólares${r.tc ? ' y pesos' : ''}</caption>
+      <thead><tr><th scope="col">Concepto</th><th scope="col">USD</th>${r.tc ? '<th scope="col">Pesos</th>' : ''}</tr></thead>
+      <tbody>
+      ${grp('Valor en aduana')}
+      ${row(`Precio de compra (${esc(r.inco)})`, r.precio)}
+      ${r.origen ? row('Gastos hasta el embarque', r.origen) : ''}
+      ${r.fob != null && r.origen ? row('Valor FOB', r.fob, 'Precio + gastos hasta el embarque', 'sub') : ''}
+      ${PulsoCalc.INCOTERMS[r.inco].flete ? row('Flete internacional', r.flete) : ''}
+      ${PulsoCalc.INCOTERMS[r.inco].seguro ? row('Seguro', r.seguro) : ''}
+      ${row('Valor CIF', r.cif, 'Base del derecho y de la tasa de estadística', 'sub')}
+      ${grp('Tributos aduaneros')}
+      ${row(`Derecho de importación (${fmtPct(r.di)})`, r.diAmount, r.origin === 'mercosur' && !calc.mercoExcluded ? 'Preferencia Mercosur con certificado de origen' : '', '', tag(false))}
+      ${row(`Tasa de estadística${r.teExemptWhy ? ' (exenta)' : ''}`, r.te.amount, teNote, '', tag(false))}
+      ${row('Base imponible', r.base, 'CIF + derecho + tasa de estadística: base del IVA y de las percepciones', 'sub')}
+      ${grp('IVA y percepciones')}
+      ${row(`IVA (${fmtPct(r.ivaRate)})`, r.iva, r.rec.iva ? 'Crédito fiscal' : 'No se computa como crédito fiscal', '', tag(r.rec.iva))}
+      ${row(`Percepción de IVA (${fmtPct(r.rates.piva)})`, r.piva, r.why.piva, '', r.piva ? tag(r.rec.piva) : '')}
+      ${row(`Percepción de Ganancias (${fmtPct(r.rates.pgan)})`, r.pgan, r.why.pgan, '', r.pgan ? tag(r.rec.pgan) : '')}
+      ${row(`Percepción de Ingresos Brutos (${fmtPct(r.rates.piibb)})`, r.piibb, r.why.piibb + (r.piibb ? ' La base exacta la define el SIRPEI; se usa la base imponible del IVA.' : ''), '', r.piibb ? tag(r.rec.piibb) : '')}
+      ${row('Total de tributos en la Aduana', r.tributos, '', 'total')}
+      ${r.gastos ? grp('Gastos en Argentina') + r.gastosList.filter(([, v]) => v).map(([l, v]) => row(esc(l), v)).join('') + row('Total de gastos', r.gastos, '', 'sub') : ''}
+      ${row('Desembolso total estimado', r.desembolso, '', 'total')}
+      ${row('Se recupera (IVA y percepciones computables)', r.recuperable, r.recuperable ? 'Crédito fiscal y pagos a cuenta' : 'Nada, en esta situación')}
+      ${row('Costo económico estimado', r.costo, '', 'total')}
+      </tbody>
+    </table></div>
+    ${msgList('warn', 'Para revisar', r.warnings)}
+    ${msgList('calc-assume', 'Supuestos usados', [...r.assumptions, ...r.notes])}
+    <h3>Mismo caso, otra situación fiscal</h3>
+    <p class="note">Si no sabés qué situación te corresponde, compará: cambian las percepciones y lo que se recupera, no el valor CIF ni los tributos aduaneros.</p>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Tabla (se puede desplazar)"><table class="calc-table scen"><caption class="sr">Comparación por situación fiscal</caption>
+      <thead><tr><th scope="col">Situación</th><th scope="col">Desembolso</th><th scope="col">Costo económico</th></tr></thead>
+      <tbody>${r.scenarios.map(x => `<tr${x.current ? ' class="cur"' : ''}><th scope="row">${esc(x.label)}${x.current ? ' <span class="tag rec">Tu caso</span>' : ''}</th><td>${fmtUSD(x.desembolso)}</td><td>${fmtUSD(x.costo)}</td></tr>`).join('')}</tbody>
+    </table></div>`;
 }
 
 function renderExportacion(){
-  const f = calcField(expo, 'exp');
+  const f = calcField(expo, 'exp'), s = calcSelect(expo, 'exp');
   $('#main').innerHTML = `<article class="article doc calc">
     <a class="btn sm" href="#inicio">${I.back}Volver a Noticias</a>
     ${calcTabs('exportacion')}
     <h1>Calculadora de exportación</h1>
-    <p class="lede">Estimá cuánto te queda de una exportación desde la Argentina: derechos de exportación, reintegros y gastos hasta el embarque, a partir del valor FOB. Todas las alícuotas se pueden modificar.</p>
-    <form class="calc-form" onsubmit="return false">
+    <p class="lede">Estimá cuánto te queda de una exportación desde la Argentina a partir del valor FOB: derecho de exportación, reintegro (solo si corresponde), comisiones y gastos hasta el embarque.</p>
+    ${calcReady() ? '' : calcUnavailable()}
+    <form class="calc-form" onsubmit="return false" novalidate>
       <h2>1. Valor de la exportación (en USD)</h2>
+      <p class="note">Podés escribir los importes como 1250, 1.250 o 1.250,50.</p>
       <div class="calc-grid">
-        ${f('fob', 'Valor FOB', 'Precio de venta con la mercadería cargada en el puerto argentino. Si vendés CFR o CIF, restá el flete y el seguro que pagás vos. <a href="#guia-valor-fob">Qué es el FOB</a>')}
-        ${f('insumos', 'Insumos importados incorporados', 'Valor CIF de los insumos importados que lleva el producto (por ejemplo, en importación temporaria). Según el régimen, se descuenta de la base del derecho y del reintegro. Si no corresponde, dejalo en 0.')}
-        ${f('tc', 'Tipo de cambio (opcional)', 'Pesos por dólar, para ver los montos en $.')}
+        ${f('fob', 'Valor FOB', 'Precio con la mercadería cargada en el puerto argentino. Si vendés CFR o CIF, restá el flete y el seguro que pagás vos. <a href="#guia-valor-fob">Qué es el FOB</a>')}
+        ${f('tc', 'Tipo de cambio (opcional)', 'Pesos por dólar, solo para ver los montos en pesos.')}
       </div>
-      <h2>2. Derechos y estímulos</h2>
+      <h2>2. Derecho de exportación</h2>
       <div class="calc-grid">
-        ${f('dex', 'Derecho de exportación (%)', 'Depende de la posición arancelaria. Muchas posiciones tienen 0 %; los granos y otros productos agroindustriales tienen alícuotas propias que cambian con frecuencia.')}
-        ${f('reint', 'Reintegro a la exportación (%)', 'Devolución de tributos internos que tienen algunas posiciones. Si no corresponde, dejalo en 0.')}
+        ${f('dex', 'Derecho de exportación (%)', 'Obligatorio, aunque sea 0 %. Depende de la posición arancelaria y cambia con frecuencia.', 'placeholder="Ej.: 0"')}
+        ${s('regimen', '¿Usaste importación temporaria?', [['ninguno', 'No'], ['temporaria', 'Sí: el producto lleva insumos importados temporariamente (Decreto 1330/2004)']],
+          'Solo en ese caso se descuenta de la base del derecho el valor CIF de esos insumos.')}
+        ${expo.regimen === 'temporaria' ? f('insTemp', 'Insumos importados temporariamente (valor CIF)', 'Lo que se descuenta de la base del derecho y del reintegro.') : ''}
       </div>
-      <h2>3. Gastos hasta el embarque (opcional, en USD)</h2>
+      <h2>3. Reintegro y comisiones</h2>
+      <div class="calc-grid">
+        ${s('reintEleg', '¿La posición tiene reintegro y cumplís los requisitos?', [['no', 'No, o no lo voy a pedir'], ['si', 'Sí, lo verifiqué'], ['nose', 'No sé: mostrame cuánto sería, sin sumarlo']],
+          'El reintegro no se aplica por defecto: depende de la posición arancelaria y del régimen.')}
+        ${expo.reintEleg !== 'no' ? f('reint', 'Reintegro (%)', 'Alícuota de reintegro de tu posición.') : ''}
+        ${expo.reintEleg !== 'no' ? f('insOtros', 'Otros insumos importados incorporados (valor CIF)', 'Importados en forma definitiva: no bajan la base del derecho, pero sí la del reintegro.') : ''}
+        ${f('comis', 'Comisiones y corretajes (opcional)', 'Se restan del ingreso y de la base del reintegro.')}
+      </div>
+      <h2>4. Gastos hasta el embarque (opcional, en USD)</h2>
       <div class="calc-grid">
         ${f('despachante', 'Despachante de aduana', 'Honorarios por el despacho de exportación.')}
         ${f('terminal', 'Terminal, depósito y puerto', 'Gastos de terminal, consolidación y agencia marítima.')}
@@ -1543,53 +1671,75 @@ function renderExportacion(){
       <p><button class="btn sm" type="button" data-exp-reset>Restablecer valores</button></p>
     </form>
     <section class="calc-out" aria-live="polite" id="expOut"></section>
-    <div class="callout"><p><b>Importante.</b> Es una estimación orientativa. Los derechos de exportación y los reintegros se fijan por posición arancelaria y cambian con frecuencia; además, puede haber regímenes especiales, valores referenciales o condiciones para cobrar el reintegro. Antes de operar, confirmalos con tu despachante de aduana o en la normativa vigente.</p></div>
+    <section class="calc-ni"><h2>Qué no incluye esta estimación</h2><ul>${EXP_NOT_INCLUDED.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      <p class="note">Es una estimación orientativa. Antes de operar, confirmá las alícuotas y los requisitos con tu despachante de aduana.</p></section>
+    ${calcSources()}
     ${guideLinks(['valor-fob', 'incoterms', 'posicion-arancelaria'])}
   </article>`;
   updateExp();
-  setSEO({ title:`Calculadora de exportación: derechos y reintegros · ${CONFIG.siteName}`, desc:'Calculá los derechos de exportación, los reintegros y los gastos de una exportación desde la Argentina, y cuánto te queda a partir del valor FOB.', crumbs:[['Herramientas'],['Calculadora de exportación']] });
+  setSEO({ title:`Calculadora de exportación: derechos y reintegros · ${CONFIG.siteName}`, desc:'Calculá el derecho de exportación, el reintegro cuando corresponde, las comisiones y los gastos de una exportación desde la Argentina, y cuánto te queda a partir del valor FOB.', crumbs:[['Herramientas'],['Calculadora de exportación']] });
 }
 function updateExp(){
-  const out = $('#expOut'); if (!out) return;
-  const r = expResult(expo);
+  const out = $('#expOut'); if (!out || !calcReady()) return;
+  const r = PulsoCalc.computeExport(expo, CALC_RULES);
+  showFieldErrors('exp', r.errors);
+  if (!r.ok){ out.innerHTML = `<h2>Resultado</h2>${errorList('exp', r.errors, EXP_LABELS)}<p class="note">El resultado aparece cuando todos los datos obligatorios son válidos.</p>`; return; }
   const ars = n => r.tc ? `<td class="ars">${fmtARS(n * r.tc)}</td>` : '';
-  const row = (label, n, note = '', cls = '') => `<tr class="${cls}"><td>${label}${note ? `<small>${note}</small>` : ''}</td><td>${fmtUSD(n)}</td>${ars(n)}</tr>`;
+  const row = (label, n, note = '', cls = '') => `<tr class="${cls}"><th scope="row">${label}${note ? `<small>${note}</small>` : ''}</th><td>${fmtUSD(n)}</td>${ars(n)}</tr>`;
   out.innerHTML = `<h2>Resultado</h2>
     <div class="calc-sum">
-      <div><span>Derecho de exportación</span><b>${fmtUSD(r.dex)}</b>${r.tc ? `<em>${fmtARS(r.dex * r.tc)}</em>` : ''}</div>
-      <div><span>Reintegro</span><b>${fmtUSD(r.reint)}</b>${r.tc ? `<em>${fmtARS(r.reint * r.tc)}</em>` : ''}</div>
+      <div><span>Derecho de exportación</span><b>${fmtUSD(r.dexAmount)}</b>${r.tc ? `<em>${fmtARS(r.dexAmount * r.tc)}</em>` : ''}</div>
+      <div><span>Reintegro sumado</span><b>${fmtUSD(r.reintApplied)}</b>${r.tc ? `<em>${fmtARS(r.reintApplied * r.tc)}</em>` : ''}${r.reintEleg === 'nose' ? `<small>Sin confirmar: sería ${fmtUSD(r.reintAmount)}</small>` : ''}</div>
       <div class="hl"><span>Ingreso neto estimado</span><b>${fmtUSD(r.neto)}</b>${r.tc ? `<em>${fmtARS(r.neto * r.tc)}</em>` : ''}</div>
     </div>
-    <table class="calc-table"><tr><th>Concepto</th><th>USD</th>${r.tc ? '<th>Pesos</th>' : ''}</tr>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Tabla (se puede desplazar)"><table class="calc-table"><caption class="sr">Detalle del cálculo de exportación</caption>
+      <thead><tr><th scope="col">Concepto</th><th scope="col">USD</th>${r.tc ? '<th scope="col">Pesos</th>' : ''}</tr></thead>
+      <tbody>
       ${row('Valor FOB', r.fob)}
-      ${r.insumos ? row('Insumos importados', -r.insumos, 'Se descuentan de la base') : ''}
-      ${row('Base del derecho y del reintegro', r.base, '', 'sub')}
-      ${row(`Derecho de exportación (${fmtPct(num(expo.dex))})`, -r.dex)}
-      ${r.reint ? row(`Reintegro (${fmtPct(num(expo.reint))})`, r.reint, 'Se cobra después del embarque') : ''}
-      ${r.gastosList.filter(([, v]) => v).map(([l, v]) => row(l, -v)).join('')}
-      ${row('Ingreso neto estimado', r.neto, 'FOB − derecho − gastos + reintegro', 'total')}
-    </table>
-    <p class="note">El ingreso neto no descuenta impuestos sobre la ganancia ni costos de producción. Los gastos se muestran sin IVA.</p>`;
+      ${r.insTemp ? row('Insumos importados temporariamente', -r.insTemp, 'Se descuentan de la base del derecho') : ''}
+      ${row('Base del derecho de exportación', r.baseDex, r.regimen === 'temporaria' ? 'FOB − insumos temporarios' : 'Todo el valor FOB', 'sub')}
+      ${row(`Derecho de exportación (${fmtPct(r.dex)})`, -r.dexAmount)}
+      ${r.comis ? row('Comisiones y corretajes', -r.comis) : ''}
+      ${r.gastosList.filter(([, v]) => v).map(([l, v]) => row(esc(l), -v)).join('')}
+      ${r.reintEleg !== 'no' ? row('Base del reintegro', r.baseReint, 'FOB − insumos importados − comisiones (Decreto 571/1996)', 'sub') : ''}
+      ${r.reintEleg === 'si' ? row(`Reintegro (${fmtPct(r.reint)})`, r.reintApplied, 'Se cobra en pesos después del embarque') : ''}
+      ${r.reintEleg === 'nose' ? row(`Reintegro posible (${fmtPct(r.reint)})`, r.reintAmount, 'No se suma: confirmá que corresponde', 'muted') : ''}
+      ${row('Ingreso neto estimado', r.neto, 'FOB − derecho − comisiones − gastos' + (r.reintEleg === 'si' ? ' + reintegro' : ''), 'total')}
+      </tbody>
+    </table></div>
+    ${msgList('warn', 'Para revisar', r.warnings)}
+    ${msgList('calc-assume', 'Supuestos usados', r.assumptions)}
+    <p class="note">Los gastos se toman tal como los cargás. El ingreso neto no descuenta impuestos sobre la ganancia ni costos de producción.</p>`;
 }
 function guideLinks(slugs){
   const list = slugs.map(s => (SITE_DATA.guides || []).find(g => g.slug === s)).filter(Boolean);
   return list.length ? `<section class="guide-links"><h2>Guías relacionadas</h2><ul>${list.map(g => `<li><a href="#guia-${esc(g.slug)}">${esc(g.title)}</a><small>${esc(g.desc)}</small></li>`).join('')}</ul></section>` : '';
 }
+// Cambios que agregan o quitan campos: se vuelve a dibujar el formulario conservando el foco.
+const CALC_RERENDER = { calc: ['inco', 'origin', 'mercoExcluded', 'situacion'], exp: ['regimen', 'reintEleg'] };
+let calcTimer = 0;
 function calcInput(e){
   const el = e.target.closest('[data-calc],[data-exp]'); if (!el) return;
-  const isExp = 'exp' in el.dataset, obj = isExp ? expo : calc, k = isExp ? el.dataset.exp : el.dataset.calc;
+  const isExp = 'exp' in el.dataset, attr = isExp ? 'exp' : 'calc', obj = isExp ? expo : calc, k = el.dataset[attr];
   obj[k] = el.type === 'checkbox' ? el.checked : el.value;
-  if (!isExp && k === 'iva'){ calc.piva = num(el.value) === 10.5 ? 10 : 20; const p = $('#calc-piva'); if (p) p.value = calc.piva; }
-  if (!isExp && k === 'mercosur'){ ['di','te'].forEach(id => { const x = $('#calc-' + id); if (x) x.disabled = el.checked; }); }
-  store.set(isExp ? 'comex.expo' : 'comex.calc', obj);
-  if (!isExp && k === 'inco'){ const y = scrollY; renderCalculadora(); prettifyLinks(); window.scrollTo({ top: y }); $('#calc-inco')?.focus(); return; }
-  isExp ? updateExp() : updateCalc();
+  store.set(isExp ? 'comex.expo2' : 'comex.calc2', obj);
+  if (CALC_RERENDER[attr].includes(k)){
+    const y = scrollY, id = el.id;
+    isExp ? renderExportacion() : renderCalculadora(); prettifyLinks(); window.scrollTo({ top: y });
+    (document.getElementById(id) || document.querySelector(`[data-${attr}="${k}"]`))?.focus();
+    return;
+  }
+  // Al escribir, se recalcula con una pausa breve para no anunciar cada tecla en lectores de pantalla.
+  clearTimeout(calcTimer);
+  calcTimer = setTimeout(() => isExp ? updateExp() : updateCalc(), e.type === 'input' ? 250 : 0);
 }
-document.addEventListener('input', e => { if (e.target.matches?.('input[data-calc]:not([type=checkbox]),input[data-exp]')) calcInput(e); });
-document.addEventListener('change', e => { if (e.target.matches?.('select[data-calc],select[data-exp],input[type=checkbox][data-calc]')) calcInput(e); });
+document.addEventListener('input', e => { if (e.target.matches?.('input[data-calc]:not([type=checkbox]),input[data-exp]:not([type=checkbox])')) calcInput(e); });
+document.addEventListener('change', e => { if (e.target.matches?.('select[data-calc],select[data-exp],input[type=checkbox][data-calc],input[type=checkbox][data-exp]')) calcInput(e); });
 document.addEventListener('click', e => {
-  if (e.target.closest('[data-calc-reset]')){ Object.assign(calc, CALC_DEFAULTS); store.set('comex.calc', calc); renderCalculadora(); prettifyLinks(); }
-  if (e.target.closest('[data-exp-reset]')){ Object.assign(expo, EXP_DEFAULTS); store.set('comex.expo', expo); renderExportacion(); prettifyLinks(); }
+  if (e.target.closest('[data-calc-reset]')){ Object.keys(calc).forEach(k => delete calc[k]); Object.assign(calc, CALC_DEFAULTS); store.set('comex.calc2', calc); renderCalculadora(); prettifyLinks(); }
+  if (e.target.closest('[data-exp-reset]')){ Object.keys(expo).forEach(k => delete expo[k]); Object.assign(expo, EXP_DEFAULTS); store.set('comex.expo2', expo); renderExportacion(); prettifyLinks(); }
+  const fl = e.target.closest('[data-focus]');
+  if (fl){ const t = document.getElementById(fl.dataset.focus); t?.focus(); t?.scrollIntoView({ block: 'center' }); }
 });
 
 function renderGuias(){
@@ -1690,14 +1840,14 @@ function renderStatus(){
   $('#year').textContent = now.getFullYear();
   const up = state.updatedAt ? new Date(state.updatedAt) : null;
   const upTxt = up ? `${shortDate(up)}, ${fmtTime.format(up)} h` : '—';
-  $('#updatedLong').textContent = upTxt; $('#footUpdated').textContent = upTxt;
+  if (up){ $('#updatedLong').textContent = upTxt; $('#footUpdated').textContent = upTxt; }   // mientras carga, queda el valor escrito en el HTML
   $('#mastUpdated').textContent = up ? `Feed actualizado ${agoText(up)} · revisado ${fmtTime.format(state.checkedAt || now)} h` : 'Sin datos del feed';
   $('#mastUpdated').title = up ? `Última actualización del feed: ${upTxt}` : '';
   $('#liveText').textContent = 'ACTUALIZADO';
   $('#liveBadge').classList.toggle('is-live', state.live);
   $('#liveBadge').title = state.live ? `Feed automático: las fuentes se consultan varias veces por día y la página lo revisa cada ${CONFIG.refreshMinutes} minutos.` : `Feed curado. Se revisa cada ${CONFIG.refreshMinutes} minutos.`;
   const week = state.items.filter(i => dayDiff(i) <= 7).length, today = state.items.filter(i => dayDiff(i) === 0).length;
-  $('#countLine').innerHTML = `<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><b>${state.items.length}</b>&nbsp;noticias · <b>${week}</b>&nbsp;en 7 días${today ? ` · <b>${today}</b>&nbsp;hoy` : ''}`;
+  if (state.loaded) $('#countLine').innerHTML = `<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><b>${state.items.length}</b>&nbsp;noticias · <b>${week}</b>&nbsp;en 7 días${today ? ` · <b>${today}</b>&nbsp;hoy` : ''}`;
   $('#footFeed').textContent = FOOT_FEED;
 }
 function currentNav(){
